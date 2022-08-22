@@ -24,26 +24,26 @@
          <xsl:when test="substring($i/datafield[@tag='208@']/subfield[@code='b'],1,1) = 'd'">DUMMY</xsl:when>
          <xsl:when test="$abt='000'">
            <xsl:choose>
-             <xsl:when test="$signatur='FH '">ILN204/CG/UB/Freihand</xsl:when>
-             <xsl:when test="$signatur='000'">ILN204/CG/UB/Freihand</xsl:when>
-             <xsl:when test="$signatur='4o '">ILN204/CD/UB/UBMag</xsl:when>
-             <xsl:when test="$signatur='ADk'">ILN204/CG/UB/Altbau</xsl:when>
+             <xsl:when test="starts-with($signatur,'FH ')">ILN204/CG/UB/Freihand</xsl:when>
+             <xsl:when test="starts-with($signatur='000')">ILN204/CG/UB/Freihand</xsl:when>
+             <xsl:when test="starts-with($signatur='4o ')">ILN204/CD/UB/UBMag</xsl:when>
+             <xsl:when test="starts-with($signatur='ADk')">ILN204/CG/UB/Altbau</xsl:when>
              <!-- TBD -->
              <xsl:otherwise>ILN204/CG/UB/Freihand</xsl:otherwise>
            </xsl:choose>
          </xsl:when>
          <xsl:when test="$abt='002'">
            <xsl:choose>
-             <xsl:when test="$signatur='002'">ILN204/CG/ZNL/Freihand</xsl:when>
-             <xsl:when test="$signatur='140'">ILN204/CG/ZNL/Mag</xsl:when>
+             <xsl:when test="starts-with($signatur='002')">ILN204/CG/ZNL/Freihand</xsl:when>
+             <xsl:when test="starts-with($signatur='140')">ILN204/CG/ZNL/Mag</xsl:when>
              <!-- TBD -->
              <xsl:otherwise>ILN204/CG/ZNL/Freihand</xsl:otherwise>
            </xsl:choose>
          </xsl:when>
          <xsl:when test="$abt='005'">
            <xsl:choose>
-             <xsl:when test="$signatur='005'">ILN204/CG/ZHB/Freihand</xsl:when>
-             <xsl:when test="$signatur='205'">ILN204/CG/ZHB/Mag</xsl:when>
+             <xsl:when test="starts-with($signatur='005')">ILN204/CG/ZHB/Freihand</xsl:when>
+             <xsl:when test="starts-with($signatur='205')">ILN204/CG/ZHB/Mag</xsl:when>
              <!-- TBD -->
              <xsl:otherwise>ILN204/CG/ZHB/Freihand</xsl:otherwise>
            </xsl:choose>
