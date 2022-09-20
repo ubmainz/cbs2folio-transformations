@@ -10,6 +10,7 @@
   </xsl:template>  
 
   <!-- ILN 204 UB Gießen: holding-items-hebis-iln204.xsl -->
+  <!-- ================================================= -->
 
   <xsl:template match="permanentLocationId">
     <xsl:variable name="i" select="key('original',.)"/>
