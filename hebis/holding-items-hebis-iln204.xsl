@@ -47,7 +47,20 @@
              <xsl:when test="starts-with($signatur,'17')">ILN204/CG/UB/UBSLS</xsl:when> <!-- Alte Dissen mit EJ vorne im SLS -->
              <xsl:when test="starts-with($signatur,'18')">ILN204/CG/UB/UBSLS</xsl:when> <!-- Alte Dissen mit EJ vorne im SLS -->
              <xsl:when test="starts-with($signatur,'19')">ILN204/CG/UB/UBMagAltbau</xsl:when> <!-- Dissen 1900-1990 im Altbau -->
-             
+             <xsl:when test="starts-with($signatur,'2/')">ILN204/CG/UB/UBMagKeller</xsl:when> <!-- KSTR Signaturen im Keller -->
+             <xsl:when test="starts-with($signatur,'20.')">ILN204/CG/UB/UBMag3</xsl:when> <!-- 20er Signaturen im bis 24.999.99 in Mag3 -->
+             <xsl:when test="starts-with($signatur,'21.')">ILN204/CG/UB/UBMag3</xsl:when> <!-- 20er Signaturen im bis 24.999.99 in Mag3 -->
+             <xsl:when test="starts-with($signatur,'22.')">ILN204/CG/UB/UBMag3</xsl:when> <!-- 20er Signaturen im bis 24.999.99 in Mag3 -->
+             <xsl:when test="starts-with($signatur,'23.')">ILN204/CG/UB/UBMag3</xsl:when> <!-- 20er Signaturen im bis 24.999.99 in Mag3 -->
+             <xsl:when test="starts-with($signatur,'24.')">ILN204/CG/UB/UBMag3</xsl:when> <!-- 20er Signaturen im bis 24.999.99 in Mag3 -->
+             <xsl:when test="starts-with($signatur,'27.')">ILN204/CG/UB/UBFreihand1OG</xsl:when> <!-- Arbeitsplatz Mikroformen -->
+             <xsl:when test="starts-with($signatur,'2o 1/')">ILN204/CG/UB/UBMagKeller</xsl:when> <!-- Sind doch eigentlich auch KSTR -->
+             <xsl:when test="starts-with($signatur,'2o 2/')">ILN204/CG/UB/UBMagKeller</xsl:when> <!-- Sind doch eigentlich auch KSTR -->
+             <xsl:when test="starts-with($signatur,'2o 20.')">ILN204/CG/UB/UBMag3</xsl:when> <!-- 20er Signaturen im bis 24.999.99 in Mag3 -->
+             <xsl:when test="starts-with($signatur,'2o 21.')">ILN204/CG/UB/UBMag3</xsl:when> <!-- 20er Signaturen im bis 24.999.99 in Mag3 -->
+             <xsl:when test="starts-with($signatur,'2o 22.')">ILN204/CG/UB/UBMag3</xsl:when> <!-- 20er Signaturen im bis 24.999.99 in Mag3 -->
+             <xsl:when test="starts-with($signatur,'2o 23.')">ILN204/CG/UB/UBMag3</xsl:when> <!-- 20er Signaturen im bis 24.999.99 in Mag3 -->
+             <xsl:when test="starts-with($signatur,'2o 24.')">ILN204/CG/UB/UBMag3</xsl:when> <!-- 20er Signaturen im bis 24.999.99 in Mag3 -->
              
              <!-- Für später -->
              <xsl:when test="starts-with($signatur,'FH ')">ILN204/CG/UB/Freihand2OG</xsl:when>
