@@ -23,6 +23,7 @@
         <xsl:when test=".='ILN204/CD/UB/UBMag3'">7a2e235e-a835-4aa2-a231-607cd38ea05c</xsl:when>
         <xsl:when test=".='ILN204/CD/UB/UBMagKeller'">42796a67-f479-4f69-bc09-9eb080249327</xsl:when>
         <xsl:when test=".='ILN204/CD/UB/UBMagPhil1'">3e26a16a-cf6b-4d14-8606-1db78bfbc023</xsl:when>
+        <xsl:when test=".='ILN204/CD/UB/UBSLS'">bde53f6b-b51f-4f42-8a4b-bfea6bdad539</xsl:when>
         <xsl:when test=".='ILN204/CD/UB/Unbekannt'">76fb831c-500b-4e87-a5ed-f2dea37ee330</xsl:when>
         <xsl:when test=".='ILN204/CG/ZNL/Freihand'">f3dc06c9-9c2e-4026-a678-146d00591c38</xsl:when>
         <xsl:when test=".='ILN204/CG/ZNL/Mag'">0c2ef18e-2d61-459f-9f08-a7413f3b701f</xsl:when>
