@@ -34,7 +34,7 @@
              <!-- UB / Standort Magazin Phil 1 Altbau = UBMagPhil1 -->
              <!-- UB / Standort SLS = UBSLS -->
              <xsl:when test="starts-with($signatur='/')">ILN204/CG/UB/Freihand1OG</xsl:when> <!-- Temporäre Erwerbungssignatur - Standort so lassen?-->
-             <xsl:when test="starts-with($signatur='000')">ILN204/CG/UB/Freihand1OG</xsl:when> <!-- RVK-Signaturen -->
+             <xsl:when test="starts-with($signatur='000 ')">ILN204/CG/UB/Freihand1OG</xsl:when> <!-- RVK-Signaturen -->
              <xsl:when test="starts-with($signatur='064 ')">
                <xsl:choose>
                  <xsl:when test="starts-with($signatur,'064 4o a')">ILN204/CG/UB/Freihand2OG</xsl:when> <!-- 064er bei FH Sla -->
