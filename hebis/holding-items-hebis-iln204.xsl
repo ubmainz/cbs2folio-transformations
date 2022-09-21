@@ -23,14 +23,21 @@
        <xsl:choose>
          <xsl:when test="$electronicholding">ILN204/E/E/Online Medien</xsl:when>
          <xsl:when test="substring($i/datafield[@tag='208@']/subfield[@code='b'],1,1) = 'd'">DUMMY</xsl:when>
+         <!-- Regeln für UB -->
          <xsl:when test="$abt='000'">
            <xsl:choose>
-             <xsl:when test="starts-with($signatur,'FH ')">ILN204/CG/UB/Freihand</xsl:when>
-             <xsl:when test="starts-with($signatur='000')">ILN204/CG/UB/Freihand</xsl:when>
+             <!-- UB / Standort FH 1.Stock = Freihand1OG -->
+             <xsl:when test="starts-with($signatur='000')">ILN204/CG/UB/Freihand1OG</xsl:when>
+             <!-- UB / Standort FH 2.Stock = Freihand2OG -->
+             <xsl:when test="starts-with($signatur,'FH ')">ILN204/CG/UB/Freihand2OG</xsl:when>
+             <!-- UB / Standort Magazin 3.Stock = UBMag3 -->
              <xsl:when test="starts-with($signatur='4o ')">ILN204/CD/UB/UBMag</xsl:when>
+             <!-- UB / Standort Magazin Keller= UBMagKeller -->
              <xsl:when test="starts-with($signatur='ADk')">ILN204/CG/UB/Altbau</xsl:when>
-             <!-- TBD -->
-             <xsl:otherwise>ILN204/CG/UB/Freihand</xsl:otherwise>
+             <!-- UB / Standort Magazin Altbau = UBMagAltbau-->
+             <!-- UB / Standort Magazin Phil 1 Altbau = UBMagPhil1 -->
+             <!-- Sammler schiebt alles andere zum Standort Unbekannt -->
+             <xsl:otherwise>ILN204/CG/UB/Unbekannt</xsl:otherwise>
            </xsl:choose>
          </xsl:when>
          <xsl:when test="$abt='002'">
