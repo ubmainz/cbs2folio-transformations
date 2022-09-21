@@ -27,16 +27,33 @@
          <xsl:when test="$abt='000'">
            <xsl:choose>
              <!-- UB / Standort FH 1.Stock = Freihand1OG -->
-             <xsl:when test="starts-with($signatur='000')">ILN204/CG/UB/Freihand1OG</xsl:when>
              <!-- UB / Standort FH 2.Stock = Freihand2OG -->
-             <xsl:when test="starts-with($signatur,'FH ')">ILN204/CG/UB/Freihand2OG</xsl:when>
              <!-- UB / Standort Magazin 3.Stock = UBMag3 -->
-             <xsl:when test="starts-with($signatur='4o ')">ILN204/CD/UB/UBMag</xsl:when>
              <!-- UB / Standort Magazin Keller= UBMagKeller -->
-             <xsl:when test="starts-with($signatur='ADk')">ILN204/CG/UB/Altbau</xsl:when>
              <!-- UB / Standort Magazin Altbau = UBMagAltbau-->
              <!-- UB / Standort Magazin Phil 1 Altbau = UBMagPhil1 -->
-             <xsl:when test="starts-with($signatur='064 ')">ILN204/CG/UB/UBMagPhil1</xsl:when>
+             <!-- UB / Standort SLS = UBSLS -->
+             <xsl:when test="starts-with($signatur='/')">ILN204/CG/UB/Freihand1OG</xsl:when> <!-- Temporäre Erwerbungssignatur - Standort so lassen?-->
+             <xsl:when test="starts-with($signatur='000')">ILN204/CG/UB/Freihand1OG</xsl:when> <!-- RVK-Signaturen -->
+             <xsl:when test="starts-with($signatur='064 ')">
+               <xsl:choose>
+                 <xsl:when test="starts-with($signatur,'064 4o a')">ILN204/CG/UB/Freihand2OG</xsl:when> <!-- 064er bei FH Sla -->
+                 <xsl:when test="starts-with($signatur,'064 einzelsig')">ILN204/CG/UB/Freihand2OG</xsl:when> <!-- 064er bei FH OSTGe -->
+                 <xsl:otherwise>ILN204/CG/UB/UBMagPhil1</xsl:otherwise>  <!-- Rest der 064er in Mag Phil1 -->
+               </xsl:choose>
+             </xsl:when>
+             <xsl:when test="starts-with($signatur,'1/')">ILN204/CG/UB/UBMagKeller</xsl:when> <!-- KSTR Signaturen im Keller -->
+             <xsl:when test="starts-with($signatur,'16')">ILN204/CG/UB/UBSLS</xsl:when> <!-- Alte Dissen mit EJ vorne im SLS -->
+             <xsl:when test="starts-with($signatur,'17')">ILN204/CG/UB/UBSLS</xsl:when> <!-- Alte Dissen mit EJ vorne im SLS -->
+             <xsl:when test="starts-with($signatur,'18')">ILN204/CG/UB/UBSLS</xsl:when> <!-- Alte Dissen mit EJ vorne im SLS -->
+             <xsl:when test="starts-with($signatur,'19')">ILN204/CG/UB/UBMagAltbau</xsl:when> <!-- Dissen 1900-1990 im Altbau -->
+             
+             
+             <!-- Für später -->
+             <xsl:when test="starts-with($signatur,'FH ')">ILN204/CG/UB/Freihand2OG</xsl:when>
+             <xsl:when test="starts-with($signatur='4o ')">ILN204/CD/UB/UBMag</xsl:when>
+             <xsl:when test="starts-with($signatur='ADk')">ILN204/CG/UB/Altbau</xsl:when>
+             
              <!-- Sammler schiebt alles andere zum Standort Unbekannt -->
              <xsl:otherwise>ILN204/CG/UB/Unbekannt</xsl:otherwise>
            </xsl:choose>
