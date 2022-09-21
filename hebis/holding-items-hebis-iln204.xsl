@@ -36,6 +36,7 @@
              <xsl:when test="starts-with($signatur='ADk')">ILN204/CG/UB/Altbau</xsl:when>
              <!-- UB / Standort Magazin Altbau = UBMagAltbau-->
              <!-- UB / Standort Magazin Phil 1 Altbau = UBMagPhil1 -->
+             <xsl:when test="starts-with($signatur='064 ')">ILN204/CG/UB/UBMagPhil1</xsl:when>
              <!-- Sammler schiebt alles andere zum Standort Unbekannt -->
              <xsl:otherwise>ILN204/CG/UB/Unbekannt</xsl:otherwise>
            </xsl:choose>
