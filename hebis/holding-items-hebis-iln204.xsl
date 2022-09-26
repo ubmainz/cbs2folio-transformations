@@ -33,9 +33,9 @@
              <!-- UB / Standort Magazin Altbau = UBMagAltbau-->
              <!-- UB / Standort Magazin Phil 1 Altbau = UBMagPhil1 -->
              <!-- UB / Standort SLS = UBSLS -->
-             <xsl:when test="starts-with($signatur='/')">ILN204/CG/UB/Freihand1OG</xsl:when> <!-- Temporäre Erwerbungssignatur - Standort so lassen?-->
-             <xsl:when test="starts-with($signatur='000 ')">ILN204/CG/UB/Freihand1OG</xsl:when> <!-- RVK-Signaturen -->
-             <xsl:when test="starts-with($signatur='064 ')">
+             <xsl:when test="starts-with($signatur,'/')">ILN204/CG/UB/Freihand1OG</xsl:when> <!-- Temporäre Erwerbungssignatur - Standort so lassen?-->
+             <xsl:when test="starts-with($signatur,'000 ')">ILN204/CG/UB/Freihand1OG</xsl:when> <!-- RVK-Signaturen -->
+             <xsl:when test="starts-with($signatur,'064 ')">
                <xsl:choose>
                  <xsl:when test="starts-with($signatur,'064 4o a')">ILN204/CG/UB/Freihand2OG</xsl:when> <!-- 064er bei FH Sla -->
                  <xsl:when test="starts-with($signatur,'064 einzelsig')">ILN204/CG/UB/Freihand2OG</xsl:when> <!-- 064er bei FH OSTGe -->
@@ -64,8 +64,8 @@
              
              <!-- Für später -->
              <xsl:when test="starts-with($signatur,'FH ')">ILN204/CG/UB/Freihand2OG</xsl:when>
-             <xsl:when test="starts-with($signatur='4o ')">ILN204/CD/UB/UBMag</xsl:when>
-             <xsl:when test="starts-with($signatur='ADk')">ILN204/CG/UB/Altbau</xsl:when>
+             <xsl:when test="starts-with($signatur,'4o ')">ILN204/CD/UB/UBMag</xsl:when>
+             <xsl:when test="starts-with($signatur,'ADk')">ILN204/CG/UB/Altbau</xsl:when>
              
              <!-- Sammler schiebt alles andere zum Standort Unbekannt -->
              <xsl:otherwise>ILN204/CG/UB/Unbekannt</xsl:otherwise>
@@ -73,16 +73,16 @@
          </xsl:when>
          <xsl:when test="$abt='002'">
            <xsl:choose>
-             <xsl:when test="starts-with($signatur='002')">ILN204/CG/ZNL/Freihand</xsl:when>
-             <xsl:when test="starts-with($signatur='140')">ILN204/CG/ZNL/Mag</xsl:when>
+             <xsl:when test="starts-with($signatur,'002')">ILN204/CG/ZNL/Freihand</xsl:when>
+             <xsl:when test="starts-with($signatur,'140')">ILN204/CG/ZNL/Mag</xsl:when>
              <!-- TBD -->
              <xsl:otherwise>ILN204/CG/ZNL/Freihand</xsl:otherwise>
            </xsl:choose>
          </xsl:when>
          <xsl:when test="$abt='005'">
            <xsl:choose>
-             <xsl:when test="starts-with($signatur='005')">ILN204/CG/ZHB/Freihand</xsl:when>
-             <xsl:when test="starts-with($signatur='205')">ILN204/CG/ZHB/Mag</xsl:when>
+             <xsl:when test="starts-with($signatur,'005')">ILN204/CG/ZHB/Freihand</xsl:when>
+             <xsl:when test="starts-with($signatur,'205')">ILN204/CG/ZHB/Mag</xsl:when>
              <!-- TBD -->
              <xsl:otherwise>ILN204/CG/ZHB/Freihand</xsl:otherwise>
            </xsl:choose>
