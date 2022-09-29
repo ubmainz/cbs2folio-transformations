@@ -1,532 +1,476 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <lbs-ranges>
-    <range from="/" to="/" location="UB-FH"/>
-    <range from="000 aa" to="000 az" location="UB-FH (RVK Signaturen)"/>
-    <range from="000 ba" to="000 bw" location="UB-FH (RVK Signaturen)"/>
-    <range from="000 ca" to="000 ck" location="UB-FH (RVK Signaturen)"/>
-    <range from="000 cl" to="000 cz" location="UB-FH (RVK Signaturen)"/>
-    <range from="000 da" to="000 dz" location="UB-FH (RVK Signaturen)"/>
-    <range from="000 ea" to="000 ez" location="UB-FH (RVK Signaturen)"/>
-    <range from="000 fa" to="000 fz" location="UB-FH (RVK Signaturen)"/>
-    <range from="000 ga" to="000 gz" location="UB-FH (RVK Signaturen)"/>
-    <range from="000 hc" to="000 hv" location="UB-FH (RVK Signaturen)"/>
-    <range from="000 ia" to="000 iz" location="UB-FH (RVK Signaturen)"/>
-    <range from="000 ka" to="000 kz" location="UB-FH (RVK Signaturen)"/>
-    <range from="000 la" to="000 lc" location="UB-FH (RVK Signaturen)"/>
-    <range from="000 ld 1000" to="000 ld 2999" location="UB-FH (RVK Signaturen)"/>
-    <range from="000 ld 3000" to="000 ld 8699" location="UB-FH (RVK Signaturen)"/>
-    <range from="000 ld 8700" to="000 ld 9999" location="UB-FH (RVK Signaturen)"/>
-    <range from="000 le" to="000 lg" location="UB-FH (RVK Signaturen)"/>
-    <range from="000 lh" to="000 lo" location="UB-FH (RVK Signaturen)"/>
-    <range from="000 lp" to="000 ly" location="UB-FH (RVK Signaturen)"/>
-    <range from="000 ma" to="000 ml" location="UB-FH (RVK Signaturen)"/>
-    <range from="000 mn" to="000 ms" location="UB-FH (RVK Signaturen)"/>
-    <range from="000 mx" to="000 mz" location="UB-FH (RVK Signaturen)"/>
-    <range from="000 na" to="000 nz" location="UB-FH (RVK Signaturen)"/>
-    <range from="000 pa" to="000 pz" location="UB-FH (RVK Signaturen)"/>
-    <range from="000 qa" to="000 qy" location="UB-FH (RVK Signaturen)"/>
-    <range from="000 ra" to="000 rz" location="UB-FH (RVK Signaturen)"/>
-    <range from="000 sa" to="000 sp" location="UB-FH (RVK Signaturen)"/>
-    <range from="000 sq" to="000 su" location="UB-FH (RVK Signaturen)"/>
-    <range from="000 ta" to="000 td" location="UB-FH (RVK Signaturen)"/>
-    <range from="000 te" to="000 tz" location="UB-FH (RVK Signaturen)"/>
-    <range from="000 ua" to="000 ux" location="UB-FH (RVK Signaturen)"/>
-    <range from="000 va" to="000 vx" location="UB-FH (RVK Signaturen)"/>
-    <range from="000 wa" to="000 wx" location="UB-FH (RVK Signaturen)"/>
-    <range from="000 xa" to="000 yv" location="UB-FH (RVK Signaturen)"/>
-    <range from="000 za" to="000 ze" location="UB-FH (RVK Signaturen)"/>
-    <range from="000 zg" to="000 zs" location="UB-FH (RVK Signaturen)"/>
-    <range from="000 zx" to="000 zy" location="UB-FH (RVK Signaturen)"/>
-    <range from="064 2o" to="064 2o" location="UB-MAG-Phil1"/>
-    <range from="064 32" to="064 32" location="UB-MAG-Phil1"/>
-    <range from="064 4o 32" to="064 4o 32" location="UB-MAG-Phil1"/>
-    <range from="064 4o a" to="064 4o a" location="?Stimmt das?"/>
-    <range from="064 4o b" to="064 4o b" location="UB-MAG-Phil1"/>
-    <range from="064 4o ch" to="064 4o ch" location="UB-MAG-Phil1"/>
-    <range from="064 4o g" to="064 4o g" location="UB-MAG-Phil1"/>
-    <range from="064 4o l" to="064 4o l" location="UB-MAG-Phil1"/>
-    <range from="064 4o p" to="064 4o p" location="UB-MAG-Phil1"/>
-    <range from="064 4o s" to="064 4o s" location="UB-MAG-Phil1"/>
-    <range from="064 4o t" to="064 4o t" location="UB-MAG-Phil1"/>
-    <range from="064 4o v" to="064 4o v" location="UB-MAG-Phil1"/>
-    <range from="064 4o w" to="064 4o w" location="UB-MAG-Phil1"/>
-    <range from="064 4o xb 0" to="064 4o xbh" location="UB-MAG-Phil1"/>
-    <range from="064 a" to="064 a" location="UB-MAG-Phil1"/>
-    <range from="064 b" to="064 b" location="UB-MAG-Phil1"/>
-    <range from="064 ch" to="064 ch" location="UB-MAG-Phil1"/>
-    <range from="064 einzelsig" to="064 einzelsig" location="?Stimmt das?"/>
-    <range from="064 g /" to="064 g z" location="UB-MAG-Phil1"/>
-    <range from="064 gkt" to="064 gkt" location="?Keine Treffer im OPAC gefunden?"/>
-    <range from="064 in" to="064 in" location="UB-MAG-Phil1"/>
-    <range from="064 l" to="064 l" location="UB-MAG-Phil1"/>
-    <range from="064 mikrof" to="064 mikrof" location="UB-MAG-Phil1"/>
-    <range from="064 p" to="064 p" location="UB-MAG-Phil1"/>
-    <range from="064 s" to="064 s" location="UB-MAG-Phil1"/>
-    <range from="064 t" to="064 t" location="UB-MAG-Phil1"/>
-    <range from="064 v" to="064 v" location="UB-MAG-Phil1"/>
-    <range from="064 w" to="064 w" location="UB-MAG-Phil1"/>
-    <range from="064 xb 1" to="064 xb 999999" location="UB-MAG-Phil1"/>
-    <range from="064 xbi" to="064 xbi" location="UB-MAG-Phil1"/>
-    <range from="064 xg" to="064 xg" location="UB-MAG-Phil1"/>
-    <range from="064 xl" to="064 xl" location="UB-MAG-Phil1"/>
-    <range from="064 xn" to="064 xn" location="UB-MAG-Phil1"/>
-    <range from="064 xp" to="064 xp" location="UB-MAG-Phil1"/>
-    <range from="064 xt" to="064 xt" location="UB-MAG-Phil1"/>
-    <range from="064 xv" to="064 xv" location="UB-MAG-Phil1"/>
-    <range from="064 xw" to="064 xw" location="UB-MAG-Phil1"/>
-    <range from="064 z 0" to="064 z 9" location="UB-MAG-Phil1"/>
-    <range from="064 zs." to="064 zs." location="UB-MAG-Phil1"/>
-    <range from="1 1" to="1 9" location="UB-MAG-KELLER"/>
-    <range from="1/1" to="1/9" location="UB-MAG-KELLER"/>
-    <range from="15.000.00" to="15.999.99" location="Kann entfallen"/>
-    <range from="15/000/00" to="15/999/99" location="Kann entfallen"/>
-    <range from="1600" to="1899" location="UB-SLS"/>
-    <range from="1900" to="1990" location="UB-MAG-ALTBAU"/>
-    <range from="2 1" to="2 9" location="UB-MAG-KELLER"/>
-    <range from="2 zz 49" to="2 zz 99" location="?Keine Treffer im OPAC gefunden?"/>
-    <range from="2/1" to="2/9" location="UB-MAG-KELLER"/>
-    <range from="20.000.00" to="24.999.99" location="UB-MAG-3"/>
-    <range from="27.000.00" to="27.999.99" location="UB-FH-Mikroformen"/>
-    <range from="2o 1 1" to="2o 1 9" location="UB-MAG-KELLER"/>
-    <range from="2o 1/1" to="2o 1/9" location="UB-MAG-KELLER"/>
-    <range from="2o 2 1" to="2o 2 9" location="UB-MAG-KELLER"/>
-    <range from="2o 2/1" to="2o 2/9" location="UB-MAG-KELLER"/>
-    <range from="2o 20.000.00" to="2o 24.999.99" location="UB-MAG-3"/>
-    <range from="2o 3 1" to="2o 3 9" location="UB-MAG-KELLER"/>
-    <range from="2o 3/1" to="2o 3/9" location="UB-MAG-KELLER"/>
-    <range from="2o 4 1" to="2o 4 9" location="UB-MAG-KELLER"/>
-    <range from="2o 4/1" to="2o 4/9" location="UB-MAG-KELLER"/>
-    <range from="2o 40.000.00" to="2o 44.999.99" location="UB-MAG-???"/>
-    <range from="2o 49.000.00" to="2o 49.999.99" location="???"/>
-    <range from="2o 5 1" to="2o 5 9" location="UB-MAG-KELLER"/>
-    <range from="2o 5/1" to="2o 5/9" location="UB-MAG-KELLER"/>
-    <range from="2o 6 1" to="2o 6 9" location="UB-MAG-KELLER"/>
-    <range from="2o 6/1" to="2o 6/9" location="UB-MAG-KELLER"/>
-    <range from="2o a 000049" to="2o a 000056" location="UB-MAG-3"/>
-    <range from="2o a 49" to="2o a 56" location="UB-MAG-3"/>
-    <range from="2o azz" to="2o azz" location="UB-MAG-ALTBAU"/>
-    <range from="2o b 000049" to="2o b 000073" location="UB-MAG-3"/>
-    <range from="2o b 49" to="2o b 73" location="UB-MAG-3"/>
-    <range from="2o bt 000001/1" to="2o bt 000009/9" location="UB-MAG-3"/>
-    <range from="2o bt 1" to="2o bt 9" location="UB-MAG-3"/>
-    <range from="2o erk 000001" to="2o erk 999999" location="UB-MAG-KELLER"/>
-    <range from="2o hass" to="2o hass" location="UB-MAG-3"/>
-    <range from="2o kr" to="2o kr" location="UB-MAG-3"/>
-    <range from="2o kt a" to="2o kt a" location="UB-MAG-3"/>
-    <range from="2o kt b" to="2o kt b" location="UB-Kartenraum"/>
-    <range from="2o kt-a" to="2o kt-a" location="UB-MAG-3"/>
-    <range from="2o kt-b" to="2o kt-b" location="UB-Kartenraum"/>
-    <range from="2o landesk" to="2o landesk" location="UB-MAG-3"/>
-    <range from="2o ma" to="2o mz" location="UB-MAG-3"/>
-    <range from="2o ss" to="2o ss" location="UB-MAG-3"/>
-    <range from="2o z nr" to="2o z nr" location="UB-MAG-3"/>
-    <range from="2o znr" to="2o znr" location="UB-MAG-3"/>
-    <range from="2o ztg" to="2o ztg" location="UB-MAG-KELLER"/>
-    <range from="2o zz 000001" to="2o zz 000020" location="UB-MAG-3"/>
-    <range from="2o zz 000049" to="2o zz 000099" location="UB-MAG-3"/>
-    <range from="2o zz 01" to="2o zz 48" location="UB-MAG-3"/>
-    <range from="2o zz 49" to="2o zz 99" location="UB-MAG-3"/>
-    <range from="3 1" to="3 9" location="UB-MAG-KELLER"/>
-    <range from="3/1" to="3/9" location="UB-MAG-KELLER"/>
-    <range from="350" to="350" location="UB-MAG-Phil1"/>
-    <range from="4 1" to="4 9" location="UB-MAG-KELLER"/>
-    <range from="4 b 49" to="4 b 73" location="UB-MAG-3"/>
-    <range from="4 ss" to="4 ss" location="UB-MAG-3"/>
-    <range from="4 zz 49" to="4 zz 99" location="UB-MAG-3"/>
-    <range from="4/1" to="4/9" location="UB-MAG-KELLER"/>
-    <range from="40.000.00" to="44.999.99" location="UB-MAG-???"/>
-    <range from="47.000.00" to="47.999.99" location="UB-FH-Mikroformen"/>
-    <range from="49.000.00" to="49.999.99" location="???"/>
-    <range from="4o 1 1" to="4o 1 9" location="UB-MAG-KELLER"/>
-    <range from="4o 1/1" to="4o 1/9" location="UB-MAG-KELLER"/>
-    <range from="4o 2 1" to="4o 2 9" location="UB-MAG-KELLER"/>
-    <range from="4o 2/1" to="4o 2/9" location="UB-MAG-KELLER"/>
-    <range from="4o 20.000.00" to="4o 24.999.99" location="UB-MAG-3"/>
-    <range from="4o 3 1" to="4o 3 9" location="UB-MAG-KELLER"/>
-    <range from="4o 3/1" to="4o 3/9" location="UB-MAG-KELLER"/>
-    <range from="4o 4 1" to="4o 4 9" location="UB-MAG-KELLER"/>
-    <range from="4o 4/1" to="4o 4/9" location="UB-MAG-KELLER"/>
-    <range from="4o 40.000.00" to="4o 44.999.99" location="UB-MAG-???"/>
-    <range from="4o 49.000.00" to="4o 49.999.99" location="???"/>
-    <range from="4o 6 1" to="4o 6 9" location="UB-MAG-KELLER"/>
-    <range from="4o 6/1" to="4o 6/9" location="UB-MAG-KELLER"/>
-    <range from="4o a 000049" to="4o a 000056" location="UB-MAG-3"/>
-    <range from="4o a 49" to="4o a 56" location="UB-MAG-3"/>
-    <range from="4o azz" to="4o azz" location="UB-MAG-ALTBAU"/>
-    <range from="4o b 000049" to="4o b 000073" location="UB-MAG-3"/>
-    <range from="4o b 49" to="4o b 73" location="UB-MAG-3"/>
-    <range from="4o bel" to="4o bel" location="UB-MAG-KELLER"/>
-    <range from="4o bt 000001/1" to="4o bt 000009/9" location="UB-MAG-3"/>
-    <range from="4o bt 1/1" to="4o bt 9/9" location="UB-MAG-3"/>
-    <range from="4o erk 000001" to="4o erk 999999" location="UB-MAG-KELLER"/>
-    <range from="4o hass" to="4o hass" location="UB-MAG-3"/>
-    <range from="4o kr" to="4o kr" location="UB-MAG-3"/>
-    <range from="4o kt a" to="4o kt a" location="UB-MAG-3"/>
-    <range from="4o kt b" to="4o kt b" location="UB-Kartenraum"/>
-    <range from="4o kt-a" to="4o kt-a" location="UB-MAG-3"/>
-    <range from="4o kt-b" to="4o kt-b" location="UB-Kartenraum"/>
-    <range from="4o landesk" to="4o landesk" location="UB-MAG-3"/>
-    <range from="4o ma" to="4o mz" location="UB-MAG-3"/>
-    <range from="4o nr" to="4o nr" location="UB-MAG-3"/>
-    <range from="4o pap" to="4o pap" location="UB-MAG-3"/>
-    <range from="4o ss" to="4o ss" location="UB-MAG-3"/>
-    <range from="4o vv" to="4o vv" location="UB-MAG-3"/>
-    <range from="4o z nr" to="4o z nr" location="UB-MAG-3"/>
-    <range from="4o znr" to="4o znr" location="UB-MAG-3"/>
-    <range from="4o ztg" to="4o ztg" location="UB-MAG-KELLER"/>
-    <range from="4o zz 000001" to="4o zz 000020" location="UB-MAG-3"/>
-    <range from="4o zz 000021" to="4o zz 000048" location="UB-MAG-3"/>
-    <range from="4o zz 000049" to="4o zz 000065" location="UB-MAG-ALTBAU"/>
-    <range from="4o zz 000066" to="4o zz 000099" location="UB-MAG-3"/>
-    <range from="4o zz 01" to="4o zz 20" location="UB-MAG-3"/>
-    <range from="4o zz 21" to="4o zz 48" location="UB-MAG-3"/>
-    <range from="4o zz 49" to="4o zz 65" location="UB-MAG-ALTBAU"/>
-    <range from="4o zz 66" to="4o zz 99" location="UB-MAG-3"/>
-    <range from="5 1" to="5 9" location="UB-MAG-KELLER"/>
-    <range from="5/1" to="5/9" location="UB-MAG-KELLER"/>
-    <range from="50.000.00" to="59.999.99" location="Fernleihen"/>
-    <range from="6 1" to="6 9" location="UB-MAG-KELLER"/>
-    <range from="6/1" to="6/9" location="UB-MAG-KELLER"/>
-    <range from="7 1" to="7 9" location="UB-MAG-KELLER"/>
-    <range from="7/1" to="7/9" location="UB-MAG-KELLER"/>
-    <range from="&lt;140&gt;" to="&lt;140&gt;" location="ZNL???"/>
-    <range from="a 000001" to="a 000048" location="UB-MAG-KELLER"/>
-    <range from="a 000049" to="a 000056" location="UB-MAG-3"/>
-    <range from="a 000057" to="a 999999" location="UB-MAG-KELLER"/>
-    <range from="a000000000" to="a999999998" location="Fernleihen?"/>
-    <range from="abw" to="abw" location="UB-MAG-ALTBAU"/>
-    <range from="adk" to="adk" location="UB-MAG-ALTBAU"/>
-    <range from="ags" to="ags" location="UB-MAG-ALTBAU"/>
-    <range from="al" to="al" location="UB-MAG-ALTBAU"/>
-    <range from="an" to="an" location="UB-MAG-3"/>
-    <range from="aor" to="aor" location="UB-MAG-ALTBAU"/>
-    <range from="ap" to="ap" location="UB-MAG-ALTBAU"/>
-    <range from="aro" to="aro" location="UB-MAG-ALTBAU"/>
-    <range from="auskunft cd" to="auskunft cd" location="UB-Auskunft"/>
-    <range from="auskunft erd" to="auskunft erd" location="UB-Auskunft"/>
-    <range from="ausleihe" to="ausleihe" location="UB-Ausleihe"/>
-    <range from="azz" to="azz" location="UB-MAG-ALTBAU"/>
-    <range from="b 000001" to="b 000048" location="UB-MAG-KELLER"/>
-    <range from="b 000049" to="b 000073" location="UB-MAG-3"/>
-    <range from="b 000074" to="b 999999" location="UB-MAG-KELLER"/>
-    <range from="bap 000001" to="bap 000010" location="UB-MAG-ALTBAU"/>
-    <range from="bap 000013" to="bap 000026" location="UB-MAG-ALTBAU"/>
-    <range from="bap 27" to="bap 27" location="UB-MAG-3"/>
-    <range from="bap 000028" to="bap 000099" location="UB-MAG-ALTBAU"/>
-    <range from="bap auskunft" to="bap z" location="UB-MAG-ALTBAU"/>
-    <range from="bel" to="bel" location="UB-MAG-KELLER"/>
-    <range from="bestellt" to="bestellt" location="Temporäre Erwerbungssignatur"/>
-    <range from="bilderrahmen" to="bilderrahmen" location="UB-MAG-KELLER"/>
-    <range from="bt 000001/1" to="bt 000009/9" location="UB-MAG-3"/>
-    <range from="c 000001" to="c 999999" location="UB-MAG-KELLER"/>
-    <range from="cd 000001" to="cd 999999" location="UB-MAG-3"/>
-    <range from="cd z" to="cd z" location="UB-Ausleihe"/>
-    <range from="d 000000" to="d 999999" location="UB-MAG-KELLER"/>
-    <range from="da 000000" to="da 999999" location="UB-MAG-KELLER"/>
-    <range from="daf" to="daf" location="UB-FH (DAF)"/>
-    <range from="dvd z" to="dvd z" location="UB-Ausleihe"/>
-    <range from="e 000000" to="e 000009" location="UB-MAG-KELLER"/>
-    <range from="e 000010" to="e 999999" location="UB-MAG-KELLER"/>
-    <range from="einzels" to="einzelsignatur" location="UB-Auskunft"/>
-    <range from="erk" to="erk" location="UB-MAG-KELLER"/>
-    <range from="f 000001" to="f 999999" location="UB-MAG-KELLER"/>
-    <range from="fd" to="fd" location="UB-MAG-3"/>
-    <range from="fh agr" to="fh agr" location="UB-FH (FH-Sig)"/>
-    <range from="fh all" to="fh all" location="UB-FH (FH-Sig)"/>
-    <range from="fh altege" to="fh altege" location="UB-FH (FH-Sig)"/>
-    <range from="fh ang" to="fh ang" location="UB-FH (FH-Sig)"/>
-    <range from="fh arb" to="fh arb" location="UB-FH-Mikroformen"/>
-    <range from="fh auskunft" to="fh auskunft" location="UB-Auskunft"/>
-    <range from="fh bap" to="fh bap" location="UB-FH (FH-Sig)"/>
-    <range from="fh bio" to="fh bio" location="UB-FH (FH-Sig)"/>
-    <range from="fh bliz" to="fh bliz" location="UB-FH (FH-Sig)"/>
-    <range from="fh bot" to="fh bot" location="UB-FH (FH-Sig)"/>
-    <range from="fh che" to="fh che" location="UB-FH (FH-Sig)"/>
-    <range from="fh didge" to="fh didge" location="UB-FH (FH-Sig)"/>
-    <range from="fh eden" to="fh eden" location="UB-FH (FH-Sig)"/>
-    <range from="fh einzelsign" to="fh einzelsign" location="UB-Auskunft"/>
-    <range from="fh ern" to="fh ern" location="UB-FH (FH-Sig)"/>
-    <range from="fh fil" to="fh fil" location="UB-FH (FH-Sig)"/>
-    <range from="fh geo" to="fh geo" location="UB-FH (FH-Sig)"/>
-    <range from="fh ger a" to="fh ger z" location="UB-FH (FH-Sig)"/>
-    <range from="fh germ /" to="fh germ z" location="UB-FH (FH-Sig)"/>
-    <range from="fh ggr" to="fh ggr" location="UB-FH (FH-Sig)"/>
-    <range from="fh gkt" to="fh gkt" location="UB-Auskunft"/>
-    <range from="fh he" to="fh he" location="UB-FH (FH-Sig)"/>
-    <range from="fh his" to="fh his" location="UB-FH (FH-Sig)"/>
-    <range from="fh hsh" to="fh hsh" location="UB-FH (FH-Sig)"/>
-    <range from="fh jur a" to="fh jur y" location="UB-FH (FH-Sig)"/>
-    <range from="fh jur z" to="fh jur z" location="UB-FH (FH-Sig)"/>
-    <range from="fh kid" to="fh kid" location="UB-FH (FH-Sig)"/>
-    <range from="fh kla" to="fh kla" location="UB-FH (FH-Sig)"/>
-    <range from="fh kun" to="fh kun" location="UB-FH (FH-Sig)"/>
-    <range from="fh kup" to="fh kup" location="UB-FH (FH-Sig)"/>
-    <range from="fh kyb" to="fh kyb" location="UB-FH (FH-Sig)"/>
-    <range from="fh lit" to="fh lit" location="UB-FH (FH-Sig)"/>
-    <range from="fh mat" to="fh mat" location="UB-FH (FH-Sig)"/>
-    <range from="fh nat" to="fh nat" location="UB-FH (FH-Sig)"/>
-    <range from="fh ori aa" to="fh ori zz" location="UB-FH (FH-Sig)"/>
-    <range from="fh orient /" to="fh orient wl" location="UB-FH (FH-Sig)"/>
-    <range from="fh orient wm" to="fh orient wm" location="UB-MAG-3"/>
-    <range from="fh orient wn" to="fh orient z" location="UB-FH (FH-Sig)"/>
-    <range from="fh ostge" to="fh ostge" location="UB-FH (FH-Sig)"/>
-    <range from="fh pap" to="fh pap" location="UB-FH (FH-Sig)"/>
-    <range from="fh phi" to="fh phi" location="UB-FH (FH-Sig)"/>
-    <range from="fh psy" to="fh psy" location="UB-FH (FH-Sig)"/>
-    <range from="fh rau" to="fh rau" location="UB-FH (FH-Sig)"/>
-    <range from="fh rel" to="fh rel" location="???"/>
-    <range from="fh rom" to="fh rom" location="UB-FH (FH-Sig)"/>
-    <range from="fh sla" to="fh sla" location="UB-FH (FH-Sig)"/>
-    <range from="fh sls 20" to="fh sls 20" location="UB-FH (FH-Sig)"/>
-    <range from="fh sls 28" to="fh sls 30" location="UB-FH (FH-Sig)"/>
-    <range from="fh spo" to="fh spo" location="UB-FH (FH-Sig)"/>
-    <range from="fh spr" to="fh spr" location="UB-FH (FH-Sig)"/>
-    <range from="fh ssl" to="fh ssl" location="UB-FH (FH-Sig)"/>
-    <range from="fh sta" to="fh sta" location="UB-FH (FH-Sig)"/>
-    <range from="fh sued" to="fh sued" location="UB-FH (FH-Sig)"/>
-    <range from="fh tea" to="fh tea" location="UB-FH (FH-Sig)"/>
-    <range from="fh tec" to="fh tec" location="UB-FH (FH-Sig)"/>
-    <range from="fh umw" to="fh umw" location="UB-FH (FH-Sig)"/>
-    <range from="fh vol" to="fh vol" location="UB-FH (FH-Sig)"/>
-    <range from="fh vsp" to="fh vsp" location="UB-FH (FH-Sig)"/>
-    <range from="fh zeitung" to="fh zeitung" location="UB-FH (FH-Sig)"/>
-    <range from="fh zoo" to="fh zoo" location="UB-FH (FH-Sig)"/>
-    <range from="fh zp1" to="fh zp1" location="UB-FH (FH-Sig)"/>
-    <range from="fhkid" to="fhkid" location="UB-FH (FH-Sig)"/>
-    <range from="fk" to="fk" location="UB-MAG-3"/>
-    <range from="fl 000000" to="fl z" location="Fernleihe"/>
-    <range from="fp" to="fp" location="UB-FH-Mikroformen"/>
-    <range from="frsla /" to="frsla z" location="UB-MAG-KELLER"/>
-    <range from="ft" to="ft" location="UB-MAG-3"/>
-    <range from="g 000001" to="g 999999" location="UB-MAG-KELLER"/>
-    <range from="gar" to="gar" location="UB-Auskunft"/>
-    <range from="gb" to="gb" location="UB-MAG-3"/>
-    <range from="ges" to="ges" location="UB-MAG-KELLER"/>
-    <range from="giessen" to="giessen" location="UB-MAG-KELLER"/>
-    <range from="giso" to="giso" location="UB-MAG-3"/>
-    <range from="gr 000002o 2/" to="gr 000002o 2/" location="UB-MAG-KELLER"/>
-    <range from="gr 000002o 20.00" to="gr 000002o 49.99" location="UB-MAG-3"/>
-    <range from="gr 000002o a 49/" to="gr 000002o a 56/" location="UB-MAG-3"/>
-    <range from="gr 000002o b" to="gr 000002o b" location="UB-MAG-3"/>
-    <range from="gr 000002o hass" to="gr 000002o hass" location="UB-MAG-3"/>
-    <range from="gr 000002o kt" to="gr 000002o kt" location="UB-MAG-3"/>
-    <range from="gr 000002o ss" to="gr 000002o ss" location="UB-MAG-3"/>
-    <range from="gr 000002o ztg" to="gr 000002o ztg" location="UB-MAG-KELLER"/>
-    <range from="gr 000002o zz 01" to="gr 000002o zz 20" location="UB-MAG-3"/>
-    <range from="gr 000002o zz 49" to="gr 000002o zz 99" location="UB-MAG-3"/>
-    <range from="gra" to="gra" location="UB-SLS"/>
-    <range from="h 000001" to="h 999999" location="UB-MAG-KELLER"/>
-    <range from="hass" to="hass" location="UB-MAG-3"/>
-    <range from="hr" to="hr" location="UB-SLS"/>
-    <range from="hs 000001" to="hs 009999" location="UB-SLS"/>
-    <range from="hs nf" to="hs nf" location="UB-SLS"/>
-    <range from="hs sg sg" to="hs sg sg" location="UB-SLS"/>
-    <range from="i 000000" to="i 000009" location="UB-MAG-KELLER"/>
-    <range from="i 000010" to="i 999999" location="UB-MAG-KELLER"/>
-    <range from="in" to="in" location="UB-MAG-3"/>
-    <range from="ipod" to="ipod" location="IPODs"/>
-    <range from="j 000000" to="j 999999" location="UB-MAG-KELLER"/>
-    <range from="k 000001" to="k 999999" location="UB-MAG-KELLER"/>
-    <range from="kb" to="kb" location="UB-MAG-3"/>
-    <range from="kochbuch" to="kochbuch" location="Kochbuchaufnahmen für E-Aufnahmen"/>
-    <range from="kopfh" to="kopfh" location="Kopfhörer"/>
-    <range from="korb" to="korb" location="Körbe"/>
-    <range from="kr" to="kr" location="UB-MAG-3"/>
-    <range from="kt a" to="kt a" location="UB-MAG-3"/>
-    <range from="kt b" to="kt b" location="UB-Kartenraum"/>
-    <range from="kt-a" to="kt-a" location="UB-MAG-3"/>
-    <range from="kt-b" to="kt-b" location="UB-Kartenraum"/>
-    <range from="l 000001" to="l 999999" location="UB-MAG-KELLER"/>
-    <range from="landesk" to="landesk" location="UB-MAG-3"/>
-    <range from="lbs ." to="lbs ." location="UB-FH (LBS-Sig)"/>
-    <range from="lbs ang" to="lbs ang" location="UB-FH (LBS-Sig)"/>
-    <range from="lbs ant" to="lbs ant" location="UB-FH (LBS-Sig)"/>
-    <range from="lbs bio" to="lbs bio" location="UB-FH (LBS-Sig)"/>
-    <range from="lbs bot" to="lbs bot" location="UB-FH (LBS-Sig)"/>
-    <range from="lbs che" to="lbs che" location="UB-FH (LBS-Sig)"/>
-    <range from="lbs er" to="lbs er" location="UB-FH (LBS-Sig)"/>
-    <range from="lbs geo" to="lbs geo" location="UB-FH (LBS-Sig)"/>
-    <range from="lbs ger" to="lbs ger" location="UB-FH (LBS-Sig)"/>
-    <range from="lbs ges" to="lbs ges" location="UB-FH (LBS-Sig)"/>
-    <range from="lbs h" to="lbs h" location="UB-FH (LBS-Sig)"/>
-    <range from="lbs ke" to="lbs ke" location="UB-FH (LBS-Sig)"/>
-    <range from="lbs kl" to="lbs kl" location="UB-FH (LBS-Sig)"/>
-    <range from="lbs ku" to="lbs ku" location="UB-FH (LBS-Sig)"/>
-    <range from="lbs ky" to="lbs ky" location="UB-FH (LBS-Sig)"/>
-    <range from="lbs la" to="lbs la" location="UB-FH (LBS-Sig)"/>
-    <range from="lbs lit" to="lbs lit" location="UB-FH (LBS-Sig)"/>
-    <range from="lbs ma" to="lbs ma" location="UB-FH (LBS-Sig)"/>
-    <range from="lbs n" to="lbs n" location="UB-FH (LBS-Sig)"/>
-    <range from="lbs o" to="lbs o" location="UB-FH (LBS-Sig)"/>
-    <range from="lbs pa" to="lbs pa" location="???"/>
-    <range from="lbs phi" to="lbs phi" location="UB-FH (LBS-Sig)"/>
-    <range from="lbs phy" to="lbs phy" location="UB-FH (LBS-Sig)"/>
-    <range from="lbs po" to="lbs po" location="UB-FH (LBS-Sig)"/>
-    <range from="lbs ps" to="lbs ps" location="UB-FH (LBS-Sig)"/>
-    <range from="lbs rec" to="lbs rec" location="UB-FH (LBS-Sig)"/>
-    <range from="lbs rom" to="lbs rom" location="UB-FH (LBS-Sig)"/>
-    <range from="lbs so" to="lbs so" location="UB-FH (LBS-Sig)"/>
-    <range from="lbs spo" to="lbs spo" location="UB-FH (LBS-Sig)"/>
-    <range from="lbs spr" to="lbs spr" location="UB-FH (LBS-Sig)"/>
-    <range from="lbs u" to="lbs u" location="UB-FH (LBS-Sig)"/>
-    <range from="lbs ve" to="lbs vet" location="UB-FH (LBS-Sig)"/>
-    <range from="lbs zoo" to="lbs zoo" location="UB-FH (LBS-Sig)"/>
-    <range from="leihschein" to="leihschein" location="Leihscheine"/>
-    <range from="les" to="les" location="UB-MAG-KELLER"/>
-    <range from="ls" to="ls" location="???"/>
-    <range from="m" to="m 999999" location="UB-MAG-KELLER"/>
-    <range from="mag og" to="mag og" location="UB-MAG-3"/>
-    <range from="mag ug 000" to="mag ug 999" location="UB-MAG-KELLER"/>
-    <range from="mf" to="mf" location="UB-Mikroformen"/>
-    <range from="msla" to="msla" location="UB-MAG-KELLER"/>
-    <range from="mus" to="mus" location="UB-MAG-3"/>
-    <range from="mws" to="mws" location="UB-MAG-3"/>
-    <range from="n 000001" to="n 999999" location="UB-MAG-KELLER"/>
-    <range from="nachl" to="nachl" location="UB-SLS"/>
-    <range from="nl" to="nl" location="UB-MAG-ALTBAU"/>
-    <range from="no" to="no" location="UB-MAG-ALTBAU"/>
-    <range from="nr" to="nr" location="UB-MAG-3"/>
-    <range from="o 000001" to="o 999999" location="UB-MAG-KELLER"/>
-    <range from="osr" to="osr" location="UB-FH-OSR"/>
-    <range from="ostge" to="ostge" location="UB-FH-OSTGE"/>
-    <range from="ott" to="ott" location="UB-MAG-3"/>
-    <range from="p 000001" to="p 999999" location="UB-MAG-KELLER"/>
-    <range from="pap" to="pap" location="UB-MAG-3"/>
-    <range from="phi" to="phs" location="UB-MAG-3"/>
-    <range from="pl" to="pl" location="UB-MAG-3"/>
-    <range from="poststelle" to="poststelle" location="UB-Ausleihe"/>
-    <range from="progr" to="progr" location="UB-MAG-3"/>
-    <range from="q" to="q" location="UB-MAG-KELLER"/>
-    <range from="r 000000" to="r 999999" location="UB-MAG-KELLER"/>
-    <range from="rara" to="rara" location="UB-SLS"/>
-    <range from="s 000001" to="s 999999" location="UB-MAG-KELLER"/>
-    <range from="sa 000000" to="sa 999999" location="UB-MAG-KELLER"/>
-    <range from="sap" to="sap" location="UB-MAG-3"/>
-    <range from="sch" to="sch" location="UB-MAG-3"/>
-    <range from="sem" to="sem" location="Semesterapparate"/>
-    <range from="signatur ermitte" to="signatur ermitte" location="Signatur ermitteln"/>
-    <range from="sls 000020 a" to="sls 000020 a" location="UB-FH-SLS"/>
-    <range from="sls 000020a" to="sls 000020a" location="UB-FH-SLS"/>
-    <range from="sls 000028" to="sls 000030" location="UB-FH-SLS"/>
-    <range from="sp" to="sp" location="UB-MAG-3"/>
-    <range from="ss" to="ss" location="UB-MAG-3"/>
-    <range from="st 000000" to="st 999999" location="UB-MAG-KELLER"/>
-    <range from="stecker" to="stecker" location="Steckerleisten"/>
-    <range from="storn" to="storn" location="UNKLAR"/>
-    <range from="t 000001" to="t 999999" location="UB-MAG-KELLER"/>
-    <range from="thaer" to="thaer" location="UB-SLS"/>
-    <range from="theo" to="theo" location="UB-MAG-3"/>
-    <range from="tz" to="tz" location="UB-MAG-3"/>
-    <range from="u 000001" to="u 999999" location="UB-MAG-KELLER"/>
-    <range from="ub alt" to="ub alt" location="UNKLAR"/>
-    <range from="v 000001" to="v 999999" location="UB-MAG-KELLER"/>
-    <range from="vergriffen" to="vergriffen" location="UNKLAR"/>
-    <range from="vorl" to="vorl" location="UB-MAG-KELLER"/>
-    <range from="vuf" to="vuf" location="UB-MAG-ALTBAU"/>
-    <range from="vv" to="vv" location="UB-MAG-KELLER"/>
-    <range from="w" to="w" location="UB-MAG-KELLER"/>
-    <range from="x 000000" to="x 999999" location="UB-MAG-KELLER"/>
-    <range from="x064" to="x064" location="UB-MAG-Phil1"/>
-    <range from="xfh" to="xfh" location="UB-FH (xfh)"/>
-    <range from="y 000001" to="y 999999" location="UB-MAG-KELLER"/>
-    <range from="z 000001" to="z 999999" location="UB-MAG-KELLER"/>
-    <range from="z nr" to="z nr" location="UB-MAG-3"/>
-    <range from="z.nr 000001" to="z.nr 999999" location="UB-MAG-3"/>
-    <range from="zeitschriftenabt" to="zeitschriftenabt" location="UB-Zeitschriftenlesesaal"/>
-    <range from="zi a" to="zi z" location="UB-Bibliotheksmitarbeiter Zimmer"/>
-    <range from="zls" to="zls" location="UB-Zeitschriftenlesesaal"/>
-    <range from="znr 000001" to="znr 999999" location="UB-MAG-3"/>
-    <range from="ztg" to="ztg" location="UB-MAG-3"/>
-    <range from="zwbibl" to="zwbibl" location="ZNL-FH"/>
-    <range from="zz 000001" to="zz 000020" location="UB-MAG-3"/>
-    <range from="zz 000021" to="zz 000030" location="UB-MAG-3"/>
-    <range from="zz 000049" to="zz 000065" location="UB-MAG-ALTBAU"/>
-    <range from="zz 000066" to="zz 000099" location="UB-MAG-3"/>
-    <range from="/" to="/" location="ZNL-FH"/>
-    <range from="002 agr" to="002 agr" location="ZNL-FH"/>
-    <range from="002 all" to="002 all" location="ZNL-FH"/>
-    <range from="002 bio" to="002 bio" location="ZNL-FH"/>
-    <range from="002 bot" to="002 bot" location="ZNL-FH"/>
-    <range from="002 che a" to="002 che e" location="ZNL-FH"/>
-    <range from="002 che fa 0.1" to="002 che fa 0.3" location="ZNL-FH"/>
-    <range from="002 che fa 0.40" to="002 che fa 0.40" location="ZNL-MAG"/>
-    <range from="002 che fa 0.41" to="002 che fa 0.49" location="ZNL-FH"/>
-    <range from="002 che fa 0.5" to="002 che fa 0.9" location="ZNL-FH"/>
-    <range from="002 che fa 1" to="002 che fa 9" location="ZNL-FH"/>
-    <range from="002 che fb" to="002 che fz" location="ZNL-FH"/>
-    <range from="002 che g" to="002 che z" location="ZNL-FH"/>
-    <range from="002 ern" to="002 ern" location="ZNL-FH"/>
-    <range from="002 geo" to="002 geo" location="ZNL-FH"/>
-    <range from="002 ggr" to="002 ggr" location="ZNL-FH"/>
-    <range from="002 kyb" to="002 kyb" location="ZNL-FH"/>
-    <range from="002 mat" to="002 mat" location="ZNL-FH"/>
-    <range from="002 med" to="002 med" location="ZNL-FH"/>
-    <range from="002 nat" to="002 nat" location="ZNL-FH"/>
-    <range from="002 phy" to="002 phy" location="ZNL-FH"/>
-    <range from="002 tec" to="002 tec" location="ZNL-FH"/>
-    <range from="002 umw" to="002 umw" location="ZNL-FH"/>
-    <range from="002 vet" to="002 vet" location="ZNL-FH"/>
-    <range from="002 w" to="002 w" location="ZNL-FH"/>
-    <range from="002 x" to="002 y" location="ZNL-FH"/>
-    <range from="002 za" to="002 zd" location="ZNL-FH"/>
-    <range from="002 ze" to="002 ze" location="ZNL-FH"/>
-    <range from="002 zoo" to="002 zoo" location="ZNL-FH"/>
-    <range from="130 /" to="130 z" location="ZNL-FH"/>
-    <range from="140" to="140" location="ZNL-MAG"/>
-    <range from="191" to="191" location="ZNL-FH"/>
-    <range from="22.000.00" to="22.999.99" location="ZNL-FH"/>
-    <range from="27.000.00" to="27.999.99" location="ZNL-FH"/>
-    <range from="2o 49.000.00" to="2o 49.999.99" location="ZNL-MAG"/>
-    <range from="2o zz 000049" to="2o zz 000099" location="ZNL-FH"/>
-    <range from="47.000.00" to="47.999.99" location="ZNL-FH"/>
-    <range from="49.000.00" to="49.999.99" location="ZNL-MAG"/>
-    <range from="4o 20.000.00" to="4o 21.999.99" location="ZNL-FH"/>
-    <range from="4o 22.000.00" to="4o 22.999.99" location="ZNL-FH"/>
-    <range from="4o 49.000.00" to="4o 49.999.99" location="ZNL-MAG"/>
-    <range from="4o ss" to="4o ss" location="ZNL-FH"/>
-    <range from="4o zz 000001" to="4o zz 000020" location="ZNL-FH"/>
-    <range from="4o zz 000049" to="4o zz 000099" location="ZNL-FH"/>
-    <range from="4o zz 49" to="4o zz 65" location="ZNL-FH"/>
-    <range from="&lt;002&gt; phy" to="&lt;002&gt; phy" location="ZNL-FH"/>
-    <range from="bap 000011,1" to="bap 000012,9" location="ZNL-FH"/>
-    <range from="bestellt" to="bestellt" location="Temporäre Erwerbungssignatur"/>
-    <range from="fh" to="fh" location="ZNL-FH"/>
-    <range from="in" to="in" location="ZNL-FH"/>
-    <range from="korb" to="korb" location="ZNL-Körbe"/>
-    <range from="lbs anthr" to="lbs anthr" location="ZNL-FH"/>
-    <range from="lbs biol" to="lbs biol" location="ZNL-FH"/>
-    <range from="lbs bot" to="lbs bot" location="ZNL-FH"/>
-    <range from="lbs landw" to="lbs landw" location="ZNL-FH"/>
-    <range from="lbs med" to="lbs med" location="ZNL-FH"/>
-    <range from="lbs umw" to="lbs umw" location="ZNL-FH"/>
-    <range from="lbs zool" to="lbs zool" location="ZNL-FH"/>
-    <range from="ss" to="ss" location="ZNL-FH"/>
-    <range from="stecker" to="stecker" location="ZNL-Stecker"/>
-    <range from="vergriffen" to="vergriffen" location="ZNL-Vergriffen"/>
-    <range from="x" to="x" location="Temporäre Erwerbungssignatur"/>
-    <range from="zeitschriftenraum" to="zeitschriftenraum b" location="ZNL-FH"/>
-    <range from="zeitschriftenraum chemie" to="zeitschriftenraum chemie" location="ZNL-MAG"/>
-    <range from="zur erwerbung be" to="zur erwerbung be"
-        location="Temporäre Erwerbungssignatur"/>
-    <range from="zwbibl" to="zwbibl" location="ZNL-FH"/>
-    <range from="zz 000001" to="zz 000020" location="ZNL-FH"/>
-    <range from="zz 000049" to="zz 000099" location="ZNL-FH"/>
-    <range from="005 a" to="005 z" location="ZHB-FH"/>
-    <range from="205 /" to="205 z" location="ZHB-MAG"/>
-    <range from="4o ss" to="4o ss" location="ZHB-FH"/>
-    <range from="bestellt" to="bestellt" location="Temporäre Erwerbungssignatur"/>
-    <range from="in bearb" to="in bearb" location="Temporäre Erwerbungssignatur"/>
-    <range from="in: 005 z" to="in: 005 z" location="ZHB-FH"/>
-    <range from="korb" to="korb" location="ZHB-Körbe"/>
-    <range from="lbs" to="lbs" location="ZHB-FH"/>
-    <range from="leihschein" to="leihschein" location="ZHB-FH"/>
-    <range from="lokale" to="lokale" location="ZHB-FH"/>
-    <range from="sem" to="sem" location="Semesterapparate"/>
-    <range from="ss" to="ss" location="ZHB-FH"/>
-    <range from="storn" to="storn" location="ZHB-FH"/>
-    <range from="wand" to="wand" location="ZHB-FH"/>
-    <range from="x" to="x" location="Temporäre Erwerbungssignatur"/>
-    <range from="009 /" to="009 /" location="ZP2-FH"/>
-    <range from="009 001" to="009 008" location="ZP2-FH"/>
-    <range from="009 009 aa" to="009 009 az" location="ZP2-FH"/>
+    <department code="000">
+        <!-- temporäre Erwerbungssignatur -->
+        <beginning location="ILN204/CG/UB/Freihand1OG">/</beginning>
+        <beginning location="ILN204/CG/UB/Freihand1OG">000 </beginning>
+        <beginning location="UB-Auskunft">fh auskunft</beginning>
+        <beginning location="UB-Auskunft">fh einzelsign</beginning>
+        <beginning location="UB-Auskunft">fh gkt</beginning>
+        <beginning location="ILN204/CG/UB/Freihand2OG">fh </beginning>
+        <beginning location="UB-MAG-Phil1">064 2o</beginning>
+        <beginning location="UB-MAG-Phil1">064 32</beginning>
+        <beginning location="UB-MAG-Phil1">064 4o 32</beginning>
+        <beginning location="?Stimmt das?">064 4o a</beginning>
+        <beginning location="UB-MAG-Phil1">064 4o b</beginning>
+        <beginning location="UB-MAG-Phil1">064 4o ch</beginning>
+        <beginning location="UB-MAG-Phil1">064 4o g</beginning>
+        <beginning location="UB-MAG-Phil1">064 4o l</beginning>
+        <beginning location="UB-MAG-Phil1">064 4o p</beginning>
+        <beginning location="UB-MAG-Phil1">064 4o s</beginning>
+        <beginning location="UB-MAG-Phil1">064 4o t</beginning>
+        <beginning location="UB-MAG-Phil1">064 4o v</beginning>
+        <beginning location="UB-MAG-Phil1">064 4o w</beginning>
+        <range from="064 4o xb 0" to="064 4o xbh" location="UB-MAG-Phil1"/>
+        <beginning location="UB-MAG-Phil1">064 a</beginning>
+        <beginning location="UB-MAG-Phil1">064 b</beginning>
+        <beginning location="UB-MAG-Phil1">064 ch</beginning>
+        <beginning location="?Stimmt das?">064 einzelsig</beginning>
+        <range from="064 g /" to="064 g z" location="UB-MAG-Phil1"/>
+        <beginning location="?Keine Treffer im OPAC gefunden?">064 gkt</beginning>
+        <beginning location="UB-MAG-Phil1">064 in</beginning>
+        <beginning location="UB-MAG-Phil1">064 l</beginning>
+        <beginning location="UB-MAG-Phil1">064 mikrof</beginning>
+        <beginning location="UB-MAG-Phil1">064 p</beginning>
+        <beginning location="UB-MAG-Phil1">064 s</beginning>
+        <beginning location="UB-MAG-Phil1">064 t</beginning>
+        <beginning location="UB-MAG-Phil1">064 v</beginning>
+        <beginning location="UB-MAG-Phil1">064 w</beginning>
+        <range from="064 xb 1" to="064 xb 999999" location="UB-MAG-Phil1"/>
+        <beginning location="UB-MAG-Phil1">064 xbi</beginning>
+        <beginning location="UB-MAG-Phil1">064 xg</beginning>
+        <beginning location="UB-MAG-Phil1">064 xl</beginning>
+        <beginning location="UB-MAG-Phil1">064 xn</beginning>
+        <beginning location="UB-MAG-Phil1">064 xp</beginning>
+        <beginning location="UB-MAG-Phil1">064 xt</beginning>
+        <beginning location="UB-MAG-Phil1">064 xv</beginning>
+        <beginning location="UB-MAG-Phil1">064 xw</beginning>
+        <range from="064 z 0" to="064 z 9" location="UB-MAG-Phil1"/>
+        <beginning location="UB-MAG-Phil1">064 zs.</beginning>
+        <range from="1 1" to="1 9" location="UB-MAG-KELLER"/>
+        <range from="1/1" to="1/9" location="UB-MAG-KELLER"/>
+        <range from="15.000.00" to="15.999.99" location="Kann entfallen"/>
+        <range from="15/000/00" to="15/999/99" location="Kann entfallen"/>
+        <range from="1600" to="1899" location="UB-SLS"/>
+        <range from="1900" to="1990" location="UB-MAG-ALTBAU"/>
+        <range from="2 1" to="2 9" location="UB-MAG-KELLER"/>
+        <range from="2 zz 49" to="2 zz 99" location="?Keine Treffer im OPAC gefunden?"/>
+        <range from="2/1" to="2/9" location="UB-MAG-KELLER"/>
+        <range from="20.000.00" to="24.999.99" location="UB-MAG-3"/>
+        <range from="27.000.00" to="27.999.99" location="UB-FH-Mikroformen"/>
+        <range from="2o 1 1" to="2o 1 9" location="UB-MAG-KELLER"/>
+        <range from="2o 1/1" to="2o 1/9" location="UB-MAG-KELLER"/>
+        <range from="2o 2 1" to="2o 2 9" location="UB-MAG-KELLER"/>
+        <range from="2o 2/1" to="2o 2/9" location="UB-MAG-KELLER"/>
+        <range from="2o 20.000.00" to="2o 24.999.99" location="UB-MAG-3"/>
+        <range from="2o 3 1" to="2o 3 9" location="UB-MAG-KELLER"/>
+        <range from="2o 3/1" to="2o 3/9" location="UB-MAG-KELLER"/>
+        <range from="2o 4 1" to="2o 4 9" location="UB-MAG-KELLER"/>
+        <range from="2o 4/1" to="2o 4/9" location="UB-MAG-KELLER"/>
+        <range from="2o 40.000.00" to="2o 44.999.99" location="UB-MAG-???"/>
+        <range from="2o 49.000.00" to="2o 49.999.99" location="???"/>
+        <range from="2o 5 1" to="2o 5 9" location="UB-MAG-KELLER"/>
+        <range from="2o 5/1" to="2o 5/9" location="UB-MAG-KELLER"/>
+        <range from="2o 6 1" to="2o 6 9" location="UB-MAG-KELLER"/>
+        <range from="2o 6/1" to="2o 6/9" location="UB-MAG-KELLER"/>
+        <range from="2o a 000049" to="2o a 000056" location="UB-MAG-3"/>
+        <range from="2o a 49" to="2o a 56" location="UB-MAG-3"/>
+        <beginning location="UB-MAG-ALTBAU">2o azz</beginning>
+        <range from="2o b 000049" to="2o b 000073" location="UB-MAG-3"/>
+        <range from="2o b 49" to="2o b 73" location="UB-MAG-3"/>
+        <range from="2o bt 000001/1" to="2o bt 000009/9" location="UB-MAG-3"/>
+        <range from="2o bt 1" to="2o bt 9" location="UB-MAG-3"/>
+        <range from="2o erk 000001" to="2o erk 999999" location="UB-MAG-KELLER"/>
+        <beginning location="UB-MAG-3">2o hass</beginning>
+        <beginning location="UB-MAG-3">2o kr</beginning>
+        <beginning location="UB-MAG-3">2o kt a</beginning>
+        <beginning location="UB-Kartenraum">2o kt b</beginning>
+        <beginning location="UB-MAG-3">2o kt-a</beginning>
+        <beginning location="UB-Kartenraum">2o kt-b</beginning>
+        <beginning location="UB-MAG-3">2o landesk</beginning>
+        <range from="2o ma" to="2o mz" location="UB-MAG-3"/>
+        <beginning location="UB-MAG-3">2o ss</beginning>
+        <beginning location="UB-MAG-3">2o z nr</beginning>
+        <beginning location="UB-MAG-3">2o znr</beginning>
+        <beginning location="UB-MAG-KELLER">2o ztg</beginning>
+        <range from="2o zz 000001" to="2o zz 000020" location="UB-MAG-3"/>
+        <range from="2o zz 000049" to="2o zz 000099" location="UB-MAG-3"/>
+        <range from="2o zz 01" to="2o zz 48" location="UB-MAG-3"/>
+        <range from="2o zz 49" to="2o zz 99" location="UB-MAG-3"/>
+        <range from="3 1" to="3 9" location="UB-MAG-KELLER"/>
+        <range from="3/1" to="3/9" location="UB-MAG-KELLER"/>
+        <beginning location="UB-MAG-Phil1">350</beginning>
+        <range from="4 1" to="4 9" location="UB-MAG-KELLER"/>
+        <range from="4 b 49" to="4 b 73" location="UB-MAG-3"/>
+        <beginning location="UB-MAG-3">4 ss</beginning>
+        <range from="4 zz 49" to="4 zz 99" location="UB-MAG-3"/>
+        <range from="4/1" to="4/9" location="UB-MAG-KELLER"/>
+        <range from="40.000.00" to="44.999.99" location="UB-MAG-???"/>
+        <range from="47.000.00" to="47.999.99" location="UB-FH-Mikroformen"/>
+        <range from="49.000.00" to="49.999.99" location="???"/>
+        <range from="4o 1 1" to="4o 1 9" location="UB-MAG-KELLER"/>
+        <range from="4o 1/1" to="4o 1/9" location="UB-MAG-KELLER"/>
+        <range from="4o 2 1" to="4o 2 9" location="UB-MAG-KELLER"/>
+        <range from="4o 2/1" to="4o 2/9" location="UB-MAG-KELLER"/>
+        <range from="4o 20.000.00" to="4o 24.999.99" location="UB-MAG-3"/>
+        <range from="4o 3 1" to="4o 3 9" location="UB-MAG-KELLER"/>
+        <range from="4o 3/1" to="4o 3/9" location="UB-MAG-KELLER"/>
+        <range from="4o 4 1" to="4o 4 9" location="UB-MAG-KELLER"/>
+        <range from="4o 4/1" to="4o 4/9" location="UB-MAG-KELLER"/>
+        <range from="4o 40.000.00" to="4o 44.999.99" location="UB-MAG-???"/>
+        <range from="4o 49.000.00" to="4o 49.999.99" location="???"/>
+        <range from="4o 6 1" to="4o 6 9" location="UB-MAG-KELLER"/>
+        <range from="4o 6/1" to="4o 6/9" location="UB-MAG-KELLER"/>
+        <range from="4o a 000049" to="4o a 000056" location="UB-MAG-3"/>
+        <range from="4o a 49" to="4o a 56" location="UB-MAG-3"/>
+        <beginning location="UB-MAG-ALTBAU">4o azz</beginning>
+        <range from="4o b 000049" to="4o b 000073" location="UB-MAG-3"/>
+        <range from="4o b 49" to="4o b 73" location="UB-MAG-3"/>
+        <beginning location="UB-MAG-KELLER">4o bel</beginning>
+        <range from="4o bt 000001/1" to="4o bt 000009/9" location="UB-MAG-3"/>
+        <range from="4o bt 1/1" to="4o bt 9/9" location="UB-MAG-3"/>
+        <range from="4o erk 000001" to="4o erk 999999" location="UB-MAG-KELLER"/>
+        <beginning location="UB-MAG-3">4o hass</beginning>
+        <beginning location="UB-MAG-3">4o kr</beginning>
+        <beginning location="UB-MAG-3">4o kt a</beginning>
+        <beginning location="UB-Kartenraum">4o kt b</beginning>
+        <beginning location="UB-MAG-3">4o kt-a</beginning>
+        <beginning location="UB-Kartenraum">4o kt-b</beginning>
+        <beginning location="UB-MAG-3">4o landesk</beginning>
+        <range from="4o ma" to="4o mz" location="UB-MAG-3"/>
+        <beginning location="UB-MAG-3">4o nr</beginning>
+        <beginning location="UB-MAG-3">4o pap</beginning>
+        <beginning location="UB-MAG-3">4o ss</beginning>
+        <beginning location="UB-MAG-3">4o vv</beginning>
+        <beginning location="UB-MAG-3">4o z nr</beginning>
+        <beginning location="UB-MAG-3">4o znr</beginning>
+        <beginning location="UB-MAG-KELLER">4o ztg</beginning>
+        <range from="4o zz 000001" to="4o zz 000020" location="UB-MAG-3"/>
+        <range from="4o zz 000021" to="4o zz 000048" location="UB-MAG-3"/>
+        <range from="4o zz 000049" to="4o zz 000065" location="UB-MAG-ALTBAU"/>
+        <range from="4o zz 000066" to="4o zz 000099" location="UB-MAG-3"/>
+        <range from="4o zz 01" to="4o zz 20" location="UB-MAG-3"/>
+        <range from="4o zz 21" to="4o zz 48" location="UB-MAG-3"/>
+        <range from="4o zz 49" to="4o zz 65" location="UB-MAG-ALTBAU"/>
+        <range from="4o zz 66" to="4o zz 99" location="UB-MAG-3"/>
+        <range from="5 1" to="5 9" location="UB-MAG-KELLER"/>
+        <range from="5/1" to="5/9" location="UB-MAG-KELLER"/>
+        <range from="50.000.00" to="59.999.99" location="Fernleihen"/>
+        <range from="6 1" to="6 9" location="UB-MAG-KELLER"/>
+        <range from="6/1" to="6/9" location="UB-MAG-KELLER"/>
+        <range from="7 1" to="7 9" location="UB-MAG-KELLER"/>
+        <range from="7/1" to="7/9" location="UB-MAG-KELLER"/>
+        <beginning location="ZNL???">&lt;140&gt;</beginning>
+        <range from="a 000001" to="a 000048" location="UB-MAG-KELLER"/>
+        <range from="a 000049" to="a 000056" location="UB-MAG-3"/>
+        <range from="a 000057" to="a 999999" location="UB-MAG-KELLER"/>
+        <range from="a000000000" to="a999999998" location="Fernleihen?"/>
+        <beginning location="UB-MAG-ALTBAU">abw</beginning>
+        <beginning location="UB-MAG-ALTBAU">adk</beginning>
+        <beginning location="UB-MAG-ALTBAU">ags</beginning>
+        <beginning location="UB-MAG-ALTBAU">al</beginning>
+        <beginning location="UB-MAG-3">an</beginning>
+        <beginning location="UB-MAG-ALTBAU">aor</beginning>
+        <beginning location="UB-MAG-ALTBAU">ap</beginning>
+        <beginning location="UB-MAG-ALTBAU">aro</beginning>
+        <beginning location="UB-Auskunft">auskunft cd</beginning>
+        <beginning location="UB-Auskunft">auskunft erd</beginning>
+        <beginning location="UB-Ausleihe">ausleihe</beginning>
+        <beginning location="UB-MAG-ALTBAU">azz</beginning>
+        <range from="b 000001" to="b 000048" location="UB-MAG-KELLER"/>
+        <range from="b 000049" to="b 000073" location="UB-MAG-3"/>
+        <range from="b 000074" to="b 999999" location="UB-MAG-KELLER"/>
+        <range from="bap 000001" to="bap 000010" location="UB-MAG-ALTBAU"/>
+        <range from="bap 000013" to="bap 000026" location="UB-MAG-ALTBAU"/>
+        <beginning location="UB-MAG-3">bap 000027</beginning>
+        <range from="bap 000028" to="bap 000099" location="UB-MAG-ALTBAU"/>
+        <range from="bap auskunft" to="bap z" location="UB-MAG-ALTBAU"/>
+        <beginning location="UB-MAG-KELLER">bel</beginning>
+        <beginning location="Temporäre Erwerbungssignatur">bestellt</beginning>
+        <beginning location="UB-MAG-KELLER">bilderrahmen</beginning>
+        <range from="bt 000001/1" to="bt 000009/9" location="UB-MAG-3"/>
+        <range from="c 000001" to="c 999999" location="UB-MAG-KELLER"/>
+        <range from="cd 000001" to="cd 999999" location="UB-MAG-3"/>
+        <beginning location="UB-Ausleihe">cd z</beginning>
+        <range from="d 000000" to="d 999999" location="UB-MAG-KELLER"/>
+        <range from="da 000000" to="da 999999" location="UB-MAG-KELLER"/>
+        <beginning location="UB-FH (DAF)">daf</beginning>
+        <beginning location="UB-Ausleihe">dvd z</beginning>
+        <range from="e 000000" to="e 000009" location="UB-MAG-KELLER"/>
+        <range from="e 000010" to="e 999999" location="UB-MAG-KELLER"/>
+        <range from="einzels" to="einzelsignatur" location="UB-Auskunft"/>
+        <beginning location="UB-MAG-KELLER">erk</beginning>
+        <range from="f 000001" to="f 999999" location="UB-MAG-KELLER"/>
+        <beginning location="UB-MAG-3">fd</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh agr</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh all</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh altege</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh ang</beginning>
+        <beginning location="UB-FH-Mikroformen">fh arb</beginning>
+        <beginning location="UB-Auskunft">fh auskunft</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh bap</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh bio</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh bliz</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh bot</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh che</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh didge</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh eden</beginning>
+        <beginning location="UB-Auskunft">fh einzelsign</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh ern</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh fil</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh geo</beginning>
+        <range from="fh ger a" to="fh ger z" location="UB-FH (FH-Sig)"/>
+        <range from="fh germ /" to="fh germ z" location="UB-FH (FH-Sig)"/>
+        <beginning location="UB-FH (FH-Sig)">fh ggr</beginning>
+        <beginning location="UB-Auskunft">fh gkt</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh he</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh his</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh hsh</beginning>
+        <range from="fh jur a" to="fh jur y" location="UB-FH (FH-Sig)"/>
+        <beginning location="UB-FH (FH-Sig)">fh jur z</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh kid</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh kla</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh kun</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh kup</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh kyb</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh lit</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh mat</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh nat</beginning>
+        <range from="fh ori aa" to="fh ori zz" location="UB-FH (FH-Sig)"/>
+        <range from="fh orient /" to="fh orient wl" location="UB-FH (FH-Sig)"/>
+        <beginning location="UB-MAG-3">fh orient wm</beginning>
+        <range from="fh orient wn" to="fh orient z" location="UB-FH (FH-Sig)"/>
+        <beginning location="UB-FH (FH-Sig)">fh ostge</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh pap</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh phi</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh psy</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh rau</beginning>
+        <beginning location="???">fh rel</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh rom</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh sla</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh sls 20</beginning>
+        <range from="fh sls 28" to="fh sls 30" location="UB-FH (FH-Sig)"/>
+        <beginning location="UB-FH (FH-Sig)">fh spo</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh spr</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh ssl</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh sta</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh sued</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh tea</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh tec</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh umw</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh vol</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh vsp</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh zeitung</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh zoo</beginning>
+        <beginning location="UB-FH (FH-Sig)">fh zp1</beginning>
+        <beginning location="UB-FH (FH-Sig)">fhkid</beginning>
+        <beginning location="UB-MAG-3">fk</beginning>
+        <range from="fl 000000" to="fl z" location="Fernleihe"/>
+        <beginning location="UB-FH-Mikroformen">fp</beginning>
+        <range from="frsla /" to="frsla z" location="UB-MAG-KELLER"/>
+        <beginning location="UB-MAG-3">ft</beginning>
+        <range from="g 000001" to="g 999999" location="UB-MAG-KELLER"/>
+        <beginning location="UB-Auskunft">gar</beginning>
+        <beginning location="UB-MAG-3">gb</beginning>
+        <beginning location="UB-MAG-KELLER">ges</beginning>
+        <beginning location="UB-MAG-KELLER">giessen</beginning>
+        <beginning location="UB-MAG-3">giso</beginning>
+        <beginning location="UB-MAG-KELLER">gr 000002o 2/</beginning>
+        <range from="gr 000002o 20.00" to="gr 000002o 49.99" location="UB-MAG-3"/>
+        <range from="gr 000002o a 49/" to="gr 000002o a 56/" location="UB-MAG-3"/>
+        <beginning location="UB-MAG-3">gr 000002o b</beginning>
+        <beginning location="UB-MAG-3">gr 000002o hass</beginning>
+        <beginning location="UB-MAG-3">gr 000002o kt</beginning>
+        <beginning location="UB-MAG-3">gr 000002o ss</beginning>
+        <beginning location="UB-MAG-KELLER">gr 000002o ztg</beginning>
+        <range from="gr 000002o zz 01" to="gr 000002o zz 20" location="UB-MAG-3"/>
+        <range from="gr 000002o zz 49" to="gr 000002o zz 99" location="UB-MAG-3"/>
+        <beginning location="UB-SLS">gra</beginning>
+        <range from="h 000001" to="h 999999" location="UB-MAG-KELLER"/>
+        <beginning location="UB-MAG-3">hass</beginning>
+        <beginning location="UB-SLS">hr</beginning>
+        <range from="hs 000001" to="hs 009999" location="UB-SLS"/>
+        <beginning location="UB-SLS">hs nf</beginning>
+        <beginning location="UB-SLS">hs sg sg</beginning>
+        <range from="i 000000" to="i 000009" location="UB-MAG-KELLER"/>
+        <range from="i 000010" to="i 999999" location="UB-MAG-KELLER"/>
+        <beginning location="UB-MAG-3">in</beginning>
+        <beginning location="IPODs">ipod</beginning>
+        <range from="j 000000" to="j 999999" location="UB-MAG-KELLER"/>
+        <range from="k 000001" to="k 999999" location="UB-MAG-KELLER"/>
+        <beginning location="UB-MAG-3">kb</beginning>
+        <beginning location="Kochbuchaufnahmen für E-Aufnahmen">kochbuch</beginning>
+        <beginning location="Kopfhörer">kopfh</beginning>
+        <beginning location="Körbe">korb</beginning>
+        <beginning location="UB-MAG-3">kr</beginning>
+        <beginning location="UB-MAG-3">kt a</beginning>
+        <beginning location="UB-Kartenraum">kt b</beginning>
+        <beginning location="UB-MAG-3">kt-a</beginning>
+        <beginning location="UB-Kartenraum">kt-b</beginning>
+        <range from="l 000001" to="l 999999" location="UB-MAG-KELLER"/>
+        <beginning location="UB-MAG-3">landesk</beginning>
+        <beginning location="UB-FH (LBS-Sig)">lbs .</beginning>
+        <beginning location="UB-FH (LBS-Sig)">lbs ang</beginning>
+        <beginning location="UB-FH (LBS-Sig)">lbs ant</beginning>
+        <beginning location="UB-FH (LBS-Sig)">lbs bio</beginning>
+        <beginning location="UB-FH (LBS-Sig)">lbs bot</beginning>
+        <beginning location="UB-FH (LBS-Sig)">lbs che</beginning>
+        <beginning location="UB-FH (LBS-Sig)">lbs er</beginning>
+        <beginning location="UB-FH (LBS-Sig)">lbs geo</beginning>
+        <beginning location="UB-FH (LBS-Sig)">lbs ger</beginning>
+        <beginning location="UB-FH (LBS-Sig)">lbs ges</beginning>
+        <beginning location="UB-FH (LBS-Sig)">lbs h</beginning>
+        <beginning location="UB-FH (LBS-Sig)">lbs ke</beginning>
+        <beginning location="UB-FH (LBS-Sig)">lbs kl</beginning>
+        <beginning location="UB-FH (LBS-Sig)">lbs ku</beginning>
+        <beginning location="UB-FH (LBS-Sig)">lbs ky</beginning>
+        <beginning location="UB-FH (LBS-Sig)">lbs la</beginning>
+        <beginning location="UB-FH (LBS-Sig)">lbs lit</beginning>
+        <beginning location="UB-FH (LBS-Sig)">lbs ma</beginning>
+        <beginning location="UB-FH (LBS-Sig)">lbs n</beginning>
+        <beginning location="UB-FH (LBS-Sig)">lbs o</beginning>
+        <beginning location="???">lbs pa</beginning>
+        <beginning location="UB-FH (LBS-Sig)">lbs phi</beginning>
+        <beginning location="UB-FH (LBS-Sig)">lbs phy</beginning>
+        <beginning location="UB-FH (LBS-Sig)">lbs po</beginning>
+        <beginning location="UB-FH (LBS-Sig)">lbs ps</beginning>
+        <beginning location="UB-FH (LBS-Sig)">lbs rec</beginning>
+        <beginning location="UB-FH (LBS-Sig)">lbs rom</beginning>
+        <beginning location="UB-FH (LBS-Sig)">lbs so</beginning>
+        <beginning location="UB-FH (LBS-Sig)">lbs spo</beginning>
+        <beginning location="UB-FH (LBS-Sig)">lbs spr</beginning>
+        <beginning location="UB-FH (LBS-Sig)">lbs u</beginning>
+        <range from="lbs ve" to="lbs vet" location="UB-FH (LBS-Sig)"/>
+        <beginning location="UB-FH (LBS-Sig)">lbs zoo</beginning>
+        <beginning location="Leihscheine">leihschein</beginning>
+        <beginning location="UB-MAG-KELLER">les</beginning>
+        <beginning location="???">ls</beginning>
+        <range from="m" to="m 999999" location="UB-MAG-KELLER"/>
+        <beginning location="UB-MAG-3">mag og</beginning>
+        <range from="mag ug 000" to="mag ug 999" location="UB-MAG-KELLER"/>
+        <beginning location="UB-Mikroformen">mf</beginning>
+        <beginning location="UB-MAG-KELLER">msla</beginning>
+        <beginning location="UB-MAG-3">mus</beginning>
+        <beginning location="UB-MAG-3">mws</beginning>
+        <range from="n 000001" to="n 999999" location="UB-MAG-KELLER"/>
+        <beginning location="UB-SLS">nachl</beginning>
+        <beginning location="UB-MAG-ALTBAU">nl</beginning>
+        <beginning location="UB-MAG-ALTBAU">no</beginning>
+        <beginning location="UB-MAG-3">nr</beginning>
+        <range from="o 000001" to="o 999999" location="UB-MAG-KELLER"/>
+        <beginning location="UB-FH-OSR">osr</beginning>
+        <beginning location="UB-FH-OSTGE">ostge</beginning>
+        <beginning location="UB-MAG-3">ott</beginning>
+        <range from="p 000001" to="p 999999" location="UB-MAG-KELLER"/>
+        <beginning location="UB-MAG-3">pap</beginning>
+        <range from="phi" to="phs" location="UB-MAG-3"/>
+        <beginning location="UB-MAG-3">pl</beginning>
+        <beginning location="UB-Ausleihe">poststelle</beginning>
+        <beginning location="UB-MAG-3">progr</beginning>
+        <beginning location="UB-MAG-KELLER">q</beginning>
+        <range from="r 000000" to="r 999999" location="UB-MAG-KELLER"/>
+        <beginning location="UB-SLS">rara</beginning>
+        <range from="s 000001" to="s 999999" location="UB-MAG-KELLER"/>
+        <range from="sa 000000" to="sa 999999" location="UB-MAG-KELLER"/>
+        <beginning location="UB-MAG-3">sap</beginning>
+        <beginning location="UB-MAG-3">sch</beginning>
+        <beginning location="Semesterapparate">sem</beginning>
+        <beginning location="Signatur ermitteln">signatur ermitte</beginning>
+        <beginning location="UB-FH-SLS">sls 000020 a</beginning>
+        <beginning location="UB-FH-SLS">sls 000020a</beginning>
+        <range from="sls 000028" to="sls 000030" location="UB-FH-SLS"/>
+        <beginning location="UB-MAG-3">sp</beginning>
+        <beginning location="UB-MAG-3">ss</beginning>
+        <range from="st 000000" to="st 999999" location="UB-MAG-KELLER"/>
+        <beginning location="Steckerleisten">stecker</beginning>
+        <beginning location="UNKLAR">storn</beginning>
+        <range from="t 000001" to="t 999999" location="UB-MAG-KELLER"/>
+        <beginning location="UB-SLS">thaer</beginning>
+        <beginning location="UB-MAG-3">theo</beginning>
+        <beginning location="UB-MAG-3">tz</beginning>
+        <range from="u 000001" to="u 999999" location="UB-MAG-KELLER"/>
+        <beginning location="UNKLAR">ub alt</beginning>
+        <range from="v 000001" to="v 999999" location="UB-MAG-KELLER"/>
+        <beginning location="UNKLAR">vergriffen</beginning>
+        <beginning location="UB-MAG-KELLER">vorl</beginning>
+        <beginning location="UB-MAG-ALTBAU">vuf</beginning>
+        <beginning location="UB-MAG-KELLER">vv</beginning>
+        <beginning location="UB-MAG-KELLER">w</beginning>
+        <range from="x 000000" to="x 999999" location="UB-MAG-KELLER"/>
+        <beginning location="UB-MAG-Phil1">x064</beginning>
+        <beginning location="UB-FH (xfh)">xfh</beginning>
+        <range from="y 000001" to="y 999999" location="UB-MAG-KELLER"/>
+        <range from="z 000001" to="z 999999" location="UB-MAG-KELLER"/>
+        <beginning location="UB-MAG-3">z nr</beginning>
+        <range from="z.nr 000001" to="z.nr 999999" location="UB-MAG-3"/>
+        <beginning location="UB-Zeitschriftenlesesaal">zeitschriftenabt</beginning>
+        <range from="zi a" to="zi z" location="UB-Bibliotheksmitarbeiter Zimmer"/>
+        <beginning location="UB-Zeitschriftenlesesaal">zls</beginning>
+        <range from="znr 000001" to="znr 999999" location="UB-MAG-3"/>
+        <beginning location="UB-MAG-3">ztg</beginning>
+        <beginning location="ZNL-FH">zwbibl</beginning>
+        <range from="zz 000001" to="zz 000020" location="UB-MAG-3"/>
+        <range from="zz 000021" to="zz 000030" location="UB-MAG-3"/>
+        <range from="zz 000049" to="zz 000065" location="UB-MAG-ALTBAU"/>
+        <range from="zz 000066" to="zz 000099" location="UB-MAG-3"/>
+    </department>
+    <department code="002">
+        <!-- temporäre Erwerbungssignatur -->
+        <beginning location="ILN204/CG/ZNL/Freihand">/</beginning>        
+        <range from="130 /" to="130 z" location="ZNL-FH"/>
+        <range from="140" to="140" location="ZNL-MAG"/>
+        <range from="191" to="191" location="ZNL-FH"/>
+        <range from="22.000.00" to="22.999.99" location="ZNL-FH"/>
+        <range from="27.000.00" to="27.999.99" location="ZNL-FH"/>
+        <range from="2o 49.000.00" to="2o 49.999.99" location="ZNL-MAG"/>
+        <range from="2o zz 000049" to="2o zz 000099" location="ZNL-FH"/>
+        <range from="47.000.00" to="47.999.99" location="ZNL-FH"/>
+        <range from="49.000.00" to="49.999.99" location="ZNL-MAG"/>
+        <range from="4o 20.000.00" to="4o 21.999.99" location="ZNL-FH"/>
+        <range from="4o 22.000.00" to="4o 22.999.99" location="ZNL-FH"/>
+        <range from="4o 49.000.00" to="4o 49.999.99" location="ZNL-MAG"/>
+        <range from="4o ss" to="4o ss" location="ZNL-FH"/>
+        <range from="4o zz 000001" to="4o zz 000020" location="ZNL-FH"/>
+        <range from="4o zz 000049" to="4o zz 000099" location="ZNL-FH"/>
+        <range from="4o zz 49" to="4o zz 65" location="ZNL-FH"/>
+        <range from="&lt;002&gt; phy" to="&lt;002&gt; phy" location="ZNL-FH"/>
+        <range from="bap 000011,1" to="bap 000012,9" location="ZNL-FH"/>
+        <range from="bestellt" to="bestellt" location="Temporäre Erwerbungssignatur"/>
+        <range from="fh" to="fh" location="ZNL-FH"/>
+        <range from="in" to="in" location="ZNL-FH"/>
+        <range from="korb" to="korb" location="ZNL-Körbe"/>
+        <range from="lbs anthr" to="lbs anthr" location="ZNL-FH"/>
+        <range from="lbs biol" to="lbs biol" location="ZNL-FH"/>
+        <range from="lbs bot" to="lbs bot" location="ZNL-FH"/>
+        <range from="lbs landw" to="lbs landw" location="ZNL-FH"/>
+        <range from="lbs med" to="lbs med" location="ZNL-FH"/>
+        <range from="lbs umw" to="lbs umw" location="ZNL-FH"/>
+        <range from="lbs zool" to="lbs zool" location="ZNL-FH"/>
+        <range from="ss" to="ss" location="ZNL-FH"/>
+        <range from="stecker" to="stecker" location="ZNL-Stecker"/>
+        <range from="vergriffen" to="vergriffen" location="ZNL-Vergriffen"/>
+        <range from="x" to="x" location="Temporäre Erwerbungssignatur"/>
+        <range from="zeitschriftenraum" to="zeitschriftenraum b" location="ZNL-FH"/>
+        <range from="zeitschriftenraum chemie" to="zeitschriftenraum chemie" location="ZNL-MAG"/>
+        <range from="zur erwerbung be" to="zur erwerbung be" location="Temporäre Erwerbungssignatur"/>
+        <range from="zwbibl" to="zwbibl" location="ZNL-FH"/>
+        <range from="zz 000001" to="zz 000020" location="ZNL-FH"/>
+        <range from="zz 000049" to="zz 000099" location="ZNL-FH"/>
+    </department>
+    <department code="005">
+        <!-- temporäre Erwerbungssignatur -->
+        <beginning location="ILN204/CG/ZHB/Freihand">/</beginning>        
+        <range from="4o ss" to="4o ss" location="ZHB-FH"/>
+        <range from="bestellt" to="bestellt" location="Temporäre Erwerbungssignatur"/>
+        <range from="in bearb" to="in bearb" location="Temporäre Erwerbungssignatur"/>
+        <range from="in: 005 z" to="in: 005 z" location="ZHB-FH"/>
+        <range from="korb" to="korb" location="ZHB-Körbe"/>
+        <range from="lbs" to="lbs" location="ZHB-FH"/>
+        <range from="leihschein" to="leihschein" location="ZHB-FH"/>
+        <range from="lokale" to="lokale" location="ZHB-FH"/>
+        <range from="sem" to="sem" location="Semesterapparate"/>
+        <range from="ss" to="ss" location="ZHB-FH"/>
+        <range from="storn" to="storn" location="ZHB-FH"/>
+        <range from="wand" to="wand" location="ZHB-FH"/>
+    </department>
 </lbs-ranges>

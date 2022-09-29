@@ -12,18 +12,14 @@
   <!-- ILN 204 UB Gießen: holding-items-hebis-iln204.xsl -->
   <!-- ================================================= -->
 
-  <xsl:variable name="lookup-LBS-ranges" select="document('lbs-ranges-iln204.xml')"/>
-
-  <xsl:template name="get-location">
+  <xsl:template name="check-range">
     <!-- See https://weinert-automation.de/pub/XSLT1.0RangeFilter.pdf -->
-    <xsl:param name="signatur"/>
+    <xsl:param name="signatur-short-lowercase"/>
     <xsl:param name="lbs-range-start"/>
     <xsl:param name="lbs-range-end"/>
     <xsl:param name="i" select="1"/>
     <xsl:param name="o" select="1"/>
-    <xsl:variable name="sortChar"
-      >'0123456789AÄaäBbCcDdEeFfGgHhIiJjKkLlMmNnOÖoöPpQqRrSsßTtUÜuüVvWwXxYyZz'</xsl:variable>
-
+    <xsl:variable name="sortChar">'0123456789aäbcdefghijklmnoöpqrsßtuüvwxyz'</xsl:variable>
     <xsl:variable name="frmFrst">
       <xsl:value-of select="substring($lbs-range-start, $i, 1)"/>
     </xsl:variable>
@@ -49,22 +45,23 @@
       </xsl:choose>
     </xsl:variable>
 
-    <xsl:if test="string-length($signatur) > 1">
+    <xsl:if test="string-length($signatur-short-lowercase) > 1">
       <xsl:choose>
-        <xsl:when test="$i > string-length($signatur) and $o > string-length($signatur)">
+        <xsl:when
+          test="$i > string-length($signatur-short-lowercase) and $o > string-length($signatur-short-lowercase)">
           <xsl:value-of select="1"/>
         </xsl:when>
         <xsl:otherwise>
           <xsl:variable name="idFrst">
-            <xsl:value-of select="substring($signatur, $i, 1)"/>
+            <xsl:value-of select="substring($signatur-short-lowercase, $i, 1)"/>
           </xsl:variable>
           <xsl:variable name="idCmp">
             <xsl:value-of select="string-length(substring-before($sortChar, $idFrst))"/>
           </xsl:variable>
           <xsl:choose>
             <xsl:when test="$idCmp >= $frmCmp and $befCmp >= $idCmp">
-              <xsl:call-template name="get-location">
-                <xsl:with-param name="signatur" select="$signatur"/>
+              <xsl:call-template name="check-range">
+                <xsl:with-param name="signatur-short-lowercase" select="$signatur-short-lowercase"/>
                 <xsl:with-param name="lbs-range-start" select="$lbs-range-start"/>
                 <xsl:with-param name="lbs-range-end" select="$lbs-range-end"/>
                 <xsl:with-param name="i" select="$i + 1"/>
@@ -80,10 +77,64 @@
     </xsl:if>
   </xsl:template>
 
+  <xsl:template name="get-location-by-range">
+    <xsl:param name="signatur-lowercase"/>
+    <xsl:param name="range-list"/>
+    <xsl:param name="last-range"/>
+    <xsl:param name="in-range" select="0"/>
+    <xsl:param name="default-location" select="'Unbekannter Standort'"/>
+    <xsl:variable name="first-range" select="$range-list[1]"/>
+    <xsl:choose>
+      <xsl:when test="$in-range = 1">
+        <xsl:value-of select="$last-range/@location"/>
+      </xsl:when>
+      <xsl:when test="$in-range = 0">
+        <xsl:choose>
+          <xsl:when test="$range-list">
+            <xsl:call-template name="get-location-by-range">
+              <xsl:with-param name="signatur-lowercase" select="$signatur-lowercase"/>
+              <xsl:with-param name="last-range" select="$range-list[1]"/>
+              <xsl:with-param name="range-list" select="$range-list[position() != 1]"/>
+              <xsl:with-param name="in-range">
+                <xsl:call-template name="check-range">
+                  <xsl:with-param name="signatur-short-lowercase">
+                    <!-- shorten signatur and add leading zeros -->
+                    <xsl:call-template name="format-signatur">
+                      <xsl:with-param name="signatur-short-lowercase">
+                        <xsl:value-of
+                          select="substring($signatur-lowercase, 1, string-length($first-range/@to))"
+                        />
+                      </xsl:with-param>
+                    </xsl:call-template>
+                  </xsl:with-param>
+                  <xsl:with-param name="lbs-range-start">
+                    <xsl:call-template name="fill-range">
+                      <xsl:with-param name="range-string" select="$first-range/@from"/>
+                      <xsl:with-param name="range-length" select="string-length($first-range/@to)"/>
+                    </xsl:call-template>
+                  </xsl:with-param>
+                  <xsl:with-param name="lbs-range-end">
+                    <xsl:call-template name="fill-range">
+                      <xsl:with-param name="range-string" select="$first-range/@to"/>
+                      <xsl:with-param name="range-length" select="string-length($first-range/@from)"
+                      />
+                    </xsl:call-template>
+                  </xsl:with-param>
+                </xsl:call-template>
+              </xsl:with-param>
+            </xsl:call-template>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:value-of select="$default-location"/>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:when>
+    </xsl:choose>
+  </xsl:template>
+
   <xsl:template name="fill-range">
     <xsl:param name="range-length"/>
     <xsl:param name="range-string"/>
-
     <xsl:choose>
       <xsl:when test="$range-length > string-length($range-string)">
         <xsl:call-template name="fill-range">
@@ -97,151 +148,117 @@
     </xsl:choose>
   </xsl:template>
 
-  <xsl:template match="testsignatur">
-    <xsl:variable name="abt" select="'000'"/>
-    <xsl:variable name="signatur" select="."/>
-    <permanentLocationId>
-      <xsl:attribute name="testsignatur">
-        <xsl:value-of select="$signatur"/>
-      </xsl:attribute>
+  <xsl:template name="format-signatur">
+    <xsl:param name="signatur-short-lowercase"/>
+    <xsl:variable name="delimiter" select="' '"/>
+    <xsl:choose>
+      <xsl:when test="$delimiter and contains($signatur-short-lowercase, $delimiter)">
+        <xsl:call-template name="add-leading-zeros">
+          <xsl:with-param name="signatur-token" select="$signatur-short-lowercase"/>
+        </xsl:call-template>
+        <xsl:text>-</xsl:text>
+        <xsl:call-template name="format-signatur">
+          <xsl:with-param name="signatur-short-lowercase"
+            select="substring-after($signatur-short-lowercase, $delimiter)"/>
+          <xsl:with-param name="delimiter" select="$delimiter"/>
+        </xsl:call-template>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:call-template name="add-leading-zeros">
+          <xsl:with-param name="signatur-token" select="$signatur-short-lowercase"/>
+        </xsl:call-template>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
 
-      <xsl:for-each select="$lookup-LBS-ranges/lbs-ranges/*">
-        <xsl:variable name="filled-lbs-range-start">
-          <xsl:call-template name="fill-range">
-            <xsl:with-param name="range-string" select="@from"/>
-            <xsl:with-param name="range-length" select="string-length(@to)"/>
+  <xsl:template name="add-leading-zeros">
+    <xsl:param name="signatur-token"/>
+    <xsl:choose>
+      <xsl:when test="string(number($signatur-token)) = 'NaN'">
+        <xsl:value-of select="$signatur-token"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="format-number($signatur-token, '#####0')"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
+  <xsl:template name="remove-leading-zeros">
+    <xsl:param name="range-string"/>
+    <xsl:choose>
+      <xsl:when test="
+          string-length($range-string) >= 6 and
+          not(contains(substring($range-string, 1, 6), ' '))">
+        <xsl:choose>
+          <xsl:when test="string(number(substring($range-string, 1, 6))) != 'NaN'">
+            <xsl:value-of select="translate(substring($range-string, 1, 6), '0', '')"/>
+            <xsl:value-of select="substring($range-string, 7)"/>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:value-of select="substring($range-string, 1, 1)"/>
+            <xsl:call-template name="remove-leading-zeros">
+              <xsl:with-param name="range-string" select="substring($range-string, 2)"/>
+            </xsl:call-template>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:if test="$range-string != ''">
+          <xsl:value-of select="substring($range-string, 1, 1)"/>
+          <xsl:call-template name="remove-leading-zeros">
+            <xsl:with-param name="range-string" select="substring($range-string, 2)"/>
           </xsl:call-template>
-        </xsl:variable>
-        <xsl:variable name="filled-lbs-range-end">
-          <xsl:call-template name="fill-range">
-            <xsl:with-param name="range-string" select="@to"/>
-            <xsl:with-param name="range-length" select="string-length(@from)"/>
-          </xsl:call-template>
-        </xsl:variable>
-        <xsl:variable name="check-get-location">
-          <xsl:call-template name="get-location">
-            <xsl:with-param name="signatur">
-              <xsl:value-of select="
-                  translate(
-                  substring($signatur, 1, string-length(@to)),
-                  'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
-                  'abcdefghijklmnopqrstuvwxyz')"/>
-            </xsl:with-param>
-            <xsl:with-param name="lbs-range-start">
-              <xsl:value-of select="$filled-lbs-range-start"/>
-            </xsl:with-param>
-            <xsl:with-param name="lbs-range-end">
-              <xsl:value-of select="$filled-lbs-range-end"/>
-            </xsl:with-param>
-          </xsl:call-template>
-        </xsl:variable>
-        <xsl:if test="$check-get-location = 1">
-          <xsl:attribute name="standort-range">
-            <xsl:value-of select="@location"/>
-          </xsl:attribute>
         </xsl:if>
-      </xsl:for-each>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
 
-
+  <xsl:template match="testsignatur">
+    <xsl:variable name="signatur" select="."/>
+    <xsl:variable name="abt" select="substring($signatur, 1, 3)"/>
+    <xsl:variable name="signatur-lowercase" select="
+        translate(
+        substring($signatur, 5),
+        'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+        'abcdefghijklmnopqrstuvwxyz')"/>
+    <xsl:variable name="lookup-LBS-ranges" select="document('lbs-ranges-iln204.xml')"/>
+    <permanentLocationId>
       <xsl:choose>
-        <!-- Regeln für UB -->
-        <xsl:when test="$abt = '000'">
-          <xsl:choose>
-            <!-- UB / Standort FH 1.Stock = Freihand1OG -->
-            <!-- UB / Standort FH 2.Stock = Freihand2OG -->
-            <!-- UB / Standort Magazin 3.Stock = UBMag3 -->
-            <!-- UB / Standort Magazin Keller= UBMagKeller -->
-            <!-- UB / Standort Magazin Altbau = UBMagAltbau-->
-            <!-- UB / Standort Magazin Phil 1 Altbau = UBMagPhil1 -->
-            <!-- UB / Standort SLS = UBSLS -->
-            <xsl:when test="starts-with($signatur, '/')">ILN204/CG/UB/Freihand1OG</xsl:when>
-            <!-- Temporäre Erwerbungssignatur - Standort so lassen?-->
-            <xsl:when test="starts-with($signatur, '000 ')">ILN204/CG/UB/Freihand1OG</xsl:when>
-            <!-- RVK-Signaturen -->
-            <xsl:when test="starts-with($signatur, '064 ')">
-              <xsl:choose>
-                <xsl:when test="starts-with($signatur, '064 4o a')"
-                  >ILN204/CG/UB/Freihand2OG</xsl:when>
-                <!-- 064er bei FH Sla -->
-                <xsl:when test="starts-with($signatur, '064 einzelsig')"
-                  >ILN204/CG/UB/Freihand2OG</xsl:when>
-                <!-- 064er bei FH OSTGe -->
-                <xsl:otherwise>ILN204/CG/UB/UBMagPhil1</xsl:otherwise>
-                <!-- Rest der 064er in Mag Phil1 -->
-              </xsl:choose>
-            </xsl:when>
-            <xsl:when test="starts-with($signatur, '1/')">ILN204/CG/UB/UBMagKeller</xsl:when>
-            <!-- KSTR Signaturen im Keller -->
-            <xsl:when test="starts-with($signatur, '16')">ILN204/CG/UB/UBSLS</xsl:when>
-            <!-- Alte Dissen mit EJ vorne im SLS -->
-            <xsl:when test="starts-with($signatur, '17')">ILN204/CG/UB/UBSLS</xsl:when>
-            <!-- Alte Dissen mit EJ vorne im SLS -->
-            <xsl:when test="starts-with($signatur, '18')">ILN204/CG/UB/UBSLS</xsl:when>
-            <!-- Alte Dissen mit EJ vorne im SLS -->
-            <xsl:when test="starts-with($signatur, '19')">ILN204/CG/UB/UBMagAltbau</xsl:when>
-            <!-- Dissen 1900-1990 im Altbau -->
-            <xsl:when test="starts-with($signatur, '2/')">ILN204/CG/UB/UBMagKeller</xsl:when>
-            <!-- KSTR Signaturen im Keller -->
-            <xsl:when test="starts-with($signatur, '20.')">ILN204/CG/UB/UBMag3</xsl:when>
-            <!-- 20er Signaturen im bis 24.999.99 in Mag3 -->
-            <xsl:when test="starts-with($signatur, '21.')">ILN204/CG/UB/UBMag3</xsl:when>
-            <!-- 20er Signaturen im bis 24.999.99 in Mag3 -->
-            <xsl:when test="starts-with($signatur, '22.')">ILN204/CG/UB/UBMag3</xsl:when>
-            <!-- 20er Signaturen im bis 24.999.99 in Mag3 -->
-            <xsl:when test="starts-with($signatur, '23.')">ILN204/CG/UB/UBMag3</xsl:when>
-            <!-- 20er Signaturen im bis 24.999.99 in Mag3 -->
-            <xsl:when test="starts-with($signatur, '24.')">ILN204/CG/UB/UBMag3</xsl:when>
-            <!-- 20er Signaturen im bis 24.999.99 in Mag3 -->
-            <xsl:when test="starts-with($signatur, '27.')">ILN204/CG/UB/UBFreihand1OG</xsl:when>
-            <!-- Arbeitsplatz Mikroformen -->
-            <xsl:when test="starts-with($signatur, '2o 1/')">ILN204/CG/UB/UBMagKeller</xsl:when>
-            <!-- Sind doch eigentlich auch KSTR -->
-            <xsl:when test="starts-with($signatur, '2o 2/')">ILN204/CG/UB/UBMagKeller</xsl:when>
-            <!-- Sind doch eigentlich auch KSTR -->
-            <xsl:when test="starts-with($signatur, '2o 20.')">ILN204/CG/UB/UBMag3</xsl:when>
-            <!-- 20er Signaturen im bis 24.999.99 in Mag3 -->
-            <xsl:when test="starts-with($signatur, '2o 21.')">ILN204/CG/UB/UBMag3</xsl:when>
-            <!-- 20er Signaturen im bis 24.999.99 in Mag3 -->
-            <xsl:when test="starts-with($signatur, '2o 22.')">ILN204/CG/UB/UBMag3</xsl:when>
-            <!-- 20er Signaturen im bis 24.999.99 in Mag3 -->
-            <xsl:when test="starts-with($signatur, '2o 23.')">ILN204/CG/UB/UBMag3</xsl:when>
-            <!-- 20er Signaturen im bis 24.999.99 in Mag3 -->
-            <xsl:when test="starts-with($signatur, '2o 24.')">ILN204/CG/UB/UBMag3</xsl:when>
-            <!-- 20er Signaturen im bis 24.999.99 in Mag3 -->
-
-            <!-- Für später -->
-            <xsl:when test="starts-with($signatur, 'FH ')">ILN204/CG/UB/Freihand2OG</xsl:when>
-            <xsl:when test="starts-with($signatur, '4o ')">ILN204/CD/UB/UBMag</xsl:when>
-            <xsl:when test="starts-with($signatur, 'ADk')">ILN204/CG/UB/Altbau</xsl:when>
-
-            <!-- Sammler schiebt alles andere zum Standort Unbekannt -->
-            <xsl:otherwise>ILN204/CG/UB/Unbekannt</xsl:otherwise>
-          </xsl:choose>
-        </xsl:when>
-        <xsl:when test="$abt = '002'">
-          <xsl:choose>
-            <xsl:when test="starts-with($signatur, '002')">ILN204/CG/ZNL/Freihand</xsl:when>
-            <xsl:when test="starts-with($signatur, '140')">ILN204/CG/ZNL/Mag</xsl:when>
-            <!-- TBD -->
-            <xsl:otherwise>ILN204/CG/ZNL/Freihand</xsl:otherwise>
-          </xsl:choose>
-        </xsl:when>
-        <xsl:when test="$abt = '005'">
-          <xsl:choose>
-            <xsl:when test="starts-with($signatur, '005')">ILN204/CG/ZHB/Freihand</xsl:when>
-            <xsl:when test="starts-with($signatur, '205')">ILN204/CG/ZHB/Mag</xsl:when>
-            <!-- TBD -->
-            <xsl:otherwise>ILN204/CG/ZHB/Freihand</xsl:otherwise>
-          </xsl:choose>
-        </xsl:when>
         <xsl:when test="$abt = '009'">ILN204/CG/ZP2/Freihand</xsl:when>
         <xsl:when test="$abt = '010'">ILN204/CG/ZRW/Freihand</xsl:when>
         <xsl:when test="$abt = '020'">ILN204/CG/ZRW/Freihand</xsl:when>
-
-        <xsl:otherwise>ILN204/CD/DezFB/Fachbibliotheken</xsl:otherwise>
-        <!-- Dezentrale FB als Catchall???  -->
+        <xsl:otherwise>
+          <xsl:attribute name="signatur-eingabe">
+            <xsl:value-of select="$signatur"/>
+          </xsl:attribute>
+          <xsl:variable name="beginning-match">
+            <xsl:for-each select="$lookup-LBS-ranges/lbs-ranges/department[@code = $abt]/beginning">
+              <xsl:variable name="beginning-zeroless">
+                <xsl:call-template name="remove-leading-zeros">
+                  <xsl:with-param name="range-string">
+                    <xsl:value-of select="./text()"/>
+                  </xsl:with-param>
+                </xsl:call-template>
+              </xsl:variable>
+              <xsl:if test="starts-with($signatur-lowercase, $beginning-zeroless)">
+                <xsl:value-of select="./@location"/>
+              </xsl:if>
+            </xsl:for-each>
+          </xsl:variable>
+          <xsl:choose>
+            <xsl:when test="$beginning-match != ''">
+              <xsl:value-of select="$beginning-match"/>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:call-template name="get-location-by-range">
+                <xsl:with-param name="signatur-lowercase" select="$signatur-lowercase"/>
+                <xsl:with-param name="range-list"
+                  select="$lookup-LBS-ranges/lbs-ranges/department[@code = $abt]/range"/>
+              </xsl:call-template>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:otherwise>
       </xsl:choose>
     </permanentLocationId>
   </xsl:template>
-
 </xsl:stylesheet>
