@@ -223,11 +223,11 @@
         'abcdefghijklmnopqrstuvwxyz')"/>
     <xsl:variable name="lookup-LBS-ranges" select="document('lbs-ranges-iln204.xml')"/>
     <permanentLocationId>
-      <xsl:choose>
+<!--      <xsl:choose>
         <xsl:when test="$abt = '009'">ILN204/CG/ZP2/Freihand</xsl:when>
         <xsl:when test="$abt = '010'">ILN204/CG/ZRW/Freihand</xsl:when>
         <xsl:when test="$abt = '020'">ILN204/CG/ZRW/Freihand</xsl:when>
-        <xsl:otherwise>
+        <xsl:otherwise>-->
           <xsl:attribute name="signatur-eingabe">
             <xsl:value-of select="$signatur"/>
           </xsl:attribute>
@@ -257,8 +257,8 @@
               </xsl:call-template>
             </xsl:otherwise>
           </xsl:choose>
-        </xsl:otherwise>
-      </xsl:choose>
+        <!--</xsl:otherwise>
+      </xsl:choose>-->
     </permanentLocationId>
   </xsl:template>
 </xsl:stylesheet>
