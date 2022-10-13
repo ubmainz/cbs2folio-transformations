@@ -10,6 +10,72 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
+                                    <String>hebis/codes2uuid-hebis-iln204.xsl</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>1-pica2instance</String>
+                                        <String>2-holding-items-iln-204</String>
+                                        <String>3-codes2uuid-iln-204</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XML</String>
+                                        <String>XML</String>
+                                        <String>XML</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                        <Byte>2</Byte>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>hebis/pica2instance-new.xsl</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>1-pica2instance</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XML</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>hebis/holding-items-hebis-iln25.xsl</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>1-pica2instance</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XML</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
                                     <String>hebis/holding-items-hebis-iln204-test.xsl</String>
                                 </field>
                                 <field name="scenarioIds">
@@ -35,21 +101,15 @@
                                 <field name="scenarioIds">
                                     <list>
                                         <String>1-pica2instance</String>
-                                        <String>3-holding-items-iln-204</String>
-                                        <String>2-codes2uuid-iln-204</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
                                     <list>
                                         <String>XML</String>
-                                        <String>XML</String>
-                                        <String>XML</String>
                                     </list>
                                 </field>
                                 <field name="scenarioStorageLocations">
                                     <list>
-                                        <Byte>2</Byte>
-                                        <Byte>2</Byte>
                                         <Byte>2</Byte>
                                     </list>
                                 </field>
@@ -147,7 +207,7 @@
                                     <null/>
                                 </field>
                                 <field name="name">
-                                    <String>2-codes2uuid-iln-204</String>
+                                    <String>2-holding-items-iln-204</String>
                                 </field>
                                 <field name="baseURL">
                                     <String></String>
@@ -165,7 +225,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/hebis/codes2uuid-hebis-iln204.xsl</String>
+                                    <String>${pdu}/hebis/holding-items-hebis-iln204.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${pdu}/hebis/testexamples/giessen-440106532-ILN-204-step1.xml</String>
@@ -230,7 +290,7 @@
                                     <null/>
                                 </field>
                                 <field name="name">
-                                    <String>3-holding-items-iln-204</String>
+                                    <String>3-codes2uuid-iln-204</String>
                                 </field>
                                 <field name="baseURL">
                                     <String></String>
@@ -248,7 +308,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/hebis/holding-items-hebis-iln204.xsl</String>
+                                    <String>file:/C:/Users/Freiberg/Documents/cbs2folio-transformations/hebis/codes2uuid-hebis-iln204.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${pdu}/hebis/testexamples/giessen-440106532-ILN-204-step2.xml</String>

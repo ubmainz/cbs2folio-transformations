@@ -710,7 +710,7 @@
                <hrid>184727820</hrid>
                
                
-               <permanentLocationId>ILN204/CD/DezFB/Fachbibliotheken</permanentLocationId>
+               <permanentLocationId>32ad6c56-957e-4a4b-ad1f-458e254b1f6e</permanentLocationId>
                
                
                <callNumber>BAp 27,Jünger 2003</callNumber>
@@ -731,7 +731,7 @@
                         <materialTypeId>Buch</materialTypeId>
                         
                         
-                        <permanentLoanTypeId>9 o Ausleihstatus unbekannt</permanentLoanTypeId>
+                        <permanentLoanTypeId>5170505e-f4a4-4f17-955b-e0ce202889c4</permanentLoanTypeId>
                         
                         
                         <status>
@@ -1479,7 +1479,7 @@
                <hrid>21028126X</hrid>
                
                
-               <permanentLocationId>ILN204/CD/DezFB/Fachbibliotheken</permanentLocationId>
+               <permanentLocationId>32ad6c56-957e-4a4b-ad1f-458e254b1f6e</permanentLocationId>
                
                
                <callNumber>BAp 27,Calderon de la Barca-2,2</callNumber>
@@ -1500,7 +1500,7 @@
                         <materialTypeId>Buch</materialTypeId>
                         
                         
-                        <permanentLoanTypeId>9 o Ausleihstatus unbekannt</permanentLoanTypeId>
+                        <permanentLoanTypeId>5170505e-f4a4-4f17-955b-e0ce202889c4</permanentLoanTypeId>
                         
                         
                         <status>
@@ -2185,7 +2185,7 @@
                <hrid>34203166X</hrid>
                
                
-               <permanentLocationId>ILN204/CD/DezFB/Fachbibliotheken</permanentLocationId>
+               <permanentLocationId>32ad6c56-957e-4a4b-ad1f-458e254b1f6e</permanentLocationId>
                
                
                <callNumber>BAp 27,Kopernicus-3</callNumber>
@@ -2206,7 +2206,7 @@
                         <materialTypeId>Buch</materialTypeId>
                         
                         
-                        <permanentLoanTypeId>9 o Ausleihstatus unbekannt</permanentLoanTypeId>
+                        <permanentLoanTypeId>5170505e-f4a4-4f17-955b-e0ce202889c4</permanentLoanTypeId>
                         
                         
                         <status>
