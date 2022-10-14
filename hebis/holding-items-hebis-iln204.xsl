@@ -17,11 +17,10 @@
   <xsl:template match="permanentLocationId">
     <xsl:variable name="i" select="key('original', .)"/>
     <!-- 209A$f/209G$a ? -->
-    <xsl:variable name="abt" select="$i/datafield[@tag = '209A']/subfield[@code = 'f']"/>
-    <xsl:variable name="signature" select="$i/datafield[@tag = '209A']/subfield[@code = 'a']"/>
+    <xsl:variable name="abt" select="$i/datafield[@tag = '209A']/subfield[@code = 'f']/text()"/>
+    <xsl:variable name="signature" select="$i/datafield[@tag = '209A' and subfield[@code = 'x'] = '00']/subfield[@code = 'a']/text()"/>
     <xsl:variable name="signature-lowercase" select="
-        translate(
-        substring($signature, 5),
+        translate($signature,
         'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
         'abcdefghijklmnopqrstuvwxyz')"/>
 
@@ -36,7 +35,7 @@
           <department code="000">
             <!-- temporäre Erwerbungssignatur -->
             <prefix location="UB-FH">/</prefix>
-            <prefix location="UB-FH (RVK Signaturen)">000 </prefix>
+            <prefix location="UB-FH (RVK Signaturen)">ILN204/CG/UB/Freihand1OG</prefix>
             <prefix location="UB-MAG-Phil1">064 2o</prefix>
             <range from="2o 1/1" to="2o 1/9" location="UB-MAG-KELLER"/>
             <range from="2o 2/1" to="2o 2/9" location="UB-MAG-KELLER"/>
@@ -115,7 +114,7 @@
             <range from="b 000074" to="b 999999" location="UB-MAG-KELLER"/>
             <range from="bap 000001" to="bap 000010" location="UB-MAG-ALTBAU"/>
             <range from="bap 000013" to="bap 000026" location="UB-MAG-ALTBAU"/>
-            <prefix location="UB-MAG-3">bap 000027</prefix>
+            <prefix location="ILN204/CD/UB/UBMag3">bap 27</prefix>
             <range from="bap 000028" to="bap 000099" location="UB-MAG-ALTBAU"/>
             <range from="bap auskunft" to="bap z" location="UB-MAG-ALTBAU"/>
             <prefix location="UB-MAG-KELLER">bel</prefix>
