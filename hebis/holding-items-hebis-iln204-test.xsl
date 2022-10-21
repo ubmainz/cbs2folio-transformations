@@ -255,7 +255,39 @@
   </xsl:template>
 
   <xsl:template match="test-signature">
+    <permanentLocationId>
+      
+      <xsl:variable name="abt" select="substring(., 1, 3)"/>
+    <xsl:variable name="signature" select="substring(., 5)"/>
+    <xsl:variable name="signature-lowercase" select="
+      translate($signature,
+      'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+      'abcdefghijklmnopqrstuvwxyz')"/>
 
-
+      <xsl:attribute name="source-signature">
+        <xsl:value-of select="$signature"/>
+      </xsl:attribute>
+      
+      <xsl:variable name="location-prefix-match">
+      <xsl:call-template name="get-location-by-prefix">
+        <xsl:with-param name="signature-lowercase" select="$signature-lowercase"/>
+        <xsl:with-param name="prefix-list"
+          select="document('lbs-ranges-iln204.xml')/ranges/department[@code = $abt]/prefix"/>
+      </xsl:call-template>
+    </xsl:variable>
+    
+    <xsl:choose>
+      <xsl:when test="$location-prefix-match = ''">
+        <xsl:call-template name="get-location-by-range">
+          <xsl:with-param name="signature-lowercase" select="$signature-lowercase"/>
+          <xsl:with-param name="range-list"
+            select="document('lbs-ranges-iln204.xml')/ranges/department[@code = $abt]/range"/>
+        </xsl:call-template>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="$location-prefix-match"/>
+      </xsl:otherwise>
+    </xsl:choose>
+    </permanentLocationId>    
   </xsl:template>
 </xsl:stylesheet>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <test-signatures>
+    <test-signature>000 BAp 27,Jünger 2003</test-signature>
     <test-signature>000 /</test-signature>
     <test-signature>000 000 AL 19800 T431</test-signature>
     <test-signature>000 064 2o 32.037.03</test-signature>
