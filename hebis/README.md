@@ -35,3 +35,22 @@ To be completed...
 
 The XSL transformation `holding-items-hebis-iln204-test.xsl` can be used to test the permanentLocationID element resulting from the values held in 209a (subfield f = department code, subfield a = signature). The XML file `signatur-test-iln204.xml` can be filled with signatures to be tested. *Note: you have to enter the combination of department code and signature.* In the XML `lbs-ranges-iln204.xml` you can define ranges and beginnings of signature strings and the resulting locations for different department code. Currently, this file contains the LBS mapping ("Konkordanz") of the Giessen University Library.
 
+
+### Transformation steps and test data
+
+The subfolder `testexamples` contains among others MARC XML files for testing the transformation steps of the Harvester.
+
+Starting with the XML sample for Giessen University Library (ILN 204) (`giessen-440106532-ILN-204.xml`), the transformation steps (XSLTs) result in the following XML files.
+
+|------------------------------------------------------------------------------------------------------------------
+| XSLT                               | Input                                | Output                              |
+|-----------------------------------------------------------------------------------------------------------------|
+| pica2instance-new.xsl              | giessen-440106532-ILN-204.xml        | giessen-440106532-ILN-204-step1.xml |
+| relationships.xsl                  | giessen-440106532-ILN-204-step1.xml  | giessen-440106532-ILN-204-step2.xml |
+| holdings-items-hebis-hrid-test.xsl | ...                                  | ...                                 |
+| holding-items-iln-204.xsl          | ...                                  | ...                                 |
+| codes2uuid.xsl                     | ...                                  | ...                                 |
+| codes2uuid-hebis-iln204.xsl        | giessen-440106532-ILN-204-step5.xml  | giessen-440106532-ILN-204-step6.xml |
+|------------------------------------------------------------------------------------------------------------------
+
+In the case of ILN 204, the test XMl files were transformed with Saxon 6.5.5.
