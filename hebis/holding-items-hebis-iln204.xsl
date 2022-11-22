@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-  xmlns:exsl="http://exslt.org/common" version="1.0" exclude-result-prefixes="exsl">
+  xmlns:exsl="http://exslt.org/common" version="1.1" exclude-result-prefixes="exsl">
 
   <xsl:output indent="yes" method="xml" version="1.0" encoding="UTF-8"/>
   <xsl:key name="original" match="original/item" use="@epn"/>
@@ -14,24 +14,14 @@
   <!-- ILN 204 UB Gießen: holding-items-hebis-iln204.xsl -->
   <!-- ================================================= -->
 
-  <xsl:template match="permanentLocationId">
-    <xsl:variable name="i" select="key('original', .)"/>
-    <!-- 209A$f/209G$a ? -->
-    <xsl:variable name="abt" select="$i/datafield[@tag = '209A']/subfield[@code = 'f']/text()"/>
-    <xsl:variable name="signature"
-      select="$i/datafield[@tag = '209A' and subfield[@code = 'x'] = '00']/subfield[@code = 'a']/text()"/>
+  <xsl:template match="test-signature">
+    <xsl:variable name="abt" select="substring(., 1, 3)"/>
+    <xsl:variable name="signature" select="substring(., 5)"/>
     <xsl:variable name="signature-lowercase" select="
         translate($signature,
         'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
         'abcdefghijklmnopqrstuvwxyz')"/>
-
-    <xsl:variable name="standort"
-      select="$i/datafield[(@tag = '209G') and (subfield[@code = 'x'] = '01')]/subfield[@code = 'a']"/>
-    <xsl:variable name="electronicholding"
-      select="(substring($i/../datafield[@tag = '002@']/subfield[@code = '0'], 1, 1) = 'O') and not(substring($i/datafield[@tag = '208@']/subfield[@code = 'b'], 1, 1) = 'a')"/>
-
     <permanentLocationId>
-
       <xsl:variable name="ranges-list">
         <ranges>
           <department code="000">
@@ -369,7 +359,7 @@
             <range from="zz 000049" to="zz 000065" location="ILN204/CG/UB/UBMagAltbau"/>
             <range from="zz 000066" to="zz 000099" location="ILN204/CG/UB/UBMag3"/>
           </department>
-          <department code="002">
+          <department code="002" default-location="ILN204/CG/ZNL/Freihand">
             <prefix location="ILN204/CG/ZNL/Freihand">/</prefix>
             <prefix location="ILN204/CG/ZNL/Freihand">002 agr</prefix>
             <prefix location="ILN204/CG/ZNL/Freihand">002 all</prefix>
@@ -377,7 +367,7 @@
             <prefix location="ILN204/CG/ZNL/Freihand">002 bot</prefix>
             <range from="002 che a" to="002 che e" location="ILN204/CG/ZNL/Freihand"/>
             <range from="002 che fa 0.1" to="002 che fa 0.3" location="ILN204/CG/ZNL/Freihand"/>
-            <prefix location="ILN204/CG/ZNL/Magazain">002 che fa 0.40</prefix>
+            <prefix location="ILN204/CG/ZNL/Magazin">002 che fa 0.40</prefix>
             <range from="002 che fa 0.41" to="002 che fa 0.49" location="ILN204/CG/ZNL/Freihand"/>
             <range from="002 che fa 0.5" to="002 che fa 0.9" location="ILN204/CG/ZNL/Freihand"/>
             <range from="002 che fa 1" to="002 che fa 9" location="ILN204/CG/ZNL/Freihand"/>
@@ -396,11 +386,11 @@
             <prefix location="ILN204/CG/ZNL/Freihand">002 vet</prefix>
             <prefix location="ILN204/CG/ZNL/Freihand">002 zoo</prefix>
             <range from="130 /" to="130 z" location="ILN204/CG/ZNL/Freihand"/>
-            <prefix location="ILN204/CG/ZNL/Magazain">140</prefix>
-            <range from="49.000.00" to="49.999.99" location="ILN204/CG/ZNL/Magazain"/>
+            <prefix location="ILN204/CG/ZNL/Magazin">140</prefix>
+            <range from="49.000.00" to="49.999.99" location="ILN204/CG/ZNL/Magazin"/>
             <range from="4o 20.000.00" to="4o 21.999.99" location="ILN204/CG/ZNL/Freihand"/>
             <range from="4o 22.000.00" to="4o 22.999.99" location="ILN204/CG/ZNL/Freihand"/>
-            <range from="4o 49.000.00" to="4o 49.999.99" location="ILN204/CG/ZNL/Magazain"/>
+            <range from="4o 49.000.00" to="4o 49.999.99" location="ILN204/CG/ZNL/Magazin"/>
             <range from="4o zz 000001" to="4o zz 000020" location="ILN204/CG/ZNL/Freihand"/>
             <range from="4o zz 000049" to="4o zz 000099" location="ILN204/CG/ZNL/Freihand"/>
             <range from="4o zz 49" to="4o zz 65" location="ILN204/CG/ZNL/Freihand"/>
@@ -418,11 +408,11 @@
             <prefix location="">stecker</prefix>
             <range from="zeitschriftenraum" to="zeitschriftenraum b"
               location="ILN204/CG/ZNL/Freihand"/>
-            <prefix location="ILN204/CG/ZNL/Magazain">zeitschriftenraum chemie</prefix>
+            <prefix location="ILN204/CG/ZNL/Magazin">zeitschriftenraum chemie</prefix>
             <range from="zz 000001" to="zz 000020" location="ILN204/CG/ZNL/Freihand"/>
             <range from="zz 000049" to="zz 000099" location="ILN204/CG/ZNL/Freihand"/>
           </department>
-          <department code="005">
+          <department code="005" default-location="ILN204/CG/ZHB/Freihand">
             <prefix location="ILN204/CG/ZHB/Freihand">/</prefix>
             <range from="005 a" to="005 z" location="ILN204/CG/ZHB/Freihand"/>
             <range from="205 /" to="205 z" location="ILN204/CG/ZHB/Magazin"/>
@@ -430,7 +420,7 @@
             <prefix location="">sem</prefix>
             <prefix location="ILN204/CG/ZHB/Freihand">wand</prefix>
           </department>
-          <department code="009">
+          <department code="009" default-location="ILN204/CG/ZP2/Freihand">
             <prefix location="ILN204/CG/ZP2/Freihand">/</prefix>
             <range from="009 aa" to="009 az" location="ILN204/CG/ZP2/Freihand"/>
             <range from="009 ba" to="009 bh" location="ILN204/CG/ZP2/Freihand"/>
@@ -521,13 +511,13 @@
             <prefix location="">stecker</prefix>
             <prefix location="ILN204/CG/ZP2/Freihand">zeit</prefix>
           </department>
-          <department code="010">
+          <department code="010" default-location="ILN204/CG/ZRW/Freihand">
             <range from="/" to="z" location="ILN204/CG/ZRW/Freihand"/>
           </department>
-          <department code="015">
+          <department code="015" default-location="ILN204/CG/DezFB/Fachbibliotheken">
             <range from="/" to="z" location="ILN204/CG/DezFB/Fachbibliotheken"/>
           </department>
-          <department code="020">
+          <department code="020" default-location="ILN204/CG/ZRW/Freihand">
             <range from="/" to="j" location="ILN204/CG/ZRW/Freihand"/>
             <prefix location="">korb</prefix>
             <prefix location="ILN204/CG/ZRW/Freihand">lbs</prefix>
@@ -538,10 +528,10 @@
             <prefix location="">sem</prefix>
             <range from="x" to="z" location="ILN204/CG/ZRW/Freihand"/>
           </department>
-          <department code="021">
+          <department code="021" default-location="ILN204/CG/DezFB/Fachbibliotheken">
             <range from="/" to="z" location="ILN204/CG/DezFB/Fachbibliotheken"/>
           </department>
-          <department code="030">
+          <department code="030" default-location="ILN204/CG/ZP2/Freihand">
             <prefix location="ILN204/CG/ZP2/Freihand">/</prefix>
             <prefix location="ILN204/CG/ZP2/Freihand">009</prefix>
             <prefix location="ILN204/CG/ZP2/Freihand">03.</prefix>
@@ -553,25 +543,25 @@
             <prefix location="ILN204/CG/ZP2/Freihand">030 soz</prefix>
             <prefix location="ILN204/CG/ZP2/Freihand">z</prefix>
           </department>
-          <department code="061">
+          <department code="061" default-location="ILN204/CG/DezFB/Fachbibliotheken">
             <range from="/" to="z" location="ILN204/CG/DezFB/Fachbibliotheken"/>
           </department>
-          <department code="082">
+          <department code="082" default-location="ILN204/CG/DezFB/Fachbibliotheken">
             <range from="/" to="z" location="ILN204/CG/DezFB/Fachbibliotheken"/>
           </department>
-          <department code="084">
+          <department code="084" default-location="ILN204/CG/DezFB/Fachbibliotheken">
             <range from="/" to="z" location="ILN204/CG/DezFB/Fachbibliotheken"/>
           </department>
-          <department code="090">
+          <department code="090" default-location="ILN204/CG/DezFB/Fachbibliotheken">
             <range from="/" to="z" location="ILN204/CG/DezFB/Fachbibliotheken"/>
           </department>
-          <department code="092">
+          <department code="092" default-location="ILN204/CG/DezFB/Fachbibliotheken">
             <range from="/" to="z" location="ILN204/CG/DezFB/Fachbibliotheken"/>
           </department>
-          <department code="100">
+          <department code="100" default-location="ILN204/CG/DezFB/Fachbibliotheken">
             <range from="/" to="z" location="ILN204/CG/DezFB/Fachbibliotheken"/>
           </department>
-          <department code="111">
+          <department code="111" default-location="ILN204/CG/DezFB/Fachbibliotheken">
             <prefix location="ILN204/CG/DezFB/Fachbibliotheken">/</prefix>
             <prefix location="ILN204/CG/DezFB/Fachbibliotheken">0</prefix>
             <prefix location="ILN204/CG/DezFB/Fachbibliotheken">bestellt</prefix>
@@ -610,71 +600,73 @@
             <range from="xvii 000001" to="xvii 999999" location="ILN204/CG/DezFB/Fachbibliotheken"/>
             <range from="zs 000000" to="zs 999999" location="ILN204/CG/DezFB/Fachbibliotheken"/>
           </department>
-          <department code="112">
+          <department code="112" default-location="ILN204/CG/DezFB/Fachbibliotheken">
             <range from="/" to="z" location="ILN204/CG/DezFB/Fachbibliotheken"/>
           </department>
-          <department code="116">
+          <department code="116" default-location="ILN204/CG/DezFB/Fachbibliotheken">
             <range from="sla a" to="sla z" location="ILN204/CG/DezFB/Fachbibliotheken"/>
           </department>
-          <department code="117">
+          <department code="117" default-location="ILN204/CG/DezFB/Fachbibliotheken">
             <range from="/" to="zzzz" location="ILN204/CG/DezFB/Fachbibliotheken"/>
           </department>
-          <department code="120">
+          <department code="120" default-location="ILN204/CG/DezFB/Fachbibliotheken">
             <range from="/" to="z" location="ILN204/CG/DezFB/Fachbibliotheken"/>
           </department>
-          <department code="122">
+          <department code="122" default-location="ILN204/CG/DezFB/Fachbibliotheken">
             <range from="/" to="z" location="ILN204/CG/DezFB/Fachbibliotheken"/>
           </department>
-          <department code="130">
-            <range from="/" to="z" location=""/>
-          </department>
-          <department code="138">
+          <department code="138"  default-location="ILN204/CG/DezFB/Fachbibliotheken">
             <range from="/" to="z" location="ILN204/CG/DezFB/Fachbibliotheken"/>
           </department>
-          <department code="141">
-            <range from="/" to="z" location=""/>
-          </department>
-          <department code="151">
+          <department code="151"  default-location="ILN204/CG/DezFB/Fachbibliotheken">
             <range from="/" to="z" location="ILN204/CG/DezFB/Fachbibliotheken"/>
           </department>
-          <department code="172">
+          <department code="172" default-location="ILN204/CG/DezFB/Fachbibliotheken">
             <range from="/" to="z" location="ILN204/CG/DezFB/Fachbibliotheken"/>
           </department>
-          <department code="192">
+          <department code="192" default-location="ILN204/CG/DezFB/Fachbibliotheken">
             <range from="/" to="z" location="ILN204/CG/DezFB/Fachbibliotheken"/>
           </department>
-          <department code="208">
+          <department code="208" default-location="ILN204/CG/DezFB/Fachbibliotheken">
             <range from="/" to="z" location="ILN204/CG/DezFB/Fachbibliotheken"/>
           </department>
-          <department code="230">
+          <department code="230" default-location="ILN204/CG/DezFB/Fachbibliotheken">
             <range from="/" to="z" location="ILN204/CG/DezFB/Fachbibliotheken"/>
           </department>
-          <department code="290">
+          <department code="290" default-location="ILN204/CG/DezFB/Fachbibliotheken">
             <range from="/" to="z" location="ILN204/CG/DezFB/Fachbibliotheken"/>
           </department>
-          <department code="320">
+          <department code="320" default-location="ILN204/CG/DezFB/Fachbibliotheken">
             <range from="/" to="z" location="ILN204/CG/DezFB/Fachbibliotheken"/>
           </department>
-          <department code="331">
+          <department code="331" default-location="ILN204/CG/DezFB/Fachbibliotheken">
             <range from="/" to="z" location="ILN204/CG/DezFB/Fachbibliotheken"/>
           </department>
-          <department code="351">
+          <department code="351" default-location="ILN204/CG/DezFB/Fachbibliotheken">
             <range from="0" to="z" location="ILN204/CG/DezFB/Fachbibliotheken"/>
           </department>
-          <department code="992">
+          <department code="992" default-location="ILN204/E/E/Onlinemedien">
             <prefix location="ILN204/E/E/Onlinemedien">/</prefix>
           </department>
-          <department code="993">
+          <department code="993" default-location="ILN204/E/E/Onlinemedien">
             <prefix location="ILN204/E/E/Onlinemedien">/</prefix>
             <range from="0" to="z" location="ILN204/E/E/Onlinemedien"/>
           </department>
-          <department code="994">
+          <department code="994" default-location="ILN204/E/E/Onlinemedien">
             <prefix location="ILN204/E/E/Onlinemedien">/</prefix>
             <range from="0" to="z" location="ILN204/E/E/Onlinemedien"/>
           </department>
         </ranges>
       </xsl:variable>
-
+      <xsl:attribute name="source-signature">
+        <xsl:value-of select="$signature"/>
+      </xsl:attribute>     
+      <xsl:attribute name="source-abt">
+        <xsl:value-of select="$abt"/>
+      </xsl:attribute>
+      <xsl:attribute name="source-ppn">
+        <xsl:value-of select="@ppn"/>
+      </xsl:attribute>      
       <xsl:variable name="location-prefix-match">
         <xsl:call-template name="get-location-by-prefix">
           <xsl:with-param name="signature-lowercase" select="$signature-lowercase"/>
@@ -682,13 +674,13 @@
             select="exsl:node-set($ranges-list)/ranges/department[@code = $abt]/prefix"/>
         </xsl:call-template>
       </xsl:variable>
-
       <xsl:choose>
         <xsl:when test="$location-prefix-match = ''">
           <xsl:call-template name="get-location-by-range">
             <xsl:with-param name="signature-lowercase" select="$signature-lowercase"/>
             <xsl:with-param name="range-list"
               select="exsl:node-set($ranges-list)/ranges/department[@code = $abt]/range"/>
+            <xsl:with-param name="default-location" select="exsl:node-set($ranges-list)/ranges/department[@code = $abt]/@default-location"/>
           </xsl:call-template>
         </xsl:when>
         <xsl:otherwise>
@@ -864,7 +856,9 @@
     <xsl:variable name="delimiter" select="' '"/>
 
     <xsl:choose>
-      <xsl:when test="contains($signature-lowercase-trimmed, $delimiter)">
+      <xsl:when test="contains($signature-lowercase-trimmed, $delimiter)
+                  and contains($range-from, $delimiter)
+                  and contains($range-to, $delimiter)">
         <xsl:call-template name="compare-tokens">
           <xsl:with-param name="signature-lowercase-trimmed">
             <xsl:value-of select="substring-after($signature-lowercase-trimmed, $delimiter)"/>
@@ -979,6 +973,7 @@
                   </xsl:with-param>
                 </xsl:call-template>
               </xsl:with-param>
+              <xsl:with-param name="default-location" select="$default-location"/>
             </xsl:call-template>
           </xsl:when>
           <xsl:otherwise>
