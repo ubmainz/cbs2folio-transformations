@@ -1,0 +1,11 @@
+C:\jdk-15.0.2\bin\java.exe -jar C:\SaxonHE10-3J\saxon-he-10.3.jar -xsl:C:\Users\Freiberg\Documents\cbs2folio-transformations\hebis\pica2instance-new.xsl -o:C:\Users\Freiberg\Documents\cbs2folio-transformations\hebis\testexamples\giessen-440106532-ILN-204-step1.xml C:\Users\Freiberg\Documents\cbs2folio-transformations\hebis\testexamples\giessen-440106532-ILN-204.xml
+
+C:\jdk-15.0.2\bin\java.exe -jar C:\SaxonHE10-3J\saxon-he-10.3.jar -xsl:C:\Users\Freiberg\Documents\cbs2folio-transformations\hebis\relationships.xsl -o:C:\Users\Freiberg\Documents\cbs2folio-transformations\hebis\testexamples\giessen-440106532-ILN-204-step2.xml C:\Users\Freiberg\Documents\cbs2folio-transformations\hebis\testexamples\giessen-440106532-ILN-204-step1.xml
+
+C:\jdk-15.0.2\bin\java.exe -jar C:\SaxonHE10-3J\saxon-he-10.3.jar -xsl:C:\Users\Freiberg\Documents\cbs2folio-transformations\hebis\holdings-items-hebis-hrid-test.xsl -o:C:\Users\Freiberg\Documents\cbs2folio-transformations\hebis\testexamples\giessen-440106532-ILN-204-step3.xml C:\Users\Freiberg\Documents\cbs2folio-transformations\hebis\testexamples\giessen-440106532-ILN-204-step2.xml
+
+C:\jdk-15.0.2\bin\java.exe -jar C:\SaxonHE10-3J\saxon-he-10.3.jar -xsl:C:\Users\Freiberg\Documents\cbs2folio-transformations\hebis\holding-items-hebis-iln204.xsl -o:C:\Users\Freiberg\Documents\cbs2folio-transformations\hebis\testexamples\giessen-440106532-ILN-204-step4.xml C:\Users\Freiberg\Documents\cbs2folio-transformations\hebis\testexamples\giessen-440106532-ILN-204-step3.xml
+
+C:\jdk-15.0.2\bin\java.exe -jar C:\SaxonHE10-3J\saxon-he-10.3.jar -xsl:C:\Users\Freiberg\Documents\cbs2folio-transformations\hebis\codes2uuid-hebis.xsl -o:C:\Users\Freiberg\Documents\cbs2folio-transformations\hebis\testexamples\giessen-440106532-ILN-204-step5.xml C:\Users\Freiberg\Documents\cbs2folio-transformations\hebis\testexamples\giessen-440106532-ILN-204-step4.xml
+
+C:\jdk-15.0.2\bin\java.exe -jar C:\SaxonHE10-3J\saxon-he-10.3.jar -xsl:C:\Users\Freiberg\Documents\cbs2folio-transformations\hebis\codes2uuid-hebis-iln204.xsl -o:C:\Users\Freiberg\Documents\cbs2folio-transformations\hebis\testexamples\giessen-440106532-ILN-204-step6.xml C:\Users\Freiberg\Documents\cbs2folio-transformations\hebis\testexamples\giessen-440106532-ILN-204-step5.xml

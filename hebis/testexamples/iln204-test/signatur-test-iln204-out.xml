@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- 
+
+vim commands to format table contents to xml:
+
+%s/</\&lt;/g
+%s/>/\&gt;/g
+%s/\([0-9X]\+\)\s\+\(.*\)/<test-signature ppn="\1">\2<\/test-signature>/g
+
+-->
+<test-signatures>
+    
+   <permanentLocationId source-signature="000 AL 19800 T431" source-abt="000" source-ppn="495168718">ILN204/CG/UB/Freihand1OG</permanentLocationId>
+    
+   <permanentLocationId source-signature="064 2o 32.037.03" source-abt="000" source-ppn="026812673">ILN204/CG/UB/UBMagPhil1</permanentLocationId>
+    
+   <permanentLocationId source-signature="1/10-27" source-abt="000" source-ppn="107799553">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="1828 Giessen Kiesling,Johannes Fridericus" source-abt="000" source-ppn="228764645">ILN204/CG/UB/UBMagPhil1</permanentLocationId>
+    
+   <permanentLocationId source-signature="1909 Marburg Kasch,Fritz" source-abt="000" source-ppn="480781052">ILN204/CG/UB/UBMagAltbau</permanentLocationId>
+    
+   <permanentLocationId source-signature="2/107" source-abt="000" source-ppn="18154042">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="22.641.35" source-abt="000" source-ppn="469303344">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="27.004.78" source-abt="000" source-ppn="101064802">ILN204/CG/UB/Freihand2OG</permanentLocationId>
+    
+   <permanentLocationId source-signature="2o 1/8179" source-abt="000" source-ppn="466480628">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="2o 2/2807" source-abt="000" source-ppn="235128392">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="2o 22.458.34" source-abt="000" source-ppn="365329312">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="2o 4/3415" source-abt="000" source-ppn="101486537">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="2o 40.074.82" source-abt="000" source-ppn="020904290">ILN204/CG/UB/UBMagAltbau</permanentLocationId>
+    
+   <permanentLocationId source-signature="2o A 49/149-9" source-abt="000" source-ppn="056879148">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="2o B 58/509" source-abt="000" source-ppn="094541612">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="2o Bt 1/749-3" source-abt="000" source-ppn="059341807">ILN204/CG/UB/UBMagPhil1</permanentLocationId>
+    
+   <permanentLocationId source-signature="2o Erk 4005" source-abt="000" source-ppn="246014334">ILN204/CG/UB/UBMagPhil1</permanentLocationId>
+    
+   <permanentLocationId source-signature="2o Hass 55/32" source-abt="000" source-ppn="276056124">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="2o Kt-A 125-103" source-abt="000" source-ppn="454444052">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="2o Kt-B 160-5520" source-abt="000" source-ppn="053461991">ILN204/CG/UB/UBSLS</permanentLocationId>
+    
+   <permanentLocationId source-signature="2o Kt-A 125-104" source-abt="000" source-ppn="472835882">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="2o Kt-B 781" source-abt="000" source-ppn="004279085">ILN204/CG/UB/UBSLS</permanentLocationId>
+    
+   <permanentLocationId source-signature="2o Landesk. 207" source-abt="000" source-ppn="091348099">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="2o max. Kt-A 180-2,10, TX" source-abt="000" source-ppn="228901790">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="2o SS 56/2-181,Text" source-abt="000" source-ppn="12672542X">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="2o Ztg 77-1987,Cent.Suppl." source-abt="000" source-ppn="009279555">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="2o ZZ 08/212/5" source-abt="000" source-ppn="047278056">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="2o ZZ 49/94" source-abt="000" source-ppn="047106123">ILN204/CG/UB/UBMagPhil1</permanentLocationId>
+    
+   <permanentLocationId source-signature="3/102" source-abt="000" source-ppn="016872614">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="350 P 1546-44" source-abt="000" source-ppn="097640875">ILN204/CG/UB/UBMagPhil1</permanentLocationId>
+    
+   <permanentLocationId source-signature="4 B 60/944" source-abt="000" source-ppn="177541644">ILN204/CG/UB/UBMagPhil1</permanentLocationId>
+    
+   <permanentLocationId source-signature="4 SS 53/15-80" source-abt="000" source-ppn="050427385">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="4/1009" source-abt="000" source-ppn="113559283">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="47.007.89" source-abt="000" source-ppn="005166640">ILN204/CG/UB/Freihand2OG</permanentLocationId>
+    
+   <permanentLocationId source-signature="4o 1/7344(14)" source-abt="000" source-ppn="231992467">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="4o 2/1188" source-abt="000" source-ppn="198108230">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="4o 22.689.36" source-abt="000" source-ppn="491575467">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="4o 3/9 " source-abt="000" source-ppn="08110202X">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="4o 4/5" source-abt="000" source-ppn="031839932">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="4o A 49/227-3" source-abt="000" source-ppn="095291024">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="4o AZZ 03/115-17,Erg.-Bd." source-abt="000" source-ppn="133537323">ILN204/CG/UB/UBMagAltbau</permanentLocationId>
+    
+   <permanentLocationId source-signature="4o B 49/101-2, 17.Aufl." source-abt="000" source-ppn="018079296">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="4o Bt 1/100" source-abt="000" source-ppn="03446106X">ILN204/CG/UB/UBMagPhil1</permanentLocationId>
+    
+   <permanentLocationId source-signature="4o Erk 4744" source-abt="000" source-ppn="366595598">ILN204/CG/UB/UBMagPhil1</permanentLocationId>
+    
+   <permanentLocationId source-signature="4o Hass. 59/32" source-abt="000" source-ppn="385599153">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="4o Kr 5/2393" source-abt="000" source-ppn="021471347">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="4o Kt-A 78a,2.Aufl." source-abt="000" source-ppn="403103509">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="4o Kt-B 124,Erl." source-abt="000" source-ppn="111304784">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="4o Kt-A 78a,2.Aufl." source-abt="000" source-ppn="403103509">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="4o Kt-B 189" source-abt="000" source-ppn="30162609X">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="4o SS 55/7-9,Atlas, Ausg." source-abt="000" source-ppn="318549530">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="4o Mus 101,1,1,2,Krit. Ber." source-abt="000" source-ppn="188427392">ILN204/CG/UB/UBMagPhil1</permanentLocationId>
+    
+   <permanentLocationId source-signature="4o NR 4401" source-abt="000" source-ppn="072499222">ILN204/CG/UB/UBMagPhil1</permanentLocationId>
+    
+   <permanentLocationId source-signature="4o Pap 53/5-50" source-abt="000" source-ppn="028554108">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="4o SS 49/107-N.F. 176" source-abt="000" source-ppn="198304633">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="4o Ztg 35/5" source-abt="000" source-ppn="048501549">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="4o ZZ 06/143-WS 2013/14" source-abt="000" source-ppn="335563910">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="4o ZZ 22/23-67.2020,Beil." source-abt="000" source-ppn="471034975">ILN204/CG/UB/UBMagPhil1</permanentLocationId>
+    
+   <permanentLocationId source-signature="4o ZZ 49/250-133,3" source-abt="000" source-ppn="093520719">ILN204/CG/UB/UBMagPhil1</permanentLocationId>
+    
+   <permanentLocationId source-signature="4o ZZ 66/192-69,1/2" source-abt="000" source-ppn="366680110">ILN204/CG/UB/UBMagPhil1</permanentLocationId>
+    
+   <permanentLocationId source-signature="A 48650/400" source-abt="000" source-ppn="084777524">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="A 56456/1 fol. 2021 Klinger, Y." source-abt="000" source-ppn="490471285">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="A 57538/2" source-abt="000" source-ppn="130085480">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="ABW Cb 135" source-abt="000" source-ppn="498012352">ILN204/CG/UB/UBMagAltbau</permanentLocationId>
+    
+   <permanentLocationId source-signature="ADk 796.010.N 3" source-abt="000" source-ppn="111544262">ILN204/CG/UB/UBMagAltbau</permanentLocationId>
+    
+   <permanentLocationId source-signature="AGs IBc 713" source-abt="000" source-ppn="057017271">ILN204/CG/UB/UBMagAltbau</permanentLocationId>
+    
+   <permanentLocationId source-signature="AL Ea 52-3,AB" source-abt="000" source-ppn="190647221">ILN204/CG/UB/UBMagAltbau</permanentLocationId>
+    
+   <permanentLocationId source-signature="Ane 1502" source-abt="000" source-ppn="080962998">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="APä Eh 1204" source-abt="000" source-ppn="007374763">ILN204/CG/UB/UBMagAltbau</permanentLocationId>
+    
+   <permanentLocationId source-signature="ARo P 2 19 TOR a 1941/1 (4), 4. Aufl." source-abt="000" source-ppn="092016073">ILN204/CG/UB/UBMagAltbau</permanentLocationId>
+    
+   <permanentLocationId source-signature="AZZ 93/144" source-abt="000" source-ppn="046833579">ILN204/CG/UB/UBMagAltbau</permanentLocationId>
+    
+   <permanentLocationId source-signature="B 1857/1000" source-abt="000" source-ppn="047187220">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="B 49/1637-4,2, 2.Aufl." source-abt="000" source-ppn="009299300">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="B 7425/10 fol.T.Z." source-abt="000" source-ppn="082018189">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="BAp 1,2756/75-24" source-abt="000" source-ppn="326683046">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="BAp 13,3061/1=neueste Ausg." source-abt="000" source-ppn="048546100">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="BAp 27,Corsten" source-abt="000" source-ppn="099772965">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="BAp 29,1440-33" source-abt="000" source-ppn="059229306">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="BAp Auskunft" source-abt="000" source-ppn="069503028"/>
+    
+   <permanentLocationId source-signature="Bel 7/8" source-abt="000" source-ppn="080291899">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="Bt 1/519" source-abt="000" source-ppn="052936902">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="C 160/3950, Erg.Bd" source-abt="000" source-ppn="113033966"/>
+    
+   <permanentLocationId source-signature="CD 1845" source-abt="000" source-ppn="467242925">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="D 16930/1-1" source-abt="000" source-ppn="129386278">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="DA 1715" source-abt="000" source-ppn="348614586">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="E 875/1-11" source-abt="000" source-ppn="183249496">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="E 10303" source-abt="000" source-ppn="098849085">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="Erk 4855" source-abt="000" source-ppn="41584263">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="F 15139 fol.-B(26)" source-abt="000" source-ppn="095781072">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="FD 145" source-abt="000" source-ppn="023613866">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="FH all Z: Bild ..." source-abt="000" source-ppn="474116174">ILN204/CG/UB/Freihand2OG</permanentLocationId>
+    
+   <permanentLocationId source-signature="FH Arbeitsplatz Mikroformen" source-abt="000" source-ppn="047122161">ILN204/CG/UB/Freihand2OG</permanentLocationId>
+    
+   <permanentLocationId source-signature="FK 6.14" source-abt="000" source-ppn="320535983">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="FP 836" source-abt="000" source-ppn="106493949">ILN204/CG/UB/Freihand2OG</permanentLocationId>
+    
+   <permanentLocationId source-signature="FrSla Ce 141" source-abt="000" source-ppn="212747827">ILN204/CG/UB/UBMagPhil1</permanentLocationId>
+    
+   <permanentLocationId source-signature="G 10501/2" source-abt="000" source-ppn="047127163">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="Gb 1001" source-abt="000" source-ppn="310132967">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="Ges 1108" source-abt="000" source-ppn="269552367">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="GiSo 14117" source-abt="000" source-ppn="102602484">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="gr 2o 2/4156" source-abt="000" source-ppn="172401372">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="gr 2o 22.372.31" source-abt="000" source-ppn="305291572">ILN204/CG/UB/UBMagPhil1</permanentLocationId>
+    
+   <permanentLocationId source-signature="gr 2o A 51/159-2" source-abt="000" source-ppn="060258136">ILN204/CG/UB/Freihand2OG</permanentLocationId>
+    
+   <permanentLocationId source-signature="gr 2o B 61/2896-1" source-abt="000" source-ppn="120868555">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="gr 2o Hass. 57/9" source-abt="000" source-ppn="275221687">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="gr 2o Kt-A 132-0" source-abt="000" source-ppn="004036166">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="gr 2o SS 50/68-3,44,Atlas" source-abt="000" source-ppn="055736033">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="gr 2o Ztg 111" source-abt="000" source-ppn="04829179X">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="gr 2o ZZ 18/143" source-abt="000" source-ppn="205777066">ILN204/CG/UB/Freihand2OG</permanentLocationId>
+    
+   <permanentLocationId source-signature="gr 2o ZZ 80/39" source-abt="000" source-ppn="048387851">ILN204/CG/UB/Freihand2OG</permanentLocationId>
+    
+   <permanentLocationId source-signature="H 1140-2" source-abt="000" source-ppn="110340442">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="Hass 49/4-3" source-abt="000" source-ppn="060330104">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="HR A 325 a" source-abt="000" source-ppn="229130445">ILN204/CG/UB/UBSLS</permanentLocationId>
+    
+   <permanentLocationId source-signature="Hs 1" source-abt="000" source-ppn="493714766">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="I 1010" source-abt="000" source-ppn="118923986">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="in: 2o Ztg 31" source-abt="000" source-ppn="048130575">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="/ J-3-66-1" source-abt="000" source-ppn="009961534">ILN204/CG/UB/Freihand1OG</permanentLocationId>
+    
+   <permanentLocationId source-signature="K 10609 fol.-16" source-abt="000" source-ppn="021260192">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="Kr 5/1008" source-abt="000" source-ppn="035552999">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="Kt-A 33,1" source-abt="000" source-ppn="120715880">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="Kt-B 140-3909,Erl." source-abt="000" source-ppn="103619178">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="L 1441/70" source-abt="000" source-ppn="047459131">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="Landesk.1" source-abt="000" source-ppn="061415138">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="Les 1006" source-abt="000" source-ppn="10832799X">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="M 10546" source-abt="000" source-ppn="107967189">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="MAG OG Sp 350" source-abt="000" source-ppn="072310847">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="MAG UG 38 G Ab 31" source-abt="000" source-ppn="099944367">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="MSla -- 11" source-abt="000" source-ppn="021246319">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="Mus 244" source-abt="000" source-ppn="105399329">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="N 1386(115)" source-abt="000" source-ppn="197386636">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="Nachl. Bausch 26.2" source-abt="000" source-ppn="06569936X">ILN204/CG/UB/UBSLS</permanentLocationId>
+    
+   <permanentLocationId source-signature="NL 1 / 10.92" source-abt="000" source-ppn="047129700">ILN204/CG/UB/UBMagAltbau</permanentLocationId>
+    
+   <permanentLocationId source-signature="NO 1.0 / 50.2 -11-" source-abt="000" source-ppn="061516961">ILN204/CG/UB/UBMagAltbau</permanentLocationId>
+    
+   <permanentLocationId source-signature="Nr 118" source-abt="000" source-ppn="047714492">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="O 1236/102" source-abt="000" source-ppn="187553580">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="OSR 1/1195" source-abt="000" source-ppn="095497951">ILN204/CG/UB/Freihand1OG</permanentLocationId>
+    
+   <permanentLocationId source-signature="Ott 102-3" source-abt="000" source-ppn="22608602X">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="P 12850" source-abt="000" source-ppn="227573463">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="Pl. A 1,4" source-abt="000" source-ppn="340134380">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="Progr. Aachen Gymn. 1835" source-abt="000" source-ppn="281081778">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="Q 15390 fol." source-abt="000" source-ppn="090512243">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="R 10220-2,4" source-abt="000" source-ppn="309248418">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="Rara 1006" source-abt="000" source-ppn="335848869">ILN204/CG/UB/UBSLS</permanentLocationId>
+    
+   <permanentLocationId source-signature="S 12092/6" source-abt="000" source-ppn="223413615"/>
+    
+   <permanentLocationId source-signature="SAp 1,5501-11" source-abt="000" source-ppn="025393820">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="Schulbuch-Slg 1/6015" source-abt="000" source-ppn="016497333">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="SS 49/1-16" source-abt="000" source-ppn="060010673">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="T 142/10" source-abt="000" source-ppn="029893623">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="Thaer 1012" source-abt="000" source-ppn="064943631">ILN204/CG/UB/UBSLS</permanentLocationId>
+    
+   <permanentLocationId source-signature="Theol.Sem. A 120" source-abt="000" source-ppn="029313651">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="U 1110/7000" source-abt="000" source-ppn="061090565">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="V 10 149" source-abt="000" source-ppn="094416729">ILN204/CG/UB/UBMagPhil1</permanentLocationId>
+    
+   <permanentLocationId source-signature="Vorl.Giessen-2003,SS" source-abt="000" source-ppn="109984544">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="VuF &lt;081&gt; Gc 20" source-abt="000" source-ppn="047530456">ILN204/CG/UB/UBMagAltbau</permanentLocationId>
+    
+   <permanentLocationId source-signature="VV 125" source-abt="000" source-ppn="046822585">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="W 1082" source-abt="000" source-ppn="053574931">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="X 11070 fol." source-abt="000" source-ppn="404749666">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="Y 13700" source-abt="000" source-ppn="432304975">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="Z 10496" source-abt="000" source-ppn="199276994">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+    
+   <permanentLocationId source-signature="Z Nr 127" source-abt="000" source-ppn="04792893X">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="Ztg 160" source-abt="000" source-ppn="047791306">ILN204/CG/UB/UBMag3</permanentLocationId>
+    
+   <permanentLocationId source-signature="ZZ 10/1-2,4" source-abt="000" source-ppn="220302871"/>
+    
+   <permanentLocationId source-signature="ZZ 21/26-101" source-abt="000" source-ppn="344361527"/>
+    
+   <permanentLocationId source-signature="ZZ 49/101-28,Suppl.2" source-abt="000" source-ppn="056484569"/>
+    
+   <permanentLocationId source-signature="ZZ 66/102" source-abt="000" source-ppn="046854290"/>
+    
+   <permanentLocationId source-signature="/" source-abt="002" source-ppn="463419332">ILN204/CG/ZNL/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="AGR 117" source-abt="002" source-ppn="051001926">ILN204/CG/ZNL/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="che Fa 0.40-10,EB,A,2, 8.Aufl." source-abt="002" source-ppn="021194807">ILN204/CG/ZNL/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="A 203" source-abt="130" source-ppn="02151884X"/>
+    
+   <permanentLocationId source-signature="mag 1/1009" source-abt="140" source-ppn="080114342"/>
+    
+   <permanentLocationId source-signature="49.005.13" source-abt="002" source-ppn="004538595">ILN204/CG/ZNL/Magazin</permanentLocationId>
+    
+   <permanentLocationId source-signature="4o 21.672.18" source-abt="002" source-ppn="048947709">ILN204/CG/ZNL/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="4o 22.008.25-4" source-abt="002" source-ppn="051044803">ILN204/CG/ZNL/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="4o 49.015.82" source-abt="002" source-ppn="01287017X">ILN204/CG/ZNL/Magazin</permanentLocationId>
+    
+   <permanentLocationId source-signature="4o ZZ 08/78" source-abt="002" source-ppn="198205902">ILN204/CG/ZNL/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="4o ZZ 54/98" source-abt="002" source-ppn="111494613">ILN204/CG/ZNL/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="4o ZZ 49/304" source-abt="002" source-ppn="047536632">ILN204/CG/ZNL/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="BAp 11,333/5-1997,4" source-abt="002" source-ppn="056881703">ILN204/CG/ZNL/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="in: 43 f / Un 32 l s" source-abt="002" source-ppn="180736043">ILN204/CG/ZNL/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="SS 73/99a-200,1,1" source-abt="002" source-ppn="004986539">ILN204/CG/ZNL/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="Zeitschriftenraum" source-abt="002" source-ppn="496091344">ILN204/CG/ZNL/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="Zeitschriftenraum Chemie" source-abt="002" source-ppn="120775948">ILN204/CG/ZNL/Magazin</permanentLocationId>
+    
+   <permanentLocationId source-signature="ZZ 03/6-1" source-abt="002" source-ppn="12050958X">ILN204/CG/ZNL/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="ZZ 76/163-39" source-abt="002" source-ppn="031203043">ILN204/CG/ZNL/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="/" source-abt="005" source-ppn="458998702">ILN204/CG/ZHB/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="005 AE 11000 B864-19" source-abt="005" source-ppn="030565278">ILN204/CG/ZHB/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="205 AK 24300 S416-1" source-abt="005" source-ppn="077773349">ILN204/CG/ZHB/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="Wandkarte" source-abt="005" source-ppn="207317003">ILN204/CG/ZHB/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="/" source-abt="009" source-ppn="316104280">ILN204/CG/ZP2/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="AK 15500 F912" source-abt="009" source-ppn="315274840">ILN204/CG/ZP2/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="Did mat Na 152" source-abt="009" source-ppn="074616536">ILN204/CG/ZP2/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="040.D.105" source-abt="009" source-ppn="348632924">ILN204/CG/ZP2/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="MC 265" source-abt="009" source-ppn="178720348">ILN204/CG/ZP2/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="Na 632" source-abt="009" source-ppn="012787264">ILN204/CG/ZP2/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="Qs 209" source-abt="009" source-ppn="074530453">ILN204/CG/ZP2/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="REs 42" source-abt="009" source-ppn="216739497">ILN204/CG/ZP2/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="Zeitschriftenauslage" source-abt="009" source-ppn="308378164">ILN204/CG/ZP2/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="01 Aa 1897" source-abt="009" source-ppn="061594253">ILN204/CG/ZP2/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="/" source-abt="015" source-ppn="109447050">ILN204/CG/DezFB/Fachbibliotheken</permanentLocationId>
+    
+   <permanentLocationId source-signature="A 10122" source-abt="020" source-ppn="096212381">ILN204/CG/ZRW/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="LBS 1/12, 2.Aufl. (5.Ex.)" source-abt="020" source-ppn="21382907X">ILN204/CG/ZRW/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="Mag Y 550" source-abt="020" source-ppn="268735832">ILN204/CG/ZRW/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="N 01/1/17, 19.Aufl." source-abt="020" source-ppn="019139527">ILN204/CG/ZRW/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="X 100" source-abt="020" source-ppn="04729843X">ILN204/CG/ZRW/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="&lt;021&gt; 0/1" source-abt="021" source-ppn="053909917">ILN204/CG/DezFB/Fachbibliotheken</permanentLocationId>
+    
+   <permanentLocationId source-signature="/" source-abt="030" source-ppn="300313489">ILN204/CG/ZP2/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="009 LP 10000 R425-A,1,1" source-abt="030" source-ppn="024573396">ILN204/CG/ZP2/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="03.0 Rb 9" source-abt="030" source-ppn="055001572">ILN204/CG/ZP2/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="030 Diplom 13.14" source-abt="030" source-ppn="46186486X">ILN204/CG/ZP2/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="030 kup Ta 147" source-abt="030" source-ppn="013052713">ILN204/CG/ZP2/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="030 Mag 10.47" source-abt="030" source-ppn="438480597">ILN204/CG/ZP2/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="030 mus Aa 2.5" source-abt="030" source-ppn="093436688">ILN204/CG/ZP2/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="030 pol Ab 0.11" source-abt="030" source-ppn="39913557X">ILN204/CG/ZP2/Freihand</permanentLocationId>
+    
+   <permanentLocationId source-signature="030 soz Ie 9.2" source-abt="030" source-ppn="326778217">ILN204/CG/ZP2/Freihand</permanentLocationId>    
+
+</test-signatures>
