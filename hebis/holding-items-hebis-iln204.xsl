@@ -14,13 +14,20 @@
   <!-- ILN 204 UB Gießen: holding-items-hebis-iln204.xsl -->
   <!-- ================================================= -->
 
-  <xsl:template match="test-signature">
-    <xsl:variable name="abt" select="substring(., 1, 3)"/>
-    <xsl:variable name="signature" select="substring(., 5)"/>
+    <xsl:variable name="i" select="key('original', .)"/>
+    <!-- 209A$f/209G$a ? -->
+    <xsl:variable name="abt" select="$i/datafield[@tag = '209A']/subfield[@code = 'f']/text()"/>
+    <xsl:variable name="signature"
+      select="$i/datafield[@tag = '209A' and subfield[@code = 'x'] = '00']/subfield[@code = 'a']/text()"/>
     <xsl:variable name="signature-lowercase" select="
         translate($signature,
         'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
         'abcdefghijklmnopqrstuvwxyz')"/>
+
+    <xsl:variable name="standort"
+      select="$i/datafield[(@tag = '209G') and (subfield[@code = 'x'] = '01')]/subfield[@code = 'a']"/>
+    <xsl:variable name="electronicholding"
+      select="(substring($i/../datafield[@tag = '002@']/subfield[@code = '0'], 1, 1) = 'O') and not(substring($i/datafield[@tag = '208@']/subfield[@code = 'b'], 1, 1) = 'a')"/>
     <permanentLocationId>
       <xsl:variable name="ranges-list">
         <ranges>
@@ -657,16 +664,7 @@
             <range from="0" to="z" location="ILN204/E/E/Onlinemedien"/>
           </department>
         </ranges>
-      </xsl:variable>
-      <xsl:attribute name="source-signature">
-        <xsl:value-of select="$signature"/>
-      </xsl:attribute>     
-      <xsl:attribute name="source-abt">
-        <xsl:value-of select="$abt"/>
-      </xsl:attribute>
-      <xsl:attribute name="source-ppn">
-        <xsl:value-of select="@ppn"/>
-      </xsl:attribute>      
+      </xsl:variable>  
       <xsl:variable name="location-prefix-match">
         <xsl:call-template name="get-location-by-prefix">
           <xsl:with-param name="signature-lowercase" select="$signature-lowercase"/>
