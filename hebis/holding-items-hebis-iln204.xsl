@@ -14,6 +14,7 @@
   <!-- ILN 204 UB Gießen: holding-items-hebis-iln204.xsl -->
   <!-- ================================================= -->
 
+  <xsl:template match="permanentLocationId">
     <xsl:variable name="i" select="key('original', .)"/>
     <!-- 209A$f/209G$a ? -->
     <xsl:variable name="abt" select="$i/datafield[@tag = '209A']/subfield[@code = 'f']/text()"/>
