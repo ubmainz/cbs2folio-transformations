@@ -15,11 +15,11 @@ vim commands to format table contents to xml:
     
    <permanentLocationId source-signature="1/10-27" source-abt="000" source-ppn="107799553">ILN204/CG/UB/UBMagKeller</permanentLocationId>
     
-   <permanentLocationId source-signature="1828 Giessen Kiesling,Johannes Fridericus" source-abt="000" source-ppn="228764645">ILN204/CG/UB/UBMagPhil1</permanentLocationId>
+   <permanentLocationId source-signature="1828 Giessen Kiesling,Johannes Fridericus" source-abt="000" source-ppn="228764645">ILN204/CG/UB/UBSLS</permanentLocationId>
     
    <permanentLocationId source-signature="1909 Marburg Kasch,Fritz" source-abt="000" source-ppn="480781052">ILN204/CG/UB/UBMagAltbau</permanentLocationId>
     
-   <permanentLocationId source-signature="2/107" source-abt="000" source-ppn="18154042">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+   <permanentLocationId source-signature="2/107" source-abt="000" source-ppn="018154042">ILN204/CG/UB/UBMagKeller</permanentLocationId>
     
    <permanentLocationId source-signature="22.641.35" source-abt="000" source-ppn="469303344">ILN204/CG/UB/UBMag3</permanentLocationId>
     
@@ -35,13 +35,13 @@ vim commands to format table contents to xml:
     
    <permanentLocationId source-signature="2o 40.074.82" source-abt="000" source-ppn="020904290">ILN204/CG/UB/UBMagAltbau</permanentLocationId>
     
-   <permanentLocationId source-signature="2o A 49/149-9" source-abt="000" source-ppn="056879148">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+   <permanentLocationId source-signature="2o A 49/149-9" source-abt="000" source-ppn="056879148">ILN204/CG/UB/UBMag3</permanentLocationId>
     
-   <permanentLocationId source-signature="2o B 58/509" source-abt="000" source-ppn="094541612">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+   <permanentLocationId source-signature="2o B 58/509" source-abt="000" source-ppn="094541612">ILN204/CG/UB/UBMag3</permanentLocationId>
     
-   <permanentLocationId source-signature="2o Bt 1/749-3" source-abt="000" source-ppn="059341807">ILN204/CG/UB/UBMagPhil1</permanentLocationId>
+   <permanentLocationId source-signature="2o Bt 1/749-3" source-abt="000" source-ppn="059341807">ILN204/CG/UB/UBMag3</permanentLocationId>
     
-   <permanentLocationId source-signature="2o Erk 4005" source-abt="000" source-ppn="246014334">ILN204/CG/UB/UBMagPhil1</permanentLocationId>
+   <permanentLocationId source-signature="2o Erk 4005" source-abt="000" source-ppn="246014334">ILN204/CG/UB/UBMagKeller</permanentLocationId>
     
    <permanentLocationId source-signature="2o Hass 55/32" source-abt="000" source-ppn="276056124">ILN204/CG/UB/UBMag3</permanentLocationId>
     
@@ -63,13 +63,13 @@ vim commands to format table contents to xml:
     
    <permanentLocationId source-signature="2o ZZ 08/212/5" source-abt="000" source-ppn="047278056">ILN204/CG/UB/UBMag3</permanentLocationId>
     
-   <permanentLocationId source-signature="2o ZZ 49/94" source-abt="000" source-ppn="047106123">ILN204/CG/UB/UBMagPhil1</permanentLocationId>
+   <permanentLocationId source-signature="2o ZZ 49/94" source-abt="000" source-ppn="047106123">ILN204/CG/UB/UBMag3</permanentLocationId>
     
    <permanentLocationId source-signature="3/102" source-abt="000" source-ppn="016872614">ILN204/CG/UB/UBMagKeller</permanentLocationId>
     
    <permanentLocationId source-signature="350 P 1546-44" source-abt="000" source-ppn="097640875">ILN204/CG/UB/UBMagPhil1</permanentLocationId>
     
-   <permanentLocationId source-signature="4 B 60/944" source-abt="000" source-ppn="177541644">ILN204/CG/UB/UBMagPhil1</permanentLocationId>
+   <permanentLocationId source-signature="4 B 60/944" source-abt="000" source-ppn="177541644">ILN204/CG/UB/UBMag3</permanentLocationId>
     
    <permanentLocationId source-signature="4 SS 53/15-80" source-abt="000" source-ppn="050427385">ILN204/CG/UB/UBMag3</permanentLocationId>
     
@@ -83,19 +83,19 @@ vim commands to format table contents to xml:
     
    <permanentLocationId source-signature="4o 22.689.36" source-abt="000" source-ppn="491575467">ILN204/CG/UB/UBMag3</permanentLocationId>
     
-   <permanentLocationId source-signature="4o 3/9 " source-abt="000" source-ppn="08110202X">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+   <permanentLocationId source-signature="4o 3/9" source-abt="000" source-ppn="08110202X">ILN204/CG/UB/UBMagKeller</permanentLocationId>
     
    <permanentLocationId source-signature="4o 4/5" source-abt="000" source-ppn="031839932">ILN204/CG/UB/UBMagKeller</permanentLocationId>
     
-   <permanentLocationId source-signature="4o A 49/227-3" source-abt="000" source-ppn="095291024">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+   <permanentLocationId source-signature="4o A 49/227-3" source-abt="000" source-ppn="095291024">ILN204/CG/UB/UBMag3</permanentLocationId>
     
    <permanentLocationId source-signature="4o AZZ 03/115-17,Erg.-Bd." source-abt="000" source-ppn="133537323">ILN204/CG/UB/UBMagAltbau</permanentLocationId>
     
-   <permanentLocationId source-signature="4o B 49/101-2, 17.Aufl." source-abt="000" source-ppn="018079296">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+   <permanentLocationId source-signature="4o B 49/101-2, 17.Aufl." source-abt="000" source-ppn="018079296">ILN204/CG/UB/UBMag3</permanentLocationId>
     
-   <permanentLocationId source-signature="4o Bt 1/100" source-abt="000" source-ppn="03446106X">ILN204/CG/UB/UBMagPhil1</permanentLocationId>
+   <permanentLocationId source-signature="4o Bt 1/100" source-abt="000" source-ppn="03446106X">ILN204/CG/UB/UBMag3</permanentLocationId>
     
-   <permanentLocationId source-signature="4o Erk 4744" source-abt="000" source-ppn="366595598">ILN204/CG/UB/UBMagPhil1</permanentLocationId>
+   <permanentLocationId source-signature="4o Erk 4744" source-abt="000" source-ppn="366595598">ILN204/CG/UB/UBMag3</permanentLocationId>
     
    <permanentLocationId source-signature="4o Hass. 59/32" source-abt="000" source-ppn="385599153">ILN204/CG/UB/UBMag3</permanentLocationId>
     
@@ -111,9 +111,7 @@ vim commands to format table contents to xml:
     
    <permanentLocationId source-signature="4o SS 55/7-9,Atlas, Ausg." source-abt="000" source-ppn="318549530">ILN204/CG/UB/UBMag3</permanentLocationId>
     
-   <permanentLocationId source-signature="4o Mus 101,1,1,2,Krit. Ber." source-abt="000" source-ppn="188427392">ILN204/CG/UB/UBMagPhil1</permanentLocationId>
-    
-   <permanentLocationId source-signature="4o NR 4401" source-abt="000" source-ppn="072499222">ILN204/CG/UB/UBMagPhil1</permanentLocationId>
+   <permanentLocationId source-signature="4o Mus 101,1,1,2,Krit. Ber." source-abt="000" source-ppn="188427392">ILN204/CG/UB/UBMag3</permanentLocationId>
     
    <permanentLocationId source-signature="4o Pap 53/5-50" source-abt="000" source-ppn="028554108">ILN204/CG/UB/UBMag3</permanentLocationId>
     
@@ -123,15 +121,15 @@ vim commands to format table contents to xml:
     
    <permanentLocationId source-signature="4o ZZ 06/143-WS 2013/14" source-abt="000" source-ppn="335563910">ILN204/CG/UB/UBMag3</permanentLocationId>
     
-   <permanentLocationId source-signature="4o ZZ 22/23-67.2020,Beil." source-abt="000" source-ppn="471034975">ILN204/CG/UB/UBMagPhil1</permanentLocationId>
+   <permanentLocationId source-signature="4o ZZ 22/23-67.2020,Beil." source-abt="000" source-ppn="471034975">ILN204/CG/UB/UBMag3</permanentLocationId>
     
-   <permanentLocationId source-signature="4o ZZ 49/250-133,3" source-abt="000" source-ppn="093520719">ILN204/CG/UB/UBMagPhil1</permanentLocationId>
+   <permanentLocationId source-signature="4o ZZ 49/250-133,3" source-abt="000" source-ppn="093520719">ILN204/CG/UB/UBMagAltbau</permanentLocationId>
     
-   <permanentLocationId source-signature="4o ZZ 66/192-69,1/2" source-abt="000" source-ppn="366680110">ILN204/CG/UB/UBMagPhil1</permanentLocationId>
+   <permanentLocationId source-signature="4o ZZ 66/192-69,1/2" source-abt="000" source-ppn="366680110">ILN204/CG/UB/UBMag3</permanentLocationId>
     
    <permanentLocationId source-signature="A 48650/400" source-abt="000" source-ppn="084777524">ILN204/CG/UB/UBMagKeller</permanentLocationId>
     
-   <permanentLocationId source-signature="A 56456/1 fol. 2021 Klinger, Y." source-abt="000" source-ppn="490471285">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+   <permanentLocationId source-signature="A 56456/1 fol. 2021 Klinger, Y." source-abt="000" source-ppn="490471285">ILN204/CG/UB/UBMag3</permanentLocationId>
     
    <permanentLocationId source-signature="A 57538/2" source-abt="000" source-ppn="130085480">ILN204/CG/UB/UBMagKeller</permanentLocationId>
     
@@ -153,27 +151,27 @@ vim commands to format table contents to xml:
     
    <permanentLocationId source-signature="B 1857/1000" source-abt="000" source-ppn="047187220">ILN204/CG/UB/UBMagKeller</permanentLocationId>
     
-   <permanentLocationId source-signature="B 49/1637-4,2, 2.Aufl." source-abt="000" source-ppn="009299300">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+   <permanentLocationId source-signature="B 49/1637-4,2, 2.Aufl." source-abt="000" source-ppn="009299300">ILN204/CG/UB/UBMag3</permanentLocationId>
     
    <permanentLocationId source-signature="B 7425/10 fol.T.Z." source-abt="000" source-ppn="082018189">ILN204/CG/UB/UBMagKeller</permanentLocationId>
     
-   <permanentLocationId source-signature="BAp 1,2756/75-24" source-abt="000" source-ppn="326683046">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+   <permanentLocationId source-signature="BAp 1,2756/75-24" source-abt="000" source-ppn="326683046">ILN204/CG/UB/UBMagAltbau</permanentLocationId>
     
-   <permanentLocationId source-signature="BAp 13,3061/1=neueste Ausg." source-abt="000" source-ppn="048546100">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+   <permanentLocationId source-signature="BAp 13,3061/1=neueste Ausg." source-abt="000" source-ppn="048546100">ILN204/CG/UB/UBMagAltbau</permanentLocationId>
     
    <permanentLocationId source-signature="BAp 27,Corsten" source-abt="000" source-ppn="099772965">ILN204/CG/UB/UBMag3</permanentLocationId>
     
-   <permanentLocationId source-signature="BAp 29,1440-33" source-abt="000" source-ppn="059229306">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+   <permanentLocationId source-signature="BAp 29,1440-33" source-abt="000" source-ppn="059229306">ILN204/CG/UB/UBMagAltbau</permanentLocationId>
     
-   <permanentLocationId source-signature="BAp Auskunft" source-abt="000" source-ppn="069503028"/>
+   <permanentLocationId source-signature="BAp Auskunft" source-abt="000" source-ppn="069503028">ILN204/CG/UB/UBMagAltbau</permanentLocationId>
     
    <permanentLocationId source-signature="Bel 7/8" source-abt="000" source-ppn="080291899">ILN204/CG/UB/UBMagKeller</permanentLocationId>
     
-   <permanentLocationId source-signature="Bt 1/519" source-abt="000" source-ppn="052936902">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+   <permanentLocationId source-signature="Bt 1/519" source-abt="000" source-ppn="052936902">ILN204/CG/UB/UBMag3</permanentLocationId>
     
-   <permanentLocationId source-signature="C 160/3950, Erg.Bd" source-abt="000" source-ppn="113033966"/>
+   <permanentLocationId source-signature="C 160/3950, Erg.Bd" source-abt="000" source-ppn="113033966">ILN204/CG/UB/UBMagKeller</permanentLocationId>
     
-   <permanentLocationId source-signature="CD 1845" source-abt="000" source-ppn="467242925">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+   <permanentLocationId source-signature="CD 1845" source-abt="000" source-ppn="467242925">ILN204/CG/UB/UBMag3</permanentLocationId>
     
    <permanentLocationId source-signature="D 16930/1-1" source-abt="000" source-ppn="129386278">ILN204/CG/UB/UBMagKeller</permanentLocationId>
     
@@ -197,7 +195,7 @@ vim commands to format table contents to xml:
     
    <permanentLocationId source-signature="FP 836" source-abt="000" source-ppn="106493949">ILN204/CG/UB/Freihand2OG</permanentLocationId>
     
-   <permanentLocationId source-signature="FrSla Ce 141" source-abt="000" source-ppn="212747827">ILN204/CG/UB/UBMagPhil1</permanentLocationId>
+   <permanentLocationId source-signature="FrSla Ce 141" source-abt="000" source-ppn="212747827">ILN204/CG/UB/UBMagKeller</permanentLocationId>
     
    <permanentLocationId source-signature="G 10501/2" source-abt="000" source-ppn="047127163">ILN204/CG/UB/UBMagKeller</permanentLocationId>
     
@@ -209,9 +207,9 @@ vim commands to format table contents to xml:
     
    <permanentLocationId source-signature="gr 2o 2/4156" source-abt="000" source-ppn="172401372">ILN204/CG/UB/UBMagKeller</permanentLocationId>
     
-   <permanentLocationId source-signature="gr 2o 22.372.31" source-abt="000" source-ppn="305291572">ILN204/CG/UB/UBMagPhil1</permanentLocationId>
+   <permanentLocationId source-signature="gr 2o 22.372.31" source-abt="000" source-ppn="305291572">ILN204/CG/UB/UBMag3</permanentLocationId>
     
-   <permanentLocationId source-signature="gr 2o A 51/159-2" source-abt="000" source-ppn="060258136">ILN204/CG/UB/Freihand2OG</permanentLocationId>
+   <permanentLocationId source-signature="gr 2o A 51/159-2" source-abt="000" source-ppn="060258136">ILN204/CG/UB/UBMag3</permanentLocationId>
     
    <permanentLocationId source-signature="gr 2o B 61/2896-1" source-abt="000" source-ppn="120868555">ILN204/CG/UB/UBMag3</permanentLocationId>
     
@@ -223,9 +221,9 @@ vim commands to format table contents to xml:
     
    <permanentLocationId source-signature="gr 2o Ztg 111" source-abt="000" source-ppn="04829179X">ILN204/CG/UB/UBMagKeller</permanentLocationId>
     
-   <permanentLocationId source-signature="gr 2o ZZ 18/143" source-abt="000" source-ppn="205777066">ILN204/CG/UB/Freihand2OG</permanentLocationId>
+   <permanentLocationId source-signature="gr 2o ZZ 18/143" source-abt="000" source-ppn="205777066">ILN204/CG/UB/UBMag3</permanentLocationId>
     
-   <permanentLocationId source-signature="gr 2o ZZ 80/39" source-abt="000" source-ppn="048387851">ILN204/CG/UB/Freihand2OG</permanentLocationId>
+   <permanentLocationId source-signature="gr 2o ZZ 80/39" source-abt="000" source-ppn="048387851">ILN204/CG/UB/UBMag3</permanentLocationId>
     
    <permanentLocationId source-signature="H 1140-2" source-abt="000" source-ppn="110340442">ILN204/CG/UB/UBMagKeller</permanentLocationId>
     
@@ -233,7 +231,7 @@ vim commands to format table contents to xml:
     
    <permanentLocationId source-signature="HR A 325 a" source-abt="000" source-ppn="229130445">ILN204/CG/UB/UBSLS</permanentLocationId>
     
-   <permanentLocationId source-signature="Hs 1" source-abt="000" source-ppn="493714766">ILN204/CG/UB/UBMagKeller</permanentLocationId>
+   <permanentLocationId source-signature="Hs 1" source-abt="000" source-ppn="493714766">ILN204/CG/UB/UBSLS</permanentLocationId>
     
    <permanentLocationId source-signature="I 1010" source-abt="000" source-ppn="118923986">ILN204/CG/UB/UBMagKeller</permanentLocationId>
     
@@ -259,7 +257,7 @@ vim commands to format table contents to xml:
     
    <permanentLocationId source-signature="MAG OG Sp 350" source-abt="000" source-ppn="072310847">ILN204/CG/UB/UBMag3</permanentLocationId>
     
-   <permanentLocationId source-signature="MAG UG 38 G Ab 31" source-abt="000" source-ppn="099944367">ILN204/CG/UB/UBMag3</permanentLocationId>
+   <permanentLocationId source-signature="MAG UG 38 G Ab 31" source-abt="000" source-ppn="099944367">ILN204/CG/UB/UBMagKeller</permanentLocationId>
     
    <permanentLocationId source-signature="MSla -- 11" source-abt="000" source-ppn="021246319">ILN204/CG/UB/UBMagKeller</permanentLocationId>
     
@@ -293,7 +291,7 @@ vim commands to format table contents to xml:
     
    <permanentLocationId source-signature="Rara 1006" source-abt="000" source-ppn="335848869">ILN204/CG/UB/UBSLS</permanentLocationId>
     
-   <permanentLocationId source-signature="S 12092/6" source-abt="000" source-ppn="223413615"/>
+   <permanentLocationId source-signature="S 12092/6" source-abt="000" source-ppn="223413615">ILN204/CG/UB/UBMagKeller</permanentLocationId>
     
    <permanentLocationId source-signature="SAp 1,5501-11" source-abt="000" source-ppn="025393820">ILN204/CG/UB/UBMag3</permanentLocationId>
     
@@ -309,7 +307,7 @@ vim commands to format table contents to xml:
     
    <permanentLocationId source-signature="U 1110/7000" source-abt="000" source-ppn="061090565">ILN204/CG/UB/UBMagKeller</permanentLocationId>
     
-   <permanentLocationId source-signature="V 10 149" source-abt="000" source-ppn="094416729">ILN204/CG/UB/UBMagPhil1</permanentLocationId>
+   <permanentLocationId source-signature="V 10 149" source-abt="000" source-ppn="094416729">ILN204/CG/UB/UBMagKeller</permanentLocationId>
     
    <permanentLocationId source-signature="Vorl.Giessen-2003,SS" source-abt="000" source-ppn="109984544">ILN204/CG/UB/UBMagKeller</permanentLocationId>
     
@@ -329,23 +327,23 @@ vim commands to format table contents to xml:
     
    <permanentLocationId source-signature="Ztg 160" source-abt="000" source-ppn="047791306">ILN204/CG/UB/UBMag3</permanentLocationId>
     
-   <permanentLocationId source-signature="ZZ 10/1-2,4" source-abt="000" source-ppn="220302871"/>
+   <permanentLocationId source-signature="ZZ 10/1-2,4" source-abt="000" source-ppn="220302871">ILN204/CG/UB/UBMag3</permanentLocationId>
     
-   <permanentLocationId source-signature="ZZ 21/26-101" source-abt="000" source-ppn="344361527"/>
+   <permanentLocationId source-signature="ZZ 21/26-101" source-abt="000" source-ppn="344361527">ILN204/CG/UB/UBMag3</permanentLocationId>
     
-   <permanentLocationId source-signature="ZZ 49/101-28,Suppl.2" source-abt="000" source-ppn="056484569"/>
+   <permanentLocationId source-signature="ZZ 49/101-28,Suppl.2" source-abt="000" source-ppn="056484569">ILN204/CG/UB/UBMagAltbau</permanentLocationId>
     
-   <permanentLocationId source-signature="ZZ 66/102" source-abt="000" source-ppn="046854290"/>
+   <permanentLocationId source-signature="ZZ 66/102" source-abt="000" source-ppn="046854290">ILN204/CG/UB/UBMag3</permanentLocationId>
     
    <permanentLocationId source-signature="/" source-abt="002" source-ppn="463419332">ILN204/CG/ZNL/Freihand</permanentLocationId>
     
    <permanentLocationId source-signature="AGR 117" source-abt="002" source-ppn="051001926">ILN204/CG/ZNL/Freihand</permanentLocationId>
     
-   <permanentLocationId source-signature="che Fa 0.40-10,EB,A,2, 8.Aufl." source-abt="002" source-ppn="021194807">ILN204/CG/ZNL/Freihand</permanentLocationId>
+   <permanentLocationId source-signature="002 che Fa 0.40-10,EB,A,2, 8.Aufl." source-abt="002" source-ppn="021194807">ILN204/CG/ZNL/Magazin</permanentLocationId>
     
-   <permanentLocationId source-signature="A 203" source-abt="130" source-ppn="02151884X"/>
+   <permanentLocationId source-signature="130 A 203" source-abt="002" source-ppn="02151884X">ILN204/CG/ZNL/Freihand</permanentLocationId>
     
-   <permanentLocationId source-signature="mag 1/1009" source-abt="140" source-ppn="080114342"/>
+   <permanentLocationId source-signature="140 mag 1/1009" source-abt="002" source-ppn="080114342">ILN204/CG/ZNL/Magazin</permanentLocationId>
     
    <permanentLocationId source-signature="49.005.13" source-abt="002" source-ppn="004538595">ILN204/CG/ZNL/Magazin</permanentLocationId>
     
@@ -379,7 +377,7 @@ vim commands to format table contents to xml:
     
    <permanentLocationId source-signature="005 AE 11000 B864-19" source-abt="005" source-ppn="030565278">ILN204/CG/ZHB/Freihand</permanentLocationId>
     
-   <permanentLocationId source-signature="205 AK 24300 S416-1" source-abt="005" source-ppn="077773349">ILN204/CG/ZHB/Freihand</permanentLocationId>
+   <permanentLocationId source-signature="205 AK 24300 S416-1" source-abt="005" source-ppn="077773349">ILN204/CG/ZHB/Magazin</permanentLocationId>
     
    <permanentLocationId source-signature="Wandkarte" source-abt="005" source-ppn="207317003">ILN204/CG/ZHB/Freihand</permanentLocationId>
     
@@ -401,7 +399,7 @@ vim commands to format table contents to xml:
     
    <permanentLocationId source-signature="Zeitschriftenauslage" source-abt="009" source-ppn="308378164">ILN204/CG/ZP2/Freihand</permanentLocationId>
     
-   <permanentLocationId source-signature="01 Aa 1897" source-abt="009" source-ppn="061594253">ILN204/CG/ZP2/Freihand</permanentLocationId>
+   <permanentLocationId source-signature="01 Aa 1897" source-abt="010" source-ppn="061594253">ILN204/CG/ZRW/Freihand</permanentLocationId>
     
    <permanentLocationId source-signature="/" source-abt="015" source-ppn="109447050">ILN204/CG/DezFB/Fachbibliotheken</permanentLocationId>
     
@@ -433,6 +431,6 @@ vim commands to format table contents to xml:
     
    <permanentLocationId source-signature="030 pol Ab 0.11" source-abt="030" source-ppn="39913557X">ILN204/CG/ZP2/Freihand</permanentLocationId>
     
-   <permanentLocationId source-signature="030 soz Ie 9.2" source-abt="030" source-ppn="326778217">ILN204/CG/ZP2/Freihand</permanentLocationId>    
+   <permanentLocationId source-signature="030 soz Ie 9.2" source-abt="030" source-ppn="326778217">ILN204/CG/ZP2/Freihand</permanentLocationId>
 
 </test-signatures>

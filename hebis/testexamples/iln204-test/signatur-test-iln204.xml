@@ -16,7 +16,7 @@ vim commands to format table contents to xml:
     <test-signature ppn="107799553">000 1/10-27</test-signature>
     <test-signature ppn="228764645">000 1828 Giessen Kiesling,Johannes Fridericus</test-signature>
     <test-signature ppn="480781052">000 1909 Marburg Kasch,Fritz</test-signature>
-    <test-signature ppn="18154042">000 2/107</test-signature>
+    <test-signature ppn="018154042">000 2/107</test-signature>
     <test-signature ppn="469303344">000 22.641.35</test-signature>
     <test-signature ppn="101064802">000 27.004.78</test-signature>
     <test-signature ppn="466480628">000 2o 1/8179</test-signature>
@@ -48,7 +48,7 @@ vim commands to format table contents to xml:
     <test-signature ppn="231992467">000 4o 1/7344(14)</test-signature>
     <test-signature ppn="198108230">000 4o 2/1188</test-signature>
     <test-signature ppn="491575467">000 4o 22.689.36</test-signature>
-    <test-signature ppn="08110202X">000 4o 3/9 </test-signature>
+    <test-signature ppn="08110202X">000 4o 3/9</test-signature>
     <test-signature ppn="031839932">000 4o 4/5</test-signature>
     <test-signature ppn="095291024">000 4o A 49/227-3</test-signature>
     <test-signature ppn="133537323">000 4o AZZ 03/115-17,Erg.-Bd.</test-signature>
@@ -63,7 +63,6 @@ vim commands to format table contents to xml:
     <test-signature ppn="30162609X">000 4o Kt-B 189</test-signature>
     <test-signature ppn="318549530">000 4o SS 55/7-9,Atlas, Ausg.</test-signature>
     <test-signature ppn="188427392">000 4o Mus 101,1,1,2,Krit. Ber.</test-signature>
-    <test-signature ppn="072499222">000 4o NR 4401</test-signature>
     <test-signature ppn="028554108">000 4o Pap 53/5-50</test-signature>
     <test-signature ppn="198304633">000 4o SS 49/107-N.F. 176</test-signature>
     <test-signature ppn="048501549">000 4o Ztg 35/5</test-signature>
@@ -177,9 +176,9 @@ vim commands to format table contents to xml:
     <test-signature ppn="046854290">000 ZZ 66/102</test-signature>
     <test-signature ppn="463419332">002 /</test-signature>
     <test-signature ppn="051001926">002 AGR 117</test-signature>
-    <test-signature ppn="021194807">002 che Fa 0.40-10,EB,A,2, 8.Aufl.</test-signature>
-    <test-signature ppn="02151884X">130 A 203</test-signature>
-    <test-signature ppn="080114342">140 mag 1/1009</test-signature>
+    <test-signature ppn="021194807">002 002 che Fa 0.40-10,EB,A,2, 8.Aufl.</test-signature>
+    <test-signature ppn="02151884X">002 130 A 203</test-signature>
+    <test-signature ppn="080114342">002 140 mag 1/1009</test-signature>
     <test-signature ppn="004538595">002 49.005.13</test-signature>
     <test-signature ppn="048947709">002 4o 21.672.18</test-signature>
     <test-signature ppn="051044803">002 4o 22.008.25-4</test-signature>
@@ -207,7 +206,7 @@ vim commands to format table contents to xml:
     <test-signature ppn="074530453">009 Qs 209</test-signature>
     <test-signature ppn="216739497">009 REs 42</test-signature>
     <test-signature ppn="308378164">009 Zeitschriftenauslage</test-signature>
-    <test-signature ppn="061594253">009 01 Aa 1897</test-signature>
+    <test-signature ppn="061594253">010 01 Aa 1897</test-signature>
     <test-signature ppn="109447050">015 /</test-signature>
     <test-signature ppn="096212381">020 A 10122</test-signature>
     <test-signature ppn="21382907X">020 LBS 1/12, 2.Aufl. (5.Ex.)</test-signature>
@@ -223,5 +222,5 @@ vim commands to format table contents to xml:
     <test-signature ppn="438480597">030 030 Mag 10.47</test-signature>
     <test-signature ppn="093436688">030 030 mus Aa 2.5</test-signature>
     <test-signature ppn="39913557X">030 030 pol Ab 0.11</test-signature>
-    <test-signature ppn="326778217">030 030 soz Ie 9.2</test-signature>    
+    <test-signature ppn="326778217">030 030 soz Ie 9.2</test-signature>
 </test-signatures>

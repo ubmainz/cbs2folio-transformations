@@ -10,26 +10,6 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>hebis/testexamples/iln204-test/signatur-test-xml-csv.xsl</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>signatur-test-xml-csv</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XML</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
                                     <String>hebis/testexamples/iln204-test/holding-items-hebis-iln204-test.xsl</String>
                                 </field>
                                 <field name="scenarioIds">
@@ -50,7 +30,7 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>hebis/signatur-test-xml-csv.xsl</String>
+                                    <String>hebis/testexamples/iln204-test/signatur-test-xml-csv.xsl</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -75,6 +55,26 @@
                                 <field name="scenarioIds">
                                     <list>
                                         <String>4-holding-items-iln-204</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XML</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>hebis/signatur-test-xml-csv.xsl</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>signatur-test-xml-csv</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -652,7 +652,7 @@
                                     <String>${currentFileURL}</String>
                                 </field>
                                 <field name="inputXMLURL">
-                                    <String>file:/C:/Users/Freiberg/Documents/cbs2folio-transformations/hebis/testexamples/iln204-test/signatur-test-iln204.xml</String>
+                                    <String>${pdu}/hebis/testexamples/iln204-test/signatur-test-iln204.xml</String>
                                 </field>
                                 <field name="defaultScenario">
                                     <Boolean>false</Boolean>
@@ -670,7 +670,7 @@
                                     <Boolean>false</Boolean>
                                 </field>
                                 <field name="outputResource">
-                                    <String>${pd}/hebis/testexamples/signatur-test-iln204-out.xml</String>
+                                    <String>${pd}/hebis/testexamples/iln204-test/signatur-test-iln204-out.xml</String>
                                 </field>
                                 <field name="openOtherLocationInBrowser">
                                     <Boolean>false</Boolean>
