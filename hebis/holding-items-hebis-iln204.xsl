@@ -627,11 +627,8 @@
   <xsl:template match="discoverySuppress">
     <!-- uses 208@$b (und/oder Kat. 247E/XY ?) -->
     <discoverySuppress>
-      <!-- MZ: <xsl:value-of select="(substring(., 1, 1) = 'g') or (substring(., 2, 1) = 'y') or (substring(., 2, 1) = 'z')"/> 
-           DA: nicht anzeigen: Pos.2: f, p, y, z -->
-      <xsl:value-of
-        select="(substring(., 2, 1) = 'f') or (substring(., 2, 1) = 'p') or (substring(., 2, 1) = 'y') or (substring(., 2, 1) = 'z')"
-      />
+      <xsl:value-of select="(substring(., 1, 1) = 'g') or (substring(., 2, 1) = 'y') or (substring(., 2, 1) = 'z')"/> 
+      <!-- Sind die Einstellungen von MZ. Pos1 g passt aus meiner Sicht. MB für den Rest fragen. RH -->
     </discoverySuppress>
   </xsl:template>
 
