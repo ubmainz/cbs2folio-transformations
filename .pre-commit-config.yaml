@@ -1,0 +1,5 @@
+repos:
+  - repo: https://github.com/lsst-ts/pre-commit-xmllint
+    rev: v1.0.0
+    hooks:
+      - id: format-xmllint
