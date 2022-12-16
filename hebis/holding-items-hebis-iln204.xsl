@@ -17,7 +17,7 @@
   <xsl:template match="permanentLocationId">
     <xsl:variable name="i" select="key('original', .)"/>
     <!-- 209A$f/209G$a ? -->
-    <xsl:variable name="abt" select="$i/datafield[@tag = '209A']/subfield[@code = 'f']/text()"/>
+    <xsl:variable name="abt" select="$i/datafield[@tag = '209A' and subfield[@code = 'x'] = '00']/subfield[@code = 'f']/text()"/>
     <xsl:variable name="signature"
       select="$i/datafield[@tag = '209A' and subfield[@code = 'x'] = '00']/subfield[@code = 'a']/text()"/>
     <xsl:variable name="signature-lowercase" select="
