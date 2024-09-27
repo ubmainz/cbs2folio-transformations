@@ -15,17 +15,6 @@
 <xsl:template match="processing[not(parent::delete)]">
   <processing> <!-- overwrites hebis default -->
     <item>
-      <retainExistingValues>
-        <forOmittedProperties>true</forOmittedProperties>
-        <forTheseProperties>
-          <arr>
-            <i>materialTypeId</i>
-          </arr>
-        </forTheseProperties>
-      </retainExistingValues>
-      <status>
-        <policy>retain</policy>
-      </status>
       <retainOmittedRecord>
         <ifField>hrid</ifField>
         <matchesPattern>it.*</matchesPattern>
