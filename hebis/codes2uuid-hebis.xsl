@@ -553,7 +553,8 @@
   <xsl:template match="classificationTypeId"> <!-- Level 1: ILN-specific  -->
     <classificationTypeId>
     <xsl:choose>
-      <xsl:when test=".='Lokale Klassifikation'">720a846a-85db-4d3a-bfd9-7dfd2f55ae4a</xsl:when>
+      <xsl:when test=".='Lokale Klassifikation'"><xsl:text>720a846a-85db-4d3a-bfd9-7dfd2f55ae4a</xsl:text></xsl:when>
+      <xsl:when test=".='RVK'"><xsl:text>9a0d9e18-166a-4a79-9c20-68430ced288a</xsl:text></xsl:when>
     </xsl:choose>
     </classificationTypeId>
   </xsl:template>
