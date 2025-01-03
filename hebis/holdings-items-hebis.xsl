@@ -117,6 +117,11 @@
             <ifField>hrid</ifField>
             <matchesPattern>it.*</matchesPattern>
           </retainOmittedRecord>
+          <!-- does not to work properly in Quesnelia 2024-12:
+            - statistical code is not set in some cases (false neagtive)
+            - statistical code is also set (false positive) in "retainOmittedRecord" protected cases
+            - statistical code is also set (false positive) in holding transfer cases
+            -> left out (in addition seems not to be needed)
           <statisticalCoding>
             <arr>
               <i>
@@ -125,7 +130,7 @@
                 <setCode>ITEM_STATUS</setCode>
               </i>         
             </arr>
-          </statisticalCoding>
+          </statisticalCoding> -->
         </item>
         <holdingsRecord>
           <retainExistingValues>
@@ -262,6 +267,7 @@
               <staffOnly>true</staffOnly>
             </i>
           </xsl:for-each>
+          <!-- entfernt, weil über HDS2 angezeigt und sonst gedoppelt
           <xsl:for-each select="datafield[(@tag='244Z') and (subfield[@code='x']&gt;'79') and (subfield[@code='x']&lt;'99')]">
             <i>
               <note>
@@ -295,6 +301,7 @@
               <staffOnly>false</staffOnly>
             </i>
           </xsl:for-each>
+                    -->
           <xsl:for-each select="datafield[@tag='209S']/subfield[@code='S'] | datafield[@tag='204U']/subfield[@code='S'] | datafield[@tag='204P']/subfield[@code='S'] | datafield[@tag='204R']/subfield[@code='S'] ">
             <i>
               <note>

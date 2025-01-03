@@ -36,6 +36,7 @@
             <if>deleteSkipped</if>
             <becauseOf>ITEM_STATUS</becauseOf>
             <setCode>ITEM_STATUS</setCode>
+            <!-- seems not to work properly Quesnelia 2024-10-28 -->
           </i>
         </arr>
       </statisticalCoding>
@@ -254,6 +255,7 @@
     <xsl:variable name="abt" select="$i/datafield[@tag='209A']/subfield[@code='f']"/>
     <xsl:if test="not(($abt='000' and (./note='FREIHAND' or ./note='LBS' or ./note='LESESAAL' or ./note='RARA' or ./note='MAG')) or
 	  ($abt='002' and (./note='Erziehungswissenschaft' or ./note='Filmwissenschaft' or ./note='Journalistik' or ./note='Politikwissenschaft' or ./note='Psychologie' or ./note='Publizistik' or ./note='Soziologie')) or
+	  ($abt='003' and (./note='LESESAAL')) or
 	  ($abt='005' and (./note='UM LESESAAL' or ./note='UM LBS' or ./note='UM FREIHAND')) or
 	  ($abt='006' and (./note='MIN' or ./note='MIN LEHRBUCHSAMMLUNG')) or
 	  ($abt='016' and (./note='Theologie LEHRBUCHSAMMLUNG')) or
@@ -312,10 +314,11 @@
         ($abt='000' and (starts-with(., 'RARA ') and not(contains(.,'°')))) or
         ($abt='019' and (starts-with(.,'CELA') or starts-with(.,'CELTRA') or starts-with(.,'LBS') or starts-with(.,'MAG') or starts-with(.,'SSC'))) or
         ($abt='120' and ($standort='Medienkulturwissenschaft' or $standort='Alltagsmedien')) or
-        ($abt='003') or ($abt='004') or 
+        ($abt='003') or ($abt='004') or
+        ($abt='002' and (starts-with(., '400 ') or starts-with(., '410 ') or starts-with(., '430 ') or starts-with(., '480 ')) and $standort='Politikwissenschaft / Bibliothek Inklusive Politische Bildung') or
         ($abt='005' and (starts-with(., '700 ') or starts-with(., '710 '))) or
         ($abt='054' and (starts-with(., '798 ') or starts-with(., '791 '))) or
-        (($abt='127') and not(starts-with(.,'SI ') or starts-with(.,'SK ')))">
+        (($abt='127') and not(starts-with(.,'SI ') or starts-with(.,'SK ')))"> <!-- RVK-Bereiche und Verwandtes -->
         <xsl:choose>
           <xsl:when test="contains(.,' ')">
             <callNumberPrefix>
