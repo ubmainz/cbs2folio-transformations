@@ -30,16 +30,20 @@
         <ifField>hrid</ifField>
         <matchesPattern>it.*</matchesPattern>
       </retainOmittedRecord>
-      <statisticalCoding>
-        <arr>
-          <i>
-            <if>deleteSkipped</if>
-            <becauseOf>ITEM_STATUS</becauseOf>
-            <setCode>ITEM_STATUS</setCode>
-            <!-- seems not to work properly Quesnelia 2024-10-28 -->
-          </i>
-        </arr>
-      </statisticalCoding>
+      <!-- does not to work properly in Quesnelia 2024-12:
+            - statistical code is not set in some cases (false neagtive)
+            - statistical code is also set (false positive) in "retainOmittedRecord" protected cases
+            - statistical code is also set (false positive) in holding transfer cases
+            -> left out (in addition seems not to be needed)
+          <statisticalCoding>
+            <arr>
+              <i>
+                <if>deleteSkipped</if>
+                <becauseOf>ITEM_STATUS</becauseOf>
+                <setCode>ITEM_STATUS</setCode>
+              </i>         
+            </arr>
+          </statisticalCoding> -->
     </item>
   	<holdingsRecord>
   	  <retainExistingValues>
@@ -303,8 +307,26 @@
     </xsl:if>
   </xsl:template>
 
-<!-- Parsing call number for prefix - optional -->
+<!-- multiple call number workaround -->
+  <xsl:template match="notes">
+    <xsl:variable name="i" select="key('original',../permanentLocationId)"/>
+      <notes>
+        <arr>
+        <xsl:apply-templates select="arr/i"/> 
+        <xsl:for-each select="$i/datafield[(@tag='209A') and (subfield[@code='x']!='00')]">
+          <i>
+            <note>
+              <xsl:value-of select="subfield[@code='a']"/>
+            </note>
+              <holdingsNoteTypeId><xsl:text>Weitere Signaturen (71</xsl:text><xsl:value-of select="subfield[@code='x']"/><xsl:text>)</xsl:text></holdingsNoteTypeId>
+            <staffOnly>true</staffOnly>  
+          </i>
+        </xsl:for-each>
+        </arr>
+      </notes>
+  </xsl:template>
 
+  <!-- Parsing call number for prefix - optional -->
   <xsl:template match="callNumber">
     <xsl:variable name="i" select="key('original',../permanentLocationId)"/>
     <xsl:variable name="abt" select="$i/datafield[@tag='209A']/subfield[@code='f']"/>
