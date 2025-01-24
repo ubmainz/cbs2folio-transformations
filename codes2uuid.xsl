@@ -456,6 +456,24 @@
         <xsl:when test=".='mrb'">515caf91-3dde-4769-b784-50c9e23400d5</xsl:when>
         <xsl:when test=".='dub'">88370fc3-bf69-45b6-b518-daf9a3877385</xsl:when>
         <xsl:when test=".='aqt'">57247637-c41b-498d-9c46-935469335485</xsl:when>
+        <xsl:when test=".='rap'">1026d16f-7afd-4622-a480-324c5b237c2d</xsl:when>
+        <xsl:when test=".='bka'">3569a7a6-d1a0-4c63-9bad-530d9768f8d5</xsl:when>
+        <xsl:when test=".='rxa'">a39de795-c8ca-4d35-954f-5e3b203d028e</xsl:when>
+        <xsl:when test=".='cad'">41c31c83-69b8-4a2d-a43d-544b20a1239d</xsl:when>
+        <xsl:when test=".='fon'">34078285-46a5-49da-aa6e-612de735c6ec</xsl:when>
+        <xsl:when test=".='edd'">d4ed183c-3ae0-42e8-861a-159cdafb3235</xsl:when>
+        <xsl:when test=".='aup'">f02c59bb-7e9d-47bf-b520-c0791a3947dd</xsl:when>
+        <xsl:when test=".='dgc'">75309d02-a947-4370-b17a-d1629330b09b</xsl:when>
+        <xsl:when test=".='aue'">0dffbfab-9d05-43e1-ada6-9c830b53c444</xsl:when>
+        <xsl:when test=".='mxe'">d0b57a21-94f8-4d65-9916-c7e8ee46f201</xsl:when>
+        <xsl:when test=".='djo'">6caa11c6-2b17-477e-9c5f-fe6e5f34fcd2</xsl:when>
+        <xsl:when test=".='dbd'">af48e321-2385-49d8-8b79-09fda1f78662</xsl:when>
+        <xsl:when test=".='mka'">372332e7-1534-435b-866d-dcac1a5489eb</xsl:when>
+        <xsl:when test=".='mup'">16c9ba61-1ae4-4ee0-8038-8b4f836528aa</xsl:when>
+        <xsl:when test=".='onp'">9b880dc7-dee7-4a64-b963-85e3b152f342</xsl:when>
+        <xsl:when test=".='swd'">348933e2-82ec-48a7-a2d6-56f6f04c1362</xsl:when>
+        <xsl:when test=".='sfx'">aa335b3c-2c7b-440c-b70b-7a0b0b6120c9</xsl:when>
+        <xsl:when test=".='vfx'">09ffc001-5e04-45a0-aa10-04e28801d20e</xsl:when>
         <xsl:otherwise>361f4bfd-a87d-463c-84d8-69346c3082f6</xsl:otherwise>
       </xsl:choose>
     </contributorTypeId>
@@ -510,6 +528,7 @@
         <xsl:when test=".='Publisher or distributor number'">b5d8cdc4-9441-487c-90cf-0c7ec97728eb</xsl:when>
         <xsl:when test=".='BNB'">3187432f-9434-40a8-8782-35a111a1491e</xsl:when>
         <xsl:when test=".='GBV Number'">e133d384-332d-11ea-a8a4-ff796e46a18d</xsl:when>
+        <xsl:when test=".='PPN hebis'">cf38c966-e8be-4726-8599-897ef5ae4e6d</xsl:when>
         <xsl:when test=".='PPN'">1d5cb40c-508f-451b-8952-87c92be4255a</xsl:when>
         <xsl:when test=".='PPN SWB'">6048004e-75bc-11ea-8ddd-5a780fe0d4e4</xsl:when>
         <xsl:when test=".='DNB-Nummer'">63fd8fa0-a939-4d1e-869c-6dcc24c9d507</xsl:when>
@@ -536,6 +555,7 @@
         <xsl:when test=".='CIP-Nummer'">aaeec26d-72e9-4952-b59e-86bd9fbfedd3</xsl:when>
         <xsl:when test=".='WV-Nummer'">217a56e1-5e45-4253-b942-d2199cca183e</xsl:when>
         <xsl:when test=".='ZDB-Nummer'">7d09e4a5-31c9-43de-9b07-e02cf0e49252</xsl:when>
+        <xsl:when test=".='hebis-PPN des umgelenkten Satzes'">0fdef77b-4770-4d4b-a8cb-0bb68fa22bc4</xsl:when>
         <xsl:when test=".='SWB-PPN des umgelenkten Satzes'">076b9fed-7957-4b11-b8ac-0fe368939cbe</xsl:when>
         <xsl:when test=".='Weitere Verbundidentnummern'">24f03461-e76a-49cb-baba-8f5dd505bac4</xsl:when>
         <xsl:when test=".='Identnummern weiterer Fremddatenlieferanten'">623d4545-073d-456f-9173-07116107bf0a</xsl:when>
