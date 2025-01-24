@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- date of last edit: 2024-06-06 (YYYY-MM-DD) -->
+<!-- date of last edit: 2025-01-24 (YYYY-MM-DD) -->
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
   <xsl:output indent="yes" method="xml" version="1.0" encoding="UTF-8"/>
@@ -42,15 +42,6 @@
               <ifField>hrid</ifField>
               <matchesPattern>it.*</matchesPattern>
             </blockDeletion>
-            <statisticalCoding>
-              <arr>
-                <i>
-                  <if>deleteSkipped</if>
-                  <becauseOf>ITEM_STATUS</becauseOf>
-                  <setCode>ITEM_STATUS</setCode>
-                </i>         
-              </arr>
-            </statisticalCoding>
           </item>
           <holdingsRecord>
             <blockDeletion>
@@ -59,22 +50,6 @@
             </blockDeletion>
             <statisticalCoding>
               <arr>
-                <i>
-                  <if>deleteSkipped</if>
-                  <becauseOf>ITEM_STATUS</becauseOf>
-                  <setCode>ITEM_STATUS</setCode>
-                </i>         
-              </arr>
-            </statisticalCoding>
-          </holdingsRecord>
-          <instance>
-            <statisticalCoding>
-              <arr>
-                <i>
-                  <if>deleteSkipped</if>
-                  <becauseOf>PO_LINE_REFERENCE</becauseOf>
-                  <setCode>PO_LINE_REFERENCE</setCode>
-                </i>   
                 <i>
                   <if>deleteSkipped</if>
                   <becauseOf>ITEM_STATUS</becauseOf>
@@ -90,6 +65,17 @@
                   <becauseOf>ITEM_PATTERN_MATCH</becauseOf>
                   <setCode>ITEM_PATTERN_MATCH</setCode>
                 </i> 
+              </arr>
+            </statisticalCoding>
+          </holdingsRecord>
+          <instance>
+            <statisticalCoding>
+              <arr>
+                <i>
+                  <if>deleteSkipped</if>
+                  <becauseOf>PO_LINE_REFERENCE</becauseOf>
+                  <setCode>PO_LINE_REFERENCE</setCode>
+                </i>   
               </arr>
             </statisticalCoding>
           </instance>
@@ -155,7 +141,11 @@
             </arr>
           </statisticalCoding>
         </holdingsRecord>
-        <instance/>
+        <instance>
+          <retainExistingValues>
+            <forOmittedProperties>true</forOmittedProperties>
+          </retainExistingValues>
+        </instance>
       </processing>
       <holdingsRecords>
         <arr>
@@ -371,9 +361,7 @@
             </xsl:for-each>
           </arr>
         </electronicAccess>
-      
-        <statisticalCodeIds/>
-    
+       
     </i>
   </xsl:template>
  
