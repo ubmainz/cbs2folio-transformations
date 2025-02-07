@@ -1321,6 +1321,7 @@
                     <xsl:value-of select="$date-a"/>
                   </xsl:when>
                 </xsl:choose>
+
             </dateOfPublication>
             <role>
               <xsl:choose>
