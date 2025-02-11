@@ -9,15 +9,6 @@
                   <ifField>hrid</ifField>
                   <matchesPattern>it.*</matchesPattern>
                </blockDeletion>
-               <statisticalCoding>
-                  <arr>
-                     <i>
-                        <if>deleteSkipped</if>
-                        <becauseOf>ITEM_STATUS</becauseOf>
-                        <setCode>e7b3071c-8cc0-48cc-9cd0-dfc82c4e4602</setCode>
-                     </i>
-                  </arr>
-               </statisticalCoding>
             </item>
             <holdingsRecord>
                <blockDeletion>
@@ -26,22 +17,6 @@
                </blockDeletion>
                <statisticalCoding>
                   <arr>
-                     <i>
-                        <if>deleteSkipped</if>
-                        <becauseOf>ITEM_STATUS</becauseOf>
-                        <setCode>e7b3071c-8cc0-48cc-9cd0-dfc82c4e4602</setCode>
-                     </i>
-                  </arr>
-               </statisticalCoding>
-            </holdingsRecord>
-            <instance>
-               <statisticalCoding>
-                  <arr>
-                     <i>
-                        <if>deleteSkipped</if>
-                        <becauseOf>PO_LINE_REFERENCE</becauseOf>
-                        <setCode>dcf1220f-5524-4f1e-8e40-5da3366e8478</setCode>
-                     </i>
                      <i>
                         <if>deleteSkipped</if>
                         <becauseOf>ITEM_STATUS</becauseOf>
@@ -59,11 +34,23 @@
                      </i>
                   </arr>
                </statisticalCoding>
+            </holdingsRecord>
+            <instance>
+               <statisticalCoding>
+                  <arr>
+                     <i>
+                        <if>deleteSkipped</if>
+                        <becauseOf>PO_LINE_REFERENCE</becauseOf>
+                        <setCode>dcf1220f-5524-4f1e-8e40-5da3366e8478</setCode>
+                     </i>
+                  </arr>
+               </statisticalCoding>
             </instance>
          </processing>
       </delete>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>466221029</hrid>
@@ -308,7 +295,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1134433468</hrid>
@@ -364,12 +350,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>469936487</hrid>
@@ -597,12 +583,12 @@
                      </i>
                   </arr>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>26473453X</hrid>
@@ -794,12 +780,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>469102136</hrid>
@@ -1008,12 +994,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>418372608</hrid>
@@ -1233,12 +1219,12 @@
                      </i>
                   </arr>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>382141024</hrid>
@@ -1455,12 +1441,12 @@
                      </i>
                   </arr>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>502405635</hrid>
@@ -1708,12 +1694,12 @@
                      </i>
                   </arr>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>502405643</hrid>
@@ -1947,12 +1933,12 @@
                      </i>
                   </arr>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>476012996</hrid>
@@ -2163,12 +2149,12 @@
                      </i>
                   </arr>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>468727116</hrid>
@@ -2393,7 +2379,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>122578428X</hrid>
@@ -2451,12 +2436,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>461064030</hrid>
@@ -2704,12 +2689,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>120365596</hrid>
@@ -2889,12 +2874,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>047127147</hrid>
@@ -3139,7 +3124,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>230271200</hrid>
@@ -3199,7 +3183,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>213702304</hrid>
@@ -3254,7 +3237,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>077233999</hrid>
@@ -3314,7 +3296,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>231819390</hrid>
@@ -3374,7 +3355,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>232108455</hrid>
@@ -3439,12 +3419,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>129763500</hrid>
@@ -3659,12 +3639,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>468077731</hrid>
@@ -3883,12 +3863,12 @@
                      </i>
                   </arr>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>114017530</hrid>
@@ -4138,12 +4118,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>047513578</hrid>
@@ -4373,7 +4353,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>071378650</hrid>
@@ -4405,11 +4384,6 @@
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
-                     <i>
-                        <note>. 1938; 1944</note>
-                        <holdingsNoteTypeId>db9b4787-95f0-4e78-becf-26748ce6bdeb</holdingsNoteTypeId>
-                        <staffOnly>false</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -4438,7 +4412,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>071378707</hrid>
@@ -4493,7 +4466,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>071378715</hrid>
@@ -4553,12 +4525,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>458176540</hrid>
@@ -4822,7 +4794,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>109286850X</hrid>
@@ -4880,7 +4851,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1210563762</hrid>
@@ -4941,7 +4911,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>805125019</hrid>
@@ -4999,12 +4968,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>441634001</hrid>
@@ -5226,7 +5195,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>104270256X</hrid>
@@ -5279,12 +5247,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>071497145</hrid>
@@ -5511,12 +5479,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>060752769</hrid>
@@ -5746,12 +5714,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>433828692</hrid>
@@ -5960,12 +5928,12 @@
                      </i>
                   </arr>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>18709084X</hrid>
@@ -6178,12 +6146,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>047997524</hrid>
@@ -6386,12 +6354,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>047761547</hrid>
@@ -6573,11 +6541,6 @@
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
-                     <i>
-                        <note>. 1938</note>
-                        <holdingsNoteTypeId>db9b4787-95f0-4e78-becf-26748ce6bdeb</holdingsNoteTypeId>
-                        <staffOnly>false</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -6606,12 +6569,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>047975334</hrid>
@@ -6832,12 +6795,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>063827425</hrid>
@@ -7055,12 +7018,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>508488338</hrid>
@@ -7271,12 +7234,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>047309970</hrid>
@@ -7615,7 +7578,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>125190344</hrid>
@@ -7682,7 +7644,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>125190352</hrid>
@@ -7745,7 +7706,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>735183414</hrid>
@@ -7815,12 +7775,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>047972084</hrid>
@@ -8018,7 +7978,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>170340112</hrid>
@@ -8076,12 +8035,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>50058589X</hrid>
@@ -8287,12 +8246,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>067478034</hrid>
@@ -8480,7 +8439,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>604165676</hrid>
@@ -8538,7 +8496,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>604165811</hrid>
@@ -8596,7 +8553,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>60416582X</hrid>
@@ -8654,12 +8610,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>223601780</hrid>
@@ -8898,12 +8854,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>047984775</hrid>
@@ -9150,7 +9106,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>185674208</hrid>
@@ -9214,12 +9169,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>047333715</hrid>
@@ -9517,12 +9472,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>475623495</hrid>
@@ -9790,12 +9745,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>457592567</hrid>
@@ -10034,12 +9989,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>474420361</hrid>
@@ -10241,12 +10196,12 @@
                      </i>
                   </arr>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>468729674</hrid>
@@ -10499,12 +10454,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>466226756</hrid>
@@ -10729,12 +10684,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>047689277</hrid>
@@ -10979,12 +10934,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>474491315</hrid>
@@ -11206,12 +11161,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>466731876</hrid>
@@ -11417,12 +11372,12 @@
                      </i>
                   </arr>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>475146239</hrid>
@@ -11625,7 +11580,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1140385062</hrid>
@@ -11672,12 +11626,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>439221102</hrid>
@@ -11875,12 +11829,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>475628594</hrid>
@@ -12117,12 +12071,12 @@
                      </i>
                   </arr>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>476178584</hrid>
@@ -12316,12 +12270,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>469849312</hrid>
@@ -12532,12 +12486,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>471102652</hrid>
@@ -12784,7 +12738,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1133017622</hrid>
@@ -12836,12 +12789,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>418753202</hrid>
@@ -13064,12 +13017,12 @@
                      </i>
                   </arr>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>475634225</hrid>
@@ -13300,12 +13253,12 @@
                      </i>
                   </arr>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>475748506</hrid>
@@ -13546,7 +13499,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1144975972</hrid>
@@ -13623,12 +13575,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>459446746</hrid>
@@ -13913,7 +13865,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1142630676</hrid>
@@ -13975,12 +13926,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>476228093</hrid>
@@ -14197,12 +14148,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>476202744</hrid>
@@ -14420,12 +14371,12 @@
                      </i>
                   </arr>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>478858833</hrid>
@@ -14662,12 +14613,12 @@
                      </i>
                   </arr>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>465289444</hrid>
@@ -14904,12 +14855,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>466890184</hrid>
@@ -15137,7 +15088,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>112427944X</hrid>
@@ -15244,12 +15194,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>474840182</hrid>
@@ -15483,7 +15433,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>114164701X</hrid>
@@ -15540,12 +15489,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>466462492</hrid>
@@ -15824,7 +15773,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1126037885</hrid>
@@ -15876,12 +15824,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>468595856</hrid>
@@ -16098,12 +16046,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>468792635</hrid>
@@ -16327,7 +16275,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1220531685</hrid>
@@ -16379,12 +16326,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>469695277</hrid>
@@ -16635,7 +16582,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>112914383X</hrid>
@@ -16742,12 +16688,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>474657639</hrid>
@@ -16962,12 +16908,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>47484997X</hrid>
@@ -17218,12 +17164,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>474853853</hrid>
@@ -17430,12 +17376,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>471449644</hrid>
@@ -17668,7 +17614,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1130875199</hrid>
@@ -17715,12 +17660,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>471041637</hrid>
@@ -17971,7 +17916,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1131575040</hrid>
@@ -18023,12 +17967,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>471876720</hrid>
@@ -18234,12 +18178,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>047932104</hrid>
@@ -18460,7 +18404,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>596726112</hrid>
@@ -18522,12 +18465,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>468113517</hrid>
@@ -18782,12 +18725,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>475055314</hrid>
@@ -19010,7 +18953,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1084218925</hrid>
@@ -19057,12 +18999,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>466033869</hrid>
@@ -19289,12 +19231,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>45793137X</hrid>
@@ -19527,7 +19469,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1115334034</hrid>
@@ -19579,12 +19520,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>449153061</hrid>
@@ -19810,12 +19751,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>465853226</hrid>
@@ -20060,12 +20001,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>460686119</hrid>
@@ -20280,12 +20221,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>456883304</hrid>
@@ -20479,12 +20420,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>463142055</hrid>
@@ -20728,12 +20669,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>460707167</hrid>
@@ -20947,7 +20888,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1121303455</hrid>
@@ -21004,12 +20944,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>455296138</hrid>
@@ -21246,7 +21186,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1072239205</hrid>
@@ -21293,7 +21232,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1071454978</hrid>
@@ -21350,12 +21288,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>465078885</hrid>
@@ -21625,7 +21563,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1121645534</hrid>
@@ -21672,12 +21609,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>466017030</hrid>
@@ -21896,7 +21833,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1124334866</hrid>
@@ -21948,12 +21884,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>464308534</hrid>
@@ -22181,7 +22117,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1142798348</hrid>
@@ -22233,12 +22168,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>463174887</hrid>
@@ -22456,12 +22391,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>463439090</hrid>
@@ -22686,12 +22621,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>454732422</hrid>
@@ -22913,12 +22848,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>454926502</hrid>
@@ -23156,12 +23091,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>109228227</hrid>
@@ -23395,7 +23330,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1116149915</hrid>
@@ -23442,7 +23376,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1110051654</hrid>
@@ -23494,12 +23427,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>454131720</hrid>
@@ -23735,7 +23668,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>114527546X</hrid>
@@ -23787,7 +23719,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1090724675</hrid>
@@ -23839,12 +23770,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>451153634</hrid>
@@ -24075,7 +24006,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1057919845</hrid>
@@ -24122,7 +24052,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1056560193</hrid>
@@ -24174,7 +24103,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1060027615</hrid>
@@ -24226,7 +24154,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1061167712</hrid>
@@ -24278,12 +24205,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>475965701</hrid>
@@ -24503,12 +24430,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>451016270</hrid>
@@ -24741,7 +24668,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1077470983</hrid>
@@ -24788,7 +24714,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1060125714</hrid>
@@ -24840,7 +24765,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1074583566</hrid>
@@ -24897,7 +24821,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1075773563</hrid>
@@ -24944,12 +24867,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>455858489</hrid>
@@ -25157,12 +25080,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>453952739</hrid>
@@ -25382,12 +25305,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>436550504</hrid>
@@ -25621,12 +25544,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>438450574</hrid>
@@ -25865,12 +25788,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>445581085</hrid>
@@ -26090,7 +26013,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1054429375</hrid>
@@ -26142,12 +26064,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>450116530</hrid>
@@ -26360,7 +26282,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1075477840</hrid>
@@ -26407,12 +26328,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>455732515</hrid>
@@ -26631,12 +26552,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>440742811</hrid>
@@ -26891,7 +26812,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1048567109</hrid>
@@ -26953,12 +26873,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>450566064</hrid>
@@ -27182,7 +27102,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1069788899</hrid>
@@ -27264,7 +27183,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1065987668</hrid>
@@ -27311,12 +27229,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>442150539</hrid>
@@ -27539,7 +27457,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1056626909</hrid>
@@ -27596,12 +27513,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>450789543</hrid>
@@ -27820,7 +27737,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>107073196X</hrid>
@@ -27877,12 +27793,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>451016149</hrid>
@@ -28119,7 +28035,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1077470754</hrid>
@@ -28171,7 +28086,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1060125706</hrid>
@@ -28223,7 +28137,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1074583523</hrid>
@@ -28280,7 +28193,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1075774179</hrid>
@@ -28327,12 +28239,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>447455311</hrid>
@@ -28563,12 +28475,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>433182199</hrid>
@@ -28787,7 +28699,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1122747225</hrid>
@@ -28839,7 +28750,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>111239740X</hrid>
@@ -28891,12 +28801,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>434483265</hrid>
@@ -29107,7 +29017,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1026883121</hrid>
@@ -29164,12 +29073,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>42749169X</hrid>
@@ -29376,7 +29285,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1019833459</hrid>
@@ -29428,12 +29336,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>428202713</hrid>
@@ -29700,7 +29608,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1030736391</hrid>
@@ -29747,7 +29654,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1030842191</hrid>
@@ -29804,7 +29710,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1022779095</hrid>
@@ -29861,7 +29766,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1042559570</hrid>
@@ -29923,12 +29827,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>426757319</hrid>
@@ -30171,7 +30075,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1038889685</hrid>
@@ -30218,7 +30121,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1019874155</hrid>
@@ -30275,12 +30177,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>433802669</hrid>
@@ -30516,7 +30418,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1026883032</hrid>
@@ -30573,12 +30474,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>427646200</hrid>
@@ -30791,7 +30692,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1026873878</hrid>
@@ -30843,7 +30743,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1023523949</hrid>
@@ -30895,12 +30794,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>426976525</hrid>
@@ -31125,12 +31024,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>417704747</hrid>
@@ -31342,7 +31241,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1008622354</hrid>
@@ -31389,12 +31287,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>433077751</hrid>
@@ -31616,12 +31514,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>460225618</hrid>
@@ -31822,12 +31720,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>405775539</hrid>
@@ -32057,7 +31955,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1007272287</hrid>
@@ -32104,7 +32001,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1008492027</hrid>
@@ -32151,7 +32047,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1226676707</hrid>
@@ -32213,7 +32108,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1010898922</hrid>
@@ -32270,7 +32164,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1008788821</hrid>
@@ -32322,12 +32215,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>204316960</hrid>
@@ -32522,12 +32415,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>428199372</hrid>
@@ -32743,12 +32636,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>425001725</hrid>
@@ -32978,12 +32871,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>421515562</hrid>
@@ -33241,7 +33134,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1020978228</hrid>
@@ -33298,7 +33190,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1012836886</hrid>
@@ -33355,12 +33246,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>366200968</hrid>
@@ -33618,7 +33509,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1030395969</hrid>
@@ -33670,12 +33560,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>438320220</hrid>
@@ -33927,12 +33817,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>418199817</hrid>
@@ -34151,12 +34041,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>433817356</hrid>
@@ -34368,7 +34258,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1105726401</hrid>
@@ -34420,7 +34309,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1123600600</hrid>
@@ -34487,12 +34375,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>404948472</hrid>
@@ -34736,7 +34624,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>101089885X</hrid>
@@ -34788,7 +34675,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1055991344</hrid>
@@ -34845,7 +34731,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1012093670</hrid>
@@ -34902,7 +34787,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1006566112</hrid>
@@ -34959,12 +34843,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>400346869</hrid>
@@ -35189,12 +35073,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>401737489</hrid>
@@ -35421,12 +35305,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>426744098</hrid>
@@ -35645,7 +35529,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1019707879</hrid>
@@ -35717,12 +35600,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>401320545</hrid>
@@ -35925,12 +35808,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>390122858</hrid>
@@ -36171,12 +36054,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>404611214</hrid>
@@ -36416,12 +36299,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>381975738</hrid>
@@ -36642,7 +36525,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>801625955</hrid>
@@ -36694,7 +36576,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1100944974</hrid>
@@ -36746,12 +36627,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>445409169</hrid>
@@ -36974,12 +36855,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>368099172</hrid>
@@ -37211,12 +37092,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>467072264</hrid>
@@ -37418,12 +37299,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>445409983</hrid>
@@ -37646,12 +37527,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>44540793X</hrid>
@@ -37840,12 +37721,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>419800441</hrid>
@@ -38036,12 +37917,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>461783142</hrid>
@@ -38248,12 +38129,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>463365623</hrid>
@@ -38757,12 +38638,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>361807546</hrid>
@@ -38985,7 +38866,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1183259204</hrid>
@@ -39042,12 +38922,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>34250424X</hrid>
@@ -39282,7 +39162,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>780413504</hrid>
@@ -39339,7 +39218,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1026462940</hrid>
@@ -39391,7 +39269,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>73400088X</hrid>
@@ -39453,12 +39330,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>36070350X</hrid>
@@ -39667,7 +39544,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>757249922</hrid>
@@ -39999,7 +39875,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>806883790</hrid>
@@ -40061,7 +39936,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>806883804</hrid>
@@ -40123,7 +39997,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>806883812</hrid>
@@ -40185,7 +40058,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>806883820</hrid>
@@ -40247,7 +40119,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>806883839</hrid>
@@ -40309,7 +40180,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>806883847</hrid>
@@ -40371,7 +40241,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>806883855</hrid>
@@ -40433,7 +40302,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>806883863</hrid>
@@ -40495,7 +40363,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1011734850</hrid>
@@ -40547,7 +40414,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>104619870X</hrid>
@@ -40604,7 +40470,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1046410717</hrid>
@@ -40661,12 +40526,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>369843150</hrid>
@@ -40915,12 +40780,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>371081025</hrid>
@@ -41142,7 +41007,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1040810411</hrid>
@@ -41204,12 +41068,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>36409513X</hrid>
@@ -41455,7 +41319,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>760509352</hrid>
@@ -41507,12 +41370,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>356350193</hrid>
@@ -41748,7 +41611,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>764687484</hrid>
@@ -41800,12 +41662,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>363614877</hrid>
@@ -42022,12 +41884,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>35500299X</hrid>
@@ -42242,7 +42104,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>779042484</hrid>
@@ -42294,7 +42155,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>750098139</hrid>
@@ -42341,7 +42201,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>756226589</hrid>
@@ -42393,7 +42252,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>769628788</hrid>
@@ -42460,12 +42318,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>352055456</hrid>
@@ -42708,7 +42566,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1131172957</hrid>
@@ -42760,12 +42617,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>349041989</hrid>
@@ -42975,7 +42832,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>748578080</hrid>
@@ -43052,7 +42908,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>748577718</hrid>
@@ -43159,7 +43014,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>743105001</hrid>
@@ -43211,12 +43065,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>303974311</hrid>
@@ -43429,7 +43283,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>732354897</hrid>
@@ -43536,7 +43389,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>732717825</hrid>
@@ -43603,12 +43455,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>349500819</hrid>
@@ -43843,12 +43695,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>421352841</hrid>
@@ -44075,12 +43927,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>332304213</hrid>
@@ -44294,7 +44146,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>722512600</hrid>
@@ -44401,7 +44252,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1010709089</hrid>
@@ -44468,7 +44318,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1010709097</hrid>
@@ -44520,7 +44369,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>732717868</hrid>
@@ -44592,12 +44440,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>273361597</hrid>
@@ -44828,7 +44676,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>63069351X</hrid>
@@ -44875,12 +44722,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>312311753</hrid>
@@ -45101,12 +44948,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>310624533</hrid>
@@ -45321,7 +45168,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>651697646</hrid>
@@ -45373,12 +45219,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>321582616</hrid>
@@ -45570,12 +45416,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>221093621</hrid>
@@ -45798,7 +45644,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>606240012</hrid>
@@ -45870,12 +45715,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>246741058</hrid>
@@ -46086,7 +45931,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1045978116</hrid>
@@ -46138,7 +45982,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1045978205</hrid>
@@ -46190,12 +46033,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>320750817</hrid>
@@ -46394,7 +46237,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>785376283</hrid>
@@ -46456,12 +46298,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>347855113</hrid>
@@ -46688,12 +46530,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>235749702</hrid>
@@ -46923,12 +46765,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>280217374</hrid>
@@ -47155,12 +46997,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>246193492</hrid>
@@ -47396,12 +47238,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>308317416</hrid>
@@ -47630,7 +47472,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>660225158</hrid>
@@ -47687,12 +47528,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>312312008</hrid>
@@ -47924,12 +47765,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>277118166</hrid>
@@ -48135,12 +47976,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>428534899</hrid>
@@ -48364,12 +48205,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>215887433</hrid>
@@ -48554,7 +48395,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1045978701</hrid>
@@ -48587,7 +48427,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1045978779</hrid>
@@ -48620,7 +48459,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>581792459</hrid>
@@ -48667,7 +48505,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1081977086</hrid>
@@ -48739,12 +48576,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>220831114</hrid>
@@ -48946,7 +48783,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>592307549</hrid>
@@ -48998,7 +48834,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>636041867</hrid>
@@ -49050,7 +48885,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>773282955</hrid>
@@ -49122,12 +48956,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>218686501</hrid>
@@ -49342,12 +49176,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>212220810</hrid>
@@ -49548,7 +49382,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>574694099</hrid>
@@ -49600,12 +49433,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>204418348</hrid>
@@ -49827,12 +49660,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>218734387</hrid>
@@ -50057,7 +49890,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1089261713</hrid>
@@ -50109,12 +49941,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>226193802</hrid>
@@ -50322,12 +50154,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>215886925</hrid>
@@ -50547,7 +50379,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1070820644</hrid>
@@ -50599,12 +50430,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>400967677</hrid>
@@ -50804,7 +50635,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1021269506</hrid>
@@ -50881,12 +50711,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>180093029</hrid>
@@ -51111,12 +50941,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>179111361</hrid>
@@ -51335,12 +51165,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>448149966</hrid>
@@ -51570,12 +51400,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>204418240</hrid>
@@ -51791,7 +51621,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>565909266</hrid>
@@ -51983,7 +51812,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>616740840</hrid>
@@ -52175,7 +52003,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>646142364</hrid>
@@ -52362,7 +52189,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>566028360</hrid>
@@ -52409,7 +52235,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>779043049</hrid>
@@ -52456,12 +52281,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>134552296</hrid>
@@ -52670,7 +52495,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>496431293</hrid>
@@ -52722,7 +52546,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>345153359</hrid>
@@ -52779,7 +52602,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1010484826</hrid>
@@ -52836,7 +52658,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>333532171</hrid>
@@ -52883,7 +52704,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>344792374</hrid>
@@ -52935,7 +52755,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>343521903</hrid>
@@ -52982,7 +52801,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>595436420</hrid>
@@ -53034,7 +52852,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>581151119</hrid>
@@ -53081,7 +52898,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>584899890</hrid>
@@ -53143,12 +52959,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>185634206</hrid>
@@ -53377,12 +53193,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>185498809</hrid>
@@ -53607,7 +53423,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>502808306</hrid>
@@ -53654,7 +53469,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>639126529</hrid>
@@ -53701,12 +53515,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>191036684</hrid>
@@ -53909,12 +53723,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>33896472X</hrid>
@@ -54120,12 +53934,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>222388676</hrid>
@@ -54315,12 +54129,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>070154422</hrid>
@@ -54643,7 +54457,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>634061917</hrid>
@@ -54693,7 +54506,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1084784467</hrid>
@@ -54743,7 +54555,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>635742489</hrid>
@@ -54804,7 +54615,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>108535038X</hrid>
@@ -54865,12 +54675,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>267988680</hrid>
@@ -55063,12 +54873,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>128013710</hrid>
@@ -55273,7 +55083,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>467614156</hrid>
@@ -55325,7 +55134,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>245463119</hrid>
@@ -55377,7 +55185,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1010468278</hrid>
@@ -55434,7 +55241,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>251796027</hrid>
@@ -55481,7 +55287,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>24580417X</hrid>
@@ -55533,7 +55338,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>255947798</hrid>
@@ -55585,7 +55389,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>595436102</hrid>
@@ -55637,7 +55440,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>58115066X</hrid>
@@ -55684,7 +55486,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>584899947</hrid>
@@ -55746,12 +55547,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>326694595</hrid>
@@ -55950,12 +55751,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>195205537</hrid>
@@ -56158,7 +55959,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>525127224</hrid>
@@ -56235,12 +56035,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>203441656</hrid>
@@ -56454,7 +56254,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>617420335</hrid>
@@ -56526,12 +56325,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>110005473</hrid>
@@ -56740,7 +56539,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>729384063</hrid>
@@ -56802,7 +56600,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>181588838</hrid>
@@ -56864,7 +56661,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>567542491</hrid>
@@ -56907,12 +56703,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>11453506X</hrid>
@@ -57141,12 +56937,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>117469521</hrid>
@@ -57351,7 +57147,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>67809781X</hrid>
@@ -57403,7 +57198,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>221750266</hrid>
@@ -57455,7 +57249,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1010401270</hrid>
@@ -57512,7 +57305,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>207701636</hrid>
@@ -57559,7 +57351,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>20816233X</hrid>
@@ -57611,7 +57402,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>22285409X</hrid>
@@ -57663,7 +57453,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>595435947</hrid>
@@ -57715,7 +57504,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>58115052X</hrid>
@@ -57762,7 +57550,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>584899971</hrid>
@@ -57824,12 +57611,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>113817290</hrid>
@@ -58291,12 +58078,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>108838552</hrid>
@@ -58500,7 +58287,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>595807046</hrid>
@@ -58547,7 +58333,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1090105665</hrid>
@@ -58599,12 +58384,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>108790576</hrid>
@@ -58825,7 +58610,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1090105762</hrid>
@@ -58877,12 +58661,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>095964088</hrid>
@@ -59087,7 +58871,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>678097690</hrid>
@@ -59139,7 +58922,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>221750134</hrid>
@@ -59191,7 +58973,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1010133578</hrid>
@@ -59253,7 +59034,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>152309500</hrid>
@@ -59300,7 +59080,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>152171959</hrid>
@@ -59352,7 +59131,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>222853557</hrid>
@@ -59404,7 +59182,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>595435254</hrid>
@@ -59456,7 +59233,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>581150023</hrid>
@@ -59503,7 +59279,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>584900082</hrid>
@@ -59565,12 +59340,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>092921108</hrid>
@@ -59773,7 +59548,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>189034610</hrid>
@@ -59830,7 +59604,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>14751536X</hrid>
@@ -59902,12 +59675,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>107596806</hrid>
@@ -60120,7 +59893,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>678097798</hrid>
@@ -60172,7 +59944,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>221750509</hrid>
@@ -60224,7 +59995,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1010303376</hrid>
@@ -60286,7 +60056,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>179077457</hrid>
@@ -60333,7 +60102,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>176844678</hrid>
@@ -60385,7 +60153,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>22285393X</hrid>
@@ -60437,7 +60204,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>595435629</hrid>
@@ -60489,7 +60255,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>581150368</hrid>
@@ -60536,7 +60301,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>584900007</hrid>
@@ -60598,12 +60362,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>096177667</hrid>
@@ -60795,7 +60559,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>174485786</hrid>
@@ -60852,12 +60615,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>100778224</hrid>
@@ -61062,7 +60825,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>678097755</hrid>
@@ -61114,7 +60876,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>221750649</hrid>
@@ -61166,7 +60927,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1010197053</hrid>
@@ -61228,7 +60988,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>165736585</hrid>
@@ -61275,7 +61034,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>164736468</hrid>
@@ -61327,7 +61085,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>222853697</hrid>
@@ -61379,7 +61136,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>595435424</hrid>
@@ -61431,7 +61187,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>581150228</hrid>
@@ -61478,7 +61233,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>584900031</hrid>
@@ -61540,12 +61294,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>092921043</hrid>
@@ -61746,7 +61500,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>189034564</hrid>
@@ -61803,7 +61556,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>147515335</hrid>
@@ -61875,12 +61627,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>276168917</hrid>
@@ -62092,12 +61844,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>09328845X</hrid>
@@ -62305,12 +62057,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>089687973</hrid>
@@ -62523,7 +62275,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>176928960</hrid>
@@ -62580,7 +62331,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>182966984</hrid>
@@ -62642,12 +62392,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>092920500</hrid>
@@ -62838,12 +62588,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>091728754</hrid>
@@ -63061,7 +62811,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1011736160</hrid>
@@ -63143,7 +62892,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1010049909</hrid>
@@ -63200,7 +62948,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>182300447</hrid>
@@ -63252,7 +62999,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>150329199</hrid>
@@ -63304,7 +63050,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>166002399</hrid>
@@ -63361,7 +63106,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>174158661</hrid>
@@ -63418,7 +63162,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>165007893</hrid>
@@ -63480,7 +63223,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>589398911</hrid>
@@ -63542,12 +63284,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>060305398</hrid>
@@ -63731,7 +63473,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>550891528</hrid>
@@ -63788,12 +63529,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>056380046</hrid>
@@ -63998,7 +63739,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>50276077X</hrid>
@@ -64050,7 +63790,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>619731249</hrid>
@@ -64097,12 +63836,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>056984723</hrid>
@@ -64300,7 +64039,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>121471047</hrid>
@@ -64357,12 +64095,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>058452680</hrid>
@@ -64579,7 +64317,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>138090947</hrid>
@@ -64631,12 +64368,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>072517824</hrid>
@@ -64836,7 +64573,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>133722821</hrid>
@@ -64903,12 +64639,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>053416074</hrid>
@@ -65109,7 +64845,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>600540227</hrid>
@@ -65161,12 +64896,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>056984790</hrid>
@@ -65364,7 +65099,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>121471381</hrid>
@@ -65421,12 +65155,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>052169383</hrid>
@@ -65610,7 +65344,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>727671553</hrid>
@@ -65662,12 +65395,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>072518006</hrid>
@@ -65867,7 +65600,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>133723143</hrid>
@@ -65934,12 +65666,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>072517875</hrid>
@@ -66139,7 +65871,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>133722937</hrid>
@@ -66206,12 +65937,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>072517956</hrid>
@@ -66411,7 +66142,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>133723054</hrid>
@@ -66478,12 +66208,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>052746585</hrid>
@@ -66680,12 +66410,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>049233904</hrid>
@@ -66882,7 +66612,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>376141832</hrid>
@@ -66934,12 +66663,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>016287290</hrid>
@@ -67135,7 +66864,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>071605789</hrid>
@@ -67197,12 +66925,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>273755986</hrid>
@@ -67407,12 +67135,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>046539182</hrid>
@@ -67613,12 +67341,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>057504466</hrid>
@@ -67827,7 +67555,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>595202039</hrid>
@@ -67879,12 +67606,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>005807166</hrid>
@@ -68124,12 +67851,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>104122676</hrid>
@@ -68328,12 +68055,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>129633070</hrid>
@@ -68533,12 +68260,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>045735891</hrid>
@@ -68750,7 +68477,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>112166385</hrid>
@@ -68797,7 +68523,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>232171149</hrid>
@@ -68854,7 +68579,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>179681427</hrid>
@@ -68916,12 +68640,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>024398136</hrid>
@@ -69119,12 +68843,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>046539093</hrid>
@@ -69325,12 +69049,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>046387234</hrid>
@@ -69536,7 +69260,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>170891526</hrid>
@@ -69603,12 +69326,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>199425698</hrid>
@@ -69812,12 +69535,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>035059141</hrid>
@@ -70025,7 +69748,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>598647856</hrid>
@@ -70072,7 +69794,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>161295150</hrid>
@@ -70119,12 +69840,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>095387781</hrid>
@@ -70306,7 +70027,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>173027113</hrid>
@@ -70358,12 +70078,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>179824945</hrid>
@@ -70567,12 +70287,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>114551588</hrid>
@@ -70779,7 +70499,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>590345591</hrid>
@@ -70851,12 +70570,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>071666206</hrid>
@@ -71020,11 +70739,6 @@
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
-                        <note/>
-                        <holdingsNoteTypeId>db9b4787-95f0-4e78-becf-26748ce6bdeb</holdingsNoteTypeId>
-                        <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
                         <note>ZD 46-33</note>
                         <holdingsNoteTypeId>bd3b7265-3337-4f62-bba8-12b7938cf161</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -71055,12 +70769,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>114549915</hrid>
@@ -71267,7 +70981,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>590344676</hrid>
@@ -71339,12 +71052,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>114550395</hrid>
@@ -71551,7 +71264,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>590345974</hrid>
@@ -71623,12 +71335,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>054126797</hrid>
@@ -71815,7 +71527,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>336705190</hrid>
@@ -71867,7 +71578,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>262731266</hrid>
@@ -71924,12 +71634,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>129615552</hrid>
@@ -72121,7 +71831,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>368079074</hrid>
@@ -72173,12 +71882,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>114550956</hrid>
@@ -72385,7 +72094,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>591819287</hrid>
@@ -72457,12 +72165,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>105371572</hrid>
@@ -72642,7 +72350,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>183585135</hrid>
@@ -72699,7 +72406,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>357511972</hrid>
@@ -72761,7 +72467,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>172405378</hrid>
@@ -72833,12 +72538,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>114550794</hrid>
@@ -73045,7 +72750,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>544402197</hrid>
@@ -73117,12 +72821,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>425130010</hrid>
@@ -73319,21 +73023,6 @@
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
-                        <note/>
-                        <holdingsNoteTypeId>db9b4787-95f0-4e78-becf-26748ce6bdeb</holdingsNoteTypeId>
-                        <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note/>
-                        <holdingsNoteTypeId>db9b4787-95f0-4e78-becf-26748ce6bdeb</holdingsNoteTypeId>
-                        <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>Geschenk E.B. Nr 1282</note>
-                        <holdingsNoteTypeId>db9b4787-95f0-4e78-becf-26748ce6bdeb</holdingsNoteTypeId>
-                        <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
                         <note>KAT IV DRO 1941.12.05</note>
                         <holdingsNoteTypeId>bd3b7265-3337-4f62-bba8-12b7938cf161</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -73364,12 +73053,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>178584541</hrid>
@@ -73564,12 +73253,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>212094157</hrid>
@@ -73743,12 +73432,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>105198072</hrid>
@@ -73945,12 +73634,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>069269076</hrid>
@@ -74148,12 +73837,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>008906483</hrid>
@@ -74415,12 +74104,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>04890693X</hrid>
@@ -74616,7 +74305,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>1089049749</hrid>
@@ -74668,12 +74356,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>108696049</hrid>
@@ -74868,12 +74556,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>135076102</hrid>
@@ -75060,12 +74748,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>093304862</hrid>
@@ -75265,12 +74953,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>337502153</hrid>
@@ -75476,12 +75164,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>202120600</hrid>
@@ -75673,12 +75361,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>276206223</hrid>
@@ -75883,12 +75571,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>221782524</hrid>
@@ -76080,12 +75768,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>123543142</hrid>
@@ -76308,12 +75996,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>100449190</hrid>
@@ -76505,12 +76193,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>098139436</hrid>
@@ -76726,12 +76414,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>118810715</hrid>
@@ -76938,12 +76626,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>217202535</hrid>
@@ -77128,7 +76816,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>20392679X</hrid>
@@ -77190,12 +76877,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>052854566</hrid>
@@ -77402,12 +77089,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>220755078</hrid>
@@ -77610,12 +77297,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>016074912</hrid>
@@ -77805,12 +77492,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>23574946X</hrid>
@@ -77991,12 +77678,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>47555700X</hrid>
@@ -78220,12 +77907,12 @@
                      </i>
                   </arr>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>10258253X</hrid>
@@ -78440,7 +78127,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>299858308</hrid>
@@ -78497,7 +78183,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>166890588</hrid>
@@ -78549,12 +78234,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>072517778</hrid>
@@ -78737,12 +78422,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>114549575</hrid>
@@ -78920,12 +78605,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>090475232</hrid>
@@ -79119,12 +78804,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>106810227</hrid>
@@ -79332,7 +79017,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
             <i>
                <hrid>174850905</hrid>
@@ -79394,12 +79078,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>093913974</hrid>
@@ -79596,12 +79280,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>056984472</hrid>
@@ -79784,12 +79468,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>052854515</hrid>
@@ -79978,12 +79662,12 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
    </record>
    <record>
+      
       <instance>
          <source>hebis</source>
          <hrid>221697365</hrid>
@@ -80173,7 +79857,6 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
-               <statisticalCodeIds/>
             </i>
          </arr>
       </holdingsRecords>
