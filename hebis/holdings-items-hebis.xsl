@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- date of last edit: 2024-06-06 (YYYY-MM-DD) -->
+<!-- date of last edit: 2025-01-24 (YYYY-MM-DD) -->
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
   <xsl:output indent="yes" method="xml" version="1.0" encoding="UTF-8"/>
@@ -42,15 +42,6 @@
               <ifField>hrid</ifField>
               <matchesPattern>it.*</matchesPattern>
             </blockDeletion>
-            <statisticalCoding>
-              <arr>
-                <i>
-                  <if>deleteSkipped</if>
-                  <becauseOf>ITEM_STATUS</becauseOf>
-                  <setCode>ITEM_STATUS</setCode>
-                </i>         
-              </arr>
-            </statisticalCoding>
           </item>
           <holdingsRecord>
             <blockDeletion>
@@ -59,22 +50,6 @@
             </blockDeletion>
             <statisticalCoding>
               <arr>
-                <i>
-                  <if>deleteSkipped</if>
-                  <becauseOf>ITEM_STATUS</becauseOf>
-                  <setCode>ITEM_STATUS</setCode>
-                </i>         
-              </arr>
-            </statisticalCoding>
-          </holdingsRecord>
-          <instance>
-            <statisticalCoding>
-              <arr>
-                <i>
-                  <if>deleteSkipped</if>
-                  <becauseOf>PO_LINE_REFERENCE</becauseOf>
-                  <setCode>PO_LINE_REFERENCE</setCode>
-                </i>   
                 <i>
                   <if>deleteSkipped</if>
                   <becauseOf>ITEM_STATUS</becauseOf>
@@ -90,6 +65,17 @@
                   <becauseOf>ITEM_PATTERN_MATCH</becauseOf>
                   <setCode>ITEM_PATTERN_MATCH</setCode>
                 </i> 
+              </arr>
+            </statisticalCoding>
+          </holdingsRecord>
+          <instance>
+            <statisticalCoding>
+              <arr>
+                <i>
+                  <if>deleteSkipped</if>
+                  <becauseOf>PO_LINE_REFERENCE</becauseOf>
+                  <setCode>PO_LINE_REFERENCE</setCode>
+                </i>   
               </arr>
             </statisticalCoding>
           </instance>
@@ -117,16 +103,20 @@
             <ifField>hrid</ifField>
             <matchesPattern>it.*</matchesPattern>
           </retainOmittedRecord>
+          <!-- does not to work properly in Quesnelia 2024-12:
+            - statistical code is not set in some cases (false neagtive)
+            - statistical code is also set (false positive) in "retainOmittedRecord" protected cases
+            - statistical code is also set (false positive) in holding transfer cases
+            -> left out (in addition seems not to be needed)
           <statisticalCoding>
             <arr>
               <i>
                 <if>deleteSkipped</if>
                 <becauseOf>ITEM_STATUS</becauseOf>
                 <setCode>ITEM_STATUS</setCode>
-                <!-- seems not to work properly Quesnelia 2024-10-28 -->
               </i>         
             </arr>
-          </statisticalCoding>
+          </statisticalCoding> -->
         </item>
         <holdingsRecord>
           <retainExistingValues>
@@ -151,7 +141,11 @@
             </arr>
           </statisticalCoding>
         </holdingsRecord>
-        <instance/>
+        <instance>
+          <retainExistingValues>
+            <forOmittedProperties>true</forOmittedProperties>
+          </retainExistingValues>
+        </instance>
       </processing>
       <holdingsRecords>
         <arr>
@@ -174,7 +168,7 @@
       <xsl:variable name="electronicholding" select="(substring(../datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O') and not(substring(datafield[@tag='208@']/subfield[@code='b'],1,1) = 'a')"/>
       <callNumber>
           <xsl:if test="not($electronicholding) and (substring(datafield[@tag='208@']/subfield[@code='b'],1,1) != 'd')">
-               <xsl:value-of select="datafield[@tag='209A']/subfield[@code='a']"/>
+            <xsl:value-of select="datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='a']"/>
           </xsl:if>
       </callNumber>  
 	    <holdingsTypeId>
@@ -263,6 +257,7 @@
               <staffOnly>true</staffOnly>
             </i>
           </xsl:for-each>
+          <!-- entfernt, weil über HDS2 angezeigt und sonst gedoppelt
           <xsl:for-each select="datafield[(@tag='244Z') and (subfield[@code='x']&gt;'79') and (subfield[@code='x']&lt;'99')]">
             <i>
               <note>
@@ -296,6 +291,7 @@
               <staffOnly>false</staffOnly>
             </i>
           </xsl:for-each>
+                    -->
           <xsl:for-each select="datafield[@tag='209S']/subfield[@code='S'] | datafield[@tag='204U']/subfield[@code='S'] | datafield[@tag='204P']/subfield[@code='S'] | datafield[@tag='204R']/subfield[@code='S'] ">
             <i>
               <note>
@@ -365,9 +361,7 @@
             </xsl:for-each>
           </arr>
         </electronicAccess>
-      
-        <statisticalCodeIds/>
-    
+       
     </i>
   </xsl:template>
  

@@ -12,61 +12,69 @@
   </xsl:template>  
 
   <!-- ILN 25 UB Mainz -->
-<xsl:template match="processing[not(parent::delete)]">
-  <processing> <!-- overwrites hebis default -->
-    <item>
-      <retainExistingValues>
-        <forOmittedProperties>true</forOmittedProperties>
-        <forTheseProperties>
+  <xsl:template match="processing[not(parent::delete)]">
+    <processing> <!-- overwrites hebis default -->
+      <item>
+        <retainExistingValues>
+          <forOmittedProperties>true</forOmittedProperties>
+          <forTheseProperties>
+            <arr>
+              <i>materialTypeId</i>
+            </arr>
+          </forTheseProperties>
+        </retainExistingValues>
+        <status>
+          <policy>retain</policy>
+        </status>
+        <retainOmittedRecord>
+          <ifField>hrid</ifField>
+          <matchesPattern>it.*</matchesPattern>
+        </retainOmittedRecord>
+        <!-- does not to work properly in Quesnelia 2024-12:
+            - statistical code is not set in some cases (false neagtive)
+            - statistical code is also set (false positive) in "retainOmittedRecord" protected cases
+            - statistical code is also set (false positive) in holding transfer cases
+            -> left out (in addition seems not to be needed)
+          <statisticalCoding>
+            <arr>
+              <i>
+                <if>deleteSkipped</if>
+                <becauseOf>ITEM_STATUS</becauseOf>
+                <setCode>ITEM_STATUS</setCode>
+              </i>         
+            </arr>
+          </statisticalCoding> -->
+      </item>
+      <holdingsRecord>
+        <retainExistingValues>
+          <forOmittedProperties>true</forOmittedProperties>
+        </retainExistingValues>
+        <retainOmittedRecord>
+          <ifField>hrid</ifField>
+          <matchesPattern>ho.*</matchesPattern>
+        </retainOmittedRecord>
+        <statisticalCoding>
           <arr>
-            <i>materialTypeId</i>
+            <i>
+              <if>deleteSkipped</if>
+              <becauseOf>ITEM_STATUS</becauseOf>
+              <setCode>ITEM_STATUS</setCode>
+            </i>
+            <i>
+              <if>deleteSkipped</if>
+              <becauseOf>ITEM_PATTERN_MATCH</becauseOf>
+              <setCode>ITEM_PATTERN_MATCH</setCode>
+            </i> 
           </arr>
-        </forTheseProperties>
-      </retainExistingValues>
-      <status>
-        <policy>retain</policy>
-      </status>
-      <retainOmittedRecord>
-        <ifField>hrid</ifField>
-        <matchesPattern>it.*</matchesPattern>
-      </retainOmittedRecord>
-      <statisticalCoding>
-        <arr>
-          <i>
-            <if>deleteSkipped</if>
-            <becauseOf>ITEM_STATUS</becauseOf>
-            <setCode>ITEM_STATUS</setCode>
-            <!-- seems not to work properly Quesnelia 2024-10-28 -->
-          </i>
-        </arr>
-      </statisticalCoding>
-    </item>
-  	<holdingsRecord>
-  	  <retainExistingValues>
-  	    <forOmittedProperties>true</forOmittedProperties>
-  	  </retainExistingValues>
-  	  <retainOmittedRecord>
-  	    <ifField>hrid</ifField>
-  	    <matchesPattern>ho.*</matchesPattern>
-  	  </retainOmittedRecord>
-  	  <statisticalCoding>
-  	    <arr>
-  	      <i>
-  	        <if>deleteSkipped</if>
-  	        <becauseOf>ITEM_STATUS</becauseOf>
-  	        <setCode>ITEM_STATUS</setCode>
-  	      </i>
-  	      <i>
-  	        <if>deleteSkipped</if>
-  	        <becauseOf>ITEM_PATTERN_MATCH</becauseOf>
-  	        <setCode>ITEM_PATTERN_MATCH</setCode>
-  	      </i> 
-  	    </arr>
-  	  </statisticalCoding>
-  	</holdingsRecord>
-    <instance/>
-  </processing>
-</xsl:template>
+        </statisticalCoding>
+      </holdingsRecord>
+      <instance>
+        <retainExistingValues>
+          <forOmittedProperties>true</forOmittedProperties>
+        </retainExistingValues>
+      </instance>
+    </processing>
+  </xsl:template>
 
   <xsl:template match="permanentLocationId">
     <xsl:variable name="i" select="key('original',.)"/>
@@ -255,6 +263,7 @@
     <xsl:variable name="abt" select="$i/datafield[@tag='209A']/subfield[@code='f']"/>
     <xsl:if test="not(($abt='000' and (./note='FREIHAND' or ./note='LBS' or ./note='LESESAAL' or ./note='RARA' or ./note='MAG')) or
 	  ($abt='002' and (./note='Erziehungswissenschaft' or ./note='Filmwissenschaft' or ./note='Journalistik' or ./note='Politikwissenschaft' or ./note='Psychologie' or ./note='Publizistik' or ./note='Soziologie')) or
+	  ($abt='003' and (./note='LESESAAL')) or
 	  ($abt='005' and (./note='UM LESESAAL' or ./note='UM LBS' or ./note='UM FREIHAND')) or
 	  ($abt='006' and (./note='MIN' or ./note='MIN LEHRBUCHSAMMLUNG')) or
 	  ($abt='016' and (./note='Theologie LEHRBUCHSAMMLUNG')) or
@@ -302,8 +311,26 @@
     </xsl:if>
   </xsl:template>
 
-<!-- Parsing call number for prefix - optional -->
+<!-- multiple call number workaround -->
+  <xsl:template match="notes">
+    <xsl:variable name="i" select="key('original',../permanentLocationId)"/>
+      <notes>
+        <arr>
+        <xsl:apply-templates select="arr/i"/> 
+        <xsl:for-each select="$i/datafield[(@tag='209A') and (subfield[@code='x']!='00')]">
+          <i>
+            <note>
+              <xsl:value-of select="subfield[@code='a']"/>
+            </note>
+              <holdingsNoteTypeId><xsl:text>Weitere Signaturen (71</xsl:text><xsl:value-of select="subfield[@code='x']"/><xsl:text>)</xsl:text></holdingsNoteTypeId>
+            <staffOnly>true</staffOnly>  
+          </i>
+        </xsl:for-each>
+        </arr>
+      </notes>
+  </xsl:template>
 
+  <!-- Parsing call number for prefix - optional -->
   <xsl:template match="callNumber">
     <xsl:variable name="i" select="key('original',../permanentLocationId)"/>
     <xsl:variable name="abt" select="$i/datafield[@tag='209A']/subfield[@code='f']"/>
@@ -313,10 +340,11 @@
         ($abt='000' and (starts-with(., 'RARA ') and not(contains(.,'°')))) or
         ($abt='019' and (starts-with(.,'CELA') or starts-with(.,'CELTRA') or starts-with(.,'LBS') or starts-with(.,'MAG') or starts-with(.,'SSC'))) or
         ($abt='120' and ($standort='Medienkulturwissenschaft' or $standort='Alltagsmedien')) or
-        ($abt='003') or ($abt='004') or 
+        ($abt='003') or ($abt='004') or
+        ($abt='002' and (starts-with(., '400 ') or starts-with(., '410 ') or starts-with(., '430 ') or starts-with(., '480 ')) and $standort='Politikwissenschaft / Bibliothek Inklusive Politische Bildung') or
         ($abt='005' and (starts-with(., '700 ') or starts-with(., '710 '))) or
         ($abt='054' and (starts-with(., '798 ') or starts-with(., '791 '))) or
-        (($abt='127') and not(starts-with(.,'SI ') or starts-with(.,'SK ')))">
+        (($abt='127') and not(starts-with(.,'SI ') or starts-with(.,'SK ')))"> <!-- RVK-Bereiche und Verwandtes -->
         <xsl:choose>
           <xsl:when test="contains(.,' ')">
             <callNumberPrefix>
