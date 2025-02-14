@@ -13,13 +13,16 @@
   <xsl:template match="permanentLocationId"> <!-- ILN -->
     <permanentLocationId>
       <xsl:choose>
-        <xsl:when test=".='DUMMY'">87764786-c5c8-47d0-a480-df506c751d76</xsl:when>
-        <xsl:when test=".='AUFSATZ'">c5d96d68-ffc8-49a4-b43c-42d82f719ea9</xsl:when>
-
-        <xsl:when test=".='LS'">c23399ef-6776-4442-a53a-dfca759c3b9f</xsl:when>
-
-        <xsl:when test=".='ZBZEB'">802ea709-f017-49e7-9795-5fa0053668cb</xsl:when>
-        <xsl:otherwise>413fe054-a4f3-423e-a62f-088eb111ea8d</xsl:otherwise> <!-- ZBMAG -->
+        <xsl:when test=".='DUMMY'">61620ac4-7899-4a94-859e-5cb362ebb6bb</xsl:when>
+        <xsl:when test=".='ONLINE'">f2a4473a-efe8-4162-a121-7c8d61fec455</xsl:when>
+        <xsl:when test=".='ARCH'">b1a0428a-7683-47ab-9faf-c9fdb46aad49</xsl:when>
+        <xsl:when test=".='FREI'">00ccc28b-4a1c-43fb-9101-1f4bfe3673ba</xsl:when>
+        <xsl:when test=".='FB'">d11f081b-14eb-47d7-8cce-bce59636fb35</xsl:when>
+        <xsl:when test=".='KP'">a9c7dc2c-9404-4514-877a-54f3f73e99a6</xsl:when>
+        <xsl:when test=".='RARA'">009c050c-b4ab-4991-b30f-65959e636414</xsl:when>
+        <xsl:when test=".='VW'">cbcdd2e1-ef2f-48a4-8729-18298a13ede8</xsl:when>
+        <xsl:when test=".='NZ'">f21fabca-a4e6-46fb-a761-b97969c35c09</xsl:when>
+        <xsl:otherwise>f21fabca-a4e6-46fb-a761-b97969c35c09</xsl:otherwise> <!-- NZ -->
       </xsl:choose>
     </permanentLocationId>
   </xsl:template>
@@ -28,23 +31,16 @@
   <xsl:template match="permanentLoanTypeId"> <!-- ILN -->
     <permanentLoanTypeId>
       <xsl:choose>
-        <xsl:when test=".='u ausleihbar (auch Fernleihe)'"><xsl:text>7a03b2e2-c995-47a4-83d0-04bbe1930af4</xsl:text></xsl:when> 
-        <xsl:when test=".='b Kurzausleihe'"><xsl:text>df64c252-595d-463c-aad8-3bda0ba101aa</xsl:text></xsl:when>
-        <xsl:when test=".='c Lehrbuchsammlung'"><xsl:text>d1ba00c9-3f08-4df9-9d70-c7e1ab3b1702</xsl:text></xsl:when>
-        <xsl:when test=".='s Präsenzbestand Lesesaal'"><xsl:text>1cecc65a-a7c4-437a-bb04-6756c23b422e</xsl:text></xsl:when>
-        <xsl:when test=".='d ausleihbar (keine Fernleihe)'"><xsl:text>31c550e8-86b7-4674-bab0-7011ba94148e</xsl:text></xsl:when>
-        <xsl:when test=".='i nur für den Lesesaal'"><xsl:text>e04e82c1-1257-4046-bc5e-d742bbe061da</xsl:text></xsl:when>
-        <xsl:when test=".='e vermisst'"><xsl:text>cbd4ec80-1622-420e-8b7c-644b04109367</xsl:text></xsl:when>
-        <xsl:when test=".='a bestellt'"><xsl:text>8cef8fa7-0a78-4bdd-84d3-25ce207ef8c8</xsl:text></xsl:when>
-        <xsl:when test=".='g nicht ausleihbar'"><xsl:text>20c359cb-b422-47cc-8c40-e8f6655f2b70</xsl:text></xsl:when>
-        <xsl:when test=".='Test'"><xsl:text>3b23397c-93ec-40ad-bb8a-9113f9fe9de2</xsl:text></xsl:when>
-        <xsl:when test=".='z Verlust'"><xsl:text>661ffe64-2e47-4203-845f-96d820aa48f2</xsl:text></xsl:when>
-        <xsl:when test=".='1 Fernleihe - ausleihbar ohne Verl.'"><xsl:text>fb17e0b8-75cc-4ea2-a7ac-87bb53d146f9</xsl:text></xsl:when>
-        <xsl:when test=".='2 Fernleihe - ausleihbar mit Verl.'"><xsl:text>370d3831-a948-4e46-9499-5ddea2f26150</xsl:text></xsl:when>
-        <xsl:when test=".='3 Fernleihe - Kurzausleihe ohne Verl.'"><xsl:text>e6608ce5-4a46-4497-b15d-e28378a9b29c</xsl:text></xsl:when>
-        <xsl:when test=".='dummy'"><xsl:text>80ff439c-3ccb-48df-9758-c11011cef6d0</xsl:text></xsl:when>
-        <xsl:when test=".='unbekannt'"><xsl:text>39176004-0e64-4d06-b136-7140e7016298</xsl:text></xsl:when>        
-        <xsl:otherwise>39176004-0e64-4d06-b136-7140e7016298</xsl:otherwise> <!-- unbekannt -->
+        <xsl:when test=".='u ausleihbar'"><xsl:text>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</xsl:text></xsl:when> 
+        <xsl:when test=".='s Präsenzbestand'"><xsl:text>b3e00274-cc17-413c-a6ba-c3ddf816c14f</xsl:text></xsl:when>
+        <xsl:when test=".='d Zustimmung Wochenendausleihe'"><xsl:text>76d6f2ba-46b8-49b8-83d6-d232a978d1ca</xsl:text></xsl:when>
+        <xsl:when test=".='i nur für den Lesesaal'"><xsl:text>52a32f70-978e-4a66-9eeb-bccdf9c081bc</xsl:text></xsl:when>
+        <xsl:when test=".='e vermisst'"><xsl:text>a86b5d31-84c1-4cde-8237-337f3267c9e9</xsl:text></xsl:when>
+        <xsl:when test=".='g nicht ausleihbar'"><xsl:text>c7fe3ab7-e05c-405b-8699-fbea519e2bad</xsl:text></xsl:when>
+        <xsl:when test=".='z Verlust'"><xsl:text>f0f0114d-09a3-4785-b9ca-93d2f3c47bda</xsl:text></xsl:when>
+        <xsl:when test=".='dummy'"><xsl:text>009be487-b93d-47e1-acde-eab43ea5fe33</xsl:text></xsl:when>
+        <xsl:when test=".='unbekannt'"><xsl:text>a2ce67e6-798d-4420-94f4-3adc2cb5c6a4</xsl:text></xsl:when>        
+        <xsl:otherwise>a2ce67e6-798d-4420-94f4-3adc2cb5c6a4</xsl:otherwise> <!-- unbekannt -->
       </xsl:choose>
     </permanentLoanTypeId>
   </xsl:template>
