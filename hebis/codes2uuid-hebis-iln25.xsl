@@ -141,8 +141,8 @@
         <xsl:when test=".='Weitere Signaturen (7106)'"><xsl:text>12878c96-b955-4b11-ad20-b3d35c5e1d27</xsl:text></xsl:when>
         <xsl:when test=".='Weitere Signaturen (7107)'"><xsl:text>c0a59e6c-e6ea-4158-b4c5-610486f8f6e9</xsl:text></xsl:when>
         <xsl:when test=".='Weitere Signaturen (7108)'"><xsl:text>f43a450a-0574-450b-9dd1-74d9ae6a6502</xsl:text></xsl:when>     
-        <xsl:when test=".='Weitere Signaturen (7109)'"><xsl:text>a3b8e442-a3bf-461e-a708-173001b8e67c</xsl:text></xsl:when>
-        <xsl:when test=".='Weitere Signaturen (7110)'"><xsl:text>24f2019c-2e64-42b3-a760-7a89a0dcb363</xsl:text></xsl:when>
+        <xsl:when test=".='Magazinsignatur (nur Monografien) (7109)'"><xsl:text>a3b8e442-a3bf-461e-a708-173001b8e67c</xsl:text></xsl:when>
+        <xsl:when test=".='Magazinsignatur (nur Zeitschriften) (7110)'"><xsl:text>24f2019c-2e64-42b3-a760-7a89a0dcb363</xsl:text></xsl:when>
         <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
       </xsl:choose>
     </holdingsNoteTypeId>

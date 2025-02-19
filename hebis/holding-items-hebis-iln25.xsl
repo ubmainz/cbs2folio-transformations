@@ -322,7 +322,20 @@
             <note>
               <xsl:value-of select="subfield[@code='a']"/>
             </note>
-              <holdingsNoteTypeId><xsl:text>Weitere Signaturen (71</xsl:text><xsl:value-of select="subfield[@code='x']"/><xsl:text>)</xsl:text></holdingsNoteTypeId>
+            <holdingsNoteTypeId>
+              <xsl:variable name="codex" select="subfield[@code='x']"/>
+              <xsl:choose>
+                <xsl:when test="$codex='09'">
+                  <xsl:text>Magazinsignatur (nur Monografien) (71</xsl:text><xsl:value-of select="$codex"/><xsl:text>)</xsl:text>
+                </xsl:when>
+                <xsl:when test="$codex='10'">
+                  <xsl:text>Magazinsignatur (nur Zeitschriften) (71</xsl:text><xsl:value-of select="$codex"/><xsl:text>)</xsl:text>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:text>Weitere Signaturen (71</xsl:text><xsl:value-of select="$codex"/><xsl:text>)</xsl:text>
+                </xsl:otherwise>
+              </xsl:choose>
+            </holdingsNoteTypeId>
             <staffOnly>true</staffOnly>  
           </i>
         </xsl:for-each>
