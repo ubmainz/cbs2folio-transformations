@@ -12,7 +12,7 @@
   <!-- Note: <xsl:text> Elements mark the UUIDs that are added by K10plus/hebis and are used to generate the reference records -->
 
   <!-- Map item note types -->
-  <xsl:template match="itemNoteTypeId"> <!-- Level 2: FOLIO/hebis-wide -->
+  <xsl:template match="itemNoteTypeId"> <!-- Level 2: FOLIO -->
     <itemNoteTypeId>
       <xsl:choose>
         <xsl:when test=".='Binding'"><xsl:text>87c450be-2033-41fb-80ba-dd2409883681</xsl:text></xsl:when>
