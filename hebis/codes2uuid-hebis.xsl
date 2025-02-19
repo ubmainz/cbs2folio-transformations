@@ -599,34 +599,34 @@
   </xsl:template>
 
   <!-- Map instance types -->
-  <xsl:template match="instanceTypeId">
+  <xsl:template match="instanceTypeId"> <!-- TBD code -->
     <instanceTypeId>
       <xsl:choose>
-        <xsl:when test=".='Kartografischer Datensatz'">3363cdb1-e644-446c-82a4-dc3a1d4395b9</xsl:when>
-        <xsl:when test=".='Kartografisches Bild'">526aa04d-9289-4511-8866-349299592c18</xsl:when>
-        <xsl:when test=".='Kartografisches bewegtes Bild'">80c0c134-0240-4b63-99d0-6ca755d5f433</xsl:when>
-        <xsl:when test=".='Kartografisches taktiles Bild'">408f82f0-e612-4977-96a1-02076229e312</xsl:when>
-        <xsl:when test=".='Kartografische taktile dreidimensionale Form'">e5136fa2-1f19-4581-b005-6e007a940ca8</xsl:when>
-        <xsl:when test=".='Kartografische dreidimensionale Form'">2022aa2e-bdde-4dc4-90bc-115e8894b8b3</xsl:when>
-        <xsl:when test=".='Computerdaten'">df5dddff-9c30-4507-8b82-119ff972d4d7</xsl:when>
-        <xsl:when test=".='Computerprogramm'">c208544b-9e28-44fa-a13c-f4093d72f798</xsl:when>
-        <xsl:when test=".='Bewegungsnotation'">fbe264b5-69aa-4b7c-a230-3b53337f6440</xsl:when>
-        <xsl:when test=".='Noten'">497b5090-3da2-486c-b57f-de5bb3c2e26d</xsl:when>
-        <xsl:when test=".='Aufgeführte Musik'">3be24c14-3551-4180-9292-26a786649c8b</xsl:when>
-        <xsl:when test=".='Geräusche'">9bce18bd-45bf-4949-8fa8-63163e4b7d7f</xsl:when>
-        <xsl:when test=".='Gesprochenes Wort'">c7f7446f-4642-4d97-88c9-55bae2ad6c7f</xsl:when>
-        <xsl:when test=".='Unbewegtes Bild'">535e3160-763a-42f9-b0c0-d8ed7df6e2a2</xsl:when>
-        <xsl:when test=".='Taktiles Bild'">efe2e89b-0525-4535-aa9b-3ff1a131189e</xsl:when>
-        <xsl:when test=".='Taktile Bewegungsnotation'">e6a278fb-565a-4296-a7c5-8eb63d259522</xsl:when>
-        <xsl:when test=".='Taktile Noten'">a67e00fd-dcce-42a9-9e75-fd654ec31e89</xsl:when>
-        <xsl:when test=".='Taktiler Text'">8105bd44-e7bd-487e-a8f2-b804a361d92f</xsl:when>
-        <xsl:when test=".='Taktile dreidimensionale Form'">82689e16-629d-47f7-94b5-d89736cf11f2</xsl:when>
-        <xsl:when test=".='Text'">6312d172-f0cf-40f6-b27d-9fa8feaf332f</xsl:when>
-        <xsl:when test=".='Dreidimensionale Form'">c1e95c2b-4efc-48cf-9e71-edb622cf0c22</xsl:when>
-        <xsl:when test=".='Dreidimensionales bewegtes Bild'">3e3039b7-fda0-4ac4-885a-022d457cb99c</xsl:when>
-        <xsl:when test=".='Zweidimensionales bewegtes Bild'">225faa14-f9bf-4ecd-990d-69433c912434</xsl:when>
-        <xsl:when test=".='Nicht spezifiziert'">30fffe0e-e985-4144-b2e2-1e8179bdb41f</xsl:when>
-        <xsl:when test=".='Sonstige'">a2c91e87-6bab-44d6-8adb-1fd02481fc4f</xsl:when>
+        <xsl:when test=".='Kartografischer Datensatz'"><xsl:text>3363cdb1-e644-446c-82a4-dc3a1d4395b9</xsl:text></xsl:when>
+        <xsl:when test=".='Kartografisches Bild'"><xsl:text>526aa04d-9289-4511-8866-349299592c18</xsl:text></xsl:when>
+        <xsl:when test=".='Kartografisches bewegtes Bild'"><xsl:text>80c0c134-0240-4b63-99d0-6ca755d5f433</xsl:text></xsl:when>
+        <xsl:when test=".='Kartografisches taktiles Bild'"><xsl:text>408f82f0-e612-4977-96a1-02076229e312</xsl:text></xsl:when>
+        <xsl:when test=".='Kartografische taktile dreidimensionale Form'"><xsl:text>e5136fa2-1f19-4581-b005-6e007a940ca8</xsl:text></xsl:when>
+        <xsl:when test=".='Kartografische dreidimensionale Form'"><xsl:text>2022aa2e-bdde-4dc4-90bc-115e8894b8b3</xsl:text></xsl:when>
+        <xsl:when test=".='Computerdaten'"><xsl:text>df5dddff-9c30-4507-8b82-119ff972d4d7</xsl:text></xsl:when>
+        <xsl:when test=".='Computerprogramm'"><xsl:text>c208544b-9e28-44fa-a13c-f4093d72f798</xsl:text></xsl:when>
+        <xsl:when test=".='Bewegungsnotation'"><xsl:text>fbe264b5-69aa-4b7c-a230-3b53337f6440</xsl:text></xsl:when>
+        <xsl:when test=".='Noten'"><xsl:text>497b5090-3da2-486c-b57f-de5bb3c2e26d</xsl:text></xsl:when>
+        <xsl:when test=".='Aufgeführte Musik'"><xsl:text>3be24c14-3551-4180-9292-26a786649c8b</xsl:text></xsl:when>
+        <xsl:when test=".='Geräusche'"><xsl:text>9bce18bd-45bf-4949-8fa8-63163e4b7d7f</xsl:text></xsl:when>
+        <xsl:when test=".='Gesprochenes Wort'"><xsl:text>c7f7446f-4642-4d97-88c9-55bae2ad6c7f</xsl:text></xsl:when>
+        <xsl:when test=".='Unbewegtes Bild'"><xsl:text>535e3160-763a-42f9-b0c0-d8ed7df6e2a2</xsl:text></xsl:when>
+        <xsl:when test=".='Taktiles Bild'"><xsl:text>efe2e89b-0525-4535-aa9b-3ff1a131189e</xsl:text></xsl:when>
+        <xsl:when test=".='Taktile Bewegungsnotation'"><xsl:text>e6a278fb-565a-4296-a7c5-8eb63d259522</xsl:text></xsl:when>
+        <xsl:when test=".='Taktile Noten'"><xsl:text>a67e00fd-dcce-42a9-9e75-fd654ec31e89</xsl:text></xsl:when>
+        <xsl:when test=".='Taktiler Text'"><xsl:text>8105bd44-e7bd-487e-a8f2-b804a361d92f</xsl:text></xsl:when>
+        <xsl:when test=".='Taktile dreidimensionale Form'"><xsl:text>82689e16-629d-47f7-94b5-d89736cf11f2</xsl:text></xsl:when>
+        <xsl:when test=".='Text'"><xsl:text>6312d172-f0cf-40f6-b27d-9fa8feaf332f</xsl:text></xsl:when>
+        <xsl:when test=".='Dreidimensionale Form'"><xsl:text>c1e95c2b-4efc-48cf-9e71-edb622cf0c22</xsl:text></xsl:when>
+        <xsl:when test=".='Dreidimensionales bewegtes Bild'"><xsl:text>3e3039b7-fda0-4ac4-885a-022d457cb99c</xsl:text></xsl:when>
+        <xsl:when test=".='Zweidimensionales bewegtes Bild'"><xsl:text>225faa14-f9bf-4ecd-990d-69433c912434</xsl:text></xsl:when>
+        <xsl:when test=".='Nicht spezifiziert'"><xsl:text>30fffe0e-e985-4144-b2e2-1e8179bdb41f</xsl:text></xsl:when>
+        <xsl:when test=".='Sonstige'"><xsl:text>a2c91e87-6bab-44d6-8adb-1fd02481fc4f</xsl:text></xsl:when>
         <xsl:otherwise>30fffe0e-e985-4144-b2e2-1e8179bdb41f</xsl:otherwise>
       </xsl:choose>
     </instanceTypeId>
@@ -636,11 +636,12 @@
   <xsl:template match="modeOfIssuanceId">
     <modeOfIssuanceId>
       <xsl:choose>
-        <xsl:when test=".='integrierende Ressource'">4fc0f4fe-06fd-490a-a078-c4da1754e03a</xsl:when>
-        <xsl:when test=".='mehrteilige Monografie'">f5cc2ab6-bb92-4cab-b83f-5a3d09261a41</xsl:when>
-        <xsl:when test=".='fortlaufende Ressource'">068b5344-e2a6-40df-9186-1829e13cd344</xsl:when>
-        <xsl:when test=".='nicht spezifiziert'">612bbd3d-c16b-4bfb-8517-2afafc60204a</xsl:when>
-        <xsl:otherwise>9d18a02f-5897-4c31-9106-c9abb5c7ae8b</xsl:otherwise>
+        <xsl:when test=".='integrierende Ressource'"><xsl:text>4fc0f4fe-06fd-490a-a078-c4da1754e03a</xsl:text></xsl:when>
+        <xsl:when test=".='mehrteilige Monografie'"><xsl:text>f5cc2ab6-bb92-4cab-b83f-5a3d09261a41</xsl:text></xsl:when>
+        <xsl:when test=".='fortlaufende Ressource'"><xsl:text>068b5344-e2a6-40df-9186-1829e13cd344</xsl:text></xsl:when>
+        <xsl:when test=".='nicht spezifiziert'"><xsl:text>612bbd3d-c16b-4bfb-8517-2afafc60204a</xsl:text></xsl:when>
+        <xsl:when test=".='einzelne Einheit'"><xsl:text>9d18a02f-5897-4c31-9106-c9abb5c7ae8b</xsl:text></xsl:when>
+        <xsl:otherwise>9d18a02f-5897-4c31-9106-c9abb5c7ae8b</xsl:otherwise> <!-- einzelne Einheit -->
       </xsl:choose>
     </modeOfIssuanceId>
   </xsl:template>
