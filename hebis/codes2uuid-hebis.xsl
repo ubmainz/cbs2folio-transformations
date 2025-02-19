@@ -956,10 +956,10 @@
   <xsl:template match="instanceRelationshipTypeId">
     <instanceRelationshipTypeId>
       <xsl:choose>
-        <xsl:when test=".='Aufsatz'">6366b68c-aeeb-4dfe-9cd5-92518b2244a0</xsl:when>
-        <xsl:when test=".='Band'">23651816-7176-406a-8915-52e25b3a9411</xsl:when>
-        <xsl:when test=".='Mehrteilige Monografie'">a17daf0a-f057-43b3-9997-13d0724cdf51</xsl:when>
-        <xsl:when test=".='Schriftenreihe'">30773a27-b485-4dab-aeb6-b8c04fa3cb17</xsl:when>
+        <xsl:when test=".='Aufsatz'"><xsl:text>6366b68c-aeeb-4dfe-9cd5-92518b2244a0</xsl:text></xsl:when>
+        <xsl:when test=".='Band'"><xsl:text>23651816-7176-406a-8915-52e25b3a9411</xsl:text></xsl:when>
+        <xsl:when test=".='Mehrteilige Monografie'"><xsl:text>a17daf0a-f057-43b3-9997-13d0724cdf51</xsl:text></xsl:when>
+        <xsl:when test=".='Schriftenreihe'"><xsl:text>30773a27-b485-4dab-aeb6-b8c04fa3cb17</xsl:text></xsl:when>
       </xsl:choose>
     </instanceRelationshipTypeId>
   </xsl:template>
