@@ -590,6 +590,7 @@
   <xsl:template match="sourceId"> <!-- Level 2: hebis-wide -->
     <sourceId>
       <xsl:choose>
+        <xsl:when test=".='FOLIO'"><xsl:text>f32d531e-df79-46b3-8932-cdd35f7a2264</xsl:text></xsl:when>
         <xsl:when test=".='hebis'"><xsl:text>ed96edb1-d91d-4a31-9c40-006f5199d782</xsl:text></xsl:when> <!-- hebis wide -->
         <xsl:otherwise>f32d531e-df79-46b3-8932-cdd35f7a2264</xsl:otherwise> <!-- FOLIO -->
       </xsl:choose>
