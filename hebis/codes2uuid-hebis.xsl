@@ -936,8 +936,8 @@
   <xsl:template match="contributorNameTypeId">
     <contributorNameTypeId>
       <xsl:choose>
-        <xsl:when test=".='Personenname'"><xsl:text>2b94c631-fca9-4892-a730-03ee529ffe2a</xsl:text></xsl:when> <!-- ordering: 1 -->
-        <xsl:when test=".='Körperschaftsname'"><xsl:text>2e48e713-17f3-4c13-a9f8-23845bb210aa</xsl:text></xsl:when> <!-- ordering: 2 -->
+        <xsl:when test=".='Personenname'"><xsl:text>2b94c631-fca9-4892-a730-03ee529ffe2a</xsl:text></xsl:when> <!-- <xsl:text>  "ordering": 1"</xsl:text> -->
+        <xsl:when test=".='Körperschaftsname'"><xsl:text>2e48e713-17f3-4c13-a9f8-23845bb210aa</xsl:text></xsl:when> <!-- <xsl:text>  "ordering": 2"</xsl:text> -->
       </xsl:choose>
     </contributorNameTypeId>
   </xsl:template>
