@@ -497,29 +497,29 @@
   <xsl:template match="identifierTypeId"> <!-- Level 0: FOLIO + hebis-wide (=K10plus) -->
     <identifierTypeId>
       <xsl:choose>
-        <xsl:when test=".='Cancelled GPO item number'">5069054d-bc3a-4212-a4e8-e2013a02386f</xsl:when>
-        <xsl:when test=".='Standard technical report number'">8e3dd25e-db82-4b06-8311-90d41998c109</xsl:when>
-        <xsl:when test=".='CODEN'">593b78cb-32f3-44d1-ba8c-63fd5e6989e6</xsl:when>
-        <xsl:when test=".='Report number'">37b65e79-0392-450d-adc6-e2a1f47de452</xsl:when>
-        <xsl:when test=".='URN'">eb7b2717-f149-4fec-81a3-deefb8f5ee6b</xsl:when>
-        <xsl:when test=".='GPO item number'">351ebc1c-3aae-4825-8765-c6d50dbf011f</xsl:when>
-        <xsl:when test=".='DOI'">39554f54-d0bb-4f0a-89a4-e422f6136316</xsl:when>
-        <xsl:when test=".='System control number'">7e591197-f335-4afb-bc6d-a6d76ca3bace</xsl:when>
-        <xsl:when test=".='ISBN'">8261054f-be78-422d-bd51-4ed9f33c3422</xsl:when>
-        <xsl:when test=".='StEdNL'">3fbacad6-0240-4823-bce8-bb122cfdf229</xsl:when>
-        <xsl:when test=".='Control number'">5d164f4b-0b15-4e42-ae75-cfcf85318ad9</xsl:when>
-        <xsl:when test=".='LCCN'">c858e4f2-2b6b-4385-842b-60732ee14abb</xsl:when>
-        <xsl:when test=".='Invalid ISBN'">fcca2643-406a-482a-b760-7a7f8aec640e</xsl:when>
-        <xsl:when test=".='OCLC'">439bfbae-75bc-4f74-9fc7-b2a2d47ce3ef</xsl:when>
-        <xsl:when test=".='ISSN'">913300b2-03ed-469a-8179-c1092c991227</xsl:when>
-        <xsl:when test=".='Handle'">216b156b-215e-4839-a53e-ade35cb5702a</xsl:when>
-        <xsl:when test=".='Local identifier'">5130aed5-1095-4fb6-8f6f-caa3d6cc7aae</xsl:when>
-        <xsl:when test=".='UkMac'">650ef996-35e3-48ec-bf3a-a0d078a0ca37</xsl:when>
-        <xsl:when test=".='ASIN'">7f907515-a1bf-4513-8a38-92e1a07c539d</xsl:when>
-        <xsl:when test=".='Invalid ISSN'">27fd35a6-b8f6-41f2-aa0e-9c663ceb250c</xsl:when>
-        <xsl:when test=".='Linking ISSN'">5860f255-a27f-4916-a830-262aa900a6b9</xsl:when>
-        <xsl:when test=".='Publisher or distributor number'">b5d8cdc4-9441-487c-90cf-0c7ec97728eb</xsl:when>
-        <xsl:when test=".='BNB'">3187432f-9434-40a8-8782-35a111a1491e</xsl:when>
+        <xsl:when test=".='Cancelled GPO item number'"><xsl:text>5069054d-bc3a-4212-a4e8-e2013a02386f</xsl:text></xsl:when>
+        <xsl:when test=".='Standard technical report number'"><xsl:text>8e3dd25e-db82-4b06-8311-90d41998c109</xsl:text></xsl:when>
+        <xsl:when test=".='CODEN'"><xsl:text>593b78cb-32f3-44d1-ba8c-63fd5e6989e6</xsl:text></xsl:when>
+        <xsl:when test=".='Report number'"><xsl:text>37b65e79-0392-450d-adc6-e2a1f47de452</xsl:text></xsl:when>
+        <xsl:when test=".='URN'"><xsl:text>eb7b2717-f149-4fec-81a3-deefb8f5ee6b</xsl:text></xsl:when>
+        <xsl:when test=".='GPO item number'"><xsl:text>351ebc1c-3aae-4825-8765-c6d50dbf011f</xsl:text></xsl:when>
+        <xsl:when test=".='DOI'"><xsl:text>39554f54-d0bb-4f0a-89a4-e422f6136316</xsl:text></xsl:when>
+        <xsl:when test=".='System control number'"><xsl:text>7e591197-f335-4afb-bc6d-a6d76ca3bace</xsl:text></xsl:when>
+        <xsl:when test=".='ISBN'"><xsl:text>8261054f-be78-422d-bd51-4ed9f33c3422</xsl:text></xsl:when>
+        <xsl:when test=".='StEdNL'"><xsl:text>3fbacad6-0240-4823-bce8-bb122cfdf229</xsl:text></xsl:when>
+        <xsl:when test=".='Control number'"><xsl:text>5d164f4b-0b15-4e42-ae75-cfcf85318ad9</xsl:text></xsl:when>
+        <xsl:when test=".='LCCN'"><xsl:text>c858e4f2-2b6b-4385-842b-60732ee14abb</xsl:text></xsl:when>
+        <xsl:when test=".='Invalid ISBN'"><xsl:text>fcca2643-406a-482a-b760-7a7f8aec640e</xsl:text></xsl:when>
+        <xsl:when test=".='OCLC'"><xsl:text>439bfbae-75bc-4f74-9fc7-b2a2d47ce3ef</xsl:text></xsl:when>
+        <xsl:when test=".='ISSN'"><xsl:text>913300b2-03ed-469a-8179-c1092c991227</xsl:text></xsl:when>
+        <xsl:when test=".='Handle'"><xsl:text>216b156b-215e-4839-a53e-ade35cb5702a</xsl:text></xsl:when>
+        <xsl:when test=".='Local identifier'"><xsl:text>5130aed5-1095-4fb6-8f6f-caa3d6cc7aae</xsl:text></xsl:when>
+        <xsl:when test=".='UkMac'"><xsl:text>650ef996-35e3-48ec-bf3a-a0d078a0ca37</xsl:text></xsl:when>
+        <xsl:when test=".='ASIN'"><xsl:text>7f907515-a1bf-4513-8a38-92e1a07c539d</xsl:text></xsl:when>
+        <xsl:when test=".='Invalid ISSN'"><xsl:text>27fd35a6-b8f6-41f2-aa0e-9c663ceb250c</xsl:text></xsl:when>
+        <xsl:when test=".='Linking ISSN'"><xsl:text>5860f255-a27f-4916-a830-262aa900a6b9</xsl:text></xsl:when>
+        <xsl:when test=".='Publisher or distributor number'"><xsl:text>b5d8cdc4-9441-487c-90cf-0c7ec97728eb</xsl:text></xsl:when>
+        <xsl:when test=".='BNB'"><xsl:text>3187432f-9434-40a8-8782-35a111a1491e</xsl:text></xsl:when>
         <xsl:when test=".='GBV Number'"><xsl:text>e133d384-332d-11ea-a8a4-ff796e46a18d</xsl:text></xsl:when>
         <xsl:when test=".='PPN'"><xsl:text>1d5cb40c-508f-451b-8952-87c92be4255a</xsl:text></xsl:when>
         <xsl:when test=".='PPN SWB'"><xsl:text>6048004e-75bc-11ea-8ddd-5a780fe0d4e4</xsl:text></xsl:when>
