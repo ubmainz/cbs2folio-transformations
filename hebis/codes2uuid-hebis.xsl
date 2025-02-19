@@ -472,8 +472,8 @@
   <xsl:template match="statusId"> 
     <statusId>
     <xsl:choose>
-      <xsl:when test=".='Cataloged'">9634a5ab-9228-4703-baf2-4d12ebc77d56</xsl:when>
-      <xsl:when test=".='Uncataloged'">26f5208e-110a-4394-be29-1569a8c84a65</xsl:when>
+      <xsl:when test=".='Cataloged'"><xsl:text>9634a5ab-9228-4703-baf2-4d12ebc77d56</xsl:text></xsl:when>
+      <xsl:when test=".='Uncataloged'"><xsl:text>26f5208e-110a-4394-be29-1569a8c84a65</xsl:text></xsl:when>
       <xsl:when test=".='Autopsie'"><xsl:text>bac08adf-98ef-44ee-8e8a-ab76128c92c1</xsl:text></xsl:when>
       <xsl:when test=".='Bibliografisch vollständig'"><xsl:text>8bc58a74-b04e-45a4-8c5d-64568a5f0d55</xsl:text></xsl:when>
       <xsl:when test=".='Erwerbungsdatensatz'"><xsl:text>5dc8b06f-6b85-4a64-9825-811d5c0660a8</xsl:text></xsl:when>
@@ -568,10 +568,11 @@
   </xsl:template>
   
   <!-- Map classification types -->
-  <xsl:template match="classificationTypeId"> <!-- Level 1: ILN-specific  -->
+  <xsl:template match="classificationTypeId"> <!-- Level 1: ILN-specific?  -->
     <classificationTypeId>
     <xsl:choose>
-      <xsl:when test=".='Lokale Klassifikation'">720a846a-85db-4d3a-bfd9-7dfd2f55ae4a</xsl:when>
+      <xsl:when test=".='Lokale Klassifikation'"><xsl:text>720a846a-85db-4d3a-bfd9-7dfd2f55ae4a</xsl:text></xsl:when>
+      <xsl:when test=".='RVK'"><xsl:text>9a0d9e18-166a-4a79-9c20-68430ced288a</xsl:text></xsl:when>
     </xsl:choose>
     </classificationTypeId>
   </xsl:template>
