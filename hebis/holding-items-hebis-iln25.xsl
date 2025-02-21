@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- date of last edit: 2023-06-16 (YYYY-MM-DD) -->
 
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
   <xsl:output indent="yes" method="xml" version="1.0" encoding="UTF-8"/>
   <xsl:key name="original" match="original/item" use="@epn"/>
      
@@ -79,7 +79,7 @@
   <xsl:template match="permanentLocationId">
     <xsl:variable name="i" select="key('original',.)"/>
     <xsl:variable name="abt" select="$i/datafield[@tag='209A']/subfield[@code='f']"/>
-    <xsl:variable name="standort" select="$i/datafield[(@tag='209G') and (subfield[@code='x']='01')]/subfield[@code='a']"/> 
+    <xsl:variable name="standort" select="upper-case($i/datafield[(@tag='209G') and (subfield[@code='x']='01')]/subfield[@code='a'])"/> 
     <xsl:variable name="electronicholding" select="(substring($i/../datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O') and not(substring($i/datafield[@tag='208@']/subfield[@code='b'],1,1) = 'a')"/>
     <xsl:variable name="onorder" select="substring($i/datafield[@tag='208@']/subfield[@code='b'],1,1) = 'a'"/>
     <permanentLocationId>
@@ -90,8 +90,8 @@
          <xsl:when test="$abt='000'">
            <xsl:choose>
              <xsl:when test="$onorder">ZBZEB</xsl:when>
-             <xsl:when test="contains($standort,'Fernleihe Lesesaal')">ZBFLLS</xsl:when>
-             <xsl:when test="contains($standort,'Fernleihe')">ZBFL</xsl:when>
+             <xsl:when test="contains($standort,'FERNLEIHE LESESAAL')">ZBFLLS</xsl:when>
+             <xsl:when test="contains($standort,'FERNLEIHE')">ZBFL</xsl:when>
              <xsl:when test="contains($standort,'FREIHAND')">ZBFREI</xsl:when>
              <xsl:when test="contains($standort,'LESESAAL')">ZBLS</xsl:when>
              <xsl:when test="contains($standort,'LBS')">ZBLBS</xsl:when>
@@ -102,13 +102,13 @@
          <xsl:when test="$abt='002'">
            <xsl:choose>
              <xsl:when test="$onorder">GFGZEB</xsl:when>
-             <xsl:when test="contains($standort,'Erziehungswissenschaft')">GFGPÄD</xsl:when>
-             <xsl:when test="contains($standort,'Filmwissenschaft')">GFGFILM</xsl:when>
-             <xsl:when test="contains($standort,'Journalistik')">GFGJOUR</xsl:when>
-             <xsl:when test="contains($standort,'Politikwissenschaft')">GFGPOL</xsl:when>
-             <xsl:when test="contains($standort,'Psychologie')">GFGPSYCH</xsl:when>
-             <xsl:when test="contains($standort,'Publizistik')">GFGPUB</xsl:when>
-             <xsl:when test="contains($standort,'Soziologie')">GFGSOZ</xsl:when>
+             <xsl:when test="contains($standort,upper-case('Erziehungswissenschaft'))">GFGPÄD</xsl:when>
+             <xsl:when test="contains($standort,upper-case('Filmwissenschaft'))">GFGFILM</xsl:when>
+             <xsl:when test="contains($standort,upper-case('Journalistik'))">GFGJOUR</xsl:when>
+             <xsl:when test="contains($standort,upper-case('Politikwissenschaft'))">GFGPOL</xsl:when>
+             <xsl:when test="contains($standort,upper-case('Psychologie'))">GFGPSYCH</xsl:when>
+             <xsl:when test="contains($standort,upper-case('Publizistik'))">GFGPUB</xsl:when>
+             <xsl:when test="contains($standort,upper-case('Soziologie'))">GFGSOZ</xsl:when>
              <xsl:otherwise>GFGPÄD</xsl:otherwise>
            </xsl:choose>
          </xsl:when>
@@ -129,36 +129,36 @@
          <xsl:when test="$abt='006'">
            <xsl:choose>
              <xsl:when test="contains($standort,'LEHRBUCH')">MINTLBS</xsl:when>
-             <xsl:when test="contains($standort,'Handapparat')">MINTFAK</xsl:when>
+             <xsl:when test="contains($standort,'HANDAPPARAT')">MINTFAK</xsl:when>
              <xsl:otherwise>MINT</xsl:otherwise>
            </xsl:choose>
          </xsl:when>
          <xsl:when test="$abt='009'">FBMPI</xsl:when>	
          <xsl:when test="$abt='016'">
            <xsl:choose>
-             <xsl:when test="contains($standort,'Magazin') or contains($standort,'Rara')">THRARA</xsl:when>
+             <xsl:when test="contains($standort,'MAGAZIN') or contains($standort,'Rara')">THRARA</xsl:when>
              <xsl:when test="contains($standort,'LEHRBUCH')">THLBS</xsl:when>
-             <xsl:when test="contains($standort,'Büro') or contains($standort,'büro')">THFAK</xsl:when>
-             <xsl:when test="contains($standort,'Psychologie')">THPSYCH</xsl:when>
+             <xsl:when test="contains($standort,'BÜRO') or contains($standort,'büro')">THFAK</xsl:when>
+             <xsl:when test="contains($standort,'PSYCHOLOGIE')">THPSYCH</xsl:when>
              <xsl:otherwise>TH</xsl:otherwise>
            </xsl:choose>
          </xsl:when>
          <xsl:when test="$abt='018'">
            <xsl:choose>
              <xsl:when test="contains($standort,'LEHRBUCH')">RWLBS</xsl:when>
-             <xsl:when test="contains($standort,'Magazin')">RWMAG</xsl:when>
+             <xsl:when test="contains($standort,'MAGAZIN')">RWMAG</xsl:when>
              <xsl:otherwise>RW</xsl:otherwise>
            </xsl:choose>
          </xsl:when>
          <xsl:when test="$abt='019'">
            <xsl:choose>
              <xsl:when test="$onorder">GHZEB</xsl:when>
-             <xsl:when test="contains($standort,'Fernleihe Lesesaal')">GHFLLS</xsl:when>
-             <xsl:when test="contains($standort,'Fernleihe')">GHFL</xsl:when>
-             <xsl:when test="contains($standort,'Handapparat')">GHFAK</xsl:when> <!-- Es gibt auch starts-with(...,...) -->
-             <xsl:when test="contains($standort,'Lehrbuch')">GHLBS</xsl:when>
-             <xsl:when test="contains($standort,'Lesesaal')">GHLS</xsl:when>
-             <xsl:when test="contains($standort,'Magazin')">GHMAG</xsl:when>
+             <xsl:when test="contains($standort,upper-case('Fernleihe Lesesaal'))">GHFLLS</xsl:when>
+             <xsl:when test="contains($standort,upper-case('Fernleihe'))">GHFL</xsl:when>
+             <xsl:when test="contains($standort,upper-case('Handapparat'))">GHFAK</xsl:when>
+             <xsl:when test="contains($standort,upper-case('Lehrbuch'))">GHLBS</xsl:when>
+             <xsl:when test="contains($standort,upper-case('Lesesaal'))">GHLS</xsl:when>
+             <xsl:when test="contains($standort,upper-case('Magazin'))">GHMAG</xsl:when>
              <xsl:when test="($standort='CELA')
                or ($standort='CELTRA')
                or ($standort='SSC')">GHSEP</xsl:when>
@@ -199,7 +199,7 @@
          <xsl:when test="$abt='090'">PHBUW</xsl:when>
          <xsl:when test="$abt='091'">
            <xsl:choose>
-             <xsl:when test="contains($standort,'Separiert')">PHMUWMAG</xsl:when>
+             <xsl:when test="contains($standort,upper-case('Separiert'))">PHMUWMAG</xsl:when>
              <xsl:otherwise>PHMUW</xsl:otherwise>
            </xsl:choose>
 	</xsl:when>
@@ -215,7 +215,7 @@
          <xsl:when test="$abt='111'">FBKUNST</xsl:when>
          <xsl:when test="$abt='112'">
              <xsl:choose>
-               <xsl:when test="contains($standort,'Freihand')">PHHFMFREI</xsl:when>
+               <xsl:when test="contains($standort,'FREIHAND')">PHHFMFREI</xsl:when>
                <xsl:otherwise>PHHFMMAG</xsl:otherwise>
              </xsl:choose>
            </xsl:when>
