@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?> 
-<!-- date of last edit: 2023-06-16 (YYYY-MM-DD) -->
 
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:output indent="yes" method="xml" version="1.0" encoding="UTF-8"/>
@@ -142,28 +141,11 @@
         <xsl:when test=".='Weitere Signaturen (7106)'"><xsl:text>12878c96-b955-4b11-ad20-b3d35c5e1d27</xsl:text></xsl:when>
         <xsl:when test=".='Weitere Signaturen (7107)'"><xsl:text>c0a59e6c-e6ea-4158-b4c5-610486f8f6e9</xsl:text></xsl:when>
         <xsl:when test=".='Weitere Signaturen (7108)'"><xsl:text>f43a450a-0574-450b-9dd1-74d9ae6a6502</xsl:text></xsl:when>     
-        <xsl:when test=".='Weitere Signaturen (7109)'"><xsl:text>a3b8e442-a3bf-461e-a708-173001b8e67c</xsl:text></xsl:when>
-        <xsl:when test=".='Weitere Signaturen (7110)'"><xsl:text>24f2019c-2e64-42b3-a760-7a89a0dcb363</xsl:text></xsl:when>
+        <xsl:when test=".='Magazinsignatur (nur Monografien) (7109)'"><xsl:text>a3b8e442-a3bf-461e-a708-173001b8e67c</xsl:text></xsl:when>
+        <xsl:when test=".='Magazinsignatur (nur Zeitschriften) (7110)'"><xsl:text>24f2019c-2e64-42b3-a760-7a89a0dcb363</xsl:text></xsl:when>
         <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
       </xsl:choose>
     </holdingsNoteTypeId>
-  </xsl:template>
-
-  <!-- Map statistical code ids -->
-  <xsl:template match="statisticalCodeIds"> <!-- ILN -->
-    <statisticalCodeIds>
-      <arr>
-        <xsl:for-each select="arr/i">
-          <i>
-            <xsl:choose>
-              <xsl:when test=".='BASIS'">0ac04835-6a08-4043-9453-38908ff91129</xsl:when>
-              <xsl:when test=".='00015'">a59d4a4e-0339-4243-9039-bd64c8a9c941</xsl:when>
-              <xsl:when test=".='00016'">e70c1e74-d136-4d59-bdb9-1ec2f33c6a93</xsl:when>
-            </xsl:choose>
-          </i>
-        </xsl:for-each>
-      </arr>
-    </statisticalCodeIds>
   </xsl:template>
 
 </xsl:stylesheet>
