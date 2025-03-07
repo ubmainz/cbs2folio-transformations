@@ -349,6 +349,14 @@
     <xsl:variable name="abt" select="$i/datafield[@tag='209A']/subfield[@code='f']"/>
     <xsl:variable name="standort" select="$i/datafield[(@tag='209G') and (subfield[@code='x']='01')]/subfield[@code='a']"/> 
     <xsl:choose>
+      <xsl:when test="matches(.,'^\d{3}\s[A-Z]{2}\s\d{3,6}(\.\d*)?\s[A-Z]\d+.*') or matches(.,'^\d{3}\s[A-Z]\s\d{3}\.\d{3}\s.*')"> <!-- RVK-Signatur oder Magazin-Signatur -->
+          <callNumberPrefix>
+            <xsl:value-of select="substring-before(.,' ')"/>
+          </callNumberPrefix>
+          <callNumber>
+            <xsl:value-of select="substring-after(.,' ')"/>
+          </callNumber>
+      </xsl:when>
       <xsl:when test="($abt='016' and (starts-with(., 'THEMAG ') or starts-with(., 'THERARA '))) or 
         ($abt='000' and (starts-with(., 'RARA ') and not(contains(.,'°')))) or
         ($abt='019' and (starts-with(.,'CELA') or starts-with(.,'CELTRA') or starts-with(.,'LBS') or starts-with(.,'MAG') or starts-with(.,'SSC'))) or
@@ -357,7 +365,7 @@
         ($abt='002' and (starts-with(., '400 ') or starts-with(., '410 ') or starts-with(., '430 ') or starts-with(., '480 ')) and $standort='Politikwissenschaft / Bibliothek Inklusive Politische Bildung') or
         ($abt='005' and (starts-with(., '700 ') or starts-with(., '710 '))) or
         ($abt='054' and (starts-with(., '798 ') or starts-with(., '791 '))) or
-        (($abt='127') and not(starts-with(.,'SI ') or starts-with(.,'SK ')))"> <!-- RVK-Bereiche und Verwandtes -->
+        (($abt='127') and not(starts-with(.,'SI ') or starts-with(.,'SK ')))"> <!-- Leeerzeichen zur Abtrennung -->
         <xsl:choose>
           <xsl:when test="contains(.,' ')">
             <callNumberPrefix>
