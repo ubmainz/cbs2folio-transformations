@@ -7,7 +7,11 @@
     <xsl:template match="/">
         <collection>
             <xsl:for-each-group select="//record" group-by="hrid">
-                <xsl:message><xsl:value-of select="current-grouping-key()"/> :  <xsl:value-of select="count(current-group())"/></xsl:message>
+                <xsl:variable name="num" select="count(current-group())"/>
+                <xsl:if test="$num &gt; 1">
+                    <xsl:message><xsl:value-of select="current-grouping-key()"/> : <xsl:value-of
+                            select="$num"/></xsl:message>
+                </xsl:if>
                 <xsl:copy-of select="current-group()[1]"/>
             </xsl:for-each-group>
         </collection>
