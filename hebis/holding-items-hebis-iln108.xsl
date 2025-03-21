@@ -11,6 +11,9 @@
   </xsl:template>  
 
   <!-- ILN 108 TH Bingen -->
+  
+  <!-- records are excluded -->
+  <xsl:template match="record[holdingsRecords/arr/i/notes/arr/i[holdingsNoteTypeId='Lizenzindikator']/note='0']"/>
 
   <xsl:template match="permanentLocationId">
     <xsl:variable name="i" select="key('original',.)"/>
