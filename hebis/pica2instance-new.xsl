@@ -1261,7 +1261,7 @@
           <xsl:for-each select="datafield[@tag='045R']/subfield[@code='8']|datafield[@tag='045R']/subfield[@code='a']">
             <i>
               <xsl:choose>
-                <xsl:when test="contains(.,' :')"><classificationNumber><xsl:value-of select="substring-before(.,' :')"/></classificationNumber></xsl:when>
+                <xsl:when test="contains(.,':')"><classificationNumber><xsl:value-of select="normalize-space(substring-before(.,':'))"/></classificationNumber></xsl:when>
                 <xsl:otherwise><classificationNumber><xsl:value-of select="."/></classificationNumber></xsl:otherwise>
               </xsl:choose>
               <classificationTypeId>RVK</classificationTypeId>
