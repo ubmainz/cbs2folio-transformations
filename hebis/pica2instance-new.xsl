@@ -1155,9 +1155,15 @@
             <i>
               <xsl:choose>
                 <xsl:when test="contains(.,':')"><classificationNumber><xsl:value-of select="normalize-space(substring-before(.,':'))"/></classificationNumber></xsl:when>
-                <xsl:otherwise><classificationNumber><xsl:value-of select="."/></classificationNumber></xsl:otherwise>
+                <xsl:otherwise><classificationNumber><xsl:value-of select="normalize-space(.)"/></classificationNumber></xsl:otherwise>
               </xsl:choose>
               <classificationTypeId>RVK</classificationTypeId>
+            </i>
+          </xsl:for-each>
+          <xsl:for-each select="datafield[@tag='045F']/subfield[@code='a']|datafield[@tag='045H']/subfield[@code='a']">
+            <i>
+              <classificationNumber><xsl:value-of select="normalize-space(.)"/></classificationNumber>
+              <classificationTypeId>DDC</classificationTypeId>
             </i>
           </xsl:for-each>
         </arr>
