@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- date of last edit: 2025-01-24 (YYYY-MM-DD) -->
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+  xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+  version="2.0" exclude-result-prefixes="#all">
   <xsl:output indent="yes" method="xml" version="1.0" encoding="UTF-8"/>
   <xsl:template match="collection">
     <collection>
@@ -1137,18 +1139,25 @@
     <!-- RVK -->
       <classifications>
         <arr>
-          <xsl:for-each select="datafield[@tag='045R']/subfield[@code='8']|datafield[@tag='045R']/subfield[@code='a']">
+          <xsl:variable name="rvk" as="xs:string *">
+            <xsl:for-each select="datafield[@tag='045R']/subfield[@code='8']|datafield[@tag='045R']/subfield[@code='a']">
+              <xsl:sequence select="normalize-space(substring-before(concat(.,':'),':'))"/>
+            </xsl:for-each>
+          </xsl:variable>
+          <xsl:for-each select="distinct-values($rvk)">
             <i>
-              <xsl:choose>
-                <xsl:when test="contains(.,':')"><classificationNumber><xsl:value-of select="normalize-space(substring-before(.,':'))"/></classificationNumber></xsl:when>
-                <xsl:otherwise><classificationNumber><xsl:value-of select="normalize-space(.)"/></classificationNumber></xsl:otherwise>
-              </xsl:choose>
+              <classificationNumber><xsl:value-of select="."/></classificationNumber>
               <classificationTypeId>RVK</classificationTypeId>
             </i>
           </xsl:for-each>
-          <xsl:for-each select="distinct-values(datafield[@tag='045F']/subfield[@code='a'][.!='B']|datafield[@tag='045H']/subfield[@code='a'][.!='B'])">
+          <xsl:variable name="ddc" as="xs:string *">
+            <xsl:for-each select="datafield[@tag='045F']/subfield[@code='a'][.!='B']|datafield[@tag='045H']/subfield[@code='a'][.!='B']">
+              <xsl:sequence select="normalize-space(translate(.,'/',''))"/>
+            </xsl:for-each>
+          </xsl:variable>
+          <xsl:for-each select="distinct-values($ddc)">
             <i>
-              <classificationNumber><xsl:value-of select="normalize-space(translate(.,'/',''))"/></classificationNumber>
+              <classificationNumber><xsl:value-of select="."/></classificationNumber>
               <classificationTypeId>DDC</classificationTypeId>
             </i>
           </xsl:for-each>
