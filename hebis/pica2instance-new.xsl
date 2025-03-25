@@ -1146,9 +1146,9 @@
               <classificationTypeId>RVK</classificationTypeId>
             </i>
           </xsl:for-each>
-          <xsl:for-each select="datafield[@tag='045F']/subfield[@code='a']|datafield[@tag='045H']/subfield[@code='a']">
+          <xsl:for-each select="distinct-values(datafield[@tag='045F']/subfield[@code='a'][.!='B']|datafield[@tag='045H']/subfield[@code='a'][.!='B'])">
             <i>
-              <classificationNumber><xsl:value-of select="normalize-space(.)"/></classificationNumber>
+              <classificationNumber><xsl:value-of select="normalize-space(translate(.,'/',''))"/></classificationNumber>
               <classificationTypeId>DDC</classificationTypeId>
             </i>
           </xsl:for-each>
