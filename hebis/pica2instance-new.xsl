@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- date of last edit: 2025-01-24 (YYYY-MM-DD) -->
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
   <xsl:output indent="yes" method="xml" version="1.0" encoding="UTF-8"/>
   <xsl:template match="collection">
     <collection>
@@ -82,22 +82,15 @@
         </xsl:choose>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:if test="./subfield[@code='d']">
-      <xsl:value-of select="concat(' : ', ./subfield[@code='d'])"/>
-    </xsl:if>
-    <xsl:if test="./subfield[@code='e' or @code='h']">
-      <xsl:value-of select="concat(' / ', ./subfield[@code='e' or @code='h'])"/>
-    </xsl:if>
-    <xsl:if test="./subfield[@code='f']">
-      <xsl:choose>
-        <xsl:when test="./subfield[@code='f'][contains(., '@')]">
-          <xsl:value-of select="normalize-space(concat(' = ', concat(substring-before(./subfield[@code='f'], '@'), substring-after(./subfield[@code='f'], '@'))))"/>
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:value-of select="normalize-space(concat(' = ', ./subfield[@code='f']))"/>
-        </xsl:otherwise>
-      </xsl:choose>
-    </xsl:if>
+    <xsl:for-each select="./subfield[@code='d']">
+      <xsl:value-of select="concat(' : ', .)"/>
+    </xsl:for-each>
+    <xsl:for-each select="./subfield[@code='e' or @code='h']">
+      <xsl:value-of select="concat(' / ', .)"/>
+    </xsl:for-each>
+    <xsl:for-each select="./subfield[@code='f']">
+      <xsl:value-of select="concat(' = ', normalize-space(translate(.,'@','')))"/>
+    </xsl:for-each>
     <xsl:if test="./subfield[@code='l']">
       <xsl:value-of select="concat(' ; ', ./subfield[@code='l'])"/>
     </xsl:if>
@@ -465,22 +458,15 @@
             </xsl:otherwise>
           </xsl:choose>
         </xsl:if>
-        <xsl:if test="./subfield[@code='d']">
-          <xsl:value-of select="concat(' ', ./subfield[@code='d'])"/>
-        </xsl:if>
+        <xsl:for-each select="./subfield[@code='d']">
+          <xsl:value-of select="concat(' ', .)"/>
+        </xsl:for-each>
         <xsl:if test="./subfield[@code='e' or @code='h']">
           <xsl:value-of select="concat(' ', ./subfield[@code='e' or @code='h'])"/>
         </xsl:if>
-        <xsl:if test="./subfield[@code='f']">
-          <xsl:choose>
-            <xsl:when test="./subfield[@code='f'][contains(., '@')]">
-              <xsl:value-of select="concat(' ', substring-after(./subfield[@code='f'], '@'))"/>
-            </xsl:when>
-            <xsl:otherwise>
-              <xsl:value-of select="concat(' ', ./subfield[@code='f'])"/>
-            </xsl:otherwise>
-          </xsl:choose>
-        </xsl:if>
+        <xsl:for-each select="./subfield[@code='f']">
+              <xsl:value-of select="concat(' ', translate(.,'@',''))"/>
+        </xsl:for-each>
         <xsl:if test="./subfield[@code='l']">
           <xsl:value-of select="concat(' ', ./subfield[@code='l'])"/>
         </xsl:if>
@@ -680,7 +666,7 @@
               <xsl:when test="@code='a'">
                 <xsl:choose>
                   <xsl:when test="@code='a'[contains(., '@')]">
-                    <xsl:value-of select="concat(substring-before(@code='a', '@'), substring-after(@code='a', '@'))"/>
+                    <xsl:value-of select="concat(substring-before(.[@code='a'], '@'), substring-after(.[@code='a'], '@'))"/>
                   </xsl:when>
                   <xsl:otherwise>
                     <xsl:value-of select="."/>
@@ -1061,12 +1047,12 @@
                 </xsl:if>
                 <xsl:if test="./subfield[@code='4']">
                   <contributorTypeId>
-                    <xsl:value-of select="./subfield[@code='4']"/>
+                    <xsl:value-of select="./subfield[@code='4'][1]"/>
                   </contributorTypeId>
                 </xsl:if>
                 <xsl:if test="./subfield[@code='B']">
                   <contributorTypeText>
-                    <xsl:value-of select="./subfield[@code='B']"/>
+                    <xsl:value-of select="./subfield[@code='B'][1]"/>
                   </contributorTypeText>
                 </xsl:if>
               </i>
@@ -1133,12 +1119,12 @@
                 <contributorNameTypeId>Körperschaftsname</contributorNameTypeId>
                 <xsl:if test="./subfield[@code='4']">
                   <contributorTypeId>
-                    <xsl:value-of select="./subfield[@code='4']"/>
+                    <xsl:value-of select="./subfield[@code='4'][1]"/>
                   </contributorTypeId>
                 </xsl:if>
                 <xsl:if test="./subfield[@code='B']">
                   <contributorTypeText>
-                    <xsl:value-of select="./subfield[@code='B']"/>
+                    <xsl:value-of select="./subfield[@code='B'][1]"/>
                   </contributorTypeText>
                 </xsl:if>
               </i>
@@ -2088,12 +2074,12 @@
     <xsl:variable name="day" select="substring-before($rawdate, '-')"/>
     <xsl:variable name="moyr" select="substring-after($rawdate, '-')"/>
     <xsl:variable name="month" select="substring-before($moyr, '-')"/>
-    <xsl:variable name="shortyear" select="substring-after($moyr, '-')"/>
-    <xsl:if test="$shortyear &gt; 50">
+    <xsl:variable name="shortyear" select="substring-after($moyr, '-')"  />
+    <xsl:if test="number($shortyear) &gt; 50">
       <xsl:variable name="year" select="concat('19', $shortyear)"/>
       <xsl:value-of select="concat($year, '-', $month, '-', $day, $suffix)"/>
     </xsl:if>
-    <xsl:if test="$shortyear &lt; 51">
+    <xsl:if test="number($shortyear) &lt; 51">
       <xsl:variable name="year" select="concat('20', $shortyear)"/>
       <xsl:value-of select="concat($year, '-', $month, '-', $day, $suffix)"/>
     </xsl:if>
