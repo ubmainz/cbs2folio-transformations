@@ -19,16 +19,23 @@
           <instance>
             <hrid><xsl:value-of select="."/></hrid>
             <source>K10plus</source>
-            <xsl:copy-of select="$currentrecord/instance/*[not(self::hrid or self::source)]"></xsl:copy-of>
+            <xsl:apply-templates select="$currentrecord/instance/*[not(self::hrid or self::source)]"/>
           </instance>
           <!-- instance relations? -->        
       </record>
     </xsl:for-each>
-    
   </xsl:template>
 
-  <xsl:template match="source">
-    <source>K10plus</source>
+  <xsl:template match="notes">
+    <notes>
+      <arr>
+        <i>
+          <note>Wolpertingerdatensatz aus K10plus-PPN <xsl:value-of select="../../original/datafield[@tag='003@']/subfield[@code='0']"/></note>
+          <instanceNoteTypeId>Local notes</instanceNoteTypeId>
+        </i>
+        <xsl:apply-templates select="arr/*"/>
+      </arr>
+    </notes>
   </xsl:template>
- 
+
 </xsl:stylesheet>
