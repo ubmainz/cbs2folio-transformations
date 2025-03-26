@@ -13,9 +13,6 @@
   <xsl:template match="record">
     <xsl:variable name="currentrecord" select="."/>
     <xsl:variable name="hebppns" select="original/datafield[@tag='003H']/subfield[@code='0']|original/datafield[@tag='006H']/subfield[@code='0']"/>
-    <xsl:if test="count($hebppns) != count(distinct-values($hebppns))">
-      <xsl:message> PPN <xsl:value-of select="original/datafield[@tag='003@']/subfield[@code='0']"/> : <xsl:value-of select="count(distinct-values($hebppns))"/> ( <xsl:value-of select="count($hebppns)"/> )</xsl:message>
-    </xsl:if>
     <xsl:for-each select="distinct-values($hebppns)">
       <record>
         <xsl:copy-of select="$currentrecord/processing"/>
