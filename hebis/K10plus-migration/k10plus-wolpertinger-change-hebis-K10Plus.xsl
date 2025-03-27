@@ -23,7 +23,7 @@
               <arr>
                 <xsl:apply-templates select="$currentrecord/instance/administrativeNotes/arr/*"/>
                 <i><xsl:value-of select="concat('Wolpertingerdatensatz K10plus-PPN: ',$currentrecord/original/datafield[@tag='003@']/subfield[@code='0'],
-                    ' hrid: ',.,' - nur Instanz')"/></i>
+                    ' hebis-PPN: ',.,' - nur Instanz aus K10plus')"/></i>
               </arr>
             </administrativeNotes>
 
