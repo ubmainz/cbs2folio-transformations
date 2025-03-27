@@ -1145,6 +1145,7 @@
             </xsl:for-each>
           </xsl:variable>
           <xsl:for-each select="distinct-values($rvk)">
+            <xsl:sort/>
             <i>
               <classificationNumber><xsl:value-of select="."/></classificationNumber>
               <classificationTypeId>RVK</classificationTypeId>
@@ -1156,6 +1157,7 @@
             </xsl:for-each>
           </xsl:variable>
           <xsl:for-each select="distinct-values($ddc)">
+            <xsl:sort/>
             <i>
               <classificationNumber><xsl:value-of select="."/></classificationNumber>
               <classificationTypeId>DDC</classificationTypeId>
