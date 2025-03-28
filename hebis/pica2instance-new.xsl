@@ -33,9 +33,9 @@
     <xsl:if test="./subfield[@code='d']">
       <xsl:value-of select="concat(' : ', ./subfield[@code='d'])"/>
     </xsl:if>
-    <xsl:if test="./subfield[@code='e' or @code='h']">
-      <xsl:value-of select="concat(' / ', ./subfield[@code='e' or @code='h'])"/>
-    </xsl:if>
+    <xsl:for-each select="./subfield[@code='e' or @code='h']">
+      <xsl:value-of select="concat(' / ', .)"/>
+    </xsl:for-each>
     <xsl:if test="./subfield[@code='f']">
       <xsl:choose>
         <xsl:when test="./subfield[@code='f'][contains(., '@')]">
@@ -502,9 +502,9 @@
         <xsl:if test="./subfield[@code='d']">
           <xsl:value-of select="concat(' ', ./subfield[@code='d'])"/>
         </xsl:if>
-        <xsl:if test="./subfield[@code='e' or @code='h']">
-          <xsl:value-of select="concat(' ', ./subfield[@code='e' or @code='h'])"/>
-        </xsl:if>
+        <xsl:for-each select="./subfield[@code='e' or @code='h']">
+          <xsl:value-of select="concat(' ', .)"/>
+        </xsl:for-each>
         <xsl:if test="./subfield[@code='f']">
           <xsl:choose>
             <xsl:when test="./subfield[@code='f'][contains(., '@')]">
