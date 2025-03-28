@@ -5,6 +5,7 @@
     
     <xsl:template match="i">
         <xsl:variable name="ppn" select="."/>
+        <xsl:message><xsl:number level="any" count="i"/> : <xsl:value-of select="$ppn"/></xsl:message>
         <xsl:variable name="url"
             select="concat('https://folio-api.ub.uni-mainz.de/sru-ubmz-prod/ubmz?version=1.1&amp;operation=searchRetrieve&amp;query=hrid==',.,'&amp;maximumRecords=1&amp;recordSchema=raw')"/>
         <xsl:variable name="sru">
