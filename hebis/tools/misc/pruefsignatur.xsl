@@ -2,10 +2,15 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" version="2.0">
     <xsl:output method="text" encoding="UTF-8"/>
-    
+
+    <xsl:template match="/">
+        <xsl:apply-templates select="//i"/>
+    </xsl:template>
+
     <xsl:template match="i">
         <xsl:variable name="ppn" select="."/>
-        <xsl:message><xsl:number level="any" count="i"/> : <xsl:value-of select="$ppn"/></xsl:message>
+        <xsl:message><xsl:number level="any" count="i"/> : <xsl:value-of select="$ppn"
+            /></xsl:message>
         <xsl:variable name="url"
             select="concat('https://folio-api.ub.uni-mainz.de/sru-ubmz-prod/ubmz?version=1.1&amp;operation=searchRetrieve&amp;query=hrid==',.,'&amp;maximumRecords=1&amp;recordSchema=raw')"/>
         <xsl:variable name="sru">
@@ -20,10 +25,17 @@
                     select="string-join((callNumberPrefix, callNumber, callNumberSuffix), ' ')"/>
             </xsl:variable>
             <xsl:if test="count(distinct-values($signaturliste)) != 1">
-                <xsl:message><xsl:text>--- Problem: </xsl:text><xsl:value-of select="concat($ppn,':',string-join(distinct-values($signaturliste),', '))"/></xsl:message>
-                <xsl:value-of select="concat($ppn,':',string-join(distinct-values($signaturliste),', '),'&#10;')"/>
+                <xsl:message>
+                    <xsl:text>--- Problem: </xsl:text>
+                    <xsl:value-of
+                        select="concat($ppn, ':', string-join(distinct-values($signaturliste), ', '))"
+                    />
+                </xsl:message>
+                <xsl:value-of
+                    select="concat($ppn, ':', string-join(distinct-values($signaturliste), ', '), '&#10;')"
+                />
             </xsl:if>
         </xsl:for-each>
     </xsl:template>
-    
+
 </xsl:stylesheet>
