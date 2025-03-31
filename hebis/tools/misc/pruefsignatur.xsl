@@ -29,6 +29,8 @@
     
     Nur die Namen der <i>-Elemente sind dabei festgelegt. Output sind die auffälligen PPNs und Signaturen als Liste in Textform. Im Error-Kanal wird jede PPN geloggt.
     
+    Als Prozessor wird ein neuerer Saxon empfohlen (XSLT 2.0).
+    
     -->
 
     <xsl:template match="/">
