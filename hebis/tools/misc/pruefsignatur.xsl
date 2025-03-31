@@ -3,6 +3,34 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema" version="2.0">
     <xsl:output method="text" encoding="UTF-8"/>
 
+<!-- 
+
+    Skript für den Abgleich der Signaturangaben innerhalb der Holdings
+    Für die Input-Datei mit PPNs wird folgendes Format erwartet:
+    <root>
+        <i>12345678</i>
+        <i>90123456</i>
+        ...
+    </root>
+    
+    oder auch:
+    
+    <root>
+        <row>
+            <i>12345678</i>
+            ...
+        </row>
+        <row>
+            <i>90123456</i>
+            ...
+        </row>
+        ...
+     </root>
+    
+    Nur die Namen der <i>-Elemente sind dabei festgelegt. Output sind die auffälligen PPNs und Signaturen als Liste in Textform. Im Error-Kanal wird jede PPN geloggt.
+    
+    -->
+
     <xsl:template match="/">
         <xsl:apply-templates select="//i"/>
     </xsl:template>
