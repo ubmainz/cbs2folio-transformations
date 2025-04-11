@@ -8,11 +8,11 @@
         </collection>
     </xsl:template>
 
-    <xsl:template match="delete-hrid">
+    <xsl:template match="record[status='deleted']">
         <record>
             <delete>
                 <hrid>
-                    <xsl:value-of select="."/>
+                    <xsl:value-of select="hrid"/>
                 </hrid>
                 <processing>
                     <item>
