@@ -16,8 +16,8 @@
       <record>
         <xsl:copy-of select="$currentrecord/processing"/>
           <instance>
-            <hrid><xsl:value-of select="."/></hrid>
             <source>K10plus</source>
+            <hrid><xsl:value-of select="."/></hrid>
             <xsl:apply-templates select="$currentrecord/instance/*[not(self::hrid or self::source or self::administrativeNotes)]"/>
             <administrativeNotes>
               <arr>
@@ -26,7 +26,6 @@
                     ' hebis-PPN: ',.,' - nur Instanz aus K10plus')"/></i>
               </arr>
             </administrativeNotes>
-
           </instance>
           <!-- instance relations? -->        
       </record>
