@@ -18,13 +18,13 @@
                     <item>
                         <blockDeletion>
                             <ifField>hrid</ifField>
-                            <matchesPattern>.*</matchesPattern>
+                            <matchesPattern>it.*</matchesPattern>
                         </blockDeletion>
                     </item>
                     <holdingsRecord>
                         <blockDeletion>
                             <ifField>hrid</ifField>
-                            <matchesPattern>.*</matchesPattern>
+                            <matchesPattern>ho.*</matchesPattern>
                         </blockDeletion>
                         <statisticalCoding>
                             <arr>
