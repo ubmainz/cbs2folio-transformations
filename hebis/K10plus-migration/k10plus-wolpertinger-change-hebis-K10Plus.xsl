@@ -9,6 +9,8 @@
     </xsl:copy>
   </xsl:template>
 
+  <xsl:template match="record[delete]"/> <!-- delete case? -->
+  
   <xsl:template match="record">
     <xsl:variable name="currentrecord" select="."/>
     <xsl:variable name="hebppns" select="original/datafield[@tag='003H']/subfield[@code='0']|original/datafield[@tag='006H']/subfield[@code='0']"/>
