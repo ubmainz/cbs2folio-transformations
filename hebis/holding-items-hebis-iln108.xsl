@@ -34,6 +34,7 @@
         </administrativeNotes>
       </instance>
       <xsl:apply-templates select="instanceRelations|processing"/>
+      <xsl:variable name="original" select="original"/>
       <holdingsRecords>
         <arr>
           <xsl:for-each select="holdingsRecords/arr/i">
@@ -42,6 +43,7 @@
               <administrativeNotes>
                 <arr>
                   <xsl:apply-templates select="administrativeNotes/arr/*"/>
+                  <i><xsl:value-of select="concat(translate($original/item[@epn=current()/hrid]/datafield[@tag='201B']/subfield[@code='0'], '-', '.'),', ', substring($original/item[@epn=current()/hrid]/datafield[@tag='201B']/subfield[@code='t'],1,5), ' (Letzte Änderung CBS)')"/></i>
                   <i><xsl:value-of select="concat('Hebis-Datensatz hebis-EPN: ',hrid)"/></i>
                 </arr>
               </administrativeNotes>
