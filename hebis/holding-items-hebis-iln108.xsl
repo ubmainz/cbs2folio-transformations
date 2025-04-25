@@ -15,6 +15,39 @@
   <!-- records are excluded -->
   <xsl:template match="record[holdingsRecords/arr/i/notes/arr/i[holdingsNoteTypeId='Lizenzindikator']/note='0']"/>
 
+  <xsl:template match="record">
+    <record>
+      <xsl:copy-of select="original"/>
+      <instance>
+        <source>hebis</source>
+        <hrid><xsl:value-of select="original/datafield[@tag='003@']/subfield[@code='0']"/></hrid>
+        <xsl:apply-templates select="instance/*[not(self::hrid or self::source or self::administrativeNotes)]"/>
+        <administrativeNotes>
+          <arr>
+            <xsl:apply-templates select="instance/administrativeNotes/arr/*"/>
+            <i><xsl:value-of select="concat('Hebis-Datensatz hebis-PPN: ',instance/hrid)"/></i>
+          </arr>
+        </administrativeNotes>
+      </instance>
+      <xsl:apply-templates select="instanceRelations|processing"/>
+      <holdingsRecords>
+        <arr>
+          <xsl:for-each select="holdingsRecords/arr/i">
+            <i>
+              <xsl:apply-templates select="*[not(self::administrativeNotes)]"/>
+              <administrativeNotes>
+                <arr>
+                  <xsl:apply-templates select="administrativeNotes/arr/*"/>
+                  <i><xsl:value-of select="concat('Hebis-Datensatz hebis-EPN: ',hrid)"/></i>
+                </arr>
+              </administrativeNotes>
+            </i>
+          </xsl:for-each>
+        </arr>
+      </holdingsRecords>
+    </record>
+  </xsl:template>
+
   <xsl:template match="permanentLocationId">
     <xsl:variable name="i" select="key('original',.)"/>
     <xsl:variable name="signatur" select="$i/datafield[@tag='209A']/subfield[@code='a']"/>
@@ -58,7 +91,7 @@
   </xsl:template>
 
   <xsl:template match="i[holdingsNoteTypeId='Standort (8201)']"> <!-- 8201 will be displayed by default: add exceptions here -->
-    <xsl:variable name="i" select="key('original',../../../permanentLocationId)"/>
+    <xsl:variable name="i" select="key('original',../../../../permanentLocationId)"/>
     <xsl:variable name="signatur" select="$i/datafield[@tag='209A']/subfield[@code='a']"/>
     <xsl:if test="not(starts-with($signatur,'Ab/') or starts-with($signatur,'Rara'))">
       <i>
