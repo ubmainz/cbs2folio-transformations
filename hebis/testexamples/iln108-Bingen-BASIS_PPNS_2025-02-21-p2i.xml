@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <collection>
    <record>
+      <delete>
+         <hrid>123456789</hrid>
+         <processing>
+            <item>
+               <blockDeletion>
+                  <ifField>hrid</ifField>
+                  <matchesPattern>it.*</matchesPattern>
+               </blockDeletion>
+            </item>
+            <holdingsRecord>
+               <blockDeletion>
+                  <ifField>hrid</ifField>
+                  <matchesPattern>ho.*</matchesPattern>
+               </blockDeletion>
+               <statisticalCoding>
+                  <arr>
+                     <i>
+                        <if>deleteSkipped</if>
+                        <becauseOf>ITEM_STATUS</becauseOf>
+                        <setCode>ITEM_STATUS</setCode>
+                     </i>
+                     <i>
+                        <if>deleteSkipped</if>
+                        <becauseOf>HOLDINGS_RECORD_PATTERN_MATCH</becauseOf>
+                        <setCode>HOLDINGS_RECORD_PATTERN_MATCH</setCode>
+                     </i>
+                     <i>
+                        <if>deleteSkipped</if>
+                        <becauseOf>ITEM_PATTERN_MATCH</becauseOf>
+                        <setCode>ITEM_PATTERN_MATCH</setCode>
+                     </i>
+                  </arr>
+               </statisticalCoding>
+            </holdingsRecord>
+            <instance>
+               <statisticalCoding>
+                  <arr>
+                     <i>
+                        <if>deleteSkipped</if>
+                        <becauseOf>PO_LINE_REFERENCE</becauseOf>
+                        <setCode>PO_LINE_REFERENCE</setCode>
+                     </i>
+                  </arr>
+               </statisticalCoding>
+            </instance>
+         </processing>
+      </delete>
+   </record>
+   <record>
       <original>
          <datafield tag="001B" fulltag="001B">
             <subfield code="0">1999:23-01-25</subfield>

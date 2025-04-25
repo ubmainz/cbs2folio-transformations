@@ -15,6 +15,10 @@
   <!-- records are excluded -->
   <xsl:template match="record[holdingsRecords/arr/i/notes/arr/i[holdingsNoteTypeId='Lizenzindikator']/note='0']"/>
 
+  <xsl:template match="record[delete]">
+    <xsl:copy-of select="."/>
+  </xsl:template>
+
   <xsl:template match="record">
     <record>
       <xsl:copy-of select="original"/>
