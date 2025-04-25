@@ -12,6 +12,40 @@
   </xsl:template>  
 
   <!-- ILN 25 UB Mainz -->
+  
+  <xsl:template match="record[not(delete)]">
+    <record>
+      <xsl:copy-of select="original"/>
+      <instance>
+        <source>hebis</source>
+        <hrid><xsl:value-of select="instance/hrid"/></hrid>
+        <xsl:apply-templates select="instance/*[not(self::hrid or self::source or self::administrativeNotes)]"/>
+        <administrativeNotes>
+          <arr>
+            <xsl:apply-templates select="instance/administrativeNotes/arr/*"/>
+            <i><xsl:value-of select="concat('Hebis-Datensatz hebis-PPN: ',instance/hrid)"/></i>
+          </arr>
+        </administrativeNotes>
+      </instance>
+      <xsl:apply-templates select="instanceRelations|processing"/>
+      <holdingsRecords>
+        <arr>
+          <xsl:for-each select="holdingsRecords/arr/i">
+            <i>
+              <xsl:apply-templates select="*[not(self::administrativeNotes)]"/>
+              <administrativeNotes>
+                <arr>
+                  <xsl:apply-templates select="administrativeNotes/arr/*"/>
+                  <i><xsl:value-of select="concat('Hebis-Datensatz hebis-EPN: ',hrid)"/></i>
+                </arr>
+              </administrativeNotes>
+            </i>
+          </xsl:for-each>
+        </arr>
+      </holdingsRecords>
+    </record>
+  </xsl:template>
+  
   <xsl:template match="processing[not(parent::delete)]">
     <processing> <!-- overwrites hebis default -->
       <item>
