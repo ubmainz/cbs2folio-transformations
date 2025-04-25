@@ -195,6 +195,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -257,6 +260,7 @@
             <arr>
                <i>Oax (Bibliografische Gattung)</i>
                <i>23.01.25, 23:29 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 525101934</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -344,6 +348,11 @@
                      </i>
                   </arr>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1288203152</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -546,6 +555,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -612,6 +624,7 @@
             <arr>
                <i>Oax (Bibliografische Gattung)</i>
                <i>23.01.25, 23:29 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 525096795</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -699,6 +712,11 @@
                      </i>
                   </arr>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1288181809</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -897,6 +915,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -959,6 +980,7 @@
             <arr>
                <i>Oax (Bibliografische Gattung)</i>
                <i>05.02.25, 23:13 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 525756922</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -1046,6 +1068,11 @@
                      </i>
                   </arr>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1290573603</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -1292,6 +1319,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -1361,6 +1391,7 @@
             <arr>
                <i>Oay (Bibliografische Gattung)</i>
                <i>10.06.24, 22:38 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 452126975</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -1463,6 +1494,11 @@
                      </i>
                   </arr>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1083198157</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -1619,6 +1655,9 @@
          <contributors>
             <arr/>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -1688,6 +1727,7 @@
             <arr>
                <i>Obvc (Bibliografische Gattung)</i>
                <i>03.02.25, 17:35 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 525661034</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -1770,6 +1810,11 @@
                      </i>
                   </arr>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1290187428</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -1920,6 +1965,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -1962,6 +2010,7 @@
             <arr>
                <i>Sax (Bibliografische Gattung)</i>
                <i>18.02.20, 11:43 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 459863746</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -2074,6 +2123,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1083058282</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -2585,6 +2639,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -2655,6 +2712,7 @@
             <arr>
                <i>Abvc (Bibliografische Gattung)</i>
                <i>16.10.24, 14:12 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 212057553</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -2780,6 +2838,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082639079</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082646172</hrid>
@@ -2838,6 +2901,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082646172</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082640042</hrid>
@@ -2896,6 +2964,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082640042</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082645141</hrid>
@@ -2954,6 +3027,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082645141</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082642657</hrid>
@@ -3012,6 +3090,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082642657</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082645133</hrid>
@@ -3070,6 +3153,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082645133</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082644358</hrid>
@@ -3128,6 +3216,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082644358</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -3639,6 +3732,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -3709,6 +3805,7 @@
             <arr>
                <i>Abvc (Bibliografische Gattung)</i>
                <i>16.10.24, 14:12 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 212057553</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -3834,6 +3931,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082639079</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082646172</hrid>
@@ -3892,6 +3994,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082646172</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082640042</hrid>
@@ -3950,6 +4057,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082640042</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082645141</hrid>
@@ -4008,6 +4120,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082645141</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082642657</hrid>
@@ -4066,6 +4183,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082642657</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082645133</hrid>
@@ -4124,6 +4246,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082645133</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082644358</hrid>
@@ -4182,6 +4309,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082644358</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -4693,6 +4825,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -4763,6 +4898,7 @@
             <arr>
                <i>Abvc (Bibliografische Gattung)</i>
                <i>16.10.24, 14:12 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 212057553</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -4888,6 +5024,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082639079</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082646172</hrid>
@@ -4946,6 +5087,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082646172</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082640042</hrid>
@@ -5004,6 +5150,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082640042</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082645141</hrid>
@@ -5062,6 +5213,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082645141</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082642657</hrid>
@@ -5120,6 +5276,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082642657</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082645133</hrid>
@@ -5178,6 +5339,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082645133</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082644358</hrid>
@@ -5236,6 +5402,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082644358</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -5747,6 +5918,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -5817,6 +5991,7 @@
             <arr>
                <i>Abvc (Bibliografische Gattung)</i>
                <i>16.10.24, 14:12 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 212057553</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -5942,6 +6117,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082639079</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082646172</hrid>
@@ -6000,6 +6180,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082646172</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082640042</hrid>
@@ -6058,6 +6243,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082640042</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082645141</hrid>
@@ -6116,6 +6306,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082645141</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082642657</hrid>
@@ -6174,6 +6369,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082642657</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082645133</hrid>
@@ -6232,6 +6432,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082645133</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082644358</hrid>
@@ -6290,6 +6495,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082644358</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -6801,6 +7011,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -6871,6 +7084,7 @@
             <arr>
                <i>Abvc (Bibliografische Gattung)</i>
                <i>16.10.24, 14:12 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 212057553</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -6996,6 +7210,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082639079</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082646172</hrid>
@@ -7054,6 +7273,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082646172</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082640042</hrid>
@@ -7112,6 +7336,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082640042</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082645141</hrid>
@@ -7170,6 +7399,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082645141</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082642657</hrid>
@@ -7228,6 +7462,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082642657</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082645133</hrid>
@@ -7286,6 +7525,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082645133</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082644358</hrid>
@@ -7344,6 +7588,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082644358</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -7855,6 +8104,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -7925,6 +8177,7 @@
             <arr>
                <i>Abvc (Bibliografische Gattung)</i>
                <i>16.10.24, 14:12 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 212057553</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -8050,6 +8303,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082639079</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082646172</hrid>
@@ -8108,6 +8366,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082646172</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082640042</hrid>
@@ -8166,6 +8429,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082640042</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082645141</hrid>
@@ -8224,6 +8492,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082645141</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082642657</hrid>
@@ -8282,6 +8555,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082642657</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082645133</hrid>
@@ -8340,6 +8618,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082645133</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082644358</hrid>
@@ -8398,6 +8681,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082644358</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -8909,6 +9197,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -8979,6 +9270,7 @@
             <arr>
                <i>Abvc (Bibliografische Gattung)</i>
                <i>16.10.24, 14:12 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 212057553</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -9104,6 +9396,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082639079</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082646172</hrid>
@@ -9162,6 +9459,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082646172</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082640042</hrid>
@@ -9220,6 +9522,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082640042</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082645141</hrid>
@@ -9278,6 +9585,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082645141</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082642657</hrid>
@@ -9336,6 +9648,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082642657</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082645133</hrid>
@@ -9394,6 +9711,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082645133</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082644358</hrid>
@@ -9452,6 +9774,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082644358</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -9669,6 +9996,9 @@
          <contributors>
             <arr/>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -9729,6 +10059,7 @@
             <arr>
                <i>Abvc (Bibliografische Gattung)</i>
                <i>03.03.23, 19:11 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 047083476</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -9849,6 +10180,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082623261</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -10047,6 +10383,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -10102,6 +10441,7 @@
             <arr>
                <i>Abvc (Bibliografische Gattung)</i>
                <i>03.03.23, 19:18 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 047103302</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -10227,6 +10567,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1118379934</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -10374,6 +10719,9 @@
          <contributors>
             <arr/>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -10420,6 +10768,7 @@
             <arr>
                <i>Acu (Bibliografische Gattung)</i>
                <i>01.09.23, 11:03 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 030564875</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -10517,6 +10866,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082593001</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -10715,6 +11069,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -10767,6 +11124,7 @@
             <arr>
                <i>Acu (Bibliografische Gattung)</i>
                <i>28.11.24, 09:37 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 030071593</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -10875,6 +11233,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1101055766</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -10983,6 +11346,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -11020,6 +11386,7 @@
             <arr>
                <i>Acu (Bibliografische Gattung)</i>
                <i>25.07.20, 09:23 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 028205898</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -11117,6 +11484,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1092897151</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -11224,6 +11596,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -11261,6 +11636,7 @@
             <arr>
                <i>Acu (Bibliografische Gattung)</i>
                <i>25.11.21, 09:36 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 020254784</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -11358,6 +11734,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1092896465</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -11496,6 +11877,9 @@
          <contributors>
             <arr/>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -11544,6 +11928,7 @@
             <arr>
                <i>Acu (Bibliografische Gattung)</i>
                <i>25.11.24, 09:29 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 004915100</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -11647,6 +12032,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1093044365</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -11808,6 +12198,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -11863,6 +12256,7 @@
             <arr>
                <i>Acu (Bibliografische Gattung)</i>
                <i>24.04.24, 10:17 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 004072715</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -11960,6 +12354,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082591092</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -12055,6 +12454,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -12092,6 +12494,7 @@
             <arr>
                <i>Acx (Bibliografische Gattung)</i>
                <i>17.02.20, 16:09 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 459513141</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -12189,6 +12592,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082590878</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -12286,6 +12694,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -12323,6 +12734,7 @@
             <arr>
                <i>Acx (Bibliografische Gattung)</i>
                <i>17.02.25, 15:14 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 459508202</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -12420,6 +12832,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082585718</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -12643,6 +13060,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -12691,6 +13111,7 @@
             <arr>
                <i>Afu (Bibliografische Gattung)</i>
                <i>30.10.24, 11:56 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 520320336</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -12809,6 +13230,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1278222960</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -13018,6 +13444,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -13071,6 +13500,7 @@
             <arr>
                <i>AFu (Bibliografische Gattung)</i>
                <i>25.11.24, 08:02 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 224192558</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -13194,6 +13624,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082640360</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -13335,6 +13770,9 @@
          <contributors>
             <arr/>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr/>
          </publication>
@@ -13374,6 +13812,7 @@
             <arr>
                <i>Afu (Bibliografische Gattung)</i>
                <i>06.08.20, 18:42 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 21589913X</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -13491,6 +13930,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1083064363</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -13744,6 +14188,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -13788,6 +14235,7 @@
             <arr>
                <i>Afu (Bibliografische Gattung)</i>
                <i>25.07.20, 09:16 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 024035998</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -13906,6 +14354,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082603856</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082603864</hrid>
@@ -13956,6 +14409,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082603864</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082603872</hrid>
@@ -14006,6 +14464,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082603872</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -14259,6 +14722,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -14303,6 +14769,7 @@
             <arr>
                <i>Afu (Bibliografische Gattung)</i>
                <i>25.07.20, 09:16 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 024035998</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -14421,6 +14888,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082603856</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082603864</hrid>
@@ -14471,6 +14943,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082603864</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082603872</hrid>
@@ -14521,6 +14998,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082603872</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -14774,6 +15256,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -14818,6 +15303,7 @@
             <arr>
                <i>Afu (Bibliografische Gattung)</i>
                <i>25.07.20, 09:16 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 024035998</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -14936,6 +15422,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082603856</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082603864</hrid>
@@ -14986,6 +15477,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082603864</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082603872</hrid>
@@ -15036,6 +15532,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082603872</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -15246,6 +15747,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -15295,6 +15799,7 @@
             <arr>
                <i>Afu (Bibliografische Gattung)</i>
                <i>25.07.20, 09:48 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 054453593</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -15373,6 +15878,11 @@
                <notes>
                   <arr>
                      <i>
+                        <note>Kompaktanlage Rara</note>
+                        <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
+                        <staffOnly>false</staffOnly>
+                     </i>
+                     <i>
                         <note>17.02.25 16:44</note>
                         <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -15413,6 +15923,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082609013</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1148108645</hrid>
@@ -15458,6 +15973,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1148108645</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -15668,6 +16188,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -15717,6 +16240,7 @@
             <arr>
                <i>Afu (Bibliografische Gattung)</i>
                <i>25.07.20, 09:48 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 054453593</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -15795,6 +16319,11 @@
                <notes>
                   <arr>
                      <i>
+                        <note>Kompaktanlage Rara</note>
+                        <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
+                        <staffOnly>false</staffOnly>
+                     </i>
+                     <i>
                         <note>17.02.25 16:44</note>
                         <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -15835,6 +16364,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082609013</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1148108645</hrid>
@@ -15880,6 +16414,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1148108645</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -16054,6 +16593,9 @@
          <contributors>
             <arr/>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -16098,6 +16640,7 @@
             <arr>
                <i>Afu (Bibliografische Gattung)</i>
                <i>03.01.24, 15:43 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 030566061</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -16176,6 +16719,11 @@
                <notes>
                   <arr>
                      <i>
+                        <note>Kompaktanlage Stadtgebäude</note>
+                        <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
+                        <staffOnly>false</staffOnly>
+                     </i>
+                     <i>
                         <note>17.02.25 16:45</note>
                         <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -16216,6 +16764,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082645699</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -16390,6 +16943,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -16437,6 +16993,7 @@
             <arr>
                <i>Afu (Bibliografische Gattung)</i>
                <i>13.08.20, 15:50 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 028219317</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -16550,6 +17107,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082626147</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -16742,6 +17304,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -16799,6 +17364,7 @@
             <arr>
                <i>AFuc (Bibliografische Gattung)</i>
                <i>05.08.22, 18:52 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 020254830</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -16912,6 +17478,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082628077</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -17103,6 +17674,9 @@
          <contributors>
             <arr/>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr/>
          </publication>
@@ -17138,6 +17712,7 @@
             <arr>
                <i>Afx (Bibliografische Gattung)</i>
                <i>17.02.20, 18:21 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 459553135</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -17266,6 +17841,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082638463</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082638471</hrid>
@@ -17316,6 +17896,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082638471</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -17507,6 +18092,9 @@
          <contributors>
             <arr/>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr/>
          </publication>
@@ -17542,6 +18130,7 @@
             <arr>
                <i>Afx (Bibliografische Gattung)</i>
                <i>17.02.20, 18:21 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 459553135</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -17670,6 +18259,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082638463</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082638471</hrid>
@@ -17720,6 +18314,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082638471</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -17885,6 +18484,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -17929,6 +18531,7 @@
             <arr>
                <i>Afx (Bibliografische Gattung)</i>
                <i>22.04.20, 17:06 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 459548727</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -18052,6 +18655,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082632856</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -18177,6 +18785,9 @@
          <contributors>
             <arr/>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr/>
          </publication>
@@ -18211,6 +18822,7 @@
             <arr>
                <i>Afx (Bibliografische Gattung)</i>
                <i>17.02.20, 18:31 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 45955607X</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -18324,6 +18936,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082641987</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -18455,6 +19072,9 @@
          <contributors>
             <arr/>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr/>
          </publication>
@@ -18492,6 +19112,7 @@
             <arr>
                <i>Afx (Bibliografische Gattung)</i>
                <i>17.02.25, 15:14 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 459543121</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -18605,6 +19226,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082625701</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -18751,6 +19377,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -18797,6 +19426,7 @@
             <arr>
                <i>Baxaf (Bibliografische Gattung)</i>
                <i>17.02.25, 16:36 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 099625431</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -18899,6 +19529,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1113779705</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -19006,6 +19641,9 @@
          <contributors>
             <arr/>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -19061,6 +19699,7 @@
             <arr>
                <i>Kcu (Bibliografische Gattung)</i>
                <i>10.10.24, 18:35 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 210438460</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -19158,6 +19797,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1247876470</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -19394,6 +20038,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -19454,6 +20101,7 @@
             <arr>
                <i>KFx (Bibliografische Gattung)</i>
                <i>15.11.23, 11:11 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 512089876</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -19577,6 +20225,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1247804631</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -19812,6 +20465,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -19880,6 +20536,7 @@
             <arr>
                <i>Oau (Bibliografische Gattung)</i>
                <i>05.11.22, 01:20 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 453641865</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -19967,6 +20624,11 @@
                      </i>
                   </arr>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1145950477</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -20205,6 +20867,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -20260,6 +20925,7 @@
             <arr>
                <i>Oau (Bibliografische Gattung)</i>
                <i>11.10.22, 18:27 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 459975382</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -20362,6 +21028,11 @@
                      </i>
                   </arr>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1083186078</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -20523,6 +21194,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -20572,6 +21246,7 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>19.08.22, 19:00 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 123946751</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -20674,6 +21349,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 108265664X</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -20851,6 +21531,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -20898,6 +21581,7 @@
             <arr>
                <i>Aauc (Bibliografische Gattung)</i>
                <i>06.08.20, 11:59 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 034085912</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -21010,6 +21694,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082710881</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -21175,6 +21864,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -21228,6 +21920,7 @@
             <arr>
                <i>Aauc (Bibliografische Gattung)</i>
                <i>09.10.23, 13:30 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 011708255</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -21325,6 +22018,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082822396</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -21527,6 +22225,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -21576,6 +22277,7 @@
             <arr>
                <i>Aauc (Bibliografische Gattung)</i>
                <i>06.03.24, 09:07 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 034820345</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -21673,6 +22375,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082958999</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082959006</hrid>
@@ -21728,6 +22435,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082959006</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -21930,6 +22642,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -21979,6 +22694,7 @@
             <arr>
                <i>Aauc (Bibliografische Gattung)</i>
                <i>06.03.24, 09:07 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 034820345</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -22076,6 +22792,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082958999</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082959006</hrid>
@@ -22131,6 +22852,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082959006</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -22325,6 +23051,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -22374,6 +23103,7 @@
             <arr>
                <i>Aax (Bibliografische Gattung)</i>
                <i>13.02.25, 23:00 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 527379344</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -22441,6 +23171,11 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
+                        <note>Archiv / Vorbestellung über Ausleihtheke!</note>
+                        <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
+                        <staffOnly>false</staffOnly>
+                     </i>
+                     <i>
                         <note>17.02.25 14:54</note>
                         <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -22476,6 +23211,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1292400552</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -22657,6 +23397,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -22705,6 +23448,7 @@
             <arr>
                <i>Aax (Bibliografische Gattung)</i>
                <i>05.12.24, 22:59 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 524409153</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -22817,6 +23561,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1285626508</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -23000,6 +23749,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -23049,6 +23801,7 @@
             <arr>
                <i>Aax (Bibliografische Gattung)</i>
                <i>28.11.24, 22:54 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 524215103</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -23116,6 +23869,11 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
+                        <note>Archiv</note>
+                        <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
+                        <staffOnly>false</staffOnly>
+                     </i>
+                     <i>
                         <note>17.02.25 14:55</note>
                         <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -23151,6 +23909,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1284908976</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -23373,6 +24136,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -23432,6 +24198,7 @@
             <arr>
                <i>Aax (Bibliografische Gattung)</i>
                <i>23.01.25, 18:03 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 521698812</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -23534,6 +24301,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1274921031</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -23716,6 +24488,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -23765,6 +24540,7 @@
             <arr>
                <i>Aax (Bibliografische Gattung)</i>
                <i>14.06.24, 22:39 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 519154584</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -23872,6 +24648,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1265438099</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -24063,6 +24844,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -24112,6 +24896,7 @@
             <arr>
                <i>Aax (Bibliografische Gattung)</i>
                <i>24.04.24, 23:01 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 517468727</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -24214,6 +24999,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1261843436</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -24439,6 +25229,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -24492,6 +25285,7 @@
             <arr>
                <i>Aax (Bibliografische Gattung)</i>
                <i>14.10.22, 20:00 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 459987119</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -24599,6 +25393,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 108319982X</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1083199838</hrid>
@@ -24649,6 +25448,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1083199838</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -24874,6 +25678,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -24927,6 +25734,7 @@
             <arr>
                <i>Aax (Bibliografische Gattung)</i>
                <i>14.10.22, 20:00 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 459987119</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -25034,6 +25842,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 108319982X</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1083199838</hrid>
@@ -25084,6 +25897,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1083199838</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -25279,6 +26097,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -25334,6 +26155,7 @@
             <arr>
                <i>Aax (Bibliografische Gattung)</i>
                <i>15.05.24, 22:30 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 518276015</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -25441,6 +26263,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1263536220</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -25697,6 +26524,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -25746,6 +26576,7 @@
             <arr>
                <i>Aax (Bibliografische Gattung)</i>
                <i>30.01.25, 08:28 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 401043533</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -25864,6 +26695,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1083190040</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -26030,6 +26866,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -26074,6 +26913,7 @@
             <arr>
                <i>Aax (Bibliografische Gattung)</i>
                <i>14.10.22, 19:59 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 459852566</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -26176,6 +27016,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1083044729</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -26330,6 +27175,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -26372,6 +27220,7 @@
             <arr>
                <i>Aax (Bibliografische Gattung)</i>
                <i>18.02.20, 11:31 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 459859331</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -26484,6 +27333,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1083052772</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -26651,6 +27505,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -26695,6 +27552,7 @@
             <arr>
                <i>Aax (Bibliografische Gattung)</i>
                <i>18.02.20, 08:45 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 459802348</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -26812,6 +27670,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082981214</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -26993,6 +27856,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -27037,6 +27903,7 @@
             <arr>
                <i>Aax (Bibliografische Gattung)</i>
                <i>18.02.20, 09:01 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 459807838</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -27159,6 +28026,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082987883</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -27294,6 +28166,9 @@
          <contributors>
             <arr/>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -27336,6 +28211,7 @@
             <arr>
                <i>Aax (Bibliografische Gattung)</i>
                <i>09.05.22, 09:32 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 459724398</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -27443,6 +28319,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082887765</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -27656,6 +28537,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -27698,6 +28582,7 @@
             <arr>
                <i>Aax (Bibliografische Gattung)</i>
                <i>17.02.25, 16:41 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 459722816</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -27800,6 +28685,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082886017</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082886025</hrid>
@@ -27865,6 +28755,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082886025</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -28078,6 +28973,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -28120,6 +29018,7 @@
             <arr>
                <i>Aax (Bibliografische Gattung)</i>
                <i>17.02.25, 16:41 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 459722816</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -28222,6 +29121,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082886017</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082886025</hrid>
@@ -28287,6 +29191,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082886025</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -28439,6 +29348,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -28483,6 +29395,7 @@
             <arr>
                <i>Aax (Bibliografische Gattung)</i>
                <i>17.02.25, 15:15 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 459692089</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -28580,6 +29493,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082851000</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -28704,6 +29622,9 @@
          <contributors>
             <arr/>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -28741,6 +29662,7 @@
             <arr>
                <i>Aax (Bibliografische Gattung)</i>
                <i>17.02.25, 15:15 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 459569570</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -28838,6 +29760,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082658502</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -28995,6 +29922,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -29039,6 +29969,7 @@
             <arr>
                <i>Aax (Bibliografische Gattung)</i>
                <i>17.02.25, 15:00 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 459628550</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -29141,6 +30072,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082730238</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -29298,6 +30234,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -29341,6 +30280,7 @@
             <arr>
                <i>Aax (Bibliografische Gattung)</i>
                <i>17.10.20, 16:13 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 459569090</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -29403,6 +30343,11 @@
                <notes>
                   <arr>
                      <i>
+                        <note>Kompaktanlage Rara</note>
+                        <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
+                        <staffOnly>false</staffOnly>
+                     </i>
+                     <i>
                         <note>17.02.25 16:45</note>
                         <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -29443,6 +30388,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082657972</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -29585,6 +30535,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -29627,6 +30580,7 @@
             <arr>
                <i>Aax (Bibliografische Gattung)</i>
                <i>14.10.22, 19:59 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 459877992</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -29724,6 +30678,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1083075012</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -29885,6 +30844,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -29929,6 +30891,7 @@
             <arr>
                <i>Aax (Bibliografische Gattung)</i>
                <i>17.02.25, 15:01 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 45962847X</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -30031,6 +30994,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082727512</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -30199,6 +31167,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -30245,6 +31216,7 @@
             <arr>
                <i>Aaxaf (Bibliografische Gattung)</i>
                <i>14.12.23, 11:18 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 058357548</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -30367,6 +31339,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082926418</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -30582,6 +31559,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -30626,6 +31606,7 @@
             <arr>
                <i>Aaxc (Bibliografische Gattung)</i>
                <i>06.08.20, 15:22 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 014370379</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -30738,6 +31719,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082926639</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082926647</hrid>
@@ -30798,6 +31784,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082926647</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -31013,6 +32004,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -31057,6 +32051,7 @@
             <arr>
                <i>Aaxc (Bibliografische Gattung)</i>
                <i>06.08.20, 15:22 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 014370379</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -31169,6 +32164,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082926639</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082926647</hrid>
@@ -31229,6 +32229,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082926647</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -31435,6 +32440,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -31481,6 +32489,7 @@
             <arr>
                <i>Aayc (Bibliografische Gattung)</i>
                <i>06.08.20, 12:45 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 010350861</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -31588,6 +32597,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082797022</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -31824,6 +32838,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -31884,6 +32901,7 @@
             <arr>
                <i>Abvc (Bibliografische Gattung)</i>
                <i>09.07.24, 16:13 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 471353302</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -31999,6 +33017,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1143695445</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -32265,6 +33288,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -32324,6 +33350,7 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>21.10.24, 11:13 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 517098946</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -32431,6 +33458,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1276939507</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -32718,6 +33750,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -32777,6 +33812,7 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>04.12.24, 15:15 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 516719769</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -32884,6 +33920,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1286774411</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -33158,6 +34199,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -33211,6 +34255,7 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>22.02.24, 19:32 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 50327044X</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -33313,6 +34358,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1274923050</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1281982334</hrid>
@@ -33358,6 +34408,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1281982334</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -33632,6 +34687,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -33685,6 +34743,7 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>22.02.24, 19:32 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 50327044X</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -33787,6 +34846,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1274923050</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1281982334</hrid>
@@ -33832,6 +34896,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1281982334</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -34020,6 +35089,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -34062,6 +35134,7 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>22.05.24, 14:10 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 502529148</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -34164,6 +35237,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1224195329</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -34376,6 +35454,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -34433,6 +35514,7 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>21.02.23, 11:21 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 489398928</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -34540,6 +35622,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1206447761</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -34765,6 +35852,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -34813,6 +35903,7 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>01.02.22, 11:16 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 481376755</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -34920,6 +36011,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1167403991</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -35187,6 +36283,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -35235,6 +36334,7 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>29.05.24, 18:49 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 378493051</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -35342,6 +36442,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1083204270</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1083204289</hrid>
@@ -35387,6 +36492,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1083204289</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -35654,6 +36764,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -35702,6 +36815,7 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>29.05.24, 18:49 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 378493051</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -35809,6 +36923,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1083204270</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1083204289</hrid>
@@ -35854,6 +36973,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1083204289</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -36047,6 +37171,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -36098,6 +37225,7 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>22.11.23, 15:04 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 185507549</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -36215,6 +37343,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1083011383</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -36467,6 +37600,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -36511,6 +37647,7 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>06.08.20, 16:20 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 177742690</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -36608,6 +37745,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082995878</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082995886</hrid>
@@ -36663,6 +37805,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082995886</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -36915,6 +38062,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -36959,6 +38109,7 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>06.08.20, 16:20 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 177742690</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -37056,6 +38207,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082995878</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082995886</hrid>
@@ -37111,6 +38267,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082995886</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -37335,6 +38496,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -37386,6 +38550,7 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>29.08.24, 10:04 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 108942368</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -37503,6 +38668,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1083419927</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -37725,6 +38895,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -37773,6 +38946,7 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>17.08.22, 14:54 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 104288116</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -37875,6 +39049,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082790281</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>108279029X</hrid>
@@ -37930,6 +39109,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 108279029X</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -38152,6 +39336,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -38200,6 +39387,7 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>17.08.22, 14:54 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 104288116</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -38302,6 +39490,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082790281</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>108279029X</hrid>
@@ -38357,6 +39550,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 108279029X</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -38555,6 +39753,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -38613,6 +39814,7 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>12.11.24, 16:30 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 094812411</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -38725,6 +39927,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082910872</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -38991,6 +40198,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -39038,6 +40248,7 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>06.08.20, 14:54 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 082051852</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -39140,6 +40351,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082893609</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082893617</hrid>
@@ -39185,6 +40401,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082893617</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082893625</hrid>
@@ -39235,6 +40456,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082893625</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -39501,6 +40727,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -39548,6 +40777,7 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>06.08.20, 14:54 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 082051852</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -39650,6 +40880,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082893609</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082893617</hrid>
@@ -39695,6 +40930,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082893617</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082893625</hrid>
@@ -39745,6 +40985,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082893625</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -40011,6 +41256,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -40058,6 +41306,7 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>06.08.20, 14:54 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 082051852</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -40160,6 +41409,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082893609</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082893617</hrid>
@@ -40205,6 +41459,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082893617</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1082893625</hrid>
@@ -40255,6 +41514,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082893625</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -40485,6 +41749,9 @@
          <contributors>
             <arr/>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -40535,6 +41802,7 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>25.11.24, 08:20 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 06154244X</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -40647,6 +41915,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082887757</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -40869,6 +42142,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -40913,6 +42189,7 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>05.08.22, 18:12 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 006701957</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -41010,6 +42287,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082829811</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1185202358</hrid>
@@ -41055,6 +42337,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1185202358</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -41277,6 +42564,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -41321,6 +42611,7 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>05.08.22, 18:12 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 006701957</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -41418,6 +42709,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082829811</i>
+                  </arr>
+               </administrativeNotes>
             </i>
             <i>
                <hrid>1185202358</hrid>
@@ -41463,6 +42759,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1185202358</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -41626,6 +42927,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -41677,6 +42981,7 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>25.02.21, 15:36 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 010538941</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -41739,6 +43044,11 @@
                <notes>
                   <arr>
                      <i>
+                        <note>Kompaktanlage Rara</note>
+                        <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
+                        <staffOnly>false</staffOnly>
+                     </i>
+                     <i>
                         <note>17.02.25 16:45</note>
                         <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -41779,6 +43089,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082657980</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
@@ -41943,6 +43258,9 @@
                </i>
             </arr>
          </contributors>
+         <classifications>
+            <arr/>
+         </classifications>
          <publication>
             <arr>
                <i>
@@ -41998,6 +43316,7 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>25.07.20, 09:35 (Letzte Änderung CBS)</i>
+               <i>Hebis-Datensatz hebis-PPN: 03490753X</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -42105,6 +43424,11 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <administrativeNotes>
+                  <arr>
+                     <i>Hebis-Datensatz hebis-EPN: 1082646997</i>
+                  </arr>
+               </administrativeNotes>
             </i>
          </arr>
       </holdingsRecords>
