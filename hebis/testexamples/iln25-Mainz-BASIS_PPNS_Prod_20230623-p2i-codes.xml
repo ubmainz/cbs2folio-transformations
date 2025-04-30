@@ -40576,6 +40576,11 @@
                         <holdingsNoteTypeId>a3b8e442-a3bf-461e-a708-173001b8e67c</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
+                     <i>
+                        <note>E 492-14</note>
+                        <holdingsNoteTypeId>a3b8e442-a3bf-461e-a708-173001b8e67c</holdingsNoteTypeId>
+                        <staffOnly>true</staffOnly>
+                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -69752,6 +69757,11 @@
                      </i>
                      <i>
                         <note>W 735/91</note>
+                        <holdingsNoteTypeId>a3b8e442-a3bf-461e-a708-173001b8e67c</holdingsNoteTypeId>
+                        <staffOnly>true</staffOnly>
+                     </i>
+                     <i>
+                        <note>W 735 91</note>
                         <holdingsNoteTypeId>a3b8e442-a3bf-461e-a708-173001b8e67c</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
