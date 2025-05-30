@@ -418,7 +418,7 @@
     <xsl:variable name="i" select="key('original',../../../../permanentLocationId)"/> <!-- ILN -->
     <statisticalCodeIds>
       <arr>
-        <xsl:if test="$i/datafield[(@tag='209B') and (subfield[@code='x']='05')]/subfield[@code='a']='LZA'">
+        <xsl:if test="$i/datafield[(@tag='209B') and not(subfield[@code='x']='01' or subfield[@code='x']='02')]/subfield[@code='a']='LZA'">
           <i>LZA</i>
         </xsl:if>
       </arr>
