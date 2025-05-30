@@ -347,38 +347,17 @@
     </xsl:if>
   </xsl:template>
 
-<!-- multiple call number workaround -->
+<!-- multiple call number workaround  - TBD: Ansetzungsformen der weiteren Signaturen? -->
+
   <xsl:template match="notes">
     <xsl:variable name="i" select="key('original',../permanentLocationId)"/>
       <notes>
         <arr>
-        <xsl:apply-templates select="arr/i"/> 
-        <xsl:for-each select="$i/datafield[(@tag='209A') and (subfield[@code='x']!='00')]">
-          <i>
-            <note>
-              <xsl:value-of select="subfield[@code='a']"/>
-            </note>
-            <holdingsNoteTypeId>
-              <xsl:variable name="codex" select="subfield[@code='x']"/>
-              <xsl:choose>
-                <xsl:when test="$codex='09'">
-                  <xsl:text>Magazinsignatur (nur Monografien) (71</xsl:text><xsl:value-of select="$codex"/><xsl:text>)</xsl:text>
-                </xsl:when>
-                <xsl:when test="$codex='10'">
-                  <xsl:text>Magazinsignatur (nur Zeitschriften) (71</xsl:text><xsl:value-of select="$codex"/><xsl:text>)</xsl:text>
-                </xsl:when>
-                <xsl:otherwise>
-                  <xsl:text>Weitere Signaturen (71</xsl:text><xsl:value-of select="$codex"/><xsl:text>)</xsl:text>
-                </xsl:otherwise>
-              </xsl:choose>
-            </holdingsNoteTypeId>
-            <staffOnly>true</staffOnly>  
-          </i>
-        </xsl:for-each>
+          <xsl:apply-templates select="arr/i[not(holdingsNoteTypeId='Signatur Ansetzungsform (7100)')]"/> 
         </arr>
       </notes>
   </xsl:template>
-
+  
   <!-- Parsing call number for prefix - optional -->
   <xsl:template match="callNumber">
     <xsl:variable name="i" select="key('original',../permanentLocationId)"/>
@@ -434,5 +413,16 @@
       </xsl:otherwise>
     </xsl:choose>
    </xsl:template>
+
+  <xsl:template match="statisticalCodeIds">
+    <xsl:variable name="i" select="key('original',../../../../permanentLocationId)"/> <!-- ILN -->
+    <statisticalCodeIds>
+      <arr>
+        <xsl:if test="$i/datafield[(@tag='209B') and not(subfield[@code='x']='01' or subfield[@code='x']='02')]/subfield[@code='a']='LZA'">
+          <i>LZA</i>
+        </xsl:if>
+      </arr>
+    </statisticalCodeIds>
+  </xsl:template>
 
 </xsl:stylesheet>

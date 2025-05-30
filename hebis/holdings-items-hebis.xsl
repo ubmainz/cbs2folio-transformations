@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- date of last edit: 2025-01-24 (YYYY-MM-DD) -->
+<!-- date of last edit: 2025-04-30 (YYYY-MM-DD) -->
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
   <xsl:output indent="yes" method="xml" version="1.0" encoding="UTF-8"/>
@@ -301,6 +301,39 @@
               <staffOnly>true</staffOnly>
             </i>
           </xsl:for-each>
+
+
+        <xsl:if test="datafield[(@tag='209A') and (subfield[@code='x']='00') and subfield[@code='h']]">
+          <i>
+            <note>
+              <xsl:value-of select="datafield[@tag='209A']/subfield[@code='h']"/>
+            </note>
+              <holdingsNoteTypeId><xsl:text>Signatur Ansetzungsform (7100)</xsl:text></holdingsNoteTypeId>
+            <staffOnly>true</staffOnly>  
+          </i>
+        </xsl:if>
+        <xsl:for-each select="datafield[(@tag='209A') and (subfield[@code='x']!='00')]/subfield[(@code='a') or (@code='h')]">
+          <i>
+            <note>
+              <xsl:value-of select="."/>
+            </note>
+            <holdingsNoteTypeId>
+              <xsl:variable name="codex" select="../subfield[@code='x']"/>
+              <xsl:choose>
+                <xsl:when test="$codex='09'">
+                  <xsl:text>Magazinsignatur (nur Monografien) (71</xsl:text><xsl:value-of select="$codex"/><xsl:text>)</xsl:text>
+                </xsl:when>
+                <xsl:when test="$codex='10'">
+                  <xsl:text>Magazinsignatur (nur Zeitschriften) (71</xsl:text><xsl:value-of select="$codex"/><xsl:text>)</xsl:text>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:text>Weitere Signaturen (71</xsl:text><xsl:value-of select="$codex"/><xsl:text>)</xsl:text>
+                </xsl:otherwise>
+              </xsl:choose>
+            </holdingsNoteTypeId>
+            <staffOnly>true</staffOnly>  
+          </i>
+        </xsl:for-each>
         </arr>
       </notes>
       <discoverySuppress>
@@ -314,7 +347,7 @@
          <items>
            <arr>
              <xsl:for-each select="datafield[(@tag='209G') and (subfield[@code='x']='00')]/subfield[@code='a']">
-               <xsl:message>Debug: <xsl:value-of select="."/></xsl:message>
+            <!--   <xsl:message>Debug: <xsl:value-of select="."/></xsl:message> -->
                <xsl:variable name="copy">
                  <xsl:choose>
                    <xsl:when test="contains(.,'(')">
@@ -325,7 +358,7 @@
                    </xsl:otherwise>
                  </xsl:choose>
                </xsl:variable>
-               <xsl:message>Debug: <xsl:value-of select="concat($epn,'-',$copy)"/></xsl:message>             
+             <!--  <xsl:message>Debug: <xsl:value-of select="concat($epn,'-',$copy)"/></xsl:message> -->
                <xsl:apply-templates select="../.." mode="make-item">
                  <xsl:with-param name="hhrid" select="concat($epn,'-',$copy)"/>
                  <xsl:with-param name="bcode" select="substring-before(concat(.,' '),' ')"/>
@@ -335,7 +368,7 @@
                </xsl:apply-templates>
              </xsl:for-each>
              <xsl:if test="not(datafield[(@tag='209G') and (subfield[@code='x']='00')]/subfield[@code='a'])">
-               <xsl:message>Debug: EPN <xsl:value-of select="$epn"/></xsl:message>             
+             <!--   <xsl:message>Debug: EPN <xsl:value-of select="$epn"/></xsl:message>  -->
                <xsl:apply-templates select="." mode="make-item">
                  <xsl:with-param name="hhrid" select="concat($epn,'-1')"/>
                </xsl:apply-templates>
@@ -448,6 +481,7 @@
     	     <xsl:otherwise><xsl:call-template name="selectioncode"/></xsl:otherwise>
     	   </xsl:choose>
     	</discoverySuppress>
+      <statisticalCodeIds/>
     </i>
   </xsl:template>
   <xsl:template match="text()"/>

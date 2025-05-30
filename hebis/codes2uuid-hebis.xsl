@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?> 
-<!-- date of last edit: 2025-01-24 (YYYY-MM-DD) -->
+<!-- date of last edit: 2025-04-30 (YYYY-MM-DD) -->
 
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:output indent="yes" method="xml" version="1.0" encoding="UTF-8"/>
@@ -45,7 +45,18 @@
         <xsl:when test=".='Letzte Änderung CBS'"><xsl:text>7cad8584-35f9-4ea7-8944-11bcf40ff29c</xsl:text></xsl:when> <!-- hebis-wide -->
         <xsl:when test=".='Lokale Schlagwörter'"><xsl:text>65eea0de-f9da-46e1-828a-479579997110</xsl:text></xsl:when> <!-- ILN-specific -->
         <xsl:when test=".='Lokale Klassifikationen'"><xsl:text>2b56966a-4fb2-4695-befe-073ac0d22996</xsl:text></xsl:when> <!-- ILN-specific -->
-        <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
+        <xsl:when test=".='Signatur Ansetzungsform (7100)'"><xsl:text>f96cd2a3-065f-405c-ae3b-8547f46c7066</xsl:text></xsl:when>
+        <xsl:when test=".='Weitere Signaturen (7101)'"><xsl:text>bd3b7265-3337-4f62-bba8-12b7938cf161</xsl:text></xsl:when>
+        <xsl:when test=".='Weitere Signaturen (7102)'"><xsl:text>ef5fe122-3412-4fb5-91d6-79516907fa9b</xsl:text></xsl:when>
+        <xsl:when test=".='Weitere Signaturen (7103)'"><xsl:text>bf986cf6-87af-47a2-b159-5b5de0fff7c5</xsl:text></xsl:when>
+        <xsl:when test=".='Weitere Signaturen (7104)'"><xsl:text>979c9edb-c487-4f6e-94f6-876a46252815</xsl:text></xsl:when>
+        <xsl:when test=".='Weitere Signaturen (7105)'"><xsl:text>60b8d358-9d13-4e11-bd3c-edf3104d0bf5</xsl:text></xsl:when>
+        <xsl:when test=".='Weitere Signaturen (7106)'"><xsl:text>12878c96-b955-4b11-ad20-b3d35c5e1d27</xsl:text></xsl:when>
+        <xsl:when test=".='Weitere Signaturen (7107)'"><xsl:text>c0a59e6c-e6ea-4158-b4c5-610486f8f6e9</xsl:text></xsl:when>
+        <xsl:when test=".='Weitere Signaturen (7108)'"><xsl:text>f43a450a-0574-450b-9dd1-74d9ae6a6502</xsl:text></xsl:when>     
+        <xsl:when test=".='Magazinsignatur (nur Monografien) (7109)'"><xsl:text>a3b8e442-a3bf-461e-a708-173001b8e67c</xsl:text></xsl:when>
+        <xsl:when test=".='Magazinsignatur (nur Zeitschriften) (7110)'"><xsl:text>24f2019c-2e64-42b3-a760-7a89a0dcb363</xsl:text></xsl:when>
+        <xsl:otherwise>b160f13a-ddba-4053-b9c4-60ec5ea45d56</xsl:otherwise> <!-- Note -->
       </xsl:choose>
     </holdingsNoteTypeId>
   </xsl:template>
