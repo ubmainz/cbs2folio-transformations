@@ -130,4 +130,19 @@
     </permanentLoanTypeId>
   </xsl:template>
 
+  <!-- Map statistical code ids -->
+  <xsl:template match="statisticalCodeIds"> <!-- ILN -->
+    <statisticalCodeIds>
+      <arr>
+        <xsl:for-each select="arr/i">
+          <i>
+            <xsl:choose>
+              <xsl:when test=".='LZA'">TBD</xsl:when>
+            </xsl:choose>
+          </i>
+        </xsl:for-each>
+      </arr>
+    </statisticalCodeIds>
+  </xsl:template>
+
 </xsl:stylesheet>

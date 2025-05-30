@@ -414,4 +414,15 @@
     </xsl:choose>
    </xsl:template>
 
+  <xsl:template match="statisticalCodeIds">
+    <xsl:variable name="i" select="key('original',../permanentLocationId)"/><!-- ILN -->
+    <statisticalCodeIds>
+      <arr>
+        <xsl:if test="$i/datafield[(@tag='209G') and (subfield[@code='x']='05')]/subfield[@code='a']='LZA'">
+          <i>LZA</i>
+        </xsl:if>
+      </arr>
+    </statisticalCodeIds>
+  </xsl:template>
+
 </xsl:stylesheet>

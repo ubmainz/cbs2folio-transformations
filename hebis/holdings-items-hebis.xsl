@@ -481,6 +481,7 @@
     	     <xsl:otherwise><xsl:call-template name="selectioncode"/></xsl:otherwise>
     	   </xsl:choose>
     	</discoverySuppress>
+      <statisticalCodeIds/>
     </i>
   </xsl:template>
   <xsl:template match="text()"/>
