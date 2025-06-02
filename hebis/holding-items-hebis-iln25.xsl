@@ -364,7 +364,7 @@
     <xsl:variable name="abt" select="$i/datafield[@tag='209A']/subfield[@code='f']"/>
     <xsl:variable name="standort" select="$i/datafield[(@tag='209G') and (subfield[@code='x']='01')]/subfield[@code='a']"/> 
     <xsl:choose>
-      <xsl:when test="matches(.,'^\d{3}\s[A-Z]{2}\s\d{3,6}(\.\d*)?\s[A-Z]\d+.*') or matches(.,'^\d{3}\s[A-Z]\s\d{3}\.\d{3}\s.*')"> <!-- RVK-Signatur oder Magazin-Signatur -->
+      <xsl:when test="matches(.,'^\d{3}\s[A-Z]{2}\s\d{3,6}.*') or matches(.,'^\d{3}\s[A-Z]\s\d{3}\.\d{3}.*')"> <!-- RVK-Signatur oder Magazin-Signatur -->
           <callNumberPrefix>
             <xsl:value-of select="substring-before(.,' ')"/>
           </callNumberPrefix>
