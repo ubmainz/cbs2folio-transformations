@@ -14,7 +14,8 @@
   <xsl:template match="record">
     <xsl:variable name="currentrecord" select="."/>
     <xsl:variable name="hebppns" select="original/datafield[@tag='003H']/subfield[@code='0']|original/datafield[@tag='006H']/subfield[@code='0']"/>
-    <xsl:for-each select="distinct-values($hebppns)">
+    <xsl:variable name="hebppns-dist" select="distinct-values($hebppns)"/>
+    <xsl:for-each select="$hebppns-dist">
       <record>
         <xsl:copy-of select="$currentrecord/processing"/>
           <instance>
@@ -28,6 +29,13 @@
                     ' hebis-PPN: ',.,' - nur Instanz aus K10plus')"/></i>
               </arr>
             </administrativeNotes>
+            <xsl:if test="$hebppns-dist[2]">
+              <statisticalCodeIds>
+                <arr>
+                    <i>Dublettenbereinigung</i>
+                </arr>
+              </statisticalCodeIds>
+            </xsl:if>
           </instance>
           <!-- instance relations? -->        
       </record>
