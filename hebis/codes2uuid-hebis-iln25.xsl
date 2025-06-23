@@ -149,7 +149,7 @@
   </xsl:template>
 
   <!-- Map statistical code ids -->
-  <xsl:template match="statisticalCodeIds"> <!-- ILN -->
+  <xsl:template match="statisticalCodeIds"> <!-- ILN --> <!-- TBD: generate -->
     <statisticalCodeIds>
       <arr>
         <xsl:for-each select="arr/i">
