@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- date of last edit: 2025-01-24 (YYYY-MM-DD) -->
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+  xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+  version="2.0" exclude-result-prefixes="#all">
   <xsl:output indent="yes" method="xml" version="1.0" encoding="UTF-8"/>
   <xsl:template match="collection">
     <collection>
@@ -13,33 +15,6 @@
         <hrid>
           <xsl:value-of select="./hrid"/>
         </hrid>
-<!-- 
-        <processing>
-        <instance>
-            <statisticalCoding>
-              <arr>
-                <i>
-                  <if>deleteSkipped</if>
-                  <becauseOf>PO_LINE_REFERENCE</becauseOf>
-                  <setCode>dcf1220f-5524-4f1e-8e40-5da3366e8478</setCode>
-                </i>   
-              </arr>
-            </statisticalCoding> 
-          </instance>
-          <holdingsRecord>
-            <blockDeletion>
-              <ifField>hrid</ifField>
-              <matchesPattern>\D+.*</matchesPattern>
-            </blockDeletion>
-          </holdingsRecord>
-          <item>
-            <blockDeletion>
-              <ifField>hrid</ifField>
-              <matchesPattern>\D+.*</matchesPattern>
-            </blockDeletion>
-          </item>
-        </processing>
--->
       </delete>
     </record>
   </xsl:template>
@@ -58,9 +33,9 @@
     <xsl:if test="./subfield[@code='d']">
       <xsl:value-of select="concat(' : ', ./subfield[@code='d'])"/>
     </xsl:if>
-    <xsl:if test="./subfield[@code='e' or @code='h']">
-      <xsl:value-of select="concat(' / ', ./subfield[@code='e' or @code='h'])"/>
-    </xsl:if>
+    <xsl:for-each select="./subfield[@code='e' or @code='h']">
+      <xsl:value-of select="concat(' / ', .)"/>
+    </xsl:for-each>
     <xsl:if test="./subfield[@code='f']">
       <xsl:choose>
         <xsl:when test="./subfield[@code='f'][contains(., '@')]">
@@ -109,108 +84,21 @@
         </xsl:choose>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:if test="./subfield[@code='d']">
-      <xsl:value-of select="concat(' : ', ./subfield[@code='d'])"/>
-    </xsl:if>
-    <xsl:if test="./subfield[@code='e' or @code='h']">
-      <xsl:value-of select="concat(' / ', ./subfield[@code='e' or @code='h'])"/>
-    </xsl:if>
-    <xsl:if test="./subfield[@code='f']">
-      <xsl:choose>
-        <xsl:when test="./subfield[@code='f'][contains(., '@')]">
-          <xsl:value-of select="normalize-space(concat(' = ', concat(substring-before(./subfield[@code='f'], '@'), substring-after(./subfield[@code='f'], '@'))))"/>
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:value-of select="normalize-space(concat(' = ', ./subfield[@code='f']))"/>
-        </xsl:otherwise>
-      </xsl:choose>
-    </xsl:if>
+    <xsl:for-each select="./subfield[@code='d']">
+      <xsl:value-of select="concat(' : ', .)"/>
+    </xsl:for-each>
+    <xsl:for-each select="./subfield[@code='e' or @code='h']">
+      <xsl:value-of select="concat(' / ', .)"/>
+    </xsl:for-each>
+    <xsl:for-each select="./subfield[@code='f']">
+      <xsl:value-of select="concat(' = ', normalize-space(translate(.,'@','')))"/>
+    </xsl:for-each>
     <xsl:if test="./subfield[@code='l']">
       <xsl:value-of select="concat(' ; ', ./subfield[@code='l'])"/>
     </xsl:if>
   </xsl:template>
   <xsl:template match="record">
     <record>
-<!-- 
-      <processing>
-        <holdingsRecord>
-          <retainOmittedRecord>
-            <ifField>hrid</ifField>
-            <matchesPattern>\D+.*</matchesPattern>
-          </retainOmittedRecord>
-          <retainExistingValues>
-            <forOmittedProperties>true</forOmittedProperties>
-          </retainExistingValues>
-          <statisticalCoding>
-              <arr>
-                <i>
-                  <if>deleteSkipped</if>
-                  <becauseOf>HOLDINGS_RECORD_PATTERN_MATCH</becauseOf>
-                  <setCode>ac9bae48-d14c-4414-919a-292d539f9967</setCode>
-                </i> 
-                <i>
-                  <if>deleteSkipped</if>
-                  <becauseOf>ITEM_PATTERN_MATCH</becauseOf>
-                  <setCode>970b8b4e-ee88-4037-b954-a10ee75340f0</setCode>
-                </i>           
-              </arr>
-            </statisticalCoding>
-        </holdingsRecord>
-        <item>
-          <retainOmittedRecord>
-            <ifField>hrid</ifField>
-            <matchesPattern>\D+.*</matchesPattern>
-          </retainOmittedRecord>
-          <retainExistingValues>
-            <forOmittedProperties>true</forOmittedProperties>
--->
-            <!-- Not applied at GBV but tested and working
-                 <forTheseProperties>
-                 <arr>
-                 <i>yearCaption</i>
-                 <i>statisticalCodeIds</i>
-                 </arr>
-                 </forTheseProperties>
-            -->
-<!-- 
-          </retainExistingValues>
-          <statisticalCoding>
-              <arr>
-                <i>
-                  <if>deleteSkipped</if>
-                  <becauseOf>ITEM_STATUS</becauseOf>
-                  <setCode>e7b3071c-8cc0-48cc-9cd0-dfc82c4e4602</setCode>
-                </i>         
-              </arr>
-            </statisticalCoding>
-          <status>
-            <policy>overwrite</policy>
-            <ifStatusWas>
-              <arr>
-                <i>
-                  <name>On order</name>
-                </i>
-                <i>
-                  <name>Available</name>
-                </i>
-                <i>
-                  <name>Intellectual item</name>
-                </i>
-                <i>
-                  <name>Missing</name>
-                </i>
-                <i>
-                  <name>Restricted</name>
-                </i>
-                <i>
-                  <name>Unknown</name>
-                </i>
-              </arr>
-            </ifStatusWas>
-          </status>
-        </item>
-      </processing>
--->
       <original>
         <xsl:copy-of select="metadata/*"/>
       </original>
@@ -572,22 +460,15 @@
             </xsl:otherwise>
           </xsl:choose>
         </xsl:if>
-        <xsl:if test="./subfield[@code='d']">
-          <xsl:value-of select="concat(' ', ./subfield[@code='d'])"/>
-        </xsl:if>
+        <xsl:for-each select="./subfield[@code='d']">
+          <xsl:value-of select="concat(' ', .)"/>
+        </xsl:for-each>
         <xsl:if test="./subfield[@code='e' or @code='h']">
           <xsl:value-of select="concat(' ', ./subfield[@code='e' or @code='h'])"/>
         </xsl:if>
-        <xsl:if test="./subfield[@code='f']">
-          <xsl:choose>
-            <xsl:when test="./subfield[@code='f'][contains(., '@')]">
-              <xsl:value-of select="concat(' ', substring-after(./subfield[@code='f'], '@'))"/>
-            </xsl:when>
-            <xsl:otherwise>
-              <xsl:value-of select="concat(' ', ./subfield[@code='f'])"/>
-            </xsl:otherwise>
-          </xsl:choose>
-        </xsl:if>
+        <xsl:for-each select="./subfield[@code='f']">
+              <xsl:value-of select="concat(' ', translate(.,'@',''))"/>
+        </xsl:for-each>
         <xsl:if test="./subfield[@code='l']">
           <xsl:value-of select="concat(' ', ./subfield[@code='l'])"/>
         </xsl:if>
@@ -621,9 +502,9 @@
         <xsl:if test="./subfield[@code='d']">
           <xsl:value-of select="concat(' ', ./subfield[@code='d'])"/>
         </xsl:if>
-        <xsl:if test="./subfield[@code='e' or @code='h']">
-          <xsl:value-of select="concat(' ', ./subfield[@code='e' or @code='h'])"/>
-        </xsl:if>
+        <xsl:for-each select="./subfield[@code='e' or @code='h']">
+          <xsl:value-of select="concat(' ', .)"/>
+        </xsl:for-each>
         <xsl:if test="./subfield[@code='f']">
           <xsl:choose>
             <xsl:when test="./subfield[@code='f'][contains(., '@')]">
@@ -787,7 +668,7 @@
               <xsl:when test="@code='a'">
                 <xsl:choose>
                   <xsl:when test="@code='a'[contains(., '@')]">
-                    <xsl:value-of select="concat(substring-before(@code='a', '@'), substring-after(@code='a', '@'))"/>
+                    <xsl:value-of select="concat(substring-before(.[@code='a'], '@'), substring-after(.[@code='a'], '@'))"/>
                   </xsl:when>
                   <xsl:otherwise>
                     <xsl:value-of select="."/>
@@ -1168,12 +1049,12 @@
                 </xsl:if>
                 <xsl:if test="./subfield[@code='4']">
                   <contributorTypeId>
-                    <xsl:value-of select="./subfield[@code='4']"/>
+                    <xsl:value-of select="./subfield[@code='4'][1]"/>
                   </contributorTypeId>
                 </xsl:if>
                 <xsl:if test="./subfield[@code='B']">
                   <contributorTypeText>
-                    <xsl:value-of select="./subfield[@code='B']"/>
+                    <xsl:value-of select="./subfield[@code='B'][1]"/>
                   </contributorTypeText>
                 </xsl:if>
               </i>
@@ -1240,12 +1121,12 @@
                 <contributorNameTypeId>Körperschaftsname</contributorNameTypeId>
                 <xsl:if test="./subfield[@code='4']">
                   <contributorTypeId>
-                    <xsl:value-of select="./subfield[@code='4']"/>
+                    <xsl:value-of select="./subfield[@code='4'][1]"/>
                   </contributorTypeId>
                 </xsl:if>
                 <xsl:if test="./subfield[@code='B']">
                   <contributorTypeText>
-                    <xsl:value-of select="./subfield[@code='B']"/>
+                    <xsl:value-of select="./subfield[@code='B'][1]"/>
                   </contributorTypeText>
                 </xsl:if>
               </i>
@@ -1254,7 +1135,7 @@
         </xsl:for-each>
       </arr>
     </contributors>
-    
+  
     <!-- Publication -->
     <publication>
       <arr>
@@ -2174,12 +2055,12 @@
     <xsl:variable name="day" select="substring-before($rawdate, '-')"/>
     <xsl:variable name="moyr" select="substring-after($rawdate, '-')"/>
     <xsl:variable name="month" select="substring-before($moyr, '-')"/>
-    <xsl:variable name="shortyear" select="substring-after($moyr, '-')"/>
-    <xsl:if test="$shortyear &gt; 50">
+    <xsl:variable name="shortyear" select="substring-after($moyr, '-')"  />
+    <xsl:if test="number($shortyear) &gt; 50">
       <xsl:variable name="year" select="concat('19', $shortyear)"/>
       <xsl:value-of select="concat($year, '-', $month, '-', $day, $suffix)"/>
     </xsl:if>
-    <xsl:if test="$shortyear &lt; 51">
+    <xsl:if test="number($shortyear) &lt; 51">
       <xsl:variable name="year" select="concat('20', $shortyear)"/>
       <xsl:value-of select="concat($year, '-', $month, '-', $day, $suffix)"/>
     </xsl:if>
