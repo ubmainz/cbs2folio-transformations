@@ -9,7 +9,7 @@
     </xsl:copy>
   </xsl:template>
 
-  <xsl:template match="record[delete]"/> <!-- delete case? -->
+  <xsl:template match="record[delete]"/> <!-- no delete -->
   
   <xsl:template match="record">
     <xsl:variable name="currentrecord" select="."/> <!-- 003H Primäre Hebis-PPN -->
