@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="2.0" exclude-result-prefixes="#all">
   <xsl:output indent="yes" method="xml" version="1.0" encoding="UTF-8"/>
      
-  <xsl:template match="collection">
-    <collection>
-      <xsl:apply-templates select="record"/>
-    </collection>
+  <xsl:template match="@* | node()">
+    <xsl:copy>
+      <xsl:apply-templates select="@* | node()"/>
+    </xsl:copy>
   </xsl:template>
   
-  <xsl:template match="record[not(delete)]">
+  <xsl:template match="record">
+    <xsl:variable name="currentrecord" select="."/>
     <record>
+      <xsl:copy-of select="original"/>
       <processing> <!-- preserves holdings data -->
         <item>
           <retainExistingValues>
@@ -44,9 +46,46 @@
           </retainExistingValues>
         </instance>
       </processing>
-      <xsl:for-each select="*[not(self::processing)]">  <!-- removes any 'processing' element from pica2instance-new.xsl! -->
-        <xsl:copy-of select="."/>
-      </xsl:for-each>
+      <instance>
+        <source>K10plus</source>
+        <xsl:copy-of select="$currentrecord/instance/*[not(self::source or self::administrativeNotes)]"/>
+        <!-- RVK/DDC -->
+        <classifications>
+          <arr>
+            <xsl:variable name="rvk" as="xs:string *">
+              <xsl:for-each select="$currentrecord/original/(datafield[@tag='045R']/subfield[@code='8']|datafield[@tag='045R']/subfield[@code='a'])">
+                <xsl:sequence select="normalize-space(substring-before(concat(.,':'),':'))"/>
+              </xsl:for-each>
+            </xsl:variable>
+            <xsl:for-each select="distinct-values($rvk)">
+              <xsl:sort/>
+              <i>
+                <classificationNumber><xsl:value-of select="."/></classificationNumber>
+                <classificationTypeId>RVK</classificationTypeId>
+              </i>
+            </xsl:for-each>
+            <xsl:variable name="ddc" as="xs:string *">
+              <xsl:for-each select="$currentrecord/original/(datafield[@tag='045F']/subfield[@code='a'][.!='B']|datafield[@tag='045H']/subfield[@code='a'][.!='B'])">
+                <xsl:sequence select="normalize-space(translate(.,'/',''))"/>
+              </xsl:for-each>
+            </xsl:variable>
+            <xsl:for-each select="distinct-values($ddc)">
+              <xsl:sort/>
+              <i>
+                <classificationNumber><xsl:value-of select="."/></classificationNumber>
+                <classificationTypeId>DDC</classificationTypeId>
+              </i>
+            </xsl:for-each>
+          </arr>
+        </classifications>
+        <administrativeNotes>
+          <arr>
+            <xsl:copy-of select="$currentrecord/instance/administrativeNotes/arr/*"/>
+            <i><xsl:value-of select="concat('K10Plus-Datensatz PPN: ',$currentrecord/original/datafield[@tag='003@']/subfield[@code='0'],' - nur Instanz')"/></i>
+          </arr>
+        </administrativeNotes>
+      </instance>
+      <xsl:copy-of select="instanceRelations"/>
     </record>
   </xsl:template>
 
