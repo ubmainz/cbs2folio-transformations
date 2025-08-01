@@ -156,7 +156,7 @@
          </xsl:when>
          <xsl:when test="$abt='004'">
            <xsl:choose>
-             <xsl:when test="contains($standort,upper-case('Numerus')">PHNC</xsl:when>
+             <xsl:when test="contains($standort,upper-case('Numerus'))">PHNC</xsl:when>
              <xsl:otherwise>PHRVK</xsl:otherwise>
            </xsl:choose>
          </xsl:when>
