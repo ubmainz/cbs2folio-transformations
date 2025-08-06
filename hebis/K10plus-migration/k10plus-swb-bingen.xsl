@@ -84,7 +84,7 @@
           <administrativeNotes>
             <arr>
               <xsl:copy-of select="$currentrecord/instance/administrativeNotes/arr/*"/>
-              <i><xsl:value-of select="concat('K10Plus-Datensatz PPN: ',$currentrecord/original/datafield[@tag='003@']/subfield[@code='0'],' - nur Instanz')"/></i> <!-- TDB -->
+              <i><xsl:value-of select="concat('K10Plus-Instanz PPN: ',$currentrecord/original/datafield[@tag='003@']/subfield[@code='0'])"/></i>
             </arr>
           </administrativeNotes>
         </instance>
