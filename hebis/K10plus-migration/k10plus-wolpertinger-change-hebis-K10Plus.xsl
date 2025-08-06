@@ -21,12 +21,13 @@
           <instance>
             <source>K10plus</source>
             <hrid><xsl:value-of select="."/></hrid>
+            <matchKey><xsl:value-of select="$currentrecord/original/datafield[@tag='003@']/subfield[@code='0']"/></matchKey>
             <xsl:apply-templates select="$currentrecord/instance/*[not(self::hrid or self::source or self::administrativeNotes)]"/>
             <administrativeNotes>
               <arr>
                 <xsl:apply-templates select="$currentrecord/instance/administrativeNotes/arr/*"/>
                 <i><xsl:value-of select="concat('Wolpertingerdatensatz K10plus-PPN: ',$currentrecord/original/datafield[@tag='003@']/subfield[@code='0'],
-                    ' hebis-PPN: ',.,' - nur Instanz aus K10plus')"/></i>
+                    ' hebis-PPN: ',.,' - Instanz aus K10plus')"/></i>
               </arr>
             </administrativeNotes>
             <xsl:if test="$hebppns-dist[2]">
@@ -37,7 +38,8 @@
               </statisticalCodeIds>
             </xsl:if>
           </instance>
-          <!-- instance relations? -->        
+          <!-- instance relations? -->
+          <xsl:copy-of select="$currentrecord/holdingsRecords"/>        
       </record>
     </xsl:for-each>
   </xsl:template>

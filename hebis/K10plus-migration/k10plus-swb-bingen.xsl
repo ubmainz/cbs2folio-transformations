@@ -95,8 +95,9 @@
             <!-- ZDB-Fälle -->   <!-- TDB-Merker: EZB-Einzelkäufe für UB behandeln -->
             <holdingsRecords>
               <arr>
-                <!-- nur ZDB-Holdings -->
-                <!-- <xsl:apply-templates select="holding"/> -->
+                <xsl:for-each select="$currentrecord/original/item[starts-with(datafield[@tag='208@']/subfield[@code='b'],'z')]">  <!-- nur ZDB-Holdings -->
+                  <xsl:apply-templates select="."/>
+                </xsl:for-each>              
               </arr>
             </holdingsRecords>
           </xsl:when>
@@ -104,8 +105,9 @@
            <!--  + elek. Einzelkäufe  -->
             <holdingsRecords>
               <arr>
-                <!-- nur Einzelkäufe -->
-                <!-- <xsl:apply-templates select="holding"/> -->
+                <xsl:for-each select="$currentrecord/original/item[datafield[(@tag='209B') and (subfield[@code='x']='12')]/subfield[@code='a']='xxxx']">  <!-- nur Einzelkäufe -->
+                  <xsl:apply-templates select="."/>
+                </xsl:for-each>
               </arr>
             </holdingsRecords>
           </xsl:when>
@@ -115,6 +117,9 @@
                 <xsl:for-each select="$currentrecord/original/item">
                 <!--  hrid raussuchen (206X$0) und epn 203@ in administrative notices eintragen -  sonst nichts -->
                   <i>
+                    <formerIds>
+                      <arr/>
+                    </formerIds>
                     <hrid><xsl:value-of select="datafield[@tag='206X']/subfield[@code='0']"/></hrid>
                     <administrativeNotes>
                       <arr>
@@ -209,9 +214,14 @@
     </permanentLocationId>
   </xsl:template>
 
-  <xsl:template match="holding">
+  <xsl:template match="item">
     <i>
       <xsl:variable name="epn" select="datafield[@tag='203@']/subfield[@code='0']"/>
+      <formerIds>
+        <arr>
+          <i><xsl:value-of select="$epn"/></i>
+        </arr>
+      </formerIds>
       <hrid>
         <xsl:value-of select="$epn"/>
       </hrid>
