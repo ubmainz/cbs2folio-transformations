@@ -46,7 +46,7 @@
             </xsl:if>
           </instance>
           <!-- instance relations? -->
-          <xsl:copy-of select="$currentrecord/holdingsRecords"/>        
+          <xsl:apply-templates select="$currentrecord/holdingsRecords"/>        
       </record>
     </xsl:for-each>
   </xsl:template>

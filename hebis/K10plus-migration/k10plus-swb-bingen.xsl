@@ -212,6 +212,11 @@
   <xsl:template match="item">
     <i>
       <xsl:variable name="epn" select="datafield[@tag='203@']/subfield[@code='0']"/>
+      <administrativeNotes>
+        <arr>
+          <i><xsl:value-of select="concat('K10plus-Bestand K10plus-EPN: ',$epn)"/></i>
+        </arr>
+      </administrativeNotes>
       <formerIds>
         <arr>
           <i><xsl:value-of select="$epn"/></i>
