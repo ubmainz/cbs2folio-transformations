@@ -120,7 +120,7 @@
                     <formerIds>
                       <arr/>
                     </formerIds>
-                    <hrid><xsl:value-of select="datafield[@tag='206X']/subfield[@code='0']"/></hrid>
+                    <hrid><xsl:value-of select="substring-after(datafield[@tag='206X']/subfield[@code='0'],'HEB')"/></hrid>
                     <administrativeNotes>
                       <arr>
                         <i><xsl:value-of select="concat('FOLIO-Datensatz K10plus-EPN: ',datafield[@tag='203@']/subfield[@code='0'])"/></i>
@@ -241,7 +241,7 @@
           <xsl:otherwise>physical</xsl:otherwise>
         </xsl:choose>
       </holdingsTypeId>
-      <holdingsStatements>
+      <holdingsStatements> <!-- TBD -->
         <xsl:if test="datafield[(@tag='209E')]/subfield[@code='a']">
           <arr>
             <xsl:for-each select="datafield[(@tag='209E') and (subfield[@code='x']='01' or subfield[@code='x']='02' or subfield[@code='x']='03')]/subfield[@code='a']">
@@ -270,7 +270,7 @@
         </xsl:if>
       </holdingsStatements>
       
-      <notes>
+      <notes> <!-- TBD -->
         <arr>
           <xsl:for-each select="datafield[@tag='220B' or @tag='220C' or @tag='220E' or @tag='237A']">
             <xsl:if test="./subfield[@code='a'] or ./subfield[@code='0']">
@@ -400,13 +400,13 @@
           </xsl:for-each>
         </arr>
       </notes>
-      <discoverySuppress>
+      <discoverySuppress> <!-- TBD -->
         <xsl:choose>
           <xsl:when test="datafield[@tag='247E']/subfield[@code='a']"><xsl:text>true</xsl:text></xsl:when> <!-- selectionscode != true -->
           <xsl:otherwise><xsl:call-template name="selectioncode"/></xsl:otherwise>
         </xsl:choose>
       </discoverySuppress>   
-      <sourceId>hebis</sourceId>
+      <sourceId>K10plus</sourceId>
       <xsl:if test="not($electronicholding) and (datafield[(@tag='209G') and (subfield[@code='x']='00')]/subfield[@code='a'] or not(datafield[@tag='209A']/subfield[@code='i']))">
         <items>
           <arr>
