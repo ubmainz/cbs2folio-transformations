@@ -113,7 +113,7 @@
   </xsl:template>
 
   <xsl:template match="materialTypeId"> <!-- Level 0/2: hebis wide and local -->
-    <xsl:variable name="i" select="key('original',../permanentLocationId)"/>
+    <xsl:variable name="i" select="key('original',../../../../permanentLocationId)"/>
     <materialTypeId>
        <xsl:choose>
          <xsl:when test="(substring($i/../datafield[@tag='002@']/subfield[@code='0'],1,1) != 'O') and (substring($i/../datafield[@tag='002@']/subfield[@code='0'],2,2) = 'bv')">Zeitschriftenband</xsl:when>
