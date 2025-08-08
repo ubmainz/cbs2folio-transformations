@@ -154,7 +154,12 @@
              <xsl:otherwise>ZBLS</xsl:otherwise>
 			     </xsl:choose>
          </xsl:when>
-         <xsl:when test="$abt='004'">PHRVK</xsl:when>
+         <xsl:when test="$abt='004'">
+           <xsl:choose>
+             <xsl:when test="contains($standort,'NUMERUS')">PHNC</xsl:when>
+             <xsl:otherwise>PHRVK</xsl:otherwise>
+           </xsl:choose>
+         </xsl:when>
          <xsl:when test="$abt='005'">
            <xsl:choose>
              <xsl:when test="contains($standort,'LESESAAL')">UMLS</xsl:when>

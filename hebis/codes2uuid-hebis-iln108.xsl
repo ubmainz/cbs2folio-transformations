@@ -44,5 +44,20 @@
       </xsl:choose>
     </permanentLoanTypeId>
   </xsl:template>
-
+  
+  <!-- Map statistical code ids -->
+  <xsl:template match="statisticalCodeIds"> <!-- ILN --> <!-- TBD: generate -->
+    <statisticalCodeIds>
+      <arr>
+        <xsl:for-each select="arr/i">
+          <i>
+            <xsl:choose>
+              <xsl:when test=".='Dublettenbereinigung'">812aef7b-f026-449e-8976-31883ad95d1b</xsl:when>
+            </xsl:choose>
+          </i>
+        </xsl:for-each>
+      </arr>
+    </statisticalCodeIds>
+  </xsl:template>
+  
 </xsl:stylesheet>

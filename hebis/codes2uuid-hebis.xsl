@@ -176,6 +176,7 @@
         <xsl:when test=".='Mikroformen'"><xsl:text>0a877486-1efb-43c2-b0e6-d539dd352aa2</xsl:text></xsl:when>
         <xsl:when test=".='Sonstiges'"><xsl:text>789c3cc7-54ac-41ed-90c6-da7fb417574a</xsl:text></xsl:when>
         <xsl:when test=".='Objekt'"><xsl:text>a84dfcf6-3ad7-4160-b926-3b2450eea081</xsl:text></xsl:when>
+        <xsl:when test=".='Zeitschriftenband'"><xsl:text>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</xsl:text></xsl:when>
         <xsl:otherwise>24080190-7539-4520-bde1-762f57d006fc</xsl:otherwise> <!-- Druckschrift -->
       </xsl:choose>
     </materialTypeId>

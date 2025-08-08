@@ -67,6 +67,7 @@
         <xsl:when test=".='PHMNG'">e91db274-7795-4a57-abff-f55cb0535c64</xsl:when>
         <xsl:when test=".='PHMUW'">771b46aa-76ab-4800-9f3b-177b89b6f853</xsl:when>
         <xsl:when test=".='PHMUWMAG'">4312f681-88b9-4718-a382-1ef71a13bd03</xsl:when>
+        <xsl:when test=".='PHNC'">c2d54f53-55b0-4a2d-acc7-893faebc4254</xsl:when>
         <xsl:when test=".='PHOEG'">af40b5e2-180c-4450-b4e3-bad8e8b8783d</xsl:when>
         <xsl:when test=".='PHPHI'">e8d099fb-53ce-4042-8824-35fb49ef42e0</xsl:when>
         <xsl:when test=".='PHPOL'">522ab11a-9387-46f5-a9d4-61ed87d9aa32</xsl:when>
@@ -131,13 +132,14 @@
   </xsl:template>
 
   <!-- Map statistical code ids -->
-  <xsl:template match="statisticalCodeIds"> <!-- ILN -->
+  <xsl:template match="statisticalCodeIds"> <!-- ILN --> <!-- TBD: generate -->
     <statisticalCodeIds>
       <arr>
         <xsl:for-each select="arr/i">
           <i>
             <xsl:choose>
               <xsl:when test=".='LZA'">25c91085-8b64-47ea-9cb8-20dd539ac466</xsl:when>
+              <xsl:when test=".='Dublettenbereinigung'">812aef7b-f026-449e-8976-31883ad95d1b</xsl:when>
             </xsl:choose>
           </i>
         </xsl:for-each>
