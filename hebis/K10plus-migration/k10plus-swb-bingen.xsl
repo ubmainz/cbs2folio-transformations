@@ -191,18 +191,14 @@
     </record>
   </xsl:template>
 
-  <xsl:template name="lcode"><xsl:value-of select="@epn"/></xsl:template>
   <xsl:template name="selectioncode"><xsl:value-of select="datafield[@tag='208@']/subfield[@code='b']"/></xsl:template>
 
-  <xsl:template match="permanentLocationId">
-    <xsl:variable name="i" select="key('original',.)"/>
-    <xsl:variable name="signatur" select="$i/datafield[@tag='209A']/subfield[@code='a']"/>
-    <xsl:variable name="electronicholding" select="(substring($i/../datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O') and not(substring($i/datafield[@tag='208@']/subfield[@code='b'],1,1) = 'a')"/> 
-    <!-- l nicht -->
-    <permanentLocationId>
+  <xsl:template name="permanentLocationId">
+    <xsl:variable name="signatur" select="datafield[@tag='209A']/subfield[@code='a']"/>
+    <xsl:variable name="electronicholding" select="(substring(./../datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O') and not(substring(datafield[@tag='208@']/subfield[@code='b'],1,1) = 'a')"/> 
       <xsl:choose>
         <xsl:when test="$electronicholding">ONLINE</xsl:when>
-        <xsl:when test="substring($i/datafield[@tag='208@']/subfield[@code='b'],1,1) = 'd'">DUMMY</xsl:when>
+        <xsl:when test="substring(datafield[@tag='208@']/subfield[@code='b'],1,1) = 'd'">DUMMY</xsl:when>
         <xsl:when test="starts-with($signatur,'Ab/')">ARCH</xsl:when>
         <xsl:when test="starts-with($signatur,'P/') or (substring($signatur,1,1)&lt;='9' and substring($signatur,1,1)&gt;='0') ">FREI</xsl:when> <!-- 0-9 P/ -->
         <xsl:when test="starts-with($signatur,'FB') or starts-with($signatur,'U/')">FB</xsl:when>
@@ -211,7 +207,6 @@
         <xsl:when test="starts-with($signatur,'VW/')">VW</xsl:when>
         <xsl:otherwise>NZ</xsl:otherwise>
       </xsl:choose>
-    </permanentLocationId>
   </xsl:template>
 
   <xsl:template match="item">
@@ -226,7 +221,7 @@
         <xsl:value-of select="$epn"/>
       </hrid>
       <permanentLocationId>
-        <xsl:call-template name="lcode"/>
+        <xsl:call-template name="permanentLocationId"/>
       </permanentLocationId>
       <!-- There is no 109R in hebis, see $electronicholding -->
       <xsl:variable name="electronicholding" select="(substring(../datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O') and not(substring(datafield[@tag='208@']/subfield[@code='b'],1,1) = 'a')"/>
