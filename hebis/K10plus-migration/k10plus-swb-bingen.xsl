@@ -111,26 +111,6 @@
               </arr>
             </holdingsRecords>
           </xsl:when>
-          <xsl:otherwise>
-            <holdingsRecords>
-              <arr>
-                <xsl:for-each select="$currentrecord/original/item">
-                <!--  hrid raussuchen (206X$0) und epn 203@ in administrative notices eintragen -  sonst nichts -->
-                  <i>
-                    <formerIds>
-                      <arr/>
-                    </formerIds>
-                    <hrid><xsl:value-of select="substring-after(datafield[@tag='206X']/subfield[@code='0'],'HEB')"/></hrid>
-                    <administrativeNotes>
-                      <arr>
-                        <i><xsl:value-of select="concat('FOLIO-Datensatz K10plus-EPN: ',datafield[@tag='203@']/subfield[@code='0'])"/></i>
-                      </arr>
-                    </administrativeNotes>
-                  </i>
-                </xsl:for-each>
-              </arr>
-            </holdingsRecords>
-          </xsl:otherwise>
       </xsl:choose>
      
       </record>

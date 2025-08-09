@@ -23,10 +23,14 @@
             <hrid><xsl:value-of select="."/></hrid>
             <xsl:choose>
               <xsl:when test=".=$currentrecord/original/datafield[@tag='003H']/subfield[@code='0']">
-                <matchKey><xsl:value-of select="$currentrecord/original/datafield[@tag='003@']/subfield[@code='0']"/></matchKey>
+                <formerIds>
+                  <arr>
+                    <i><xsl:value-of select="$currentrecord/original/datafield[@tag='003@']/subfield[@code='0']"/></i>
+                  </arr>
+                </formerIds>
               </xsl:when>
               <xsl:otherwise>
-                <matchKey/>
+                <formerIds><arr/></formerIds>
               </xsl:otherwise>
             </xsl:choose>
             <xsl:apply-templates select="$currentrecord/instance/*[not(self::hrid or self::source or self::administrativeNotes)]"/>

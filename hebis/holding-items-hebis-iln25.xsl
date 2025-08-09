@@ -23,7 +23,7 @@
         <administrativeNotes>
           <arr>
             <xsl:apply-templates select="instance/administrativeNotes/arr/*"/>
-            <i><xsl:value-of select="concat('Hebis-Datensatz hebis-PPN: ',instance/hrid)"/></i>
+            <i><xsl:value-of select="concat('Hebis-Instanz hebis-PPN: ',instance/hrid)"/></i>
           </arr>
         </administrativeNotes>
       </instance>
@@ -38,7 +38,7 @@
                 <arr>
                   <xsl:apply-templates select="administrativeNotes/arr/*"/>
                   <i><xsl:value-of select="concat(translate($original/item[@epn=current()/hrid]/datafield[@tag='201B']/subfield[@code='0'], '-', '.'),', ', substring($original/item[@epn=current()/hrid]/datafield[@tag='201B']/subfield[@code='t'],1,5), ' (Letzte Änderung CBS)')"/></i>
-                  <i><xsl:value-of select="concat('Hebis-Datensatz hebis-EPN: ',hrid)"/></i>
+                  <i><xsl:value-of select="concat('Datenursprung Hebis hebis-EPN: ',hrid)"/></i>
                 </arr>
               </administrativeNotes>
             </i>

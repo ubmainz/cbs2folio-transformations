@@ -585,6 +585,7 @@
     <xsl:choose>
       <xsl:when test=".='Lokale Klassifikation'"><xsl:text>720a846a-85db-4d3a-bfd9-7dfd2f55ae4a</xsl:text></xsl:when>
       <xsl:when test=".='RVK'"><xsl:text>9a0d9e18-166a-4a79-9c20-68430ced288a</xsl:text></xsl:when>
+      <xsl:when test=".='DDC'"><xsl:text>42471af9-7d25-4f3a-bf78-60d29dcf463b</xsl:text></xsl:when>
     </xsl:choose>
     </classificationTypeId>
   </xsl:template>
