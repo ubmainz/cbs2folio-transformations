@@ -21,18 +21,14 @@
           <instance>
             <source>K10plus</source>
             <hrid><xsl:value-of select="."/></hrid>
-            <xsl:choose>
+            <!-- <xsl:choose>
               <xsl:when test=".=$currentrecord/original/datafield[@tag='003H']/subfield[@code='0']">
-                <formerIds>
-                  <arr>
-                    <i><xsl:value-of select="$currentrecord/original/datafield[@tag='003@']/subfield[@code='0']"/></i>
-                  </arr>
-                </formerIds>
+                <xxxx><xsl:value-of select="$currentrecord/original/datafield[@tag='003@']/subfield[@code='0']"/></xxxx>
               </xsl:when>
               <xsl:otherwise>
-                <formerIds><arr/></formerIds>
+                <xxxx></xxxx>
               </xsl:otherwise>
-            </xsl:choose>
+            </xsl:choose> -->
             <xsl:apply-templates select="$currentrecord/instance/*[not(self::hrid or self::source or self::administrativeNotes)]"/>
             <administrativeNotes>
               <arr>
