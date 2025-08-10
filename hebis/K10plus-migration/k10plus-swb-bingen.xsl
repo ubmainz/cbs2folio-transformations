@@ -200,6 +200,7 @@
       <formerIds>
         <arr>
           <i><xsl:value-of select="$epn"/></i>
+          <i><xsl:value-of select="substring-after(datafield[@tag='206X']/subfield[@code='0'],'HEB')"/></i>
         </arr>
       </formerIds>
       <hrid>
