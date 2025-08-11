@@ -54,5 +54,9 @@
   <xsl:template match="holdingsRecords/arr/i/hrid">
     <hrid><xsl:value-of select="../formerIds/arr/i[2]"/></hrid>
   </xsl:template>
+  
+  <xsl:template match="items/arr/i/hrid">
+    <hrid><xsl:value-of select="../formerIds/arr/i[2]"/></hrid>
+  </xsl:template>
 
 </xsl:stylesheet>

@@ -533,12 +533,14 @@
                 <xsl:with-param name="copy">
                   <xsl:if test="last()>1"><xsl:value-of select="$copy"/></xsl:if>
                 </xsl:with-param>
+                <xsl:with-param name="HEBhhrid" select="concat(datafield[@tag='203H']/subfield[@code='0'],'-',$copy)"/>
               </xsl:apply-templates>
             </xsl:for-each>
             <xsl:if test="not(datafield[(@tag='209G') and (subfield[@code='x']='00')]/subfield[@code='a'])">
               <!--   <xsl:message>Debug: EPN <xsl:value-of select="$epn"/></xsl:message>  -->
               <xsl:apply-templates select="." mode="make-item">
                 <xsl:with-param name="hhrid" select="concat($epn,'-1')"/>
+                <xsl:with-param name="HEBhhrid" select="concat(datafield[@tag='203H']/subfield[@code='0'],'-1')"/>
               </xsl:apply-templates>
             </xsl:if>
           </arr>
@@ -570,7 +572,15 @@
     <xsl:param name="hhrid"/>
     <xsl:param name="bcode"/>
     <xsl:param name="copy"/>
+    <xsl:param name="HEBhhrid"></xsl:param>
     <i>
+      <formerIds>
+        <arr>
+          <i><xsl:value-of select="$hhrid"/></i>
+          <i><xsl:value-of select="$HEBhhrid"/></i>
+        </arr>
+      </formerIds>
+
       <hrid>
         <xsl:value-of select="$hhrid"/>
       </hrid>
