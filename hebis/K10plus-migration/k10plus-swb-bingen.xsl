@@ -84,24 +84,22 @@
       <xsl:variable name="currentrecord" select="."/>
       <record>
         <xsl:copy-of select="$currentrecord/original"/>
-          <xsl:call-template name="processingmono"/>
-        <instance>
-          <source>K10plus</source>
-          <xsl:copy-of select="$currentrecord/instance/*[not(self::source or self::administrativeNotes)]"/>
-          <xsl:call-template name="classifications">
-            <xsl:with-param name="currentrecord" select="$currentrecord"/>
-          </xsl:call-template>
-          <administrativeNotes>
-            <arr>
-              <xsl:copy-of select="$currentrecord/instance/administrativeNotes/arr/*"/>
-              <i><xsl:value-of select="concat('K10Plus-Instanz PPN: ',$currentrecord/original/datafield[@tag='003@']/subfield[@code='0'])"/></i>
-            </arr>
-          </administrativeNotes>
-        </instance>
-        <xsl:copy-of select="instanceRelations"/>
-        
         <xsl:choose> <!-- zez and 'pack' schon oben ausgefiltert -->
           <xsl:when test="exists($currentrecord/original/item[starts-with(datafield[@tag='208@']/subfield[@code='b'],'z')])">
+            <xsl:call-template name="processingmono"/>
+            <instance>
+              <source>K10plus</source>
+              <xsl:copy-of select="$currentrecord/instance/*[not(self::source or self::administrativeNotes)]"/>
+              <xsl:call-template name="classifications">
+                <xsl:with-param name="currentrecord" select="$currentrecord"/>
+              </xsl:call-template>
+              <administrativeNotes>
+                <arr>
+                  <xsl:copy-of select="$currentrecord/instance/administrativeNotes/arr/*"/>
+                  <i><xsl:value-of select="concat('K10Plus-Instanz PPN: ',$currentrecord/original/datafield[@tag='003@']/subfield[@code='0'])"/></i>
+                </arr>
+              </administrativeNotes>
+            </instance>
             <!-- ZDB-Fälle -->   <!-- TDB-Merker: EZB-Einzelkäufe für UB behandeln -->
             <holdingsRecords>
               <arr>
@@ -113,7 +111,21 @@
             <!-- statistical code: Holding ohne z 'ZDB-Titel mit Mono-EPN' -->
           </xsl:when>
           <xsl:when test="exists($currentrecord/original/item[datafield[(@tag='209B') and (subfield[@code='x']='12')]/subfield[@code='a']='xxxx'])"> <!-- TBD xxxx -->
-           <!--  + elek. Einzelkäufe  Achtung: 'pack'-Fälle einfangen -->
+            <xsl:call-template name="processingmono"/>
+            <instance>
+              <source>K10plus</source>
+              <xsl:copy-of select="$currentrecord/instance/*[not(self::source or self::administrativeNotes)]"/>
+              <xsl:call-template name="classifications">
+                <xsl:with-param name="currentrecord" select="$currentrecord"/>
+              </xsl:call-template>
+              <administrativeNotes>
+                <arr>
+                  <xsl:copy-of select="$currentrecord/instance/administrativeNotes/arr/*"/>
+                  <i><xsl:value-of select="concat('K10Plus-Instanz PPN: ',$currentrecord/original/datafield[@tag='003@']/subfield[@code='0'])"/></i>
+                </arr>
+              </administrativeNotes>
+            </instance>
+            <!--  + elek. Einzelkäufe  Achtung: 'pack'-Fälle einfangen -->
             <holdingsRecords>
               <arr>
                 <xsl:for-each select="$currentrecord/original/item[datafield[(@tag='209B') and (subfield[@code='x']='12')]/subfield[@code='a']='xxxx']">  <!-- nur Einzelkäufe -->
@@ -122,8 +134,24 @@
               </arr>
             </holdingsRecords>
           </xsl:when>
-      </xsl:choose>
-     
+          <xsl:otherwise> <!-- Mono -->
+            <xsl:call-template name="processingmono"/>
+            <instance>
+              <source>K10plus</source>
+              <xsl:copy-of select="$currentrecord/instance/*[not(self::source or self::administrativeNotes)]"/>
+              <xsl:call-template name="classifications">
+                <xsl:with-param name="currentrecord" select="$currentrecord"/>
+              </xsl:call-template>
+              <administrativeNotes>
+                <arr>
+                  <xsl:copy-of select="$currentrecord/instance/administrativeNotes/arr/*"/>
+                  <i><xsl:value-of select="concat('K10Plus-Instanz PPN: ',$currentrecord/original/datafield[@tag='003@']/subfield[@code='0'])"/></i>
+                </arr>
+              </administrativeNotes>
+            </instance>
+          </xsl:otherwise>
+        </xsl:choose>
+        <xsl:copy-of select="$currentrecord/instanceRelations"/>
       </record>
     </xsl:if>
   </xsl:template>
