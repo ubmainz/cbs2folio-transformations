@@ -94,8 +94,12 @@
       </item>
       <holdingsRecord>
         <retainExistingValues>
-          <forTheseProperties><arr><i>permanentLocationId</i></arr></forTheseProperties>
           <forOmittedProperties>true</forOmittedProperties>
+          <forTheseProperties>
+            <arr>
+              <i>permanentLocationId</i>
+            </arr>
+          </forTheseProperties>
         </retainExistingValues>
         <retainOmittedRecord>
           <ifField>hrid</ifField>
