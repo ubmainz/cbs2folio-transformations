@@ -8,7 +8,71 @@
       <xsl:apply-templates select="@* | node()"/>
     </xsl:copy>
   </xsl:template>
-  
+
+  <xsl:template name="processingzdb">
+    <processing> <!-- updates holdings data -->
+      <item>
+        <retainExistingValues>
+          <forOmittedProperties>true</forOmittedProperties>
+          <forTheseProperties>
+            <arr>
+              <i>materialTypeId</i>
+            </arr>
+          </forTheseProperties>
+        </retainExistingValues>
+        <status>
+          <policy>retain</policy>
+        </status>
+        <retainOmittedRecord>
+          <ifField>hrid</ifField>
+          <matchesPattern>it.*</matchesPattern>
+        </retainOmittedRecord>
+        <!-- does not to work properly in Quesnelia 2024-12:
+          - statistical code is not set in some cases (false neagtive)
+          - statistical code is also set (false positive) in "retainOmittedRecord" protected cases
+          - statistical code is also set (false positive) in holding transfer cases
+          -> left out (in addition seems not to be needed)
+        <statisticalCoding>
+          <arr>
+            <i>
+              <if>deleteSkipped</if>
+              <becauseOf>ITEM_STATUS</becauseOf>
+              <setCode>ITEM_STATUS</setCode>
+            </i>         
+          </arr>
+        </statisticalCoding> -->
+      </item>
+      <holdingsRecord>
+        <retainExistingValues>
+          <forOmittedProperties>true</forOmittedProperties>
+        </retainExistingValues>
+        <retainOmittedRecord>
+          <ifField>hrid</ifField>
+          <matchesPattern>ho.*</matchesPattern>
+        </retainOmittedRecord>
+        <statisticalCoding>
+          <arr>
+            <i>
+              <if>deleteSkipped</if>
+              <becauseOf>ITEM_STATUS</becauseOf>
+              <setCode>ITEM_STATUS</setCode>
+            </i>
+            <i>
+              <if>deleteSkipped</if>
+              <becauseOf>ITEM_PATTERN_MATCH</becauseOf>
+              <setCode>ITEM_PATTERN_MATCH</setCode>
+            </i> 
+          </arr>
+        </statisticalCoding>
+      </holdingsRecord>
+      <instance>
+        <retainExistingValues>
+          <forOmittedProperties>true</forOmittedProperties>
+        </retainExistingValues>
+      </instance>
+    </processing>
+  </xsl:template>
+
   <xsl:template name="processingmono">
     <processing> <!-- preserves holdings data -->
       <item>
@@ -25,16 +89,17 @@
         </status>
         <retainOmittedRecord>
           <ifField>hrid</ifField>
-          <matchesPattern>.*</matchesPattern> <!-- \D.* -->
+          <matchesPattern>.*</matchesPattern>
         </retainOmittedRecord>
       </item>
       <holdingsRecord>
         <retainExistingValues>
+          <forTheseProperties><arr><i>permanentLocationId</i></arr></forTheseProperties>
           <forOmittedProperties>true</forOmittedProperties>
         </retainExistingValues>
         <retainOmittedRecord>
           <ifField>hrid</ifField>
-          <matchesPattern>.*</matchesPattern> <!-- \D.* -->
+          <matchesPattern>.*</matchesPattern>
         </retainOmittedRecord>
       </holdingsRecord>
       <instance>
@@ -85,8 +150,9 @@
       <record>
         <xsl:copy-of select="$currentrecord/original"/>
         <xsl:choose> <!-- zez and 'pack' schon oben ausgefiltert -->
-          <xsl:when test="exists($currentrecord/original/item[starts-with(datafield[@tag='208@']/subfield[@code='b'],'z')])">
-            <xsl:call-template name="processingmono"/>
+          <xsl:when test="exists($currentrecord/original/item[starts-with(datafield[@tag='208@']/subfield[@code='b'],'z')])"> <!-- ZDB-Fälle -->
+            <!-- TDB-Merker: EZB-Einzelkäufe für UB behandeln -->
+            <xsl:call-template name="processingzdb"/>
             <instance>
               <source>K10plus</source>
               <xsl:copy-of select="$currentrecord/instance/*[not(self::source or self::administrativeNotes)]"/>
@@ -100,7 +166,6 @@
                 </arr>
               </administrativeNotes>
             </instance>
-            <!-- ZDB-Fälle -->   <!-- TDB-Merker: EZB-Einzelkäufe für UB behandeln -->
             <holdingsRecords>
               <arr>
                 <xsl:for-each select="$currentrecord/original/item[starts-with(datafield[@tag='208@']/subfield[@code='b'],'z')]">  <!-- nur ZDB-Holdings -->
@@ -111,7 +176,8 @@
             <!-- statistical code: Holding ohne z 'ZDB-Titel mit Mono-EPN' -->
           </xsl:when>
           <xsl:when test="exists($currentrecord/original/item[datafield[(@tag='209B') and (subfield[@code='x']='12')]/subfield[@code='a']='xxxx'])"> <!-- TBD xxxx -->
-            <xsl:call-template name="processingmono"/>
+            <!--  + elek. Einzelkäufe  Achtung: 'pack'-Fälle einfangen -->
+            <xsl:call-template name="processingzdb"/>
             <instance>
               <source>K10plus</source>
               <xsl:copy-of select="$currentrecord/instance/*[not(self::source or self::administrativeNotes)]"/>
@@ -125,7 +191,6 @@
                 </arr>
               </administrativeNotes>
             </instance>
-            <!--  + elek. Einzelkäufe  Achtung: 'pack'-Fälle einfangen -->
             <holdingsRecords>
               <arr>
                 <xsl:for-each select="$currentrecord/original/item[datafield[(@tag='209B') and (subfield[@code='x']='12')]/subfield[@code='a']='xxxx']">  <!-- nur Einzelkäufe -->
@@ -149,6 +214,25 @@
                 </arr>
               </administrativeNotes>
             </instance>
+            <holdingsRecords>
+              <arr>
+                <xsl:for-each select="$currentrecord/original/item">
+                  <!--  hrid raussuchen (206X$0) und epn 203@ in administrative notices eintragen -  sonst nichts -->
+                  <i>
+                    <formerIds>
+                      <arr/>
+                    </formerIds>
+                    <hrid><xsl:value-of select="substring-after(datafield[@tag='206X']/subfield[@code='0'],'HEB')"/></hrid>
+                    <administrativeNotes>
+                      <arr>
+                        <i><xsl:value-of select="concat('FOLIO-Datensatz K10plus-EPN: ',datafield[@tag='203@']/subfield[@code='0'])"/></i>
+                      </arr>
+                    </administrativeNotes>
+                    <permanentLocationId>NZ</permanentLocationId>
+                  </i>
+                </xsl:for-each>
+              </arr>
+            </holdingsRecords>
           </xsl:otherwise>
         </xsl:choose>
         <xsl:copy-of select="$currentrecord/instanceRelations"/>
