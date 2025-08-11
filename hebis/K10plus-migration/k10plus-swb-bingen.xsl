@@ -9,6 +9,74 @@
     </xsl:copy>
   </xsl:template>
   
+  <xsl:template name="processingmono">
+    <processing> <!-- preserves holdings data -->
+      <item>
+        <retainExistingValues>
+          <forOmittedProperties>true</forOmittedProperties>
+          <forTheseProperties>
+            <arr>
+              <i>materialTypeId</i>
+            </arr>
+          </forTheseProperties>
+        </retainExistingValues>
+        <status>
+          <policy>retain</policy>
+        </status>
+        <retainOmittedRecord>
+          <ifField>hrid</ifField>
+          <matchesPattern>.*</matchesPattern> <!-- \D.* -->
+        </retainOmittedRecord>
+      </item>
+      <holdingsRecord>
+        <retainExistingValues>
+          <forOmittedProperties>true</forOmittedProperties>
+        </retainExistingValues>
+        <retainOmittedRecord>
+          <ifField>hrid</ifField>
+          <matchesPattern>.*</matchesPattern> <!-- \D.* -->
+        </retainOmittedRecord>
+      </holdingsRecord>
+      <instance>
+        <retainExistingValues>
+          <forOmittedProperties>true</forOmittedProperties>
+        </retainExistingValues>
+      </instance>
+    </processing>
+  </xsl:template>
+  
+  <xsl:template name="classifications">  <!-- RVK/DDC -->
+    <xsl:param name="currentrecord"/>
+    <classifications>
+      <arr>
+        <xsl:variable name="rvk" as="xs:string *">
+          <xsl:for-each select="$currentrecord/original/(datafield[@tag='045R']/subfield[@code='8']|datafield[@tag='045R']/subfield[@code='a'])">
+            <xsl:sequence select="normalize-space(substring-before(concat(.,':'),':'))"/>
+          </xsl:for-each>
+        </xsl:variable>
+        <xsl:for-each select="distinct-values($rvk)">
+          <xsl:sort/>
+          <i>
+            <classificationNumber><xsl:value-of select="."/></classificationNumber>
+            <classificationTypeId>RVK</classificationTypeId>
+          </i>
+        </xsl:for-each>
+        <xsl:variable name="ddc" as="xs:string *">
+          <xsl:for-each select="$currentrecord/original/(datafield[@tag='045F']/subfield[@code='a'][.!='B']|datafield[@tag='045H']/subfield[@code='a'][.!='B'])">
+            <xsl:sequence select="normalize-space(translate(.,'/',''))"/>
+          </xsl:for-each>
+        </xsl:variable>
+        <xsl:for-each select="distinct-values($ddc)">
+          <xsl:sort/>
+          <i>
+            <classificationNumber><xsl:value-of select="."/></classificationNumber>
+            <classificationTypeId>DDC</classificationTypeId>
+          </i>
+        </xsl:for-each>
+      </arr>
+    </classifications>
+  </xsl:template>
+  
   <xsl:template match="record">
     <!-- Ausfiltern des ganzen Datensatzes für Pakettitel TBD -->
     <xsl:if test="exists(original/item[not(starts-with(datafield[@tag='208@']/subfield[@code='b'],'zez'))]) and
@@ -16,71 +84,13 @@
       <xsl:variable name="currentrecord" select="."/>
       <record>
         <xsl:copy-of select="$currentrecord/original"/>
-        <processing> <!-- preserves holdings data -->
-          <item>
-            <retainExistingValues>
-              <forOmittedProperties>true</forOmittedProperties>
-              <forTheseProperties>
-                <arr>
-                  <i>materialTypeId</i>
-                </arr>
-              </forTheseProperties>
-            </retainExistingValues>
-            <status>
-              <policy>retain</policy>
-            </status>
-            <retainOmittedRecord>
-              <ifField>hrid</ifField>
-              <matchesPattern>.*</matchesPattern> <!-- \D.* -->
-            </retainOmittedRecord>
-          </item>
-          <holdingsRecord>
-            <retainExistingValues>
-              <forOmittedProperties>true</forOmittedProperties>
-            </retainExistingValues>
-            <retainOmittedRecord>
-              <ifField>hrid</ifField>
-              <matchesPattern>.*</matchesPattern> <!-- \D.* -->
-            </retainOmittedRecord>
-          </holdingsRecord>
-          <instance>
-            <retainExistingValues>
-              <forOmittedProperties>true</forOmittedProperties>
-            </retainExistingValues>
-          </instance>
-        </processing>
+          <xsl:call-template name="processingmono"/>
         <instance>
           <source>K10plus</source>
           <xsl:copy-of select="$currentrecord/instance/*[not(self::source or self::administrativeNotes)]"/>
-          <!-- RVK/DDC -->
-          <classifications>
-            <arr>
-              <xsl:variable name="rvk" as="xs:string *">
-                <xsl:for-each select="$currentrecord/original/(datafield[@tag='045R']/subfield[@code='8']|datafield[@tag='045R']/subfield[@code='a'])">
-                  <xsl:sequence select="normalize-space(substring-before(concat(.,':'),':'))"/>
-                </xsl:for-each>
-              </xsl:variable>
-              <xsl:for-each select="distinct-values($rvk)">
-                <xsl:sort/>
-                <i>
-                  <classificationNumber><xsl:value-of select="."/></classificationNumber>
-                  <classificationTypeId>RVK</classificationTypeId>
-                </i>
-              </xsl:for-each>
-              <xsl:variable name="ddc" as="xs:string *">
-                <xsl:for-each select="$currentrecord/original/(datafield[@tag='045F']/subfield[@code='a'][.!='B']|datafield[@tag='045H']/subfield[@code='a'][.!='B'])">
-                  <xsl:sequence select="normalize-space(translate(.,'/',''))"/>
-                </xsl:for-each>
-              </xsl:variable>
-              <xsl:for-each select="distinct-values($ddc)">
-                <xsl:sort/>
-                <i>
-                  <classificationNumber><xsl:value-of select="."/></classificationNumber>
-                  <classificationTypeId>DDC</classificationTypeId>
-                </i>
-              </xsl:for-each>
-            </arr>
-          </classifications>
+          <xsl:call-template name="classifications">
+            <xsl:with-param name="currentrecord" select="$currentrecord"/>
+          </xsl:call-template>
           <administrativeNotes>
             <arr>
               <xsl:copy-of select="$currentrecord/instance/administrativeNotes/arr/*"/>
@@ -103,7 +113,7 @@
             <!-- statistical code: Holding ohne z 'ZDB-Titel mit Mono-EPN' -->
           </xsl:when>
           <xsl:when test="exists($currentrecord/original/item[datafield[(@tag='209B') and (subfield[@code='x']='12')]/subfield[@code='a']='xxxx'])"> <!-- TBD xxxx -->
-           <!--  + elek. Einzelkäufe  -->
+           <!--  + elek. Einzelkäufe  Achtung: 'pack'-Fälle einfangen -->
             <holdingsRecords>
               <arr>
                 <xsl:for-each select="$currentrecord/original/item[datafield[(@tag='209B') and (subfield[@code='x']='12')]/subfield[@code='a']='xxxx']">  <!-- nur Einzelkäufe -->
