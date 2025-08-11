@@ -115,11 +115,10 @@
   </xsl:template>
   
   <xsl:template name="classifications">  <!-- RVK/DDC -->
-    <xsl:param name="currentrecord"/>
     <classifications>
       <arr>
         <xsl:variable name="rvk" as="xs:string *">
-          <xsl:for-each select="$currentrecord/original/(datafield[@tag='045R']/subfield[@code='8']|datafield[@tag='045R']/subfield[@code='a'])">
+          <xsl:for-each select="original/(datafield[@tag='045R']/subfield[@code='8']|datafield[@tag='045R']/subfield[@code='a'])">
             <xsl:sequence select="normalize-space(substring-before(concat(.,':'),':'))"/>
           </xsl:for-each>
         </xsl:variable>
@@ -131,7 +130,7 @@
           </i>
         </xsl:for-each>
         <xsl:variable name="ddc" as="xs:string *">
-          <xsl:for-each select="$currentrecord/original/(datafield[@tag='045F']/subfield[@code='a'][.!='B']|datafield[@tag='045H']/subfield[@code='a'][.!='B'])">
+          <xsl:for-each select="original/(datafield[@tag='045F']/subfield[@code='a'][.!='B']|datafield[@tag='045H']/subfield[@code='a'][.!='B'])">
             <xsl:sequence select="normalize-space(translate(.,'/',''))"/>
           </xsl:for-each>
         </xsl:variable>
@@ -150,54 +149,49 @@
     <!-- Ausfiltern des ganzen Datensatzes für Pakettitel TBD -->
     <xsl:if test="exists(original/item[not(starts-with(datafield[@tag='208@']/subfield[@code='b'],'zez'))]) and
       exists(original/item[not(datafield[(@tag='209B') and (subfield[@code='x']='12')]/subfield[@code='a']='pack')])">
-      <xsl:variable name="currentrecord" select="."/>
       <record>
-        <xsl:copy-of select="$currentrecord/original"/>
+        <xsl:copy-of select="original"/>
         <xsl:choose> <!-- zez and 'pack' schon oben ausgefiltert -->
-          <xsl:when test="exists($currentrecord/original/item[starts-with(datafield[@tag='208@']/subfield[@code='b'],'z')])"> <!-- ZDB-Fälle -->
+          <xsl:when test="exists(original/item[starts-with(datafield[@tag='208@']/subfield[@code='b'],'z')])"> <!-- ZDB-Fälle -->
             <!-- TDB-Merker: EZB-Einzelkäufe für UB behandeln -->
             <xsl:call-template name="processingzdb"/>
             <instance>
               <source>K10plus</source>
-              <xsl:copy-of select="$currentrecord/instance/*[not(self::source or self::administrativeNotes)]"/>
-              <xsl:call-template name="classifications">
-                <xsl:with-param name="currentrecord" select="$currentrecord"/>
-              </xsl:call-template>
+              <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes)]"/>
+              <xsl:call-template name="classifications"/>
               <administrativeNotes>
                 <arr>
-                  <xsl:copy-of select="$currentrecord/instance/administrativeNotes/arr/*"/>
-                  <i><xsl:value-of select="concat('K10Plus-Instanz PPN: ',$currentrecord/original/datafield[@tag='003@']/subfield[@code='0'])"/></i>
+                  <xsl:copy-of select="instance/administrativeNotes/arr/*"/>
+                  <i><xsl:value-of select="concat('K10Plus-Instanz PPN: ',original/datafield[@tag='003@']/subfield[@code='0'])"/></i>
                 </arr>
               </administrativeNotes>
             </instance>
             <holdingsRecords>
               <arr>
-                <xsl:for-each select="$currentrecord/original/item[starts-with(datafield[@tag='208@']/subfield[@code='b'],'z')]">  <!-- nur ZDB-Holdings -->
+                <xsl:for-each select="original/item[starts-with(datafield[@tag='208@']/subfield[@code='b'],'z')]">  <!-- nur ZDB-Holdings -->
                   <xsl:apply-templates select="."/>
                 </xsl:for-each>              
               </arr>
             </holdingsRecords>
             <!-- statistical code: Holding ohne z 'ZDB-Titel mit Mono-EPN' -->
           </xsl:when>
-          <xsl:when test="exists($currentrecord/original/item[datafield[(@tag='209B') and (subfield[@code='x']='12')]/subfield[@code='a']='xxxx'])"> <!-- TBD xxxx -->
+          <xsl:when test="exists(original/item[datafield[(@tag='209B') and (subfield[@code='x']='12')]/subfield[@code='a']='xxxx'])"> <!-- TBD xxxx -->
             <!--  + elek. Einzelkäufe  Achtung: 'pack'-Fälle einfangen -->
             <xsl:call-template name="processingzdb"/>
             <instance>
               <source>K10plus</source>
-              <xsl:copy-of select="$currentrecord/instance/*[not(self::source or self::administrativeNotes)]"/>
-              <xsl:call-template name="classifications">
-                <xsl:with-param name="currentrecord" select="$currentrecord"/>
-              </xsl:call-template>
+              <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes)]"/>
+              <xsl:call-template name="classifications"/>
               <administrativeNotes>
                 <arr>
-                  <xsl:copy-of select="$currentrecord/instance/administrativeNotes/arr/*"/>
-                  <i><xsl:value-of select="concat('K10Plus-Instanz PPN: ',$currentrecord/original/datafield[@tag='003@']/subfield[@code='0'])"/></i>
+                  <xsl:copy-of select="instance/administrativeNotes/arr/*"/>
+                  <i><xsl:value-of select="concat('K10Plus-Instanz PPN: ',original/datafield[@tag='003@']/subfield[@code='0'])"/></i>
                 </arr>
               </administrativeNotes>
             </instance>
             <holdingsRecords>
               <arr>
-                <xsl:for-each select="$currentrecord/original/item[datafield[(@tag='209B') and (subfield[@code='x']='12')]/subfield[@code='a']='xxxx']">  <!-- nur Einzelkäufe -->
+                <xsl:for-each select="original/item[datafield[(@tag='209B') and (subfield[@code='x']='12')]/subfield[@code='a']='xxxx']">  <!-- nur Einzelkäufe -->
                   <xsl:apply-templates select="."/>
                 </xsl:for-each>
               </arr>
@@ -207,20 +201,18 @@
             <xsl:call-template name="processingmono"/>
             <instance>
               <source>K10plus</source>
-              <xsl:copy-of select="$currentrecord/instance/*[not(self::source or self::administrativeNotes)]"/>
-              <xsl:call-template name="classifications">
-                <xsl:with-param name="currentrecord" select="$currentrecord"/>
-              </xsl:call-template>
+              <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes)]"/>
+              <xsl:call-template name="classifications"/>
               <administrativeNotes>
                 <arr>
-                  <xsl:copy-of select="$currentrecord/instance/administrativeNotes/arr/*"/>
-                  <i><xsl:value-of select="concat('K10Plus-Instanz PPN: ',$currentrecord/original/datafield[@tag='003@']/subfield[@code='0'])"/></i>
+                  <xsl:copy-of select="instance/administrativeNotes/arr/*"/>
+                  <i><xsl:value-of select="concat('K10Plus-Instanz PPN: ',original/datafield[@tag='003@']/subfield[@code='0'])"/></i>
                 </arr>
               </administrativeNotes>
             </instance>
             <holdingsRecords>
               <arr>
-                <xsl:for-each select="$currentrecord/original/item">
+                <xsl:for-each select="original/item">
                   <!--  hrid raussuchen (206X$0) und epn 203@ in administrative notices eintragen -  sonst nichts -->
                   <i>
                     <formerIds>
@@ -239,7 +231,7 @@
             </holdingsRecords>
           </xsl:otherwise>
         </xsl:choose>
-        <xsl:copy-of select="$currentrecord/instanceRelations"/>
+        <xsl:copy-of select="instanceRelations"/>
       </record>
     </xsl:if>
   </xsl:template>
