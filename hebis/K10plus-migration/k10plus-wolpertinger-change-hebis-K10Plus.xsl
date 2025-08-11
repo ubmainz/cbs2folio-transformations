@@ -51,11 +51,11 @@
     </xsl:for-each>
   </xsl:template>
 
-  <xsl:template match="holdingsRecords/arr/i/hrid">
+  <xsl:template match="holdingsRecords/arr/i[formerIds/arr/i[2]]/hrid">
     <hrid><xsl:value-of select="../formerIds/arr/i[2]"/></hrid>
   </xsl:template>
   
-  <xsl:template match="items/arr/i/hrid">
+  <xsl:template match="items/arr/i[formerIds/arr/i[2]]/hrid">
     <hrid><xsl:value-of select="../formerIds/arr/i[2]"/></hrid>
   </xsl:template>
 
