@@ -100,6 +100,7 @@
                 </xsl:for-each>              
               </arr>
             </holdingsRecords>
+            <!-- statistical code: Holding ohne z 'ZDB-Titel mit Mono-EPN' -->
           </xsl:when>
           <xsl:when test="exists($currentrecord/original/item[datafield[(@tag='209B') and (subfield[@code='x']='12')]/subfield[@code='a']='xxxx'])"> <!-- TBD xxxx -->
            <!--  + elek. Einzelkäufe  -->
