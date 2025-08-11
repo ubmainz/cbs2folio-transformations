@@ -224,7 +224,7 @@
                         <i><xsl:value-of select="concat('FOLIO-Datensatz K10plus-EPN: ',datafield[@tag='203@']/subfield[@code='0'])"/></i>
                       </arr>
                     </administrativeNotes>
-                    <permanentLocationId>NZ</permanentLocationId>
+                    <permanentLocationId>NZ</permanentLocationId> <!-- retainExistingValues/forTheseProperties -->
                   </i>
                 </xsl:for-each>
               </arr>
