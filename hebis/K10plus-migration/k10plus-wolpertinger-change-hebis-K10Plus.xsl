@@ -33,7 +33,10 @@
             <administrativeNotes>
               <arr>
                 <xsl:apply-templates select="$currentrecord/instance/administrativeNotes/arr/*"/>
-                <i><xsl:value-of select="concat('Wolpertinger für Hebis-PPN: ',.)"/></i>
+                <i>
+                  <xsl:text>Wolpertinger</xsl:text>
+                  <xsl:if test="not(.=$currentrecord/original/datafield[@tag='003H']/subfield[@code='0'])"><xsl:value-of select="concat(' für Hebis-PPN: ',.)"/></xsl:if>
+                </i>
               </arr>
             </administrativeNotes>
             <xsl:if test="$hebppns-dist[2]">
@@ -45,7 +48,9 @@
             </xsl:if>
           </instance>
           <!-- instance relations? -->
-          <xsl:apply-templates select="$currentrecord/holdingsRecords"/>        
+        <xsl:if test=".=$currentrecord/original/datafield[@tag='003H']/subfield[@code='0']">
+          <xsl:apply-templates select="$currentrecord/holdingsRecords"/>
+        </xsl:if>        
       </record>
     </xsl:for-each>
   </xsl:template>
