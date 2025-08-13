@@ -33,8 +33,7 @@
             <administrativeNotes>
               <arr>
                 <xsl:apply-templates select="$currentrecord/instance/administrativeNotes/arr/*"/>
-                <i><xsl:value-of select="concat('Wolpertingerdatensatz K10plus-PPN: ',$currentrecord/original/datafield[@tag='003@']/subfield[@code='0'],
-                    ' hebis-PPN: ',.,' - Instanz aus K10plus')"/></i>
+                <i><xsl:value-of select="concat('Wolpertinger für Hebis-PPN: ',.)"/></i>
               </arr>
             </administrativeNotes>
             <xsl:if test="$hebppns-dist[2]">
