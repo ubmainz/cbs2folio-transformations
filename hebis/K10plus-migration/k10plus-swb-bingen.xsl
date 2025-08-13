@@ -146,7 +146,6 @@
   </xsl:template>
   
   <xsl:template match="record">
-    <!-- Ausfiltern des ganzen Datensatzes für Pakettitel TBD -->
     <xsl:if test="exists(original/item[not(starts-with(datafield[@tag='208@']/subfield[@code='b'],'zez'))]) and
       exists(original/item[not(datafield[(@tag='209B') and (subfield[@code='x']='12')]/subfield[@code='a']='pack')])">
       <record>
@@ -161,17 +160,24 @@
                 <arr>
                   <i>
                     <value><xsl:value-of select="original/datafield[@tag='003@']/subfield[@code='0']"/></value>
-                    <identifierTypeId>PPNK10plus</identifierTypeId>
+                    <identifierTypeId>PPN-K10plus</identifierTypeId>
                   </i>
                   <i>
                     <value><xsl:value-of select="original/datafield[@tag='003H']/subfield[@code='0']"/></value>
-                    <identifierTypeId>PPNHebis</identifierTypeId>
+                    <identifierTypeId>PPN-Hebis</identifierTypeId>
                   </i>
                   <xsl:copy-of select="instance/identifiers/arr/i"/>
                 </arr>
               </identifiers>
               <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes or self::identifiers)]"/>
               <xsl:call-template name="classifications"/>
+              <xsl:if test="exists(original/item[not(starts-with(datafield[@tag='208@']/subfield[@code='b'],'z'))])">
+                <statisticalCodeIds>
+                  <arr>
+                    <i>ZDB-Titel mit Mono-EPN</i>
+                  </arr>
+                </statisticalCodeIds>
+              </xsl:if>
               <administrativeNotes>
                 <arr>
                   <xsl:copy-of select="instance/administrativeNotes/arr/*"/>
@@ -197,11 +203,11 @@
                 <arr>
                   <i>
                     <value><xsl:value-of select="original/datafield[@tag='003@']/subfield[@code='0']"/></value>
-                    <identifierTypeId>TBD PPN K10plus</identifierTypeId>
+                    <identifierTypeId>PPN-K10plus</identifierTypeId>
                   </i>
                   <i>
                     <value><xsl:value-of select="original/datafield[@tag='003H']/subfield[@code='0']"/></value>
-                    <identifierTypeId>TBD PPN Hebis</identifierTypeId>
+                    <identifierTypeId>PPN-Hebis</identifierTypeId>
                   </i>
                   <xsl:copy-of select="instance/identifiers/arr/i"/>
                 </arr>
@@ -231,11 +237,11 @@
                 <arr>
                   <i>
                     <value><xsl:value-of select="original/datafield[@tag='003@']/subfield[@code='0']"/></value>
-                    <identifierTypeId>TBD PPN K10plus</identifierTypeId>
+                    <identifierTypeId>PPN-K10plus</identifierTypeId>
                   </i>
                   <i>
                     <value><xsl:value-of select="original/datafield[@tag='003H']/subfield[@code='0']"/></value>
-                    <identifierTypeId>TBD PPN Hebis</identifierTypeId>
+                    <identifierTypeId>PPN-Hebis</identifierTypeId>
                   </i>
                   <xsl:copy-of select="instance/identifiers/arr/i"/>
                 </arr>

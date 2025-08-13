@@ -50,8 +50,8 @@
   <xsl:template match="identifierTypeId"> <!-- additional RLP -->
     <identifierTypeId>
       <xsl:choose>
-        <xsl:when test=".='PPNK10plus'"><xsl:text>TBD K10plus</xsl:text></xsl:when>
-        <xsl:when test=".='Hebis'"><xsl:text>TBD Hebis</xsl:text></xsl:when>
+        <xsl:when test=".='PPN-K10plus'"><xsl:text>TBD K10plus</xsl:text></xsl:when>
+        <xsl:when test=".='PPN-Hebis'"><xsl:text>TBD Hebis</xsl:text></xsl:when>
         <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
       </xsl:choose>
     </identifierTypeId>
@@ -65,6 +65,7 @@
           <i>
             <xsl:choose>
               <xsl:when test=".='Dublettenbereinigung'">812aef7b-f026-449e-8976-31883ad95d1b</xsl:when>
+              <xsl:when test=".='ZDB-Titel mit Mono-EPN'">TBD</xsl:when>
               <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
             </xsl:choose>
           </i>
