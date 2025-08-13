@@ -146,13 +146,11 @@
   </xsl:template>
   
   <xsl:template match="record">
-    <xsl:if test="exists(original/item[not(starts-with(datafield[@tag='208@']/subfield[@code='b'],'zez'))]) and
-      exists(original/item[not(datafield[(@tag='209B') and (subfield[@code='x']='12')]/subfield[@code='a']='pack')])">
+    <xsl:if test="not(substring(original/datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O')"> <!-- Bingen keine Online-Ressourcen -->
       <record>
         <xsl:copy-of select="original"/>
-        <xsl:choose> <!-- zez and 'pack' schon oben ausgefiltert -->
+        <xsl:choose>
           <xsl:when test="exists(original/item[starts-with(datafield[@tag='208@']/subfield[@code='b'],'z')])"> <!-- ZDB-Fälle -->
-            <!-- TDB-Merker: EZB-Einzelkäufe für UB behandeln -->
             <xsl:call-template name="processingzdb"/>
             <instance>
               <source>K10plus</source>
@@ -195,10 +193,9 @@
                 </xsl:for-each>              
               </arr>
             </holdingsRecords>
-            <!-- statistical code: Holding ohne z 'ZDB-Titel mit Mono-EPN' -->
           </xsl:when>
-          <xsl:when test="exists(original/item[datafield[(@tag='209B') and (subfield[@code='x']='12')]/subfield[@code='a']='xxxx'])"> <!-- TBD xxxx -->
-            <!--  + elek. Einzelkäufe  Achtung: 'pack'-Fälle einfangen -->
+          <!--  für Bingen ohne Bedeutung (s.o.)
+          <xsl:when test="substring(original/datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O'"> 
             <xsl:call-template name="processingzdb"/>
             <instance>
               <source>K10plus</source>
@@ -229,12 +226,12 @@
             </instance>
             <holdingsRecords>
               <arr>
-                <xsl:for-each select="original/item[datafield[(@tag='209B') and (subfield[@code='x']='12')]/subfield[@code='a']='xxxx']">  <!-- nur Einzelkäufe -->
+                <xsl:for-each select="original/item[datafield[(@tag='209B') and (subfield[@code='x']='12')]/subfield[@code='a']='xxxx']">  
                   <xsl:apply-templates select="."/>
                 </xsl:for-each>
               </arr>
             </holdingsRecords>
-          </xsl:when>
+          </xsl:when> -->
           <xsl:otherwise> <!-- Mono -->
             <xsl:call-template name="processingmono"/>
             <instance>
