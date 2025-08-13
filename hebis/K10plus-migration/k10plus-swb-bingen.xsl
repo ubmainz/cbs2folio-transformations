@@ -157,12 +157,25 @@
             <xsl:call-template name="processingzdb"/>
             <instance>
               <source>K10plus</source>
-              <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes)]"/>
+              <identifiers>
+                <arr>
+                  <i>
+                    <value><xsl:value-of select="original/datafield[@tag='003@']/subfield[@code='0']"/></value>
+                    <identifierTypeId>PPNK10plus</identifierTypeId>
+                  </i>
+                  <i>
+                    <value><xsl:value-of select="original/datafield[@tag='003H']/subfield[@code='0']"/></value>
+                    <identifierTypeId>PPNHebis</identifierTypeId>
+                  </i>
+                  <xsl:copy-of select="instance/identifiers/arr/i"/>
+                </arr>
+              </identifiers>
+              <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes or self::identifiers)]"/>
               <xsl:call-template name="classifications"/>
               <administrativeNotes>
                 <arr>
                   <xsl:copy-of select="instance/administrativeNotes/arr/*"/>
-                  <i><xsl:value-of select="concat('K10Plus-Instanz PPN: ',original/datafield[@tag='003@']/subfield[@code='0'])"/></i>
+                  <i><xsl:value-of select="concat('ZDB/K10Plus-Datensatz PPN: ',original/datafield[@tag='003@']/subfield[@code='0'])"/></i>
                 </arr>
               </administrativeNotes>
             </instance>
@@ -180,12 +193,25 @@
             <xsl:call-template name="processingzdb"/>
             <instance>
               <source>K10plus</source>
-              <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes)]"/>
+              <identifiers>
+                <arr>
+                  <i>
+                    <value><xsl:value-of select="original/datafield[@tag='003@']/subfield[@code='0']"/></value>
+                    <identifierTypeId>TBD PPN K10plus</identifierTypeId>
+                  </i>
+                  <i>
+                    <value><xsl:value-of select="original/datafield[@tag='003H']/subfield[@code='0']"/></value>
+                    <identifierTypeId>TBD PPN Hebis</identifierTypeId>
+                  </i>
+                  <xsl:copy-of select="instance/identifiers/arr/i"/>
+                </arr>
+              </identifiers>
+              <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes or self::identifiers)]"/>
               <xsl:call-template name="classifications"/>
               <administrativeNotes>
                 <arr>
                   <xsl:copy-of select="instance/administrativeNotes/arr/*"/>
-                  <i><xsl:value-of select="concat('K10Plus-Instanz PPN: ',original/datafield[@tag='003@']/subfield[@code='0'])"/></i>
+                  <i><xsl:value-of select="concat('E/K10Plus-Datensatz PPN: ',original/datafield[@tag='003@']/subfield[@code='0'])"/></i>
                 </arr>
               </administrativeNotes>
             </instance>
@@ -201,7 +227,20 @@
             <xsl:call-template name="processingmono"/>
             <instance>
               <source>K10plus</source>
-              <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes)]"/>
+              <identifiers>
+                <arr>
+                  <i>
+                    <value><xsl:value-of select="original/datafield[@tag='003@']/subfield[@code='0']"/></value>
+                    <identifierTypeId>TBD PPN K10plus</identifierTypeId>
+                  </i>
+                  <i>
+                    <value><xsl:value-of select="original/datafield[@tag='003H']/subfield[@code='0']"/></value>
+                    <identifierTypeId>TBD PPN Hebis</identifierTypeId>
+                  </i>
+                  <xsl:copy-of select="instance/identifiers/arr/i"/>
+                </arr>
+              </identifiers>
+              <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes or self::identifiers)]"/>
               <xsl:call-template name="classifications"/>
               <administrativeNotes>
                 <arr>

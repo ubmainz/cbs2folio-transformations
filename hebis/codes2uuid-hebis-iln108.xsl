@@ -44,15 +44,28 @@
       </xsl:choose>
     </permanentLoanTypeId>
   </xsl:template>
-  
+ 
+ 
+  <!-- Map identifier types -->
+  <xsl:template match="identifierTypeId"> <!-- additional RLP -->
+    <identifierTypeId>
+      <xsl:choose>
+        <xsl:when test=".='PPNK10plus'"><xsl:text>TBD K10plus</xsl:text></xsl:when>
+        <xsl:when test=".='Hebis'"><xsl:text>TBD Hebis</xsl:text></xsl:when>
+        <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
+      </xsl:choose>
+    </identifierTypeId>
+  </xsl:template>
+
   <!-- Map statistical code ids -->
-  <xsl:template match="statisticalCodeIds"> <!-- ILN --> <!-- TBD: generate -->
+  <xsl:template match="statisticalCodeIds"> <!-- additional RLP --> <!-- TBD: generate -->
     <statisticalCodeIds>
       <arr>
         <xsl:for-each select="arr/i">
           <i>
             <xsl:choose>
               <xsl:when test=".='Dublettenbereinigung'">812aef7b-f026-449e-8976-31883ad95d1b</xsl:when>
+              <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
             </xsl:choose>
           </i>
         </xsl:for-each>

@@ -574,7 +574,7 @@
         <xsl:when test=".='Universal Product Code (UPC)'"><xsl:text>0b9e3fe0-7452-445f-8696-e39f9f48ace3</xsl:text></xsl:when>
         <xsl:when test=".='Verlags-, Produktions- und Bestellnummer'"><xsl:text>e0f6787d-a556-4d03-9850-e60c5a2baec1</xsl:text></xsl:when>
         <xsl:when test=".='Other standard identifier'">2e8b3b6c-0e7d-4e48-bca2-b0b23b376af5</xsl:when>
-        <xsl:otherwise>2e8b3b6c-0e7d-4e48-bca2-b0b23b376af5</xsl:otherwise> <!-- Other standard identifier -->
+        <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
       </xsl:choose>
     </identifierTypeId>
   </xsl:template>
@@ -606,7 +606,7 @@
       <xsl:choose>
         <xsl:when test=".='FOLIO'"><xsl:text>f32d531e-df79-46b3-8932-cdd35f7a2264</xsl:text></xsl:when>
         <xsl:when test=".='hebis'"><xsl:text>ed96edb1-d91d-4a31-9c40-006f5199d782</xsl:text></xsl:when> <!-- hebis wide -->
-        <xsl:otherwise>f32d531e-df79-46b3-8932-cdd35f7a2264</xsl:otherwise> <!-- FOLIO -->
+        <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
       </xsl:choose>
     </sourceId>
   </xsl:template>
@@ -985,7 +985,7 @@
         <xsl:when test=".='PO_LINE_REFERENCE'"><xsl:text>dcf1220f-5524-4f1e-8e40-5da3366e8478</xsl:text></xsl:when>
         <xsl:when test=".='ITEM_PATTERN_MATCH'"><xsl:text>970b8b4e-ee88-4037-b954-a10ee75340f0</xsl:text></xsl:when>
         <xsl:when test=".='HOLDINGS_RECORD_PATTERN_MATCH'"><xsl:text>ac9bae48-d14c-4414-919a-292d539f9967</xsl:text></xsl:when>
-        <xsl:otherwise>unknown</xsl:otherwise>
+        <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
       </xsl:choose>
     </setCode>
   </xsl:template>
