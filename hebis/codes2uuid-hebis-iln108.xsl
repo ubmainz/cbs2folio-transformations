@@ -73,15 +73,5 @@
       </arr>
     </statisticalCodeIds>
   </xsl:template>
-  
-  <!-- Map holdings source -->
-  <xsl:template match="sourceId"> <!-- -->
-    <sourceId>
-      <xsl:choose>
-        <xsl:when test=".='K10plus'"><xsl:text>TBD?</xsl:text></xsl:when>
-        <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
-      </xsl:choose>
-    </sourceId>
-  </xsl:template>
-  
+ 
 </xsl:stylesheet>
