@@ -345,10 +345,9 @@
 
   <xsl:template name="permanentLocationId">
     <xsl:variable name="signatur" select="datafield[@tag='209A']/subfield[@code='a']"/>
-    <xsl:variable name="electronicholding" select="(substring(./../datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O') and not(substring(datafield[@tag='208@']/subfield[@code='b'],1,1) = 'a')"/> 
+    <xsl:variable name="electronicholding" select="substring(./../datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O'"/> 
       <xsl:choose>
-        <xsl:when test="$electronicholding">ONLINE</xsl:when>
-        <xsl:when test="substring(datafield[@tag='208@']/subfield[@code='b'],1,1) = 'd'">DUMMY</xsl:when>
+        <xsl:when test="$electronicholding">ONLINE</xsl:when> <!-- z.Zt. nicht in FOLIO -->
         <xsl:when test="starts-with($signatur,'Ab/')">ARCH</xsl:when>
         <xsl:when test="starts-with($signatur,'P/') or (substring($signatur,1,1)&lt;='9' and substring($signatur,1,1)&gt;='0') ">FREI</xsl:when> <!-- 0-9 P/ -->
         <xsl:when test="starts-with($signatur,'FB') or starts-with($signatur,'U/')">FB</xsl:when>
@@ -380,45 +379,45 @@
         <xsl:call-template name="permanentLocationId"/>
       </permanentLocationId>
       <!-- There is no 109R in hebis, see $electronicholding -->
-      <xsl:variable name="electronicholding" select="(substring(../datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O') and not(substring(datafield[@tag='208@']/subfield[@code='b'],1,1) = 'a')"/>
+      <xsl:variable name="electronicholding" select="substring(../datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O'"/>
       <callNumber>
-        <xsl:if test="not($electronicholding) and (substring(datafield[@tag='208@']/subfield[@code='b'],1,1) != 'd')">
+        <xsl:if test="not($electronicholding)">
           <xsl:value-of select="datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='a']"/>
         </xsl:if>
       </callNumber>  
       <holdingsTypeId>
         <xsl:choose>
-          <xsl:when test="substring(../datafield[@tag='002@']/subfield[@code='0'], 1, 1) = 'O'">electronic</xsl:when>
+          <xsl:when test="$electronicholding">electronic</xsl:when>
           <xsl:otherwise>physical</xsl:otherwise>
         </xsl:choose>
       </holdingsTypeId>
-      <holdingsStatements> <!-- TBD -->
-        <xsl:if test="datafield[(@tag='209E')]/subfield[@code='a']">
-          <arr>
-            <xsl:for-each select="datafield[(@tag='209E') and (subfield[@code='x']='01' or subfield[@code='x']='02' or subfield[@code='x']='03')]/subfield[@code='a']">
-              <i>
-                <statement>
-                  <xsl:if test="../subfield[@code='x']='03'">
-                    <xsl:text>Angaben zur Vollständigkeit: </xsl:text>  
+      <holdingsStatements>
+        <arr>
+          <xsl:if test="datafield[index-of(('231B','231C','231D','231E'),@tag)>0]">
+            <xsl:for-each select="datafield[index-of(('231B','231C','231E'),@tag)>0]">
+                <i>
+                  <statement>
+                    <xsl:if test="@tag='231C'">
+                      <xsl:text>Angaben zur Vollständigkeit: </xsl:text>  
+                    </xsl:if>
+                    <xsl:value-of select="subfield[@code='a']"/>
+                  </statement>
+                  <xsl:if test="(@tag='231B') and (../datafield[@tag='231D'])">
+                    <note>
+                      <xsl:value-of select="../datafield[@tag='231D']/subfield[@code='a']"/>
+                    </note>
                   </xsl:if>
-                  <xsl:value-of select="."/>
-                </statement>
-                <xsl:if test="(../subfield[@code='x']='02') and (../../datafield[@tag='209E']/subfield[@code='x']='04')">
+                </i>
+              </xsl:for-each>
+            <xsl:if test="not (datafield[@tag='231B']) and (datafield[@tag='231D'])">
+                <i>
                   <note>
-                    <xsl:value-of select="../../datafield[(@tag='209E') and (subfield[@code='x']='04')]/subfield[@code='a']"/>
+                    <xsl:value-of select="datafield[@tag='231D']/subfield[@code='a']"/>
                   </note>
-                </xsl:if>
-              </i>
-            </xsl:for-each>
-            <xsl:if test="not (datafield[@tag='209E']/subfield[@code='x']='02') and (datafield[@tag='209E']/subfield[@code='x']='04')">
-              <i>
-                <note>
-                  <xsl:value-of select="datafield[(@tag='209E') and (subfield[@code='x']='04')]/subfield[@code='a']"/>
-                </note>
-              </i>
-            </xsl:if>
-          </arr>
-        </xsl:if>
+                </i>
+              </xsl:if>
+           </xsl:if>
+        </arr>
       </holdingsStatements>
       
       <notes> <!-- TBD -->
