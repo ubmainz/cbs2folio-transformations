@@ -48,7 +48,7 @@
             </xsl:if>
           </instance>
           <!-- instance relations? -->
-        <xsl:if test=".=$currentrecord/original/datafield[@tag='003H']/subfield[@code='0']">
+        <xsl:if test="not($hebppns-dist[2])">
           <xsl:apply-templates select="$currentrecord/holdingsRecords"/>
         </xsl:if>        
       </record>
