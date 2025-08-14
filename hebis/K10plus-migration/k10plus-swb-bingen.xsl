@@ -458,12 +458,21 @@
               <staffOnly>true</staffOnly>
             </i>
           </xsl:if>
-          <xsl:for-each select="(datafield[@tag='209O']|datafield[@tag='209B' and (subfield[@code='x']='12')])/subfield[@code='a']">
+          <xsl:for-each select="datafield[@tag='209O']/subfield[@code='a']">
             <i>
               <note>
                 <xsl:value-of select="."/>
               </note>
               <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
+              <staffOnly>true</staffOnly>
+            </i>
+          </xsl:for-each>
+          <xsl:for-each select="datafield[@tag='209B' and (subfield[@code='x']='12')]/subfield[@code='a']">
+            <i>
+              <note>
+                <xsl:value-of select="."/>
+              </note>
+              <holdingsNoteTypeId>Abrufzeichen</holdingsNoteTypeId>
               <staffOnly>true</staffOnly>
             </i>
           </xsl:for-each>

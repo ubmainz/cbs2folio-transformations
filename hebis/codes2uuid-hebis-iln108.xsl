@@ -74,4 +74,14 @@
     </statisticalCodeIds>
   </xsl:template>
  
+  <!-- Map holding note types -->
+  <xsl:template match="holdingsNoteTypeId"> <!-- Level 2: FOLIO/hebis-wide -->
+    <holdingsNoteTypeId>
+      <xsl:choose>
+        <xsl:when test=".='Abrufzeichen'"><xsl:text>TDB</xsl:text></xsl:when>        
+        <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
+      </xsl:choose>
+    </holdingsNoteTypeId>
+  </xsl:template>
+ 
 </xsl:stylesheet>
