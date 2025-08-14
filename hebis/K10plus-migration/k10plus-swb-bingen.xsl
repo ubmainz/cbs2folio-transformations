@@ -383,7 +383,6 @@
       <permanentLocationId>
         <xsl:call-template name="permanentLocationId"/>
       </permanentLocationId>
-      <!-- There is no 109R in hebis, see $electronicholding -->
       <xsl:variable name="electronicholding" select="substring(../datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O'"/>
       <callNumber>
         <xsl:if test="not($electronicholding)">
@@ -425,7 +424,7 @@
         </arr>
       </holdingsStatements>
       
-      <notes> <!-- TBD -->
+      <notes>
         <arr>
           <xsl:for-each select="datafield[@tag='220B' or @tag='237A']">
             <xsl:if test="./subfield[@code='a'] or ./subfield[@code='0']">
@@ -511,17 +510,7 @@
             </i>
           </xsl:for-each>
                     -->
-          <xsl:for-each select="datafield[@tag='209S']/subfield[@code='S'] | datafield[@tag='204U']/subfield[@code='S'] | datafield[@tag='204P']/subfield[@code='S'] | datafield[@tag='204R']/subfield[@code='S'] ">
-            <i>
-              <note>
-                <xsl:value-of select="."/>
-              </note>
-              <holdingsNoteTypeId>Lizenzindikator</holdingsNoteTypeId>
-              <staffOnly>true</staffOnly>
-            </i>
-          </xsl:for-each>
-          
-          
+   
           <xsl:if test="datafield[(@tag='209A') and (subfield[@code='x']='00') and subfield[@code='h']]">
             <i>
               <note>
@@ -555,17 +544,12 @@
           </xsl:for-each>
         </arr>
       </notes>
-      <discoverySuppress> <!-- TBD -->
-        <xsl:choose>
-          <xsl:when test="datafield[@tag='247E']/subfield[@code='a']"><xsl:text>true</xsl:text></xsl:when> <!-- selectionscode != true -->
-          <xsl:otherwise><xsl:call-template name="selectioncode"/></xsl:otherwise>
-        </xsl:choose>
-      </discoverySuppress>   
+      <discoverySuppress>false</discoverySuppress>   
       <sourceId>K10plus</sourceId>
       <xsl:if test="not($electronicholding) and (datafield[(@tag='209G') and (subfield[@code='x']='00')]/subfield[@code='a'] or not(datafield[@tag='209A']/subfield[@code='i']))">
         <items>
           <arr>
-            <xsl:for-each select="datafield[(@tag='209G') and (subfield[@code='x']='00')]/subfield[@code='a']">
+            <xsl:for-each select="datafield[(@tag='209G') and (subfield[@code='x']='00')]/subfield[@code='a']"> <!-- keine Barcodes mehr -->
               <!--   <xsl:message>Debug: <xsl:value-of select="."/></xsl:message> -->
               <xsl:variable name="copy">
                 <xsl:choose>
@@ -599,17 +583,10 @@
       </xsl:if>
       <electronicAccess>
         <arr>
-          <xsl:for-each select="datafield[@tag='209S']">
+          <xsl:for-each select="datafield[@tag='209R']">
             <i>
               <uri>
                 <xsl:value-of select="./subfield[@code='u']"/>
-              </uri>
-            </i>
-          </xsl:for-each>
-          <xsl:for-each select="datafield[@tag='204P'] | datafield[@tag='204U'] | datafield[@tag='204R']">
-            <i>
-              <uri>
-                <xsl:value-of select="./subfield[@code='0']"/>
               </uri>
             </i>
           </xsl:for-each>
@@ -656,15 +633,16 @@
       </materialTypeId>
       
       <permanentLoanTypeId> <!-- TBD -->
-          <xsl:choose>
-            <xsl:when test="(.='dummy') or (.='aufsatz')">dummy</xsl:when>
-            <xsl:when test="(.='') or (.='u')">u ausleihbar</xsl:when>
-            <xsl:when test=".='s'">s Präsenzbestand</xsl:when>
-            <xsl:when test=".='d'">d Zustimmung Wochenendausleihe</xsl:when>
-            <xsl:when test=".='i'">i nur für den Lesesaal</xsl:when>
-            <xsl:when test=".='e'">e vermisst</xsl:when>
-            <xsl:when test=".='g'">g nicht ausleihbar</xsl:when>
-            <xsl:when test=".='z'">z Verlust</xsl:when>
+        <xsl:variable name="loantype" select="datafield[@tag='209A']/subfield[@code='D']"/>
+        <xsl:choose>
+          <xsl:when test="($loantype='dummy') or (.='aufsatz')">dummy</xsl:when>
+          <xsl:when test="($loantype='') or ($loantype='u')">u ausleihbar</xsl:when>
+          <xsl:when test="$loantype='s'">s Präsenzbestand</xsl:when>
+          <xsl:when test="$loantype='d'">d Zustimmung Wochenendausleihe</xsl:when>
+          <xsl:when test="$loantype='i'">i nur für den Lesesaal</xsl:when>
+          <xsl:when test="$loantype='e'">e vermisst</xsl:when>
+          <xsl:when test="$loantype='g'">g nicht ausleihbar</xsl:when>
+          <xsl:when test="$loantype='z'">z Verlust</xsl:when>
             <xsl:otherwise>unbekannt</xsl:otherwise>
           </xsl:choose>
       </permanentLoanTypeId>
@@ -714,12 +692,7 @@
           <xsl:if test="position() != last()">, </xsl:if>
         </xsl:for-each>
       </accessionNumber>
-      <discoverySuppress>
-        <xsl:choose>
-          <xsl:when test="datafield[@tag='247E']/subfield[@code='a']"><xsl:text>true</xsl:text></xsl:when>
-          <xsl:otherwise><xsl:call-template name="selectioncode"/></xsl:otherwise>
-        </xsl:choose>
-      </discoverySuppress>
+      <discoverySuppress>false</discoverySuppress>
       <statisticalCodeIds/>
     </i>
   </xsl:template>
