@@ -363,6 +363,11 @@
       <xsl:variable name="epn" select="datafield[@tag='203@']/subfield[@code='0']"/>
       <administrativeNotes>
         <arr>
+          <xsl:for-each select="datafield[@tag='201B']">
+            <i>
+              <xsl:value-of select="concat(./subfield[@code='0'], ', ', substring(./subfield[@code='t'],1,5), ' (Datum und Uhrzeit der letzten Änderung)')"/>
+            </i>
+          </xsl:for-each>
           <i><xsl:value-of select="concat('K10plus-Holding aus EPN: ',$epn)"/></i>
         </arr>
       </administrativeNotes>
@@ -422,7 +427,7 @@
       
       <notes> <!-- TBD -->
         <arr>
-          <xsl:for-each select="datafield[@tag='220B' or @tag='220C' or @tag='220E' or @tag='237A']">
+          <xsl:for-each select="datafield[@tag='220B' or @tag='237A']">
             <xsl:if test="./subfield[@code='a'] or ./subfield[@code='0']">
               <i>
                 <note>
@@ -435,24 +440,15 @@
               </i>
             </xsl:if>
           </xsl:for-each>
-          <xsl:for-each select="datafield[(@tag='209G') and (subfield[@code='x']='01')]/subfield[@code='a']"> <!-- local adaptions -->
+          <xsl:for-each select="datafield[(@tag='209A')]/subfield[@code='f']"> <!-- and (subfield[@code='x']='00') -->
             <i>
               <note>
                 <xsl:value-of select="."/>
               </note>
-              <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
+              <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId> <!-- TBD 8201 umbenennen? -->
               <staffOnly>false</staffOnly>
             </i>             
           </xsl:for-each>
-          <xsl:if test="datafield[@tag='247D']">
-            <i>
-              <note>
-                <xsl:value-of select="datafield[@tag='247D']/subfield[@code='a']"/>
-              </note>
-              <holdingsNoteTypeId>Text zur Ausleihbarkeit</holdingsNoteTypeId>
-              <staffOnly>false</staffOnly>
-            </i>
-          </xsl:if>
           <xsl:if test="datafield[@tag='201B']">
             <i>
               <note>
@@ -462,10 +458,10 @@
               <staffOnly>true</staffOnly>
             </i>
           </xsl:if>
-          <xsl:for-each select="datafield[@tag='209B' and not(subfield[@code='x']='01' or subfield[@code='x']='02')]">
+          <xsl:for-each select="(datafield[@tag='209O']|datafield[@tag='209B' and (subfield[@code='x']='12')])/subfield[@code='a']">
             <i>
               <note>
-                <xsl:value-of select="./subfield[@code='a']"/>
+                <xsl:value-of select="."/>
               </note>
               <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
               <staffOnly>true</staffOnly>
