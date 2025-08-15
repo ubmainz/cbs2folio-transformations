@@ -24,7 +24,7 @@
       <xsl:copy-of select="original"/>
       <instance>
         <source>hebis</source>
-        <hrid><xsl:value-of select="original/datafield[@tag='003@']/subfield[@code='0']"/></hrid>
+        <hrid><xsl:value-of select="concat('HEB',original/datafield[@tag='003@']/subfield[@code='0'])"/></hrid>
         <xsl:apply-templates select="instance/*[not(self::hrid or self::source or self::administrativeNotes)]"/>
         <administrativeNotes>
           <arr>
@@ -107,6 +107,10 @@
         <xsl:copy-of select="*[name(.)!='note']"/>
       </i>
     </xsl:if>
+  </xsl:template>
+
+  <xsl:template match="hrid">
+    <hrid><xsl:value-of select="concat('HEB',.)"/></hrid>
   </xsl:template>
 
 </xsl:stylesheet>
