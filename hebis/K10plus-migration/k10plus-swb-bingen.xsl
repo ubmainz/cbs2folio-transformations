@@ -270,7 +270,8 @@
                     <formerIds>
                       <arr/>
                     </formerIds>
-                    <hrid><xsl:value-of select="substring-after(datafield[@tag='206X']/subfield[@code='0'],'HEB')"/></hrid>
+                    <hrid><xsl:value-of select="datafield[@tag='206X']/subfield[@code='0']"/></hrid>
+                    <!-- <hrid><xsl:value-of select="substring-after(datafield[@tag='206X']/subfield[@code='0'],'HEB')"/></hrid> ohne HEB -->
                     <administrativeNotes>
                       <arr>
                         <i><xsl:value-of select="concat('FOLIO-Holding mit K10plus-EPN: ',datafield[@tag='203@']/subfield[@code='0'])"/></i>
@@ -375,7 +376,8 @@
       <formerIds>
         <arr>
           <i><xsl:value-of select="$epn"/></i>
-          <i><xsl:value-of select="datafield[@tag='203H']/subfield[@code='0']"/></i>
+          <i><xsl:value-of select="concat('HEB',datafield[@tag='203H']/subfield[@code='0'])"/></i>
+          <!-- <i><xsl:value-of select="datafield[@tag='203H']/subfield[@code='0']"/></i> ohne HEB -->
         </arr>
       </formerIds>
       <hrid>
@@ -568,14 +570,16 @@
                 <xsl:with-param name="copy">
                   <xsl:if test="last()>1"><xsl:value-of select="$copy"/></xsl:if>
                 </xsl:with-param>
-                <xsl:with-param name="HEBhhrid" select="concat(datafield[@tag='203H']/subfield[@code='0'],'-',$copy)"/>
+                <xsl:with-param name="HEBhhrid" select="concat('HEB',datafield[@tag='203H']/subfield[@code='0'],'-',$copy)"/>
+                <!-- <xsl:with-param name="HEBhhrid" select="concat(datafield[@tag='203H']/subfield[@code='0'],'-',$copy)"/> ohne HEB -->
               </xsl:apply-templates>
             </xsl:for-each>
             <xsl:if test="not(datafield[(@tag='209G') and (subfield[@code='x']='00')]/subfield[@code='a'])">
               <!--   <xsl:message>Debug: EPN <xsl:value-of select="$epn"/></xsl:message>  -->
               <xsl:apply-templates select="." mode="make-item">
                 <xsl:with-param name="hhrid" select="concat($epn,'-1')"/>
-                <xsl:with-param name="HEBhhrid" select="concat(datafield[@tag='203H']/subfield[@code='0'],'-1')"/>
+                <xsl:with-param name="HEBhhrid" select="concat('HEB',datafield[@tag='203H']/subfield[@code='0'],'-1')"/>
+                <!-- <xsl:with-param name="HEBhhrid" select="concat(datafield[@tag='203H']/subfield[@code='0'],'-1')"/> ohne HEB -->
               </xsl:apply-templates>
             </xsl:if>
           </arr>

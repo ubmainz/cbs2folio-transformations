@@ -20,15 +20,8 @@
         <xsl:copy-of select="$currentrecord/processing"/>
           <instance>
             <source>K10plus</source>
-            <hrid><xsl:value-of select="."/></hrid>
-            <!-- <xsl:choose>
-              <xsl:when test=".=$currentrecord/original/datafield[@tag='003H']/subfield[@code='0']">
-                <xxxx><xsl:value-of select="$currentrecord/original/datafield[@tag='003@']/subfield[@code='0']"/></xxxx>
-              </xsl:when>
-              <xsl:otherwise>
-                <xxxx></xxxx>
-              </xsl:otherwise>
-            </xsl:choose> -->
+            <hrid><xsl:value-of select="concat('HEB',.)"/></hrid>
+            <!-- <hrid><xsl:value-of select="."/></hrid> ohne HEB -->
             <xsl:apply-templates select="$currentrecord/instance/*[not(self::hrid or self::source or self::administrativeNotes)]"/>
             <administrativeNotes>
               <arr>
