@@ -17,6 +17,7 @@
           <forTheseProperties>
             <arr>
               <i>materialTypeId</i>
+              <i>permanentLoanTypeId</i>
             </arr>
           </forTheseProperties>
         </retainExistingValues>
@@ -564,7 +565,6 @@
               <!--  <xsl:message>Debug: <xsl:value-of select="concat($epn,'-',$copy)"/></xsl:message> -->
               <xsl:apply-templates select="../.." mode="make-item">
                 <xsl:with-param name="hhrid" select="concat($epn,'-',$copy)"/>
-                <xsl:with-param name="bcode" select="substring-before(concat(.,' '),' ')"/>
                 <xsl:with-param name="copy">
                   <xsl:if test="last()>1"><xsl:value-of select="$copy"/></xsl:if>
                 </xsl:with-param>
@@ -598,7 +598,6 @@
 
   <xsl:template match="item" mode="make-item">
     <xsl:param name="hhrid"/>
-    <xsl:param name="bcode"/>
     <xsl:param name="copy"/>
     <xsl:param name="HEBhhrid"></xsl:param>
     <i>
@@ -614,84 +613,27 @@
       </hrid>
       
       <!-- Hebis / K10plus -->  
-      <materialTypeId>
-        <xsl:variable name="type1" select="substring(../datafield[@tag='002@']/subfield[@code='0'], 1, 1)"/>
-        <xsl:variable name="pd" select="../datafield[@tag='013H']/subfield[@code='0']"/>
-        <xsl:choose>
-          <xsl:when test="(($type1 = 'A') and ($pd = 'kart')) or ($type1 = 'K')">Karten</xsl:when> <!-- K10plus: pd kart type1 A / Hebis: type1 K -->
-          <xsl:when test="(($type1 = 'A') and ($pd = 'muno')) or ($type1 = 'M')">Noten</xsl:when> <!-- K10plus: pd muno type1 A / Hebis: type1 M -->
-          <xsl:when test="($type1 = 'A') or ($type1 = 'H') or ($type1 = 'I') or ($type1 = 'L') or (($type1 = 'B') and ($pd = 'bild'))">Druckschrift</xsl:when> <!-- K10plus: pd bild type1 B / Hebis: type1 I -->
-          <xsl:when test="($type1 = 'G') or (($type1 = 'B') and ($pd = 'soto'))">Tonträger</xsl:when> <!-- K10pus: pd soto type1 B / Hebis: type1 G -->
-          <xsl:when test="$type1 = 'B'">Audiovisuelles Material</xsl:when> <!-- K10plus: pd vide type1 B / Hebis: type1 B -->
-          <xsl:when test="$type1 = 'C'">Blindenschriftträger</xsl:when>
-          <xsl:when test="$type1 = 'E'">Mikroformen</xsl:when>
-          <!-- <xsl:when test="$type1 = 'O'">E-Ressource</xsl:when> --> <!-- no items -->
-          <xsl:when test="$type1 = 'S'">Computerlesbares Material</xsl:when>
-          <xsl:when test="$type1 = 'V'">Objekt</xsl:when>
-          <xsl:otherwise>Sonstiges</xsl:otherwise>
-        </xsl:choose>
-      </materialTypeId>
+      <materialTypeId>Zeitschriftenband</materialTypeId>
       
-      <permanentLoanTypeId> <!-- TBD -->
-        <xsl:variable name="loantype" select="datafield[@tag='209A']/subfield[@code='D']"/>
-        <xsl:choose>
-          <xsl:when test="($loantype='dummy') or (.='aufsatz')">dummy</xsl:when>
-          <xsl:when test="($loantype='') or ($loantype='u')">u ausleihbar</xsl:when>
-          <xsl:when test="$loantype='s'">s Präsenzbestand</xsl:when>
-          <xsl:when test="$loantype='d'">d Zustimmung Wochenendausleihe</xsl:when>
-          <xsl:when test="$loantype='i'">i nur für den Lesesaal</xsl:when>
-          <xsl:when test="$loantype='e'">e vermisst</xsl:when>
-          <xsl:when test="$loantype='g'">g nicht ausleihbar</xsl:when>
-          <xsl:when test="$loantype='z'">z Verlust</xsl:when>
-            <xsl:otherwise>unbekannt</xsl:otherwise>
-          </xsl:choose>
-      </permanentLoanTypeId>
+      <permanentLoanTypeId>unbekannt</permanentLoanTypeId>
+      
       <status>
-        <name>
-          <xsl:choose>
-            <xsl:when test="(substring(datafield[@tag='208@']/subfield[@code='b'],1,1) = 'd') or 
-              (substring(datafield[@tag='208@']/subfield[@code='b'],1,1) = 'p') or
-              (substring(datafield[@tag='208@']/subfield[@code='b'],1,2) = 'gp')">Intellectual item</xsl:when>
-            <xsl:when test="(substring(../datafield[@tag='002@']/subfield[@code='0'],2,1)='o') and not(datafield[@tag='209A']/subfield[@code='d'])">Unknown</xsl:when>
-            <xsl:when test="datafield[@tag='209A']/subfield[@code='d']='a'">On order</xsl:when>
-            <xsl:when test="datafield[@tag='209A']/subfield[@code='d']='e'">Long missing</xsl:when>
-            <xsl:when test="datafield[@tag='209A']/subfield[@code='d']='z'">Withdrawn</xsl:when>
-            <xsl:when test="datafield[@tag='209A']/subfield[@code='d']='g'">Restricted</xsl:when>
-            <xsl:otherwise>Available</xsl:otherwise>
-          </xsl:choose>
-        </name>
+        <name>Intellectual item</name>
       </status>
-      <barcode>
-        <xsl:value-of select="$bcode"/>
-      </barcode>
-      <copyNumber>
-        <xsl:value-of select="$copy"/>
-      </copyNumber>
+      
       <yearCaption>
         <arr>
-          <xsl:for-each select="datafield[@tag='209E' and (subfield[@code='x']='02')]/subfield[@code='a']"> <!-- Wiederholungen kommen jedoch nicht vor -->
+          <xsl:for-each select="datafield[@tag='231B']/subfield[@code='a']"> <!-- nicht wiederholbar -->
             <i>
-              <xsl:for-each select="../../datafield[@tag='209E' and (subfield[@code='x']='01')]/subfield[@code='a']"><xsl:value-of select="."/><xsl:text>: </xsl:text></xsl:for-each>
+              <xsl:for-each select="../../datafield[@tag='231E']/subfield[@code='a']"><xsl:value-of select="."/><xsl:text>: </xsl:text></xsl:for-each> <!-- nicht wiederholbar -->
               <xsl:value-of select="."/>
             </i>
           </xsl:for-each>
         </arr>
       </yearCaption>
       
-      <!-- no notes on item level 
-        <notes>
-          <arr>
-
-          </arr>
-        </notes>  -->
-      
       <!-- No item for electronic access in hebis -->
-      <accessionNumber>
-        <xsl:for-each select="datafield[@tag='209C']">
-          <xsl:value-of select="./subfield[@code='a']"/>
-          <xsl:if test="position() != last()">, </xsl:if>
-        </xsl:for-each>
-      </accessionNumber>
+
       <discoverySuppress>false</discoverySuppress>
       <statisticalCodeIds/>
     </i>
