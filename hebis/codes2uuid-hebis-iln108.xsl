@@ -50,8 +50,8 @@
   <xsl:template match="identifierTypeId"> <!-- additional RLP -->
     <identifierTypeId>
       <xsl:choose>
-        <xsl:when test=".='PPN-K10plus'"><xsl:text>TBD K10plus</xsl:text></xsl:when>
-        <xsl:when test=".='PPN-Hebis'"><xsl:text>TBD Hebis</xsl:text></xsl:when>
+        <xsl:when test=".='PPN-K10plus'"><xsl:text>98e4039e-adfe-405f-b763-c642765269df</xsl:text></xsl:when>
+        <xsl:when test=".='PPN-Hebis'"><xsl:text>be3a2669-391d-4027-b023-1092a61ac631</xsl:text></xsl:when>
         <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
       </xsl:choose>
     </identifierTypeId>
@@ -65,7 +65,7 @@
           <i>
             <xsl:choose>
               <xsl:when test=".='Dublettenbereinigung'">812aef7b-f026-449e-8976-31883ad95d1b</xsl:when>
-              <xsl:when test=".='ZDB-Titel mit Mono-EPN'">TBD</xsl:when>
+              <xsl:when test=".='ZDB-Titel mit Mono-EPN'">73abd902-87c7-4bad-bdfe-25cbc06b6e63</xsl:when>
               <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
             </xsl:choose>
           </i>
@@ -78,7 +78,7 @@
   <xsl:template match="holdingsNoteTypeId"> <!-- Level 2: FOLIO/hebis-wide -->
     <holdingsNoteTypeId>
       <xsl:choose>
-        <xsl:when test=".='Abrufzeichen'"><xsl:text>TDB</xsl:text></xsl:when>        
+        <xsl:when test=".='Abrufzeichen'"><xsl:text>6d3f575d-6727-42a4-ae58-56c00de2e1d4</xsl:text></xsl:when>        
         <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
       </xsl:choose>
     </holdingsNoteTypeId>
