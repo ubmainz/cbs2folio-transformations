@@ -65,7 +65,7 @@
           <i>
             <xsl:choose>
               <xsl:when test=".='Dublettenbereinigung'">812aef7b-f026-449e-8976-31883ad95d1b</xsl:when>
-              <xsl:when test=".='ZDB-Titel mit Mono-EPN'">73abd902-87c7-4bad-bdfe-25cbc06b6e63</xsl:when>
+              <xsl:when test=".='ZDB-Titel-mit-Mono-EPN'">73abd902-87c7-4bad-bdfe-25cbc06b6e63</xsl:when>
               <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
             </xsl:choose>
           </i>

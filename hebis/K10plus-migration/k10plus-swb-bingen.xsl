@@ -173,7 +173,7 @@
               <xsl:if test="exists(original/item[not(starts-with(datafield[@tag='208@']/subfield[@code='b'],'z'))])">
                 <statisticalCodeIds>
                   <arr>
-                    <i>ZDB-Titel mit Mono-EPN</i>
+                    <i>ZDB-Titel-mit-Mono-EPN</i>
                   </arr>
                 </statisticalCodeIds>
               </xsl:if>
