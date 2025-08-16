@@ -343,8 +343,6 @@
     </record>
   </xsl:template>
 
-  <xsl:template name="selectioncode"><xsl:value-of select="datafield[@tag='208@']/subfield[@code='b']"/></xsl:template>
-
   <xsl:template name="permanentLocationId">
     <xsl:variable name="signatur" select="datafield[@tag='209A']/subfield[@code='a']"/>
     <xsl:variable name="electronicholding" select="substring(./../datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O'"/> 
