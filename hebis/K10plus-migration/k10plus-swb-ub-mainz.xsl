@@ -147,7 +147,8 @@
   </xsl:template>
   
   <xsl:template match="record">
-    <xsl:if test="not(substring(original/datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O')"> <!-- Bingen keine Online-Ressourcen -->
+    <xsl:if test="not(substring(original/datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O') or exists(original/item[datafield[(@tag='209B') and (subfield[@code='x']='12')]/subfield[@code='a']='kauf'])">
+      <!-- Mainz: keine Online-Ressourcen, aber Online-Einzelkauf -->
       <record>
         <xsl:copy-of select="original"/>
         <xsl:choose>
@@ -277,7 +278,7 @@
                         <i><xsl:value-of select="concat('FOLIO-Holding mit K10plus-EPN: ',datafield[@tag='203@']/subfield[@code='0'])"/></i>
                       </arr>
                     </administrativeNotes>
-                    <permanentLocationId>NZ</permanentLocationId> <!-- retainExistingValues/forTheseProperties -->
+                    <permanentLocationId>DUMMY</permanentLocationId> <!-- retainExistingValues/forTheseProperties -->
                   </i>
                 </xsl:for-each>
               </arr>
@@ -344,18 +345,15 @@
   </xsl:template>
 
   <xsl:template name="permanentLocationId">
-    <xsl:variable name="abt" select="substring-after(translate(datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='B'],'[]',''),'77/')"/>
+    <xsl:variable name="abt" select="substring-after(datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='B'],'77/')"/>
     <xsl:variable name="standort" select="upper-case(datafield[(@tag='209A') and (subfield[@code='x']='01')]/subfield[@code='f'])"/> 
     <xsl:variable name="electronicholding" select="substring(/../datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O'"/>
-    <xsl:variable name="onorder" select="substring(datafield[@tag='208@']/subfield[@code='b'],1,1) = 'a'"/>
-    <permanentLocationId>
       <xsl:choose>
         <xsl:when test="$electronicholding">ONLINE</xsl:when>
         <xsl:when test="substring(datafield[@tag='208@']/subfield[@code='b'],1,1) = 'd'">DUMMY</xsl:when>
-        <xsl:when test="(substring(/../datafield[@tag='002@']/subfield[@code='0'],2,1) = 'o') and not($i/datafield[@tag='209A']/subfield[@code='d'])">AUFSATZ</xsl:when>
-        <xsl:when test="$abt='000'">
+        <xsl:when test="(substring(/../datafield[@tag='002@']/subfield[@code='0'],2,1) = 'o') and not(datafield[@tag='209A']/subfield[@code='d'])">AUFSATZ</xsl:when>
+        <xsl:when test="$abt=''">
           <xsl:choose>
-            <xsl:when test="$onorder">ZBZEB</xsl:when>
             <xsl:when test="contains($standort,'FERNLEIHE LESESAAL')">ZBFLLS</xsl:when>
             <xsl:when test="contains($standort,'FERNLEIHE')">ZBFL</xsl:when>
             <xsl:when test="contains($standort,'FREIHAND')">ZBFREI</xsl:when>
@@ -367,7 +365,6 @@
         </xsl:when>
         <xsl:when test="$abt='002'">
           <xsl:choose>
-            <xsl:when test="$onorder">GFGZEB</xsl:when>
             <xsl:when test="contains($standort,upper-case('Erziehungswissenschaft'))">GFGPÄD</xsl:when>
             <xsl:when test="contains($standort,upper-case('Filmwissenschaft'))">GFGFILM</xsl:when>
             <xsl:when test="contains($standort,upper-case('Journalistik'))">GFGJOUR</xsl:when>
@@ -378,12 +375,7 @@
             <xsl:otherwise>GFGPÄD</xsl:otherwise>
           </xsl:choose>
         </xsl:when>
-        <xsl:when test="$abt='003'">
-          <xsl:choose>
-            <xsl:when test="$onorder">ZBZEB</xsl:when>
-            <xsl:otherwise>ZBLS</xsl:otherwise>
-          </xsl:choose>
-        </xsl:when>
+        <xsl:when test="$abt='003'">ZBLS</xsl:when>
         <xsl:when test="$abt='004'">
           <xsl:choose>
             <xsl:when test="contains($standort,'NUMERUS')">PHNC</xsl:when>
@@ -423,7 +415,6 @@
         </xsl:when>
         <xsl:when test="$abt='019'">
           <xsl:choose>
-            <xsl:when test="$onorder">GHZEB</xsl:when>
             <xsl:when test="contains($standort,upper-case('Fernleihe Lesesaal'))">GHFLLS</xsl:when>
             <xsl:when test="contains($standort,upper-case('Fernleihe'))">GHFL</xsl:when>
             <xsl:when test="contains($standort,upper-case('Handapparat'))">GHFAK</xsl:when>
@@ -498,7 +489,6 @@
         <xsl:when test="$abt='127'">PHMAG</xsl:when>
         <xsl:otherwise>UNKNOWN</xsl:otherwise>
       </xsl:choose>
-    </permanentLocationId>
   </xsl:template>
 
   <xsl:template match="item">
