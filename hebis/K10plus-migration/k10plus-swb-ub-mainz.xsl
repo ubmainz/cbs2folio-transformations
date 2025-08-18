@@ -196,7 +196,6 @@
               </arr>
             </holdingsRecords>
           </xsl:when>
-          <!--  für Bingen ohne Bedeutung (s.o.)
           <xsl:when test="substring(original/datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O'"> 
             <xsl:call-template name="processingzdb"/>
             <instance>
@@ -228,12 +227,12 @@
             </instance>
             <holdingsRecords>
               <arr>
-                <xsl:for-each select="original/item[datafield[(@tag='209B') and (subfield[@code='x']='12')]/subfield[@code='a']='xxxx']">  
+                <xsl:for-each select="original/item[datafield[(@tag='209B') and (subfield[@code='x']='12')]/subfield[@code='a']='kauf']">  
                   <xsl:apply-templates select="."/>
                 </xsl:for-each>
               </arr>
             </holdingsRecords>
-          </xsl:when> -->
+          </xsl:when>
           <xsl:otherwise> <!-- Mono -->
             <xsl:call-template name="processingmono"/>
             <instance>
