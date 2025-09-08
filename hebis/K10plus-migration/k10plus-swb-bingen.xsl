@@ -244,7 +244,7 @@
                     <identifierTypeId>PPN-K10plus</identifierTypeId>
                   </i>
                   <i>
-                    <value><xsl:value-of select="(original/datafield[@tag='003H']/subfield[@code='0']|original/datafield[@tag='006H']/subfield[@code='0'])[1]"/></value>
+                    <value><xsl:value-of select="(original/datafield[@tag='003H']/subfield[@code='0']|original/datafield[@tag='006H']/subfield[@code='0'],'nil')[1]"/></value>
                     <identifierTypeId>PPN-Hebis</identifierTypeId>
                   </i>
                   <xsl:copy-of select="instance/identifiers/arr/i"/>
