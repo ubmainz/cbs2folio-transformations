@@ -195,44 +195,6 @@
               </arr>
             </holdingsRecords>
           </xsl:when>
-          <!--  für Bingen ohne Bedeutung (s.o.)
-          <xsl:when test="substring(original/datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O'"> 
-            <xsl:call-template name="processingzdb"/>
-            <instance>
-              <source>K10plus</source>
-              <identifiers>
-                <arr>
-                  <i>
-                    <value><xsl:value-of select="original/datafield[@tag='003@']/subfield[@code='0']"/></value>
-                    <identifierTypeId>PPN-K10plus</identifierTypeId>
-                  </i>
-                  <i>
-                    <value><xsl:value-of select="original/datafield[@tag='003H']/subfield[@code='0']"/></value>
-                    <identifierTypeId>PPN-Hebis</identifierTypeId>
-                  </i>
-                  <xsl:copy-of select="instance/identifiers/arr/i"/>
-                </arr>
-              </identifiers>
-              <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes or self::identifiers)]"/>
-              <xsl:call-template name="classifications"/>
-              <administrativeNotes>
-                <arr>
-                  <xsl:copy-of select="instance/administrativeNotes/arr/*"/>
-                  <i>
-                    <xsl:value-of select="concat('E/K10Plus-Instanz+Holdings aus PPN: ',original/datafield[@tag='003@']/subfield[@code='0'])"/>
-                    <xsl:if test="original/datafield[@tag='003H']/subfield[@code='0']"><xsl:value-of select="concat(' mit Hebis-PPN: ',original/datafield[@tag='003H']/subfield[@code='0'])"></xsl:value-of></xsl:if>
-                  </i>
-                </arr>
-              </administrativeNotes>
-            </instance>
-            <holdingsRecords>
-              <arr>
-                <xsl:for-each select="original/item[datafield[(@tag='209B') and (subfield[@code='x']='12')]/subfield[@code='a']='xxxx']">  
-                  <xsl:apply-templates select="."/>
-                </xsl:for-each>
-              </arr>
-            </holdingsRecords>
-          </xsl:when> -->
           <xsl:otherwise> <!-- Mono -->
             <xsl:call-template name="processingmono"/>
             <instance>
