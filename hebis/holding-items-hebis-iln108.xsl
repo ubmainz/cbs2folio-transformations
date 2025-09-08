@@ -60,6 +60,8 @@
     </xsl:if>
   </xsl:template>
 
+  <xsl:template match="i[permanentLoanTypeId='dummy']"/>
+
   <xsl:template match="permanentLocationId">
     <xsl:variable name="i" select="key('original',.)"/>
     <xsl:variable name="signatur" select="$i/datafield[@tag='209A']/subfield[@code='a']"/>
