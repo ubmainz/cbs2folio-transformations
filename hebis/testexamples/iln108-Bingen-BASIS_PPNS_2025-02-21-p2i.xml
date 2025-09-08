@@ -317,11 +317,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 15:07</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -1031,11 +1026,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:36</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -1100,11 +1090,6 @@
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:30</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -1164,11 +1149,6 @@
                         <note>Kompaktanlage Stadtgebäude</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>04.08.23 14:31</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                   </arr>
                </notes>
@@ -1230,11 +1210,6 @@
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -1294,11 +1269,6 @@
                         <note>Kompaktanlage Stadtgebäude</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                   </arr>
                </notes>
@@ -1360,11 +1330,6 @@
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -1424,11 +1389,6 @@
                         <note>Kompaktanlage Stadtgebäude</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>04.08.23 14:36</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                   </arr>
                </notes>
@@ -2132,11 +2092,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:36</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -2201,11 +2156,6 @@
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:30</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -2265,11 +2215,6 @@
                         <note>Kompaktanlage Stadtgebäude</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>04.08.23 14:31</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                   </arr>
                </notes>
@@ -2331,11 +2276,6 @@
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -2395,11 +2335,6 @@
                         <note>Kompaktanlage Stadtgebäude</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                   </arr>
                </notes>
@@ -2461,11 +2396,6 @@
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -2525,11 +2455,6 @@
                         <note>Kompaktanlage Stadtgebäude</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>04.08.23 14:36</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                   </arr>
                </notes>
@@ -3233,11 +3158,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:36</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -3302,11 +3222,6 @@
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:30</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -3366,11 +3281,6 @@
                         <note>Kompaktanlage Stadtgebäude</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>04.08.23 14:31</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                   </arr>
                </notes>
@@ -3432,11 +3342,6 @@
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -3496,11 +3401,6 @@
                         <note>Kompaktanlage Stadtgebäude</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                   </arr>
                </notes>
@@ -3562,11 +3462,6 @@
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -3626,11 +3521,6 @@
                         <note>Kompaktanlage Stadtgebäude</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>04.08.23 14:36</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                   </arr>
                </notes>
@@ -4334,11 +4224,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:36</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -4403,11 +4288,6 @@
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:30</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -4467,11 +4347,6 @@
                         <note>Kompaktanlage Stadtgebäude</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>04.08.23 14:31</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                   </arr>
                </notes>
@@ -4533,11 +4408,6 @@
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -4597,11 +4467,6 @@
                         <note>Kompaktanlage Stadtgebäude</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                   </arr>
                </notes>
@@ -4663,11 +4528,6 @@
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -4727,11 +4587,6 @@
                         <note>Kompaktanlage Stadtgebäude</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>04.08.23 14:36</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                   </arr>
                </notes>
@@ -5435,11 +5290,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:36</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -5504,11 +5354,6 @@
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:30</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -5568,11 +5413,6 @@
                         <note>Kompaktanlage Stadtgebäude</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>04.08.23 14:31</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                   </arr>
                </notes>
@@ -5634,11 +5474,6 @@
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -5698,11 +5533,6 @@
                         <note>Kompaktanlage Stadtgebäude</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                   </arr>
                </notes>
@@ -5764,11 +5594,6 @@
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -5828,11 +5653,6 @@
                         <note>Kompaktanlage Stadtgebäude</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>04.08.23 14:36</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                   </arr>
                </notes>
@@ -6536,11 +6356,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:36</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -6605,11 +6420,6 @@
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:30</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -6669,11 +6479,6 @@
                         <note>Kompaktanlage Stadtgebäude</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>04.08.23 14:31</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                   </arr>
                </notes>
@@ -6735,11 +6540,6 @@
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -6799,11 +6599,6 @@
                         <note>Kompaktanlage Stadtgebäude</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                   </arr>
                </notes>
@@ -6865,11 +6660,6 @@
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -6929,11 +6719,6 @@
                         <note>Kompaktanlage Stadtgebäude</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>04.08.23 14:36</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                   </arr>
                </notes>
@@ -7637,11 +7422,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:36</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -7706,11 +7486,6 @@
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:30</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -7770,11 +7545,6 @@
                         <note>Kompaktanlage Stadtgebäude</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>04.08.23 14:31</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                   </arr>
                </notes>
@@ -7836,11 +7606,6 @@
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -7900,11 +7665,6 @@
                         <note>Kompaktanlage Stadtgebäude</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                   </arr>
                </notes>
@@ -7966,11 +7726,6 @@
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -8030,11 +7785,6 @@
                         <note>Kompaktanlage Stadtgebäude</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>04.08.23 14:36</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                   </arr>
                </notes>
@@ -8425,11 +8175,6 @@
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
-                        <note>18.02.25 14:10</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -8804,11 +8549,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>18.02.25 14:11</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -9107,11 +8847,6 @@
                <notes>
                   <arr>
                      <i>
-                        <note>17.02.25 16:46</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -9120,10 +8855,6 @@
                </notes>
                <discoverySuppress>false</discoverySuppress>
                <sourceId>hebis</sourceId>
-               <items>
-                  <arr>
-                  </arr>
-               </items>
                <electronicAccess>
                   <arr/>
                </electronicAccess>
@@ -9453,11 +9184,6 @@
                <notes>
                   <arr>
                      <i>
-                        <note>17.02.25 16:44</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -9466,10 +9192,6 @@
                </notes>
                <discoverySuppress>false</discoverySuppress>
                <sourceId>hebis</sourceId>
-               <items>
-                  <arr>
-                  </arr>
-               </items>
                <electronicAccess>
                   <arr/>
                </electronicAccess>
@@ -9690,11 +9412,6 @@
                <notes>
                   <arr>
                      <i>
-                        <note>17.02.25 15:12</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -9703,10 +9420,6 @@
                </notes>
                <discoverySuppress>false</discoverySuppress>
                <sourceId>hebis</sourceId>
-               <items>
-                  <arr>
-                  </arr>
-               </items>
                <electronicAccess>
                   <arr/>
                </electronicAccess>
@@ -9926,11 +9639,6 @@
                <notes>
                   <arr>
                      <i>
-                        <note>17.02.25 15:11</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -9939,10 +9647,6 @@
                </notes>
                <discoverySuppress>false</discoverySuppress>
                <sourceId>hebis</sourceId>
-               <items>
-                  <arr>
-                  </arr>
-               </items>
                <electronicAccess>
                   <arr/>
                </electronicAccess>
@@ -10204,11 +9908,6 @@
                <notes>
                   <arr>
                      <i>
-                        <note>17.02.25 16:34</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -10217,10 +9916,6 @@
                </notes>
                <discoverySuppress>false</discoverySuppress>
                <sourceId>hebis</sourceId>
-               <items>
-                  <arr>
-                  </arr>
-               </items>
                <electronicAccess>
                   <arr/>
                </electronicAccess>
@@ -10516,11 +10211,6 @@
                <notes>
                   <arr>
                      <i>
-                        <note>17.02.25 15:06</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -10529,10 +10219,6 @@
                </notes>
                <discoverySuppress>false</discoverySuppress>
                <sourceId>hebis</sourceId>
-               <items>
-                  <arr>
-                  </arr>
-               </items>
                <electronicAccess>
                   <arr/>
                </electronicAccess>
@@ -10740,11 +10426,6 @@
                <notes>
                   <arr>
                      <i>
-                        <note>17.02.25 16:35</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -10753,10 +10434,6 @@
                </notes>
                <discoverySuppress>false</discoverySuppress>
                <sourceId>hebis</sourceId>
-               <items>
-                  <arr>
-                  </arr>
-               </items>
                <electronicAccess>
                   <arr/>
                </electronicAccess>
@@ -10966,11 +10643,6 @@
                <notes>
                   <arr>
                      <i>
-                        <note>17.02.25 15:14</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -10979,10 +10651,6 @@
                </notes>
                <discoverySuppress>false</discoverySuppress>
                <sourceId>hebis</sourceId>
-               <items>
-                  <arr>
-                  </arr>
-               </items>
                <electronicAccess>
                   <arr/>
                </electronicAccess>
@@ -11351,11 +11019,6 @@
                      <i>
                         <note>Kauf aus Fachbereichsmitteln</note>
                         <holdingsNoteTypeId>Note</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 14:57</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
@@ -11750,11 +11413,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:34</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -12056,11 +11714,6 @@
                         <note>20200729</note>
                         <holdingsNoteTypeId>Text zur Ausleihbarkeit</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>18.02.25 13:57</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -12488,11 +12141,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:41</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -12549,11 +12197,6 @@
                         <holdingsNoteTypeId>Note</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>03.05.21 15:21</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>true</discoverySuppress>
@@ -12605,11 +12248,6 @@
                         <note>Kompaktanlage Keller, Verfahrenstechnik</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>25.07.20 09:16</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                   </arr>
                </notes>
@@ -13032,11 +12670,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:41</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -13093,11 +12726,6 @@
                         <holdingsNoteTypeId>Note</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>03.05.21 15:21</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>true</discoverySuppress>
@@ -13149,11 +12777,6 @@
                         <note>Kompaktanlage Keller, Verfahrenstechnik</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>25.07.20 09:16</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                   </arr>
                </notes>
@@ -13576,11 +13199,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:41</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -13637,11 +13255,6 @@
                         <holdingsNoteTypeId>Note</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>03.05.21 15:21</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>true</discoverySuppress>
@@ -13693,11 +13306,6 @@
                         <note>Kompaktanlage Keller, Verfahrenstechnik</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>25.07.20 09:16</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                   </arr>
                </notes>
@@ -14078,11 +13686,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:44</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -14137,11 +13740,6 @@
                      <i>
                         <note>Spende</note>
                         <holdingsNoteTypeId>Note</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>06.04.21 11:15</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                   </arr>
@@ -14523,11 +14121,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:44</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -14582,11 +14175,6 @@
                      <i>
                         <note>Spende</note>
                         <holdingsNoteTypeId>Note</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>06.04.21 11:15</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                   </arr>
@@ -14925,11 +14513,6 @@
                         <note>Kompaktanlage Stadtgebäude</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 16:45</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -15280,11 +14863,6 @@
                <holdingsStatements/>
                <notes>
                   <arr>
-                     <i>
-                        <note>17.02.25 15:12</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                      <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
@@ -15658,11 +15236,6 @@
                <notes>
                   <arr>
                      <i>
-                        <note>17.02.25 15:11</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -16027,11 +15600,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:34</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -16087,11 +15655,6 @@
                         <note>Kompaktanlage Keller, Sonstiges</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.20 18:21</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                   </arr>
                </notes>
@@ -16453,11 +16016,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:34</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -16513,11 +16071,6 @@
                         <note>Kompaktanlage Keller, Sonstiges</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.20 18:21</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                   </arr>
                </notes>
@@ -16857,11 +16410,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:36</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -17143,11 +16691,6 @@
                <holdingsStatements/>
                <notes>
                   <arr>
-                     <i>
-                        <note>17.02.25 15:13</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                      <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
@@ -17439,11 +16982,6 @@
                <holdingsStatements/>
                <notes>
                   <arr>
-                     <i>
-                        <note>17.02.25 15:14</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                      <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
@@ -17745,11 +17283,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:36</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -18015,11 +17548,6 @@
                <notes>
                   <arr>
                      <i>
-                        <note>17.02.25 15:09</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -18028,10 +17556,6 @@
                </notes>
                <discoverySuppress>false</discoverySuppress>
                <sourceId>hebis</sourceId>
-               <items>
-                  <arr>
-                  </arr>
-               </items>
                <electronicAccess>
                   <arr/>
                </electronicAccess>
@@ -18428,11 +17952,6 @@
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 15:09</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -18749,11 +18268,6 @@
                         <note>ausgesondert 20210428 snd</note>
                         <holdingsNoteTypeId>Note</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 15:10</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -19102,11 +18616,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>18.02.25 13:53</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -19431,11 +18940,6 @@
                <holdingsStatements/>
                <notes>
                   <arr>
-                     <i>
-                        <note>17.02.25 15:16</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                      <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
@@ -19795,11 +19299,6 @@
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>18.03.21 22:55</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -19851,11 +19350,6 @@
                         <note>Kompaktanlage Keller, Agrarwirtschaft</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 16:38</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -20216,11 +19710,6 @@
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>18.03.21 22:55</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -20272,11 +19761,6 @@
                         <note>Kompaktanlage Keller, Agrarwirtschaft</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 16:38</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -20639,11 +20123,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 14:54</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -20995,11 +20474,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 15:19</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -21347,11 +20821,6 @@
                         <note>Archiv</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 14:55</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -21747,11 +21216,6 @@
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 15:08</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -22098,11 +21562,6 @@
                         <note>Fachbereich II, Studiengang Maschinenbau &lt;gesperrt&gt;</note>
                         <holdingsNoteTypeId>Note</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 14:56</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -22455,11 +21914,6 @@
                         <note>Fachbereich I, Studiengang Medizinische Biotechnologie</note>
                         <holdingsNoteTypeId>Note</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 14:56</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -22857,11 +22311,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.11.22 16:17</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>ka</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -22911,11 +22360,6 @@
                      <i>
                         <note>Kauf</note>
                         <holdingsNoteTypeId>Note</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 15:04</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
@@ -23314,11 +22758,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.11.22 16:17</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>ka</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -23368,11 +22807,6 @@
                      <i>
                         <note>Kauf</note>
                         <holdingsNoteTypeId>Note</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 15:04</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
@@ -23741,11 +23175,6 @@
                         <note>Norm</note>
                         <holdingsNoteTypeId>Note</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 14:59</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -24165,11 +23594,6 @@
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 15:19</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -24502,11 +23926,6 @@
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 15:02</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -24823,11 +24242,6 @@
                         <note>Sonderstandort Atlanten</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 15:03</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -25166,11 +24580,6 @@
                         <note>20200729</note>
                         <holdingsNoteTypeId>Text zur Ausleihbarkeit</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>18.02.25 13:56</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -25530,11 +24939,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>18.02.25 13:55</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -25826,11 +25230,6 @@
                      <i>
                         <note>Kompaktanlage Keller</note>
                         <holdingsNoteTypeId>Note</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 16:37</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
@@ -26205,11 +25604,6 @@
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>17.02.25 16:41</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -26261,11 +25655,6 @@
                         <note>Kompaktanlage Keller Sonderstandort</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 16:41</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -26649,11 +26038,6 @@
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>17.02.25 16:41</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -26705,11 +26089,6 @@
                         <note>Kompaktanlage Keller Sonderstandort</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 16:41</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -27025,11 +26404,6 @@
                <notes>
                   <arr>
                      <i>
-                        <note>17.02.25 15:15</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -27297,11 +26671,6 @@
                <holdingsStatements/>
                <notes>
                   <arr>
-                     <i>
-                        <note>17.02.25 15:15</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                      <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
@@ -27613,11 +26982,6 @@
                      <i>
                         <note>Kf</note>
                         <holdingsNoteTypeId>Note</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 15:00</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
@@ -27933,11 +27297,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:45</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -28233,11 +27592,6 @@
                <holdingsStatements/>
                <notes>
                   <arr>
-                     <i>
-                        <note>17.02.25 15:11</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                      <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
@@ -28553,11 +27907,6 @@
                      <i>
                         <note>Kf</note>
                         <holdingsNoteTypeId>Note</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 15:01</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
@@ -28896,11 +28245,6 @@
                         <note>Sonderstandort</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 17:30</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -29280,11 +28624,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 17:30</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -29350,11 +28689,6 @@
                         <note>Sonderstandort</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>04.12.23 10:54</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>pr</note>
@@ -29729,11 +29063,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 17:30</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -29799,11 +29128,6 @@
                         <note>Sonderstandort</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>04.12.23 10:54</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>pr</note>
@@ -30173,11 +29497,6 @@
                         <note>20200715</note>
                         <holdingsNoteTypeId>Text zur Ausleihbarkeit</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 15:13</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -30588,11 +29907,6 @@
                </holdingsStatements>
                <notes>
                   <arr>
-                     <i>
-                        <note>18.02.25 14:10</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                      <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
@@ -31036,11 +30350,6 @@
                         <note>Verwaltung</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 17:31</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -31506,11 +30815,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 17:31</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -31950,11 +31254,6 @@
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 17:29</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -32004,11 +31303,6 @@
                      <i>
                         <note>Kauf</note>
                         <holdingsNoteTypeId>Note</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>07.11.24 15:52</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                   </arr>
@@ -32446,11 +31740,6 @@
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 17:29</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -32500,11 +31789,6 @@
                      <i>
                         <note>Kauf</note>
                         <holdingsNoteTypeId>Note</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>07.11.24 15:52</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                   </arr>
@@ -32842,11 +32126,6 @@
                      <i>
                         <note>Kauf aus Fachbereichsmitteln</note>
                         <holdingsNoteTypeId>Note</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 14:58</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
@@ -33230,11 +32509,6 @@
                         <note>Handapparat J. Pleiner / Frauenförderung und Gleichstellung</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 17:30</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -33625,11 +32899,6 @@
                         <note>Verwaltung</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 16:43</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -34059,11 +33328,6 @@
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 15:20</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -34118,11 +33382,6 @@
                      <i>
                         <note>A98_Kauf</note>
                         <holdingsNoteTypeId>Note</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>18.02.20 20:06</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                   </arr>
@@ -34548,11 +33807,6 @@
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 15:20</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -34607,11 +33861,6 @@
                      <i>
                         <note>A98_Kauf</note>
                         <holdingsNoteTypeId>Note</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>18.02.20 20:06</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                   </arr>
@@ -34970,11 +34219,6 @@
                         <note>Altbestand Kompaktanlage</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 16:39</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -35389,11 +34633,6 @@
                         <holdingsNoteTypeId>Note</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
-                     <i>
-                        <note>15.02.22 15:50</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -35439,11 +34678,6 @@
                      <i>
                         <note>gekauft aus den Mitteln des Rechenzentrums, Pt</note>
                         <holdingsNoteTypeId>Note</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 16:43</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
@@ -35859,11 +35093,6 @@
                         <holdingsNoteTypeId>Note</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
-                     <i>
-                        <note>15.02.22 15:50</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -35909,11 +35138,6 @@
                      <i>
                         <note>gekauft aus den Mitteln des Rechenzentrums, Pt</note>
                         <holdingsNoteTypeId>Note</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 16:43</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
@@ -36314,11 +35538,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:40</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -36711,11 +35930,6 @@
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 15:17</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -36776,11 +35990,6 @@
                         <note>ausgesondert 20210512 Böa</note>
                         <holdingsNoteTypeId>Note</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.08.22 14:54</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                   </arr>
                </notes>
@@ -37160,11 +36369,6 @@
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 15:17</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -37225,11 +36429,6 @@
                         <note>ausgesondert 20210512 Böa</note>
                         <holdingsNoteTypeId>Note</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.08.22 14:54</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                   </arr>
                </notes>
@@ -37603,11 +36802,6 @@
                         <note>Kompaktanlage Keller, Wirtschaft</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 16:39</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -38035,11 +37229,6 @@
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 15:18</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -38089,11 +37278,6 @@
                      <i>
                         <note>Kauf</note>
                         <holdingsNoteTypeId>Note</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>06.08.20 14:54</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                   </arr>
@@ -38146,11 +37330,6 @@
                      <i>
                         <note>A98_Kauf</note>
                         <holdingsNoteTypeId>Note</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>06.08.20 14:54</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                   </arr>
@@ -38574,11 +37753,6 @@
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 15:18</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -38628,11 +37802,6 @@
                      <i>
                         <note>Kauf</note>
                         <holdingsNoteTypeId>Note</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>06.08.20 14:54</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                   </arr>
@@ -38685,11 +37854,6 @@
                      <i>
                         <note>A98_Kauf</note>
                         <holdingsNoteTypeId>Note</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>06.08.20 14:54</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                   </arr>
@@ -39113,11 +38277,6 @@
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 15:18</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -39167,11 +38326,6 @@
                      <i>
                         <note>Kauf</note>
                         <holdingsNoteTypeId>Note</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>06.08.20 14:54</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                   </arr>
@@ -39224,11 +38378,6 @@
                      <i>
                         <note>A98_Kauf</note>
                         <holdingsNoteTypeId>Note</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>06.08.20 14:54</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                   </arr>
@@ -39629,11 +38778,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:37</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -40007,11 +39151,6 @@
                <notes>
                   <arr>
                      <i>
-                        <note>17.02.25 15:13</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -40061,11 +39200,6 @@
                      <i>
                         <note>Kauf</note>
                         <holdingsNoteTypeId>Note</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>08.03.22 11:13</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                   </arr>
@@ -40437,11 +39571,6 @@
                <notes>
                   <arr>
                      <i>
-                        <note>17.02.25 15:13</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>Lokaler Schlüssel</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -40491,11 +39620,6 @@
                      <i>
                         <note>Kauf</note>
                         <holdingsNoteTypeId>Note</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>08.03.22 11:13</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                   </arr>
@@ -40818,11 +39942,6 @@
                         <note>Kompaktanlage Rara</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 16:45</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -41160,11 +40279,6 @@
                         <note>Kompaktanlage Keller, Ingenieurgrundlagen</note>
                         <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 16:38</note>
-                        <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
