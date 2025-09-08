@@ -130,6 +130,13 @@
                <i>Hebis-Datensatz hebis-PPN: 459863746</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>304200</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -384,6 +391,13 @@
                <i>Hebis-Datensatz hebis-PPN: 212057553</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>323020</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -1043,6 +1057,13 @@
                <i>Hebis-Datensatz hebis-PPN: 212057553</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>323020</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -1702,6 +1723,13 @@
                <i>Hebis-Datensatz hebis-PPN: 212057553</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>323020</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -2361,6 +2389,13 @@
                <i>Hebis-Datensatz hebis-PPN: 212057553</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>323020</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -3020,6 +3055,13 @@
                <i>Hebis-Datensatz hebis-PPN: 212057553</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>323020</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -3679,6 +3721,13 @@
                <i>Hebis-Datensatz hebis-PPN: 212057553</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>323020</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -4338,6 +4387,13 @@
                <i>Hebis-Datensatz hebis-PPN: 212057553</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>323020</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -4993,6 +5049,9 @@
                <i>Hebis-Datensatz hebis-PPN: 047083476</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr/>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -5227,6 +5286,9 @@
                <i>Hebis-Datensatz hebis-PPN: 047103302</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr/>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -5449,6 +5511,9 @@
                <i>Hebis-Datensatz hebis-PPN: 030564875</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr/>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -5679,6 +5744,13 @@
                <i>Hebis-Datensatz hebis-PPN: 030071593</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>600000</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -5868,6 +5940,9 @@
                <i>Hebis-Datensatz hebis-PPN: 028205898</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr/>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -6057,6 +6132,9 @@
                <i>Hebis-Datensatz hebis-PPN: 020254784</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr/>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -6260,6 +6338,9 @@
                <i>Hebis-Datensatz hebis-PPN: 004915100</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr/>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -6482,6 +6563,13 @@
                <i>Hebis-Datensatz hebis-PPN: 004072715</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>135100</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -6666,6 +6754,9 @@
                <i>Hebis-Datensatz hebis-PPN: 459513141</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr/>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -6850,6 +6941,9 @@
                <i>Hebis-Datensatz hebis-PPN: 459508202</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr/>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -7072,6 +7166,13 @@
                <i>Hebis-Datensatz hebis-PPN: 520320336</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>135100</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations>
          <parentInstances>
@@ -7301,6 +7402,9 @@
                <i>Hebis-Datensatz hebis-PPN: 224192558</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr/>
+         </subjects>
       </instance>
       <instanceRelations>
          <parentInstances>
@@ -7516,6 +7620,9 @@
                <i>Hebis-Datensatz hebis-PPN: 21589913X</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr/>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -7736,6 +7843,13 @@
                <i>Hebis-Datensatz hebis-PPN: 024035998</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>660000</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations>
          <parentInstances>
@@ -8075,6 +8189,13 @@
                <i>Hebis-Datensatz hebis-PPN: 024035998</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>660000</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations>
          <parentInstances>
@@ -8414,6 +8535,13 @@
                <i>Hebis-Datensatz hebis-PPN: 024035998</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>660000</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations>
          <parentInstances>
@@ -8762,6 +8890,9 @@
                <i>Hebis-Datensatz hebis-PPN: 054453593</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr/>
+         </subjects>
       </instance>
       <instanceRelations>
          <parentInstances>
@@ -9051,6 +9182,9 @@
                <i>Hebis-Datensatz hebis-PPN: 054453593</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr/>
+         </subjects>
       </instance>
       <instanceRelations>
          <parentInstances>
@@ -9325,6 +9459,9 @@
                <i>Hebis-Datensatz hebis-PPN: 030566061</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr/>
+         </subjects>
       </instance>
       <instanceRelations>
          <parentInstances>
@@ -9553,6 +9690,13 @@
                <i>Hebis-Datensatz hebis-PPN: 028219317</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>687000</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations>
          <parentInstances>
@@ -9791,6 +9935,13 @@
                <i>Hebis-Datensatz hebis-PPN: 020254830</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>120510</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations>
          <parentInstances>
@@ -9988,6 +10139,13 @@
                <i>Hebis-Datensatz hebis-PPN: 459553135</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>102010</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations>
          <parentInstances>
@@ -10259,6 +10417,13 @@
                <i>Hebis-Datensatz hebis-PPN: 459553135</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>102010</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations>
          <parentInstances>
@@ -10544,6 +10709,13 @@
                <i>Hebis-Datensatz hebis-PPN: 459548727</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>682500</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations>
          <parentInstances>
@@ -10746,6 +10918,13 @@
                <i>Hebis-Datensatz hebis-PPN: 45955607X</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>410910</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations>
          <parentInstances>
@@ -10941,6 +11120,13 @@
                <i>Hebis-Datensatz hebis-PPN: 459543121</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>410910</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations>
          <parentInstances>
@@ -11162,6 +11348,9 @@
                <i>Hebis-Datensatz hebis-PPN: 099625431</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr/>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -11368,6 +11557,9 @@
                <i>Hebis-Datensatz hebis-PPN: 210438460</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr/>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -11606,6 +11798,13 @@
                <i>Hebis-Datensatz hebis-PPN: 512089876</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>153000</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations>
          <parentInstances>
@@ -11828,6 +12027,9 @@
                <i>Hebis-Datensatz hebis-PPN: 123946751</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr/>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -12040,6 +12242,13 @@
                <i>Hebis-Datensatz hebis-PPN: 034085912</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>311000</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -12264,6 +12473,13 @@
                <i>Hebis-Datensatz hebis-PPN: 011708255</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>321011</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -12467,6 +12683,9 @@
                <i>Hebis-Datensatz hebis-PPN: 034820345</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr/>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -12734,6 +12953,9 @@
                <i>Hebis-Datensatz hebis-PPN: 034820345</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr/>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -13008,6 +13230,13 @@
                <i>Hebis-Datensatz hebis-PPN: 527379344</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>512000</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -13222,6 +13451,13 @@
                <i>Hebis-Datensatz hebis-PPN: 524409153</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>503400</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -13442,6 +13678,13 @@
                <i>Hebis-Datensatz hebis-PPN: 524215103</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>400070</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -13685,6 +13928,13 @@
                <i>Hebis-Datensatz hebis-PPN: 521698812</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>136020</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -13895,6 +14145,13 @@
                <i>Hebis-Datensatz hebis-PPN: 519154584</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>410200</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -14115,6 +14372,13 @@
                <i>Hebis-Datensatz hebis-PPN: 517468727</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>162000</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -14335,6 +14599,13 @@
                <i>Hebis-Datensatz hebis-PPN: 459987119</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>600200</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -14619,6 +14890,13 @@
                <i>Hebis-Datensatz hebis-PPN: 459987119</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>600200</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -14907,6 +15185,13 @@
                <i>Hebis-Datensatz hebis-PPN: 518276015</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>120560</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -15152,6 +15437,13 @@
                <i>Hebis-Datensatz hebis-PPN: 401043533</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>136030</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -15369,6 +15661,13 @@
                <i>Hebis-Datensatz hebis-PPN: 459852566</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>270900</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -15566,6 +15865,13 @@
                <i>Hebis-Datensatz hebis-PPN: 459859331</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>153000</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -15778,6 +16084,13 @@
                <i>Hebis-Datensatz hebis-PPN: 459802348</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>180000</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -16000,6 +16313,13 @@
                <i>Hebis-Datensatz hebis-PPN: 459807838</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>180000</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -16209,6 +16529,13 @@
                <i>Hebis-Datensatz hebis-PPN: 459724398</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>303000</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -16412,6 +16739,13 @@
                <i>Hebis-Datensatz hebis-PPN: 459722816</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>321010</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -16684,6 +17018,13 @@
                <i>Hebis-Datensatz hebis-PPN: 459722816</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>321010</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -16961,6 +17302,13 @@
                <i>Hebis-Datensatz hebis-PPN: 459692089</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>301000</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -17140,6 +17488,13 @@
                <i>Hebis-Datensatz hebis-PPN: 459569570</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>321100</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -17338,6 +17693,13 @@
                <i>Hebis-Datensatz hebis-PPN: 459628550</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>112320</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -17537,6 +17899,13 @@
                <i>Hebis-Datensatz hebis-PPN: 459569090</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>262000</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -17739,6 +18108,13 @@
                <i>Hebis-Datensatz hebis-PPN: 459877992</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>342000</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -17937,6 +18313,13 @@
                <i>Hebis-Datensatz hebis-PPN: 45962847X</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>112420</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -18148,6 +18531,9 @@
                <i>Hebis-Datensatz hebis-PPN: 058357548</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr/>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -18381,6 +18767,9 @@
                <i>Hebis-Datensatz hebis-PPN: 014370379</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr/>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -18673,6 +19062,9 @@
                <i>Hebis-Datensatz hebis-PPN: 014370379</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr/>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -18979,6 +19371,13 @@
                <i>Hebis-Datensatz hebis-PPN: 010350861</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>162300</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -19227,6 +19626,13 @@
                <i>Hebis-Datensatz hebis-PPN: 471353302</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>114300</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -19491,6 +19897,13 @@
                <i>Hebis-Datensatz hebis-PPN: 517098946</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>174000</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -19761,6 +20174,13 @@
                <i>Hebis-Datensatz hebis-PPN: 516719769</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>112700</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -20008,6 +20428,13 @@
                <i>Hebis-Datensatz hebis-PPN: 50327044X</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>270230</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -20304,6 +20731,13 @@
                <i>Hebis-Datensatz hebis-PPN: 50327044X</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>270230</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -20569,6 +21003,13 @@
                <i>Hebis-Datensatz hebis-PPN: 502529148</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>123010</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -20809,6 +21250,9 @@
                <i>Hebis-Datensatz hebis-PPN: 489398928</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr/>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -21048,6 +21492,13 @@
                <i>Hebis-Datensatz hebis-PPN: 481376755</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>270100</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -21284,6 +21735,13 @@
                <i>Hebis-Datensatz hebis-PPN: 378493051</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>270500</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -21574,6 +22032,13 @@
                <i>Hebis-Datensatz hebis-PPN: 378493051</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>270500</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -21861,6 +22326,9 @@
                <i>Hebis-Datensatz hebis-PPN: 185507549</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr/>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -22109,6 +22577,13 @@
                <i>Hebis-Datensatz hebis-PPN: 177742690</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>270960</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -22401,6 +22876,13 @@
                <i>Hebis-Datensatz hebis-PPN: 177742690</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>270960</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -22683,6 +23165,13 @@
                <i>Hebis-Datensatz hebis-PPN: 108942368</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>332300</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -22911,6 +23400,13 @@
                <i>Hebis-Datensatz hebis-PPN: 104288116</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>501100</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -23188,6 +23684,13 @@
                <i>Hebis-Datensatz hebis-PPN: 104288116</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>501100</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -23472,6 +23975,13 @@
                <i>Hebis-Datensatz hebis-PPN: 094812411</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>135110</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -23702,6 +24212,13 @@
                <i>Hebis-Datensatz hebis-PPN: 082051852</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>510100</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -24035,6 +24552,13 @@
                <i>Hebis-Datensatz hebis-PPN: 082051852</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>510100</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -24368,6 +24892,13 @@
                <i>Hebis-Datensatz hebis-PPN: 082051852</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>510100</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -24703,6 +25234,13 @@
                <i>Hebis-Datensatz hebis-PPN: 06154244X</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>400010</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -24929,6 +25467,13 @@
                <i>Hebis-Datensatz hebis-PPN: 006701957</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>332300</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -25194,6 +25739,13 @@
                <i>Hebis-Datensatz hebis-PPN: 006701957</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>332300</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -25451,6 +26003,13 @@
                <i>Hebis-Datensatz hebis-PPN: 010538941</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr>
+               <i>
+                  <value>262100</value>
+               </i>
+            </arr>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>
@@ -25668,6 +26227,9 @@
                <i>Hebis-Datensatz hebis-PPN: 03490753X</i>
             </arr>
          </administrativeNotes>
+         <subjects>
+            <arr/>
+         </subjects>
       </instance>
       <instanceRelations/>
       <processing>

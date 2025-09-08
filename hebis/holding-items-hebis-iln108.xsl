@@ -30,6 +30,13 @@
               <i><xsl:value-of select="concat('Hebis-Datensatz hebis-PPN: ',instance/hrid)"/></i>
             </arr>
           </administrativeNotes>
+          <subjects>
+            <arr>
+              <xsl:for-each select="original/datafield[@tag='145Z']/subfield[@code='a']">
+                <i><value><xsl:value-of select="."/></value></i>
+              </xsl:for-each>
+            </arr>
+          </subjects>
         </instance>
         <xsl:apply-templates select="instanceRelations|processing"/>
         <xsl:variable name="original" select="original"/>
