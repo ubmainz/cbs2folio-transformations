@@ -261,13 +261,13 @@
           <item>
             <blockDeletion>
               <ifField>hrid</ifField>
-              <matchesPattern>.*</matchesPattern> <!-- \D.* -->
+              <matchesPattern>\D.*</matchesPattern>
             </blockDeletion>
           </item>
           <holdingsRecord>
             <blockDeletion>
               <ifField>hrid</ifField>
-              <matchesPattern>.*</matchesPattern> <!-- \D.* -->
+              <matchesPattern>\D.*</matchesPattern>
             </blockDeletion>
             <statisticalCoding>
               <arr>
@@ -275,17 +275,6 @@
                   <if>deleteSkipped</if>
                   <becauseOf>ITEM_STATUS</becauseOf>
                   <setCode>ITEM_STATUS</setCode>
-                </i>
-              </arr>
-            </statisticalCoding>
-          </holdingsRecord>
-          <instance>
-            <statisticalCoding>
-              <arr>
-                <i>
-                  <if>deleteSkipped</if>
-                  <becauseOf>PO_LINE_REFERENCE</becauseOf>
-                  <setCode>PO_LINE_REFERENCE</setCode>
                 </i>
                 <i>
                   <if>deleteSkipped</if>
@@ -297,6 +286,17 @@
                   <becauseOf>ITEM_PATTERN_MATCH</becauseOf>
                   <setCode>ITEM_PATTERN_MATCH</setCode>
                 </i> 
+              </arr>
+            </statisticalCoding>
+          </holdingsRecord>
+          <instance>
+            <statisticalCoding>
+              <arr>
+                <i>
+                  <if>deleteSkipped</if>
+                  <becauseOf>PO_LINE_REFERENCE</becauseOf>
+                  <setCode>PO_LINE_REFERENCE</setCode>
+                </i>
               </arr>
             </statisticalCoding>
           </instance>
