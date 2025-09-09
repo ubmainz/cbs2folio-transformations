@@ -56,7 +56,7 @@
         <xsl:when test=".='Weitere Signaturen (7108)'"><xsl:text>f43a450a-0574-450b-9dd1-74d9ae6a6502</xsl:text></xsl:when>     
         <xsl:when test=".='Magazinsignatur (nur Monografien) (7109)'"><xsl:text>a3b8e442-a3bf-461e-a708-173001b8e67c</xsl:text></xsl:when>
         <xsl:when test=".='Magazinsignatur (nur Zeitschriften) (7110)'"><xsl:text>24f2019c-2e64-42b3-a760-7a89a0dcb363</xsl:text></xsl:when>
-        <xsl:otherwise>b160f13a-ddba-4053-b9c4-60ec5ea45d56</xsl:otherwise> <!-- Note -->
+        <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
       </xsl:choose>
     </holdingsNoteTypeId>
   </xsl:template>
@@ -574,7 +574,7 @@
         <xsl:when test=".='Universal Product Code (UPC)'"><xsl:text>0b9e3fe0-7452-445f-8696-e39f9f48ace3</xsl:text></xsl:when>
         <xsl:when test=".='Verlags-, Produktions- und Bestellnummer'"><xsl:text>e0f6787d-a556-4d03-9850-e60c5a2baec1</xsl:text></xsl:when>
         <xsl:when test=".='Other standard identifier'">2e8b3b6c-0e7d-4e48-bca2-b0b23b376af5</xsl:when>
-        <xsl:otherwise>2e8b3b6c-0e7d-4e48-bca2-b0b23b376af5</xsl:otherwise> <!-- Other standard identifier -->
+        <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
       </xsl:choose>
     </identifierTypeId>
   </xsl:template>
@@ -585,6 +585,7 @@
     <xsl:choose>
       <xsl:when test=".='Lokale Klassifikation'"><xsl:text>720a846a-85db-4d3a-bfd9-7dfd2f55ae4a</xsl:text></xsl:when>
       <xsl:when test=".='RVK'"><xsl:text>9a0d9e18-166a-4a79-9c20-68430ced288a</xsl:text></xsl:when>
+      <xsl:when test=".='DDC'"><xsl:text>42471af9-7d25-4f3a-bf78-60d29dcf463b</xsl:text></xsl:when>
     </xsl:choose>
     </classificationTypeId>
   </xsl:template>
@@ -605,7 +606,8 @@
       <xsl:choose>
         <xsl:when test=".='FOLIO'"><xsl:text>f32d531e-df79-46b3-8932-cdd35f7a2264</xsl:text></xsl:when>
         <xsl:when test=".='hebis'"><xsl:text>ed96edb1-d91d-4a31-9c40-006f5199d782</xsl:text></xsl:when> <!-- hebis wide -->
-        <xsl:otherwise>f32d531e-df79-46b3-8932-cdd35f7a2264</xsl:otherwise> <!-- FOLIO -->
+        <xsl:when test=".='K10plus'"><xsl:text>fa687f33-aab5-4119-b0ad-05afe8de4d92</xsl:text></xsl:when>
+        <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
       </xsl:choose>
     </sourceId>
   </xsl:template>
@@ -984,7 +986,7 @@
         <xsl:when test=".='PO_LINE_REFERENCE'"><xsl:text>dcf1220f-5524-4f1e-8e40-5da3366e8478</xsl:text></xsl:when>
         <xsl:when test=".='ITEM_PATTERN_MATCH'"><xsl:text>970b8b4e-ee88-4037-b954-a10ee75340f0</xsl:text></xsl:when>
         <xsl:when test=".='HOLDINGS_RECORD_PATTERN_MATCH'"><xsl:text>ac9bae48-d14c-4414-919a-292d539f9967</xsl:text></xsl:when>
-        <xsl:otherwise>unknown</xsl:otherwise>
+        <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
       </xsl:choose>
     </setCode>
   </xsl:template>

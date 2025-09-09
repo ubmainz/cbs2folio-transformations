@@ -12,47 +12,57 @@
 
   <!-- ILN 108 TH Bingen -->
   
-  <!-- records are excluded -->
-  <xsl:template match="record[holdingsRecords/arr/i/notes/arr/i[holdingsNoteTypeId='Lizenzindikator']/note='0']"/>
-
   <xsl:template match="record[delete]">
     <xsl:copy-of select="."/>
   </xsl:template>
 
   <xsl:template match="record">
-    <record>
-      <xsl:copy-of select="original"/>
-      <instance>
-        <source>hebis</source>
-        <hrid><xsl:value-of select="original/datafield[@tag='003@']/subfield[@code='0']"/></hrid>
-        <xsl:apply-templates select="instance/*[not(self::hrid or self::source or self::administrativeNotes)]"/>
-        <administrativeNotes>
+    <xsl:if test="not(substring(original/datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O')"> <!-- Bingen keine Online-Ressourcen -->
+      <record>
+        <xsl:copy-of select="original"/>
+        <instance>
+          <source>hebis</source>
+          <hrid><xsl:value-of select="concat('HEB',original/datafield[@tag='003@']/subfield[@code='0'])"/></hrid>
+          <xsl:apply-templates select="instance/*[not(self::hrid or self::source or self::administrativeNotes)]"/>
+          <administrativeNotes>
+            <arr>
+              <xsl:apply-templates select="instance/administrativeNotes/arr/*"/>
+              <i><xsl:value-of select="concat('Hebis-Datensatz hebis-PPN: ',instance/hrid)"/></i>
+            </arr>
+          </administrativeNotes>
+          <subjects>
+            <arr>
+              <xsl:for-each select="original/datafield[@tag='145Z']/subfield[@code='a']">
+                <i><value><xsl:value-of select="."/></value></i>
+              </xsl:for-each>
+            </arr>
+          </subjects>
+        </instance>
+        <xsl:apply-templates select="instanceRelations|processing"/>
+        <xsl:variable name="original" select="original"/>
+        <holdingsRecords>
           <arr>
-            <xsl:apply-templates select="instance/administrativeNotes/arr/*"/>
-            <i><xsl:value-of select="concat('Hebis-Datensatz hebis-PPN: ',instance/hrid)"/></i>
+            <xsl:for-each select="holdingsRecords/arr/i">
+              <i>
+                <xsl:apply-templates select="*[not(self::administrativeNotes)]"/>
+                <administrativeNotes>
+                  <arr>
+                    <xsl:apply-templates select="administrativeNotes/arr/*"/>
+                    <i><xsl:value-of select="concat(translate($original/item[@epn=current()/hrid]/datafield[@tag='201B']/subfield[@code='0'], '-', '.'),', ', substring($original/item[@epn=current()/hrid]/datafield[@tag='201B']/subfield[@code='t'],1,5), ' (Letzte Änderung CBS)')"/></i>
+                    <i><xsl:value-of select="concat('Hebis-Datensatz hebis-EPN: ',hrid)"/></i>
+                  </arr>
+                </administrativeNotes>
+              </i>
+            </xsl:for-each>
           </arr>
-        </administrativeNotes>
-      </instance>
-      <xsl:apply-templates select="instanceRelations|processing"/>
-      <xsl:variable name="original" select="original"/>
-      <holdingsRecords>
-        <arr>
-          <xsl:for-each select="holdingsRecords/arr/i">
-            <i>
-              <xsl:apply-templates select="*[not(self::administrativeNotes)]"/>
-              <administrativeNotes>
-                <arr>
-                  <xsl:apply-templates select="administrativeNotes/arr/*"/>
-                  <i><xsl:value-of select="concat(translate($original/item[@epn=current()/hrid]/datafield[@tag='201B']/subfield[@code='0'], '-', '.'),', ', substring($original/item[@epn=current()/hrid]/datafield[@tag='201B']/subfield[@code='t'],1,5), ' (Letzte Änderung CBS)')"/></i>
-                  <i><xsl:value-of select="concat('Hebis-Datensatz hebis-EPN: ',hrid)"/></i>
-                </arr>
-              </administrativeNotes>
-            </i>
-          </xsl:for-each>
-        </arr>
-      </holdingsRecords>
-    </record>
+        </holdingsRecords>
+      </record>
+    </xsl:if>
   </xsl:template>
+
+  <xsl:template match="i[permanentLoanTypeId='dummy']"/>
+  
+  <xsl:template match="i[holdingsNoteTypeId='Letzte Änderung CBS']"/>
 
   <xsl:template match="permanentLocationId">
     <xsl:variable name="i" select="key('original',.)"/>
@@ -107,6 +117,10 @@
         <xsl:copy-of select="*[name(.)!='note']"/>
       </i>
     </xsl:if>
+  </xsl:template>
+
+  <xsl:template match="hrid">
+    <hrid><xsl:value-of select="concat('HEB',.)"/></hrid>
   </xsl:template>
 
 </xsl:stylesheet>

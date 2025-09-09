@@ -23,7 +23,7 @@
         <administrativeNotes>
           <arr>
             <xsl:apply-templates select="instance/administrativeNotes/arr/*"/>
-            <i><xsl:value-of select="concat('Hebis-Datensatz hebis-PPN: ',instance/hrid)"/></i>
+            <i><xsl:value-of select="concat('Hebis-Instanz hebis-PPN: ',instance/hrid)"/></i>
           </arr>
         </administrativeNotes>
       </instance>
@@ -38,7 +38,7 @@
                 <arr>
                   <xsl:apply-templates select="administrativeNotes/arr/*"/>
                   <i><xsl:value-of select="concat(translate($original/item[@epn=current()/hrid]/datafield[@tag='201B']/subfield[@code='0'], '-', '.'),', ', substring($original/item[@epn=current()/hrid]/datafield[@tag='201B']/subfield[@code='t'],1,5), ' (Letzte Änderung CBS)')"/></i>
-                  <i><xsl:value-of select="concat('Hebis-Datensatz hebis-EPN: ',hrid)"/></i>
+                  <i><xsl:value-of select="concat('Datenursprung Hebis hebis-EPN: ',hrid)"/></i>
                 </arr>
               </administrativeNotes>
             </i>
@@ -111,6 +111,20 @@
       </instance>
     </processing>
   </xsl:template>
+
+  <xsl:template match="materialTypeId"> <!-- Level 0/2: hebis wide and local -->
+    <xsl:variable name="i" select="key('original',../../../../permanentLocationId)"/>
+    <materialTypeId>
+       <xsl:choose>
+         <xsl:when test="(substring($i/../datafield[@tag='002@']/subfield[@code='0'],1,1) != 'O') and (substring($i/../datafield[@tag='002@']/subfield[@code='0'],2,2) = 'bv')">Zeitschriftenband</xsl:when>
+         <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
+       </xsl:choose>
+    </materialTypeId>
+  </xsl:template>
+
+  <xsl:template match="i[permanentLoanTypeId='dummy']"/>
+  
+  <xsl:template match="i[holdingsNoteTypeId='Letzte Änderung CBS']"/>
 
   <xsl:template match="permanentLocationId">
     <xsl:variable name="i" select="key('original',.)"/>

@@ -20,21 +20,16 @@
         <xsl:copy-of select="$currentrecord/processing"/>
           <instance>
             <source>K10plus</source>
-            <hrid><xsl:value-of select="."/></hrid>
-            <xsl:choose>
-              <xsl:when test=".=$currentrecord/original/datafield[@tag='003H']/subfield[@code='0']">
-                <matchKey><xsl:value-of select="$currentrecord/original/datafield[@tag='003@']/subfield[@code='0']"/></matchKey>
-              </xsl:when>
-              <xsl:otherwise>
-                <matchKey/>
-              </xsl:otherwise>
-            </xsl:choose>
+            <hrid><xsl:value-of select="concat('HEB',.)"/></hrid>
+            <!-- <hrid><xsl:value-of select="."/></hrid> ohne HEB -->
             <xsl:apply-templates select="$currentrecord/instance/*[not(self::hrid or self::source or self::administrativeNotes)]"/>
             <administrativeNotes>
               <arr>
                 <xsl:apply-templates select="$currentrecord/instance/administrativeNotes/arr/*"/>
-                <i><xsl:value-of select="concat('Wolpertingerdatensatz K10plus-PPN: ',$currentrecord/original/datafield[@tag='003@']/subfield[@code='0'],
-                    ' hebis-PPN: ',.,' - Instanz aus K10plus')"/></i>
+                <i>
+                  <xsl:text>Wolpertinger</xsl:text>
+                  <xsl:if test="not(.=$currentrecord/original/datafield[@tag='003H']/subfield[@code='0'])"><xsl:value-of select="concat(' für Hebis-PPN: ',.)"/></xsl:if>
+                </i>
               </arr>
             </administrativeNotes>
             <xsl:if test="$hebppns-dist[2]">
@@ -46,9 +41,19 @@
             </xsl:if>
           </instance>
           <!-- instance relations? -->
-          <xsl:apply-templates select="$currentrecord/holdingsRecords"/>        
+        <xsl:if test="not($hebppns-dist[2])">
+          <xsl:apply-templates select="$currentrecord/holdingsRecords"/>
+        </xsl:if>        
       </record>
     </xsl:for-each>
+  </xsl:template>
+
+  <xsl:template match="holdingsRecords/arr/i[formerIds/arr/i[2]]/hrid">
+    <hrid><xsl:value-of select="../formerIds/arr/i[2]"/></hrid>
+  </xsl:template>
+  
+  <xsl:template match="items/arr/i[formerIds/arr/i[2]]/hrid">
+    <hrid><xsl:value-of select="../formerIds/arr/i[2]"/></hrid>
   </xsl:template>
 
 </xsl:stylesheet>
