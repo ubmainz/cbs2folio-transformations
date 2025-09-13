@@ -60,6 +60,16 @@
     </xsl:if>
   </xsl:template>
 
+  <xsl:template match="materialTypeId"> <!-- Level 0/2: hebis wide and local -->
+    <xsl:variable name="i" select="key('original',../../../../permanentLocationId)"/>
+    <materialTypeId>
+      <xsl:choose>
+        <xsl:when test="(substring($i/../datafield[@tag='002@']/subfield[@code='0'],1,1) != 'O') and (substring($i/../datafield[@tag='002@']/subfield[@code='0'],2,2) = 'bv')">Zeitschriftenband</xsl:when>
+        <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
+      </xsl:choose>
+    </materialTypeId>
+  </xsl:template>
+
   <xsl:template match="i[permanentLoanTypeId='dummy']"/>
   
   <xsl:template match="i[holdingsNoteTypeId='Letzte Änderung CBS']"/>
