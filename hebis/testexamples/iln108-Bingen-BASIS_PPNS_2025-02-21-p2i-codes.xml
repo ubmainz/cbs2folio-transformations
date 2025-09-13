@@ -207,11 +207,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 15:07</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -474,11 +469,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:36</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -491,7 +481,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082639079-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -545,11 +535,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:30</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -558,7 +543,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082646172-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -612,11 +597,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:31</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -625,7 +605,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082640042-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -679,11 +659,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -692,7 +667,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082645141-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -746,11 +721,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -759,7 +729,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082642657-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -813,11 +783,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -826,7 +791,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082645133-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -880,11 +845,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:36</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -893,7 +853,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082644358-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -1140,11 +1100,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:36</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -1157,7 +1112,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082639079-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -1211,11 +1166,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:30</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -1224,7 +1174,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082646172-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -1278,11 +1228,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:31</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -1291,7 +1236,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082640042-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -1345,11 +1290,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -1358,7 +1298,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082645141-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -1412,11 +1352,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -1425,7 +1360,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082642657-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -1479,11 +1414,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -1492,7 +1422,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082645133-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -1546,11 +1476,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:36</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -1559,7 +1484,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082644358-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -1806,11 +1731,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:36</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -1823,7 +1743,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082639079-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -1877,11 +1797,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:30</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -1890,7 +1805,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082646172-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -1944,11 +1859,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:31</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -1957,7 +1867,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082640042-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -2011,11 +1921,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -2024,7 +1929,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082645141-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -2078,11 +1983,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -2091,7 +1991,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082642657-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -2145,11 +2045,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -2158,7 +2053,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082645133-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -2212,11 +2107,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:36</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -2225,7 +2115,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082644358-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -2472,11 +2362,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:36</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -2489,7 +2374,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082639079-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -2543,11 +2428,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:30</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -2556,7 +2436,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082646172-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -2610,11 +2490,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:31</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -2623,7 +2498,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082640042-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -2677,11 +2552,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -2690,7 +2560,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082645141-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -2744,11 +2614,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -2757,7 +2622,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082642657-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -2811,11 +2676,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -2824,7 +2684,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082645133-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -2878,11 +2738,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:36</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -2891,7 +2746,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082644358-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -3138,11 +2993,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:36</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -3155,7 +3005,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082639079-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -3209,11 +3059,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:30</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -3222,7 +3067,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082646172-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -3276,11 +3121,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:31</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -3289,7 +3129,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082640042-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -3343,11 +3183,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -3356,7 +3191,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082645141-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -3410,11 +3245,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -3423,7 +3253,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082642657-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -3477,11 +3307,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -3490,7 +3315,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082645133-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -3544,11 +3369,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:36</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -3557,7 +3377,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082644358-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -3804,11 +3624,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:36</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -3821,7 +3636,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082639079-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -3875,11 +3690,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:30</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -3888,7 +3698,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082646172-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -3942,11 +3752,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:31</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -3955,7 +3760,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082640042-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -4009,11 +3814,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -4022,7 +3822,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082645141-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -4076,11 +3876,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -4089,7 +3884,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082642657-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -4143,11 +3938,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -4156,7 +3946,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082645133-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -4210,11 +4000,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:36</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -4223,7 +4008,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082644358-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -4470,11 +4255,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:36</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -4487,7 +4267,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082639079-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -4541,11 +4321,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:30</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -4554,7 +4329,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082646172-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -4608,11 +4383,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:31</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -4621,7 +4391,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082640042-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -4675,11 +4445,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -4688,7 +4453,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082645141-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -4742,11 +4507,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -4755,7 +4515,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082642657-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -4809,11 +4569,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:35</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -4822,7 +4577,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082645133-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -4876,11 +4631,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>04.08.23 14:36</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -4889,7 +4639,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082644358-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -5123,11 +4873,6 @@
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
-                        <note>18.02.25 14:10</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -5140,7 +4885,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082623261-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>f0f0114d-09a3-4785-b9ca-93d2f3c47bda</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -5365,11 +5110,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>18.02.25 14:11</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -5382,7 +5122,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1118379934-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -5573,11 +5313,6 @@
                <holdingsStatements/>
                <notes>
                   <arr>
-                     <i>
-                        <note>17.02.25 16:46</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                      <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
@@ -5793,11 +5528,6 @@
                <notes>
                   <arr>
                      <i>
-                        <note>17.02.25 16:44</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -5967,11 +5697,6 @@
                <notes>
                   <arr>
                      <i>
-                        <note>17.02.25 15:12</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -6140,11 +5865,6 @@
                <holdingsStatements/>
                <notes>
                   <arr>
-                     <i>
-                        <note>17.02.25 15:11</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                      <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
@@ -6328,11 +6048,6 @@
                <holdingsStatements/>
                <notes>
                   <arr>
-                     <i>
-                        <note>17.02.25 16:34</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                      <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
@@ -6540,11 +6255,6 @@
                <notes>
                   <arr>
                      <i>
-                        <note>17.02.25 15:06</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -6709,11 +6419,6 @@
                <notes>
                   <arr>
                      <i>
-                        <note>17.02.25 16:35</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -6877,11 +6582,6 @@
                <holdingsStatements/>
                <notes>
                   <arr>
-                     <i>
-                        <note>17.02.25 15:14</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                      <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
@@ -7107,11 +6807,6 @@
                      <i>
                         <note>Kauf aus Fachbereichsmitteln</note>
                         <holdingsNoteTypeId>b160f13a-ddba-4053-b9c4-60ec5ea45d56</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 14:57</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
@@ -7347,11 +7042,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:34</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -7557,11 +7247,6 @@
                         <note>20200729</note>
                         <holdingsNoteTypeId>f862da41-4a7a-4864-8a52-befa58ab210b</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>18.02.25 13:57</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -7787,11 +7472,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:41</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -7850,11 +7530,6 @@
                         <holdingsNoteTypeId>b160f13a-ddba-4053-b9c4-60ec5ea45d56</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>03.05.21 15:21</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>true</discoverySuppress>
@@ -7908,11 +7583,6 @@
                         <note>Kompaktanlage Keller, Verfahrenstechnik</note>
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>25.07.20 09:16</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                   </arr>
                </notes>
@@ -8133,11 +7803,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:41</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -8196,11 +7861,6 @@
                         <holdingsNoteTypeId>b160f13a-ddba-4053-b9c4-60ec5ea45d56</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>03.05.21 15:21</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>true</discoverySuppress>
@@ -8254,11 +7914,6 @@
                         <note>Kompaktanlage Keller, Verfahrenstechnik</note>
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>25.07.20 09:16</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                   </arr>
                </notes>
@@ -8479,11 +8134,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:41</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -8542,11 +8192,6 @@
                         <holdingsNoteTypeId>b160f13a-ddba-4053-b9c4-60ec5ea45d56</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>03.05.21 15:21</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>true</discoverySuppress>
@@ -8600,11 +8245,6 @@
                         <note>Kompaktanlage Keller, Verfahrenstechnik</note>
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>25.07.20 09:16</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                   </arr>
                </notes>
@@ -8830,11 +8470,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:44</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -8891,11 +8526,6 @@
                      <i>
                         <note>Spende</note>
                         <holdingsNoteTypeId>b160f13a-ddba-4053-b9c4-60ec5ea45d56</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>06.04.21 11:15</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                   </arr>
@@ -9122,11 +8752,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:44</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -9183,11 +8808,6 @@
                      <i>
                         <note>Spende</note>
                         <holdingsNoteTypeId>b160f13a-ddba-4053-b9c4-60ec5ea45d56</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>06.04.21 11:15</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                   </arr>
@@ -9397,11 +9017,6 @@
                         <note>Kompaktanlage Stadtgebäude</note>
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 16:45</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -9628,11 +9243,6 @@
                <holdingsStatements/>
                <notes>
                   <arr>
-                     <i>
-                        <note>17.02.25 15:12</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                      <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
@@ -9874,11 +9484,6 @@
                <notes>
                   <arr>
                      <i>
-                        <note>17.02.25 15:11</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -10093,11 +9698,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:34</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -10155,11 +9755,6 @@
                         <note>Kompaktanlage Keller, Sonstiges</note>
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.20 18:21</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                   </arr>
                </notes>
@@ -10371,11 +9966,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:34</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -10433,11 +10023,6 @@
                         <note>Kompaktanlage Keller, Sonstiges</note>
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.20 18:21</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                   </arr>
                </notes>
@@ -10658,11 +10243,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:36</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -10856,11 +10436,6 @@
                <holdingsStatements/>
                <notes>
                   <arr>
-                     <i>
-                        <note>17.02.25 15:13</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                      <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
@@ -11058,11 +10633,6 @@
                <holdingsStatements/>
                <notes>
                   <arr>
-                     <i>
-                        <note>17.02.25 15:14</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                      <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
@@ -11272,11 +10842,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:36</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -11475,11 +11040,6 @@
                <holdingsStatements/>
                <notes>
                   <arr>
-                     <i>
-                        <note>17.02.25 15:09</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                      <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
@@ -11724,11 +11284,6 @@
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 15:09</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -11931,11 +11486,6 @@
                         <note>ausgesondert 20210428 snd</note>
                         <holdingsNoteTypeId>b160f13a-ddba-4053-b9c4-60ec5ea45d56</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 15:10</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -12162,11 +11712,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>18.02.25 13:53</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -12378,11 +11923,6 @@
                <notes>
                   <arr>
                      <i>
-                        <note>17.02.25 15:16</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -12588,11 +12128,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>18.03.21 22:55</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -12646,11 +12181,6 @@
                         <note>Kompaktanlage Keller, Agrarwirtschaft</note>
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 16:38</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -12858,11 +12388,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>18.03.21 22:55</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -12916,11 +12441,6 @@
                         <note>Kompaktanlage Keller, Agrarwirtschaft</note>
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 16:38</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -13145,11 +12665,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 14:54</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -13371,11 +12886,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 15:19</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -13591,11 +13101,6 @@
                         <note>Archiv</note>
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 14:55</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -13838,11 +13343,6 @@
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 15:08</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -14060,11 +13560,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 14:56</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -14280,11 +13775,6 @@
                         <note>Fachbereich I, Studiengang Medizinische Biotechnologie</note>
                         <holdingsNoteTypeId>b160f13a-ddba-4053-b9c4-60ec5ea45d56</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 14:56</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -14514,11 +14004,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.11.22 16:17</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>ka</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -14570,11 +14055,6 @@
                      <i>
                         <note>Kauf</note>
                         <holdingsNoteTypeId>b160f13a-ddba-4053-b9c4-60ec5ea45d56</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 15:04</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
@@ -14805,11 +14285,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.11.22 16:17</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>ka</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -14861,11 +14336,6 @@
                      <i>
                         <note>Kauf</note>
                         <holdingsNoteTypeId>b160f13a-ddba-4053-b9c4-60ec5ea45d56</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 15:04</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
@@ -15098,11 +14568,6 @@
                         <note>Norm</note>
                         <holdingsNoteTypeId>b160f13a-ddba-4053-b9c4-60ec5ea45d56</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 14:59</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -15347,11 +14812,6 @@
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 15:19</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -15571,11 +15031,6 @@
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 15:02</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -15783,11 +15238,6 @@
                         <note>Sonderstandort Atlanten</note>
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 15:03</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -16007,11 +15457,6 @@
                         <note>20200729</note>
                         <holdingsNoteTypeId>f862da41-4a7a-4864-8a52-befa58ab210b</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>18.02.25 13:56</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -16243,11 +15688,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>18.02.25 13:55</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -16441,11 +15881,6 @@
                      <i>
                         <note>Kompaktanlage Keller</note>
                         <holdingsNoteTypeId>b160f13a-ddba-4053-b9c4-60ec5ea45d56</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 16:37</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
@@ -16653,11 +16088,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>17.02.25 16:41</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -16711,11 +16141,6 @@
                         <note>Kompaktanlage Keller Sonderstandort</note>
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 16:41</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -16932,11 +16357,6 @@
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
-                     <i>
-                        <note>17.02.25 16:41</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -16990,11 +16410,6 @@
                         <note>Kompaktanlage Keller Sonderstandort</note>
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 16:41</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -17207,11 +16622,6 @@
                <notes>
                   <arr>
                      <i>
-                        <note>17.02.25 15:15</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -17392,11 +16802,6 @@
                <holdingsStatements/>
                <notes>
                   <arr>
-                     <i>
-                        <note>17.02.25 15:15</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                      <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
@@ -17603,11 +17008,6 @@
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 15:00</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -17809,11 +17209,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:45</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -18012,11 +17407,6 @@
                <holdingsStatements/>
                <notes>
                   <arr>
-                     <i>
-                        <note>17.02.25 15:11</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                      <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
@@ -18220,11 +17610,6 @@
                      <i>
                         <note>Kf</note>
                         <holdingsNoteTypeId>b160f13a-ddba-4053-b9c4-60ec5ea45d56</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 15:01</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
@@ -18452,11 +17837,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 17:30</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -18678,11 +18058,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 17:30</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -18750,11 +18125,6 @@
                         <note>Sonderstandort</note>
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>04.12.23 10:54</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>pr</note>
@@ -18973,11 +18343,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 17:30</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -19045,11 +18410,6 @@
                         <note>Sonderstandort</note>
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>04.12.23 10:54</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>pr</note>
@@ -19284,11 +18644,6 @@
                         <note>20200715</note>
                         <holdingsNoteTypeId>f862da41-4a7a-4864-8a52-befa58ab210b</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 15:13</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -19537,11 +18892,6 @@
                <notes>
                   <arr>
                      <i>
-                        <note>18.02.25 14:10</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -19554,7 +18904,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1143695445-1</hrid>
-                        <materialTypeId>24080190-7539-4520-bde1-762f57d006fc</materialTypeId>
+                        <materialTypeId>5a4ea4ea-2c8c-4f7c-abfb-c0e9e93197e6</materialTypeId>
                         <permanentLoanTypeId>7957aeb7-a7ef-4e6f-911c-607b5fc5384e</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -19810,11 +19160,6 @@
                         <note>Verwaltung</note>
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 17:31</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -20089,11 +19434,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 17:31</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -20338,11 +19678,6 @@
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 17:29</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -20394,11 +19729,6 @@
                      <i>
                         <note>Kauf</note>
                         <holdingsNoteTypeId>b160f13a-ddba-4053-b9c4-60ec5ea45d56</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>07.11.24 15:52</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                   </arr>
@@ -20641,11 +19971,6 @@
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 17:29</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -20697,11 +20022,6 @@
                      <i>
                         <note>Kauf</note>
                         <holdingsNoteTypeId>b160f13a-ddba-4053-b9c4-60ec5ea45d56</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>07.11.24 15:52</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                   </arr>
@@ -20910,11 +20230,6 @@
                      <i>
                         <note>Kauf aus Fachbereichsmitteln</note>
                         <holdingsNoteTypeId>b160f13a-ddba-4053-b9c4-60ec5ea45d56</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 14:58</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
@@ -21161,11 +20476,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 17:30</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -21407,11 +20717,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:43</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -21645,11 +20950,6 @@
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 15:20</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -21706,11 +21006,6 @@
                      <i>
                         <note>A98_Kauf</note>
                         <holdingsNoteTypeId>b160f13a-ddba-4053-b9c4-60ec5ea45d56</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>18.02.20 20:06</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                   </arr>
@@ -21942,11 +21237,6 @@
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 15:20</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -22003,11 +21293,6 @@
                      <i>
                         <note>A98_Kauf</note>
                         <holdingsNoteTypeId>b160f13a-ddba-4053-b9c4-60ec5ea45d56</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>18.02.20 20:06</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                   </arr>
@@ -22240,11 +21525,6 @@
                         <note>Altbestand Kompaktanlage</note>
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 16:39</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -22486,11 +21766,6 @@
                         <holdingsNoteTypeId>b160f13a-ddba-4053-b9c4-60ec5ea45d56</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
-                     <i>
-                        <note>15.02.22 15:50</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -22538,11 +21813,6 @@
                      <i>
                         <note>gekauft aus den Mitteln des Rechenzentrums, Pt</note>
                         <holdingsNoteTypeId>b160f13a-ddba-4053-b9c4-60ec5ea45d56</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 16:43</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
@@ -22785,11 +22055,6 @@
                         <holdingsNoteTypeId>b160f13a-ddba-4053-b9c4-60ec5ea45d56</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
-                     <i>
-                        <note>15.02.22 15:50</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
@@ -22837,11 +22102,6 @@
                      <i>
                         <note>gekauft aus den Mitteln des Rechenzentrums, Pt</note>
                         <holdingsNoteTypeId>b160f13a-ddba-4053-b9c4-60ec5ea45d56</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 16:43</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
@@ -23080,11 +22340,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:40</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -23310,11 +22565,6 @@
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 15:17</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -23377,11 +22627,6 @@
                         <note>ausgesondert 20210512 Böa</note>
                         <holdingsNoteTypeId>b160f13a-ddba-4053-b9c4-60ec5ea45d56</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.08.22 14:54</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                   </arr>
                </notes>
@@ -23594,11 +22839,6 @@
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 15:17</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -23661,11 +22901,6 @@
                         <note>ausgesondert 20210512 Böa</note>
                         <holdingsNoteTypeId>b160f13a-ddba-4053-b9c4-60ec5ea45d56</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.08.22 14:54</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                   </arr>
                </notes>
@@ -23895,11 +23130,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:39</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -24122,11 +23352,6 @@
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 15:18</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -24178,11 +23403,6 @@
                      <i>
                         <note>Kauf</note>
                         <holdingsNoteTypeId>b160f13a-ddba-4053-b9c4-60ec5ea45d56</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>06.08.20 14:54</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                   </arr>
@@ -24237,11 +23457,6 @@
                      <i>
                         <note>A98_Kauf</note>
                         <holdingsNoteTypeId>b160f13a-ddba-4053-b9c4-60ec5ea45d56</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>06.08.20 14:54</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                   </arr>
@@ -24462,11 +23677,6 @@
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 15:18</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -24518,11 +23728,6 @@
                      <i>
                         <note>Kauf</note>
                         <holdingsNoteTypeId>b160f13a-ddba-4053-b9c4-60ec5ea45d56</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>06.08.20 14:54</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                   </arr>
@@ -24577,11 +23782,6 @@
                      <i>
                         <note>A98_Kauf</note>
                         <holdingsNoteTypeId>b160f13a-ddba-4053-b9c4-60ec5ea45d56</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>06.08.20 14:54</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                   </arr>
@@ -24802,11 +24002,6 @@
                         <staffOnly>true</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 15:18</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -24858,11 +24053,6 @@
                      <i>
                         <note>Kauf</note>
                         <holdingsNoteTypeId>b160f13a-ddba-4053-b9c4-60ec5ea45d56</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>06.08.20 14:54</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                   </arr>
@@ -24917,11 +24107,6 @@
                      <i>
                         <note>A98_Kauf</note>
                         <holdingsNoteTypeId>b160f13a-ddba-4053-b9c4-60ec5ea45d56</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>06.08.20 14:54</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                   </arr>
@@ -25154,11 +24339,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>17.02.25 16:37</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -25372,11 +24552,6 @@
                <notes>
                   <arr>
                      <i>
-                        <note>17.02.25 15:13</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -25428,11 +24603,6 @@
                      <i>
                         <note>Kauf</note>
                         <holdingsNoteTypeId>b160f13a-ddba-4053-b9c4-60ec5ea45d56</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>08.03.22 11:13</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                   </arr>
@@ -25644,11 +24814,6 @@
                <notes>
                   <arr>
                      <i>
-                        <note>17.02.25 15:13</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>BASIS</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -25700,11 +24865,6 @@
                      <i>
                         <note>Kauf</note>
                         <holdingsNoteTypeId>b160f13a-ddba-4053-b9c4-60ec5ea45d56</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
-                        <note>08.03.22 11:13</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
                      </i>
                   </arr>
@@ -25911,11 +25071,6 @@
                         <note>Kompaktanlage Rara</note>
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 16:45</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>
@@ -26136,11 +25291,6 @@
                         <note>Kompaktanlage Keller, Ingenieurgrundlagen</note>
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>17.02.25 16:38</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>BASIS</note>

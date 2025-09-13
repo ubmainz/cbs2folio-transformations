@@ -1038,7 +1038,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082639079-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -1098,7 +1098,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082646172-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -1158,7 +1158,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082640042-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -1218,7 +1218,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082645141-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -1278,7 +1278,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082642657-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -1338,7 +1338,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082645133-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -1398,7 +1398,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082644358-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -2104,7 +2104,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082639079-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -2164,7 +2164,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082646172-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -2224,7 +2224,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082640042-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -2284,7 +2284,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082645141-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -2344,7 +2344,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082642657-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -2404,7 +2404,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082645133-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -2464,7 +2464,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082644358-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -3170,7 +3170,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082639079-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -3230,7 +3230,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082646172-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -3290,7 +3290,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082640042-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -3350,7 +3350,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082645141-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -3410,7 +3410,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082642657-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -3470,7 +3470,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082645133-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -3530,7 +3530,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082644358-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -4236,7 +4236,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082639079-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -4296,7 +4296,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082646172-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -4356,7 +4356,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082640042-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -4416,7 +4416,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082645141-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -4476,7 +4476,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082642657-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -4536,7 +4536,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082645133-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -4596,7 +4596,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082644358-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -5302,7 +5302,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082639079-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -5362,7 +5362,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082646172-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -5422,7 +5422,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082640042-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -5482,7 +5482,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082645141-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -5542,7 +5542,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082642657-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -5602,7 +5602,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082645133-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -5662,7 +5662,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082644358-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -6368,7 +6368,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082639079-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -6428,7 +6428,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082646172-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -6488,7 +6488,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082640042-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -6548,7 +6548,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082645141-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -6608,7 +6608,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082642657-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -6668,7 +6668,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082645133-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -6728,7 +6728,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082644358-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -7434,7 +7434,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082639079-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -7494,7 +7494,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082646172-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -7554,7 +7554,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082640042-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -7614,7 +7614,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082645141-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -7674,7 +7674,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082642657-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -7734,7 +7734,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082645133-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -7794,7 +7794,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082644358-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -8187,7 +8187,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1082623261-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>z Verlust</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -8561,7 +8561,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1118379934-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
@@ -29956,7 +29956,7 @@
                   <arr>
                      <i>
                         <hrid>HEB1143695445-1</hrid>
-                        <materialTypeId>Druckschrift</materialTypeId>
+                        <materialTypeId>Zeitschriftenband</materialTypeId>
                         <permanentLoanTypeId>u ausleihbar</permanentLoanTypeId>
                         <status>
                            <name>Intellectual item</name>
