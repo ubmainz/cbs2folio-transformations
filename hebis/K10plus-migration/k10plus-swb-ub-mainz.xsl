@@ -159,13 +159,13 @@
               </identifiers>
               <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes or self::identifiers)]"/>
               <xsl:call-template name="classifications"/>
-              <xsl:if test="exists(original/item[not(starts-with(datafield[@tag='208@']/subfield[@code='b'],'z'))])">
                 <statisticalCodeIds>
                   <arr>
-                    <i>ZDB-Titel-mit-Mono-EPN</i>
+                    <xsl:if test="exists(original/item[not(starts-with(datafield[@tag='208@']/subfield[@code='b'],'z'))])">
+                      <i>ZDB-Titel-mit-Mono-EPN</i>
+                    </xsl:if>
                   </arr>
                 </statisticalCodeIds>
-              </xsl:if>
               <administrativeNotes>
                 <arr>
                   <xsl:copy-of select="instance/administrativeNotes/arr/*"/>
