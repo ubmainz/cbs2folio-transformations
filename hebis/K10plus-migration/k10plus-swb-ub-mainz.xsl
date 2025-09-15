@@ -16,7 +16,6 @@
           <forOmittedProperties>true</forOmittedProperties>
           <forTheseProperties>
             <arr>
-              <i>materialTypeId</i>
               <i>permanentLoanTypeId</i>
             </arr>
           </forTheseProperties>
@@ -77,17 +76,6 @@
   <xsl:template name="processingmono">
     <processing> <!-- preserves holdings data -->
       <item>
-        <retainExistingValues>
-          <forOmittedProperties>true</forOmittedProperties>
-          <forTheseProperties>
-            <arr>
-              <i>materialTypeId</i>
-            </arr>
-          </forTheseProperties>
-        </retainExistingValues>
-        <status>
-          <policy>retain</policy>
-        </status>
         <retainOmittedRecord>
           <ifField>hrid</ifField>
           <matchesPattern>.*</matchesPattern>
