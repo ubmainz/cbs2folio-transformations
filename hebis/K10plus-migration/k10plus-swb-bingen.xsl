@@ -86,6 +86,7 @@
           <forOmittedProperties>true</forOmittedProperties>
           <forTheseProperties>
             <arr>
+              <i>holdingsTypeId</i>
               <i>permanentLocationId</i>
             </arr>
           </forTheseProperties>
@@ -227,6 +228,7 @@
                         <i><xsl:value-of select="concat('FOLIO-Holding mit K10plus-EPN: ',datafield[@tag='203@']/subfield[@code='0'])"/></i>
                       </arr>
                     </administrativeNotes>
+                    <holdingsTypeId>physical</holdingsTypeId> <!-- retainExistingValues/forTheseProperties -->
                     <permanentLocationId>DUMMY</permanentLocationId> <!-- retainExistingValues/forTheseProperties -->
                   </i>
                 </xsl:for-each>

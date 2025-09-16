@@ -86,6 +86,7 @@
           <forOmittedProperties>true</forOmittedProperties>
           <forTheseProperties>
             <arr>
+              <i>holdingsTypeId</i>
               <i>permanentLocationId</i>
             </arr>
           </forTheseProperties>
@@ -184,7 +185,7 @@
               </arr>
             </holdingsRecords>
           </xsl:when>
-          <xsl:when test="substring(original/datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O'"> 
+          <xsl:when test="substring(original/datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O'"> <!-- Online-Fälle -->
             <xsl:call-template name="processingzdb"/>
             <instance>
               <source>K10plus</source>
@@ -221,7 +222,7 @@
               </arr>
             </holdingsRecords>
           </xsl:when>
-          <xsl:otherwise> <!-- Mono -->
+          <xsl:otherwise> <!-- Mono-Fälle -->
             <xsl:call-template name="processingmono"/>
             <instance>
               <source>K10plus</source>
@@ -265,6 +266,7 @@
                         <i><xsl:value-of select="concat('FOLIO-Holding mit K10plus-EPN: ',datafield[@tag='203@']/subfield[@code='0'])"/></i>
                       </arr>
                     </administrativeNotes>
+                    <holdingsTypeId>physical</holdingsTypeId> <!-- retainExistingValues/forTheseProperties -->
                     <permanentLocationId>DUMMY</permanentLocationId> <!-- retainExistingValues/forTheseProperties -->
                   </i>
                 </xsl:for-each>
