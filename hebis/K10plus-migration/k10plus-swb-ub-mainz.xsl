@@ -258,7 +258,7 @@
                     <formerIds>
                       <arr/>
                     </formerIds>
-                    <hrid><xsl:value-of select="datafield[@tag='206X']/subfield[@code='0']"/></hrid>
+                    <hrid><xsl:value-of select="(datafield[@tag='206X']/subfield[@code='0'],concat('hox',../datafield[@tag='003@']/subfield[@code='0']))[1]"/></hrid>
                     <!-- <hrid><xsl:value-of select="substring-after(datafield[@tag='206X']/subfield[@code='0'],'HEB')"/></hrid> ohne HEB -->
                     <administrativeNotes>
                       <arr>
