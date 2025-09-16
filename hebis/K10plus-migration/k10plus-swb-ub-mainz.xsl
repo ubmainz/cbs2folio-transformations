@@ -272,7 +272,7 @@
             </holdingsRecords>
           </xsl:otherwise>
         </xsl:choose>
-        <xsl:copy-of select="instanceRelations"/>
+        <xsl:apply-templates select="instanceRelations"/>
       </record>
     </xsl:if>
   </xsl:template>
@@ -476,6 +476,10 @@
         <xsl:when test="$abt='127'">PHMAG</xsl:when>
         <xsl:otherwise>UNKNOWN</xsl:otherwise>
       </xsl:choose>
+  </xsl:template>
+
+  <xsl:template match="provisionalInstance/source">
+    <source>Provisional Instance</source>
   </xsl:template>
 
   <xsl:template match="item">
