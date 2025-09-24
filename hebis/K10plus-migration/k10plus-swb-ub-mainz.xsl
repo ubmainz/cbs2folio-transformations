@@ -426,6 +426,7 @@
         <xsl:when test="$abt='066'">
           <xsl:choose>
             <xsl:when test="contains($standort,'AMA')">RWAMA</xsl:when>
+            <xsl:when test="contains($standort,'JAHN')">RWJAHN</xsl:when>
             <xsl:otherwise>RWETH</xsl:otherwise>
           </xsl:choose>
         </xsl:when>

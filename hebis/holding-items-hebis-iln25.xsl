@@ -228,8 +228,9 @@
          <xsl:when test="$abt='054'">UMZMK</xsl:when>
          <xsl:when test="$abt='058'">PHPHI</xsl:when>
          <xsl:when test="$abt='066'">
-	    <xsl:choose>
+	         <xsl:choose>
              <xsl:when test="contains($standort,'AMA')">RWAMA</xsl:when>
+	           <xsl:when test="contains($standort,'JAHN')">RWJAHN</xsl:when>
              <xsl:otherwise>RWETH</xsl:otherwise>
            </xsl:choose>
          </xsl:when>
@@ -329,7 +330,7 @@
 	  ($abt='043' and (./note='Klinik für Psychiatrie und Psychotherapie')) or
 	  ($abt='054' and (./note='Zahnklinik')) or
 	  ($abt='058' and (./note='Philosophie')) or
-	  ($abt='066' and (./note='ReWi / Ethnologie und Afrikastudien' or ./note='AMA - African Music Archives')) or
+	  ($abt='066' and (./note='ReWi / Ethnologie und Afrikastudien' or ./note='AMA - African Music Archives' or ./note='ReWi / Jahn-Bibliothek für Afrikanische Literaturen')) or 
 	  ($abt='069' and (./note='Psychologisches Institut / IB')) or
 	  ($abt='070' and (./note='Germanistik')) or
 	  ($abt='071' and (./note='Allgemeine und Vergleichende Literaturwissenschaft')) or
