@@ -13,8 +13,8 @@
   <!-- Map locations 
        For Mainz, the IDs are the location names in FOLIO, generated from 209A $f and other pica fields -->
   
-  <xsl:template match="permanentLocationId"> <!-- ILN -->
-    <permanentLocationId>
+  <xsl:template match="permanentLocationId|temporaryLocationId"> <!-- ILN -->
+    <xsl:element name="{name()}">
       <xsl:choose>
         <xsl:when test=".='DUMMY'">87764786-c5c8-47d0-a480-df506c751d76</xsl:when>
         <xsl:when test=".='AUFSATZ'">c5d96d68-ffc8-49a4-b43c-42d82f719ea9</xsl:when>
@@ -74,11 +74,13 @@
         <xsl:when test=".='PHROM'">8ac4aea8-692f-4e3a-9095-b53dfb6a3aa2</xsl:when>
         <xsl:when test=".='PHRVK'">77341140-8add-462e-af9f-c0839c3425af</xsl:when>
         <xsl:when test=".='PHSLAV'">e8d25e8a-9fe8-4e46-9b8b-79f7de9c3bc8</xsl:when>
+        <xsl:when test=".='PHSON'">ce688565-3763-4701-8d23-67b071da3015</xsl:when>
         <xsl:when test=".='PHTHW'">4e0e57d9-f094-4e82-9bc8-8f6a55e5041c</xsl:when>		
         <xsl:when test=".='RW'">98fcae0c-df5d-472a-8dcd-25ce4252e936</xsl:when>
         <xsl:when test=".='RWAMA'">75082038-b301-41bb-b818-75d0f34aa6ae</xsl:when>
         <xsl:when test=".='RWETH'">9bf8ba06-3a78-4cdc-84fb-c3a15eecd722</xsl:when>
         <xsl:when test=".='RWFAK'">7970efa9-5057-4bf3-bcac-b01287dfcdd4</xsl:when>
+        <xsl:when test=".='RWJAHN'">65387ee4-49bd-4ec7-a700-d8ff6837c176</xsl:when>
         <xsl:when test=".='RWLBS'">22d4af1b-3d9c-4ad8-afa2-ff7076bfe7c1</xsl:when>
         <xsl:when test=".='RWMAG'">8cdf85dd-4212-4e51-b59f-e1f9662de0b2</xsl:when>
         <xsl:when test=".='RWTURK'">129a4323-01a0-4bad-bac5-2e0487d8e67c</xsl:when>
@@ -103,8 +105,10 @@
         <xsl:when test=".='ZBZEB'">802ea709-f017-49e7-9795-5fa0053668cb</xsl:when>
         <xsl:otherwise>413fe054-a4f3-423e-a62f-088eb111ea8d</xsl:otherwise> <!-- ZBMAG -->
       </xsl:choose>
-    </permanentLocationId>
+    </xsl:element>
   </xsl:template>
+
+
 
   <!-- Map loan types -->
   <xsl:template match="permanentLoanTypeId"> <!-- ILN -->

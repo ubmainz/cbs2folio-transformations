@@ -32,7 +32,7 @@
                 </i>
               </arr>
             </administrativeNotes>
-            <xsl:if test="$hebppns-dist[2]">
+            <xsl:if test="$hebppns-dist[2]"> <!-- TBD: Dublettenbehandlung mit automatischer Bestandsverschiebung -->
               <statisticalCodeIds>
                 <arr>
                     <i>Dublettenbereinigung</i>
@@ -40,7 +40,7 @@
               </statisticalCodeIds>
             </xsl:if>
           </instance>
-          <!-- instance relations? -->
+          <!-- instance relations entfallen und kommen mit K10plus wieder -->
         <xsl:if test="not($hebppns-dist[2])">
           <xsl:apply-templates select="$currentrecord/holdingsRecords"/>
         </xsl:if>        

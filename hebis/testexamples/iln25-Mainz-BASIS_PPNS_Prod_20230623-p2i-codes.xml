@@ -3373,6 +3373,7 @@
             <i>
                <hrid>232108455</hrid>
                <permanentLocationId>4ef3f125-4b94-4e43-997d-505f3d7439aa</permanentLocationId>
+               <temporaryLocationId>ce688565-3763-4701-8d23-67b071da3015</temporaryLocationId>
                <callNumberPrefix>075</callNumberPrefix>
                <callNumber>AdB 101</callNumber>
                <holdingsTypeId>0c422f92-0f4d-4d32-8cbe-390ebc33a3e5</holdingsTypeId>
@@ -3391,7 +3392,7 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>Slavistik / Separiert</note>
+                        <note>Slavistik / Separiert/ Sonderstandort</note>
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
                      </i>
@@ -11848,7 +11849,7 @@
          <arr>
             <i>
                <hrid>1035182025</hrid>
-               <permanentLocationId>9bf8ba06-3a78-4cdc-84fb-c3a15eecd722</permanentLocationId>
+               <permanentLocationId>65387ee4-49bd-4ec7-a700-d8ff6837c176</permanentLocationId>
                <callNumberPrefix/>
                <callNumber>JF4 1862 001</callNumber>
                <holdingsTypeId>0c422f92-0f4d-4d32-8cbe-390ebc33a3e5</holdingsTypeId>
@@ -20638,7 +20639,7 @@
          <arr>
             <i>
                <hrid>1072501295</hrid>
-               <permanentLocationId>9bf8ba06-3a78-4cdc-84fb-c3a15eecd722</permanentLocationId>
+               <permanentLocationId>65387ee4-49bd-4ec7-a700-d8ff6837c176</permanentLocationId>
                <callNumberPrefix/>
                <callNumber>JH2 080</callNumber>
                <holdingsTypeId>0c422f92-0f4d-4d32-8cbe-390ebc33a3e5</holdingsTypeId>
@@ -26681,6 +26682,10 @@
                </notes>
                <discoverySuppress>false</discoverySuppress>
                <sourceId>ed96edb1-d91d-4a31-9c40-006f5199d782</sourceId>
+               <items>
+                  <arr>
+                  </arr>
+               </items>
                <electronicAccess>
                   <arr/>
                </electronicAccess>
@@ -26709,6 +26714,10 @@
                </notes>
                <discoverySuppress>false</discoverySuppress>
                <sourceId>ed96edb1-d91d-4a31-9c40-006f5199d782</sourceId>
+               <items>
+                  <arr>
+                  </arr>
+               </items>
                <electronicAccess>
                   <arr/>
                </electronicAccess>
@@ -34634,7 +34643,7 @@
          <arr>
             <i>
                <hrid>1008534919</hrid>
-               <permanentLocationId>9bf8ba06-3a78-4cdc-84fb-c3a15eecd722</permanentLocationId>
+               <permanentLocationId>65387ee4-49bd-4ec7-a700-d8ff6837c176</permanentLocationId>
                <callNumberPrefix/>
                <callNumber>JE1 277</callNumber>
                <holdingsTypeId>0c422f92-0f4d-4d32-8cbe-390ebc33a3e5</holdingsTypeId>
@@ -38427,6 +38436,10 @@
                </notes>
                <discoverySuppress>false</discoverySuppress>
                <sourceId>ed96edb1-d91d-4a31-9c40-006f5199d782</sourceId>
+               <items>
+                  <arr>
+                  </arr>
+               </items>
                <electronicAccess>
                   <arr/>
                </electronicAccess>
@@ -52148,6 +52161,10 @@
                </notes>
                <discoverySuppress>false</discoverySuppress>
                <sourceId>ed96edb1-d91d-4a31-9c40-006f5199d782</sourceId>
+               <items>
+                  <arr>
+                  </arr>
+               </items>
                <electronicAccess>
                   <arr/>
                </electronicAccess>
@@ -64293,6 +64310,10 @@
                </notes>
                <discoverySuppress>false</discoverySuppress>
                <sourceId>ed96edb1-d91d-4a31-9c40-006f5199d782</sourceId>
+               <items>
+                  <arr>
+                  </arr>
+               </items>
                <electronicAccess>
                   <arr/>
                </electronicAccess>
@@ -69703,6 +69724,10 @@
                </notes>
                <discoverySuppress>false</discoverySuppress>
                <sourceId>ed96edb1-d91d-4a31-9c40-006f5199d782</sourceId>
+               <items>
+                  <arr>
+                  </arr>
+               </items>
                <electronicAccess>
                   <arr/>
                </electronicAccess>
@@ -76093,6 +76118,10 @@
                </notes>
                <discoverySuppress>false</discoverySuppress>
                <sourceId>ed96edb1-d91d-4a31-9c40-006f5199d782</sourceId>
+               <items>
+                  <arr>
+                  </arr>
+               </items>
                <electronicAccess>
                   <arr/>
                </electronicAccess>
@@ -79721,6 +79750,10 @@
                </notes>
                <discoverySuppress>false</discoverySuppress>
                <sourceId>ed96edb1-d91d-4a31-9c40-006f5199d782</sourceId>
+               <items>
+                  <arr>
+                  </arr>
+               </items>
                <electronicAccess>
                   <arr/>
                </electronicAccess>
@@ -80460,6 +80493,10 @@
                </notes>
                <discoverySuppress>false</discoverySuppress>
                <sourceId>ed96edb1-d91d-4a31-9c40-006f5199d782</sourceId>
+               <items>
+                  <arr>
+                  </arr>
+               </items>
                <electronicAccess>
                   <arr/>
                </electronicAccess>
@@ -80625,6 +80662,10 @@
                </notes>
                <discoverySuppress>false</discoverySuppress>
                <sourceId>ed96edb1-d91d-4a31-9c40-006f5199d782</sourceId>
+               <items>
+                  <arr>
+                  </arr>
+               </items>
                <electronicAccess>
                   <arr/>
                </electronicAccess>
@@ -80806,6 +80847,10 @@
                </notes>
                <discoverySuppress>false</discoverySuppress>
                <sourceId>ed96edb1-d91d-4a31-9c40-006f5199d782</sourceId>
+               <items>
+                  <arr>
+                  </arr>
+               </items>
                <electronicAccess>
                   <arr/>
                </electronicAccess>
@@ -81272,6 +81317,10 @@
                </notes>
                <discoverySuppress>false</discoverySuppress>
                <sourceId>ed96edb1-d91d-4a31-9c40-006f5199d782</sourceId>
+               <items>
+                  <arr>
+                  </arr>
+               </items>
                <electronicAccess>
                   <arr/>
                </electronicAccess>
@@ -81442,6 +81491,10 @@
                </notes>
                <discoverySuppress>false</discoverySuppress>
                <sourceId>ed96edb1-d91d-4a31-9c40-006f5199d782</sourceId>
+               <items>
+                  <arr>
+                  </arr>
+               </items>
                <electronicAccess>
                   <arr/>
                </electronicAccess>
@@ -81618,6 +81671,10 @@
                </notes>
                <discoverySuppress>false</discoverySuppress>
                <sourceId>ed96edb1-d91d-4a31-9c40-006f5199d782</sourceId>
+               <items>
+                  <arr>
+                  </arr>
+               </items>
                <electronicAccess>
                   <arr/>
                </electronicAccess>
