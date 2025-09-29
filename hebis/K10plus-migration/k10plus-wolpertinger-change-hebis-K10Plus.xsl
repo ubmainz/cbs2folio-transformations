@@ -13,7 +13,7 @@
   
   <xsl:template match="record">
     <xsl:variable name="currentrecord" select="."/> <!-- 003H Primäre Hebis-PPN -->
-    <xsl:variable name="hebppns" select="original/datafield[@tag='003H']/subfield[@code='0']|original/datafield[@tag='006H']/subfield[@code='0']"/>
+    <xsl:variable name="hebppns" select="original/datafield[@tag='003H']/subfield[@code='0'],original/datafield[@tag='006H']/subfield[@code='0']"/>
     <!-- <xsl:variable name="hebppns-dist" select="$hebppns"/> --> <xsl:variable name="hebppns-dist" select="distinct-values($hebppns)"/>
     <xsl:for-each select="$hebppns-dist">
       <record>
@@ -32,16 +32,18 @@
                 </i>
               </arr>
             </administrativeNotes>
-            <xsl:if test="$hebppns-dist[2]"> <!-- TBD: Dublettenbehandlung mit automatischer Bestandsverschiebung -->
-              <statisticalCodeIds>
-                <arr>
-                    <i>Dublettenbereinigung</i>
-                </arr>
-              </statisticalCodeIds>
+            <xsl:if test="$hebppns-dist[2]"> <!-- Hebis-Dubletten -->
+                <xsl:if test="position()>1"> <!-- Verlierer-Datensatz - werden gelöscht -->
+                  <statisticalCodeIds>
+                    <arr>
+                      <i>Dublettenbereinigung</i>
+                    </arr>
+                  </statisticalCodeIds>
+                </xsl:if>
             </xsl:if>
           </instance>
           <!-- instance relations entfallen und kommen mit K10plus wieder -->
-        <xsl:if test="not($hebppns-dist[2])">
+        <xsl:if test="position()=1"> <!-- Einzeldatensatz oder Gewinner -->
           <xsl:apply-templates select="$currentrecord/holdingsRecords"/>
         </xsl:if>        
       </record>
