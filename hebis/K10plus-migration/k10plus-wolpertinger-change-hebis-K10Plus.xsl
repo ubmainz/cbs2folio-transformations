@@ -14,7 +14,7 @@
   <xsl:template match="record">
     <xsl:variable name="currentrecord" select="."/> <!-- 003H Primäre Hebis-PPN -->
     <xsl:variable name="hebppns" select="original/datafield[@tag='003H']/subfield[@code='0']|original/datafield[@tag='006H']/subfield[@code='0']"/>
-    <xsl:variable name="hebppns-dist" select="distinct-values($hebppns)"/>
+    <!-- <xsl:variable name="hebppns-dist" select="$hebppns"/> --> <xsl:variable name="hebppns-dist" select="distinct-values($hebppns)"/>
     <xsl:for-each select="$hebppns-dist">
       <record>
         <xsl:copy-of select="$currentrecord/processing"/>
