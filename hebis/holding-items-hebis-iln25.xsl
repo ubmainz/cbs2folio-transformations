@@ -113,7 +113,7 @@
   </xsl:template>
 
   <xsl:template match="materialTypeId"> <!-- Level 0/2: hebis wide and local -->
-    <xsl:variable name="i" select="key('original',../../../../permanentLocationId)"/>
+    <xsl:variable name="i" select="key('original',../../../../permanentLocationId)[last()]"/>
     <materialTypeId>
        <xsl:choose>
          <xsl:when test="(substring($i/../datafield[@tag='002@']/subfield[@code='0'],1,1) != 'O') and (substring($i/../datafield[@tag='002@']/subfield[@code='0'],2,2) = 'bv')">Zeitschriftenband</xsl:when>
@@ -127,7 +127,7 @@
   <xsl:template match="i[holdingsNoteTypeId='Letzte Änderung CBS']"/>
 
   <xsl:template match="permanentLocationId">
-    <xsl:variable name="i" select="key('original',.)"/>
+    <xsl:variable name="i" select="key('original',.)[last()]"/>
     <xsl:variable name="abt" select="$i/datafield[@tag='209A']/subfield[@code='f']"/>
     <xsl:variable name="standort" select="upper-case($i/datafield[(@tag='209G') and (subfield[@code='x']='01')]/subfield[@code='a'])"/> 
     <xsl:variable name="electronicholding" select="(substring($i/../datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O') and not(substring($i/datafield[@tag='208@']/subfield[@code='b'],1,1) = 'a')"/>
@@ -322,7 +322,7 @@
   </xsl:template>
 
   <xsl:template match="i[holdingsNoteTypeId='Standort (8201)']"> <!-- 8201 will be displayed by default: add exceptions here -->
-    <xsl:variable name="i" select="key('original',../../../permanentLocationId)"/>
+    <xsl:variable name="i" select="key('original',../../../permanentLocationId)[last()]"/>
     <xsl:variable name="abt" select="$i/datafield[@tag='209A']/subfield[@code='f']"/>
     <xsl:if test="not(($abt='000' and (./note='FREIHAND' or ./note='LBS' or ./note='LESESAAL' or ./note='RARA' or ./note='MAG')) or
 	  ($abt='002' and (./note='Erziehungswissenschaft' or ./note='Filmwissenschaft' or ./note='Journalistik' or ./note='Politikwissenschaft' or ./note='Psychologie' or ./note='Publizistik' or ./note='Soziologie')) or
@@ -377,7 +377,7 @@
 <!-- multiple call number workaround  - TBD: Ansetzungsformen der weiteren Signaturen? -->
 
   <xsl:template match="notes">
-    <xsl:variable name="i" select="key('original',../permanentLocationId)"/>
+    <xsl:variable name="i" select="key('original',../permanentLocationId)[last()]"/>
       <notes>
         <arr>
           <xsl:apply-templates select="arr/i[not(holdingsNoteTypeId='Signatur Ansetzungsform (7100)')]"/> 
@@ -387,7 +387,7 @@
   
   <!-- Parsing call number for prefix - optional -->
   <xsl:template match="callNumber">
-    <xsl:variable name="i" select="key('original',../permanentLocationId)"/>
+    <xsl:variable name="i" select="key('original',../permanentLocationId)[last()]"/>
     <xsl:variable name="abt" select="$i/datafield[@tag='209A']/subfield[@code='f']"/>
     <xsl:variable name="standort" select="$i/datafield[(@tag='209G') and (subfield[@code='x']='01')]/subfield[@code='a']"/> 
     <xsl:choose>
@@ -442,7 +442,7 @@
    </xsl:template>
 
   <xsl:template match="statisticalCodeIds">
-    <xsl:variable name="i" select="key('original',../../../../permanentLocationId)"/> <!-- ILN -->
+    <xsl:variable name="i" select="key('original',../../../../permanentLocationId)[last()]"/> <!-- ILN -->
     <statisticalCodeIds>
       <arr>
         <xsl:if test="$i/datafield[(@tag='209B') and not(subfield[@code='x']='01' or subfield[@code='x']='02')]/subfield[@code='a']='LZA'">
