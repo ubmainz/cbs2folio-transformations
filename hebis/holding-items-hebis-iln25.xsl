@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- date of last edit: 2023-06-16 (YYYY-MM-DD) -->
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
   <xsl:output indent="yes" method="xml" version="1.0" encoding="UTF-8"/>

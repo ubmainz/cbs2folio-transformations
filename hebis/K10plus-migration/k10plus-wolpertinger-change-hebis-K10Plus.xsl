@@ -20,8 +20,7 @@
         <xsl:copy-of select="$currentrecord/processing"/>
           <instance>
             <source>K10plus</source>
-            <hrid><xsl:value-of select="concat('HEB',.)"/></hrid>
-            <!-- <hrid><xsl:value-of select="."/></hrid> ohne HEB -->
+            <hrid><xsl:value-of select="."/></hrid>
             <xsl:apply-templates select="$currentrecord/instance/*[not(self::hrid or self::source or self::administrativeNotes)]"/>
             <administrativeNotes>
               <arr>
@@ -50,12 +49,20 @@
     </xsl:for-each>
   </xsl:template>
 
-  <xsl:template match="holdingsRecords/arr/i[formerIds/arr/i[2]]/hrid">
-    <hrid><xsl:value-of select="../formerIds/arr/i[2]"/></hrid>
+  <xsl:template match="holdingsRecords/arr/i[not(formerIds/arr/i[2])]/hrid">
+    <hrid><xsl:value-of select="substring-after(.,'HEB')"/></hrid>
   </xsl:template>
-  
+
+  <xsl:template match="holdingsRecords/arr/i[formerIds/arr/i[2]]/hrid">
+    <hrid><xsl:value-of select="substring-after(../formerIds/arr/i[2],'HEB')"/></hrid>
+  </xsl:template>
+
+  <xsl:template match="items/arr/i[not(formerIds/arr/i[2])]/hrid">
+    <hrid><xsl:value-of select="substring-after(.,'HEB')"/></hrid>
+  </xsl:template>
+
   <xsl:template match="items/arr/i[formerIds/arr/i[2]]/hrid">
-    <hrid><xsl:value-of select="../formerIds/arr/i[2]"/></hrid>
+    <hrid><xsl:value-of select="substring-after(../formerIds/arr/i[2],'HEB')"/></hrid>
   </xsl:template>
 
 </xsl:stylesheet>
