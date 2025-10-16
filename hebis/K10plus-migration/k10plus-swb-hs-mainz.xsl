@@ -335,29 +335,41 @@
   <xsl:template name="permanentLocationId">
     <xsl:variable name="abt" select="substring-after(datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='B'],'77/')"/>
     <xsl:variable name="standort" select="upper-case((datafield[(@tag='209A')]/subfield[@code='f'])[1])"/> 
+    <xsl:variable name="signatur" select="datafield[@tag='209A']/subfield[@code='a']"/>
     <xsl:variable name="selectionscode" select="datafield[@tag='208@']/subfield[@code='b']"/>
     <xsl:variable name="electronicholding" select="substring(/../datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O'"/>
       <xsl:choose>
         <xsl:when test="$electronicholding">ONLINE</xsl:when>
         <xsl:when test="($selectionscode = 'da') or ($selectionscode = 'dummy')">DUMMY</xsl:when>
-        <xsl:when test="$selectionscode = 'a'">ZEB</xsl:when>
 <!-- ? --><xsl:when test="(substring(/../datafield[@tag='002@']/subfield[@code='0'],2,1) = 'o') and not(datafield[@tag='209A']/subfield[@code='d'])">AUFSATZ</xsl:when>
+        <xsl:when test="$selectionscode = 'a'">ZEB</xsl:when>
         <xsl:when test="starts-with($standort,upper-case('Große Bücher'))">GROSS</xsl:when>
         <xsl:when test="starts-with($standort,'SEMESTERAPPARAT')">SEMAPP</xsl:when>
         <xsl:when test="starts-with($standort,'BÜRO') or $standort='Extern'">FBVW</xsl:when>
         <xsl:when test="contains($standort,'THEKE') or contains($standort,'VITRINE') or contains($standort,'ZEITUNGSAUSLAGE')">THEKE</xsl:when>
-        <!-- TBD: Fernleihe? -->
         <xsl:when test="$abt='000'">
           <xsl:choose>
-            <xsl:when test="1=1">TBD</xsl:when>
-
+            <xsl:when test="starts-with($signatur,'G')">UGG</xsl:when>
+            <xsl:when test="starts-with($signatur,'K') and contains($standort,'MEDIENRAUM')">UGMED</xsl:when>
+            <xsl:when test="starts-with($signatur,'K')">UGK</xsl:when>
+            <xsl:when test="starts-with($signatur,'V')">UGV</xsl:when>
+            <xsl:when test="starts-with($signatur,'Z')">UGZS</xsl:when>
             <xsl:otherwise>NZ</xsl:otherwise>
           </xsl:choose>
         </xsl:when>
         <xsl:when test="$abt='001'">
           <xsl:choose>
-            <xsl:when test="1=1">TBD</xsl:when>
-            
+            <xsl:when test="starts-with($signatur,'A') and starts-with($standort,'ARCHITEKTUR')">OGARCH</xsl:when>
+            <xsl:when test="starts-with($signatur,'A') and starts-with($standort,'ALLGEMEINES')">OGALLG</xsl:when>
+            <xsl:when test="starts-with($signatur,'B') and starts-with($standort,'BETRIEBSWIRTSCHAFT')">OGBWL</xsl:when>
+            <xsl:when test="starts-with($signatur,'B') and starts-with($standort,'BAU')">OGBAU</xsl:when>
+            <xsl:when test="starts-with($signatur,'G')">OGG</xsl:when>
+            <xsl:when test="starts-with($signatur,'L')">OGL</xsl:when>
+            <xsl:when test="starts-with($signatur,'N')">OGN</xsl:when>
+            <xsl:when test="starts-with($signatur,'R')">OGR</xsl:when>
+            <xsl:when test="starts-with($signatur,'S')">OGS</xsl:when>
+            <xsl:when test="starts-with($signatur,'V')">OGV</xsl:when>
+            <xsl:when test="starts-with($signatur,'Z')">UGZS</xsl:when>
             <xsl:otherwise>NZ</xsl:otherwise>
           </xsl:choose>
         </xsl:when>
