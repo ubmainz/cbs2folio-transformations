@@ -155,11 +155,22 @@
             <xsl:choose>
               <xsl:when test=".='LZA'">25c91085-8b64-47ea-9cb8-20dd539ac466</xsl:when>
               <xsl:when test=".='Dublettenbereinigung'">812aef7b-f026-449e-8976-31883ad95d1b</xsl:when>
+              <xsl:when test=".='ZDB-Titel-mit-Mono-EPN'">73abd902-87c7-4bad-bdfe-25cbc06b6e63</xsl:when>
             </xsl:choose>
           </i>
         </xsl:for-each>
       </arr>
     </statisticalCodeIds>
+  </xsl:template>
+
+  <!-- Map holding note types -->
+  <xsl:template match="holdingsNoteTypeId"> <!-- Level 2: FOLIO/hebis-wide -->
+    <holdingsNoteTypeId>
+      <xsl:choose>
+        <xsl:when test=".='Abrufzeichen'"><xsl:text>6d3f575d-6727-42a4-ae58-56c00de2e1d4</xsl:text></xsl:when>        
+        <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
+      </xsl:choose>
+    </holdingsNoteTypeId>
   </xsl:template>
 
 </xsl:stylesheet>
