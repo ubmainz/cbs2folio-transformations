@@ -136,7 +136,7 @@
   </xsl:template>
   
   <xsl:template match="record">
-    <xsl:if test="not(substring(original/datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O')"> <!-- Bingen keine Online-Ressourcen -->
+    <xsl:if test="not((substring(original/datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O') or (original/datafield[@tag='002@']/subfield[@code='0'] = 'amy'))"> <!-- Bingen keine Online-Ressourcen und keine "Mailboxen" -->
       <record>
         <xsl:copy-of select="original"/>
         <xsl:choose>

@@ -136,7 +136,9 @@
   </xsl:template>
   
   <xsl:template match="record">
-    <xsl:if test="not(substring(original/datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O') or exists(original/item[datafield[(@tag='209B') and (subfield[@code='x']='12')]/subfield[@code='a']='kauf'])">
+    <xsl:if test="not(substring(original/datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O') 
+      or (original/datafield[@tag='002@']/subfield[@code='0'] = 'amy') 
+      or exists(original/item[datafield[(@tag='209B') and (subfield[@code='x']='12')]/subfield[@code='a']='kauf'])"> <!-- Online/"Mailboxen"/kauf? prüfen -->
       <!-- Mainz: keine Online-Ressourcen, aber Online-Einzelkauf -->
       <record>
         <xsl:copy-of select="original"/>
