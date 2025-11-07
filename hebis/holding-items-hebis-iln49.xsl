@@ -213,47 +213,7 @@
   <xsl:template match="i[holdingsNoteTypeId='Standort (8201)']"> <!-- 8201 will be displayed by default: add exceptions here -->
     <xsl:variable name="i" select="key('original',../../../permanentLocationId)[last()]"/>
     <xsl:variable name="abt" select="$i/datafield[@tag='209A']/subfield[@code='f']"/>
-    <xsl:if test="not(($abt='000' and (./note='FREIHAND' or ./note='LBS' or ./note='LESESAAL' or ./note='RARA' or ./note='MAG')) or
-	  ($abt='002' and (./note='Erziehungswissenschaft' or ./note='Filmwissenschaft' or ./note='Journalistik' or ./note='Politikwissenschaft' or ./note='Psychologie' or ./note='Publizistik' or ./note='Soziologie')) or
-	  ($abt='003' and (./note='LESESAAL')) or
-	  ($abt='005' and (./note='UM LESESAAL' or ./note='UM LBS' or ./note='UM FREIHAND')) or
-	  ($abt='006' and (./note='MIN' or ./note='MIN LEHRBUCHSAMMLUNG')) or
-	  ($abt='016' and (./note='Theologie LEHRBUCHSAMMLUNG')) or
-	  ($abt='018' and (./note='ReWi LEHRBUCHSAMMLUNG')) or
-	  ($abt='019' and (./note='Lehrbuchsammlung' or ./note='Lesesaal' or ./note='Magazin')) or
-	  ($abt='034' and (./note='FB 4-40')) or
-	  ($abt='035' and (./note='Institut für Rechtsmedizin')) or
-	  ($abt='043' and (./note='Klinik für Psychiatrie und Psychotherapie')) or
-	  ($abt='054' and (./note='Zahnklinik')) or
-	  ($abt='058' and (./note='Philosophie')) or
-	  ($abt='066' and (./note='ReWi / Ethnologie und Afrikastudien' or ./note='AMA - African Music Archives' or ./note='ReWi / Jahn-Bibliothek für Afrikanische Literaturen')) or 
-	  ($abt='069' and (./note='Psychologisches Institut / IB')) or
-	  ($abt='070' and (./note='Germanistik')) or
-	  ($abt='071' and (./note='Allgemeine und Vergleichende Literaturwissenschaft')) or
-	  ($abt='072' and (./note='Anglistik/Amerikanistik')) or
-	  ($abt='073' and (./note='Allgemeine und Vergleichende Sprachwissenschaft')) or
-	  ($abt='074' and (./note='Romanistik')) or
-	  ($abt='075' and (./note='Slavistik')) or
-	  ($abt='076' and (./note='Polonicum')) or
-	  ($abt='077' and (./note='Klassische Philologie')) or
-	  ($abt='078' and (./note='Klassische Archäologie')) or
-	  ($abt='079' and (./note='Kunstgeschichte')) or
-	  ($abt='080' and (./note='Turkologie')) or
-	  ($abt='082' and (./note='Ägyptologie und Altorientalistik')) or
-	  ($abt='083' and (./note='Historische Kulturwissenschaften')) or
-	  ($abt='085' and (./note='Institut für Vor- und Frühgeschichte' or ./note='Vor- und frühgeschichtliche Archäologie' or ./note='FB 16.1')) or
-	  ($abt='086' and (./note='Alte Geschichte')) or
-	  ($abt='087' and (./note='Byzantinistik')) or
-	  ($abt='088' and (./note='Mittlere und Neuere Geschichte')) or
-	  ($abt='090' and (./note='Buchwissenschaft')) or
-	  ($abt='091' and (./note='Musikwissenschaft' or ./note='Musikwissenschaft / Separiert')) or
-	  ($abt='092' and (./note='Osteuropäische Geschichte')) or
-	  ($abt='094' and (./note='Institut für Geschichtliche Landeskunde')) or
-	  ($abt='112' and (./note='Hochschule für Musik' or ./note='Hochschule für Musik / Freihand' or ./note='Hochschule für Musik / Magazin')) or
-	  ($abt='113' and (./note='Sport')) or	
-	  ($abt='124' and (./note='Gesangbucharchiv')) or
-	  ($abt='125' and (./note='MAG')) or
-	  ($abt='126' and (./note='USA BIBL')))">
+    <xsl:if test="true()">
         <i>
           <note>
               <xsl:value-of select="./note"/>
