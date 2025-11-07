@@ -40,7 +40,7 @@
         <xsl:when test=".='UGV'">af1150a4-e603-40ee-8afb-53831dd1a132</xsl:when>
         <xsl:when test=".='UGZS'">20f5eb0e-24e7-497a-aa32-6d49a9873a10</xsl:when>
         <xsl:when test=".='ZEB'">d1ce5d9a-6776-44a3-81c2-dea08d272c26</xsl:when>
-        <xsl:otherwise></xsl:otherwise> <!-- NZ -->
+        <xsl:otherwise>91885c25-3b18-47d3-9cf6-5f6be2b396fb</xsl:otherwise> <!-- NZ -->
       </xsl:choose>
     </xsl:element>
   </xsl:template>
