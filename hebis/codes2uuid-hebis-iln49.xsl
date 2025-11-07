@@ -48,7 +48,7 @@
 
 
   <!-- Map loan types -->
-  <xsl:template match="permanentLoanTypeId"> <!-- ILN -->
+  <xsl:template match="permanentLoanTypeId"> <!-- ILN TBD -->
     <permanentLoanTypeId>
       <xsl:choose>
         <xsl:when test=".='u ausleihbar (auch Fernleihe)'"><xsl:text>7a03b2e2-c995-47a4-83d0-04bbe1930af4</xsl:text></xsl:when> 
