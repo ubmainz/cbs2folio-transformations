@@ -51,7 +51,7 @@
   <xsl:template match="permanentLoanTypeId"> <!-- ILN TBD -->
     <permanentLoanTypeId>
       <xsl:choose>
-        <xsl:when test=".='u ausleihbar (auch Fernleihe)'"><xsl:text>7a03b2e2-c995-47a4-83d0-04bbe1930af4</xsl:text></xsl:when> 
+<!--        <xsl:when test=".='u ausleihbar (auch Fernleihe)'"><xsl:text></xsl:text></xsl:when> 
         <xsl:when test=".='b Kurzausleihe'"><xsl:text>df64c252-595d-463c-aad8-3bda0ba101aa</xsl:text></xsl:when>
         <xsl:when test=".='c Lehrbuchsammlung'"><xsl:text>d1ba00c9-3f08-4df9-9d70-c7e1ab3b1702</xsl:text></xsl:when>
         <xsl:when test=".='s Präsenzbestand Lesesaal'"><xsl:text>1cecc65a-a7c4-437a-bb04-6756c23b422e</xsl:text></xsl:when>
@@ -67,7 +67,7 @@
         <xsl:when test=".='3 Fernleihe - Kurzausleihe ohne Verl.'"><xsl:text>e6608ce5-4a46-4497-b15d-e28378a9b29c</xsl:text></xsl:when>
         <xsl:when test=".='dummy'"><xsl:text>80ff439c-3ccb-48df-9758-c11011cef6d0</xsl:text></xsl:when>
         <xsl:when test=".='unbekannt'"><xsl:text>39176004-0e64-4d06-b136-7140e7016298</xsl:text></xsl:when>        
-        <xsl:otherwise>39176004-0e64-4d06-b136-7140e7016298</xsl:otherwise> <!-- unbekannt -->
+        <xsl:otherwise>39176004-0e64-4d06-b136-7140e7016298</xsl:otherwise>  -->
       </xsl:choose>
     </permanentLoanTypeId>
   </xsl:template>
