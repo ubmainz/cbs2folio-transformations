@@ -45,8 +45,7 @@
     </permanentLoanTypeId>
   </xsl:template>
  
- 
-  <!-- Map identifier types -->
+   <!-- Map identifier types -->
   <xsl:template match="identifierTypeId"> <!-- additional RLP -->
     <identifierTypeId>
       <xsl:choose>
