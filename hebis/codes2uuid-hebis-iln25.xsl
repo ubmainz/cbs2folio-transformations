@@ -13,7 +13,7 @@
   <!-- Map locations 
        For Mainz, the IDs are the location names in FOLIO, generated from 209A $f and other pica fields -->
   
-  <xsl:template match="permanentLocationId|temporaryLocationId"> <!-- ILN -->
+  <xsl:template match="permanentLocationId|temporaryLocationId"> <!-- ILN/hand -->
     <xsl:element name="{name()}">
       <xsl:choose>
         <xsl:when test=".='DUMMY'">87764786-c5c8-47d0-a480-df506c751d76</xsl:when>
@@ -111,7 +111,7 @@
 
 
   <!-- Map loan types -->
-  <xsl:template match="permanentLoanTypeId"> <!-- ILN -->
+  <xsl:template match="permanentLoanTypeId"> <!-- ILN/generate -->
     <permanentLoanTypeId>
       <xsl:choose>
         <xsl:when test=".='u ausleihbar (auch Fernleihe)'"><xsl:text>7a03b2e2-c995-47a4-83d0-04bbe1930af4</xsl:text></xsl:when> 
@@ -136,7 +136,7 @@
   </xsl:template>
 
   <!-- Map identifier types -->
-  <xsl:template match="identifierTypeId"> <!-- additional RLP -->
+  <xsl:template match="identifierTypeId"> <!-- additional RLP/generate -->
     <identifierTypeId>
       <xsl:choose>
         <xsl:when test=".='PPN-K10plus'"><xsl:text>98e4039e-adfe-405f-b763-c642765269df</xsl:text></xsl:when>
@@ -147,7 +147,7 @@
   </xsl:template>
 
   <!-- Map statistical code ids -->
-  <xsl:template match="statisticalCodeIds"> <!-- ILN --> <!-- TBD: generate -->
+  <xsl:template match="statisticalCodeIds"> <!-- ILN/copy --> <!-- TBD: generate -->
     <statisticalCodeIds>
       <arr>
         <xsl:for-each select="arr/i">
@@ -164,7 +164,7 @@
   </xsl:template>
 
   <!-- Map holding note types -->
-  <xsl:template match="holdingsNoteTypeId"> <!-- Level 2: FOLIO/hebis-wide -->
+  <xsl:template match="holdingsNoteTypeId"> <!-- Level 2: FOLIO/hebis-wide/generate -->
     <holdingsNoteTypeId>
       <xsl:choose>
         <xsl:when test=".='Abrufzeichen'"><xsl:text>6d3f575d-6727-42a4-ae58-56c00de2e1d4</xsl:text></xsl:when>        
