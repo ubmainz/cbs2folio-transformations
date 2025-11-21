@@ -122,7 +122,9 @@
   </xsl:template>
 
   <xsl:template match="i[permanentLoanTypeId='dummy']"/>
-  
+
+  <xsl:template match="i[holdingsNoteTypeId='Letzte Änderung CBS']"/>
+
   <xsl:template match="permanentLocationId">
     <xsl:variable name="i" select="key('original',.)[last()]"/>
     <xsl:variable name="abt" select="$i/datafield[@tag='209A']/subfield[@code='f']"/>
