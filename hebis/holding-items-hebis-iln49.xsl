@@ -123,8 +123,6 @@
 
   <xsl:template match="i[permanentLoanTypeId='dummy']"/>
   
-  <xsl:template match="i[holdingsNoteTypeId='Letzte Änderung CBS']"/>
-
   <xsl:template match="permanentLocationId">
     <xsl:variable name="i" select="key('original',.)[last()]"/>
     <xsl:variable name="abt" select="$i/datafield[@tag='209A']/subfield[@code='f']"/>
@@ -233,71 +231,4 @@
       </notes>
   </xsl:template>
   
-  <!-- Parsing call number for prefix - optional -->
-  <xsl:template match="callNumber">
-    <xsl:variable name="i" select="key('original',../permanentLocationId)[last()]"/>
-    <xsl:variable name="abt" select="$i/datafield[@tag='209A']/subfield[@code='f']"/>
-    <xsl:variable name="standort" select="$i/datafield[(@tag='209G') and (subfield[@code='x']='01')]/subfield[@code='a']"/> 
-    <xsl:choose>
-      <xsl:when test="matches(.,'^\d{3}\s[A-Z]{2}\s\d{3,6}.*') or matches(.,'^\d{3}\s[A-Z]\s\d{3}\.\d{3}.*')"> <!-- RVK-Signatur oder Magazin-Signatur -->
-          <callNumberPrefix>
-            <xsl:value-of select="substring-before(.,' ')"/>
-          </callNumberPrefix>
-          <callNumber>
-            <xsl:value-of select="substring-after(.,' ')"/>
-          </callNumber>
-      </xsl:when>
-      <xsl:when test="($abt='016' and (starts-with(., 'THEMAG ') or starts-with(., 'THERARA '))) or 
-        ($abt='000' and (starts-with(., 'RARA ') and not(contains(.,'°')))) or
-        ($abt='019' and (starts-with(.,'CELA') or starts-with(.,'CELTRA') or starts-with(.,'LBS') or starts-with(.,'MAG') or starts-with(.,'SSC'))) or
-        (($abt='127') and not(starts-with(.,'SI ') or starts-with(.,'SK ')))"> <!-- Leeerzeichen zur Abtrennung -->
-        <xsl:choose>
-          <xsl:when test="contains(.,' ')">
-            <callNumberPrefix>
-              <xsl:value-of select="normalize-space(substring-before(.,' '))"/>
-            </callNumberPrefix>
-            <callNumber>
-              <xsl:value-of select="normalize-space(substring-after(.,' '))"/>
-            </callNumber>
-          </xsl:when>
-          <xsl:otherwise>
-            <callNumberPrefix/>
-            <callNumber>
-              <xsl:value-of select="."/>
-            </callNumber>
-          </xsl:otherwise>
-        </xsl:choose>
-      </xsl:when>
-      <xsl:otherwise>
-        <xsl:variable name="cnprefix">
-          <xsl:choose>
-            <xsl:when test="contains(.,'°')">
-              <xsl:value-of select="concat(substring-before(.,'°'),'°')"/>
-            </xsl:when>
-            <xsl:when test="contains(.,'@')">
-              <xsl:value-of select="substring-before(.,'@')"/> 
-            </xsl:when>
-          </xsl:choose>
-        </xsl:variable>
-        <callNumberPrefix>
-          <xsl:value-of select="normalize-space(translate($cnprefix,'@',''))"/>
-        </callNumberPrefix>
-        <callNumber>
-          <xsl:value-of select="normalize-space(translate(substring-after(.,$cnprefix),'@',''))"/>
-        </callNumber>
-      </xsl:otherwise>
-    </xsl:choose>
-   </xsl:template>
-
-  <xsl:template match="statisticalCodeIds">
-    <xsl:variable name="i" select="key('original',../../../../permanentLocationId)[last()]"/> <!-- ILN -->
-    <statisticalCodeIds>
-      <arr>
-        <xsl:if test="$i/datafield[(@tag='209B') and not(subfield[@code='x']='01' or subfield[@code='x']='02')]/subfield[@code='a']='LZA'">
-          <i>LZA</i>
-        </xsl:if>
-      </arr>
-    </statisticalCodeIds>
-  </xsl:template>
-
 </xsl:stylesheet>
