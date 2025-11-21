@@ -196,9 +196,6 @@
         <xsl:when test=".='g'">g nicht ausleihbar</xsl:when>
         <xsl:when test=".='a'">a bestellt</xsl:when>
         <xsl:when test=".='z'">z Verlust</xsl:when>
-        <xsl:when test=".='1'">1 Fernleihe - ausleihbar ohne Verl.</xsl:when>
-        <xsl:when test=".='2'">2 Fernleihe - ausleihbar mit Verl.</xsl:when>
-        <xsl:when test=".='3'">3 Fernleihe - Kurzausleihe ohne Verl.</xsl:when>
         <xsl:otherwise>unbekannt</xsl:otherwise>
       </xsl:choose>
     </permanentLoanTypeId>

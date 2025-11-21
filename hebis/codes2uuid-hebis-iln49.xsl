@@ -50,8 +50,8 @@
   <!-- Map loan types -->
   <xsl:template match="permanentLoanTypeId"> <!-- ILN TBD -->
     <permanentLoanTypeId>
-      <xsl:choose>
-<!--        <xsl:when test=".='u ausleihbar (auch Fernleihe)'"><xsl:text>fdd9a986-ef76-4881-9858-ff24d9201da3</xsl:text></xsl:when> 
+       <xsl:choose>
+       <xsl:when test=".='u ausleihbar (auch Fernleihe)'"><xsl:text>fdd9a986-ef76-4881-9858-ff24d9201da3</xsl:text></xsl:when> 
         <xsl:when test=".='b Kurzausleihe'"><xsl:text>478094a0-d87a-46bd-9951-c9cc8b64c453</xsl:text></xsl:when>
         <xsl:when test=".='c Lehrbuchsammlung'"><xsl:text>6ad0666d-f363-4446-b888-4689497779a6</xsl:text></xsl:when>
         <xsl:when test=".='s Präsenzbestand Lesesaal'"><xsl:text>1fa09d28-c954-4b32-a868-61490e5c7865</xsl:text></xsl:when>
@@ -60,11 +60,10 @@
         <xsl:when test=".='e vermisst'"><xsl:text>771a4d7b-02f6-41ca-aa4a-13519c81fdd5</xsl:text></xsl:when>
         <xsl:when test=".='a bestellt'"><xsl:text>9d1acd95-39a3-48f2-9e45-a5c7b8fa7d0a</xsl:text></xsl:when>
         <xsl:when test=".='g nicht ausleihbar'"><xsl:text>e8ae51a4-5ec4-4c53-95ba-093e3d73d04f</xsl:text></xsl:when>
-        <xsl:when test=".='Test'"><xsl:text></xsl:text></xsl:when>
         <xsl:when test=".='z Verlust'"><xsl:text>eadbe1a0-b86f-4315-987b-7b707f976f40</xsl:text></xsl:when>
-        <xsl:when test=".='dummy'"><xsl:text></xsl:text></xsl:when>
+        <xsl:when test=".='dummy'"><xsl:text>02c0c444-96f7-4fbf-9488-5180ae7ad63f</xsl:text></xsl:when>
         <xsl:when test=".='unbekannt'"><xsl:text>3b16cade-fdeb-40d8-8f2b-e3495b6d321b</xsl:text></xsl:when>        
-        <xsl:otherwise>3b16cade-fdeb-40d8-8f2b-e3495b6d321b</xsl:otherwise>  -->
+        <xsl:otherwise>3b16cade-fdeb-40d8-8f2b-e3495b6d321b</xsl:otherwise>
       </xsl:choose>
     </permanentLoanTypeId>
   </xsl:template>
