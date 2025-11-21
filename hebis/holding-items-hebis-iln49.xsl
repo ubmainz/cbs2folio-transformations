@@ -213,7 +213,9 @@
   <xsl:template match="i[holdingsNoteTypeId='Standort (8201)']"> <!-- 8201 will be displayed by default: add exceptions here -->
     <xsl:variable name="i" select="key('original',../../../permanentLocationId)[last()]"/>
     <xsl:variable name="abt" select="$i/datafield[@tag='209A']/subfield[@code='f']"/>
-    <xsl:if test="true()">
+     <xsl:if test="not(($abt='001' and (./note='Allgemeines' or ./note='Architektur' or ./note='Bau' or ./note='Betriebswirtschaft' or ./note='Freihand')) or
+	  ($abt='000' and (./note='Freihand' or ./note='Medienraum')) or
+	  ($abt='002' and (./note='MAG')))	  
         <i>
           <note>
               <xsl:value-of select="./note"/>
