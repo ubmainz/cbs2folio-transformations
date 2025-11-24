@@ -11,40 +11,54 @@
   </xsl:template>  
 
   <!-- ILN 49 HS Mainz -->
-  
-  <xsl:template match="record[not(delete)]">
-    <record>
-      <xsl:copy-of select="original"/>
-      <instance>
-        <source>hebis</source>
-        <hrid><xsl:value-of select="instance/hrid"/></hrid>
-        <xsl:apply-templates select="instance/*[not(self::hrid or self::source or self::administrativeNotes)]"/>
-        <administrativeNotes>
-          <arr>
-            <xsl:apply-templates select="instance/administrativeNotes/arr/*"/>
-            <i><xsl:value-of select="concat('Hebis-Instanz hebis-PPN: ',instance/hrid)"/></i>
-          </arr>
-        </administrativeNotes>
-      </instance>
-      <xsl:apply-templates select="instanceRelations|processing"/>
-      <xsl:variable name="original" select="original"/>
-      <holdingsRecords>
-        <arr>
-          <xsl:for-each select="holdingsRecords/arr/i">
-            <i>
-              <xsl:apply-templates select="*[not(self::administrativeNotes)]"/>
-              <administrativeNotes>
-                <arr>
-                  <xsl:apply-templates select="administrativeNotes/arr/*"/>
-                  <i><xsl:value-of select="concat(translate($original/item[@epn=current()/hrid]/datafield[@tag='201B']/subfield[@code='0'], '-', '.'),', ', substring($original/item[@epn=current()/hrid]/datafield[@tag='201B']/subfield[@code='t'],1,5), ' (Letzte Änderung CBS)')"/></i>
-                  <i><xsl:value-of select="concat('Datenursprung Hebis hebis-EPN: ',hrid)"/></i>
-                </arr>
-              </administrativeNotes>
-            </i>
-          </xsl:for-each>
-        </arr>
-      </holdingsRecords>
-    </record>
+
+  <xsl:template match="record[delete]">
+    <xsl:copy-of select="."/>
+  </xsl:template>
+
+  <xsl:template match="record">
+    <xsl:if test="not(substring(original/datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O')"> <!-- Bingen keine Online-Ressourcen -->
+        <record>
+          <xsl:copy-of select="original"/>
+          <instance>
+            <source>hebis</source>
+            <hrid><xsl:value-of select="instance/hrid"/></hrid>
+            <xsl:apply-templates select="instance/*[not(self::hrid or self::source or self::administrativeNotes)]"/>
+            <administrativeNotes>
+              <arr>
+                <xsl:apply-templates select="instance/administrativeNotes/arr/*"/>
+                <i><xsl:value-of select="concat('Hebis-Instanz hebis-PPN: ',instance/hrid)"/></i>
+              </arr>
+            </administrativeNotes>
+          <!--  TBD: lokale Sacherschließung?
+            <subjects>  TBD: lokale Sacherschließung?
+              <arr>
+                <xsl:for-each select="original/datafield[@tag='145Z']/subfield[@code='a']">
+                  <i><value><xsl:value-of select="."/></value></i>
+                </xsl:for-each>
+              </arr>
+            </subjects> -->
+          </instance>
+          <xsl:apply-templates select="instanceRelations|processing"/>
+          <xsl:variable name="original" select="original"/>
+          <holdingsRecords>
+            <arr>
+              <xsl:for-each select="holdingsRecords/arr/i">
+                <i>
+                  <xsl:apply-templates select="*[not(self::administrativeNotes)]"/>
+                  <administrativeNotes>
+                    <arr>
+                      <xsl:apply-templates select="administrativeNotes/arr/*"/>
+                      <i><xsl:value-of select="concat(translate($original/item[@epn=current()/hrid]/datafield[@tag='201B']/subfield[@code='0'], '-', '.'),', ', substring($original/item[@epn=current()/hrid]/datafield[@tag='201B']/subfield[@code='t'],1,5), ' (Letzte Änderung CBS)')"/></i>
+                      <i><xsl:value-of select="concat('Datenursprung Hebis hebis-EPN: ',hrid)"/></i>
+                    </arr>
+                  </administrativeNotes>
+                </i>
+              </xsl:for-each>
+            </arr>
+          </holdingsRecords>
+        </record>
+    </xsl:if>
   </xsl:template>
   
   <xsl:template match="processing[not(parent::delete)]">
