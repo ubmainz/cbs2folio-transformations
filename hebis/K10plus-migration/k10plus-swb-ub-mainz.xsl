@@ -137,10 +137,10 @@
   
   <xsl:template match="record">
     <xsl:if test="not((substring(original/datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O') 
-        or (original/datafield[@tag='002@']/subfield[@code='0'] = 'amy')) 
-        or exists(original/item[datafield[(@tag='209B') and (subfield[@code='x']='12')]/subfield[@code='a']='eboo'])
-        or exists(original/item/datafield[(@tag='209R') and contains(subfield[@code='u'],'anchor=einzelk_')])
-        or exists(original/item/datafield[(@tag='245G') and (subfield[@code='c']='eboo')])">
+           or (original/datafield[@tag='002@']/subfield[@code='0'] = 'amy')) 
+        or exists(original/item[datafield[(@tag='209B') and (subfield[@code='x']='12')]/subfield[@code='a']='ctof'])
+        or exists(original/item/datafield[(@tag='209R') and contains(subfield[@code='u'],'anchor=Einzelkauf_')])
+        or exists(original/item/datafield[(@tag='245G') and (subfield[@code='c']='ctof')])">
       <!-- UB Mainz: keine Online-Ressourcen, keine Mailboxen, aber Online-Einzelkauf Mono/ZS-->
       <record>
         <xsl:copy-of select="original"/>
