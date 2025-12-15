@@ -40,6 +40,13 @@
             <instance>
               <source>K10plus</source>
               <hrid><xsl:value-of select="."/></hrid>
+              <!--
+              <identifiers>
+                <arr>
+                  <xsl:apply-templates select="$currentrecord/instance/identifiers/arr/i[not((identifierTypeId='98e4039e-adfe-405f-b763-c642765269df') or (identifierTypeId='be3a2669-391d-4027-b023-1092a61ac631'))]"/>
+                </arr>
+              </identifiers>
+              or self::identifiers -->
               <xsl:apply-templates select="$currentrecord/instance/*[not(self::hrid or self::source or self::administrativeNotes)]"/>
               <administrativeNotes>
                 <arr>
@@ -52,14 +59,14 @@
                   </i>
                 </arr>
               </administrativeNotes>
-                <statisticalCodeIds>
-                  <arr>
-                    <i>Dublettenbereinigung</i>
-                  </arr>
-                </statisticalCodeIds>
+              <statisticalCodeIds>
+                <arr>
+                  <i>Dublettenbereinigung</i>
+                </arr>
+              </statisticalCodeIds>
             </instance>
             <!-- instance relations entfallen und kommen mit K10plus wieder -->
-            <!-- Verlierer: keine Holdings -->
+            <!-- Verlierer: keine Holdings,  -->
         </record> </xsl:if>
       </xsl:for-each>
     </xsl:if>
