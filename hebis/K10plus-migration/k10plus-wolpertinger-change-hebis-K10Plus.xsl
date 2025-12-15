@@ -40,14 +40,12 @@
             <instance>
               <source>K10plus</source>
               <hrid><xsl:value-of select="."/></hrid>
-              <!--
               <identifiers>
                 <arr>
-                  <xsl:apply-templates select="$currentrecord/instance/identifiers/arr/i[not((identifierTypeId='98e4039e-adfe-405f-b763-c642765269df') or (identifierTypeId='be3a2669-391d-4027-b023-1092a61ac631'))]"/>
+                  <xsl:apply-templates select="$currentrecord/instance/identifiers/arr/i[not((identifierTypeId='PPN-K10plus') or (identifierTypeId='PPN-Hebis'))]"/>
                 </arr>
               </identifiers>
-              or self::identifiers -->
-              <xsl:apply-templates select="$currentrecord/instance/*[not(self::hrid or self::source or self::administrativeNotes)]"/>
+              <xsl:apply-templates select="$currentrecord/instance/*[not(self::hrid or self::source or self::administrativeNotes or self::identifiers)]"/>
               <administrativeNotes>
                 <arr>
                   <xsl:apply-templates select="$currentrecord/instance/administrativeNotes/arr/*"/>
