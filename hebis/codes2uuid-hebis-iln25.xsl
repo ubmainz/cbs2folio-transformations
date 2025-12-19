@@ -78,6 +78,7 @@
         <xsl:when test=".='PHTHW'">4e0e57d9-f094-4e82-9bc8-8f6a55e5041c</xsl:when>		
         <xsl:when test=".='RWR'">c32ad861-d3fa-4091-b68b-92c6710bd50b</xsl:when>
         <xsl:when test=".='RWW'">f15803f6-6997-48f4-9c42-8774ed18506d</xsl:when>
+        <xsl:when test=".='RWM'">5a1d846c-e6db-4ba2-ae83-e94cda2ad424</xsl:when>
         <xsl:when test=".='RW'">98fcae0c-df5d-472a-8dcd-25ce4252e936</xsl:when>
         <xsl:when test=".='RWAMA'">75082038-b301-41bb-b818-75d0f34aa6ae</xsl:when>
         <xsl:when test=".='RWETH'">9bf8ba06-3a78-4cdc-84fb-c3a15eecd722</xsl:when>

@@ -403,6 +403,7 @@
             <xsl:when test="contains($standort,'LEHRBUCH')">RWLBS</xsl:when>
             <xsl:when test="contains($standort,'MAGAZIN')">RWMAG</xsl:when>
             <xsl:when test="contains($standort,'RECHT')">RWR</xsl:when>
+            <xsl:when test="contains($standort,'MEDIZIN')">RWM</xsl:when>
             <xsl:when test="contains($standort,'VWL') or contains($standort,'BWL') or contains($standort,'WIPÄD')">RWW</xsl:when>
             <xsl:otherwise>RW</xsl:otherwise>
           </xsl:choose>
