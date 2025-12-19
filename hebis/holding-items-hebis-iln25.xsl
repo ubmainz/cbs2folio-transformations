@@ -340,7 +340,7 @@
 	  ($abt='005' and (./note='UM LESESAAL' or ./note='UM LBS' or ./note='UM FREIHAND')) or
 	  ($abt='006' and (./note='MIN' or ./note='MIN LEHRBUCHSAMMLUNG')) or
 	  ($abt='016' and (./note='Theologie LEHRBUCHSAMMLUNG')) or
-	  ($abt='018' and (./note='ReWi LEHRBUCHSAMMLUNG') or (./note='Recht') or (./note='VWL') or (./note='BWL')  or (./note='WiPäd')) or
+	  ($abt='018' and (./note='ReWi LEHRBUCHSAMMLUNG') or (./note='Recht') or (./note='VWL') or (./note='BWL')  or (./note='WiPäd') or (./note='Medizin')) or
 	  ($abt='019' and (./note='Lehrbuchsammlung' or ./note='Lesesaal' or ./note='Magazin')) or
 	  ($abt='034' and (./note='FB 4-40')) or
 	  ($abt='035' and (./note='Institut für Rechtsmedizin')) or
