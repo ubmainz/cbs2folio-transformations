@@ -13,40 +13,61 @@
   
   <xsl:template match="record">
     <xsl:variable name="currentrecord" select="."/> <!-- 003H Primäre Hebis-PPN -->
-    <xsl:variable name="hebppns" select="original/datafield[@tag='003H']/subfield[@code='0'],original/datafield[@tag='006H']/subfield[@code='0']"/>
-    <!-- <xsl:variable name="hebppns-dist" select="$hebppns"/> --> <xsl:variable name="hebppns-dist" select="distinct-values($hebppns)"/>
-    <xsl:for-each select="$hebppns-dist">
+    <xsl:variable name="hebppns-dist" select="distinct-values(original/datafield[@tag='006H']/subfield[@code='0'])"/> <!-- weitere Hebis-PPN -->
+    <xsl:variable name="hebgewinner" select="original/datafield[@tag='003H']/subfield[@code='0'][1]"/>
+    <xsl:if test="$hebgewinner">
       <record>
         <xsl:copy-of select="$currentrecord/processing"/>
-          <instance>
-            <source>K10plus</source>
-            <hrid><xsl:value-of select="."/></hrid>
-            <xsl:apply-templates select="$currentrecord/instance/*[not(self::hrid or self::source or self::administrativeNotes)]"/>
-            <administrativeNotes>
-              <arr>
-                <xsl:apply-templates select="$currentrecord/instance/administrativeNotes/arr/*"/>
-                <i>
-                  <xsl:text>Wolpertinger</xsl:text>
-                  <xsl:if test="not(.=$currentrecord/original/datafield[@tag='003H']/subfield[@code='0'])"><xsl:value-of select="concat(' für Hebis-PPN: ',.)"/></xsl:if>
-                </i>
-              </arr>
-            </administrativeNotes>
-            <xsl:if test="$hebppns-dist[2]"> <!-- Hebis-Dubletten -->
-                <xsl:if test="position()>1"> <!-- Verlierer-Datensatz - werden gelöscht -->
-                  <statisticalCodeIds>
-                    <arr>
-                      <i>Dublettenbereinigung</i>
-                    </arr>
-                  </statisticalCodeIds>
-                </xsl:if>
-            </xsl:if>
-          </instance>
-          <!-- instance relations entfallen und kommen mit K10plus wieder -->
-        <xsl:if test="position()=1"> <!-- Einzeldatensatz oder Gewinner -->
-          <xsl:apply-templates select="$currentrecord/holdingsRecords"/>
-        </xsl:if>        
+        <instance>
+          <source>K10plus</source>
+          <hrid><xsl:value-of select="$hebgewinner"/></hrid>
+          <xsl:apply-templates select="$currentrecord/instance/*[not(self::hrid or self::source or self::administrativeNotes)]"/>
+          <administrativeNotes>
+            <arr>
+              <xsl:apply-templates select="$currentrecord/instance/administrativeNotes/arr/*"/>
+              <i>
+                <xsl:text>Wolpertinger</xsl:text>
+              </i>
+            </arr>
+          </administrativeNotes>
+        </instance>
+        <!-- instance relations entfallen und kommen mit K10plus wieder -->
+        <xsl:apply-templates select="$currentrecord/holdingsRecords"/> <!-- Gewinner: Holding und Items -->
       </record>
-    </xsl:for-each>
+      <xsl:for-each select="$hebppns-dist"> <xsl:if test=".!=$hebgewinner"> <!-- Verlierer -->
+        <record>
+          <xsl:copy-of select="$currentrecord/processing"/>
+            <instance>
+              <source>K10plus</source>
+              <hrid><xsl:value-of select="."/></hrid>
+              <identifiers>
+                <arr>
+                  <xsl:apply-templates select="$currentrecord/instance/identifiers/arr/i[not((identifierTypeId='PPN-K10plus') or (identifierTypeId='PPN-Hebis'))]"/>
+                </arr>
+              </identifiers>
+              <xsl:apply-templates select="$currentrecord/instance/*[not(self::hrid or self::source or self::administrativeNotes or self::identifiers)]"/>
+              <administrativeNotes>
+                <arr>
+                  <xsl:apply-templates select="$currentrecord/instance/administrativeNotes/arr/*"/>
+                  <i>
+                    <xsl:text>Wolpertinger für Hebis-PPN: </xsl:text><xsl:value-of select="."/>
+                  </i>
+                  <i>
+                    <xsl:text>Verlierer wird gelöscht: keine Holdings oder Items</xsl:text>
+                  </i>
+                </arr>
+              </administrativeNotes>
+              <statisticalCodeIds>
+                <arr>
+                  <i>Dublettenbereinigung</i>
+                </arr>
+              </statisticalCodeIds>
+            </instance>
+            <!-- instance relations entfallen und kommen mit K10plus wieder -->
+            <!-- Verlierer: keine Holdings,  -->
+        </record> </xsl:if>
+      </xsl:for-each>
+    </xsl:if>
   </xsl:template>
 
   <xsl:template match="holdingsRecords/arr/i[not(formerIds/arr/i[2])]/hrid">

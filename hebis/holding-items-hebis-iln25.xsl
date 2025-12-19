@@ -25,6 +25,14 @@
             <i><xsl:value-of select="concat('Hebis-Instanz hebis-PPN: ',instance/hrid)"/></i>
           </arr>
         </administrativeNotes>
+      <!-- TBD: lokale Schlagwortsysteme
+        <subjects>
+          <arr>
+            <xsl:for-each select="original/datafield[@tag='145Z']/subfield[@code='a']">
+              <i><value><xsl:value-of select="."/></value></i>
+            </xsl:for-each>
+          </arr>
+        </subjects> -->
       </instance>
       <xsl:apply-templates select="instanceRelations|processing"/>
       <xsl:variable name="original" select="original"/>
@@ -201,6 +209,9 @@
            <xsl:choose>
              <xsl:when test="contains($standort,'LEHRBUCH')">RWLBS</xsl:when>
              <xsl:when test="contains($standort,'MAGAZIN')">RWMAG</xsl:when>
+             <xsl:when test="contains($standort,'RECHT')">RWR</xsl:when>
+             <xsl:when test="contains($standort,'MEDIZIN')">RWM</xsl:when>
+             <xsl:when test="contains($standort,'VWL') or contains($standort,'BWL') or contains($standort,'WIPÄD')">RWW</xsl:when>
              <xsl:otherwise>RW</xsl:otherwise>
            </xsl:choose>
          </xsl:when>
@@ -329,7 +340,7 @@
 	  ($abt='005' and (./note='UM LESESAAL' or ./note='UM LBS' or ./note='UM FREIHAND')) or
 	  ($abt='006' and (./note='MIN' or ./note='MIN LEHRBUCHSAMMLUNG')) or
 	  ($abt='016' and (./note='Theologie LEHRBUCHSAMMLUNG')) or
-	  ($abt='018' and (./note='ReWi LEHRBUCHSAMMLUNG')) or
+	  ($abt='018' and (./note='ReWi LEHRBUCHSAMMLUNG') or (./note='Recht') or (./note='VWL') or (./note='BWL')  or (./note='WiPäd') or (./note='Medizin')) or
 	  ($abt='019' and (./note='Lehrbuchsammlung' or ./note='Lesesaal' or ./note='Magazin')) or
 	  ($abt='034' and (./note='FB 4-40')) or
 	  ($abt='035' and (./note='Institut für Rechtsmedizin')) or
@@ -390,7 +401,7 @@
     <xsl:variable name="abt" select="$i/datafield[@tag='209A']/subfield[@code='f']"/>
     <xsl:variable name="standort" select="$i/datafield[(@tag='209G') and (subfield[@code='x']='01')]/subfield[@code='a']"/> 
     <xsl:choose>
-      <xsl:when test="matches(.,'^\d{3}\s[A-Z]{2}\s\d{3,6}.*') or matches(.,'^\d{3}\s[A-Z]\s\d{3}\.\d{3}.*')"> <!-- RVK-Signatur oder Magazin-Signatur -->
+      <xsl:when test="matches(.,'^\d{3}\s[A-Z]{2}\s\d{3,6}.*') or matches(.,'^\d{3}\s[A-Z]\s\d{3}\.\d{3}.*') or starts-with(.,'INFO ')"> <!-- RVK-Signatur oder Magazin-Signatur -->
           <callNumberPrefix>
             <xsl:value-of select="substring-before(.,' ')"/>
           </callNumberPrefix>
@@ -401,6 +412,8 @@
       <xsl:when test="($abt='016' and (starts-with(., 'THEMAG ') or starts-with(., 'THERARA '))) or 
         ($abt='000' and (starts-with(., 'RARA ') and not(contains(.,'°')))) or
         ($abt='019' and (starts-with(.,'CELA') or starts-with(.,'CELTRA') or starts-with(.,'LBS') or starts-with(.,'MAG') or starts-with(.,'SSC'))) or
+        ((($abt='079') or ($abt='080')) and starts-with(.,'GROSSFORMAT')) or
+        (($abt='126') and (starts-with(.,'Oversize'))) or
         (($abt='127') and not(starts-with(.,'SI ') or starts-with(.,'SK ')))"> <!-- Leeerzeichen zur Abtrennung -->
         <xsl:choose>
           <xsl:when test="contains(.,' ')">

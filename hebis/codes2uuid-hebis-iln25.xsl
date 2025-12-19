@@ -13,7 +13,7 @@
   <!-- Map locations 
        For Mainz, the IDs are the location names in FOLIO, generated from 209A $f and other pica fields -->
   
-  <xsl:template match="permanentLocationId|temporaryLocationId"> <!-- ILN -->
+  <xsl:template match="permanentLocationId|temporaryLocationId"> <!-- ILN/hand -->
     <xsl:element name="{name()}">
       <xsl:choose>
         <xsl:when test=".='DUMMY'">87764786-c5c8-47d0-a480-df506c751d76</xsl:when>
@@ -76,6 +76,9 @@
         <xsl:when test=".='PHSLAV'">e8d25e8a-9fe8-4e46-9b8b-79f7de9c3bc8</xsl:when>
         <xsl:when test=".='PHSON'">ce688565-3763-4701-8d23-67b071da3015</xsl:when>
         <xsl:when test=".='PHTHW'">4e0e57d9-f094-4e82-9bc8-8f6a55e5041c</xsl:when>		
+        <xsl:when test=".='RWR'">c32ad861-d3fa-4091-b68b-92c6710bd50b</xsl:when>
+        <xsl:when test=".='RWW'">f15803f6-6997-48f4-9c42-8774ed18506d</xsl:when>
+        <xsl:when test=".='RWM'">5a1d846c-e6db-4ba2-ae83-e94cda2ad424</xsl:when>
         <xsl:when test=".='RW'">98fcae0c-df5d-472a-8dcd-25ce4252e936</xsl:when>
         <xsl:when test=".='RWAMA'">75082038-b301-41bb-b818-75d0f34aa6ae</xsl:when>
         <xsl:when test=".='RWETH'">9bf8ba06-3a78-4cdc-84fb-c3a15eecd722</xsl:when>
@@ -111,7 +114,7 @@
 
 
   <!-- Map loan types -->
-  <xsl:template match="permanentLoanTypeId"> <!-- ILN -->
+  <xsl:template match="permanentLoanTypeId"> <!-- ILN/generate -->
     <permanentLoanTypeId>
       <xsl:choose>
         <xsl:when test=".='u ausleihbar (auch Fernleihe)'"><xsl:text>7a03b2e2-c995-47a4-83d0-04bbe1930af4</xsl:text></xsl:when> 
@@ -136,7 +139,7 @@
   </xsl:template>
 
   <!-- Map identifier types -->
-  <xsl:template match="identifierTypeId"> <!-- additional RLP -->
+  <xsl:template match="identifierTypeId"> <!-- additional RLP/generate -->
     <identifierTypeId>
       <xsl:choose>
         <xsl:when test=".='PPN-K10plus'"><xsl:text>98e4039e-adfe-405f-b763-c642765269df</xsl:text></xsl:when>
@@ -147,7 +150,7 @@
   </xsl:template>
 
   <!-- Map statistical code ids -->
-  <xsl:template match="statisticalCodeIds"> <!-- ILN --> <!-- TBD: generate -->
+  <xsl:template match="statisticalCodeIds"> <!-- ILN/copy --> <!-- TBD: generate -->
     <statisticalCodeIds>
       <arr>
         <xsl:for-each select="arr/i">
@@ -164,7 +167,7 @@
   </xsl:template>
 
   <!-- Map holding note types -->
-  <xsl:template match="holdingsNoteTypeId"> <!-- Level 2: FOLIO/hebis-wide -->
+  <xsl:template match="holdingsNoteTypeId"> <!-- Level 2: FOLIO/hebis-wide/generate -->
     <holdingsNoteTypeId>
       <xsl:choose>
         <xsl:when test=".='Abrufzeichen'"><xsl:text>6d3f575d-6727-42a4-ae58-56c00de2e1d4</xsl:text></xsl:when>        

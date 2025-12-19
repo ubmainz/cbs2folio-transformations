@@ -11,40 +11,54 @@
   </xsl:template>  
 
   <!-- ILN 49 HS Mainz -->
-  
-  <xsl:template match="record[not(delete)]">
-    <record>
-      <xsl:copy-of select="original"/>
-      <instance>
-        <source>hebis</source>
-        <hrid><xsl:value-of select="instance/hrid"/></hrid>
-        <xsl:apply-templates select="instance/*[not(self::hrid or self::source or self::administrativeNotes)]"/>
-        <administrativeNotes>
-          <arr>
-            <xsl:apply-templates select="instance/administrativeNotes/arr/*"/>
-            <i><xsl:value-of select="concat('Hebis-Instanz hebis-PPN: ',instance/hrid)"/></i>
-          </arr>
-        </administrativeNotes>
-      </instance>
-      <xsl:apply-templates select="instanceRelations|processing"/>
-      <xsl:variable name="original" select="original"/>
-      <holdingsRecords>
-        <arr>
-          <xsl:for-each select="holdingsRecords/arr/i">
-            <i>
-              <xsl:apply-templates select="*[not(self::administrativeNotes)]"/>
-              <administrativeNotes>
-                <arr>
-                  <xsl:apply-templates select="administrativeNotes/arr/*"/>
-                  <i><xsl:value-of select="concat(translate($original/item[@epn=current()/hrid]/datafield[@tag='201B']/subfield[@code='0'], '-', '.'),', ', substring($original/item[@epn=current()/hrid]/datafield[@tag='201B']/subfield[@code='t'],1,5), ' (Letzte Änderung CBS)')"/></i>
-                  <i><xsl:value-of select="concat('Datenursprung Hebis hebis-EPN: ',hrid)"/></i>
-                </arr>
-              </administrativeNotes>
-            </i>
-          </xsl:for-each>
-        </arr>
-      </holdingsRecords>
-    </record>
+
+  <xsl:template match="record[delete]">
+    <xsl:copy-of select="."/>
+  </xsl:template>
+
+  <xsl:template match="record">
+    <xsl:if test="not(substring(original/datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O')"> <!-- Bingen keine Online-Ressourcen -->
+        <record>
+          <xsl:copy-of select="original"/>
+          <instance>
+            <source>hebis</source>
+            <hrid><xsl:value-of select="instance/hrid"/></hrid>
+            <xsl:apply-templates select="instance/*[not(self::hrid or self::source or self::administrativeNotes)]"/>
+            <administrativeNotes>
+              <arr>
+                <xsl:apply-templates select="instance/administrativeNotes/arr/*"/>
+                <i><xsl:value-of select="concat('Hebis-Instanz hebis-PPN: ',instance/hrid)"/></i>
+              </arr>
+            </administrativeNotes>
+          <!--  TBD: lokale Sacherschließung?
+            <subjects>  TBD: lokale Sacherschließung?
+              <arr>
+                <xsl:for-each select="original/datafield[@tag='145Z']/subfield[@code='a']">
+                  <i><value><xsl:value-of select="."/></value></i>
+                </xsl:for-each>
+              </arr>
+            </subjects> -->
+          </instance>
+          <xsl:apply-templates select="instanceRelations|processing"/>
+          <xsl:variable name="original" select="original"/>
+          <holdingsRecords>
+            <arr>
+              <xsl:for-each select="holdingsRecords/arr/i">
+                <i>
+                  <xsl:apply-templates select="*[not(self::administrativeNotes)]"/>
+                  <administrativeNotes>
+                    <arr>
+                      <xsl:apply-templates select="administrativeNotes/arr/*"/>
+                      <i><xsl:value-of select="concat(translate($original/item[@epn=current()/hrid]/datafield[@tag='201B']/subfield[@code='0'], '-', '.'),', ', substring($original/item[@epn=current()/hrid]/datafield[@tag='201B']/subfield[@code='t'],1,5), ' (Letzte Änderung CBS)')"/></i>
+                      <i><xsl:value-of select="concat('Datenursprung Hebis hebis-EPN: ',hrid)"/></i>
+                    </arr>
+                  </administrativeNotes>
+                </i>
+              </xsl:for-each>
+            </arr>
+          </holdingsRecords>
+        </record>
+    </xsl:if>
   </xsl:template>
   
   <xsl:template match="processing[not(parent::delete)]">
@@ -122,7 +136,7 @@
   </xsl:template>
 
   <xsl:template match="i[permanentLoanTypeId='dummy']"/>
-  
+
   <xsl:template match="i[holdingsNoteTypeId='Letzte Änderung CBS']"/>
 
   <xsl:template match="permanentLocationId">
@@ -137,11 +151,11 @@
        <xsl:choose>
          <xsl:when test="$electronicholding">ONLINE</xsl:when>
          <xsl:when test="($selectionscode = 'da') or ($selectionscode = 'dummy')">DUMMY</xsl:when>
-<!-- ? --> <xsl:when test="(substring($i/../datafield[@tag='002@']/subfield[@code='0'],2,1) = 'o') and not($i/datafield[@tag='209A']/subfield[@code='d'])">AUFSATZ</xsl:when>
+           <xsl:when test="(substring($i/../datafield[@tag='002@']/subfield[@code='0'],2,1) = 'o') and not($i/datafield[@tag='209A']/subfield[@code='d'])">AUFSATZ</xsl:when>
            <xsl:when test="$selectionscode = 'a'">ZEB</xsl:when>
            <xsl:when test="starts-with($standort,upper-case('Große Bücher'))">GROSS</xsl:when>
            <xsl:when test="starts-with($standort,'SEMESTERAPPARAT')">SEMAPP</xsl:when>
-           <xsl:when test="starts-with($standort,'BÜRO') or $standort='Extern'">FBVW</xsl:when>
+           <xsl:when test="starts-with($standort,'BÜRO') or $standort='EXTERN'">FBVW</xsl:when>
            <xsl:when test="contains($standort,'THEKE') or contains($standort,'VITRINE') or contains($standort,'ZEITUNGSAUSLAGE')">THEKE</xsl:when>
            <xsl:when test="$abt='000'">
              <xsl:choose>
@@ -196,9 +210,6 @@
         <xsl:when test=".='g'">g nicht ausleihbar</xsl:when>
         <xsl:when test=".='a'">a bestellt</xsl:when>
         <xsl:when test=".='z'">z Verlust</xsl:when>
-        <xsl:when test=".='1'">1 Fernleihe - ausleihbar ohne Verl.</xsl:when>
-        <xsl:when test=".='2'">2 Fernleihe - ausleihbar mit Verl.</xsl:when>
-        <xsl:when test=".='3'">3 Fernleihe - Kurzausleihe ohne Verl.</xsl:when>
         <xsl:otherwise>unbekannt</xsl:otherwise>
       </xsl:choose>
     </permanentLoanTypeId>
@@ -213,7 +224,9 @@
   <xsl:template match="i[holdingsNoteTypeId='Standort (8201)']"> <!-- 8201 will be displayed by default: add exceptions here -->
     <xsl:variable name="i" select="key('original',../../../permanentLocationId)[last()]"/>
     <xsl:variable name="abt" select="$i/datafield[@tag='209A']/subfield[@code='f']"/>
-    <xsl:if test="true()">
+     <xsl:if test="not(($abt='001' and (./note='Allgemeines' or ./note='Architektur' or ./note='Bau' or ./note='Betriebswirtschaft' or ./note='Freihand')) or
+	  ($abt='000' and (./note='Freihand' or ./note='Medienraum')) or
+	  ($abt='002' and (./note='MAG')))">	  
         <i>
           <note>
               <xsl:value-of select="./note"/>
@@ -234,71 +247,4 @@
       </notes>
   </xsl:template>
   
-  <!-- Parsing call number for prefix - optional -->
-  <xsl:template match="callNumber">
-    <xsl:variable name="i" select="key('original',../permanentLocationId)[last()]"/>
-    <xsl:variable name="abt" select="$i/datafield[@tag='209A']/subfield[@code='f']"/>
-    <xsl:variable name="standort" select="$i/datafield[(@tag='209G') and (subfield[@code='x']='01')]/subfield[@code='a']"/> 
-    <xsl:choose>
-      <xsl:when test="matches(.,'^\d{3}\s[A-Z]{2}\s\d{3,6}.*') or matches(.,'^\d{3}\s[A-Z]\s\d{3}\.\d{3}.*')"> <!-- RVK-Signatur oder Magazin-Signatur -->
-          <callNumberPrefix>
-            <xsl:value-of select="substring-before(.,' ')"/>
-          </callNumberPrefix>
-          <callNumber>
-            <xsl:value-of select="substring-after(.,' ')"/>
-          </callNumber>
-      </xsl:when>
-      <xsl:when test="($abt='016' and (starts-with(., 'THEMAG ') or starts-with(., 'THERARA '))) or 
-        ($abt='000' and (starts-with(., 'RARA ') and not(contains(.,'°')))) or
-        ($abt='019' and (starts-with(.,'CELA') or starts-with(.,'CELTRA') or starts-with(.,'LBS') or starts-with(.,'MAG') or starts-with(.,'SSC'))) or
-        (($abt='127') and not(starts-with(.,'SI ') or starts-with(.,'SK ')))"> <!-- Leeerzeichen zur Abtrennung -->
-        <xsl:choose>
-          <xsl:when test="contains(.,' ')">
-            <callNumberPrefix>
-              <xsl:value-of select="normalize-space(substring-before(.,' '))"/>
-            </callNumberPrefix>
-            <callNumber>
-              <xsl:value-of select="normalize-space(substring-after(.,' '))"/>
-            </callNumber>
-          </xsl:when>
-          <xsl:otherwise>
-            <callNumberPrefix/>
-            <callNumber>
-              <xsl:value-of select="."/>
-            </callNumber>
-          </xsl:otherwise>
-        </xsl:choose>
-      </xsl:when>
-      <xsl:otherwise>
-        <xsl:variable name="cnprefix">
-          <xsl:choose>
-            <xsl:when test="contains(.,'°')">
-              <xsl:value-of select="concat(substring-before(.,'°'),'°')"/>
-            </xsl:when>
-            <xsl:when test="contains(.,'@')">
-              <xsl:value-of select="substring-before(.,'@')"/> 
-            </xsl:when>
-          </xsl:choose>
-        </xsl:variable>
-        <callNumberPrefix>
-          <xsl:value-of select="normalize-space(translate($cnprefix,'@',''))"/>
-        </callNumberPrefix>
-        <callNumber>
-          <xsl:value-of select="normalize-space(translate(substring-after(.,$cnprefix),'@',''))"/>
-        </callNumber>
-      </xsl:otherwise>
-    </xsl:choose>
-   </xsl:template>
-
-  <xsl:template match="statisticalCodeIds">
-    <xsl:variable name="i" select="key('original',../../../../permanentLocationId)[last()]"/> <!-- ILN -->
-    <statisticalCodeIds>
-      <arr>
-        <xsl:if test="$i/datafield[(@tag='209B') and not(subfield[@code='x']='01' or subfield[@code='x']='02')]/subfield[@code='a']='LZA'">
-          <i>LZA</i>
-        </xsl:if>
-      </arr>
-    </statisticalCodeIds>
-  </xsl:template>
-
 </xsl:stylesheet>

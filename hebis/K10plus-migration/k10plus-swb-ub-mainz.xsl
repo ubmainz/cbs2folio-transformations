@@ -136,10 +136,12 @@
   </xsl:template>
   
   <xsl:template match="record">
-    <xsl:if test="not(substring(original/datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O') 
-        or (original/datafield[@tag='002@']/subfield[@code='0'] = 'amy') 
-        or exists(original/item[datafield[(@tag='209B') and (subfield[@code='x']='12')]/subfield[@code='a']='kauf'])"> <!-- Online/"Mailboxen"/kauf? prüfen -->
-      <!-- Mainz: keine Online-Ressourcen, aber Online-Einzelkauf -->
+    <xsl:if test="not((substring(original/datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O') 
+           or (original/datafield[@tag='002@']/subfield[@code='0'] = 'amy')) 
+        or exists(original/item[datafield[(@tag='209B') and (subfield[@code='x']='12')]/subfield[@code='a']='ctof'])
+        or exists(original/item/datafield[(@tag='209R') and contains(subfield[@code='u'],'anchor=Einzelkauf_')])
+        or exists(original/item/datafield[(@tag='245G') and (subfield[@code='c']='ctof')])">
+      <!-- UB Mainz: keine Online-Ressourcen, keine Mailboxen, aber Online-Einzelkauf Mono/ZS-->
       <record>
         <xsl:copy-of select="original"/>
         <xsl:choose>
@@ -400,6 +402,9 @@
           <xsl:choose>
             <xsl:when test="contains($standort,'LEHRBUCH')">RWLBS</xsl:when>
             <xsl:when test="contains($standort,'MAGAZIN')">RWMAG</xsl:when>
+            <xsl:when test="contains($standort,'RECHT')">RWR</xsl:when>
+            <xsl:when test="contains($standort,'MEDIZIN')">RWM</xsl:when>
+            <xsl:when test="contains($standort,'VWL') or contains($standort,'BWL') or contains($standort,'WIPÄD')">RWW</xsl:when>
             <xsl:otherwise>RW</xsl:otherwise>
           </xsl:choose>
         </xsl:when>

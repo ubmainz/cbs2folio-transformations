@@ -12,7 +12,7 @@
   <!-- Note: <xsl:text> Elements mark the UUIDs that are added by K10plus/hebis and are used to generate the reference records -->
 
   <!-- Map item note types -->
-  <xsl:template match="itemNoteTypeId"> <!-- Level 2: FOLIO -->
+  <xsl:template match="itemNoteTypeId"> <!-- Level 2: FOLIO/generate -->
     <itemNoteTypeId>
       <xsl:choose>
         <xsl:when test=".='Binding'"><xsl:text>87c450be-2033-41fb-80ba-dd2409883681</xsl:text></xsl:when>
@@ -28,7 +28,7 @@
   </xsl:template>
 
    <!-- Map holding note types -->
-  <xsl:template match="holdingsNoteTypeId"> <!-- Level 2: FOLIO/hebis-wide -->
+  <xsl:template match="holdingsNoteTypeId"> <!-- Level 2: FOLIO/hebis-wide/generate -->
     <holdingsNoteTypeId>
       <xsl:choose>
         <xsl:when test=".='Binding'"><xsl:text>e19eabab-a85c-4aef-a7b2-33bd9acef24e</xsl:text></xsl:when>
@@ -62,7 +62,7 @@
   </xsl:template>
 
   <!-- Map instance note types -->
-  <xsl:template match="instanceNoteTypeId"> <!-- Level 0: FOLIO -->
+  <xsl:template match="instanceNoteTypeId"> <!-- Level 0: FOLIO/generate -->
     <instanceNoteTypeId>
       <xsl:choose>
         <xsl:when test=".='Information related to Copyright Status'"><xsl:text>654be0fd-bba2-4791-afa3-ae60300d7043</xsl:text></xsl:when>
@@ -129,7 +129,7 @@
   </xsl:template>
 
   <!-- Map Aternative titles -->
-  <xsl:template match="alternativeTitleTypeId">
+  <xsl:template match="alternativeTitleTypeId"> <!-- generate -->
     <alternativeTitleTypeId>
       <xsl:choose>
         <!-- Cover title -->
@@ -163,7 +163,7 @@
   </xsl:template>
   
   <!-- Map material types -->
-  <xsl:template match="materialTypeId"> <!-- Level 0/2: hebis wide -->
+  <xsl:template match="materialTypeId"> <!-- Level 0/2: hebis wide/generate -->
     <materialTypeId>
       <xsl:choose>
         <xsl:when test=".='Druckschrift'"><xsl:text>24080190-7539-4520-bde1-762f57d006fc</xsl:text></xsl:when> 
@@ -183,7 +183,7 @@
   </xsl:template>
   
   <!-- Map contributor type codes to uuid-->
-  <xsl:template match="contributorTypeId">
+  <xsl:template match="contributorTypeId"> <!-- generate -->
     <contributorTypeId>
       <xsl:choose>
         <xsl:when test=".='arc'"><xsl:text>754edaff-07bb-45eb-88bf-10a8b6842c38</xsl:text></xsl:when>
@@ -506,7 +506,7 @@
 
 
   <!-- Map identifier types -->
-  <xsl:template match="identifierTypeId"> <!-- Level 0: FOLIO + hebis-wide (=K10plus) -->
+  <xsl:template match="identifierTypeId"> <!-- Level 0: FOLIO + hebis-wide (=K10plus)/generate -->
     <identifierTypeId>
       <xsl:choose>
         <xsl:when test=".='Cancelled GPO item number'"><xsl:text>5069054d-bc3a-4212-a4e8-e2013a02386f</xsl:text></xsl:when>
@@ -580,7 +580,7 @@
   </xsl:template>
   
   <!-- Map classification types -->
-  <xsl:template match="classificationTypeId"> <!-- Level 1: ILN-specific?  -->
+  <xsl:template match="classificationTypeId"> <!-- Level 1: ILN-specific?/generate  -->
     <classificationTypeId>
     <xsl:choose>
       <xsl:when test=".='Lokale Klassifikation'"><xsl:text>720a846a-85db-4d3a-bfd9-7dfd2f55ae4a</xsl:text></xsl:when>
@@ -591,7 +591,7 @@
   </xsl:template>
 
   <!-- Map holdings types -->
-  <xsl:template match="holdingsTypeId"> <!-- Level 0: FOLIO -->
+  <xsl:template match="holdingsTypeId"> <!-- Level 0: FOLIO/generate -->
     <holdingsTypeId>
       <xsl:choose>
         <xsl:when test=".='electronic'"><xsl:text>996f93e2-5b5e-4cf2-9168-33ced1f95eed</xsl:text></xsl:when>
@@ -601,7 +601,7 @@
   </xsl:template>
 
   <!-- Map holdings source -->
-  <xsl:template match="sourceId"> <!-- Level 2: hebis-wide -->
+  <xsl:template match="sourceId"> <!-- Level 2: hebis-wide/copy -->
     <sourceId>
       <xsl:choose>
         <xsl:when test=".='FOLIO'"><xsl:text>f32d531e-df79-46b3-8932-cdd35f7a2264</xsl:text></xsl:when>
@@ -613,7 +613,7 @@
   </xsl:template>
 
   <!-- Map instance types -->
-  <xsl:template match="instanceTypeId"> <!-- TBD code -->
+  <xsl:template match="instanceTypeId"> <!-- TBD code/copy -->
     <instanceTypeId>
       <xsl:choose>
         <xsl:when test=".='Kartografischer Datensatz'"><xsl:text>3363cdb1-e644-446c-82a4-dc3a1d4395b9</xsl:text></xsl:when>
@@ -647,7 +647,7 @@
   </xsl:template>
 
   <!-- Map issuance modes -->
-  <xsl:template match="modeOfIssuanceId">
+  <xsl:template match="modeOfIssuanceId"> <!-- generate -->
     <modeOfIssuanceId>
       <xsl:choose>
         <xsl:when test=".='integrierende Ressource'"><xsl:text>4fc0f4fe-06fd-490a-a078-c4da1754e03a</xsl:text></xsl:when>
@@ -661,7 +661,7 @@
   </xsl:template>
 
   <!-- Map instance formats -->
-  <xsl:template match="instanceFormatIds/arr/i">
+  <xsl:template match="instanceFormatIds/arr/i"> <!-- copy -->
     <i>
       <xsl:choose>
         <xsl:when test=".='Audio - Audio Belt'"><xsl:text>0d9b1c3d-2d13-4f18-9472-cc1b91bf1752</xsl:text></xsl:when>
@@ -726,7 +726,7 @@
   </xsl:template>
 
   <!-- Map nature of content terms -->
-  <xsl:template match="natureOfContentTermIds/arr/i">
+  <xsl:template match="natureOfContentTermIds/arr/i"> <!-- generate -->
     <i>
       <xsl:choose>
         <xsl:when test=".='Adressbuch'"><xsl:text>be3b8c89-93fe-4e92-b4e8-c4377ce5b474</xsl:text></xsl:when>
@@ -947,7 +947,7 @@
   </xsl:template>
 
   <!-- Map contributor name types -->
-  <xsl:template match="contributorNameTypeId">
+  <xsl:template match="contributorNameTypeId"> <!-- copy -->
     <contributorNameTypeId>
       <xsl:choose>
         <xsl:when test=".='Personenname'"><xsl:text>2b94c631-fca9-4892-a730-03ee529ffe2a</xsl:text></xsl:when> <!-- <xsl:text>  "ordering": 1"</xsl:text> -->
@@ -957,7 +957,7 @@
   </xsl:template>
 
   <!-- Map electronic access relationship types -->
-  <xsl:template match="relationshipId">
+  <xsl:template match="relationshipId"> <!-- copy -->
     <relationshipId>
       <xsl:choose>
         <xsl:when test=".='Ressource'">f5d0068e-6272-458e-8a81-b85e7b9a14aa</xsl:when>
@@ -967,7 +967,7 @@
   </xsl:template>
 
   <!-- Map instance relationship types -->
-  <xsl:template match="instanceRelationshipTypeId">
+  <xsl:template match="instanceRelationshipTypeId"> <!-- generate -->
     <instanceRelationshipTypeId>
       <xsl:choose>
         <xsl:when test=".='Aufsatz'"><xsl:text>6366b68c-aeeb-4dfe-9cd5-92518b2244a0</xsl:text></xsl:when>
@@ -979,7 +979,7 @@
   </xsl:template>
   
   <!-- Map processing statistical codes -->
-  <xsl:template match="processing/*/statisticalCoding/arr/i/setCode">
+  <xsl:template match="processing/*/statisticalCoding/arr/i/setCode"> <!-- copy -->
     <setCode>
       <xsl:choose>
         <xsl:when test=".='ITEM_STATUS'"><xsl:text>e7b3071c-8cc0-48cc-9cd0-dfc82c4e4602</xsl:text></xsl:when>
