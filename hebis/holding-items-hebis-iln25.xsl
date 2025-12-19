@@ -400,7 +400,7 @@
     <xsl:variable name="abt" select="$i/datafield[@tag='209A']/subfield[@code='f']"/>
     <xsl:variable name="standort" select="$i/datafield[(@tag='209G') and (subfield[@code='x']='01')]/subfield[@code='a']"/> 
     <xsl:choose>
-      <xsl:when test="matches(.,'^\d{3}\s[A-Z]{2}\s\d{3,6}.*') or matches(.,'^\d{3}\s[A-Z]\s\d{3}\.\d{3}.*')"> <!-- RVK-Signatur oder Magazin-Signatur -->
+      <xsl:when test="matches(.,'^\d{3}\s[A-Z]{2}\s\d{3,6}.*') or matches(.,'^\d{3}\s[A-Z]\s\d{3}\.\d{3}.*') or starts-with(.,'INFO ')"> <!-- RVK-Signatur oder Magazin-Signatur -->
           <callNumberPrefix>
             <xsl:value-of select="substring-before(.,' ')"/>
           </callNumberPrefix>
@@ -411,6 +411,8 @@
       <xsl:when test="($abt='016' and (starts-with(., 'THEMAG ') or starts-with(., 'THERARA '))) or 
         ($abt='000' and (starts-with(., 'RARA ') and not(contains(.,'°')))) or
         ($abt='019' and (starts-with(.,'CELA') or starts-with(.,'CELTRA') or starts-with(.,'LBS') or starts-with(.,'MAG') or starts-with(.,'SSC'))) or
+        ((($abt='079') or ($abt='080')) and starts-with(.,'GROSSFORMAT')) or
+        (($abt='126') and (starts-with(.,'Oversize'))) or
         (($abt='127') and not(starts-with(.,'SI ') or starts-with(.,'SK ')))"> <!-- Leeerzeichen zur Abtrennung -->
         <xsl:choose>
           <xsl:when test="contains(.,' ')">
