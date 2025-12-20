@@ -60,11 +60,6 @@
       <item>
         <retainExistingValues>
           <forOmittedProperties>true</forOmittedProperties>
-          <forTheseProperties>
-            <arr>
-              <i>materialTypeId</i>
-            </arr>
-          </forTheseProperties>
         </retainExistingValues>
         <status>
           <policy>retain</policy>
@@ -121,12 +116,10 @@
 
   <xsl:template match="materialTypeId"> <!-- Level 0/2: hebis wide and local -->
     <xsl:variable name="i" select="key('original',../../../../permanentLocationId)[last()]"/>
-    <materialTypeId>
        <xsl:choose>
-         <xsl:when test="(substring($i/../datafield[@tag='002@']/subfield[@code='0'],1,1) != 'O') and (substring($i/../datafield[@tag='002@']/subfield[@code='0'],2,2) = 'bv')">Zeitschriftenband</xsl:when>
-         <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
+         <xsl:when test="(substring($i/../datafield[@tag='002@']/subfield[@code='0'],1,1) != 'O') and (substring($i/../datafield[@tag='002@']/subfield[@code='0'],2,2) = 'bv')">
+           <materialTypeId><xsl:text>Zeitschriftenband</xsl:text></materialTypeId></xsl:when>
        </xsl:choose>
-    </materialTypeId>
   </xsl:template>
 
   <xsl:template match="i[permanentLoanTypeId='dummy']"/>

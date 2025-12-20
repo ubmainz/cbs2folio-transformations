@@ -286,11 +286,6 @@
          <item>
             <retainExistingValues>
                <forOmittedProperties>true</forOmittedProperties>
-               <forTheseProperties>
-                  <arr>
-                     <i>materialTypeId</i>
-                  </arr>
-               </forTheseProperties>
             </retainExistingValues>
             <status>
                <policy>retain</policy>
