@@ -60,11 +60,13 @@
       <item>
         <retainExistingValues>
           <forOmittedProperties>true</forOmittedProperties>
-          <forTheseProperties>
-            <arr>
-              <i>materialTypeId</i>
-            </arr>
-          </forTheseProperties>
+          <xsl:if test="(substring(../original/datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O') or (substring(../original/datafield[@tag='002@']/subfield[@code='0'],2,2) != 'bv')">
+            <forTheseProperties>
+              <arr>
+                <i>materialTypeId</i>
+              </arr>
+            </forTheseProperties>
+          </xsl:if>
         </retainExistingValues>
         <status>
           <policy>retain</policy>
