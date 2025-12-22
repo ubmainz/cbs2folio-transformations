@@ -64,7 +64,7 @@
               </statisticalCodeIds>
             </instance>
             <!-- instance relations entfallen und kommen mit K10plus wieder -->
-            <!-- Verlierer: keine Holdings,  -->
+            <!-- Verlierer: keine Holdings, kein K10plus PPN -->
         </record> </xsl:if>
       </xsl:for-each>
     </xsl:if>
