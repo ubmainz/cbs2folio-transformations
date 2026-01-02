@@ -136,7 +136,7 @@
   <xsl:template match="permanentLocationId">
     <xsl:variable name="i" select="key('original',.)[last()]"/>
     <xsl:variable name="abt" select="$i/datafield[@tag='209A']/subfield[@code='f']"/>
-    <xsl:variable name="standort" select="upper-case($i/datafield[(@tag='209G') and (subfield[@code='x']='01')]/subfield[@code='a'])"/> 
+    <xsl:variable name="standort" select="upper-case($i/datafield[(@tag='209G') and (subfield[@code='x']='01')]/subfield[@code='a'][1])"/> 
     <xsl:variable name="electronicholding" select="(substring($i/../datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O') and not(substring($i/datafield[@tag='208@']/subfield[@code='b'],1,1) = 'a')"/>
     <xsl:variable name="onorder" select="substring($i/datafield[@tag='208@']/subfield[@code='b'],1,1) = 'a'"/>
     <permanentLocationId>
@@ -198,6 +198,8 @@
          <xsl:when test="$abt='009'">FBMPI</xsl:when>	
          <xsl:when test="$abt='016'">
            <xsl:choose>
+             <xsl:when test="$standort='EVANGELISCHE THEOLOGIE'">THEV</xsl:when>
+             <xsl:when test="$standort='KATHOLISCHE THEOLOGIE'">THKT</xsl:when>
              <xsl:when test="contains($standort,'MAGAZIN') or contains($standort,'Rara')">THRARA</xsl:when>
              <xsl:when test="contains($standort,'LEHRBUCH')">THLBS</xsl:when>
              <xsl:when test="contains($standort,'BÜRO') or contains($standort,'büro')">THFAK</xsl:when>
@@ -339,9 +341,9 @@
 	  ($abt='003' and (./note='LESESAAL')) or
 	  ($abt='005' and (./note='UM LESESAAL' or ./note='UM LBS' or ./note='UM FREIHAND')) or
 	  ($abt='006' and (./note='MIN' or ./note='MIN LEHRBUCHSAMMLUNG')) or
-	  ($abt='016' and (./note='Theologie LEHRBUCHSAMMLUNG')) or
+	  ($abt='016' and (./note='Theologie LEHRBUCHSAMMLUNG' or ./note='Bereichsbibliothek Theologie, RVK' or /note='Bereichsbibliothek Theologie, Numerus Currens')) or
 	  ($abt='018' and (./note='ReWi LEHRBUCHSAMMLUNG') or (./note='Recht') or (./note='VWL') or (./note='BWL')  or (./note='WiPäd') or (./note='Medizin')) or
-	  ($abt='019' and (./note='Lehrbuchsammlung' or ./note='Lesesaal' or ./note='Magazin')) or
+	  ($abt='019' and (./note='Lehrbuchsammlung' or ./note='Lesesaal' or ./note='Magazin' or starts-with(./note,'Freihand'))) or
 	  ($abt='034' and (./note='FB 4-40')) or
 	  ($abt='035' and (./note='Institut für Rechtsmedizin')) or
 	  ($abt='043' and (./note='Klinik für Psychiatrie und Psychotherapie')) or
@@ -374,7 +376,7 @@
 	  ($abt='113' and (./note='Sport')) or	
 	  ($abt='124' and (./note='Gesangbucharchiv')) or
 	  ($abt='125' and (./note='MAG')) or
-	  ($abt='126' and (./note='USA BIBL')))">
+	  ($abt='126' and (./note='USA BIBL')))"> <!-- später: $abt='16' 'Evangelische Theologie' or 'Katholische Theologie' -->
         <i>
           <note>
               <xsl:value-of select="./note"/>
@@ -399,7 +401,7 @@
   <xsl:template match="callNumber">
     <xsl:variable name="i" select="key('original',../permanentLocationId)[last()]"/>
     <xsl:variable name="abt" select="$i/datafield[@tag='209A']/subfield[@code='f']"/>
-    <xsl:variable name="standort" select="$i/datafield[(@tag='209G') and (subfield[@code='x']='01')]/subfield[@code='a']"/> 
+    <xsl:variable name="standort" select="$i/datafield[(@tag='209G') and (subfield[@code='x']='01')]/subfield[@code='a'][1]"/> 
     <xsl:choose>
       <xsl:when test="matches(.,'^\d{3}\s[A-Z]{2}\s\d{3,6}.*') or matches(.,'^\d{3}\s[A-Z]\s\d{3}\.\d{3}.*') or starts-with(.,'INFO ')"> <!-- RVK-Signatur oder Magazin-Signatur -->
           <callNumberPrefix>
