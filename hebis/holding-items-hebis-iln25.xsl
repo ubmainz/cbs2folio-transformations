@@ -306,6 +306,8 @@
   </xsl:template>
 
   <xsl:template match="permanentLoanTypeId">
+    <xsl:variable name="i" select="key('original',../../../../permanentLocationId)[last()]"/>
+    <xsl:variable name="abt" select="$i/datafield[@tag='209A']/subfield[@code='f']"/>
     <permanentLoanTypeId>
       <xsl:choose>
         <xsl:when test="(.='dummy') or (.='aufsatz')">dummy</xsl:when>
@@ -313,7 +315,12 @@
         <xsl:when test=".='b'">b Kurzausleihe</xsl:when>
         <xsl:when test=".='c'">c Lehrbuchsammlung</xsl:when>
         <xsl:when test=".='s'">s Präsenzbestand Lesesaal</xsl:when>
-        <xsl:when test=".='d'">d ausleihbar (keine Fernleihe)</xsl:when>
+        <xsl:when test=".='d'">
+        <xsl:choose>
+          <xsl:when test="($abt='035') or ($abt='043')  or ($abt='009') or ($abt='034') or ($abt='094') or ($abt='018')  or ($abt='082') or ($abt='085')">s Präsenzbestand Lesesaal</xsl:when>
+          <xsl:otherwise>d ausleihbar (keine Fernleihe)</xsl:otherwise>
+        </xsl:choose>
+        </xsl:when>
         <xsl:when test=".='i'">i nur für den Lesesaal</xsl:when>
         <xsl:when test=".='e'">e vermisst</xsl:when>
         <xsl:when test=".='g'">g nicht ausleihbar</xsl:when>
@@ -414,6 +421,7 @@
       <xsl:when test="($abt='016' and (starts-with(., 'THEMAG ') or starts-with(., 'THERARA '))) or 
         ($abt='000' and (starts-with(., 'RARA ') and not(contains(.,'°')))) or
         ($abt='019' and (starts-with(.,'CELA') or starts-with(.,'CELTRA') or starts-with(.,'LBS') or starts-with(.,'MAG') or starts-with(.,'SSC'))) or
+        (($abt='072') and (starts-with(.,'Anglistik'))) or
         ((($abt='079') or ($abt='080')) and starts-with(.,'GROSSFORMAT')) or
         (($abt='126') and (starts-with(.,'Oversize'))) or
         (($abt='127') and not(starts-with(.,'SI ') or starts-with(.,'SK ')))"> <!-- Leeerzeichen zur Abtrennung -->
