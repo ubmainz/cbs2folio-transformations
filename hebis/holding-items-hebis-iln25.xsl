@@ -360,7 +360,7 @@
 	  ($abt='069' and (./note='Psychologisches Institut / IB')) or
 	  ($abt='070' and (./note='Germanistik')) or
 	  ($abt='071' and (./note='Allgemeine und Vergleichende Literaturwissenschaft')) or
-	  ($abt='072' and (./note='Anglistik/Amerikanistik')) or
+	  ($abt='072' and (./note='Anglistik/Amerikanistik' or ./note='Amerikanistik' or ./note='Anglistik')) or
 	  ($abt='073' and (./note='Allgemeine und Vergleichende Sprachwissenschaft')) or
 	  ($abt='074' and (./note='Romanistik')) or
 	  ($abt='075' and (./note='Slavistik')) or
