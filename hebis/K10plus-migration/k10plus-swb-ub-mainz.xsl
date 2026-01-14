@@ -367,7 +367,7 @@
             <xsl:otherwise>GFGPÄD</xsl:otherwise>
           </xsl:choose>
         </xsl:when>
-        <xsl:when test="$abt='003'">ZBLS</xsl:when>
+        <xsl:when test="$abt='003'">ZBZEB</xsl:when>
         <xsl:when test="$abt='004'">
           <xsl:choose>
             <xsl:when test="contains($standort,'NUMERUS')">PHNC</xsl:when>
@@ -391,6 +391,8 @@
         <xsl:when test="$abt='009'">FBMPI</xsl:when>	
         <xsl:when test="$abt='016'">
           <xsl:choose>
+            <xsl:when test="$standort='EVANGELISCHE THEOLOGIE'">THEV</xsl:when>
+            <xsl:when test="$standort='KATHOLISCHE THEOLOGIE'">THKT</xsl:when>
             <xsl:when test="contains($standort,'MAGAZIN') or contains($standort,'Rara')">THRARA</xsl:when>
             <xsl:when test="contains($standort,'LEHRBUCH')">THLBS</xsl:when>
             <xsl:when test="contains($standort,'BÜRO') or contains($standort,'büro')">THFAK</xsl:when>
