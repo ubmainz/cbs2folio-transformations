@@ -296,13 +296,6 @@
          <xsl:otherwise>UNKNOWN</xsl:otherwise>
        </xsl:choose>
       </permanentLocationId>
-      <xsl:choose>
-        <xsl:when test="$abt='127'">
-          <xsl:choose>
-            <xsl:when test="contains($standort,'SONDERSTANDORT') or contains($standort,upper-case('Hegelstraße'))"><temporaryLocationId>PHSON</temporaryLocationId></xsl:when>
-          </xsl:choose>
-         </xsl:when>
-       </xsl:choose>     
   </xsl:template>
 
   <xsl:template match="permanentLoanTypeId">
@@ -360,7 +353,7 @@
 	  ($abt='069' and (./note='Psychologisches Institut / IB')) or
 	  ($abt='070' and (./note='Germanistik')) or
 	  ($abt='071' and (./note='Allgemeine und Vergleichende Literaturwissenschaft')) or
-	  ($abt='072' and (./note='Anglistik/Amerikanistik')) or
+	  ($abt='072' and (./note='Anglistik/Amerikanistik' or ./note='Amerikanistik' or ./note='Anglistik')) or
 	  ($abt='073' and (./note='Allgemeine und Vergleichende Sprachwissenschaft')) or
 	  ($abt='074' and (./note='Romanistik')) or
 	  ($abt='075' and (./note='Slavistik')) or
