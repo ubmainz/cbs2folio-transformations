@@ -296,13 +296,6 @@
          <xsl:otherwise>UNKNOWN</xsl:otherwise>
        </xsl:choose>
       </permanentLocationId>
-      <xsl:choose>
-        <xsl:when test="$abt='127'">
-          <xsl:choose>
-            <xsl:when test="contains($standort,'SONDERSTANDORT') or contains($standort,upper-case('Hegelstraße'))"><temporaryLocationId>PHSON</temporaryLocationId></xsl:when>
-          </xsl:choose>
-         </xsl:when>
-       </xsl:choose>     
   </xsl:template>
 
   <xsl:template match="permanentLoanTypeId">
