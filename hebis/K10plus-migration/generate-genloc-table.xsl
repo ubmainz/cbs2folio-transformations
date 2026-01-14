@@ -14,7 +14,7 @@
             <row><code>ONLINE</code><sigel>77/</sigel></row>
         </xsl:variable>
         <xsl:variable name="codes2uuid" select="document('../codes2uuid-hebis-iln25.xsl')//xsl:template[@match='permanentLocationId|temporaryLocationId']"/>
-        <xsl:result-document href="{'genloc-locations.json'}">
+        <xsl:result-document href="{'effectiveLocationID_mapping.json'}">
             <xsl:text>{&#10;</xsl:text>
             <xsl:for-each select="$liste/row">
                 <xsl:variable name="ausdruck"><xsl:text>.=&apos;</xsl:text><xsl:value-of select="code"/><xsl:text>&apos;</xsl:text></xsl:variable>
