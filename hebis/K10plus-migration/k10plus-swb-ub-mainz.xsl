@@ -472,7 +472,6 @@
         <xsl:when test="$abt='113'">GFGSPO</xsl:when>
         <xsl:when test="$abt='120'">PHTHW</xsl:when>
         <xsl:when test="$abt='124'">FBGESANG</xsl:when>
-        <xsl:when test="$abt='125'">ZBMAG</xsl:when>
         <xsl:when test="$abt='126'">GFGUSA</xsl:when>
         <xsl:when test="$abt='127'">PHMAG</xsl:when>
         <xsl:otherwise>UNKNOWN</xsl:otherwise>
