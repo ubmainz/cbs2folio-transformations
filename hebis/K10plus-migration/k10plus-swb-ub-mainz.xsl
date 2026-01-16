@@ -346,8 +346,6 @@
         <xsl:when test="(substring(/../datafield[@tag='002@']/subfield[@code='0'],2,1) = 'o') and not(datafield[@tag='209A']/subfield[@code='d'])">AUFSATZ</xsl:when>
         <xsl:when test="$abt=''">
           <xsl:choose>
-            <xsl:when test="contains($standort,'FERNLEIHE LESESAAL')">ZBFLLS</xsl:when>
-            <xsl:when test="contains($standort,'FERNLEIHE')">ZBFL</xsl:when>
             <xsl:when test="contains($standort,'FREIHAND')">ZBFREI</xsl:when>
             <xsl:when test="contains($standort,'LESESAAL')">ZBLS</xsl:when>
             <xsl:when test="contains($standort,'LBS')">ZBLBS</xsl:when>
@@ -412,8 +410,6 @@
         </xsl:when>
         <xsl:when test="$abt='019'">
           <xsl:choose>
-            <xsl:when test="contains($standort,upper-case('Fernleihe Lesesaal'))">GHFLLS</xsl:when>
-            <xsl:when test="contains($standort,upper-case('Fernleihe'))">GHFL</xsl:when>
             <xsl:when test="contains($standort,upper-case('Handapparat'))">GHFAK</xsl:when>
             <xsl:when test="contains($standort,upper-case('Lehrbuch'))">GHLBS</xsl:when>
             <xsl:when test="contains($standort,upper-case('Lesesaal'))">GHLS</xsl:when>
