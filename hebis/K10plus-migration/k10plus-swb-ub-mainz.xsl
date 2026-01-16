@@ -460,12 +460,6 @@
           </xsl:choose>
         </xsl:when>
         <xsl:when test="$abt='092'">PHOEG</xsl:when>
-        <xsl:when test="$abt='093'">
-          <xsl:choose>
-            <xsl:when test="$standort='MAG'">ZBMAG</xsl:when>
-            <xsl:otherwise>ZBLS</xsl:otherwise>
-          </xsl:choose>
-        </xsl:when>
         <xsl:when test="$abt='094'">FBIGL</xsl:when>
         <xsl:when test="$abt='110'">GFGGEO</xsl:when>
         <xsl:when test="$abt='111'">FBKUNST</xsl:when>
