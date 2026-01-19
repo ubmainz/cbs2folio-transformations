@@ -27,7 +27,7 @@
     
     <xsl:template match="xsl:when[starts-with(@test,$abfrage)]" mode="permanentlocation">
         <xsl:variable name="sigel" select="concat('DE-',translate(substring-before(substring-after(@test,$abfrage),$apos),'/ ','-'))"/>
-        <xsl:for-each select="descendant-or-self::xsl:when[not(element())]">
+        <xsl:for-each select="descendant-or-self::xsl:when[not(element())]|descendant-or-self::xsl:otherwise[not(element())]">
             <row><code><xsl:value-of select="."/></code><sigel><xsl:value-of select="$sigel"/></sigel></row>
         </xsl:for-each>
     </xsl:template>
