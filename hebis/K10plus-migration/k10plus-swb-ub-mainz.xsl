@@ -366,9 +366,27 @@
           </xsl:choose>
         </xsl:when>
         <xsl:when test="$abt='77/003'">ZBZEB</xsl:when>
-        <xsl:when test="$abt='77/004'"> <!-- Phil -->
+        <xsl:when test="$abt='77/004'"> 
           <xsl:choose>
             <xsl:when test="contains($standort,'NUMERUS')">PHNC</xsl:when>
+            <xsl:when test="contains($standort,'TBD')">PHMAG</xsl:when> 
+            <xsl:when test="contains($standort,'TBD')">PHTHW</xsl:when> 
+            <xsl:when test="contains($standort,'TBD')">PHOEG</xsl:when> 
+            <xsl:when test="contains($standort,'TBD')">PHALG</xsl:when> 
+            <xsl:when test="contains($standort,'TBD')">PHBYZ</xsl:when> 
+            <xsl:when test="contains($standort,'TBD')">PHMNG</xsl:when> 
+            <xsl:when test="contains($standort,'TBD')">PHBUW</xsl:when> 
+            <xsl:when test="contains($standort,'TBD')">PHKLW</xsl:when> 
+            <xsl:when test="contains($standort,'TBD')">PHGER</xsl:when> 
+            <xsl:when test="contains($standort,'TBD')">PHAVL</xsl:when> 
+            <xsl:when test="contains($standort,'TBD')">PHANG</xsl:when> 
+            <xsl:when test="contains($standort,'TBD')">PHAVS</xsl:when> 
+            <xsl:when test="contains($standort,'TBD')">PHROM</xsl:when> 
+            <xsl:when test="contains($standort,'TBD')">PHSLAV</xsl:when> 
+            <xsl:when test="contains($standort,'TBD')">PHPOL</xsl:when> 
+            <xsl:when test="contains($standort,'TBD')">PHKLP</xsl:when> 
+            <xsl:when test="contains($standort,'TBD')">PHKLA</xsl:when> 
+            <xsl:when test="contains($standort,'TBD')">PHPHI</xsl:when> 
             <xsl:otherwise>PHRVK</xsl:otherwise>
           </xsl:choose>
         </xsl:when>
@@ -426,7 +444,6 @@
         <xsl:when test="$abt='77/035'">UMRMED</xsl:when>
         <xsl:when test="$abt='77/043'">UMPSY</xsl:when>
         <xsl:when test="$abt='77/054'">UMZMK</xsl:when>
-        <xsl:when test="$abt='77/004'">PHPHI</xsl:when> <!-- Phil -->
         <xsl:when test="$abt='77/066'">
           <xsl:choose>
             <xsl:when test="contains($standort,'AMA')">RWAMA</xsl:when>
@@ -435,31 +452,16 @@
           </xsl:choose>
         </xsl:when>
         <xsl:when test="$abt='77/069'">FBPSY</xsl:when>
-        <xsl:when test="$abt='77/004'">PHGER</xsl:when> <!-- Phil -->
-        <xsl:when test="$abt='77/004'">PHAVL</xsl:when> <!-- Phil -->
-        <xsl:when test="$abt='77/004'">PHANG</xsl:when> <!-- Phil -->
-        <xsl:when test="$abt='77/004'">PHAVS</xsl:when> <!-- Phil -->
-        <xsl:when test="$abt='77/004'">PHROM</xsl:when> <!-- Phil -->
-        <xsl:when test="$abt='77/004'">PHSLAV</xsl:when> <!-- Phil -->
-        <xsl:when test="$abt='77/004'">PHPOL</xsl:when> <!-- Phil -->
-        <xsl:when test="$abt='77/004'">PHKLP</xsl:when> <!-- Phil -->
-        <xsl:when test="$abt='77/004'">PHKLA</xsl:when> <!-- Phil -->
         <xsl:when test="$abt='77/079'">GFGKUN</xsl:when>
         <xsl:when test="$abt='77/080'">RWTURK</xsl:when>
         <xsl:when test="$abt='77/082'">FBÄGYPT</xsl:when>
-        <xsl:when test="$abt='77/004'">PHKLW</xsl:when> <!-- Phil -->
         <xsl:when test="$abt='77/085'">FBAVFGA</xsl:when>
-        <xsl:when test="$abt='77/004'">PHALG</xsl:when> <!-- Phil -->
-        <xsl:when test="$abt='77/004'">PHBYZ</xsl:when> <!-- Phil -->
-        <xsl:when test="$abt='77/004'">PHMNG</xsl:when> <!-- Phil -->
-        <xsl:when test="$abt='77/004'">PHBUW</xsl:when> <!-- Phil -->
         <xsl:when test="$abt='77/091'">
           <xsl:choose>
             <xsl:when test="contains($standort,upper-case('Separiert'))">PHMUWMAG</xsl:when>
             <xsl:otherwise>PHMUW</xsl:otherwise>
           </xsl:choose>
         </xsl:when>
-        <xsl:when test="$abt='77/004'">PHOEG</xsl:when> <!-- Phil -->
         <xsl:when test="$abt='77/094'">FBIGL</xsl:when>
         <xsl:when test="$abt='77/110'">GFGGEO</xsl:when>
         <xsl:when test="$abt='77/111'">FBKUNST</xsl:when>
@@ -470,10 +472,8 @@
           </xsl:choose>
         </xsl:when>
         <xsl:when test="$abt='77/113'">GFGSPO</xsl:when>
-        <xsl:when test="$abt='77/004'">PHTHW</xsl:when> <!-- Phil -->
         <xsl:when test="$abt='77/124'">FBGESANG</xsl:when>
         <xsl:when test="$abt='77/126'">GFGUSA</xsl:when>
-        <xsl:when test="$abt='77/004'">PHMAG</xsl:when> <!-- Phil -->
         <xsl:otherwise>UNKNOWN</xsl:otherwise>
       </xsl:choose>
   </xsl:template>
