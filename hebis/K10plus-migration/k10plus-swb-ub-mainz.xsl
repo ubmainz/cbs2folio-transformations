@@ -104,10 +104,10 @@
     </processing>
   </xsl:template>
   
-  <xsl:template name="classifications">  <!-- RVK/DDC -->
+  <xsl:template name="classifications">
     <classifications>
       <arr>
-        <xsl:variable name="rvk" as="xs:string *">
+        <xsl:variable name="rvk" as="xs:string *"> <!-- RVK -->
           <xsl:for-each select="original/(datafield[@tag='045R']/subfield[@code='8']|datafield[@tag='045R']/subfield[@code='a'])">
             <xsl:sequence select="normalize-space(substring-before(concat(.,':'),':'))"/>
           </xsl:for-each>
@@ -119,7 +119,7 @@
             <classificationTypeId>RVK</classificationTypeId>
           </i>
         </xsl:for-each>
-        <xsl:variable name="ddc" as="xs:string *">
+        <xsl:variable name="ddc" as="xs:string *"> <!-- DDC -->
           <xsl:for-each select="original/(datafield[@tag='045F']/subfield[@code='a'][.!='B']|datafield[@tag='045H']/subfield[@code='a'][.!='B'])">
             <xsl:sequence select="normalize-space(translate(.,'/',''))"/>
           </xsl:for-each>
@@ -129,6 +129,18 @@
           <i>
             <classificationNumber><xsl:value-of select="."/></classificationNumber>
             <classificationTypeId>DDC</classificationTypeId>
+          </i>
+        </xsl:for-each>
+        <xsl:variable name="fachfacette" as="xs:string *"> <!-- Fachfacette -->
+          <xsl:for-each select="original/(datafield[(@tag='045X') and (subfield[@code='i']='mzub')]/subfield[@code='j'])">
+            <xsl:sequence select="."/>
+          </xsl:for-each>
+        </xsl:variable>
+        <xsl:for-each select="distinct-values($fachfacette)">
+          <xsl:sort/>
+          <i>
+            <classificationNumber><xsl:value-of select="."/></classificationNumber>
+            <classificationTypeId>Fachfacette</classificationTypeId>
           </i>
         </xsl:for-each>
       </arr>
@@ -347,7 +359,7 @@
         <xsl:when test="$abt='77'">
           <xsl:choose>
             <xsl:when test="contains($standort,'FREIHAND')">ZBFREI</xsl:when>
-            <xsl:when test="contains($standort,'LESESAAL')">ZBLS</xsl:when>
+            <xsl:when test="contains($standort,'LESESAAL') or contains($standort,'ZEITSCHRIFTENMAGAZIN')">ZBLS</xsl:when>
             <xsl:when test="contains($standort,'LBS')">ZBLBS</xsl:when>
             <xsl:when test="contains($standort,'RARA')">ZBRARA</xsl:when>
             <xsl:otherwise>ZBMAG</xsl:otherwise>
@@ -360,34 +372,39 @@
             <xsl:when test="contains($standort,upper-case('Journalistik'))">GFGJOUR</xsl:when>
             <xsl:when test="contains($standort,upper-case('Politikwissenschaft'))">GFGPOL</xsl:when>
             <xsl:when test="contains($standort,upper-case('Psychologie'))">GFGPSYCH</xsl:when>
-            <xsl:when test="contains($standort,upper-case('Publizistik'))">GFGPUB</xsl:when>
-            <xsl:when test="contains($standort,upper-case('Soziologie'))">GFGSOZ</xsl:when>
-            <xsl:otherwise>GFGPÄD</xsl:otherwise>
+            <xsl:when test="contains($standort,'PUBLIZISTIK')">GFGPUB</xsl:when>
+            <xsl:when test="contains($standort,'SOZIOLOGIE')">GFGSOZ</xsl:when>
+            <xsl:when test="contains($standort,'RVK')">GFGZEB</xsl:when>
+            <xsl:when test="contains($standort,'SPORT')">GFGSPO</xsl:when>
+            <xsl:when test="contains($standort,'USA')">GFGUSA</xsl:when>
+            <xsl:when test="contains($standort,'GEOWISSENSCHAFTEN') or contains($standort,'GEOGRAPHIE')">GFGGEO</xsl:when>
+            <xsl:when test="contains($standort,'KUNSTGESCHICHTE')">GFGKUN</xsl:when>
+            <xsl:otherwise>UNKNOWN</xsl:otherwise>
           </xsl:choose>
         </xsl:when>
-        <xsl:when test="$abt='77/003'">ZBZEB</xsl:when>
         <xsl:when test="$abt='77/004'"> 
           <xsl:choose>
+            <xsl:when test="contains($standort,'SEPARIERT')">PHMAG</xsl:when> 
             <xsl:when test="contains($standort,'NUMERUS')">PHNC</xsl:when>
-            <xsl:when test="contains($standort,'TBD')">PHMAG</xsl:when> 
-            <xsl:when test="contains($standort,'TBD')">PHTHW</xsl:when> 
-            <xsl:when test="contains($standort,'TBD')">PHOEG</xsl:when> 
-            <xsl:when test="contains($standort,'TBD')">PHALG</xsl:when> 
-            <xsl:when test="contains($standort,'TBD')">PHBYZ</xsl:when> 
-            <xsl:when test="contains($standort,'TBD')">PHMNG</xsl:when> 
-            <xsl:when test="contains($standort,'TBD')">PHBUW</xsl:when> 
-            <xsl:when test="contains($standort,'TBD')">PHKLW</xsl:when> 
-            <xsl:when test="contains($standort,'TBD')">PHGER</xsl:when> 
-            <xsl:when test="contains($standort,'TBD')">PHAVL</xsl:when> 
-            <xsl:when test="contains($standort,'TBD')">PHANG</xsl:when> 
-            <xsl:when test="contains($standort,'TBD')">PHAVS</xsl:when> 
-            <xsl:when test="contains($standort,'TBD')">PHROM</xsl:when> 
-            <xsl:when test="contains($standort,'TBD')">PHSLAV</xsl:when> 
-            <xsl:when test="contains($standort,'TBD')">PHPOL</xsl:when> 
-            <xsl:when test="contains($standort,'TBD')">PHKLP</xsl:when> 
-            <xsl:when test="contains($standort,'TBD')">PHKLA</xsl:when> 
-            <xsl:when test="contains($standort,'TBD')">PHPHI</xsl:when> 
-            <xsl:otherwise>PHRVK</xsl:otherwise>
+            <xsl:when test="contains($standort,'THEATERWISSENSCHAFT')">PHTHW</xsl:when> 
+            <xsl:when test="contains($standort,'OSTEUROPÄISCHE')">PHOEG</xsl:when> 
+            <xsl:when test="contains($standort,'ALTE GESCHICHTE')">PHALG</xsl:when> 
+            <xsl:when test="contains($standort,'BYZANTINISTIK')">PHBYZ</xsl:when> 
+            <xsl:when test="contains($standort,'MITTLERE UND NEUERE GESCHICHTE')">PHMNG</xsl:when> 
+            <xsl:when test="contains($standort,'BUCHWISSENSCHAFT')">PHBUW</xsl:when> 
+            <xsl:when test="contains($standort,'KULTURWISSENSCHAFTEN')">PHKLW</xsl:when> 
+            <xsl:when test="contains($standort,'GERMANISTIK')">PHGER</xsl:when> 
+            <xsl:when test="contains($standort,'LITERATURWISSENSCHAFT')">PHAVL</xsl:when> 
+            <xsl:when test="contains($standort,'ANGLISTIK') or contains($standort,'AMERIKANISTIK')">PHANG</xsl:when> 
+            <xsl:when test="contains($standort,'SPRACHWISSENSCHAFT')">PHAVS</xsl:when> 
+            <xsl:when test="contains($standort,'ROMANISTIK')">PHROM</xsl:when> 
+            <xsl:when test="contains($standort,'SLAVISTIK')">PHSLAV</xsl:when> 
+            <xsl:when test="contains($standort,'POLONICUM')">PHPOL</xsl:when> 
+            <xsl:when test="contains($standort,'KLASSISCHE PHILOLOGIE')">PHKLP</xsl:when> 
+            <xsl:when test="contains($standort,'KLASSISCHE ARCHÄOLOGIE')">PHKLA</xsl:when> 
+            <xsl:when test="contains($standort,'PHILOSOPHIE')">PHPHI</xsl:when>
+            <xsl:when test="contains($standort,'RVK')">PHRVK</xsl:when>
+            <xsl:otherwise>UNKNOWN</xsl:otherwise>
           </xsl:choose>
         </xsl:when>
         <xsl:when test="$abt='77/005'">
@@ -423,6 +440,7 @@
             <xsl:when test="contains($standort,'RECHT')">RWR</xsl:when>
             <xsl:when test="contains($standort,'MEDIZIN')">RWM</xsl:when>
             <xsl:when test="contains($standort,'VWL') or contains($standort,'BWL') or contains($standort,'WIPÄD')">RWW</xsl:when>
+            <xsl:when test="contains($standort,'LEHRSTUHL')">RWFAK</xsl:when>
             <xsl:otherwise>RW</xsl:otherwise>
           </xsl:choose>
         </xsl:when>
@@ -438,8 +456,6 @@
             <xsl:otherwise>GHFREI</xsl:otherwise>
           </xsl:choose>
         </xsl:when>
-        <xsl:when test="$abt='77/020'">RWFAK</xsl:when>
-        <xsl:when test="$abt='77/021'">ZBMAG</xsl:when>
         <xsl:when test="$abt='77/034'">FBGTEM</xsl:when>
         <xsl:when test="$abt='77/035'">UMRMED</xsl:when>
         <xsl:when test="$abt='77/043'">UMPSY</xsl:when>
@@ -452,7 +468,6 @@
           </xsl:choose>
         </xsl:when>
         <xsl:when test="$abt='77/069'">FBPSY</xsl:when>
-        <xsl:when test="$abt='77/079'">GFGKUN</xsl:when>
         <xsl:when test="$abt='77/080'">RWTURK</xsl:when>
         <xsl:when test="$abt='77/082'">FBÄGYPT</xsl:when>
         <xsl:when test="$abt='77/085'">FBAVFGA</xsl:when>
@@ -463,7 +478,6 @@
           </xsl:choose>
         </xsl:when>
         <xsl:when test="$abt='77/094'">FBIGL</xsl:when>
-        <xsl:when test="$abt='77/110'">GFGGEO</xsl:when>
         <xsl:when test="$abt='77/111'">FBKUNST</xsl:when>
         <xsl:when test="$abt='77/112'">
           <xsl:choose>
@@ -471,9 +485,7 @@
             <xsl:otherwise>PHHFMMAG</xsl:otherwise>
           </xsl:choose>
         </xsl:when>
-        <xsl:when test="$abt='77/113'">GFGSPO</xsl:when>
         <xsl:when test="$abt='77/124'">FBGESANG</xsl:when>
-        <xsl:when test="$abt='77/126'">GFGUSA</xsl:when>
         <xsl:otherwise>UNKNOWN</xsl:otherwise>
       </xsl:choose>
   </xsl:template>
