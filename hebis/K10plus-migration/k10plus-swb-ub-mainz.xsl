@@ -232,7 +232,7 @@
             </instance>
             <holdingsRecords>
               <arr>
-                <xsl:for-each select="original/item[datafield[(@tag='209B') and (subfield[@code='x']='12')]/subfield[@code='a']='kauf']">  
+                <xsl:for-each select="original/item[datafield[(@tag='209B') and (subfield[@code='x']='12')]/subfield[@code='a']='ctof']">  
                   <xsl:apply-templates select="."/>
                 </xsl:for-each>
               </arr>
