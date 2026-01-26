@@ -350,7 +350,7 @@
 
   <xsl:template name="permanentLocationId">
     <xsl:variable name="abt" select="datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='B']"/>
-    <xsl:variable name="standort" select="upper-case((datafield[(@tag='209A')]/subfield[@code='f'])[1])"/> 
+    <xsl:variable name="standort" select="upper-case((datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='f'])[1])"/> 
     <xsl:variable name="electronicholding" select="substring(/../datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O'"/>
       <xsl:choose>
         <xsl:when test="$electronicholding">ONLINE</xsl:when>
@@ -359,7 +359,7 @@
         <xsl:when test="$abt='77'">
           <xsl:choose>
             <xsl:when test="contains($standort,'FREIHAND')">ZBFREI</xsl:when>
-            <xsl:when test="contains($standort,'LESESAAL') or contains($standort,'ZEITSCHRIFTENMAGAZIN')">ZBLS</xsl:when>
+            <xsl:when test="contains($standort,'LESESAAL') or contains($standort,'ZEITSCHRIFTENMAGAZIN') or contains($standort,'RVK')">ZBLS</xsl:when>
             <xsl:when test="contains($standort,'LBS')">ZBLBS</xsl:when>
             <xsl:when test="contains($standort,'RARA')">ZBRARA</xsl:when>
             <xsl:otherwise>ZBMAG</xsl:otherwise>
@@ -384,7 +384,7 @@
         </xsl:when>
         <xsl:when test="$abt='77/004'"> 
           <xsl:choose>
-            <xsl:when test="contains($standort,'SEPARIERT')">PHMAG</xsl:when> 
+            <xsl:when test="contains($standort,'SEPARIERTE')">PHMAG</xsl:when> 
             <xsl:when test="contains($standort,'NUMERUS')">PHNC</xsl:when>
             <xsl:when test="contains($standort,'THEATERWISSENSCHAFT')">PHTHW</xsl:when> 
             <xsl:when test="contains($standort,'OSTEUROPÄISCHE')">PHOEG</xsl:when> 
@@ -440,7 +440,7 @@
             <xsl:when test="contains($standort,'RECHT')">RWR</xsl:when>
             <xsl:when test="contains($standort,'MEDIZIN')">RWM</xsl:when>
             <xsl:when test="contains($standort,'VWL') or contains($standort,'BWL') or contains($standort,'WIPÄD')">RWW</xsl:when>
-            <xsl:when test="contains($standort,'LEHRSTUHL')">RWFAK</xsl:when>
+            <xsl:when test="contains($standort,'LEHRSTÜHLE')">RWFAK</xsl:when>
             <xsl:otherwise>RW</xsl:otherwise>
           </xsl:choose>
         </xsl:when>
