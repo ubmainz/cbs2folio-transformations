@@ -12,7 +12,6 @@
             <xsl:apply-templates mode="permanentlocation"/>
             <row><code>AUFSATZ</code><sigel>DE-77</sigel></row>
             <row><code>ONLINE</code><sigel>DE-77</sigel></row>
-            <row><code>UNKNOWN</code><sigel>DE-77</sigel></row>
         </xsl:variable>
         <xsl:variable name="codes2uuid" select="document('../codes2uuid-hebis-iln25.xsl')//xsl:template[@match='permanentLocationId|temporaryLocationId']"/>
         <xsl:result-document href="{'effectiveLocationID_mapping.json'}">
@@ -21,6 +20,7 @@
                 <xsl:variable name="ausdruck"><xsl:text>.=&apos;</xsl:text><xsl:value-of select="code"/><xsl:text>&apos;</xsl:text></xsl:variable>
                  <xsl:text>  "</xsl:text><xsl:value-of select="$codes2uuid//xsl:when[@test=$ausdruck]"/><xsl:text>": "</xsl:text><xsl:value-of select="sigel"/><xsl:text>",&#10;</xsl:text>
             </xsl:for-each>
+            <xsl:text>  "8334fb6b-013b-4ad4-9d58-7710f82edb50": "DE-77"&#10;</xsl:text>
             <xsl:text>  "87764786-c5c8-47d0-a480-df506c751d76": "DE-77"&#10;</xsl:text> <!-- DUMMY -->
             <xsl:text>}&#10;</xsl:text>
         </xsl:result-document>
