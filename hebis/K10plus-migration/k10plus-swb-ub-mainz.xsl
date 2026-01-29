@@ -180,7 +180,7 @@
                 <statisticalCodeIds>
                   <arr>
            <!--       <xsl:if test="exists(original/item[not(starts-with(datafield[@tag='208@']/subfield[@code='b'],'z'))])"> -->
-                    <xsl:if test="exists(original/item[not(datafield[(@tag='209@') and (subfield[@code='x']='13')]/subfield[@code='a']='px')])"> <!-- Wolpertinger-Test -->
+                    <xsl:if test="exists(original/item[not(datafield[(@tag='209@') and (subfield[@code='x']='13')]/subfield[@code='a']='px') and not(starts-with(datafield[@tag='208@']/subfield[@code='b'],'z'))])"> <!-- Wolpertinger-Test -->
                       <i>ZDB-Titel-mit-Mono-EPN</i>
                     </xsl:if>
                   </arr>
