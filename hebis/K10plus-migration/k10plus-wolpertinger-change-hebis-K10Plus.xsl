@@ -3,6 +3,8 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
   <xsl:output indent="yes" method="xml" version="1.0" encoding="UTF-8"/>
 
+  <xsl:variable name="version" select="'v2'"/>
+
   <xsl:template match="@* | node()">
     <xsl:copy>
       <xsl:apply-templates select="@* | node()"/>
@@ -14,11 +16,12 @@
   <xsl:template match="record">
     <xsl:variable name="currentrecord" select="."/> <!-- 003H Primäre Hebis-PPN -->
     <xsl:variable name="hebppns-dist" select="distinct-values(original/datafield[@tag='006H']/subfield[@code='0'])"/> <!-- weitere Hebis-PPN -->
-    <xsl:variable name="hebgewinner" select="original/datafield[@tag='003H']/subfield[@code='0'][1]"/>
+    <xsl:variable name="hebgewinner" select="(original/datafield[@tag='003H']/subfield[@code='0'])[1]"/>
     <xsl:if test="$hebgewinner">
       <record>
+        <xsl:variable name="epns-ohne-hebis" select="$currentrecord/holdingsRecords/arr/i[starts-with(formerIds/arr/i[2],'KXP')]/hrid"/>
         <xsl:copy-of select="$currentrecord/processing"/>
-        <instance>
+         <instance>
           <source>K10plus</source>
           <hrid><xsl:value-of select="$hebgewinner"/></hrid>
           <xsl:apply-templates select="$currentrecord/instance/*[not(self::hrid or self::source or self::administrativeNotes)]"/>
@@ -26,8 +29,13 @@
             <arr>
               <xsl:apply-templates select="$currentrecord/instance/administrativeNotes/arr/*"/>
               <i>
-                <xsl:text>Wolpertinger</xsl:text>
+                <xsl:text>Wolpertinger </xsl:text><xsl:value-of select="$version"/>
               </i>
+              <xsl:if test="not(empty($epns-ohne-hebis))">
+                <i>
+                  <xsl:text>Uffbasse! Hebis-EPN fehlt: KXP... </xsl:text><xsl:value-of select="$epns-ohne-hebis" separator=", "/>
+                </i> 
+              </xsl:if>
             </arr>
           </administrativeNotes>
         </instance>
@@ -50,10 +58,10 @@
                 <arr>
                   <xsl:apply-templates select="$currentrecord/instance/administrativeNotes/arr/*"/>
                   <i>
-                    <xsl:text>Wolpertinger für Hebis-PPN: </xsl:text><xsl:value-of select="."/>
+                    <xsl:text>Wolpertinger </xsl:text><xsl:value-of select="$version"/><xsl:text> für Hebis-PPN: </xsl:text><xsl:value-of select="."/>
                   </i>
                   <i>
-                    <xsl:text>Verlierer wird gelöscht: keine Holdings oder Items</xsl:text>
+                    <xsl:text>Verlierer - wird gelöscht: keine Holdings/Items</xsl:text>
                   </i>
                 </arr>
               </administrativeNotes>
