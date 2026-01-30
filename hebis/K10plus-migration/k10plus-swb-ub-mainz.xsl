@@ -160,7 +160,7 @@
         <xsl:copy-of select="original"/>
         <xsl:choose>
           <!-- <xsl:when test="exists(original/item[starts-with(datafield[@tag='208@']/subfield[@code='b'],'z')])"> ZDB-Fälle -->
-          <xsl:when test="exists(original/item[datafield[(@tag='209@') and (subfield[@code='x']='13')]/subfield[@code='a']='px'])"> <!-- Woplertinger-Test -->
+          <xsl:when test="exists(original/item[datafield[(@tag='209B') and (subfield[@code='x']='13')]/subfield[@code='a']='px'])"> <!-- Woplertinger-Test -->
             <xsl:call-template name="processingzdb"/>
             <instance>
               <source>K10plus</source>
@@ -182,7 +182,7 @@
                 <statisticalCodeIds>
                   <arr>
            <!--       <xsl:if test="exists(original/item[not(starts-with(datafield[@tag='208@']/subfield[@code='b'],'z'))])"> -->
-                    <xsl:if test="exists(original/item[not(datafield[(@tag='209@') and (subfield[@code='x']='13')]/subfield[@code='a']='px') and not(starts-with(datafield[@tag='208@']/subfield[@code='b'],'z'))])"> <!-- Wolpertinger-Test -->
+                    <xsl:if test="exists(original/item[not(datafield[(@tag='209B') and (subfield[@code='x']='13')]/subfield[@code='a']='px') and not(starts-with(datafield[@tag='208@']/subfield[@code='b'],'z'))])"> <!-- Wolpertinger-Test -->
                       <i>ZDB-Titel-mit-Mono-EPN</i>
                     </xsl:if>
                   </arr>
@@ -200,7 +200,7 @@
             <holdingsRecords>
               <arr>
                 <!-- <xsl:for-each select="original/item[starts-with(datafield[@tag='208@']/subfield[@code='b'],'z')]">  nur ZDB-Holdings -->
-                <xsl:for-each select="original/item[datafield[(@tag='209@') and (subfield[@code='x']='13')]/subfield[@code='a']='px']">
+                <xsl:for-each select="original/item[datafield[(@tag='209B') and (subfield[@code='x']='13')]/subfield[@code='a']='px']">
                   <xsl:apply-templates select="."/>
                 </xsl:for-each>              
               </arr>
@@ -356,7 +356,7 @@
   <xsl:template name="permanentLocationId">
     <xsl:variable name="abt" select="datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='B']"/>
     <xsl:variable name="standort" select="upper-case((datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='f'])[1])"/> 
-    <xsl:variable name="electronicholding" select="substring(/../datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O'"/>
+    <xsl:variable name="electronicholding" select="substring(../datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O'"/>
       <xsl:choose>
         <xsl:when test="$electronicholding">ONLINE</xsl:when>
         <xsl:when test="substring(datafield[@tag='208@']/subfield[@code='b'],1,1) = 'd'">DUMMY</xsl:when>
@@ -370,6 +370,7 @@
             <xsl:otherwise>ZBMAG</xsl:otherwise>
           </xsl:choose>
         </xsl:when>
+        
         <xsl:when test="$abt='77/002'">
           <xsl:choose>
             <xsl:when test="contains($standort,upper-case('Erziehungswissenschaft'))">GFGPÄD</xsl:when>
