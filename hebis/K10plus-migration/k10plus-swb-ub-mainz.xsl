@@ -359,8 +359,8 @@
     <xsl:variable name="electronicholding" select="substring(../datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O'"/>
       <xsl:choose>
         <xsl:when test="$electronicholding">ONLINE</xsl:when>
-        <xsl:when test="substring(datafield[@tag='208@']/subfield[@code='b'],1,1) = 'd'">DUMMY</xsl:when>
         <xsl:when test="(substring(/../datafield[@tag='002@']/subfield[@code='0'],2,1) = 'o') and not(datafield[@tag='209A']/subfield[@code='d'])">AUFSATZ</xsl:when>
+        <xsl:when test="$abt='77/xxx'">DUMMY</xsl:when>
         <xsl:when test="$abt='77'">
           <xsl:choose>
             <xsl:when test="contains($standort,'FREIHAND')">ZBFREI</xsl:when>
