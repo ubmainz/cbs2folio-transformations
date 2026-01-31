@@ -152,6 +152,8 @@
         or exists(original/item/datafield[(@tag='209R') and contains(subfield[@code='u'],'anchor=Einzelkauf_')])
         or exists(original/item/datafield[(@tag='245G') and (subfield[@code='c']='ctof')])">
       <!-- UB Mainz: keine Online-Ressourcen, keine Mailboxen, aber Online-Einzelkauf Mono/ZS-->
+      <xsl:variable name="hebppn" select="if (original/datafield[@tag='003H']/subfield[@code='0']) then concat('HEB',(original/datafield[@tag='003H']/subfield[@code='0'])[1])
+        else concat('KXP',(original/datafield[@tag='003@']/subfield[@code='0'])[1])"/>
       <record>
         <xsl:copy-of select="original"/>
         <xsl:choose>
@@ -167,7 +169,7 @@
                     <identifierTypeId>PPN-K10plus</identifierTypeId>
                   </i>
                   <i>
-                    <value><xsl:value-of select="(original/datafield[@tag='003H']/subfield[@code='0']|original/datafield[@tag='006H']/subfield[@code='0'],'nil')[1]"/></value>
+                    <value><xsl:value-of select="$hebppn"/></value>
                     <identifierTypeId>PPN-Hebis</identifierTypeId>
                   </i>
                   <xsl:copy-of select="instance/identifiers/arr/i"/>
@@ -183,7 +185,8 @@
                   <xsl:copy-of select="instance/administrativeNotes/arr/*"/>
                   <i>
                     <xsl:value-of select="concat('ZDB/K10Plus-Instanz+Holdings aus PPN: ',original/datafield[@tag='003@']/subfield[@code='0'])"/>
-                    <xsl:if test="original/datafield[@tag='003H']/subfield[@code='0']"><xsl:value-of select="concat(' mit Hebis-PPN: ',original/datafield[@tag='003H']/subfield[@code='0'],'  ',$version)"></xsl:value-of></xsl:if>
+                    <xsl:if test="original/datafield[@tag='003H']/subfield[@code='0']"><xsl:value-of select="concat(' mit Hebis-PPN: ',original/datafield[@tag='003H']/subfield[@code='0'])"></xsl:value-of></xsl:if>
+                    <xsl:value-of select="concat('  ',$version)"/>
                   </i>
                 </arr>
               </administrativeNotes>
@@ -208,7 +211,7 @@
                     <identifierTypeId>PPN-K10plus</identifierTypeId>
                   </i>
                   <i>
-                    <value><xsl:value-of select="(original/datafield[@tag='003H']/subfield[@code='0']|original/datafield[@tag='006H']/subfield[@code='0'],'nil')[1]"/></value>
+                    <value><xsl:value-of select="$hebppn"/></value>
                     <identifierTypeId>PPN-Hebis</identifierTypeId>
                   </i>
                   <xsl:copy-of select="instance/identifiers/arr/i"/>
@@ -226,7 +229,8 @@
                   <xsl:copy-of select="instance/administrativeNotes/arr/*"/>
                   <i>
                     <xsl:value-of select="concat('ZDB/Mono-Mischdatensatz PPN: ',original/datafield[@tag='003@']/subfield[@code='0'])"/>
-                    <xsl:if test="original/datafield[@tag='003H']/subfield[@code='0']"><xsl:value-of select="concat(' mit Hebis-PPN: ',original/datafield[@tag='003H']/subfield[@code='0'],' ',$version)"></xsl:value-of></xsl:if>
+                    <xsl:if test="original/datafield[@tag='003H']/subfield[@code='0']"><xsl:value-of select="concat(' mit Hebis-PPN: ',original/datafield[@tag='003H']/subfield[@code='0'])"></xsl:value-of></xsl:if>
+                    <xsl:value-of select="concat('  ',$version)"/>
                   </i>
                   <i>
                     <xsl:text>Update für Holdings/Items blockiert</xsl:text>
@@ -270,7 +274,7 @@
                     <identifierTypeId>PPN-K10plus</identifierTypeId>
                   </i>
                   <i>
-                    <value><xsl:value-of select="(original/datafield[@tag='003H']/subfield[@code='0'],'nil')[1]"/></value>
+                    <value><xsl:value-of select="$hebppn"/></value>
                     <identifierTypeId>PPN-Hebis</identifierTypeId>
                   </i>
                   <xsl:copy-of select="instance/identifiers/arr/i"/>
@@ -283,7 +287,8 @@
                   <xsl:copy-of select="instance/administrativeNotes/arr/*"/>
                   <i>
                     <xsl:value-of select="concat('E/K10Plus-Instanz+Holdings aus PPN: ',original/datafield[@tag='003@']/subfield[@code='0'])"/>
-                    <xsl:if test="original/datafield[@tag='003H']/subfield[@code='0']"><xsl:value-of select="concat(' mit Hebis-PPN: ',original/datafield[@tag='003H']/subfield[@code='0'],' ',$version)"></xsl:value-of></xsl:if>
+                    <xsl:if test="original/datafield[@tag='003H']/subfield[@code='0']"><xsl:value-of select="concat(' mit Hebis-PPN: ',original/datafield[@tag='003H']/subfield[@code='0'])"></xsl:value-of></xsl:if>
+                    <xsl:value-of select="concat('  ',$version)"/>
                   </i>
                 </arr>
               </administrativeNotes>
@@ -308,7 +313,7 @@
                     <identifierTypeId>PPN-K10plus</identifierTypeId>
                   </i>
                   <i>
-                    <value><xsl:value-of select="(original/datafield[@tag='003H']/subfield[@code='0']|original/datafield[@tag='006H']/subfield[@code='0'],'nil')[1]"/></value>
+                    <value><xsl:value-of select="$hebppn"/></value>
                     <identifierTypeId>PPN-Hebis</identifierTypeId>
                   </i>
                   <xsl:copy-of select="instance/identifiers/arr/i"/>
@@ -321,7 +326,8 @@
                   <xsl:copy-of select="instance/administrativeNotes/arr/*"/>
                   <i>
                     <xsl:value-of select="concat('K10Plus-Instanz aus PPN: ',original/datafield[@tag='003@']/subfield[@code='0'])"/>
-                    <xsl:if test="original/datafield[@tag='003H']/subfield[@code='0']"><xsl:value-of select="concat(' mit Hebis-PPN: ',original/datafield[@tag='003H']/subfield[@code='0'],' ',$version)"></xsl:value-of></xsl:if>
+                    <xsl:if test="original/datafield[@tag='003H']/subfield[@code='0']"><xsl:value-of select="concat(' mit Hebis-PPN: ',original/datafield[@tag='003H']/subfield[@code='0'])"></xsl:value-of></xsl:if>
+                    <xsl:value-of select="concat('  ',$version)"/>
                   </i>
                 </arr>
               </administrativeNotes>
@@ -557,7 +563,8 @@
   <xsl:template match="item">
     <i>
       <xsl:variable name="epn" select="datafield[@tag='203@']/subfield[@code='0']"/>
-      <xsl:variable name="hebepn" select="if (datafield[@tag='203H']/subfield[@code='0']) then concat('HEB',(datafield[@tag='203H']/subfield[@code='0'])[1]) else ''"/>
+      <xsl:variable name="hebepn" select="if (datafield[@tag='203H']/subfield[@code='0']) then concat('HEB',(datafield[@tag='203H']/subfield[@code='0'])[1])
+        else (datafield[@tag='206X']/subfield[@code='0'])[1]"/>
       <administrativeNotes>
         <arr>
           <xsl:for-each select="datafield[@tag='201B']">
@@ -729,14 +736,16 @@
                 <xsl:with-param name="copy">
                   <xsl:if test="last()>1"><xsl:value-of select="$copy"/></xsl:if>
                 </xsl:with-param>
-                <xsl:with-param name="HEBhhrid" select="if (datafield[@tag='203H']/subfield[@code='0']) then concat('HEB',(datafield[@tag='203H']/subfield[@code='0'])[1],'-',$copy) else ''"/>
+                <xsl:with-param name="HEBhhrid" select="if (datafield[@tag='203H']/subfield[@code='0']) then concat('HEB',(datafield[@tag='203H']/subfield[@code='0'])[1],'-',$copy)
+                  else if (datafield[@tag='206X']/subfield[@code='0']) then concat((datafield[@tag='206X']/subfield[@code='0'])[1],'-',$copy) else ''"/>
               </xsl:apply-templates>
             </xsl:for-each>
             <xsl:if test="not(datafield[(@tag='209G') and (subfield[@code='x']='00')]/subfield[@code='a'])">
               <!--   <xsl:message>Debug: EPN <xsl:value-of select="$epn"/></xsl:message>  -->
               <xsl:apply-templates select="." mode="make-item">
                 <xsl:with-param name="hhrid" select="concat($epn,'-1')"/>
-                <xsl:with-param name="HEBhhrid" select="if (datafield[@tag='203H']/subfield[@code='0']) then concat('HEB',(datafield[@tag='203H']/subfield[@code='0'])[1],'-1') else ''"/>
+                <xsl:with-param name="HEBhhrid" select="if (datafield[@tag='203H']/subfield[@code='0']) then concat('HEB',(datafield[@tag='203H']/subfield[@code='0'])[1],'-1')
+                  else if (datafield[@tag='206X']/subfield[@code='0']) then concat((datafield[@tag='206X']/subfield[@code='0'])[1],'-1') else ''"/>
               </xsl:apply-templates>
             </xsl:if>
           </arr>
