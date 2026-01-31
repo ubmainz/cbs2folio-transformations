@@ -10,7 +10,7 @@
     </xsl:template>
 
     <xsl:template match="hrid">
-        <hrid><xsl:value-of select="concat('HEB',.)"/></hrid>
+        <hrid><xsl:value-of select="if (matches(.,'[0-9].*')) then concat('HEB',.) else ."/></hrid>
     </xsl:template>
 
 </xsl:stylesheet>
