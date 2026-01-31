@@ -239,8 +239,8 @@
               <arr>
                 <xsl:for-each select="original/item">
                   <!--  hrid raussuchen (206X$0) und epn 203@ für Tausch eintragen -->
-                  <xsl:variable name="hebepn" select="if (datafield[@tag='203H']/subfield[@code='0']) then datafield[@tag='203H']/subfield[@code='0']
-                       else datafield[@tag='206X']/subfield[@code='0']"/>
+                  <xsl:variable name="hebepn" select="if (datafield[@tag='203H']/subfield[@code='0']) then concat('HEB',(datafield[@tag='203H']/subfield[@code='0'])[1])
+                    else (datafield[@tag='206X']/subfield[@code='0'])[1]"/>
                   <xsl:variable name="epn" select="datafield[@tag='203@']/subfield[@code='0']"/>
                   <i>
                     <formerIds>
