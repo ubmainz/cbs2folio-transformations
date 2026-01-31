@@ -295,7 +295,9 @@
             </instance>
             <holdingsRecords>
               <arr>
-                <xsl:for-each select="original/item[datafield[(@tag='209B') and (subfield[@code='x']='12')]/subfield[@code='a']='ctof']">  <!-- löscht alle anderen -->
+                <xsl:for-each select="(original/item[datafield[(@tag='209B') and (subfield[@code='x']='12')]/subfield[@code='a']='ctof'])
+                  or exists(original/item/datafield[(@tag='209R') and contains(subfield[@code='u'],'anchor=Einzelkauf_')])
+                  or exists(original/item/datafield[(@tag='245G') and (subfield[@code='c']='ctof')])">  <!-- löscht alle anderen -->
                   <xsl:apply-templates select="."/>
                 </xsl:for-each>
               </arr>
