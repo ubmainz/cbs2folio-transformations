@@ -81,7 +81,7 @@
   </xsl:template>
 
   <xsl:template match="holdingsRecords/arr/i[formerIds/arr/i[2]]/hrid">
-    <hrid><xsl:value-of select="substring-after(../formerIds/arr/i[2],'HEB')"/></hrid>
+    <hrid><xsl:value-of select="if (starts-with(../formerIds/arr/i[2],'HEB')) then substring-after(../formerIds/arr/i[2],'HEB') else ../formerIds/arr/i[2]"/></hrid>
   </xsl:template>
 
   <xsl:template match="items/arr/i[not(formerIds/arr/i[2])]/hrid">
@@ -89,7 +89,7 @@
   </xsl:template>
 
   <xsl:template match="items/arr/i[formerIds/arr/i[2]]/hrid">
-    <hrid><xsl:value-of select="substring-after(../formerIds/arr/i[2],'HEB')"/></hrid>
+    <hrid><xsl:value-of select="if (starts-with(../formerIds/arr/i[2],'HEB')) then substring-after(../formerIds/arr/i[2],'HEB') else ../formerIds/arr/i[2]"/></hrid>
   </xsl:template>
 
 </xsl:stylesheet>
