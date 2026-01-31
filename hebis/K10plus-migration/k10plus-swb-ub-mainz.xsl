@@ -3,7 +3,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="2.0" exclude-result-prefixes="#all">
   <xsl:output indent="yes" method="xml" version="1.0" encoding="UTF-8"/>
 
-  <xsl:variable name="version" select="'v2'"/>
+  <xsl:variable name="version" select="'v3'"/>
 
   <xsl:template match="@* | node()">
     <xsl:copy>
@@ -353,11 +353,11 @@
   <xsl:template name="permanentLocationId">
     <xsl:variable name="abt" select="datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='B']"/>
     <xsl:variable name="standort" select="upper-case((datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='f'])[1])"/> 
-    <xsl:variable name="electronicholding" select="substring(/../datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O'"/>
+    <xsl:variable name="electronicholding" select="substring(../datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O'"/>
       <xsl:choose>
         <xsl:when test="$electronicholding">ONLINE</xsl:when>
-        <xsl:when test="substring(datafield[@tag='208@']/subfield[@code='b'],1,1) = 'd'">DUMMY</xsl:when>
         <xsl:when test="(substring(/../datafield[@tag='002@']/subfield[@code='0'],2,1) = 'o') and not(datafield[@tag='209A']/subfield[@code='d'])">AUFSATZ</xsl:when>
+        <xsl:when test="$abt='77/xxx'">DUMMY</xsl:when>
         <xsl:when test="$abt='77'">
           <xsl:choose>
             <xsl:when test="contains($standort,'FREIHAND')">ZBFREI</xsl:when>
