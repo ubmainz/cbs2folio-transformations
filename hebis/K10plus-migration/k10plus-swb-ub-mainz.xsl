@@ -48,10 +48,6 @@
         <retainExistingValues>
           <forOmittedProperties>true</forOmittedProperties>
         </retainExistingValues>
-        <retainOmittedRecord>
-          <ifField>hrid</ifField>
-          <matchesPattern>ho.*</matchesPattern>
-        </retainOmittedRecord>
         <statisticalCoding>
           <arr>
             <i>
