@@ -3,7 +3,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="2.0" exclude-result-prefixes="#all">
   <xsl:output indent="yes" method="xml" version="1.0" encoding="UTF-8"/>
 
-  <xsl:variable name="version" select="'v3'"/>
+  <xsl:variable name="version" select="'v3t'"/>
 
   <xsl:template match="@* | node()">
     <xsl:copy>
@@ -160,7 +160,8 @@
         <xsl:copy-of select="original"/>
         <xsl:choose>
 
-          <xsl:when test="not(exists(original/item[not(starts-with(datafield[@tag='208@']/subfield[@code='b'],'z') or false() )]))"> <!-- ZDB-Fälle + TBD: Migrationsfälle -->
+          <!-- <xsl:when test="not(exists(original/item[not(starts-with(datafield[@tag='208@']/subfield[@code='b'],'z') or false() )]))"> ZDB-Fälle + TBD: Migrationsfälle -->
+          <xsl:when test="not(exists(original/item[not((datafield[(@tag='209B') and (subfield[@code='x']='13')]/subfield[@code='a']='px') or false() )]))"> <!-- Wolpertinger-Test -->
             <xsl:call-template name="processingzdb"/>
             <instance>
               <source>K10plus</source>
@@ -201,7 +202,7 @@
             </holdingsRecords>
           </xsl:when>
 
-          <xsl:when test="exists(original/item[starts-with(datafield[@tag='208@']/subfield[@code='b'],'z')])"> <!-- ZDB-Misch-Fälle -->
+          <xsl:when test="exists(original/item[datafield[(@tag='209B') and (subfield[@code='x']='13')]/subfield[@code='a']='px'])"> <!-- ZDB-Misch-Fälle -->
             <xsl:call-template name="processingmono"/>
             <instance>
               <source>K10plus</source>
