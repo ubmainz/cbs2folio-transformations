@@ -23,10 +23,6 @@
             <retainExistingValues>
                <forOmittedProperties>true</forOmittedProperties>
             </retainExistingValues>
-            <retainOmittedRecord>
-               <ifField>hrid</ifField>
-               <matchesPattern>ho.*</matchesPattern>
-            </retainOmittedRecord>
             <statisticalCoding>
                <arr>
                   <i>
@@ -58,7 +54,7 @@
                   <identifierTypeId>98e4039e-adfe-405f-b763-c642765269df</identifierTypeId>
                </i>
                <i>
-                  <value>071562184</value>
+                  <value>HEB071562184</value>
                   <identifierTypeId>be3a2669-391d-4027-b023-1092a61ac631</identifierTypeId>
                </i>
                <i>
@@ -202,7 +198,7 @@
             <arr>
                <i>Obv (Bibliografische Gattung)</i>
                <i>04.06.25, 13:09 (Letzte Änderung CBS)</i>
-               <i>E/K10Plus-Instanz+Holdings aus PPN: 266022472 mit Hebis-PPN: 071562184 v3t</i>
+               <i>E/K10Plus-Instanz+Holdings aus PPN: 266022472 mit Hebis-PPN: 071562184  v3t</i>
                <i>Wolpertinger v3</i>
             </arr>
          </administrativeNotes>
@@ -250,7 +246,7 @@
                   <identifierTypeId>98e4039e-adfe-405f-b763-c642765269df</identifierTypeId>
                </i>
                <i>
-                  <value>40051141X</value>
+                  <value>HEB40051141X</value>
                   <identifierTypeId>be3a2669-391d-4027-b023-1092a61ac631</identifierTypeId>
                </i>
                <i>
@@ -362,7 +358,7 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>17.10.25, 15:54 (Letzte Änderung CBS)</i>
-               <i>K10Plus-Instanz aus PPN: 6010161517 mit Hebis-PPN: 40051141X v3t</i>
+               <i>K10Plus-Instanz aus PPN: 6010161517 mit Hebis-PPN: 40051141X  v3t</i>
                <i>Wolpertinger v3</i>
             </arr>
          </administrativeNotes>
@@ -424,7 +420,7 @@
                   <identifierTypeId>98e4039e-adfe-405f-b763-c642765269df</identifierTypeId>
                </i>
                <i>
-                  <value>347811353</value>
+                  <value>HEB347811353</value>
                   <identifierTypeId>be3a2669-391d-4027-b023-1092a61ac631</identifierTypeId>
                </i>
                <i>
@@ -571,7 +567,7 @@
             <arr>
                <i>Abv (Bibliografische Gattung)</i>
                <i>16.12.25, 11:28 (Letzte Änderung CBS)</i>
-               <i>ZDB/Mono-Mischdatensatz PPN: 79783558X mit Hebis-PPN: 347811353 v3t</i>
+               <i>ZDB/Mono-Mischdatensatz PPN: 79783558X mit Hebis-PPN: 347811353  v3t</i>
                <i>Update für Holdings/Items blockiert</i>
                <i>Wolpertinger v3</i>
             </arr>
@@ -583,10 +579,10 @@
                <formerIds>
                   <arr>
                      <i>6038681612</i>
-                     <i>740491822</i>
+                     <i>HEB740491822</i>
                   </arr>
                </formerIds>
-               <hrid>HEB</hrid>
+               <hrid>HEB740491822</hrid>
                <holdingsTypeId>0c422f92-0f4d-4d32-8cbe-390ebc33a3e5</holdingsTypeId>
                <permanentLocationId>87764786-c5c8-47d0-a480-df506c751d76</permanentLocationId>
             </i>
@@ -594,10 +590,10 @@
                <formerIds>
                   <arr>
                      <i>6038681736</i>
-                     <i>509433057</i>
+                     <i>HEB509433057</i>
                   </arr>
                </formerIds>
-               <hrid>HEB</hrid>
+               <hrid>HEB509433057</hrid>
                <holdingsTypeId>0c422f92-0f4d-4d32-8cbe-390ebc33a3e5</holdingsTypeId>
                <permanentLocationId>87764786-c5c8-47d0-a480-df506c751d76</permanentLocationId>
             </i>
@@ -605,10 +601,10 @@
                <formerIds>
                   <arr>
                      <i>604773913X</i>
-                     <i>740491822</i>
+                     <i>HEB740491822</i>
                   </arr>
                </formerIds>
-               <hrid>HEB</hrid>
+               <hrid>HEB740491822</hrid>
                <holdingsTypeId>0c422f92-0f4d-4d32-8cbe-390ebc33a3e5</holdingsTypeId>
                <permanentLocationId>87764786-c5c8-47d0-a480-df506c751d76</permanentLocationId>
             </i>
@@ -619,7 +615,7 @@
                      <i>ho00000001346</i>
                   </arr>
                </formerIds>
-               <hrid>HEB</hrid>
+               <hrid>ho00000001346</hrid>
                <holdingsTypeId>0c422f92-0f4d-4d32-8cbe-390ebc33a3e5</holdingsTypeId>
                <permanentLocationId>87764786-c5c8-47d0-a480-df506c751d76</permanentLocationId>
             </i>
@@ -804,7 +800,7 @@
             <arr>
                <i>Abv (Bibliografische Gattung)</i>
                <i>16.12.25, 11:28 (Letzte Änderung CBS)</i>
-               <i>ZDB/Mono-Mischdatensatz PPN: 79783558X mit Hebis-PPN: 347811353 v3t</i>
+               <i>ZDB/Mono-Mischdatensatz PPN: 79783558X mit Hebis-PPN: 347811353  v3t</i>
                <i>Update für Holdings/Items blockiert</i>
                <i>Wolpertinger v3 für Hebis-PPN: 347811612</i>
                <i>Verlierer - wird gelöscht: keine Holdings/Items</i>
@@ -840,10 +836,6 @@
             <retainExistingValues>
                <forOmittedProperties>true</forOmittedProperties>
             </retainExistingValues>
-            <retainOmittedRecord>
-               <ifField>hrid</ifField>
-               <matchesPattern>ho.*</matchesPattern>
-            </retainOmittedRecord>
             <statisticalCoding>
                <arr>
                   <i>
@@ -875,7 +867,7 @@
                   <identifierTypeId>98e4039e-adfe-405f-b763-c642765269df</identifierTypeId>
                </i>
                <i>
-                  <value>492936498</value>
+                  <value>HEB492936498</value>
                   <identifierTypeId>be3a2669-391d-4027-b023-1092a61ac631</identifierTypeId>
                </i>
                <i>
@@ -1114,7 +1106,7 @@
                   <identifierTypeId>98e4039e-adfe-405f-b763-c642765269df</identifierTypeId>
                </i>
                <i>
-                  <value>400876566</value>
+                  <value>HEB400876566</value>
                   <identifierTypeId>be3a2669-391d-4027-b023-1092a61ac631</identifierTypeId>
                </i>
                <i>
@@ -1213,7 +1205,7 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>17.10.25, 15:55 (Letzte Änderung CBS)</i>
-               <i>K10Plus-Instanz aus PPN: 6010166128 mit Hebis-PPN: 400876566 v3t</i>
+               <i>K10Plus-Instanz aus PPN: 6010166128 mit Hebis-PPN: 400876566  v3t</i>
                <i>Wolpertinger v3</i>
             </arr>
          </administrativeNotes>
@@ -1275,7 +1267,7 @@
                   <identifierTypeId>98e4039e-adfe-405f-b763-c642765269df</identifierTypeId>
                </i>
                <i>
-                  <value>400276488</value>
+                  <value>HEB400276488</value>
                   <identifierTypeId>be3a2669-391d-4027-b023-1092a61ac631</identifierTypeId>
                </i>
                <i>
@@ -1380,7 +1372,7 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>17.10.25, 15:54 (Letzte Änderung CBS)</i>
-               <i>K10Plus-Instanz aus PPN: 6010154766 mit Hebis-PPN: 400276488 v3t</i>
+               <i>K10Plus-Instanz aus PPN: 6010154766 mit Hebis-PPN: 400276488  v3t</i>
                <i>Wolpertinger v3</i>
             </arr>
          </administrativeNotes>
@@ -1439,10 +1431,6 @@
             <retainExistingValues>
                <forOmittedProperties>true</forOmittedProperties>
             </retainExistingValues>
-            <retainOmittedRecord>
-               <ifField>hrid</ifField>
-               <matchesPattern>ho.*</matchesPattern>
-            </retainOmittedRecord>
             <statisticalCoding>
                <arr>
                   <i>
@@ -1474,7 +1462,7 @@
                   <identifierTypeId>98e4039e-adfe-405f-b763-c642765269df</identifierTypeId>
                </i>
                <i>
-                  <value>492634467</value>
+                  <value>HEB492634467</value>
                   <identifierTypeId>be3a2669-391d-4027-b023-1092a61ac631</identifierTypeId>
                </i>
                <i>
@@ -1719,10 +1707,6 @@
             <retainExistingValues>
                <forOmittedProperties>true</forOmittedProperties>
             </retainExistingValues>
-            <retainOmittedRecord>
-               <ifField>hrid</ifField>
-               <matchesPattern>ho.*</matchesPattern>
-            </retainOmittedRecord>
             <statisticalCoding>
                <arr>
                   <i>
@@ -1754,7 +1738,7 @@
                   <identifierTypeId>98e4039e-adfe-405f-b763-c642765269df</identifierTypeId>
                </i>
                <i>
-                  <value>495193453</value>
+                  <value>HEB495193453</value>
                   <identifierTypeId>be3a2669-391d-4027-b023-1092a61ac631</identifierTypeId>
                </i>
                <i>
@@ -2086,7 +2070,7 @@
                   <identifierTypeId>98e4039e-adfe-405f-b763-c642765269df</identifierTypeId>
                </i>
                <i>
-                  <value>311011470</value>
+                  <value>HEB311011470</value>
                   <identifierTypeId>be3a2669-391d-4027-b023-1092a61ac631</identifierTypeId>
                </i>
                <i>
@@ -2251,7 +2235,7 @@
             <arr>
                <i>Obv (Bibliografische Gattung)</i>
                <i>04.06.25, 13:01 (Letzte Änderung CBS)</i>
-               <i>ZDB/Mono-Mischdatensatz PPN: 729393496 mit Hebis-PPN: 311011470 v3t</i>
+               <i>ZDB/Mono-Mischdatensatz PPN: 729393496 mit Hebis-PPN: 311011470  v3t</i>
                <i>Update für Holdings/Items blockiert</i>
                <i>Wolpertinger v3</i>
             </arr>
@@ -2263,10 +2247,10 @@
                <formerIds>
                   <arr>
                      <i>6038480951</i>
-                     <i>763373591</i>
+                     <i>HEB763373591</i>
                   </arr>
                </formerIds>
-               <hrid>HEB</hrid>
+               <hrid>HEB763373591</hrid>
                <holdingsTypeId>0c422f92-0f4d-4d32-8cbe-390ebc33a3e5</holdingsTypeId>
                <permanentLocationId>87764786-c5c8-47d0-a480-df506c751d76</permanentLocationId>
             </i>
@@ -2274,10 +2258,10 @@
                <formerIds>
                   <arr>
                      <i>6055521849</i>
-                     <i>763373591</i>
+                     <i>HEB763373591</i>
                   </arr>
                </formerIds>
-               <hrid>HEB</hrid>
+               <hrid>HEB763373591</hrid>
                <holdingsTypeId>0c422f92-0f4d-4d32-8cbe-390ebc33a3e5</holdingsTypeId>
                <permanentLocationId>87764786-c5c8-47d0-a480-df506c751d76</permanentLocationId>
             </i>
@@ -2323,7 +2307,7 @@
                   <identifierTypeId>98e4039e-adfe-405f-b763-c642765269df</identifierTypeId>
                </i>
                <i>
-                  <value>400799359</value>
+                  <value>HEB400799359</value>
                   <identifierTypeId>be3a2669-391d-4027-b023-1092a61ac631</identifierTypeId>
                </i>
                <i>
@@ -2429,7 +2413,7 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>17.10.25, 15:55 (Letzte Änderung CBS)</i>
-               <i>K10Plus-Instanz aus PPN: 6010165075 mit Hebis-PPN: 400799359 v3t</i>
+               <i>K10Plus-Instanz aus PPN: 6010165075 mit Hebis-PPN: 400799359  v3t</i>
                <i>Wolpertinger v3</i>
             </arr>
          </administrativeNotes>
@@ -2475,10 +2459,6 @@
             <retainExistingValues>
                <forOmittedProperties>true</forOmittedProperties>
             </retainExistingValues>
-            <retainOmittedRecord>
-               <ifField>hrid</ifField>
-               <matchesPattern>ho.*</matchesPattern>
-            </retainOmittedRecord>
             <statisticalCoding>
                <arr>
                   <i>
@@ -2510,7 +2490,7 @@
                   <identifierTypeId>98e4039e-adfe-405f-b763-c642765269df</identifierTypeId>
                </i>
                <i>
-                  <value>494217553</value>
+                  <value>HEB494217553</value>
                   <identifierTypeId>be3a2669-391d-4027-b023-1092a61ac631</identifierTypeId>
                </i>
                <i>
@@ -2872,7 +2852,7 @@
                   <identifierTypeId>98e4039e-adfe-405f-b763-c642765269df</identifierTypeId>
                </i>
                <i>
-                  <value>400496518</value>
+                  <value>HEB400496518</value>
                   <identifierTypeId>be3a2669-391d-4027-b023-1092a61ac631</identifierTypeId>
                </i>
                <i>
@@ -2987,7 +2967,7 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>17.10.25, 15:54 (Letzte Änderung CBS)</i>
-               <i>K10Plus-Instanz aus PPN: 6010161118 mit Hebis-PPN: 400496518 v3t</i>
+               <i>K10Plus-Instanz aus PPN: 6010161118 mit Hebis-PPN: 400496518  v3t</i>
                <i>Wolpertinger v3</i>
             </arr>
          </administrativeNotes>
@@ -3041,7 +3021,7 @@
       </processing>
       <instance>
          <source>K10plus</source>
-         <hrid>HEBKXP</hrid>
+         <hrid>KXP</hrid>
          <identifiers>
             <arr>
                <i>
@@ -3049,7 +3029,7 @@
                   <identifierTypeId>98e4039e-adfe-405f-b763-c642765269df</identifierTypeId>
                </i>
                <i>
-                  <value>nil</value>
+                  <value>KXP1797670026</value>
                   <identifierTypeId>be3a2669-391d-4027-b023-1092a61ac631</identifierTypeId>
                </i>
                <i>
@@ -3194,7 +3174,7 @@
             <arr>
                <i>Abv (Bibliografische Gattung)</i>
                <i>27.04.23, 08:38 (Letzte Änderung CBS)</i>
-               <i>K10Plus-Instanz aus PPN: 1797670026</i>
+               <i>K10Plus-Instanz aus PPN: 1797670026  v3t</i>
                <i>Wolpertinger v3</i>
             </arr>
          </administrativeNotes>
@@ -3205,7 +3185,7 @@
                <formerIds>
                   <arr/>
                </formerIds>
-               <hrid>HEBhox1797670026</hrid>
+               <hrid>hox1797670026</hrid>
                <administrativeNotes>
                   <arr>
                      <i>FOLIO-Holding mit K10plus-EPN: 6047250947</i>
@@ -3256,7 +3236,7 @@
                   <identifierTypeId>98e4039e-adfe-405f-b763-c642765269df</identifierTypeId>
                </i>
                <i>
-                  <value>400701316</value>
+                  <value>HEB400701316</value>
                   <identifierTypeId>be3a2669-391d-4027-b023-1092a61ac631</identifierTypeId>
                </i>
                <i>
@@ -3353,7 +3333,7 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>07.11.25, 21:35 (Letzte Änderung CBS)</i>
-               <i>K10Plus-Instanz aus PPN: 6010163609 mit Hebis-PPN: 400701316 v3t</i>
+               <i>K10Plus-Instanz aus PPN: 6010163609 mit Hebis-PPN: 400701316  v3t</i>
                <i>Wolpertinger v3</i>
             </arr>
          </administrativeNotes>
@@ -3407,7 +3387,7 @@
       </processing>
       <instance>
          <source>K10plus</source>
-         <hrid>HEBKXP</hrid>
+         <hrid>KXP</hrid>
          <identifiers>
             <arr>
                <i>
@@ -3415,7 +3395,7 @@
                   <identifierTypeId>98e4039e-adfe-405f-b763-c642765269df</identifierTypeId>
                </i>
                <i>
-                  <value>nil</value>
+                  <value>KXP1801355789</value>
                   <identifierTypeId>be3a2669-391d-4027-b023-1092a61ac631</identifierTypeId>
                </i>
                <i>
@@ -3538,7 +3518,7 @@
             <arr>
                <i>Abv (Bibliografische Gattung)</i>
                <i>20.05.25, 16:53 (Letzte Änderung CBS)</i>
-               <i>K10Plus-Instanz aus PPN: 1801355789</i>
+               <i>K10Plus-Instanz aus PPN: 1801355789  v3t</i>
                <i>Wolpertinger v3</i>
             </arr>
          </administrativeNotes>
@@ -3549,7 +3529,7 @@
                <formerIds>
                   <arr/>
                </formerIds>
-               <hrid>HEBhox1801355789</hrid>
+               <hrid>hox1801355789</hrid>
                <administrativeNotes>
                   <arr>
                      <i>FOLIO-Holding mit K10plus-EPN: 6047251315</i>
@@ -3600,7 +3580,7 @@
                   <identifierTypeId>98e4039e-adfe-405f-b763-c642765269df</identifierTypeId>
                </i>
                <i>
-                  <value>400290723</value>
+                  <value>HEB400290723</value>
                   <identifierTypeId>be3a2669-391d-4027-b023-1092a61ac631</identifierTypeId>
                </i>
                <i>
@@ -3707,7 +3687,7 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>17.10.25, 15:54 (Letzte Änderung CBS)</i>
-               <i>K10Plus-Instanz aus PPN: 6010155428 mit Hebis-PPN: 400290723 v3t</i>
+               <i>K10Plus-Instanz aus PPN: 6010155428 mit Hebis-PPN: 400290723  v3t</i>
                <i>Wolpertinger v3</i>
             </arr>
          </administrativeNotes>
@@ -3766,10 +3746,6 @@
             <retainExistingValues>
                <forOmittedProperties>true</forOmittedProperties>
             </retainExistingValues>
-            <retainOmittedRecord>
-               <ifField>hrid</ifField>
-               <matchesPattern>ho.*</matchesPattern>
-            </retainOmittedRecord>
             <statisticalCoding>
                <arr>
                   <i>
@@ -3801,7 +3777,7 @@
                   <identifierTypeId>98e4039e-adfe-405f-b763-c642765269df</identifierTypeId>
                </i>
                <i>
-                  <value>510439721</value>
+                  <value>HEB510439721</value>
                   <identifierTypeId>be3a2669-391d-4027-b023-1092a61ac631</identifierTypeId>
                </i>
                <i>
@@ -3945,7 +3921,7 @@
             <arr>
                <i>Oax (Bibliografische Gattung)</i>
                <i>06.11.25, 19:07 (Letzte Änderung CBS)</i>
-               <i>E/K10Plus-Instanz+Holdings aus PPN: 1895308259 mit Hebis-PPN: 510439721 v3t</i>
+               <i>E/K10Plus-Instanz+Holdings aus PPN: 1895308259 mit Hebis-PPN: 510439721  v3t</i>
                <i>Wolpertinger v3</i>
             </arr>
          </administrativeNotes>
@@ -4037,10 +4013,6 @@
             <retainExistingValues>
                <forOmittedProperties>true</forOmittedProperties>
             </retainExistingValues>
-            <retainOmittedRecord>
-               <ifField>hrid</ifField>
-               <matchesPattern>ho.*</matchesPattern>
-            </retainOmittedRecord>
             <statisticalCoding>
                <arr>
                   <i>
@@ -4072,7 +4044,7 @@
                   <identifierTypeId>98e4039e-adfe-405f-b763-c642765269df</identifierTypeId>
                </i>
                <i>
-                  <value>494801751</value>
+                  <value>HEB494801751</value>
                   <identifierTypeId>be3a2669-391d-4027-b023-1092a61ac631</identifierTypeId>
                </i>
                <i>
