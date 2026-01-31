@@ -16,66 +16,64 @@
   <xsl:template match="record">
     <xsl:variable name="currentrecord" select="."/> <!-- 003H Primäre Hebis-PPN -->
     <xsl:variable name="hebppns-dist" select="distinct-values(original/datafield[@tag='006H']/subfield[@code='0'])"/> <!-- weitere Hebis-PPN -->
-    <xsl:variable name="hebgewinner" select="(original/datafield[@tag='003H']/subfield[@code='0'])[1]"/>
-    <xsl:if test="$hebgewinner">
-      <record>
-        <xsl:variable name="epns-ohne-hebis" select="$currentrecord/holdingsRecords/arr/i[starts-with(formerIds/arr/i[2],'KXP')]/hrid"/>
-        <xsl:copy-of select="$currentrecord/processing"/>
-         <instance>
-          <source>K10plus</source>
-          <hrid><xsl:value-of select="$hebgewinner"/></hrid>
-          <xsl:apply-templates select="$currentrecord/instance/*[not(self::hrid or self::source or self::administrativeNotes)]"/>
-          <administrativeNotes>
-            <arr>
-              <xsl:apply-templates select="$currentrecord/instance/administrativeNotes/arr/*"/>
+    <xsl:variable name="hebgewinner" select="(original/datafield[@tag='003H']/subfield[@code='0'],concat('KXP',$currentrecord/hrid))[1]"/>
+    <record>
+      <xsl:variable name="epns-ohne-hebis" select="$currentrecord/holdingsRecords/arr/i[starts-with(formerIds/arr/i[2],'KXP')]/hrid"/>
+      <xsl:copy-of select="$currentrecord/processing"/>
+       <instance>
+        <source>K10plus</source>
+        <hrid><xsl:value-of select="$hebgewinner"/></hrid>
+        <xsl:apply-templates select="$currentrecord/instance/*[not(self::hrid or self::source or self::administrativeNotes)]"/>
+        <administrativeNotes>
+          <arr>
+            <xsl:apply-templates select="$currentrecord/instance/administrativeNotes/arr/*"/>
+            <i>
+              <xsl:text>Wolpertinger </xsl:text><xsl:value-of select="$version"/>
+            </i>
+            <xsl:if test="not(empty($epns-ohne-hebis))">
               <i>
-                <xsl:text>Wolpertinger </xsl:text><xsl:value-of select="$version"/>
-              </i>
-              <xsl:if test="not(empty($epns-ohne-hebis))">
+                <xsl:text>Uffbasse! Hebis-EPN fehlt: KXP... </xsl:text><xsl:value-of select="$epns-ohne-hebis" separator=", "/>
+              </i> 
+            </xsl:if>
+          </arr>
+        </administrativeNotes>
+      </instance>
+      <!-- instance relations entfallen und kommen mit K10plus wieder -->
+      <xsl:apply-templates select="$currentrecord/holdingsRecords"/> <!-- Gewinner: Holding und Items -->
+    </record>
+    <xsl:for-each select="$hebppns-dist"> <xsl:if test=".!=$hebgewinner"> <!-- Verlierer -->
+      <record>
+        <xsl:copy-of select="$currentrecord/processing"/>
+          <instance>
+            <source>K10plus</source>
+            <hrid><xsl:value-of select="."/></hrid>
+            <identifiers>
+              <arr>
+                <xsl:apply-templates select="$currentrecord/instance/identifiers/arr/i[not((identifierTypeId='PPN-K10plus') or (identifierTypeId='PPN-Hebis'))]"/>
+              </arr>
+            </identifiers>
+            <xsl:apply-templates select="$currentrecord/instance/*[not(self::hrid or self::source or self::administrativeNotes or self::identifiers)]"/>
+            <administrativeNotes>
+              <arr>
+                <xsl:apply-templates select="$currentrecord/instance/administrativeNotes/arr/*"/>
                 <i>
-                  <xsl:text>Uffbasse! Hebis-EPN fehlt: KXP... </xsl:text><xsl:value-of select="$epns-ohne-hebis" separator=", "/>
-                </i> 
-              </xsl:if>
-            </arr>
-          </administrativeNotes>
-        </instance>
-        <!-- instance relations entfallen und kommen mit K10plus wieder -->
-        <xsl:apply-templates select="$currentrecord/holdingsRecords"/> <!-- Gewinner: Holding und Items -->
-      </record>
-      <xsl:for-each select="$hebppns-dist"> <xsl:if test=".!=$hebgewinner"> <!-- Verlierer -->
-        <record>
-          <xsl:copy-of select="$currentrecord/processing"/>
-            <instance>
-              <source>K10plus</source>
-              <hrid><xsl:value-of select="."/></hrid>
-              <identifiers>
-                <arr>
-                  <xsl:apply-templates select="$currentrecord/instance/identifiers/arr/i[not((identifierTypeId='PPN-K10plus') or (identifierTypeId='PPN-Hebis'))]"/>
-                </arr>
-              </identifiers>
-              <xsl:apply-templates select="$currentrecord/instance/*[not(self::hrid or self::source or self::administrativeNotes or self::identifiers)]"/>
-              <administrativeNotes>
-                <arr>
-                  <xsl:apply-templates select="$currentrecord/instance/administrativeNotes/arr/*"/>
-                  <i>
-                    <xsl:text>Wolpertinger </xsl:text><xsl:value-of select="$version"/><xsl:text> für Hebis-PPN: </xsl:text><xsl:value-of select="."/>
-                  </i>
-                  <i>
-                    <xsl:text>Verlierer - wird gelöscht: keine Holdings/Items</xsl:text>
-                  </i>
-                </arr>
-              </administrativeNotes>
-              <statisticalCodeIds>
-                <arr>
-                  <i>Dublettenbereinigung</i>
-                </arr>
-              </statisticalCodeIds>
-            </instance>
-            <!-- instance relations entfallen und kommen mit K10plus wieder -->
-            <!-- Verlierer: keine Holdings, kein K10plus PPN -->
-        </record> </xsl:if>
-      </xsl:for-each>
-    </xsl:if>
+                  <xsl:text>Wolpertinger </xsl:text><xsl:value-of select="$version"/><xsl:text> für Hebis-PPN: </xsl:text><xsl:value-of select="."/>
+                </i>
+                <i>
+                  <xsl:text>Verlierer - wird gelöscht: keine Holdings/Items</xsl:text>
+                </i>
+              </arr>
+            </administrativeNotes>
+            <statisticalCodeIds>
+              <arr>
+                <i>Dublettenbereinigung</i>
+              </arr>
+            </statisticalCodeIds>
+          </instance>
+          <!-- instance relations entfallen und kommen mit K10plus wieder -->
+          <!-- Verlierer: keine Holdings, kein K10plus PPN -->
+      </record> </xsl:if>
+    </xsl:for-each>
   </xsl:template>
 
   <xsl:template match="holdingsRecords/arr/i[not(formerIds/arr/i[2])]/hrid">
