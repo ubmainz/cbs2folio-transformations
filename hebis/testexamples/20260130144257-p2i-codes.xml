@@ -200,11 +200,72 @@
                <i>04.06.25, 13:09 (Letzte Änderung CBS)</i>
                <i>E/K10Plus-Instanz+Holdings aus PPN: 266022472 mit Hebis-PPN: 071562184  v3t</i>
                <i>Wolpertinger v3</i>
+               <i>Uffbasse! Hebis-EPN fehlt: KXP... 6055521741</i>
             </arr>
          </administrativeNotes>
       </instance>
       <holdingsRecords>
-         <arr/>
+         <arr>
+            <i>
+               <administrativeNotes>
+                  <arr>
+                     <i>30-01-26, 09:38 (Datum und Uhrzeit der letzten Änderung)</i>
+                     <i>K10plus-Holding aus EPN: 6055521741</i>
+                  </arr>
+               </administrativeNotes>
+               <formerIds>
+                  <arr>
+                     <i>6055521741</i>
+                     <i>KXP6055521741</i>
+                  </arr>
+               </formerIds>
+               <hrid>KXP6055521741</hrid>
+               <permanentLocationId>2947e228-3ba6-4714-8ef4-bb31c254ea49</permanentLocationId>
+               <callNumber/>
+               <holdingsTypeId>996f93e2-5b5e-4cf2-9168-33ced1f95eed</holdingsTypeId>
+               <holdingsStatements>
+                  <arr>
+                     <i>
+                        <statement>1.1987 -</statement>
+                     </i>
+                  </arr>
+               </holdingsStatements>
+               <notes>
+                  <arr>
+                     <i>
+                        <note>30.01.26 09:38</note>
+                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
+                        <staffOnly>true</staffOnly>
+                     </i>
+                     <i>
+                        <note>cofz</note>
+                        <holdingsNoteTypeId>6d3f575d-6727-42a4-ae58-56c00de2e1d4</holdingsNoteTypeId>
+                        <staffOnly>true</staffOnly>
+                     </i>
+                     <i>
+                        <note>zezb</note>
+                        <holdingsNoteTypeId>6d3f575d-6727-42a4-ae58-56c00de2e1d4</holdingsNoteTypeId>
+                        <staffOnly>true</staffOnly>
+                     </i>
+                  </arr>
+               </notes>
+               <discoverySuppress>false</discoverySuppress>
+               <sourceId>fa687f33-aab5-4119-b0ad-05afe8de4d92</sourceId>
+               <electronicAccess>
+                  <arr>
+                     <i>
+                        <uri>https://ezb.ur.de/detail.phtml?bibid=UBMZ&amp;jour_id=1019</uri>
+                     </i>
+                     <i>
+                        <uri>https://ezb.ur.de/ReadMe?bibid=UBMZ&amp;owner=USBK&amp;anchor=Einzelkauf_rup_lokal&amp;lang=de</uri>
+                     </i>
+                     <i>
+                        <uri>https://rupress.org/jcb</uri>
+                     </i>
+                  </arr>
+               </electronicAccess>
+            </i>
+         </arr>
       </holdingsRecords>
    </record>
    <record>
