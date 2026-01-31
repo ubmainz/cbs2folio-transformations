@@ -3,7 +3,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="2.0" exclude-result-prefixes="#all">
   <xsl:output indent="yes" method="xml" version="1.0" encoding="UTF-8"/>
 
-  <xsl:variable name="version" select="'v3'"/>
+  <xsl:variable name="version" select="'v3t'"/>
 
   <xsl:template match="@* | node()">
     <xsl:copy>
@@ -159,7 +159,8 @@
       <record>
         <xsl:copy-of select="original"/>
         <xsl:choose>
-          <xsl:when test="exists(original/item[starts-with(datafield[@tag='208@']/subfield[@code='b'],'z')])"> <!-- ZDB-Fälle -->
+          <!-- <xsl:when test="exists(original/item[starts-with(datafield[@tag='208@']/subfield[@code='b'],'z')])"> ZDB-Fälle -->
+          <xsl:when test="exists(original/item[datafield[(@tag='209B') and (subfield[@code='x']='13')]/subfield[@code='a']='px'])"> <!-- Woplertinger-Test -->
             <xsl:call-template name="processingzdb"/>
             <instance>
               <source>K10plus</source>
@@ -180,7 +181,8 @@
               <xsl:call-template name="classifications"/>
                 <statisticalCodeIds>
                   <arr>
-                    <xsl:if test="exists(original/item[not(starts-with(datafield[@tag='208@']/subfield[@code='b'],'z'))])">
+           <!--       <xsl:if test="exists(original/item[not(starts-with(datafield[@tag='208@']/subfield[@code='b'],'z'))])"> -->
+                    <xsl:if test="exists(original/item[not(datafield[(@tag='209B') and (subfield[@code='x']='13')]/subfield[@code='a']='px') and not(starts-with(datafield[@tag='208@']/subfield[@code='b'],'z'))])"> <!-- Wolpertinger-Test -->
                       <i>ZDB-Titel-mit-Mono-EPN</i>
                     </xsl:if>
                   </arr>
@@ -197,7 +199,8 @@
             </instance>
             <holdingsRecords>
               <arr>
-                <xsl:for-each select="original/item[starts-with(datafield[@tag='208@']/subfield[@code='b'],'z')]">  <!-- nur ZDB-Holdings -->
+                <!-- <xsl:for-each select="original/item[starts-with(datafield[@tag='208@']/subfield[@code='b'],'z')]">  nur ZDB-Holdings -->
+                <xsl:for-each select="original/item[datafield[(@tag='209B') and (subfield[@code='x']='13')]/subfield[@code='a']='px']">
                   <xsl:apply-templates select="."/>
                 </xsl:for-each>              
               </arr>
@@ -367,6 +370,7 @@
             <xsl:otherwise>ZBMAG</xsl:otherwise>
           </xsl:choose>
         </xsl:when>
+        
         <xsl:when test="$abt='77/002'">
           <xsl:choose>
             <xsl:when test="contains($standort,upper-case('Erziehungswissenschaft'))">GFGPÄD</xsl:when>
