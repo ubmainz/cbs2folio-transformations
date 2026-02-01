@@ -304,6 +304,8 @@
           </xsl:when>
 
           <xsl:otherwise> <!-- Mono-Fälle -->
+            <xsl:variable name="original" select="original"/>
+            <xsl:variable name="epnslokal" select="distinct-values(original/item/datafield[@tag='206X']/subfield[@code='0'])"/>
             <xsl:call-template name="processingmono"/>
             <instance>
               <source>K10plus</source>
@@ -330,21 +332,30 @@
                     <xsl:if test="original/datafield[@tag='003H']/subfield[@code='0']"><xsl:value-of select="concat(' mit Hebis-PPN: ',original/datafield[@tag='003H']/subfield[@code='0'])"></xsl:value-of></xsl:if>
                     <xsl:value-of select="concat(' - Bestände FOLIO  ',$version)"/>
                   </i>
+                  <xsl:if test="(count($epnslokal) != count(original/item/datafield[@tag='206X']/subfield[@code='0']))
+                    or (count(original/item/datafield[@tag='206X']/subfield[@code='0']) != count(original/item))">
+                    <i>
+                      <xsl:text>Uffbasse! Anzahl FOLIO-Bestände im CBS nicht korrekt.</xsl:text> 
+                    </i>
+                  </xsl:if>
                 </arr>
               </administrativeNotes>
             </instance>
             <holdingsRecords>
               <arr>
-                <xsl:for-each select="original/item">
+                <xsl:for-each select="$epnslokal">
                   <!--  hrid raussuchen (206X$0) und epn 203@ in administrative notices eintragen -  sonst nichts -->
                   <i>
                     <formerIds>
                       <arr/>
                     </formerIds>
-                    <hrid><xsl:value-of select="datafield[@tag='206X']/subfield[@code='0']"/></hrid>
+                    <hrid><xsl:value-of select="."/></hrid>
                     <administrativeNotes>
                       <arr>
-                        <i><xsl:value-of select="concat('FOLIO-Bestand mit K10plus-EPN: ',datafield[@tag='203@']/subfield[@code='0'])"/></i>
+                        <i>
+                          <xsl:text>FOLIO-Bestand mit K10plus-EPN: </xsl:text>
+                          <xsl:value-of select="$original/item[current()=datafield[@tag='206X']/subfield[@code='0']]/datafield[@tag='203@']/subfield[@code='0']" separator=", "/>
+                        </i>
                       </arr>
                     </administrativeNotes>
                     <holdingsTypeId>physical</holdingsTypeId> <!-- retainExistingValues/forTheseProperties -->
@@ -573,7 +584,7 @@
               <xsl:value-of select="concat(./subfield[@code='0'], ', ', substring(./subfield[@code='t'],1,5), ' (Datum und Uhrzeit der letzten Änderung)')"/>
             </i>
           </xsl:for-each>
-          <i><xsl:value-of select="concat('K10plus-Holding aus EPN: ',$epn)"/></i>
+          <i><xsl:value-of select="concat('K10plus-Bestand aus EPN: ',$epn)"/></i>
         </arr>
       </administrativeNotes>
       <formerIds>
