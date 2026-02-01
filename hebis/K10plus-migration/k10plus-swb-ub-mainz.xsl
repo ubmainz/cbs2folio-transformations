@@ -229,9 +229,9 @@
                 <arr>
                   <xsl:copy-of select="instance/administrativeNotes/arr/*"/>
                   <i>
-                    <xsl:value-of select="concat('ZDB/Lokal-Mischinstanz PPN: ',original/datafield[@tag='003@']/subfield[@code='0'],' - Update blockiert')"/>
+                    <xsl:value-of select="concat('ZDB/Lokal-Mischinstanz PPN: ',original/datafield[@tag='003@']/subfield[@code='0'])"/>
                     <xsl:if test="original/datafield[@tag='003H']/subfield[@code='0']"><xsl:value-of select="concat(' mit Hebis-PPN: ',original/datafield[@tag='003H']/subfield[@code='0'])"></xsl:value-of></xsl:if>
-                    <xsl:value-of select="concat('  ',$version)"/>
+                    <xsl:value-of select="concat(' - Update blockiert  ',$version)"/>
                   </i>
                 </arr>
               </administrativeNotes>
