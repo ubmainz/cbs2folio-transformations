@@ -690,17 +690,8 @@
               <staffOnly>true</staffOnly>
             </i>
           </xsl:for-each>
-   
-          <xsl:if test="datafield[(@tag='209A') and (subfield[@code='x']='00') and subfield[@code='h']]">
-            <i>
-              <note>
-                <xsl:value-of select="datafield[@tag='209A']/subfield[@code='h']"/>
-              </note>
-              <holdingsNoteTypeId><xsl:text>Signatur Ansetzungsform (7100)</xsl:text></holdingsNoteTypeId>
-              <staffOnly>true</staffOnly>  
-            </i>
-          </xsl:if>
-          <xsl:for-each select="datafield[(@tag='209A') and (subfield[@code='x']!='00')]/subfield[(@code='a') or (@code='h')]">
+             
+          <xsl:for-each select="datafield[@tag='209A']/subfield[(@code='a') or (@code='h')]">
             <i>
               <note>
                 <xsl:value-of select="."/>
@@ -708,6 +699,12 @@
               <holdingsNoteTypeId>
                 <xsl:variable name="codex" select="../subfield[@code='x']"/>
                 <xsl:choose>
+                  <xsl:when test="$codex='00'">
+                    <xsl:text>Signatur Ansetzungsform (7100)</xsl:text>
+                  </xsl:when>
+                  <xsl:when test="($codex='01') or ($codex='02') or ($codex='03') or ($codex='04') or ($codex='05') or ($codex='06') or ($codex='07') or ($codex='08')">
+                    <xsl:text>Weitere Signaturen (71</xsl:text><xsl:value-of select="$codex"/><xsl:text>)</xsl:text>
+                  </xsl:when>
                   <xsl:when test="$codex='09'">
                     <xsl:text>Magazinsignatur (nur Monografien) (71</xsl:text><xsl:value-of select="$codex"/><xsl:text>)</xsl:text>
                   </xsl:when>
@@ -715,13 +712,14 @@
                     <xsl:text>Magazinsignatur (nur Zeitschriften) (71</xsl:text><xsl:value-of select="$codex"/><xsl:text>)</xsl:text>
                   </xsl:when>
                   <xsl:otherwise>
-                    <xsl:text>Weitere Signaturen (71</xsl:text><xsl:value-of select="$codex"/><xsl:text>)</xsl:text>
+                    <xsl:text>Note</xsl:text>
                   </xsl:otherwise>
                 </xsl:choose>
               </holdingsNoteTypeId>
               <staffOnly>true</staffOnly>  
             </i>
           </xsl:for-each>
+          
         </arr>
       </notes>
       <discoverySuppress>false</discoverySuppress>   
