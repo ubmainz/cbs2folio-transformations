@@ -39,7 +39,7 @@
                   <identifierTypeId>98e4039e-adfe-405f-b763-c642765269df</identifierTypeId>
                </i>
                <i>
-                  <value>070254133</value>
+                  <value>HEB070254133</value>
                   <identifierTypeId>be3a2669-391d-4027-b023-1092a61ac631</identifierTypeId>
                </i>
                <i>
@@ -160,9 +160,8 @@
             <arr>
                <i>Abv (Bibliografische Gattung)</i>
                <i>04.06.25, 12:46 (Letzte Änderung CBS)</i>
-               <i>ZDB/Mono-Mischdatensatz PPN: 211611743 mit Hebis-PPN: 070254133 v3t</i>
-               <i>Update für Holdings/Items blockiert</i>
-               <i>Wolpertinger v3</i>
+               <i>ZDB/Lokal-Mischinstanz PPN: 211611743 - Update blockiert mit Hebis-PPN: 070254133  v4</i>
+               <i>Wolpertinger v4 - Dubletten-PPN (Hebis): 210285850</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -172,10 +171,10 @@
                <formerIds>
                   <arr>
                      <i>6038359400</i>
-                     <i>567496880</i>
+                     <i>HEB567496880</i>
                   </arr>
                </formerIds>
-               <hrid>HEB</hrid>
+               <hrid>HEB567496880</hrid>
                <holdingsTypeId>0c422f92-0f4d-4d32-8cbe-390ebc33a3e5</holdingsTypeId>
                <permanentLocationId>87764786-c5c8-47d0-a480-df506c751d76</permanentLocationId>
             </i>
@@ -183,10 +182,10 @@
                <formerIds>
                   <arr>
                      <i>6039197455</i>
-                     <i>568975103</i>
+                     <i>HEB568975103</i>
                   </arr>
                </formerIds>
-               <hrid>HEB</hrid>
+               <hrid>HEB568975103</hrid>
                <holdingsTypeId>0c422f92-0f4d-4d32-8cbe-390ebc33a3e5</holdingsTypeId>
                <permanentLocationId>87764786-c5c8-47d0-a480-df506c751d76</permanentLocationId>
             </i>
@@ -194,10 +193,10 @@
                <formerIds>
                   <arr>
                      <i>6047739504</i>
-                     <i>567496880</i>
+                     <i>HEB567496880</i>
                   </arr>
                </formerIds>
-               <hrid>HEB</hrid>
+               <hrid>HEB567496880</hrid>
                <holdingsTypeId>0c422f92-0f4d-4d32-8cbe-390ebc33a3e5</holdingsTypeId>
                <permanentLocationId>87764786-c5c8-47d0-a480-df506c751d76</permanentLocationId>
             </i>
@@ -208,7 +207,7 @@
                      <i>ho00000001365</i>
                   </arr>
                </formerIds>
-               <hrid>HEB</hrid>
+               <hrid>ho00000001365</hrid>
                <holdingsTypeId>0c422f92-0f4d-4d32-8cbe-390ebc33a3e5</holdingsTypeId>
                <permanentLocationId>87764786-c5c8-47d0-a480-df506c751d76</permanentLocationId>
             </i>
@@ -367,10 +366,9 @@
             <arr>
                <i>Abv (Bibliografische Gattung)</i>
                <i>04.06.25, 12:46 (Letzte Änderung CBS)</i>
-               <i>ZDB/Mono-Mischdatensatz PPN: 211611743 mit Hebis-PPN: 070254133 v3t</i>
-               <i>Update für Holdings/Items blockiert</i>
-               <i>Wolpertinger v3 für Hebis-PPN: 210285850</i>
-               <i>Verlierer - wird gelöscht: keine Holdings/Items</i>
+               <i>ZDB/Lokal-Mischinstanz PPN: 211611743 - Update blockiert mit Hebis-PPN: 070254133  v4</i>
+               <i>Wolpertinger v4 für Hebis-PPN: 210285850</i>
+               <i>Dublette - wird gelöscht: keine Bestände</i>
             </arr>
          </administrativeNotes>
          <statisticalCodeIds>
