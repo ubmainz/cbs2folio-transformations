@@ -210,7 +210,7 @@
                <administrativeNotes>
                   <arr>
                      <i>30-01-26, 09:38 (Datum und Uhrzeit der letzten Änderung)</i>
-                     <i>K10plus-Holding aus EPN: 6055521741</i>
+                     <i>K10plus-Bestand aus EPN: 6055521741</i>
                   </arr>
                </administrativeNotes>
                <formerIds>
@@ -660,17 +660,6 @@
             <i>
                <formerIds>
                   <arr>
-                     <i>604773913X</i>
-                     <i>HEB740491822</i>
-                  </arr>
-               </formerIds>
-               <hrid>HEB740491822</hrid>
-               <holdingsTypeId>0c422f92-0f4d-4d32-8cbe-390ebc33a3e5</holdingsTypeId>
-               <permanentLocationId>87764786-c5c8-47d0-a480-df506c751d76</permanentLocationId>
-            </i>
-            <i>
-               <formerIds>
-                  <arr>
                      <i>6055521962</i>
                      <i>ho00000001346</i>
                   </arr>
@@ -1045,7 +1034,7 @@
                <administrativeNotes>
                   <arr>
                      <i>06-11-25, 14:59 (Datum und Uhrzeit der letzten Änderung)</i>
-                     <i>K10plus-Holding aus EPN: 603887285X</i>
+                     <i>K10plus-Bestand aus EPN: 603887285X</i>
                   </arr>
                </administrativeNotes>
                <formerIds>
@@ -1668,7 +1657,7 @@
                <administrativeNotes>
                   <arr>
                      <i>09-01-26, 12:22 (Datum und Uhrzeit der letzten Änderung)</i>
-                     <i>K10plus-Holding aus EPN: 6038872744</i>
+                     <i>K10plus-Bestand aus EPN: 6038872744</i>
                   </arr>
                </administrativeNotes>
                <formerIds>
@@ -1939,7 +1928,7 @@
                <administrativeNotes>
                   <arr>
                      <i>06-11-25, 14:59 (Datum und Uhrzeit der letzten Änderung)</i>
-                     <i>K10plus-Holding aus EPN: 6038873864</i>
+                     <i>K10plus-Bestand aus EPN: 6038873864</i>
                   </arr>
                </administrativeNotes>
                <formerIds>
@@ -2015,7 +2004,7 @@
                <administrativeNotes>
                   <arr>
                      <i>06-11-25, 14:59 (Datum und Uhrzeit der letzten Änderung)</i>
-                     <i>K10plus-Holding aus EPN: 6038873872</i>
+                     <i>K10plus-Bestand aus EPN: 6038873872</i>
                   </arr>
                </administrativeNotes>
                <formerIds>
@@ -2305,17 +2294,6 @@
                <formerIds>
                   <arr>
                      <i>6038480951</i>
-                     <i>HEB763373591</i>
-                  </arr>
-               </formerIds>
-               <hrid>HEB763373591</hrid>
-               <holdingsTypeId>0c422f92-0f4d-4d32-8cbe-390ebc33a3e5</holdingsTypeId>
-               <permanentLocationId>87764786-c5c8-47d0-a480-df506c751d76</permanentLocationId>
-            </i>
-            <i>
-               <formerIds>
-                  <arr>
-                     <i>6055521849</i>
                      <i>HEB763373591</i>
                   </arr>
                </formerIds>
@@ -2720,7 +2698,7 @@
                <administrativeNotes>
                   <arr>
                      <i>06-11-25, 14:59 (Datum und Uhrzeit der letzten Änderung)</i>
-                     <i>K10plus-Holding aus EPN: 6038873619</i>
+                     <i>K10plus-Bestand aus EPN: 6038873619</i>
                   </arr>
                </administrativeNotes>
                <formerIds>
@@ -2796,7 +2774,7 @@
                <administrativeNotes>
                   <arr>
                      <i>06-11-25, 14:59 (Datum und Uhrzeit der letzten Änderung)</i>
-                     <i>K10plus-Holding aus EPN: 6038873627</i>
+                     <i>K10plus-Bestand aus EPN: 6038873627</i>
                   </arr>
                </administrativeNotes>
                <formerIds>
@@ -3990,7 +3968,7 @@
                <administrativeNotes>
                   <arr>
                      <i>30-01-26, 09:50 (Datum und Uhrzeit der letzten Änderung)</i>
-                     <i>K10plus-Holding aus EPN: 6041644609</i>
+                     <i>K10plus-Bestand aus EPN: 6041644609</i>
                   </arr>
                </administrativeNotes>
                <formerIds>
@@ -4214,7 +4192,7 @@
                <administrativeNotes>
                   <arr>
                      <i>06-11-25, 14:59 (Datum und Uhrzeit der letzten Änderung)</i>
-                     <i>K10plus-Holding aus EPN: 6038873740</i>
+                     <i>K10plus-Bestand aus EPN: 6038873740</i>
                   </arr>
                </administrativeNotes>
                <formerIds>
