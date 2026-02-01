@@ -17,7 +17,7 @@
     <xsl:variable name="currentrecord" select="."/> <!-- 003H Primäre Hebis-PPN -->
     <xsl:variable name="hebppns-dist" select="distinct-values(original/datafield[@tag='006H']/subfield[@code='0'])"/> <!-- weitere Hebis-PPN -->
     <xsl:variable name="hebppn" select="(original/datafield[@tag='003H']/subfield[@code='0'])[1]"/>
-    <xsl:variable name="hebgewinner" select="($hebppn,concat('KXP',$currentrecord/hrid))[1]"/>
+    <xsl:variable name="hebgewinner" select="($hebppn,concat('KXP',$currentrecord/instance/hrid))[1]"/>
     <xsl:variable name="hebppns" select="if (index-of($hebppns-dist,$hebgewinner)) then remove($hebppns-dist,index-of($hebppns-dist,$hebgewinner)) else $hebppns-dist" />
     <record>
       <xsl:variable name="epns-ohne-hebis" select="$currentrecord/holdingsRecords/arr/i[starts-with(formerIds/arr/i[2],'KXP')]/hrid"/>
