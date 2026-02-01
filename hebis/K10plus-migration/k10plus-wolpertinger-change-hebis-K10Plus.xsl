@@ -19,7 +19,6 @@
     <xsl:variable name="hebppn" select="(original/datafield[@tag='003H']/subfield[@code='0'])[1]"/>
     <xsl:variable name="hebgewinner" select="($hebppn,concat('KXP',$currentrecord/hrid))[1]"/>
     <xsl:variable name="hebppns" select="if (index-of($hebppns-dist,$hebgewinner)) then remove($hebppns-dist,index-of($hebppns-dist,$hebgewinner)) else $hebppns-dist" />
-    <xsl:message><xsl:value-of select="concat($hebppn,' # ',$hebppns-dist,' * ',$hebppns)"/></xsl:message>
     <record>
       <xsl:variable name="epns-ohne-hebis" select="$currentrecord/holdingsRecords/arr/i[starts-with(formerIds/arr/i[2],'KXP')]/hrid"/>
       <xsl:copy-of select="$currentrecord/processing"/>
@@ -38,7 +37,7 @@
             </i>
             <xsl:if test="not(empty($epns-ohne-hebis))">
               <i>
-                <xsl:text>Uffbasse! Ohne Hebis-EPN: KXP... </xsl:text><xsl:value-of select="$epns-ohne-hebis" separator=", "/>
+                <xsl:text>Uffbasse! K10plus-EPNs ohne Hebis-EPN: KXP... </xsl:text><xsl:value-of select="$epns-ohne-hebis" separator=", "/>
               </i> 
             </xsl:if>
           </arr>
@@ -66,7 +65,7 @@
                   <xsl:text>Wolpertinger </xsl:text><xsl:value-of select="$version"/><xsl:text> für Hebis-PPN: </xsl:text><xsl:value-of select="."/>
                 </i>
                 <i>
-                  <xsl:text>Verlierer - wird gelöscht: keine Bestände</xsl:text>
+                  <xsl:text>Dublette - wird gelöscht: keine Bestände</xsl:text>
                 </i>
               </arr>
             </administrativeNotes>
