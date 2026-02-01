@@ -200,7 +200,7 @@
                <i>04.06.25, 13:09 (Letzte Änderung CBS)</i>
                <i>E/K10Plus-Instanz+Kaufbestände aus PPN: 266022472 mit Hebis-PPN: 071562184  v4</i>
                <i>Wolpertinger v4</i>
-               <i>Uffbasse! Ohne Hebis-EPN: KXP... 6055521741</i>
+               <i>Uffbasse! K10plus-EPNs ohne Hebis-EPN: KXP... 6055521741</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -628,7 +628,7 @@
             <arr>
                <i>Abv (Bibliografische Gattung)</i>
                <i>16.12.25, 11:28 (Letzte Änderung CBS)</i>
-               <i>ZDB/Lokal-Mischinstanz PPN: 79783558X - Update blockiert mit Hebis-PPN: 347811353  v4</i>
+               <i>ZDB/Lokal-Mischinstanz PPN: 79783558X mit Hebis-PPN: 347811353 - Update blockiert  v4</i>
                <i>Wolpertinger v4 - Dubletten-PPN (Hebis): 347811612</i>
             </arr>
          </administrativeNotes>
@@ -860,9 +860,9 @@
             <arr>
                <i>Abv (Bibliografische Gattung)</i>
                <i>16.12.25, 11:28 (Letzte Änderung CBS)</i>
-               <i>ZDB/Lokal-Mischinstanz PPN: 79783558X - Update blockiert mit Hebis-PPN: 347811353  v4</i>
+               <i>ZDB/Lokal-Mischinstanz PPN: 79783558X mit Hebis-PPN: 347811353 - Update blockiert  v4</i>
                <i>Wolpertinger v4 für Hebis-PPN: 347811612</i>
-               <i>Verlierer - wird gelöscht: keine Bestände</i>
+               <i>Dublette - wird gelöscht: keine Bestände</i>
             </arr>
          </administrativeNotes>
          <statisticalCodeIds>
@@ -2294,7 +2294,7 @@
             <arr>
                <i>Obv (Bibliografische Gattung)</i>
                <i>04.06.25, 13:01 (Letzte Änderung CBS)</i>
-               <i>ZDB/Lokal-Mischinstanz PPN: 729393496 - Update blockiert mit Hebis-PPN: 311011470  v4</i>
+               <i>ZDB/Lokal-Mischinstanz PPN: 729393496 mit Hebis-PPN: 311011470 - Update blockiert  v4</i>
                <i>Wolpertinger v4</i>
             </arr>
          </administrativeNotes>
