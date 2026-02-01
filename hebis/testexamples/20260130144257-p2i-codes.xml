@@ -198,9 +198,9 @@
             <arr>
                <i>Obv (Bibliografische Gattung)</i>
                <i>04.06.25, 13:09 (Letzte Änderung CBS)</i>
-               <i>E/K10Plus-Instanz+Holdings aus PPN: 266022472 mit Hebis-PPN: 071562184  v3t</i>
-               <i>Wolpertinger v3</i>
-               <i>Uffbasse! Hebis-EPN fehlt: KXP... 6055521741</i>
+               <i>E/K10Plus-Instanz+Kaufbestände aus PPN: 266022472 mit Hebis-PPN: 071562184  v4</i>
+               <i>Wolpertinger v4</i>
+               <i>Uffbasse! Ohne Hebis-EPN: KXP... 6055521741</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -419,8 +419,8 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>17.10.25, 15:54 (Letzte Änderung CBS)</i>
-               <i>K10Plus-Instanz aus PPN: 6010161517 mit Hebis-PPN: 40051141X  v3t</i>
-               <i>Wolpertinger v3</i>
+               <i>K10Plus-Instanz aus PPN: 6010161517 mit Hebis-PPN: 40051141X - Bestände FOLIO  v4</i>
+               <i>Wolpertinger v4</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -433,7 +433,7 @@
                <hrid>HEB802913512</hrid>
                <administrativeNotes>
                   <arr>
-                     <i>FOLIO-Holding mit K10plus-EPN: 603472824X</i>
+                     <i>FOLIO-Bestand mit K10plus-EPN: 603472824X</i>
                   </arr>
                </administrativeNotes>
                <holdingsTypeId>0c422f92-0f4d-4d32-8cbe-390ebc33a3e5</holdingsTypeId>
@@ -628,9 +628,8 @@
             <arr>
                <i>Abv (Bibliografische Gattung)</i>
                <i>16.12.25, 11:28 (Letzte Änderung CBS)</i>
-               <i>ZDB/Mono-Mischdatensatz PPN: 79783558X mit Hebis-PPN: 347811353  v3t</i>
-               <i>Update für Holdings/Items blockiert</i>
-               <i>Wolpertinger v3</i>
+               <i>ZDB/Lokal-Mischinstanz PPN: 79783558X - Update blockiert mit Hebis-PPN: 347811353  v4</i>
+               <i>Wolpertinger v4 - Dubletten-PPN (Hebis): 347811612</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -861,10 +860,9 @@
             <arr>
                <i>Abv (Bibliografische Gattung)</i>
                <i>16.12.25, 11:28 (Letzte Änderung CBS)</i>
-               <i>ZDB/Mono-Mischdatensatz PPN: 79783558X mit Hebis-PPN: 347811353  v3t</i>
-               <i>Update für Holdings/Items blockiert</i>
-               <i>Wolpertinger v3 für Hebis-PPN: 347811612</i>
-               <i>Verlierer - wird gelöscht: keine Holdings/Items</i>
+               <i>ZDB/Lokal-Mischinstanz PPN: 79783558X - Update blockiert mit Hebis-PPN: 347811353  v4</i>
+               <i>Wolpertinger v4 für Hebis-PPN: 347811612</i>
+               <i>Verlierer - wird gelöscht: keine Bestände</i>
             </arr>
          </administrativeNotes>
          <statisticalCodeIds>
@@ -1036,8 +1034,8 @@
             <arr>
                <i>Abv (Bibliografische Gattung)</i>
                <i>04.06.25, 13:05 (Letzte Änderung CBS)</i>
-               <i>ZDB/K10Plus-Instanz+Holdings aus PPN: 1799060020 mit Hebis-PPN: 492936498  v3t</i>
-               <i>Wolpertinger v3</i>
+               <i>ZDB/K10Plus-Instanz+Bestand aus PPN: 1799060020 mit Hebis-PPN: 492936498  v4</i>
+               <i>Wolpertinger v4</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -1266,8 +1264,8 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>17.10.25, 15:55 (Letzte Änderung CBS)</i>
-               <i>K10Plus-Instanz aus PPN: 6010166128 mit Hebis-PPN: 400876566  v3t</i>
-               <i>Wolpertinger v3</i>
+               <i>K10Plus-Instanz aus PPN: 6010166128 mit Hebis-PPN: 400876566 - Bestände FOLIO  v4</i>
+               <i>Wolpertinger v4</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -1280,7 +1278,7 @@
                <hrid>HEB803542828</hrid>
                <administrativeNotes>
                   <arr>
-                     <i>FOLIO-Holding mit K10plus-EPN: 6034742293</i>
+                     <i>FOLIO-Bestand mit K10plus-EPN: 6034742293</i>
                   </arr>
                </administrativeNotes>
                <holdingsTypeId>0c422f92-0f4d-4d32-8cbe-390ebc33a3e5</holdingsTypeId>
@@ -1433,8 +1431,8 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>17.10.25, 15:54 (Letzte Änderung CBS)</i>
-               <i>K10Plus-Instanz aus PPN: 6010154766 mit Hebis-PPN: 400276488  v3t</i>
-               <i>Wolpertinger v3</i>
+               <i>K10Plus-Instanz aus PPN: 6010154766 mit Hebis-PPN: 400276488 - Bestände FOLIO  v4</i>
+               <i>Wolpertinger v4</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -1447,7 +1445,7 @@
                <hrid>HEB803836996</hrid>
                <administrativeNotes>
                   <arr>
-                     <i>FOLIO-Holding mit K10plus-EPN: 6034712556</i>
+                     <i>FOLIO-Bestand mit K10plus-EPN: 6034712556</i>
                   </arr>
                </administrativeNotes>
                <holdingsTypeId>0c422f92-0f4d-4d32-8cbe-390ebc33a3e5</holdingsTypeId>
@@ -1460,7 +1458,7 @@
                <hrid>HEB80208060X</hrid>
                <administrativeNotes>
                   <arr>
-                     <i>FOLIO-Holding mit K10plus-EPN: 6034712564</i>
+                     <i>FOLIO-Bestand mit K10plus-EPN: 6034712564</i>
                   </arr>
                </administrativeNotes>
                <holdingsTypeId>0c422f92-0f4d-4d32-8cbe-390ebc33a3e5</holdingsTypeId>
@@ -1659,8 +1657,8 @@
             <arr>
                <i>Abv (Bibliografische Gattung)</i>
                <i>14.08.25, 14:38 (Letzte Änderung CBS)</i>
-               <i>ZDB/K10Plus-Instanz+Holdings aus PPN: 1797640089 mit Hebis-PPN: 492634467  v3t</i>
-               <i>Wolpertinger v3</i>
+               <i>ZDB/K10Plus-Instanz+Bestand aus PPN: 1797640089 mit Hebis-PPN: 492634467  v4</i>
+               <i>Wolpertinger v4</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -1930,8 +1928,8 @@
             <arr>
                <i>Abv (Bibliografische Gattung)</i>
                <i>12.06.25, 14:18 (Letzte Änderung CBS)</i>
-               <i>ZDB/K10Plus-Instanz+Holdings aus PPN: 1805365193 mit Hebis-PPN: 495193453  v3t</i>
-               <i>Wolpertinger v3</i>
+               <i>ZDB/K10Plus-Instanz+Bestand aus PPN: 1805365193 mit Hebis-PPN: 495193453  v4</i>
+               <i>Wolpertinger v4</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -2296,9 +2294,8 @@
             <arr>
                <i>Obv (Bibliografische Gattung)</i>
                <i>04.06.25, 13:01 (Letzte Änderung CBS)</i>
-               <i>ZDB/Mono-Mischdatensatz PPN: 729393496 mit Hebis-PPN: 311011470  v3t</i>
-               <i>Update für Holdings/Items blockiert</i>
-               <i>Wolpertinger v3</i>
+               <i>ZDB/Lokal-Mischinstanz PPN: 729393496 - Update blockiert mit Hebis-PPN: 311011470  v4</i>
+               <i>Wolpertinger v4</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -2474,8 +2471,8 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>17.10.25, 15:55 (Letzte Änderung CBS)</i>
-               <i>K10Plus-Instanz aus PPN: 6010165075 mit Hebis-PPN: 400799359  v3t</i>
-               <i>Wolpertinger v3</i>
+               <i>K10Plus-Instanz aus PPN: 6010165075 mit Hebis-PPN: 400799359 - Bestände FOLIO  v4</i>
+               <i>Wolpertinger v4</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -2488,7 +2485,7 @@
                <hrid>HEB803453019</hrid>
                <administrativeNotes>
                   <arr>
-                     <i>FOLIO-Holding mit K10plus-EPN: 6034739594</i>
+                     <i>FOLIO-Bestand mit K10plus-EPN: 6034739594</i>
                   </arr>
                </administrativeNotes>
                <holdingsTypeId>0c422f92-0f4d-4d32-8cbe-390ebc33a3e5</holdingsTypeId>
@@ -2712,8 +2709,8 @@
             <arr>
                <i>Abv (Bibliografische Gattung)</i>
                <i>04.06.25, 13:05 (Letzte Änderung CBS)</i>
-               <i>ZDB/K10Plus-Instanz+Holdings aus PPN: 1801037752 mit Hebis-PPN: 494217553  v3t</i>
-               <i>Wolpertinger v3</i>
+               <i>ZDB/K10Plus-Instanz+Bestand aus PPN: 1801037752 mit Hebis-PPN: 494217553  v4</i>
+               <i>Wolpertinger v4</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -3028,8 +3025,8 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>17.10.25, 15:54 (Letzte Änderung CBS)</i>
-               <i>K10Plus-Instanz aus PPN: 6010161118 mit Hebis-PPN: 400496518  v3t</i>
-               <i>Wolpertinger v3</i>
+               <i>K10Plus-Instanz aus PPN: 6010161118 mit Hebis-PPN: 400496518 - Bestände FOLIO  v4</i>
+               <i>Wolpertinger v4</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -3042,7 +3039,7 @@
                <hrid>HEB802891004</hrid>
                <administrativeNotes>
                   <arr>
-                     <i>FOLIO-Holding mit K10plus-EPN: 6034727448</i>
+                     <i>FOLIO-Bestand mit K10plus-EPN: 6034727448</i>
                   </arr>
                </administrativeNotes>
                <holdingsTypeId>0c422f92-0f4d-4d32-8cbe-390ebc33a3e5</holdingsTypeId>
@@ -3235,8 +3232,8 @@
             <arr>
                <i>Abv (Bibliografische Gattung)</i>
                <i>27.04.23, 08:38 (Letzte Änderung CBS)</i>
-               <i>K10Plus-Instanz aus PPN: 1797670026  v3t</i>
-               <i>Wolpertinger v3</i>
+               <i>K10Plus-Instanz aus PPN: 1797670026 - Bestände FOLIO  v4</i>
+               <i>Wolpertinger v4</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -3249,7 +3246,7 @@
                <hrid>hox1797670026</hrid>
                <administrativeNotes>
                   <arr>
-                     <i>FOLIO-Holding mit K10plus-EPN: 6047250947</i>
+                     <i>FOLIO-Bestand mit K10plus-EPN: 6047250947</i>
                   </arr>
                </administrativeNotes>
                <holdingsTypeId>0c422f92-0f4d-4d32-8cbe-390ebc33a3e5</holdingsTypeId>
@@ -3394,8 +3391,8 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>07.11.25, 21:35 (Letzte Änderung CBS)</i>
-               <i>K10Plus-Instanz aus PPN: 6010163609 mit Hebis-PPN: 400701316  v3t</i>
-               <i>Wolpertinger v3</i>
+               <i>K10Plus-Instanz aus PPN: 6010163609 mit Hebis-PPN: 400701316 - Bestände FOLIO  v4</i>
+               <i>Wolpertinger v4</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -3408,7 +3405,7 @@
                <hrid>HEB803279213</hrid>
                <administrativeNotes>
                   <arr>
-                     <i>FOLIO-Holding mit K10plus-EPN: 6034736234</i>
+                     <i>FOLIO-Bestand mit K10plus-EPN: 6034736234</i>
                   </arr>
                </administrativeNotes>
                <holdingsTypeId>0c422f92-0f4d-4d32-8cbe-390ebc33a3e5</holdingsTypeId>
@@ -3579,8 +3576,8 @@
             <arr>
                <i>Abv (Bibliografische Gattung)</i>
                <i>20.05.25, 16:53 (Letzte Änderung CBS)</i>
-               <i>K10Plus-Instanz aus PPN: 1801355789  v3t</i>
-               <i>Wolpertinger v3</i>
+               <i>K10Plus-Instanz aus PPN: 1801355789 - Bestände FOLIO  v4</i>
+               <i>Wolpertinger v4</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -3593,7 +3590,7 @@
                <hrid>hox1801355789</hrid>
                <administrativeNotes>
                   <arr>
-                     <i>FOLIO-Holding mit K10plus-EPN: 6047251315</i>
+                     <i>FOLIO-Bestand mit K10plus-EPN: 6047251315</i>
                   </arr>
                </administrativeNotes>
                <holdingsTypeId>0c422f92-0f4d-4d32-8cbe-390ebc33a3e5</holdingsTypeId>
@@ -3748,8 +3745,8 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>17.10.25, 15:54 (Letzte Änderung CBS)</i>
-               <i>K10Plus-Instanz aus PPN: 6010155428 mit Hebis-PPN: 400290723  v3t</i>
-               <i>Wolpertinger v3</i>
+               <i>K10Plus-Instanz aus PPN: 6010155428 mit Hebis-PPN: 400290723 - Bestände FOLIO  v4</i>
+               <i>Wolpertinger v4</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -3762,7 +3759,7 @@
                <hrid>HEB80208916X</hrid>
                <administrativeNotes>
                   <arr>
-                     <i>FOLIO-Holding mit K10plus-EPN: 6034714222</i>
+                     <i>FOLIO-Bestand mit K10plus-EPN: 6034714222</i>
                   </arr>
                </administrativeNotes>
                <holdingsTypeId>0c422f92-0f4d-4d32-8cbe-390ebc33a3e5</holdingsTypeId>
@@ -3775,7 +3772,7 @@
                <hrid>HEB802137881</hrid>
                <administrativeNotes>
                   <arr>
-                     <i>FOLIO-Holding mit K10plus-EPN: 6034714230</i>
+                     <i>FOLIO-Bestand mit K10plus-EPN: 6034714230</i>
                   </arr>
                </administrativeNotes>
                <holdingsTypeId>0c422f92-0f4d-4d32-8cbe-390ebc33a3e5</holdingsTypeId>
@@ -3982,8 +3979,8 @@
             <arr>
                <i>Oax (Bibliografische Gattung)</i>
                <i>06.11.25, 19:07 (Letzte Änderung CBS)</i>
-               <i>E/K10Plus-Instanz+Holdings aus PPN: 1895308259 mit Hebis-PPN: 510439721  v3t</i>
-               <i>Wolpertinger v3</i>
+               <i>E/K10Plus-Instanz+Kaufbestände aus PPN: 1895308259 mit Hebis-PPN: 510439721  v4</i>
+               <i>Wolpertinger v4</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -4206,8 +4203,8 @@
             <arr>
                <i>Abv (Bibliografische Gattung)</i>
                <i>04.06.25, 13:05 (Letzte Änderung CBS)</i>
-               <i>ZDB/K10Plus-Instanz+Holdings aus PPN: 1802581790 mit Hebis-PPN: 494801751  v3t</i>
-               <i>Wolpertinger v3</i>
+               <i>ZDB/K10Plus-Instanz+Bestand aus PPN: 1802581790 mit Hebis-PPN: 494801751  v4</i>
+               <i>Wolpertinger v4</i>
             </arr>
          </administrativeNotes>
       </instance>
