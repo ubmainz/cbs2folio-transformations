@@ -20,7 +20,8 @@
     <xsl:variable name="hebgewinner" select="($hebppn,concat('KXP',$currentrecord/instance/hrid))[1]"/>
     <xsl:variable name="hebppns" select="if (index-of($hebppns-dist,$hebgewinner)) then remove($hebppns-dist,index-of($hebppns-dist,$hebgewinner)) else $hebppns-dist" />
     <record>
-      <xsl:variable name="epns-ohne-hebis" select="$currentrecord/holdingsRecords/arr/i[starts-with(formerIds/arr/i[2],'KXP')]/hrid"/>
+      <xsl:variable name="epns-ohne-hebis" select="distinct-values($currentrecord/holdingsRecords/arr/i[starts-with(formerIds/arr/i[2],'KXP')]/hrid)"/>
+      <xsl:variable name="hebepns" select="distinct-values($currentrecord/holdingsRecords/arr/i/formerIds/arr/i[2])"/>
       <xsl:copy-of select="$currentrecord/processing"/>
        <instance>
         <source>K10plus</source>
@@ -44,7 +45,20 @@
         </administrativeNotes>
       </instance>
       <!-- instance relations entfallen und kommen mit K10plus wieder -->
-      <xsl:apply-templates select="$currentrecord/holdingsRecords"/> <!-- Gewinner: Holding und Items -->
+      <xsl:choose> <!-- Gewinner: Holding und Items -->
+        <xsl:when test="empty($hebepns)">
+          <xsl:apply-templates select="$currentrecord/holdingsRecords"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <holdingsRecords>
+            <arr>
+              <xsl:for-each select="$hebepns">
+                <xsl:apply-templates select="($currentrecord/holdingsRecords/arr/i[formerIds/arr/i[2]=current()])[1]"/>
+              </xsl:for-each>
+            </arr>
+          </holdingsRecords>
+        </xsl:otherwise>
+      </xsl:choose>
     </record>
     <xsl:for-each select="$hebppns"> <!-- Verlierer -->
       <record>
