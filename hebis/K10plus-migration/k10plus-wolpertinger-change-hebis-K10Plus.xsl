@@ -16,7 +16,10 @@
   <xsl:template match="record">
     <xsl:variable name="currentrecord" select="."/> <!-- 003H Primäre Hebis-PPN -->
     <xsl:variable name="hebppns-dist" select="distinct-values(original/datafield[@tag='006H']/subfield[@code='0'])"/> <!-- weitere Hebis-PPN -->
-    <xsl:variable name="hebgewinner" select="(original/datafield[@tag='003H']/subfield[@code='0'],concat('KXP',$currentrecord/hrid))[1]"/>
+    <xsl:variable name="hebppn" select="(original/datafield[@tag='003H']/subfield[@code='0'])[1]"/>
+    <xsl:variable name="hebppns" select="if (index-of($hebppns-dist,$hebppn)) then remove($hebppns-dist,index-of($hebppns-dist,$hebppn)) else $hebppns-dist" />
+    <xsl:variable name="hebgewinner" select="($hebppn,concat('KXP',$currentrecord/hrid))[1]"/>
+    <xsl:message><xsl:value-of select="concat($hebppn,' # ',$hebppns-dist,' * ',$hebppns)"/></xsl:message>
     <record>
       <xsl:variable name="epns-ohne-hebis" select="$currentrecord/holdingsRecords/arr/i[starts-with(formerIds/arr/i[2],'KXP')]/hrid"/>
       <xsl:copy-of select="$currentrecord/processing"/>
@@ -29,10 +32,13 @@
             <xsl:apply-templates select="$currentrecord/instance/administrativeNotes/arr/*"/>
             <i>
               <xsl:text>Wolpertinger </xsl:text><xsl:value-of select="$version"/>
+              <xsl:if test="$hebppns">
+                <xsl:text> - Dubletten-PPN (Hebis): </xsl:text><xsl:value-of select="$hebppns" separator=", "/>
+              </xsl:if>
             </i>
             <xsl:if test="not(empty($epns-ohne-hebis))">
               <i>
-                <xsl:text>Uffbasse! Hebis-EPN fehlt: KXP... </xsl:text><xsl:value-of select="$epns-ohne-hebis" separator=", "/>
+                <xsl:text>Uffbasse! Ohne Hebis-EPN: KXP... </xsl:text><xsl:value-of select="$epns-ohne-hebis" separator=", "/>
               </i> 
             </xsl:if>
           </arr>
@@ -41,7 +47,7 @@
       <!-- instance relations entfallen und kommen mit K10plus wieder -->
       <xsl:apply-templates select="$currentrecord/holdingsRecords"/> <!-- Gewinner: Holding und Items -->
     </record>
-    <xsl:for-each select="$hebppns-dist"> <xsl:if test=".!=$hebgewinner"> <!-- Verlierer -->
+    <xsl:for-each select="$hebppns"> <!-- Verlierer -->
       <record>
         <xsl:copy-of select="$currentrecord/processing"/>
           <instance>
@@ -60,7 +66,7 @@
                   <xsl:text>Wolpertinger </xsl:text><xsl:value-of select="$version"/><xsl:text> für Hebis-PPN: </xsl:text><xsl:value-of select="."/>
                 </i>
                 <i>
-                  <xsl:text>Verlierer - wird gelöscht: keine Holdings/Items</xsl:text>
+                  <xsl:text>Verlierer - wird gelöscht: keine Bestände</xsl:text>
                 </i>
               </arr>
             </administrativeNotes>
@@ -72,7 +78,7 @@
           </instance>
           <!-- instance relations entfallen und kommen mit K10plus wieder -->
           <!-- Verlierer: keine Holdings, kein K10plus PPN -->
-      </record> </xsl:if>
+      </record>
     </xsl:for-each>
   </xsl:template>
 

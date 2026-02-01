@@ -152,8 +152,9 @@
         or exists(original/item/datafield[(@tag='209R') and contains(subfield[@code='u'],'anchor=Einzelkauf_')])
         or exists(original/item/datafield[(@tag='245G') and (subfield[@code='c']='ctof')])">
       <!-- UB Mainz: keine Online-Ressourcen, keine Mailboxen, aber Online-Einzelkauf Mono/ZS-->
-      <xsl:variable name="hebppn" select="if (original/datafield[@tag='003H']/subfield[@code='0']) then concat('HEB',(original/datafield[@tag='003H']/subfield[@code='0'])[1])
-        else concat('KXP',(original/datafield[@tag='003@']/subfield[@code='0'])[1])"/>
+      <xsl:variable name="ppn" select="(original/datafield[@tag='003@']/subfield[@code='0'])[1]"/>
+      <xsl:variable name="altppn" select="if (original/datafield[@tag='003H']/subfield[@code='0']) then concat('HEB',(original/datafield[@tag='003H']/subfield[@code='0'])[1])
+        else concat('KXP',$ppn)"/>
       <record>
         <xsl:copy-of select="original"/>
         <xsl:choose>
@@ -166,11 +167,11 @@
               <identifiers>
                 <arr>
                   <i>
-                    <value><xsl:value-of select="original/datafield[@tag='003@']/subfield[@code='0']"/></value>
+                    <value><xsl:value-of select="$ppn"/></value>
                     <identifierTypeId>PPN-K10plus</identifierTypeId>
                   </i>
                   <i>
-                    <value><xsl:value-of select="$hebppn"/></value>
+                    <value><xsl:value-of select="$altppn"/></value>
                     <identifierTypeId>PPN-Hebis</identifierTypeId>
                   </i>
                   <xsl:copy-of select="instance/identifiers/arr/i"/>
@@ -185,7 +186,7 @@
                 <arr>
                   <xsl:copy-of select="instance/administrativeNotes/arr/*"/>
                   <i>
-                    <xsl:value-of select="concat('ZDB/K10Plus-Instanz+Holdings aus PPN: ',original/datafield[@tag='003@']/subfield[@code='0'])"/>
+                    <xsl:value-of select="concat('ZDB/K10Plus-Instanz+Bestand aus PPN: ',original/datafield[@tag='003@']/subfield[@code='0'])"/>
                     <xsl:if test="original/datafield[@tag='003H']/subfield[@code='0']"><xsl:value-of select="concat(' mit Hebis-PPN: ',original/datafield[@tag='003H']/subfield[@code='0'])"></xsl:value-of></xsl:if>
                     <xsl:value-of select="concat('  ',$version)"/>
                   </i>
@@ -208,11 +209,11 @@
               <identifiers>
                 <arr>
                   <i>
-                    <value><xsl:value-of select="original/datafield[@tag='003@']/subfield[@code='0']"/></value>
+                    <value><xsl:value-of select="$ppn"/></value>
                     <identifierTypeId>PPN-K10plus</identifierTypeId>
                   </i>
                   <i>
-                    <value><xsl:value-of select="$hebppn"/></value>
+                    <value><xsl:value-of select="$altppn"/></value>
                     <identifierTypeId>PPN-Hebis</identifierTypeId>
                   </i>
                   <xsl:copy-of select="instance/identifiers/arr/i"/>
@@ -229,12 +230,9 @@
                 <arr>
                   <xsl:copy-of select="instance/administrativeNotes/arr/*"/>
                   <i>
-                    <xsl:value-of select="concat('ZDB/Mono-Mischdatensatz PPN: ',original/datafield[@tag='003@']/subfield[@code='0'])"/>
+                    <xsl:value-of select="concat('ZDB/Lokal-Mischinstanz PPN: ',original/datafield[@tag='003@']/subfield[@code='0'],' - Update blockiert')"/>
                     <xsl:if test="original/datafield[@tag='003H']/subfield[@code='0']"><xsl:value-of select="concat(' mit Hebis-PPN: ',original/datafield[@tag='003H']/subfield[@code='0'])"></xsl:value-of></xsl:if>
                     <xsl:value-of select="concat('  ',$version)"/>
-                  </i>
-                  <i>
-                    <xsl:text>Update für Holdings/Items blockiert</xsl:text>
                   </i>
                 </arr>
               </administrativeNotes>
@@ -271,11 +269,11 @@
               <identifiers>
                 <arr>
                   <i>
-                    <value><xsl:value-of select="original/datafield[@tag='003@']/subfield[@code='0']"/></value>
+                    <value><xsl:value-of select="$ppn"/></value>
                     <identifierTypeId>PPN-K10plus</identifierTypeId>
                   </i>
                   <i>
-                    <value><xsl:value-of select="$hebppn"/></value>
+                    <value><xsl:value-of select="$altppn"/></value>
                     <identifierTypeId>PPN-Hebis</identifierTypeId>
                   </i>
                   <xsl:copy-of select="instance/identifiers/arr/i"/>
@@ -287,7 +285,7 @@
                 <arr>
                   <xsl:copy-of select="instance/administrativeNotes/arr/*"/>
                   <i>
-                    <xsl:value-of select="concat('E/K10Plus-Instanz+Holdings aus PPN: ',original/datafield[@tag='003@']/subfield[@code='0'])"/>
+                    <xsl:value-of select="concat('E/K10Plus-Instanz+Kaufbestände aus PPN: ',original/datafield[@tag='003@']/subfield[@code='0'])"/>
                     <xsl:if test="original/datafield[@tag='003H']/subfield[@code='0']"><xsl:value-of select="concat(' mit Hebis-PPN: ',original/datafield[@tag='003H']/subfield[@code='0'])"></xsl:value-of></xsl:if>
                     <xsl:value-of select="concat('  ',$version)"/>
                   </i>
@@ -312,11 +310,11 @@
               <identifiers>
                 <arr>
                   <i>
-                    <value><xsl:value-of select="original/datafield[@tag='003@']/subfield[@code='0']"/></value>
+                    <value><xsl:value-of select="$ppn"/></value>
                     <identifierTypeId>PPN-K10plus</identifierTypeId>
                   </i>
                   <i>
-                    <value><xsl:value-of select="$hebppn"/></value>
+                    <value><xsl:value-of select="$altppn"/></value>
                     <identifierTypeId>PPN-Hebis</identifierTypeId>
                   </i>
                   <xsl:copy-of select="instance/identifiers/arr/i"/>
@@ -330,7 +328,7 @@
                   <i>
                     <xsl:value-of select="concat('K10Plus-Instanz aus PPN: ',original/datafield[@tag='003@']/subfield[@code='0'])"/>
                     <xsl:if test="original/datafield[@tag='003H']/subfield[@code='0']"><xsl:value-of select="concat(' mit Hebis-PPN: ',original/datafield[@tag='003H']/subfield[@code='0'])"></xsl:value-of></xsl:if>
-                    <xsl:value-of select="concat('  ',$version)"/>
+                    <xsl:value-of select="concat(' - Bestände FOLIO  ',$version)"/>
                   </i>
                 </arr>
               </administrativeNotes>
@@ -346,7 +344,7 @@
                     <hrid><xsl:value-of select="datafield[@tag='206X']/subfield[@code='0']"/></hrid>
                     <administrativeNotes>
                       <arr>
-                        <i><xsl:value-of select="concat('FOLIO-Holding mit K10plus-EPN: ',datafield[@tag='203@']/subfield[@code='0'])"/></i>
+                        <i><xsl:value-of select="concat('FOLIO-Bestand mit K10plus-EPN: ',datafield[@tag='203@']/subfield[@code='0'])"/></i>
                       </arr>
                     </administrativeNotes>
                     <holdingsTypeId>physical</holdingsTypeId> <!-- retainExistingValues/forTheseProperties -->
