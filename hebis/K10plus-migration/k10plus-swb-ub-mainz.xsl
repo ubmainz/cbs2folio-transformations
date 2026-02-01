@@ -229,12 +229,9 @@
                 <arr>
                   <xsl:copy-of select="instance/administrativeNotes/arr/*"/>
                   <i>
-                    <xsl:value-of select="concat('ZDB/Mono-Mischinstanz PPN: ',original/datafield[@tag='003@']/subfield[@code='0'])"/>
+                    <xsl:value-of select="concat('ZDB/Lokal-Mischinstanz PPN: ',original/datafield[@tag='003@']/subfield[@code='0'],' - Update blockiert')"/>
                     <xsl:if test="original/datafield[@tag='003H']/subfield[@code='0']"><xsl:value-of select="concat(' mit Hebis-PPN: ',original/datafield[@tag='003H']/subfield[@code='0'])"></xsl:value-of></xsl:if>
                     <xsl:value-of select="concat('  ',$version)"/>
-                  </i>
-                  <i>
-                    <xsl:text>Update für Holdings/Items blockiert</xsl:text>
                   </i>
                 </arr>
               </administrativeNotes>
@@ -287,7 +284,7 @@
                 <arr>
                   <xsl:copy-of select="instance/administrativeNotes/arr/*"/>
                   <i>
-                    <xsl:value-of select="concat('E/K10Plus-Instanz+Holdings aus PPN: ',original/datafield[@tag='003@']/subfield[@code='0'])"/>
+                    <xsl:value-of select="concat('E/K10Plus-Instanz+Kaufbestände aus PPN: ',original/datafield[@tag='003@']/subfield[@code='0'])"/>
                     <xsl:if test="original/datafield[@tag='003H']/subfield[@code='0']"><xsl:value-of select="concat(' mit Hebis-PPN: ',original/datafield[@tag='003H']/subfield[@code='0'])"></xsl:value-of></xsl:if>
                     <xsl:value-of select="concat('  ',$version)"/>
                   </i>
@@ -330,7 +327,7 @@
                   <i>
                     <xsl:value-of select="concat('K10Plus-Instanz aus PPN: ',original/datafield[@tag='003@']/subfield[@code='0'])"/>
                     <xsl:if test="original/datafield[@tag='003H']/subfield[@code='0']"><xsl:value-of select="concat(' mit Hebis-PPN: ',original/datafield[@tag='003H']/subfield[@code='0'])"></xsl:value-of></xsl:if>
-                    <xsl:value-of select="concat('  ',$version)"/>
+                    <xsl:value-of select="concat(' - Bestände FOLIO  ',$version)"/>
                   </i>
                 </arr>
               </administrativeNotes>
@@ -346,7 +343,7 @@
                     <hrid><xsl:value-of select="datafield[@tag='206X']/subfield[@code='0']"/></hrid>
                     <administrativeNotes>
                       <arr>
-                        <i><xsl:value-of select="concat('FOLIO-Holding mit K10plus-EPN: ',datafield[@tag='203@']/subfield[@code='0'])"/></i>
+                        <i><xsl:value-of select="concat('FOLIO-Bestand mit K10plus-EPN: ',datafield[@tag='203@']/subfield[@code='0'])"/></i>
                       </arr>
                     </administrativeNotes>
                     <holdingsTypeId>physical</holdingsTypeId> <!-- retainExistingValues/forTheseProperties -->
