@@ -4,6 +4,7 @@
     
     <xsl:template match="*[matches(.,'^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$')]">
         <xsl:value-of select="."/><xsl:text>;</xsl:text>
+        <xsl:text>&apos;</xsl:text><xsl:value-of select="ancestor::xsl:template/@match"/><xsl:text>&apos;;</xsl:text>
         <xsl:value-of select="substring-after(./@test,'.=')"/>
         <xsl:text>&#13;</xsl:text>
     </xsl:template>
