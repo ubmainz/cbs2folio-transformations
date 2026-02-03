@@ -29,20 +29,6 @@
           <ifField>hrid</ifField>
           <matchesPattern>it.*</matchesPattern>
         </retainOmittedRecord>
-        <!-- does not to work properly in Quesnelia 2024-12:
-          - statistical code is not set in some cases (false neagtive)
-          - statistical code is also set (false positive) in "retainOmittedRecord" protected cases
-          - statistical code is also set (false positive) in holding transfer cases
-          -> left out (in addition seems not to be needed)
-        <statisticalCoding>
-          <arr>
-            <i>
-              <if>deleteSkipped</if>
-              <becauseOf>ITEM_STATUS</becauseOf>
-              <setCode>ITEM_STATUS</setCode>
-            </i>         
-          </arr>
-        </statisticalCoding> -->
       </item>
       <holdingsRecord>
         <retainExistingValues>
@@ -62,6 +48,56 @@
             </i> 
           </arr>
         </statisticalCoding>
+      </holdingsRecord>
+      <instance>
+        <retainExistingValues>
+          <forOmittedProperties>true</forOmittedProperties>
+        </retainExistingValues>
+      </instance>
+    </processing>
+  </xsl:template>
+
+  <xsl:template name="processingzdbmix">
+    <processing> <!-- updates only zdb holdings data -->
+      <item>
+        <retainExistingValues>
+          <forOmittedProperties>true</forOmittedProperties>
+          <forTheseProperties>
+            <arr>
+              <i>permanentLoanTypeId</i>
+            </arr>
+          </forTheseProperties>
+        </retainExistingValues>
+        <status>
+          <policy>retain</policy>
+        </status>
+        <retainOmittedRecord>
+          <ifField>hrid</ifField>
+          <matchesPattern>it.*</matchesPattern>
+        </retainOmittedRecord>
+      </item>
+      <holdingsRecord>
+        <retainExistingValues>
+          <forOmittedProperties>true</forOmittedProperties>
+        </retainExistingValues>
+        <statisticalCoding>
+          <arr>
+            <i>
+              <if>deleteSkipped</if>
+              <becauseOf>ITEM_STATUS</becauseOf>
+              <setCode>ITEM_STATUS</setCode>
+            </i>
+            <i>
+              <if>deleteSkipped</if>
+              <becauseOf>ITEM_PATTERN_MATCH</becauseOf>
+              <setCode>ITEM_PATTERN_MATCH</setCode>
+            </i> 
+          </arr>
+        </statisticalCoding>
+        <retainOmittedRecord>
+          <ifField>hrid</ifField>
+          <matchesPattern>\D.*</matchesPattern>
+        </retainOmittedRecord>
       </holdingsRecord>
       <instance>
         <retainExistingValues>
@@ -162,7 +198,7 @@
           <xsl:when test="not(exists(original/item[not(starts-with(datafield[@tag='208@']/subfield[@code='b'],'z') or false() )]))"> <!-- ZDB-Fälle + TBD: Migrationsfälle -->
             <xsl:call-template name="processingzdb"/>
             <instance>
-              <source>K10plus</source>
+              <source>ZDB</source>
               <identifiers>
                 <arr>
                   <i>
@@ -204,7 +240,7 @@
           <xsl:when test="exists(original/item[starts-with(datafield[@tag='208@']/subfield[@code='b'],'z')])"> <!-- ZDB-Misch-Fälle -->
             <xsl:call-template name="processingmono"/>
             <instance>
-              <source>K10plus</source>
+              <source>ZDB</source>
               <identifiers>
                 <arr>
                   <i>
@@ -303,7 +339,7 @@
           </xsl:when>
 
           <xsl:otherwise> <!-- Mono-Fälle -->
-            <xsl:variable name="original" select="original"/>
+            <xsl:variable name="originalrec" select="original"/>
             <xsl:variable name="epnslokal" select="distinct-values(original/item/datafield[@tag='206X']/subfield[@code='0'])"/>
             <xsl:call-template name="processingmono"/>
             <instance>
@@ -353,7 +389,7 @@
                       <arr>
                         <i>
                           <xsl:text>FOLIO-Bestand mit K10plus-EPN: </xsl:text>
-                          <xsl:value-of select="$original/item[current()=datafield[@tag='206X']/subfield[@code='0']]/datafield[@tag='203@']/subfield[@code='0']" separator=", "/>
+                          <xsl:value-of select="$originalrec/item[current()=datafield[@tag='206X']/subfield[@code='0']]/datafield[@tag='203@']/subfield[@code='0']" separator=", "/>
                         </i>
                       </arr>
                     </administrativeNotes>
