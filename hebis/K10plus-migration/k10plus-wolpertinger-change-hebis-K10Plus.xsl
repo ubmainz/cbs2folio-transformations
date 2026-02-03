@@ -3,7 +3,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
   <xsl:output indent="yes" method="xml" version="1.0" encoding="UTF-8"/>
 
-  <xsl:variable name="version" select="'v4'"/>
+  <xsl:variable name="version" select="'v5'"/>
 
   <xsl:template match="@* | node()">
     <xsl:copy>
@@ -44,20 +44,17 @@
         </administrativeNotes>
       </instance>
       <!-- instance relations entfallen und kommen mit K10plus wieder -->
-      <xsl:choose> <!-- Gewinner: Holding und Items -->
-        <xsl:when test="empty($hebepns)">
-          <xsl:apply-templates select="$currentrecord/holdingsRecords"/>
-        </xsl:when>
-        <xsl:otherwise>
-          <holdingsRecords>
-            <arr>
-              <xsl:for-each select="$hebepns">
-                <xsl:apply-templates select="($currentrecord/holdingsRecords/arr/i[formerIds/arr/i[2]=current()])[1]"/>
-              </xsl:for-each>
-            </arr>
-          </holdingsRecords>
-        </xsl:otherwise>
-      </xsl:choose>
+      <!-- Gewinner: Holding und Items -->
+      <holdingsRecords>           
+         <arr>
+           <xsl:for-each select="$currentrecord/holdingsRecords/arr/i[not(formerIds/arr/i[2])]">
+             <xsl:apply-templates select="."/>
+           </xsl:for-each>
+           <xsl:for-each select="$hebepns">
+             <xsl:apply-templates select="($currentrecord/holdingsRecords/arr/i[formerIds/arr/i[2]=current()])[1]"/>
+           </xsl:for-each>
+         </arr>
+       </holdingsRecords>
     </record>
     <xsl:for-each select="$hebppns"> <!-- Verlierer -->
       <record>
