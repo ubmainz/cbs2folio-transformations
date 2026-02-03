@@ -4,6 +4,14 @@
   <xsl:output indent="yes" method="xml" version="1.0" encoding="UTF-8"/>
 
   <xsl:variable name="version" select="'v5'"/>
+  
+  <!-- 
+   - Von dubletten Bestände mit identischer 203H$0 wird nur der erste gemappt. 
+   - Bestände ohne 203H$0 bekommen zunächst eine hrid mit KXP-Präfix, später die K10plus-EPN.
+   - Beim Wolpertingern wird immer die erste PPN in der 003H$0 als Gewinner genommen, die 006H$0 wird dedupliziert und
+     als Verlierer ausgespielt. Fehlt die 003H$0 wird zunächst ein KXP-hrid erzeugt und später gegen die K10plus-PPN
+     getauscht. Gravierendere Identifier-Fehler erzeugen eine Warnung in den Verwaltungsnotizen.
+   -->
 
   <xsl:template match="@* | node()">
     <xsl:copy>
