@@ -24,9 +24,8 @@
       <xsl:variable name="hebepns" select="distinct-values($currentrecord/holdingsRecords/arr/i/formerIds/arr/i[2])"/>
       <xsl:copy-of select="$currentrecord/processing"/>
        <instance>
-        <source>K10plus</source>
         <hrid><xsl:value-of select="$hebgewinner"/></hrid>
-        <xsl:apply-templates select="$currentrecord/instance/*[not(self::hrid or self::source or self::administrativeNotes)]"/>
+        <xsl:apply-templates select="$currentrecord/instance/*[not(self::hrid or self::administrativeNotes)]"/>
         <administrativeNotes>
           <arr>
             <xsl:apply-templates select="$currentrecord/instance/administrativeNotes/arr/*"/>
@@ -64,14 +63,13 @@
       <record>
         <xsl:copy-of select="$currentrecord/processing"/>
           <instance>
-            <source>K10plus</source>
             <hrid><xsl:value-of select="."/></hrid>
             <identifiers>
               <arr>
                 <xsl:apply-templates select="$currentrecord/instance/identifiers/arr/i[not((identifierTypeId='PPN-K10plus') or (identifierTypeId='PPN-Hebis'))]"/>
               </arr>
             </identifiers>
-            <xsl:apply-templates select="$currentrecord/instance/*[not(self::hrid or self::source or self::administrativeNotes or self::identifiers)]"/>
+            <xsl:apply-templates select="$currentrecord/instance/*[not(self::hrid or self::administrativeNotes or self::identifiers)]"/>
             <administrativeNotes>
               <arr>
                 <xsl:apply-templates select="$currentrecord/instance/administrativeNotes/arr/*"/>

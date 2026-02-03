@@ -195,7 +195,7 @@
         <xsl:copy-of select="original"/>
         <xsl:choose>
 
-          <xsl:when test="not(exists(original/item[not(starts-with(datafield[@tag='208@']/subfield[@code='b'],'z') or false() )]))"> <!-- ZDB-Fälle + TBD: Migrationsfälle -->
+          <xsl:when test="not(exists(original/item[not(starts-with(datafield[@tag='208@']/subfield[@code='b'],'z'))]))"> <!-- ZDB-Fälle + TBD: Migrationsfälle -->
             <xsl:call-template name="processingzdb"/>
             <instance>
               <source>ZDB</source>
