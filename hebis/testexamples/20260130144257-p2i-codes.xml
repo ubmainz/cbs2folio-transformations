@@ -213,7 +213,7 @@
                <administrativeNotes>
                   <arr>
                      <i>06-11-25, 15:23 (Datum und Uhrzeit der letzten Änderung)</i>
-                     <i>K10plus-Bestand aus EPN: 6039230428</i>
+                     <i>ZDB-Bestand aus EPN: 6039230428</i>
                   </arr>
                </administrativeNotes>
                <formerIds>
@@ -236,11 +236,6 @@
                <notes>
                   <arr>
                      <i>
-                        <note>06.11.25 15:23</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>konv</note>
                         <holdingsNoteTypeId>6d3f575d-6727-42a4-ae58-56c00de2e1d4</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -248,7 +243,7 @@
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
-               <sourceId>fa687f33-aab5-4119-b0ad-05afe8de4d92</sourceId>
+               <sourceId>e2f0db71-caee-41b5-b5d5-66aaec8297ad</sourceId>
                <electronicAccess>
                   <arr>
                      <i>
@@ -261,7 +256,7 @@
                <administrativeNotes>
                   <arr>
                      <i>30-01-26, 09:38 (Datum und Uhrzeit der letzten Änderung)</i>
-                     <i>K10plus-Bestand aus EPN: 6055521741</i>
+                     <i>ZDB-Bestand aus EPN: 6055521741</i>
                   </arr>
                </administrativeNotes>
                <formerIds>
@@ -284,11 +279,6 @@
                <notes>
                   <arr>
                      <i>
-                        <note>30.01.26 09:38</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>cofz</note>
                         <holdingsNoteTypeId>6d3f575d-6727-42a4-ae58-56c00de2e1d4</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -301,7 +291,7 @@
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
-               <sourceId>fa687f33-aab5-4119-b0ad-05afe8de4d92</sourceId>
+               <sourceId>e2f0db71-caee-41b5-b5d5-66aaec8297ad</sourceId>
                <electronicAccess>
                   <arr>
                      <i>
@@ -706,24 +696,24 @@
                   <arr/>
                </formerIds>
                <hrid>HEB509433057</hrid>
-               <sourceId>e2f0db71-caee-41b5-b5d5-66aaec8297ad</sourceId>
+               <sourceId>fa687f33-aab5-4119-b0ad-05afe8de4d92</sourceId>
                <administrativeNotes>
                   <arr>
-                     <i>Lokaler ZS-Bestand mit K10plus-EPN (nur Standort-Update): 6038681736</i>
+                     <i>Lokaler ZS-Bestand mit EPN (nur Standort-Update): 6038681736</i>
                   </arr>
                </administrativeNotes>
                <holdingsTypeId>0c422f92-0f4d-4d32-8cbe-390ebc33a3e5</holdingsTypeId>
-               <permanentLocationId>8334fb6b-013b-4ad4-9d58-7710f82edb50</permanentLocationId>
+               <permanentLocationId>87764786-c5c8-47d0-a480-df506c751d76</permanentLocationId>
             </i>
             <i>
                <formerIds>
                   <arr/>
                </formerIds>
                <hrid>ho00000001346</hrid>
-               <sourceId>e2f0db71-caee-41b5-b5d5-66aaec8297ad</sourceId>
+               <sourceId>fa687f33-aab5-4119-b0ad-05afe8de4d92</sourceId>
                <administrativeNotes>
                   <arr>
-                     <i>Lokaler ZS-Bestand mit K10plus-EPN (nur Standort-Update): 6055521962</i>
+                     <i>Lokaler ZS-Bestand mit EPN (nur Standort-Update): 6055521962</i>
                   </arr>
                </administrativeNotes>
                <holdingsTypeId>0c422f92-0f4d-4d32-8cbe-390ebc33a3e5</holdingsTypeId>
@@ -733,7 +723,7 @@
                <administrativeNotes>
                   <arr>
                      <i>08-12-25, 17:08 (Datum und Uhrzeit der letzten Änderung)</i>
-                     <i>K10plus-Bestand aus EPN: 604773913X</i>
+                     <i>ZDB-Bestand aus EPN: 604773913X</i>
                   </arr>
                </administrativeNotes>
                <formerIds>
@@ -769,11 +759,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>08.12.25 17:08</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>FR 77</note>
                         <holdingsNoteTypeId>f96cd2a3-065f-405c-ae3b-8547f46c7066</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -781,7 +766,7 @@
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
-               <sourceId>fa687f33-aab5-4119-b0ad-05afe8de4d92</sourceId>
+               <sourceId>e2f0db71-caee-41b5-b5d5-66aaec8297ad</sourceId>
                <items>
                   <arr>
                      <i>
@@ -1194,7 +1179,7 @@
                <administrativeNotes>
                   <arr>
                      <i>06-11-25, 14:59 (Datum und Uhrzeit der letzten Änderung)</i>
-                     <i>K10plus-Bestand aus EPN: 603887285X</i>
+                     <i>ZDB-Bestand aus EPN: 603887285X</i>
                   </arr>
                </administrativeNotes>
                <formerIds>
@@ -1223,11 +1208,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>06.11.25 14:59</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>02050</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -1245,7 +1225,7 @@
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
-               <sourceId>fa687f33-aab5-4119-b0ad-05afe8de4d92</sourceId>
+               <sourceId>e2f0db71-caee-41b5-b5d5-66aaec8297ad</sourceId>
                <items>
                   <arr>
                      <i>
@@ -1822,7 +1802,7 @@
                <administrativeNotes>
                   <arr>
                      <i>09-01-26, 12:22 (Datum und Uhrzeit der letzten Änderung)</i>
-                     <i>K10plus-Bestand aus EPN: 6038872744</i>
+                     <i>ZDB-Bestand aus EPN: 6038872744</i>
                   </arr>
                </administrativeNotes>
                <formerIds>
@@ -1850,11 +1830,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>09.01.26 12:22</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>konv</note>
                         <holdingsNoteTypeId>6d3f575d-6727-42a4-ae58-56c00de2e1d4</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -1867,7 +1842,7 @@
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
-               <sourceId>fa687f33-aab5-4119-b0ad-05afe8de4d92</sourceId>
+               <sourceId>e2f0db71-caee-41b5-b5d5-66aaec8297ad</sourceId>
                <items>
                   <arr>
                      <i>
@@ -2098,7 +2073,7 @@
                <administrativeNotes>
                   <arr>
                      <i>06-11-25, 14:59 (Datum und Uhrzeit der letzten Änderung)</i>
-                     <i>K10plus-Bestand aus EPN: 6038873864</i>
+                     <i>ZDB-Bestand aus EPN: 6038873864</i>
                   </arr>
                </administrativeNotes>
                <formerIds>
@@ -2126,11 +2101,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>06.11.25 14:59</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>konv</note>
                         <holdingsNoteTypeId>6d3f575d-6727-42a4-ae58-56c00de2e1d4</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -2143,7 +2113,7 @@
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
-               <sourceId>fa687f33-aab5-4119-b0ad-05afe8de4d92</sourceId>
+               <sourceId>e2f0db71-caee-41b5-b5d5-66aaec8297ad</sourceId>
                <items>
                   <arr>
                      <i>
@@ -2179,7 +2149,7 @@
                <administrativeNotes>
                   <arr>
                      <i>06-11-25, 14:59 (Datum und Uhrzeit der letzten Änderung)</i>
-                     <i>K10plus-Bestand aus EPN: 6038873872</i>
+                     <i>ZDB-Bestand aus EPN: 6038873872</i>
                   </arr>
                </administrativeNotes>
                <formerIds>
@@ -2202,11 +2172,6 @@
                <notes>
                   <arr>
                      <i>
-                        <note>06.11.25 14:59</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>konv</note>
                         <holdingsNoteTypeId>6d3f575d-6727-42a4-ae58-56c00de2e1d4</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -2224,7 +2189,7 @@
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
-               <sourceId>fa687f33-aab5-4119-b0ad-05afe8de4d92</sourceId>
+               <sourceId>e2f0db71-caee-41b5-b5d5-66aaec8297ad</sourceId>
                <items>
                   <arr>
                      <i>
@@ -2487,7 +2452,7 @@
                <administrativeNotes>
                   <arr>
                      <i>30-01-26, 09:48 (Datum und Uhrzeit der letzten Änderung)</i>
-                     <i>K10plus-Bestand aus EPN: 6055521849</i>
+                     <i>ZDB-Bestand aus EPN: 6055521849</i>
                   </arr>
                </administrativeNotes>
                <formerIds>
@@ -2510,11 +2475,6 @@
                <notes>
                   <arr>
                      <i>
-                        <note>30.01.26 09:48</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>cofz</note>
                         <holdingsNoteTypeId>6d3f575d-6727-42a4-ae58-56c00de2e1d4</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -2522,7 +2482,7 @@
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
-               <sourceId>fa687f33-aab5-4119-b0ad-05afe8de4d92</sourceId>
+               <sourceId>e2f0db71-caee-41b5-b5d5-66aaec8297ad</sourceId>
                <electronicAccess>
                   <arr>
                      <i>
@@ -2928,7 +2888,7 @@
                <administrativeNotes>
                   <arr>
                      <i>06-11-25, 14:59 (Datum und Uhrzeit der letzten Änderung)</i>
-                     <i>K10plus-Bestand aus EPN: 6038873619</i>
+                     <i>ZDB-Bestand aus EPN: 6038873619</i>
                   </arr>
                </administrativeNotes>
                <formerIds>
@@ -2956,11 +2916,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>06.11.25 14:59</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>konv</note>
                         <holdingsNoteTypeId>6d3f575d-6727-42a4-ae58-56c00de2e1d4</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -2973,7 +2928,7 @@
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
-               <sourceId>fa687f33-aab5-4119-b0ad-05afe8de4d92</sourceId>
+               <sourceId>e2f0db71-caee-41b5-b5d5-66aaec8297ad</sourceId>
                <items>
                   <arr>
                      <i>
@@ -3009,7 +2964,7 @@
                <administrativeNotes>
                   <arr>
                      <i>06-11-25, 14:59 (Datum und Uhrzeit der letzten Änderung)</i>
-                     <i>K10plus-Bestand aus EPN: 6038873627</i>
+                     <i>ZDB-Bestand aus EPN: 6038873627</i>
                   </arr>
                </administrativeNotes>
                <formerIds>
@@ -3037,11 +2992,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>06.11.25 14:59</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>konv</note>
                         <holdingsNoteTypeId>6d3f575d-6727-42a4-ae58-56c00de2e1d4</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -3054,7 +3004,7 @@
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
-               <sourceId>fa687f33-aab5-4119-b0ad-05afe8de4d92</sourceId>
+               <sourceId>e2f0db71-caee-41b5-b5d5-66aaec8297ad</sourceId>
                <items>
                   <arr>
                      <i>
@@ -4208,7 +4158,7 @@
                <administrativeNotes>
                   <arr>
                      <i>30-01-26, 09:50 (Datum und Uhrzeit der letzten Änderung)</i>
-                     <i>K10plus-Bestand aus EPN: 6041644609</i>
+                     <i>Lokaler K10plus-Bestand aus EPN: 6041644609</i>
                   </arr>
                </administrativeNotes>
                <formerIds>
@@ -4226,11 +4176,6 @@
                </holdingsStatements>
                <notes>
                   <arr>
-                     <i>
-                        <note>30.01.26 09:50</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
                      <i>
                         <note>ebo</note>
                         <holdingsNoteTypeId>49050d37-2d82-452c-a963-2645ffc0b9a9</holdingsNoteTypeId>
@@ -4432,7 +4377,7 @@
                <administrativeNotes>
                   <arr>
                      <i>06-11-25, 14:59 (Datum und Uhrzeit der letzten Änderung)</i>
-                     <i>K10plus-Bestand aus EPN: 6038873740</i>
+                     <i>ZDB-Bestand aus EPN: 6038873740</i>
                   </arr>
                </administrativeNotes>
                <formerIds>
@@ -4460,11 +4405,6 @@
                         <staffOnly>false</staffOnly>
                      </i>
                      <i>
-                        <note>06.11.25 14:59</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
-                     </i>
-                     <i>
                         <note>konv</note>
                         <holdingsNoteTypeId>6d3f575d-6727-42a4-ae58-56c00de2e1d4</holdingsNoteTypeId>
                         <staffOnly>true</staffOnly>
@@ -4477,7 +4417,7 @@
                   </arr>
                </notes>
                <discoverySuppress>false</discoverySuppress>
-               <sourceId>fa687f33-aab5-4119-b0ad-05afe8de4d92</sourceId>
+               <sourceId>e2f0db71-caee-41b5-b5d5-66aaec8297ad</sourceId>
                <items>
                   <arr>
                      <i>

@@ -620,7 +620,7 @@
                 <xsl:value-of select="concat('ZDB-Bestand aus EPN: ',$epn)"/>
               </xsl:when>
               <xsl:otherwise>
-                <xsl:value-of select="concat('K10plus-Bestand aus EPN: ',$epn)"/>
+                <xsl:value-of select="concat('Lokaler K10plus-Bestand aus EPN: ',$epn)"/>
               </xsl:otherwise>
             </xsl:choose>
           </i>
@@ -703,15 +703,6 @@
               <staffOnly>false</staffOnly>
             </i>             
           </xsl:for-each>
-          <xsl:if test="datafield[@tag='201B']">
-            <i>
-              <note>
-                <xsl:value-of select="concat(translate(datafield[@tag='201B']/subfield[@code='0'], '-', '.'),' ', substring(datafield[@tag='201B']/subfield[@code='t'],1,5))"/>
-              </note>
-              <holdingsNoteTypeId>Letzte Änderung CBS</holdingsNoteTypeId>
-              <staffOnly>true</staffOnly>
-            </i>
-          </xsl:if>
           <xsl:for-each select="datafield[@tag='209O']/subfield[@code='a']">
             <i>
               <note>

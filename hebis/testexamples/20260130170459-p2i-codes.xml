@@ -187,24 +187,24 @@
                   <arr/>
                </formerIds>
                <hrid>HEB568975103</hrid>
-               <sourceId>e2f0db71-caee-41b5-b5d5-66aaec8297ad</sourceId>
+               <sourceId>fa687f33-aab5-4119-b0ad-05afe8de4d92</sourceId>
                <administrativeNotes>
                   <arr>
-                     <i>Lokaler ZS-Bestand mit K10plus-EPN (nur Standort-Update): 6039197455</i>
+                     <i>Lokaler ZS-Bestand mit EPN (nur Standort-Update): 6039197455</i>
                   </arr>
                </administrativeNotes>
                <holdingsTypeId>0c422f92-0f4d-4d32-8cbe-390ebc33a3e5</holdingsTypeId>
-               <permanentLocationId>8334fb6b-013b-4ad4-9d58-7710f82edb50</permanentLocationId>
+               <permanentLocationId>87764786-c5c8-47d0-a480-df506c751d76</permanentLocationId>
             </i>
             <i>
                <formerIds>
                   <arr/>
                </formerIds>
                <hrid>ho00000001365</hrid>
-               <sourceId>e2f0db71-caee-41b5-b5d5-66aaec8297ad</sourceId>
+               <sourceId>fa687f33-aab5-4119-b0ad-05afe8de4d92</sourceId>
                <administrativeNotes>
                   <arr>
-                     <i>Lokaler ZS-Bestand mit K10plus-EPN (nur Standort-Update): 6055522071</i>
+                     <i>Lokaler ZS-Bestand mit EPN (nur Standort-Update): 6055522071</i>
                   </arr>
                </administrativeNotes>
                <holdingsTypeId>0c422f92-0f4d-4d32-8cbe-390ebc33a3e5</holdingsTypeId>
@@ -214,7 +214,7 @@
                <administrativeNotes>
                   <arr>
                      <i>08-12-25, 17:08 (Datum und Uhrzeit der letzten Änderung)</i>
-                     <i>K10plus-Bestand aus EPN: 6047739504</i>
+                     <i>ZDB-Bestand aus EPN: 6047739504</i>
                   </arr>
                </administrativeNotes>
                <formerIds>
@@ -245,11 +245,6 @@
                         <note>MAG</note>
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>08.12.25 17:08</note>
-                        <holdingsNoteTypeId>7cad8584-35f9-4ea7-8944-11bcf40ff29c</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>FR 78</note>
