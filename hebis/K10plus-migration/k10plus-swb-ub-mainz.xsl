@@ -167,7 +167,7 @@
     <xsl:choose>
       <xsl:when test="$electronicholding">ONLINE</xsl:when>
       <xsl:when test="(substring($datafield002at,2,1) = 'o') and not($itemrec/datafield[@tag='209A']/subfield[@code='d'])">AUFSATZ</xsl:when>
-      <xsl:when test="$abt='77/xxx'">DUMMY</xsl:when>
+      <xsl:when test="$abt='77/XXX'">DUMMY</xsl:when>
       <xsl:when test="$abt='77'">
         <xsl:choose>
           <xsl:when test="contains($standort,'FREIHAND')">ZBFREI</xsl:when>
