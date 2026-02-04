@@ -406,7 +406,7 @@
                       <arr/>
                     </formerIds>
                     <hrid><xsl:value-of select="."/></hrid>
-                    <sourceId>K10plus</sourceId>
+                    <sourceId>ZDB</sourceId>
                     <administrativeNotes>
                       <arr>
                         <i>
@@ -754,7 +754,12 @@
         </arr>
       </notes>
       <discoverySuppress>false</discoverySuppress>   
-      <sourceId>K10plus</sourceId>
+      <sourceId>
+        <xsl:choose>
+          <xsl:when test="starts-with(datafield[@tag='208@']/subfield[@code='b'],'z')"><xsl:text>ZDB</xsl:text></xsl:when>
+          <xsl:otherwise><xsl:text>K10plus</xsl:text></xsl:otherwise>
+        </xsl:choose>
+      </sourceId>
       <xsl:if test="not($electronicholding) and (datafield[(@tag='209G') and (subfield[@code='x']='00')]/subfield[@code='a'] or not(datafield[@tag='209A']/subfield[@code='i']))">
         <items>
           <arr>
