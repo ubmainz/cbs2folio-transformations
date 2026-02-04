@@ -410,7 +410,7 @@
                     <administrativeNotes>
                       <arr>
                         <i>
-                          <xsl:text>Lokaler ZS-Bestand mit K10plus-EPN (nur Standort-Update): </xsl:text>
+                          <xsl:text>Lokaler ZS-Bestand mit EPN (nur Standort-Update): </xsl:text>
                           <xsl:value-of select="$originalrec/item[current()=datafield[@tag='206X']/subfield[@code='0']]/datafield[@tag='203@']/subfield[@code='0']" separator=", "/>
                         </i>
                       </arr>
