@@ -608,6 +608,7 @@
         <xsl:when test=".='FOLIO'"><xsl:text>f32d531e-df79-46b3-8932-cdd35f7a2264</xsl:text></xsl:when>
         <xsl:when test=".='hebis'"><xsl:text>ed96edb1-d91d-4a31-9c40-006f5199d782</xsl:text></xsl:when> <!-- hebis wide -->
         <xsl:when test=".='K10plus'"><xsl:text>fa687f33-aab5-4119-b0ad-05afe8de4d92</xsl:text></xsl:when>
+        <xsl:when test=".='ZDB'"><xsl:text>e2f0db71-caee-41b5-b5d5-66aaec8297ad</xsl:text></xsl:when>
         <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
       </xsl:choose>
     </sourceId>
