@@ -179,11 +179,11 @@
       </xsl:when>
       <xsl:when test="$abt='77/002'">
         <xsl:choose>
-          <xsl:when test="contains($standort,upper-case('Erziehungswissenschaft'))">GFGPÄD</xsl:when>
-          <xsl:when test="contains($standort,upper-case('Filmwissenschaft'))">GFGFILM</xsl:when>
-          <xsl:when test="contains($standort,upper-case('Journalistik'))">GFGJOUR</xsl:when>
-          <xsl:when test="contains($standort,upper-case('Politikwissenschaft'))">GFGPOL</xsl:when>
-          <xsl:when test="contains($standort,upper-case('Psychologie'))">GFGPSYCH</xsl:when>
+          <xsl:when test="contains($standort,'ERZIEHUNGSWISSENSCHAFT')">GFGPÄD</xsl:when>
+          <xsl:when test="contains($standort,'FILMWISSENSCHAFT')">GFGFILM</xsl:when>
+          <xsl:when test="contains($standort,'JOURNALISTIK')">GFGJOUR</xsl:when>
+          <xsl:when test="contains($standort,'POLITIKWISSENSCHAFT')">GFGPOL</xsl:when>
+          <xsl:when test="contains($standort,'PSYCHOLOGIE')">GFGPSYCH</xsl:when>
           <xsl:when test="contains($standort,'PUBLIZISTIK')">GFGPUB</xsl:when>
           <xsl:when test="contains($standort,'SOZIOLOGIE')">GFGSOZ</xsl:when>
           <xsl:when test="contains($standort,'RVK')">GFGZEB</xsl:when>
@@ -406,7 +406,7 @@
                       <arr/>
                     </formerIds>
                     <hrid><xsl:value-of select="."/></hrid>
-                    <sourceId>ZDB</sourceId>
+                    <sourceId>K10plus</sourceId>
                     <administrativeNotes>
                       <arr>
                         <i>
@@ -614,7 +614,16 @@
               <xsl:value-of select="concat(./subfield[@code='0'], ', ', substring(./subfield[@code='t'],1,5), ' (Datum und Uhrzeit der letzten Änderung)')"/>
             </i>
           </xsl:for-each>
-          <i><xsl:value-of select="concat('K10plus-Bestand aus EPN: ',$epn)"/></i>
+          <i>
+            <xsl:choose>
+              <xsl:when test="starts-with(datafield[@tag='208@']/subfield[@code='b'],'z')">
+                <xsl:value-of select="concat('ZDB-Bestand aus EPN: ',$epn)"/>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:value-of select="concat('K10plus-Bestand aus EPN: ',$epn)"/>
+              </xsl:otherwise>
+            </xsl:choose>
+          </i>
         </arr>
       </administrativeNotes>
       <formerIds>
