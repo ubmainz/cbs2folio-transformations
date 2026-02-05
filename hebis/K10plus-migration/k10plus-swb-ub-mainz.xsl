@@ -11,13 +11,14 @@
   - Alle Holdings einer Instanz mit mindestens einem ZDB-Holding werden aus dem CBS synchronisiert, alle Holdings der anderen Instanzen werden
     über Genloc synchronisiert.
   - Es gibt keine FOLIO-lokalen Holdings. Alle Holdings werden in die eine oder andere Richtung synchronisiert. Also werden auch ho...-Holdings
-    synchronisiert - den Schutz habe ich rausgenommen.Beim CBS2FOLIO werden immer alle Holdings einer Instanz synchronisiert. (außer bei Online-Instanzen)
+    synchronisiert.
+  - Beim CBS2FOLIO werden immer alle Holdings einer Instanz synchronisiert. (außer bei Online-Instanzen)
   
   Das Mapping arbeitet jetzt mit vier Fällen:
   - ZDB-Instanzen, bestehend aus ZDB-Holdings, Holding-hrids werden getauscht - eigentlich ein Spezialfall des folgenden Falls
   - ZDB/Mono-Mischfälle, deren Holdings beim Wolpertingern im Gewinnersatz zusammengeführt werden: Die enthaltenen ZDB-Bestände bekommen immer ein Update. 
     Die enthaltenen lokalen Bestände bekommen ein Minimal-Update, d.h. nur die permanentLocationId und die holdingsTypeId (beides Pflichtfelder für MIU),
-    die ja immer im K10plus-Satz stimmen sollten. Auch die administrativeNotes werden entsprechend gefüllt. Alles andere wird über
+    die ja immer im K10plus-Satz stimmen sollten. Auch die administrativeNotes und formerId werden entsprechend gefüllt. Alles andere wird über
     retainExistingValues/forOmittedProperties erhalten. Genloc darf deshalb nicht tätig werden, sonst brauchen wir die Blockade aller Felder wie bei den Monographien.
     Und das geht nicht, wegen der ZDB-Bestände. Alle anderen Felder bleiben dann erhalten, also auch die Anmerkungen etc.
   - Online-Fälle, soweit nicht ZDB, alle Holding-hrids werden getauscht und alle Holdings bekommen Updates
@@ -392,6 +393,9 @@
                     <xsl:if test="original/datafield[@tag='003H']/subfield[@code='0']"><xsl:value-of select="concat(' mit Hebis-PPN: ',original/datafield[@tag='003H']/subfield[@code='0'])"></xsl:value-of></xsl:if>
                     <xsl:value-of select="concat(' - Update nur für ZDB-Bestände  ',$version)"/>
                   </i>
+                  <i>
+                    <xsl:text>ZDB-Bestände werden vollständig aktualisiert, lokale Bestände erhalten Updates nur für den Standort - verallgemeinert nach Sigel.</xsl:text>
+                  </i>
                 </arr>
               </administrativeNotes>
             </instance>
@@ -410,7 +414,7 @@
                     <administrativeNotes>
                       <arr>
                         <i>
-                          <xsl:text>Lokaler ZS-Bestand mit EPN (nur Standort-Update): </xsl:text>
+                          <xsl:text>Lokaler ZS-Bestand mit EPN (nur Standort-Update nach Sigel!): </xsl:text>
                           <xsl:value-of select="$originalrec/item[current()=datafield[@tag='206X']/subfield[@code='0']]/datafield[@tag='203@']/subfield[@code='0']" separator=", "/>
                         </i>
                       </arr>
