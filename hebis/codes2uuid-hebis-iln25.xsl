@@ -173,6 +173,7 @@
   <xsl:template match="holdingsNoteTypeId"> <!-- Level 2: FOLIO/hebis-wide/generate -->
     <holdingsNoteTypeId>
       <xsl:choose>
+        <xsl:when test=".='Produktsigel'"><xsl:text>bb307f6c-aae9-40f5-9a70-155064eee19d</xsl:text></xsl:when>
         <xsl:when test=".='Abrufzeichen'"><xsl:text>6d3f575d-6727-42a4-ae58-56c00de2e1d4</xsl:text></xsl:when>        
         <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
       </xsl:choose>

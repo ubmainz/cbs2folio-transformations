@@ -606,6 +606,66 @@
     <source>Provisional Instance</source>
   </xsl:template>
 
+  <!-- Parsing call number for prefix  -->
+  <xsl:template name="callNumber">
+    <xsl:param name="cn"/>
+    <xsl:variable name="abt" select="(datafield[@tag='209A']/subfield[@code='B']/text())[1]"/>
+    <xsl:variable name="standort" select="upper-case((datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='f'],
+      datafield[(@tag='209A') and (subfield[@code='x']='01')]/subfield[@code='f'])[1])"/> 
+    <xsl:choose>
+      <xsl:when test="matches($cn,'^\d{3}\s[A-Z]{2}\s\d{3,6}.*') or matches($cn,'^\d{3}\s[A-Z]\s\d{3}\.\d{3}.*') or starts-with($cn,'INFO ')"> <!-- RVK-Signatur oder Magazin-Signatur -->
+        <callNumberPrefix>
+          <xsl:value-of select="substring-before($cn,' ')"/>
+        </callNumberPrefix>
+        <callNumber>
+          <xsl:value-of select="substring-after($cn,' ')"/>
+        </callNumber>
+      </xsl:when>
+      <xsl:when test="($abt='77/016' and (starts-with($cn, 'THEMAG ') or starts-with($cn, 'THERARA '))) or 
+        ($abt='77' and (starts-with($cn, 'RARA ') and not(contains($cn,'°')))) or
+        ($abt='Mz 19' and (starts-with($cn,'CELA') or starts-with($cn,'CELTRA') or starts-with($cn,'LBS') or starts-with($cn,'MAG') or starts-with($cn,'SSC'))) or
+        (($abt='77/004') and (starts-with($cn,'Anglistik'))) or
+        ((($abt='77/002') or ($abt='77/080')) and starts-with($cn,'GROSSFORMAT')) or
+        (($abt='77/002') and (starts-with($cn,'Oversize'))) or
+        ((($abt='77/004') and ($standort='SEPARIERTE BESTÄNDE')) and not(starts-with($cn,'SI ') or starts-with($cn,'SK ')))"> <!-- Leeerzeichen zur Abtrennung -->
+        <xsl:choose>
+          <xsl:when test="contains($cn,' ')">
+            <callNumberPrefix>
+              <xsl:value-of select="normalize-space(substring-before($cn,' '))"/>
+            </callNumberPrefix>
+            <callNumber>
+              <xsl:value-of select="normalize-space(substring-after($cn,' '))"/>
+            </callNumber>
+          </xsl:when>
+          <xsl:otherwise>
+            <callNumberPrefix/>
+            <callNumber>
+              <xsl:value-of select="$cn"/>
+            </callNumber>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:variable name="cnprefix">
+          <xsl:choose>
+            <xsl:when test="contains($cn,'°')">
+              <xsl:value-of select="concat(substring-before($cn,'°'),'°')"/>
+            </xsl:when>
+            <xsl:when test="contains($cn,'@')">
+              <xsl:value-of select="substring-before($cn,'@')"/> 
+            </xsl:when>
+          </xsl:choose>
+        </xsl:variable>
+        <callNumberPrefix>
+          <xsl:value-of select="normalize-space(translate($cnprefix,'@',''))"/>
+        </callNumberPrefix>
+        <callNumber>
+          <xsl:value-of select="normalize-space(translate(substring-after($cn,$cnprefix),'@',''))"/>
+        </callNumber>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
   <xsl:template match="item">
     <i>
       <xsl:variable name="epn" select="datafield[@tag='203@']/subfield[@code='0']"/>
@@ -643,11 +703,12 @@
         <xsl:call-template name="permanentLocationId"/>
       </permanentLocationId>
       <xsl:variable name="electronicholding" select="substring(../datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O'"/>
-      <callNumber>
-        <xsl:if test="not($electronicholding)">
-          <xsl:value-of select="datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='a']"/>
-        </xsl:if>
-      </callNumber>  
+      <xsl:if test="not($electronicholding)">
+          <xsl:call-template name="callNumber">
+            <xsl:with-param name="cn" select="datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='a']"/>
+          </xsl:call-template>
+      </xsl:if>
+       
       <holdingsTypeId>
         <xsl:choose>
           <xsl:when test="$electronicholding">electronic</xsl:when>
@@ -685,18 +746,16 @@
       
       <notes>
         <arr>
-          <xsl:for-each select="datafield[@tag='220B' or @tag='237A']">
-            <xsl:if test="./subfield[@code='a'] or ./subfield[@code='0']">
+          <xsl:for-each select="datafield[(@tag='220B' or @tag='237A') and subfield[@code='a']]">
               <i>
                 <note>
-                  <xsl:value-of select="./subfield[@code='a'] | ./subfield[@code='0']"/>
+                  <xsl:value-of select="./subfield[@code='a']"/>
                 </note>
                 <holdingsNoteTypeId>Note</holdingsNoteTypeId>
                 <staffOnly>
                   <xsl:value-of select="./@tag!='237A'"/>
                 </staffOnly>
               </i>
-            </xsl:if>
           </xsl:for-each>
           <xsl:for-each select="datafield[(@tag='209A')]/subfield[@code='f']"> <!-- and (subfield[@code='x']='00') -->
             <i>
@@ -704,10 +763,10 @@
                 <xsl:value-of select="."/>
               </note>
               <holdingsNoteTypeId>Standort (8201)</holdingsNoteTypeId> <!-- TBD 8201 umbenennen? -->
-              <staffOnly>false</staffOnly>
+              <staffOnly><xsl:value-of select="if (../subfield[@code='x']='00') then 'true' else 'false'"/></staffOnly>
             </i>             
           </xsl:for-each>
-          <xsl:for-each select="datafield[@tag='209O']/subfield[@code='a']">
+          <xsl:for-each select="datafield[@tag='209O']/subfield[@code='a']|datafield[@tag='245G']/subfield[@code='c']">
             <i>
               <note>
                 <xsl:value-of select="."/>
@@ -725,7 +784,16 @@
               <staffOnly>true</staffOnly>
             </i>
           </xsl:for-each>
-             
+          <xsl:for-each select="datafield[(@tag='206U') and subfield[@code='0']]">
+            <i>
+              <note>
+                <xsl:value-of select="concat(subfield[@code='0'],' (',subfield[@code='b'],')')"/>
+              </note>
+              <holdingsNoteTypeId>Produktsigel</holdingsNoteTypeId>
+              <staffOnly>true</staffOnly>
+            </i>
+          </xsl:for-each>
+
           <xsl:for-each select="datafield[@tag='209A']/subfield[(@code='a') or (@code='h')]">
             <i>
               <note>
