@@ -172,7 +172,7 @@
       <xsl:when test="$abt='77'">
         <xsl:choose>
           <xsl:when test="contains($standort,'FREIHAND')">ZBFREI</xsl:when>
-          <xsl:when test="contains($standort,'LESESAAL') or contains($standort,'ZEITSCHRIFTENMAGAZIN') or contains($standort,'RVK')">ZBLS</xsl:when>
+          <xsl:when test="contains($standort,'LESESAAL') or contains($standort,'RVK') or contains($standort,'AUSGELAGERTE ZEITSCHRIFTEN')">ZBLS</xsl:when>
           <xsl:when test="contains($standort,'LBS')">ZBLBS</xsl:when>
           <xsl:when test="contains($standort,'RARA')">ZBRARA</xsl:when>
           <xsl:otherwise>ZBMAG</xsl:otherwise>
