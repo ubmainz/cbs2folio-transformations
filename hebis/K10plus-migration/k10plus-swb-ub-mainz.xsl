@@ -521,6 +521,7 @@
               <arr>
                 <xsl:for-each select="$epnslokal">
                   <!--  hrid raussuchen (206X$0) und epn 203@ in administrative notices eintragen -  sonst nichts -->
+                  <xsl:variable name="itemrec" select="($originalrec/item[current()=datafield[@tag='206X']/subfield[@code='0']])[1]"/>
                   <i>
                     <formerIds>
                       <arr/>
@@ -528,6 +529,19 @@
                     <hrid><xsl:value-of select="."/></hrid>
                     <administrativeNotes>
                       <arr>
+                        <i>
+                          <xsl:variable name="quot">&quot;</xsl:variable>
+                          <xsl:text>{ &quot;cbs_callnumber&quot;: </xsl:text>
+                          <xsl:value-of select="if ($itemrec/datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='a'])
+                            then concat($quot,$itemrec/datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='a'],$quot) else 'null'"/>
+                          <xsl:text>, &quot;cbs_isil&quot;: </xsl:text>
+                          <xsl:value-of select="if ($itemrec/datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='B'])
+                            then concat($quot,'DE-',translate($itemrec/datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='B'],'/ ','-'),$quot) else 'null'"/>
+                          <xsl:text>, &quot;cbs_epn&quot;: </xsl:text>
+                          <xsl:value-of select="if ($itemrec/datafield[@tag='203@']/subfield[@code='0'])
+                            then concat($quot,$itemrec/datafield[@tag='203@']/subfield[@code='0'],$quot) else 'null'"/>
+                          <xsl:text> }</xsl:text>
+                        </i>
                         <i>
                           <xsl:text>FOLIO-Bestand mit K10plus-EPN: </xsl:text>
                           <xsl:value-of select="$originalrec/item[current()=datafield[@tag='206X']/subfield[@code='0']]/datafield[@tag='203@']/subfield[@code='0']" separator=", "/>
