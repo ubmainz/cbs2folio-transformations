@@ -609,9 +609,8 @@
   <!-- Parsing call number for prefix  -->
   <xsl:template name="callNumber">
     <xsl:param name="cn"/>
-    <xsl:variable name="abt" select="(datafield[@tag='209A']/subfield[@code='B']/text())[1]"/>
-    <xsl:variable name="standort" select="upper-case((datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='f'],
-      datafield[(@tag='209A') and (subfield[@code='x']='01')]/subfield[@code='f'])[1])"/> 
+    <xsl:param name="abt"/>
+    <xsl:param name="standort"/> 
     <xsl:choose>
       <xsl:when test="matches($cn,'^\d{3}\s[A-Z]{2}\s\d{3,6}.*') or matches($cn,'^\d{3}\s[A-Z]\s\d{3}\.\d{3}.*') or starts-with($cn,'INFO ')"> <!-- RVK-Signatur oder Magazin-Signatur -->
         <callNumberPrefix>
@@ -705,7 +704,12 @@
       <xsl:variable name="electronicholding" select="substring(../datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O'"/>
       <xsl:if test="not($electronicholding)">
           <xsl:call-template name="callNumber">
-            <xsl:with-param name="cn" select="datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='a']"/>
+            <xsl:with-param name="cn" select="if (datafield[(@tag='209A') and (subfield[@code='x']='01')]/subfield[@code='g'])
+              then datafield[(@tag='209A') and (subfield[@code='x']='01')]/subfield[@code='g']
+              else datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='a']"/>
+            <xsl:with-param name="abt" select="(datafield[@tag='209A']/subfield[@code='B']/text())[1]"/>
+            <xsl:with-param name="standort" select="upper-case((datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='f'],
+              datafield[(@tag='209A') and (subfield[@code='x']='01')]/subfield[@code='f'])[1])"/> 
           </xsl:call-template>
       </xsl:if>
        
@@ -793,8 +797,20 @@
               <staffOnly>true</staffOnly>
             </i>
           </xsl:for-each>
-
-          <xsl:for-each select="datafield[@tag='209A']/subfield[(@code='a') or (@code='h')]">
+          
+          <xsl:if test="datafield[@tag='209A']/subfield[(@code='g') and (../subfield[@code='x']='01')]">
+            <i>
+              <note>
+                <xsl:value-of select="datafield[@tag='209A']/subfield[(@code='a') and (../subfield[@code='x']='00')]"/>
+              </note>
+              <holdingsNoteTypeId>
+                <xsl:text>Magazinsignatur (nur Zeitschriften) (7110)</xsl:text>
+              </holdingsNoteTypeId>
+              <staffOnly>true</staffOnly>  
+            </i>
+          </xsl:if>
+          <xsl:for-each select="datafield[@tag='209A']/subfield[(((@code='a') or (@code='g')) and (../subfield[@code='x']!='00') and (../subfield[@code='x']!='01'))
+            or ((@code='g') and (../subfield[@code='x']='00')) or ((@code='a') and (../subfield[@code='x']='01'))]">
             <i>
               <note>
                 <xsl:value-of select="."/>
