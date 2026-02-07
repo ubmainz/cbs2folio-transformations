@@ -108,7 +108,8 @@
         <xsl:when test=".='ZBMAG'">413fe054-a4f3-423e-a62f-088eb111ea8d</xsl:when>
         <xsl:when test=".='ZBRARA'">61fac3e8-8a32-4117-9005-38d2a4847f00</xsl:when>
         <xsl:when test=".='ZBZEB'">802ea709-f017-49e7-9795-5fa0053668cb</xsl:when>
-        <xsl:otherwise>413fe054-a4f3-423e-a62f-088eb111ea8d</xsl:otherwise> <!-- ZBMAG -->
+        <xsl:when test=".='UNKNOWN'">8334fb6b-013b-4ad4-9d58-7710f82edb50</xsl:when>
+        <xsl:otherwise>8334fb6b-013b-4ad4-9d58-7710f82edb50</xsl:otherwise> <!-- UNKNOWN -->
       </xsl:choose>
     </xsl:element>
   </xsl:template>
@@ -172,6 +173,7 @@
   <xsl:template match="holdingsNoteTypeId"> <!-- Level 2: FOLIO/hebis-wide/generate -->
     <holdingsNoteTypeId>
       <xsl:choose>
+        <xsl:when test=".='Produktsigel'"><xsl:text>bb307f6c-aae9-40f5-9a70-155064eee19d</xsl:text></xsl:when>
         <xsl:when test=".='Abrufzeichen'"><xsl:text>6d3f575d-6727-42a4-ae58-56c00de2e1d4</xsl:text></xsl:when>        
         <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
       </xsl:choose>

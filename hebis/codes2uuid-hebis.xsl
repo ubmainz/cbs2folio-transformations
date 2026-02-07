@@ -584,6 +584,7 @@
     <classificationTypeId>
     <xsl:choose>
       <xsl:when test=".='Lokale Klassifikation'"><xsl:text>720a846a-85db-4d3a-bfd9-7dfd2f55ae4a</xsl:text></xsl:when>
+      <xsl:when test=".='Fachfacette'"><xsl:text>a2fbdae3-2718-4892-971a-d847fc5190a8</xsl:text></xsl:when>
       <xsl:when test=".='RVK'"><xsl:text>9a0d9e18-166a-4a79-9c20-68430ced288a</xsl:text></xsl:when>
       <xsl:when test=".='DDC'"><xsl:text>42471af9-7d25-4f3a-bf78-60d29dcf463b</xsl:text></xsl:when>
     </xsl:choose>
@@ -607,6 +608,7 @@
         <xsl:when test=".='FOLIO'"><xsl:text>f32d531e-df79-46b3-8932-cdd35f7a2264</xsl:text></xsl:when>
         <xsl:when test=".='hebis'"><xsl:text>ed96edb1-d91d-4a31-9c40-006f5199d782</xsl:text></xsl:when> <!-- hebis wide -->
         <xsl:when test=".='K10plus'"><xsl:text>fa687f33-aab5-4119-b0ad-05afe8de4d92</xsl:text></xsl:when>
+        <xsl:when test=".='ZDB'"><xsl:text>e2f0db71-caee-41b5-b5d5-66aaec8297ad</xsl:text></xsl:when>
         <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
       </xsl:choose>
     </sourceId>

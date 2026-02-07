@@ -16,18 +16,19 @@
         <xsl:variable name="codes2uuid" select="document('../codes2uuid-hebis-iln25.xsl')//xsl:template[@match='permanentLocationId|temporaryLocationId']"/>
         <xsl:result-document href="{'effectiveLocationID_mapping.json'}">
             <xsl:text>{&#10;</xsl:text>
-            <xsl:for-each select="$liste/row">
+            <xsl:for-each select="$liste/row[code!='UNKNOWN']">
                 <xsl:variable name="ausdruck"><xsl:text>.=&apos;</xsl:text><xsl:value-of select="code"/><xsl:text>&apos;</xsl:text></xsl:variable>
                  <xsl:text>  "</xsl:text><xsl:value-of select="$codes2uuid//xsl:when[@test=$ausdruck]"/><xsl:text>": "</xsl:text><xsl:value-of select="sigel"/><xsl:text>",&#10;</xsl:text>
             </xsl:for-each>
-            <xsl:text>  "87764786-c5c8-47d0-a480-df506c751d76": "DE-77"&#10;</xsl:text> <!-- DUMMY -->
+            <xsl:text>  "8334fb6b-013b-4ad4-9d58-7710f82edb50": "DE-77",&#10;</xsl:text>
+            <xsl:text>  "Default": "DE-77"&#10;</xsl:text>
             <xsl:text>}&#10;</xsl:text>
         </xsl:result-document>
     </xsl:template>
     
     <xsl:template match="xsl:when[starts-with(@test,$abfrage)]" mode="permanentlocation">
         <xsl:variable name="sigel" select="concat('DE-',translate(substring-before(substring-after(@test,$abfrage),$apos),'/ ','-'))"/>
-        <xsl:for-each select="descendant-or-self::xsl:when[not(element())]">
+        <xsl:for-each select="descendant-or-self::xsl:when[not(element())]|descendant-or-self::xsl:otherwise[not(element())]">
             <row><code><xsl:value-of select="."/></code><sigel><xsl:value-of select="$sigel"/></sigel></row>
         </xsl:for-each>
     </xsl:template>
