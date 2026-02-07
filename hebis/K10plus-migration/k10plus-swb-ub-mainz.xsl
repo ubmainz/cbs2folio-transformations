@@ -635,11 +635,8 @@
         </callNumber>
       </xsl:when>
       <xsl:when test="($abt='77/016' and (starts-with($cn, 'THEMAG ') or starts-with($cn, 'THERARA '))) or 
-        ($abt='77' and (starts-with($cn, 'RARA ') and not(contains($cn,'°')))) or
         ($abt='Mz 19' and (starts-with($cn,'CELA') or starts-with($cn,'CELTRA') or starts-with($cn,'LBS') or starts-with($cn,'MAG') or starts-with($cn,'SSC'))) or
         (($abt='77/004') and (starts-with($cn,'Anglistik'))) or
-        ((($abt='77/002') or ($abt='77/080')) and starts-with($cn,'GROSSFORMAT')) or
-        (($abt='77/002') and (starts-with($cn,'Oversize'))) or
         ((($abt='77/004') and ($standort='SEPARIERTE BESTÄNDE')) and not(starts-with($cn,'SI ') or starts-with($cn,'SK ')))"> <!-- Leeerzeichen zur Abtrennung -->
         <xsl:choose>
           <xsl:when test="contains($cn,' ')">
@@ -664,16 +661,31 @@
             <xsl:when test="contains($cn,'°')">
               <xsl:value-of select="concat(substring-before($cn,'°'),'°')"/>
             </xsl:when>
-            <xsl:when test="contains($cn,'@')">
-              <xsl:value-of select="substring-before($cn,'@')"/> 
+            <xsl:when test="starts-with(upper-case($cn),'RARA ')">
+              <xsl:value-of select="substring($cn,1,4)"/> 
+            </xsl:when>
+            <xsl:when test="starts-with(upper-case($cn),'GROSSFORMAT ')">
+              <xsl:value-of select="substring($cn,1,11)"/> 
+            </xsl:when>
+            <xsl:when test="starts-with(upper-case($cn),'OVERSIZE ')">
+              <xsl:value-of select="substring($cn,1,8)"/> 
+            </xsl:when>
+            <xsl:when test="starts-with(upper-case($cn),'IN ')">
+              <xsl:value-of select="substring($cn,1,2)"/> 
+            </xsl:when>
+            <xsl:when test="starts-with(upper-case($cn),'IN: ')">
+              <xsl:value-of select="substring($cn,1,3)"/> 
+            </xsl:when>
+            <xsl:when test="starts-with($cn,'RZTG ') and ($abt='77')">
+              <xsl:value-of select="substring($cn,1,1)"/> 
             </xsl:when>
           </xsl:choose>
         </xsl:variable>
         <callNumberPrefix>
-          <xsl:value-of select="normalize-space(translate($cnprefix,'@',''))"/>
+          <xsl:value-of select="normalize-space($cnprefix)"/>
         </callNumberPrefix>
         <callNumber>
-          <xsl:value-of select="normalize-space(translate(substring-after($cn,$cnprefix),'@',''))"/>
+          <xsl:value-of select="normalize-space(substring-after($cn,$cnprefix))"/>
         </callNumber>
       </xsl:otherwise>
     </xsl:choose>
