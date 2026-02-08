@@ -527,6 +527,7 @@
                       <arr/>
                     </formerIds>
                     <hrid><xsl:value-of select="."/></hrid>
+                    <sourceId>FOLIO</sourceId>
                     <administrativeNotes>
                       <arr>
                         <i>
@@ -670,14 +671,17 @@
             <xsl:when test="starts-with(upper-case($cn),'OVERSIZE ')">
               <xsl:value-of select="substring($cn,1,8)"/> 
             </xsl:when>
-            <xsl:when test="starts-with(upper-case($cn),'IN ')">
+            <xsl:when test="(starts-with($cn,'in RZTG ') or starts-with($cn,'in R ZTG ')) and ($abt='77')">
+              <xsl:value-of select="substring($cn,1,4)"/>
+            </xsl:when>
+            <xsl:when test="(starts-with($cn,'RZTG ') or starts-with($cn,'R ZTG ')) and ($abt='77')">
+              <xsl:value-of select="substring($cn,1,1)"/> 
+            </xsl:when>
+            <xsl:when test="starts-with($cn,'in ') or starts-with($cn,'inZ') or starts-with($cn,'inY')">
               <xsl:value-of select="substring($cn,1,2)"/> 
             </xsl:when>
-            <xsl:when test="starts-with(upper-case($cn),'IN: ')">
+            <xsl:when test="starts-with($cn,'in: ')">
               <xsl:value-of select="substring($cn,1,3)"/> 
-            </xsl:when>
-            <xsl:when test="starts-with($cn,'RZTG ') and ($abt='77')">
-              <xsl:value-of select="substring($cn,1,1)"/> 
             </xsl:when>
           </xsl:choose>
         </xsl:variable>
