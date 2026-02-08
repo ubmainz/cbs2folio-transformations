@@ -506,7 +506,7 @@
                   <i>
                     <xsl:value-of select="concat('K10Plus-Instanz aus PPN: ',original/datafield[@tag='003@']/subfield[@code='0'])"/>
                     <xsl:if test="original/datafield[@tag='003H']/subfield[@code='0']"><xsl:value-of select="concat(' mit Hebis-PPN: ',(original/datafield[@tag='003H']/subfield[@code='0'])[1])"></xsl:value-of></xsl:if>
-                    <xsl:value-of select="concat(' Bestände: FOLIO - ',$version)"/>
+                    <xsl:value-of select="concat(', Bestände: FOLIO - ',$version)"/>
                   </i>
                   <xsl:if test="(count($epnslokal) != count(original/item/datafield[@tag='206X']/subfield[@code='0']))
                     or (count(original/item/(datafield[@tag='206X']/subfield[@code='0'])[1]) != count(original/item))">
