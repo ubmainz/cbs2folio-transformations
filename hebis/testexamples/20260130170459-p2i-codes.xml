@@ -175,7 +175,8 @@
             <arr>
                <i>Abv (Bibliografische Gattung)</i>
                <i>04.06.25, 12:46 (Letzte Änderung CBS)</i>
-               <i>ZDB/Lokal-Mischinstanz PPN: 211611743 mit Hebis-PPN: 070254133 - Update nur für ZDB-Bestände  v6</i>
+               <i>ZDB/Lokal-Mischinstanz PPN: 211611743 mit Hebis-PPN: 070254133 - v8</i>
+               <i>ZDB-Bestände werden vollständig aktualisiert, lokale Bestände erhalten Updates nur für den Standort - verallgemeinert nach Sigel.</i>
                <i>Wolpertinger v5 - Dubletten-PPN (Hebis): 210285850</i>
             </arr>
          </administrativeNotes>
@@ -190,7 +191,7 @@
                <sourceId>fa687f33-aab5-4119-b0ad-05afe8de4d92</sourceId>
                <administrativeNotes>
                   <arr>
-                     <i>Lokaler ZS-Bestand mit EPN (nur Standort-Update): 6039197455</i>
+                     <i>Lokaler ZS-Bestand mit EPN (nur Standort-Update nach Sigel!): 6039197455</i>
                   </arr>
                </administrativeNotes>
                <holdingsTypeId>0c422f92-0f4d-4d32-8cbe-390ebc33a3e5</holdingsTypeId>
@@ -204,7 +205,7 @@
                <sourceId>fa687f33-aab5-4119-b0ad-05afe8de4d92</sourceId>
                <administrativeNotes>
                   <arr>
-                     <i>Lokaler ZS-Bestand mit EPN (nur Standort-Update): 6055522071</i>
+                     <i>Lokaler ZS-Bestand mit EPN (nur Standort-Update nach Sigel!): 6055522071</i>
                   </arr>
                </administrativeNotes>
                <holdingsTypeId>0c422f92-0f4d-4d32-8cbe-390ebc33a3e5</holdingsTypeId>
@@ -225,7 +226,9 @@
                </formerIds>
                <hrid>HEB567496880</hrid>
                <permanentLocationId>413fe054-a4f3-423e-a62f-088eb111ea8d</permanentLocationId>
+               <callNumberPrefix/>
                <callNumber>FR 78</callNumber>
+               <callNumberSuffix/>
                <holdingsTypeId>0c422f92-0f4d-4d32-8cbe-390ebc33a3e5</holdingsTypeId>
                <holdingsStatements>
                   <arr>
@@ -239,17 +242,12 @@
                      <i>
                         <note>000</note>
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
-                        <staffOnly>false</staffOnly>
+                        <staffOnly>true</staffOnly>
                      </i>
                      <i>
                         <note>MAG</note>
                         <holdingsNoteTypeId>013e0b2c-2259-4ee8-8d15-f463f1aeb0b1</holdingsNoteTypeId>
                         <staffOnly>false</staffOnly>
-                     </i>
-                     <i>
-                        <note>FR 78</note>
-                        <holdingsNoteTypeId>f96cd2a3-065f-405c-ae3b-8547f46c7066</holdingsNoteTypeId>
-                        <staffOnly>true</staffOnly>
                      </i>
                   </arr>
                </notes>
@@ -456,7 +454,8 @@
             <arr>
                <i>Abv (Bibliografische Gattung)</i>
                <i>04.06.25, 12:46 (Letzte Änderung CBS)</i>
-               <i>ZDB/Lokal-Mischinstanz PPN: 211611743 mit Hebis-PPN: 070254133 - Update nur für ZDB-Bestände  v6</i>
+               <i>ZDB/Lokal-Mischinstanz PPN: 211611743 mit Hebis-PPN: 070254133 - v8</i>
+               <i>ZDB-Bestände werden vollständig aktualisiert, lokale Bestände erhalten Updates nur für den Standort - verallgemeinert nach Sigel.</i>
                <i>Wolpertinger v5 für Hebis-PPN: 210285850</i>
                <i>Dublette - wird gelöscht: keine Bestände</i>
             </arr>

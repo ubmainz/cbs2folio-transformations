@@ -3,7 +3,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="2.0" exclude-result-prefixes="#all">
   <xsl:output indent="yes" method="xml" version="1.0" encoding="UTF-8"/>
 
-  <xsl:variable name="version" select="'v7'"/>
+  <xsl:variable name="version" select="'v8'"/>
   
   <!-- 
   
@@ -691,6 +691,7 @@
         <callNumber>
           <xsl:value-of select="normalize-space(substring-after($cn,$cnprefix))"/>
         </callNumber>
+        <callNumberSuffix/>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
