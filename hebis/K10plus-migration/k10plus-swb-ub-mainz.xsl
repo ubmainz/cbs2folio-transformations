@@ -3,7 +3,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="2.0" exclude-result-prefixes="#all">
   <xsl:output indent="yes" method="xml" version="1.0" encoding="UTF-8"/>
 
-  <xsl:variable name="version" select="'v7'"/>
+  <xsl:variable name="version" select="'v8'"/>
   
   <!-- 
   
@@ -61,8 +61,17 @@
         <retainExistingValues>
           <forOmittedProperties>true</forOmittedProperties>
         </retainExistingValues>
+        <retainOmittedRecord>
+          <ifField>hrid</ifField>
+          <matchesPattern>\D.*</matchesPattern>
+        </retainOmittedRecord>
         <statisticalCoding>
           <arr>
+            <i>
+              <if>deleteSkipped</if>
+              <becauseOf>HOLDINGS_RECORD_PATTERN_MATCH</becauseOf>
+              <setCode>HOLDINGS_RECORD_PATTERN_MATCH</setCode>
+            </i> 
             <i>
               <if>deleteSkipped</if>
               <becauseOf>ITEM_STATUS</becauseOf>
@@ -505,11 +514,11 @@
                   <xsl:copy-of select="instance/administrativeNotes/arr/*"/>
                   <i>
                     <xsl:value-of select="concat('K10Plus-Instanz aus PPN: ',original/datafield[@tag='003@']/subfield[@code='0'])"/>
-                    <xsl:if test="original/datafield[@tag='003H']/subfield[@code='0']"><xsl:value-of select="concat(' mit Hebis-PPN: ',original/datafield[@tag='003H']/subfield[@code='0'])"></xsl:value-of></xsl:if>
-                    <xsl:value-of select="concat(' Bestände: FOLIO - ',$version)"/>
+                    <xsl:if test="original/datafield[@tag='003H']/subfield[@code='0']"><xsl:value-of select="concat(' mit Hebis-PPN: ',(original/datafield[@tag='003H']/subfield[@code='0'])[1])"></xsl:value-of></xsl:if>
+                    <xsl:value-of select="concat(', Bestände: FOLIO - ',$version)"/>
                   </i>
                   <xsl:if test="(count($epnslokal) != count(original/item/datafield[@tag='206X']/subfield[@code='0']))
-                    or (count(original/item/datafield[@tag='206X']/subfield[@code='0']) != count(original/item))">
+                    or (count(original/item/(datafield[@tag='206X']/subfield[@code='0'])[1]) != count(original/item))">
                     <i>
                       <xsl:text>Uffbasse! Anzahl FOLIO-Bestände im CBS nicht korrekt.</xsl:text> 
                     </i>
@@ -521,13 +530,28 @@
               <arr>
                 <xsl:for-each select="$epnslokal">
                   <!--  hrid raussuchen (206X$0) und epn 203@ in administrative notices eintragen -  sonst nichts -->
+                  <xsl:variable name="itemrec" select="($originalrec/item[current()=datafield[@tag='206X']/subfield[@code='0']])[1]"/>
                   <i>
                     <formerIds>
                       <arr/>
                     </formerIds>
                     <hrid><xsl:value-of select="."/></hrid>
+                    <sourceId>FOLIO</sourceId>
                     <administrativeNotes>
                       <arr>
+                        <i>
+                          <xsl:variable name="quot">&quot;</xsl:variable>
+                          <xsl:text>{ &quot;cbs_callnumber&quot;: </xsl:text>
+                          <xsl:value-of select="if ($itemrec/datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='a'])
+                            then concat($quot,$itemrec/datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='a'],$quot) else 'null'"/>
+                          <xsl:text>, &quot;cbs_isil&quot;: </xsl:text>
+                          <xsl:value-of select="if ($itemrec/datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='B'])
+                            then concat($quot,'DE-',translate($itemrec/datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='B'],'/ ','-'),$quot) else 'null'"/>
+                          <xsl:text>, &quot;cbs_epn&quot;: </xsl:text>
+                          <xsl:value-of select="if ($itemrec/datafield[@tag='203@']/subfield[@code='0'])
+                            then concat($quot,$itemrec/datafield[@tag='203@']/subfield[@code='0'],$quot) else 'null'"/>
+                          <xsl:text> }</xsl:text>
+                        </i>
                         <i>
                           <xsl:text>FOLIO-Bestand mit K10plus-EPN: </xsl:text>
                           <xsl:value-of select="$originalrec/item[current()=datafield[@tag='206X']/subfield[@code='0']]/datafield[@tag='203@']/subfield[@code='0']" separator=", "/>
@@ -535,7 +559,7 @@
                       </arr>
                     </administrativeNotes>
                     <holdingsTypeId>physical</holdingsTypeId> <!-- retainExistingValues/forTheseProperties -->
-                    <permanentLocationId>DUMMY</permanentLocationId> <!-- retainExistingValues/forTheseProperties -->
+                    <permanentLocationId>UNKNOWN</permanentLocationId> <!-- retainExistingValues/forTheseProperties -->
                   </i>
                 </xsl:for-each>
               </arr>
@@ -621,11 +645,8 @@
         </callNumber>
       </xsl:when>
       <xsl:when test="($abt='77/016' and (starts-with($cn, 'THEMAG ') or starts-with($cn, 'THERARA '))) or 
-        ($abt='77' and (starts-with($cn, 'RARA ') and not(contains($cn,'°')))) or
         ($abt='Mz 19' and (starts-with($cn,'CELA') or starts-with($cn,'CELTRA') or starts-with($cn,'LBS') or starts-with($cn,'MAG') or starts-with($cn,'SSC'))) or
         (($abt='77/004') and (starts-with($cn,'Anglistik'))) or
-        ((($abt='77/002') or ($abt='77/080')) and starts-with($cn,'GROSSFORMAT')) or
-        (($abt='77/002') and (starts-with($cn,'Oversize'))) or
         ((($abt='77/004') and ($standort='SEPARIERTE BESTÄNDE')) and not(starts-with($cn,'SI ') or starts-with($cn,'SK ')))"> <!-- Leeerzeichen zur Abtrennung -->
         <xsl:choose>
           <xsl:when test="contains($cn,' ')">
@@ -650,17 +671,36 @@
             <xsl:when test="contains($cn,'°')">
               <xsl:value-of select="concat(substring-before($cn,'°'),'°')"/>
             </xsl:when>
-            <xsl:when test="contains($cn,'@')">
-              <xsl:value-of select="substring-before($cn,'@')"/> 
+            <xsl:when test="starts-with(upper-case($cn),'RARA ')">
+              <xsl:value-of select="substring($cn,1,4)"/> 
+            </xsl:when>
+            <xsl:when test="starts-with(upper-case($cn),'GROSSFORMAT ')">
+              <xsl:value-of select="substring($cn,1,11)"/> 
+            </xsl:when>
+            <xsl:when test="starts-with(upper-case($cn),'OVERSIZE ')">
+              <xsl:value-of select="substring($cn,1,8)"/> 
+            </xsl:when>
+            <xsl:when test="(starts-with($cn,'in RZTG ') or starts-with($cn,'in R ZTG ')) and ($abt='77')">
+              <xsl:value-of select="substring($cn,1,4)"/>
+            </xsl:when>
+            <xsl:when test="(starts-with($cn,'RZTG ') or starts-with($cn,'R ZTG ')) and ($abt='77')">
+              <xsl:value-of select="substring($cn,1,1)"/> 
+            </xsl:when>
+            <xsl:when test="starts-with($cn,'in ') or starts-with($cn,'inZ') or starts-with($cn,'inY')">
+              <xsl:value-of select="substring($cn,1,2)"/> 
+            </xsl:when>
+            <xsl:when test="starts-with($cn,'in: ')">
+              <xsl:value-of select="substring($cn,1,3)"/> 
             </xsl:when>
           </xsl:choose>
         </xsl:variable>
         <callNumberPrefix>
-          <xsl:value-of select="normalize-space(translate($cnprefix,'@',''))"/>
+          <xsl:value-of select="normalize-space($cnprefix)"/>
         </callNumberPrefix>
         <callNumber>
-          <xsl:value-of select="normalize-space(translate(substring-after($cn,$cnprefix),'@',''))"/>
+          <xsl:value-of select="normalize-space(substring-after($cn,$cnprefix))"/>
         </callNumber>
+        <callNumberSuffix/>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>

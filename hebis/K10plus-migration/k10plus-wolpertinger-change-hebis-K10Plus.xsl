@@ -3,7 +3,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
   <xsl:output indent="yes" method="xml" version="1.0" encoding="UTF-8"/>
 
-  <xsl:variable name="version" select="'v5'"/>
+  <xsl:variable name="version" select="'v6'"/>
   
   <!-- 
    - Von dubletten Bestände mit identischer 203H$0 wird nur der erste gemappt. 
@@ -20,9 +20,95 @@
   </xsl:template>
 
   <xsl:template match="record[delete]"/> <!-- no delete -->
+ 
+  <xsl:template name="processingzdb">
+    <processing> <!-- updates holdings data -->
+      <item>
+        <retainExistingValues>
+          <forOmittedProperties>true</forOmittedProperties>
+          <forTheseProperties>
+            <arr>
+              <i>permanentLoanTypeId</i>
+            </arr>
+          </forTheseProperties>
+        </retainExistingValues>
+        <status>
+          <policy>retain</policy>
+        </status>
+        <retainOmittedRecord>
+          <ifField>hrid</ifField>
+          <matchesPattern>.*</matchesPattern>
+        </retainOmittedRecord>
+      </item>
+      <holdingsRecord>
+        <retainExistingValues>
+          <forOmittedProperties>true</forOmittedProperties>
+        </retainExistingValues>
+        <retainOmittedRecord>
+          <ifField>hrid</ifField>
+          <matchesPattern>.*</matchesPattern>
+        </retainOmittedRecord>
+        <statisticalCoding>
+          <arr>
+            <i>
+              <if>deleteSkipped</if>
+              <becauseOf>HOLDINGS_RECORD_PATTERN_MATCH</becauseOf>
+              <setCode>HOLDINGS_RECORD_PATTERN_MATCH</setCode>
+            </i> 
+          </arr>
+        </statisticalCoding>
+      </holdingsRecord>
+      <instance>
+        <retainExistingValues>
+          <forOmittedProperties>true</forOmittedProperties>
+        </retainExistingValues>
+      </instance>
+    </processing>
+  </xsl:template>
   
+  <xsl:template name="processingmono">
+    <processing> <!-- preserves holdings data -->
+      <item>
+        <retainOmittedRecord>
+          <ifField>hrid</ifField>
+          <matchesPattern>.*</matchesPattern>
+        </retainOmittedRecord>
+      </item>
+      <holdingsRecord>
+        <retainExistingValues>
+          <forOmittedProperties>true</forOmittedProperties>
+          <forTheseProperties>
+            <arr>
+              <i>holdingsTypeId</i>
+              <i>permanentLocationId</i>
+            </arr>
+          </forTheseProperties>
+        </retainExistingValues>
+        <retainOmittedRecord>
+          <ifField>hrid</ifField>
+          <matchesPattern>.*</matchesPattern>
+        </retainOmittedRecord>
+        <statisticalCoding>
+          <arr>
+            <i>
+              <if>deleteSkipped</if>
+              <becauseOf>HOLDINGS_RECORD_PATTERN_MATCH</becauseOf>
+              <setCode>HOLDINGS_RECORD_PATTERN_MATCH</setCode>
+            </i> 
+          </arr>
+        </statisticalCoding>
+      </holdingsRecord>
+      <instance>
+        <retainExistingValues>
+          <forOmittedProperties>true</forOmittedProperties>
+        </retainExistingValues>
+      </instance>
+    </processing>
+  </xsl:template>
+
   <xsl:template match="record">
     <xsl:variable name="currentrecord" select="."/> <!-- 003H Primäre Hebis-PPN -->
+    <xsl:variable name="electronicholding" select="substring(original/datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O'"/>
     <xsl:variable name="hebppns-dist" select="distinct-values(original/datafield[@tag='006H']/subfield[@code='0'])"/> <!-- weitere Hebis-PPN -->
     <xsl:variable name="hebppn" select="(original/datafield[@tag='003H']/subfield[@code='0'])[1]"/>
     <xsl:variable name="hebgewinner" select="($hebppn,concat('KXP',$currentrecord/instance/hrid))[1]"/>
@@ -30,8 +116,18 @@
     <record>
       <xsl:variable name="epns-ohne-hebis" select="distinct-values($currentrecord/holdingsRecords/arr/i[starts-with(formerIds/arr/i[2],'KXP')]/hrid)"/>
       <xsl:variable name="hebepns" select="distinct-values($currentrecord/holdingsRecords/arr/i/formerIds/arr/i[2])"/>
-      <xsl:copy-of select="$currentrecord/processing"/>
-       <instance>
+      <xsl:choose>
+        <xsl:when test="$electronicholding">
+          <xsl:copy-of select="$currentrecord/processing"/>
+        </xsl:when>
+        <xsl:when test="$currentrecord/instance/source='ZDB'">
+          <xsl:call-template name="processingzdb"></xsl:call-template>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:call-template name="processingmono"></xsl:call-template>
+        </xsl:otherwise>
+      </xsl:choose>
+      <instance>
         <hrid><xsl:value-of select="$hebgewinner"/></hrid>
         <xsl:apply-templates select="$currentrecord/instance/*[not(self::hrid or self::administrativeNotes)]"/>
         <administrativeNotes>
@@ -43,7 +139,7 @@
                 <xsl:text> - Dubletten-PPN (Hebis): </xsl:text><xsl:value-of select="$hebppns" separator=", "/>
               </xsl:if>
             </i>
-            <xsl:if test="not(empty($epns-ohne-hebis))">
+            <xsl:if test="not(empty($epns-ohne-hebis)) and not($electronicholding)">
               <i>
                 <xsl:text>Uffbasse! K10plus-EPNs ohne Hebis-EPN: KXP... </xsl:text><xsl:value-of select="$epns-ohne-hebis" separator=", "/>
               </i> 
