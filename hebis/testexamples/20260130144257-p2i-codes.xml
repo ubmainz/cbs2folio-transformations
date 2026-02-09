@@ -202,8 +202,7 @@
                <i>Obv (Bibliografische Gattung)</i>
                <i>04.06.25, 13:09 (Letzte Änderung CBS)</i>
                <i>ZDB/K10Plus-Instanz+Bestand aus PPN: 266022472 mit Hebis-PPN: 071562184 - v8</i>
-               <i>Wolpertinger v5</i>
-               <i>Uffbasse! K10plus-EPNs ohne Hebis-EPN: KXP... 6055521741</i>
+               <i>Wolpertinger v6</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -334,6 +333,15 @@
                <ifField>hrid</ifField>
                <matchesPattern>.*</matchesPattern>
             </retainOmittedRecord>
+            <statisticalCoding>
+               <arr>
+                  <i>
+                     <if>deleteSkipped</if>
+                     <becauseOf>HOLDINGS_RECORD_PATTERN_MATCH</becauseOf>
+                     <setCode>ac9bae48-d14c-4414-919a-292d539f9967</setCode>
+                  </i>
+               </arr>
+            </statisticalCoding>
          </holdingsRecord>
          <instance>
             <retainExistingValues>
@@ -463,8 +471,8 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>17.10.25, 15:54 (Letzte Änderung CBS)</i>
-               <i>K10Plus-Instanz aus PPN: 6010161517 mit Hebis-PPN: 40051141X Bestände: FOLIO - v8</i>
-               <i>Wolpertinger v5</i>
+               <i>K10Plus-Instanz aus PPN: 6010161517 mit Hebis-PPN: 40051141X, Bestände: FOLIO - v8</i>
+               <i>Wolpertinger v6</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -504,24 +512,23 @@
             </status>
             <retainOmittedRecord>
                <ifField>hrid</ifField>
-               <matchesPattern>it.*</matchesPattern>
+               <matchesPattern>.*</matchesPattern>
             </retainOmittedRecord>
          </item>
          <holdingsRecord>
             <retainExistingValues>
                <forOmittedProperties>true</forOmittedProperties>
             </retainExistingValues>
+            <retainOmittedRecord>
+               <ifField>hrid</ifField>
+               <matchesPattern>.*</matchesPattern>
+            </retainOmittedRecord>
             <statisticalCoding>
                <arr>
                   <i>
                      <if>deleteSkipped</if>
-                     <becauseOf>ITEM_STATUS</becauseOf>
-                     <setCode>e7b3071c-8cc0-48cc-9cd0-dfc82c4e4602</setCode>
-                  </i>
-                  <i>
-                     <if>deleteSkipped</if>
-                     <becauseOf>ITEM_PATTERN_MATCH</becauseOf>
-                     <setCode>970b8b4e-ee88-4037-b954-a10ee75340f0</setCode>
+                     <becauseOf>HOLDINGS_RECORD_PATTERN_MATCH</becauseOf>
+                     <setCode>ac9bae48-d14c-4414-919a-292d539f9967</setCode>
                   </i>
                </arr>
             </statisticalCoding>
@@ -691,7 +698,7 @@
                <i>16.12.25, 11:28 (Letzte Änderung CBS)</i>
                <i>ZDB/Lokal-Mischinstanz PPN: 79783558X mit Hebis-PPN: 347811353 - v8</i>
                <i>ZDB-Bestände werden vollständig aktualisiert, lokale Bestände erhalten Updates nur für den Standort - verallgemeinert nach Sigel.</i>
-               <i>Wolpertinger v5 - Dubletten-PPN (Hebis): 347811612</i>
+               <i>Wolpertinger v6 - Dubletten-PPN (Hebis): 347811612</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -999,7 +1006,7 @@
                <i>16.12.25, 11:28 (Letzte Änderung CBS)</i>
                <i>ZDB/Lokal-Mischinstanz PPN: 79783558X mit Hebis-PPN: 347811353 - v8</i>
                <i>ZDB-Bestände werden vollständig aktualisiert, lokale Bestände erhalten Updates nur für den Standort - verallgemeinert nach Sigel.</i>
-               <i>Wolpertinger v5 für Hebis-PPN: 347811612</i>
+               <i>Wolpertinger v6 für Hebis-PPN: 347811612</i>
                <i>Dublette - wird gelöscht: keine Bestände</i>
             </arr>
          </administrativeNotes>
@@ -1026,24 +1033,23 @@
             </status>
             <retainOmittedRecord>
                <ifField>hrid</ifField>
-               <matchesPattern>it.*</matchesPattern>
+               <matchesPattern>.*</matchesPattern>
             </retainOmittedRecord>
          </item>
          <holdingsRecord>
             <retainExistingValues>
                <forOmittedProperties>true</forOmittedProperties>
             </retainExistingValues>
+            <retainOmittedRecord>
+               <ifField>hrid</ifField>
+               <matchesPattern>.*</matchesPattern>
+            </retainOmittedRecord>
             <statisticalCoding>
                <arr>
                   <i>
                      <if>deleteSkipped</if>
-                     <becauseOf>ITEM_STATUS</becauseOf>
-                     <setCode>e7b3071c-8cc0-48cc-9cd0-dfc82c4e4602</setCode>
-                  </i>
-                  <i>
-                     <if>deleteSkipped</if>
-                     <becauseOf>ITEM_PATTERN_MATCH</becauseOf>
-                     <setCode>970b8b4e-ee88-4037-b954-a10ee75340f0</setCode>
+                     <becauseOf>HOLDINGS_RECORD_PATTERN_MATCH</becauseOf>
+                     <setCode>ac9bae48-d14c-4414-919a-292d539f9967</setCode>
                   </i>
                </arr>
             </statisticalCoding>
@@ -1173,7 +1179,7 @@
                <i>Abv (Bibliografische Gattung)</i>
                <i>04.06.25, 13:05 (Letzte Änderung CBS)</i>
                <i>ZDB/K10Plus-Instanz+Bestand aus PPN: 1799060020 mit Hebis-PPN: 492936498 - v8</i>
-               <i>Wolpertinger v5</i>
+               <i>Wolpertinger v6</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -1283,6 +1289,15 @@
                <ifField>hrid</ifField>
                <matchesPattern>.*</matchesPattern>
             </retainOmittedRecord>
+            <statisticalCoding>
+               <arr>
+                  <i>
+                     <if>deleteSkipped</if>
+                     <becauseOf>HOLDINGS_RECORD_PATTERN_MATCH</becauseOf>
+                     <setCode>ac9bae48-d14c-4414-919a-292d539f9967</setCode>
+                  </i>
+               </arr>
+            </statisticalCoding>
          </holdingsRecord>
          <instance>
             <retainExistingValues>
@@ -1399,8 +1414,8 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>17.10.25, 15:55 (Letzte Änderung CBS)</i>
-               <i>K10Plus-Instanz aus PPN: 6010166128 mit Hebis-PPN: 400876566 Bestände: FOLIO - v8</i>
-               <i>Wolpertinger v5</i>
+               <i>K10Plus-Instanz aus PPN: 6010166128 mit Hebis-PPN: 400876566, Bestände: FOLIO - v8</i>
+               <i>Wolpertinger v6</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -1446,6 +1461,15 @@
                <ifField>hrid</ifField>
                <matchesPattern>.*</matchesPattern>
             </retainOmittedRecord>
+            <statisticalCoding>
+               <arr>
+                  <i>
+                     <if>deleteSkipped</if>
+                     <becauseOf>HOLDINGS_RECORD_PATTERN_MATCH</becauseOf>
+                     <setCode>ac9bae48-d14c-4414-919a-292d539f9967</setCode>
+                  </i>
+               </arr>
+            </statisticalCoding>
          </holdingsRecord>
          <instance>
             <retainExistingValues>
@@ -1568,8 +1592,8 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>17.10.25, 15:54 (Letzte Änderung CBS)</i>
-               <i>K10Plus-Instanz aus PPN: 6010154766 mit Hebis-PPN: 400276488 Bestände: FOLIO - v8</i>
-               <i>Wolpertinger v5</i>
+               <i>K10Plus-Instanz aus PPN: 6010154766 mit Hebis-PPN: 400276488, Bestände: FOLIO - v8</i>
+               <i>Wolpertinger v6</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -1624,24 +1648,23 @@
             </status>
             <retainOmittedRecord>
                <ifField>hrid</ifField>
-               <matchesPattern>it.*</matchesPattern>
+               <matchesPattern>.*</matchesPattern>
             </retainOmittedRecord>
          </item>
          <holdingsRecord>
             <retainExistingValues>
                <forOmittedProperties>true</forOmittedProperties>
             </retainExistingValues>
+            <retainOmittedRecord>
+               <ifField>hrid</ifField>
+               <matchesPattern>.*</matchesPattern>
+            </retainOmittedRecord>
             <statisticalCoding>
                <arr>
                   <i>
                      <if>deleteSkipped</if>
-                     <becauseOf>ITEM_STATUS</becauseOf>
-                     <setCode>e7b3071c-8cc0-48cc-9cd0-dfc82c4e4602</setCode>
-                  </i>
-                  <i>
-                     <if>deleteSkipped</if>
-                     <becauseOf>ITEM_PATTERN_MATCH</becauseOf>
-                     <setCode>970b8b4e-ee88-4037-b954-a10ee75340f0</setCode>
+                     <becauseOf>HOLDINGS_RECORD_PATTERN_MATCH</becauseOf>
+                     <setCode>ac9bae48-d14c-4414-919a-292d539f9967</setCode>
                   </i>
                </arr>
             </statisticalCoding>
@@ -1799,7 +1822,7 @@
                <i>Abv (Bibliografische Gattung)</i>
                <i>14.08.25, 14:38 (Letzte Änderung CBS)</i>
                <i>ZDB/K10Plus-Instanz+Bestand aus PPN: 1797640089 mit Hebis-PPN: 492634467 - v8</i>
-               <i>Wolpertinger v5</i>
+               <i>Wolpertinger v6</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -1897,24 +1920,23 @@
             </status>
             <retainOmittedRecord>
                <ifField>hrid</ifField>
-               <matchesPattern>it.*</matchesPattern>
+               <matchesPattern>.*</matchesPattern>
             </retainOmittedRecord>
          </item>
          <holdingsRecord>
             <retainExistingValues>
                <forOmittedProperties>true</forOmittedProperties>
             </retainExistingValues>
+            <retainOmittedRecord>
+               <ifField>hrid</ifField>
+               <matchesPattern>.*</matchesPattern>
+            </retainOmittedRecord>
             <statisticalCoding>
                <arr>
                   <i>
                      <if>deleteSkipped</if>
-                     <becauseOf>ITEM_STATUS</becauseOf>
-                     <setCode>e7b3071c-8cc0-48cc-9cd0-dfc82c4e4602</setCode>
-                  </i>
-                  <i>
-                     <if>deleteSkipped</if>
-                     <becauseOf>ITEM_PATTERN_MATCH</becauseOf>
-                     <setCode>970b8b4e-ee88-4037-b954-a10ee75340f0</setCode>
+                     <becauseOf>HOLDINGS_RECORD_PATTERN_MATCH</becauseOf>
+                     <setCode>ac9bae48-d14c-4414-919a-292d539f9967</setCode>
                   </i>
                </arr>
             </statisticalCoding>
@@ -2067,7 +2089,7 @@
                <i>Abv (Bibliografische Gattung)</i>
                <i>12.06.25, 14:18 (Letzte Änderung CBS)</i>
                <i>ZDB/K10Plus-Instanz+Bestand aus PPN: 1805365193 mit Hebis-PPN: 495193453 - v8</i>
-               <i>Wolpertinger v5</i>
+               <i>Wolpertinger v6</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -2440,7 +2462,7 @@
                <i>Obv (Bibliografische Gattung)</i>
                <i>04.06.25, 13:01 (Letzte Änderung CBS)</i>
                <i>ZDB/K10Plus-Instanz+Bestand aus PPN: 729393496 mit Hebis-PPN: 311011470 - v8</i>
-               <i>Wolpertinger v5</i>
+               <i>Wolpertinger v6</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -2523,6 +2545,15 @@
                <ifField>hrid</ifField>
                <matchesPattern>.*</matchesPattern>
             </retainOmittedRecord>
+            <statisticalCoding>
+               <arr>
+                  <i>
+                     <if>deleteSkipped</if>
+                     <becauseOf>HOLDINGS_RECORD_PATTERN_MATCH</becauseOf>
+                     <setCode>ac9bae48-d14c-4414-919a-292d539f9967</setCode>
+                  </i>
+               </arr>
+            </statisticalCoding>
          </holdingsRecord>
          <instance>
             <retainExistingValues>
@@ -2646,8 +2677,8 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>17.10.25, 15:55 (Letzte Änderung CBS)</i>
-               <i>K10Plus-Instanz aus PPN: 6010165075 mit Hebis-PPN: 400799359 Bestände: FOLIO - v8</i>
-               <i>Wolpertinger v5</i>
+               <i>K10Plus-Instanz aus PPN: 6010165075 mit Hebis-PPN: 400799359, Bestände: FOLIO - v8</i>
+               <i>Wolpertinger v6</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -2687,24 +2718,23 @@
             </status>
             <retainOmittedRecord>
                <ifField>hrid</ifField>
-               <matchesPattern>it.*</matchesPattern>
+               <matchesPattern>.*</matchesPattern>
             </retainOmittedRecord>
          </item>
          <holdingsRecord>
             <retainExistingValues>
                <forOmittedProperties>true</forOmittedProperties>
             </retainExistingValues>
+            <retainOmittedRecord>
+               <ifField>hrid</ifField>
+               <matchesPattern>.*</matchesPattern>
+            </retainOmittedRecord>
             <statisticalCoding>
                <arr>
                   <i>
                      <if>deleteSkipped</if>
-                     <becauseOf>ITEM_STATUS</becauseOf>
-                     <setCode>e7b3071c-8cc0-48cc-9cd0-dfc82c4e4602</setCode>
-                  </i>
-                  <i>
-                     <if>deleteSkipped</if>
-                     <becauseOf>ITEM_PATTERN_MATCH</becauseOf>
-                     <setCode>970b8b4e-ee88-4037-b954-a10ee75340f0</setCode>
+                     <becauseOf>HOLDINGS_RECORD_PATTERN_MATCH</becauseOf>
+                     <setCode>ac9bae48-d14c-4414-919a-292d539f9967</setCode>
                   </i>
                </arr>
             </statisticalCoding>
@@ -2887,7 +2917,7 @@
                <i>Abv (Bibliografische Gattung)</i>
                <i>04.06.25, 13:05 (Letzte Änderung CBS)</i>
                <i>ZDB/K10Plus-Instanz+Bestand aus PPN: 1801037752 mit Hebis-PPN: 494217553 - v8</i>
-               <i>Wolpertinger v5</i>
+               <i>Wolpertinger v6</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -3064,6 +3094,15 @@
                <ifField>hrid</ifField>
                <matchesPattern>.*</matchesPattern>
             </retainOmittedRecord>
+            <statisticalCoding>
+               <arr>
+                  <i>
+                     <if>deleteSkipped</if>
+                     <becauseOf>HOLDINGS_RECORD_PATTERN_MATCH</becauseOf>
+                     <setCode>ac9bae48-d14c-4414-919a-292d539f9967</setCode>
+                  </i>
+               </arr>
+            </statisticalCoding>
          </holdingsRecord>
          <instance>
             <retainExistingValues>
@@ -3196,8 +3235,8 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>17.10.25, 15:54 (Letzte Änderung CBS)</i>
-               <i>K10Plus-Instanz aus PPN: 6010161118 mit Hebis-PPN: 400496518 Bestände: FOLIO - v8</i>
-               <i>Wolpertinger v5</i>
+               <i>K10Plus-Instanz aus PPN: 6010161118 mit Hebis-PPN: 400496518, Bestände: FOLIO - v8</i>
+               <i>Wolpertinger v6</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -3243,6 +3282,15 @@
                <ifField>hrid</ifField>
                <matchesPattern>.*</matchesPattern>
             </retainOmittedRecord>
+            <statisticalCoding>
+               <arr>
+                  <i>
+                     <if>deleteSkipped</if>
+                     <becauseOf>HOLDINGS_RECORD_PATTERN_MATCH</becauseOf>
+                     <setCode>ac9bae48-d14c-4414-919a-292d539f9967</setCode>
+                  </i>
+               </arr>
+            </statisticalCoding>
          </holdingsRecord>
          <instance>
             <retainExistingValues>
@@ -3405,8 +3453,8 @@
             <arr>
                <i>Abv (Bibliografische Gattung)</i>
                <i>27.04.23, 08:38 (Letzte Änderung CBS)</i>
-               <i>K10Plus-Instanz aus PPN: 1797670026 Bestände: FOLIO - v8</i>
-               <i>Wolpertinger v5</i>
+               <i>K10Plus-Instanz aus PPN: 1797670026, Bestände: FOLIO - v8</i>
+               <i>Wolpertinger v6</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -3452,6 +3500,15 @@
                <ifField>hrid</ifField>
                <matchesPattern>.*</matchesPattern>
             </retainOmittedRecord>
+            <statisticalCoding>
+               <arr>
+                  <i>
+                     <if>deleteSkipped</if>
+                     <becauseOf>HOLDINGS_RECORD_PATTERN_MATCH</becauseOf>
+                     <setCode>ac9bae48-d14c-4414-919a-292d539f9967</setCode>
+                  </i>
+               </arr>
+            </statisticalCoding>
          </holdingsRecord>
          <instance>
             <retainExistingValues>
@@ -3566,8 +3623,8 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>07.11.25, 21:35 (Letzte Änderung CBS)</i>
-               <i>K10Plus-Instanz aus PPN: 6010163609 mit Hebis-PPN: 400701316 Bestände: FOLIO - v8</i>
-               <i>Wolpertinger v5</i>
+               <i>K10Plus-Instanz aus PPN: 6010163609 mit Hebis-PPN: 400701316, Bestände: FOLIO - v8</i>
+               <i>Wolpertinger v6</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -3613,6 +3670,15 @@
                <ifField>hrid</ifField>
                <matchesPattern>.*</matchesPattern>
             </retainOmittedRecord>
+            <statisticalCoding>
+               <arr>
+                  <i>
+                     <if>deleteSkipped</if>
+                     <becauseOf>HOLDINGS_RECORD_PATTERN_MATCH</becauseOf>
+                     <setCode>ac9bae48-d14c-4414-919a-292d539f9967</setCode>
+                  </i>
+               </arr>
+            </statisticalCoding>
          </holdingsRecord>
          <instance>
             <retainExistingValues>
@@ -3753,8 +3819,8 @@
             <arr>
                <i>Abv (Bibliografische Gattung)</i>
                <i>20.05.25, 16:53 (Letzte Änderung CBS)</i>
-               <i>K10Plus-Instanz aus PPN: 1801355789 Bestände: FOLIO - v8</i>
-               <i>Wolpertinger v5</i>
+               <i>K10Plus-Instanz aus PPN: 1801355789, Bestände: FOLIO - v8</i>
+               <i>Wolpertinger v6</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -3800,6 +3866,15 @@
                <ifField>hrid</ifField>
                <matchesPattern>.*</matchesPattern>
             </retainOmittedRecord>
+            <statisticalCoding>
+               <arr>
+                  <i>
+                     <if>deleteSkipped</if>
+                     <becauseOf>HOLDINGS_RECORD_PATTERN_MATCH</becauseOf>
+                     <setCode>ac9bae48-d14c-4414-919a-292d539f9967</setCode>
+                  </i>
+               </arr>
+            </statisticalCoding>
          </holdingsRecord>
          <instance>
             <retainExistingValues>
@@ -3924,8 +3999,8 @@
             <arr>
                <i>Aau (Bibliografische Gattung)</i>
                <i>17.10.25, 15:54 (Letzte Änderung CBS)</i>
-               <i>K10Plus-Instanz aus PPN: 6010155428 mit Hebis-PPN: 400290723 Bestände: FOLIO - v8</i>
-               <i>Wolpertinger v5</i>
+               <i>K10Plus-Instanz aus PPN: 6010155428 mit Hebis-PPN: 400290723, Bestände: FOLIO - v8</i>
+               <i>Wolpertinger v6</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -4163,7 +4238,7 @@
                <i>Oax (Bibliografische Gattung)</i>
                <i>06.11.25, 19:07 (Letzte Änderung CBS)</i>
                <i>E/K10Plus-Instanz+Kaufbestände aus PPN: 1895308259 mit Hebis-PPN: 510439721 - v8</i>
-               <i>Wolpertinger v5</i>
+               <i>Wolpertinger v6</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -4241,24 +4316,23 @@
             </status>
             <retainOmittedRecord>
                <ifField>hrid</ifField>
-               <matchesPattern>it.*</matchesPattern>
+               <matchesPattern>.*</matchesPattern>
             </retainOmittedRecord>
          </item>
          <holdingsRecord>
             <retainExistingValues>
                <forOmittedProperties>true</forOmittedProperties>
             </retainExistingValues>
+            <retainOmittedRecord>
+               <ifField>hrid</ifField>
+               <matchesPattern>.*</matchesPattern>
+            </retainOmittedRecord>
             <statisticalCoding>
                <arr>
                   <i>
                      <if>deleteSkipped</if>
-                     <becauseOf>ITEM_STATUS</becauseOf>
-                     <setCode>e7b3071c-8cc0-48cc-9cd0-dfc82c4e4602</setCode>
-                  </i>
-                  <i>
-                     <if>deleteSkipped</if>
-                     <becauseOf>ITEM_PATTERN_MATCH</becauseOf>
-                     <setCode>970b8b4e-ee88-4037-b954-a10ee75340f0</setCode>
+                     <becauseOf>HOLDINGS_RECORD_PATTERN_MATCH</becauseOf>
+                     <setCode>ac9bae48-d14c-4414-919a-292d539f9967</setCode>
                   </i>
                </arr>
             </statisticalCoding>
@@ -4381,7 +4455,7 @@
                <i>Abv (Bibliografische Gattung)</i>
                <i>04.06.25, 13:05 (Letzte Änderung CBS)</i>
                <i>ZDB/K10Plus-Instanz+Bestand aus PPN: 1802581790 mit Hebis-PPN: 494801751 - v8</i>
-               <i>Wolpertinger v5</i>
+               <i>Wolpertinger v6</i>
             </arr>
          </administrativeNotes>
       </instance>

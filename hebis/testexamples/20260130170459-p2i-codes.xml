@@ -16,24 +16,23 @@
             </status>
             <retainOmittedRecord>
                <ifField>hrid</ifField>
-               <matchesPattern>it.*</matchesPattern>
+               <matchesPattern>.*</matchesPattern>
             </retainOmittedRecord>
          </item>
          <holdingsRecord>
             <retainExistingValues>
                <forOmittedProperties>true</forOmittedProperties>
             </retainExistingValues>
+            <retainOmittedRecord>
+               <ifField>hrid</ifField>
+               <matchesPattern>.*</matchesPattern>
+            </retainOmittedRecord>
             <statisticalCoding>
                <arr>
                   <i>
                      <if>deleteSkipped</if>
-                     <becauseOf>ITEM_STATUS</becauseOf>
-                     <setCode>e7b3071c-8cc0-48cc-9cd0-dfc82c4e4602</setCode>
-                  </i>
-                  <i>
-                     <if>deleteSkipped</if>
-                     <becauseOf>ITEM_PATTERN_MATCH</becauseOf>
-                     <setCode>970b8b4e-ee88-4037-b954-a10ee75340f0</setCode>
+                     <becauseOf>HOLDINGS_RECORD_PATTERN_MATCH</becauseOf>
+                     <setCode>ac9bae48-d14c-4414-919a-292d539f9967</setCode>
                   </i>
                </arr>
             </statisticalCoding>
@@ -177,7 +176,7 @@
                <i>04.06.25, 12:46 (Letzte Änderung CBS)</i>
                <i>ZDB/Lokal-Mischinstanz PPN: 211611743 mit Hebis-PPN: 070254133 - v8</i>
                <i>ZDB-Bestände werden vollständig aktualisiert, lokale Bestände erhalten Updates nur für den Standort - verallgemeinert nach Sigel.</i>
-               <i>Wolpertinger v5 - Dubletten-PPN (Hebis): 210285850</i>
+               <i>Wolpertinger v6 - Dubletten-PPN (Hebis): 210285850</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -456,7 +455,7 @@
                <i>04.06.25, 12:46 (Letzte Änderung CBS)</i>
                <i>ZDB/Lokal-Mischinstanz PPN: 211611743 mit Hebis-PPN: 070254133 - v8</i>
                <i>ZDB-Bestände werden vollständig aktualisiert, lokale Bestände erhalten Updates nur für den Standort - verallgemeinert nach Sigel.</i>
-               <i>Wolpertinger v5 für Hebis-PPN: 210285850</i>
+               <i>Wolpertinger v6 für Hebis-PPN: 210285850</i>
                <i>Dublette - wird gelöscht: keine Bestände</i>
             </arr>
          </administrativeNotes>
