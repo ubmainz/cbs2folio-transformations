@@ -61,8 +61,17 @@
         <retainExistingValues>
           <forOmittedProperties>true</forOmittedProperties>
         </retainExistingValues>
+        <retainOmittedRecord>
+          <ifField>hrid</ifField>
+          <matchesPattern>\D.*</matchesPattern>
+        </retainOmittedRecord>
         <statisticalCoding>
           <arr>
+            <i>
+              <if>deleteSkipped</if>
+              <becauseOf>HOLDINGS_RECORD_PATTERN_MATCH</becauseOf>
+              <setCode>HOLDINGS_RECORD_PATTERN_MATCH</setCode>
+            </i> 
             <i>
               <if>deleteSkipped</if>
               <becauseOf>ITEM_STATUS</becauseOf>
