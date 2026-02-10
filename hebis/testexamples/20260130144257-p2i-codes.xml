@@ -23,8 +23,17 @@
             <retainExistingValues>
                <forOmittedProperties>true</forOmittedProperties>
             </retainExistingValues>
+            <retainOmittedRecord>
+               <ifField>hrid</ifField>
+               <matchesPattern>\D.*</matchesPattern>
+            </retainOmittedRecord>
             <statisticalCoding>
                <arr>
+                  <i>
+                     <if>deleteSkipped</if>
+                     <becauseOf>HOLDINGS_RECORD_PATTERN_MATCH</becauseOf>
+                     <setCode>ac9bae48-d14c-4414-919a-292d539f9967</setCode>
+                  </i>
                   <i>
                      <if>deleteSkipped</if>
                      <becauseOf>ITEM_STATUS</becauseOf>
@@ -486,7 +495,7 @@
                <sourceId>f32d531e-df79-46b3-8932-cdd35f7a2264</sourceId>
                <administrativeNotes>
                   <arr>
-                     <i>{ "cbs_callnumber": "4° BF 5695", "cbs_isil": "DE-77", "cbs_epn": "603472824X" }</i>
+                     <i>{ "cbs_callnumber": "4° BF 5695", "cbs_isil": "DE-77", "cbs_illcode": null, "cbs_epn": "603472824X" }</i>
                      <i>FOLIO-Bestand mit K10plus-EPN: 603472824X</i>
                   </arr>
                </administrativeNotes>
@@ -834,8 +843,17 @@
             <retainExistingValues>
                <forOmittedProperties>true</forOmittedProperties>
             </retainExistingValues>
+            <retainOmittedRecord>
+               <ifField>hrid</ifField>
+               <matchesPattern>\D.*</matchesPattern>
+            </retainOmittedRecord>
             <statisticalCoding>
                <arr>
+                  <i>
+                     <if>deleteSkipped</if>
+                     <becauseOf>HOLDINGS_RECORD_PATTERN_MATCH</becauseOf>
+                     <setCode>ac9bae48-d14c-4414-919a-292d539f9967</setCode>
+                  </i>
                   <i>
                      <if>deleteSkipped</if>
                      <becauseOf>ITEM_STATUS</becauseOf>
@@ -1429,7 +1447,7 @@
                <sourceId>f32d531e-df79-46b3-8932-cdd35f7a2264</sourceId>
                <administrativeNotes>
                   <arr>
-                     <i>{ "cbs_callnumber": "G 2-0-I78", "cbs_isil": "DE-77-004", "cbs_epn": "6034742293" }</i>
+                     <i>{ "cbs_callnumber": "G 2-0-I78", "cbs_isil": "DE-77-004", "cbs_illcode": "n", "cbs_epn": "6034742293" }</i>
                      <i>FOLIO-Bestand mit K10plus-EPN: 6034742293</i>
                   </arr>
                </administrativeNotes>
@@ -1607,7 +1625,7 @@
                <sourceId>f32d531e-df79-46b3-8932-cdd35f7a2264</sourceId>
                <administrativeNotes>
                   <arr>
-                     <i>{ "cbs_callnumber": "4° BF 5781", "cbs_isil": "DE-77", "cbs_epn": "6034712556" }</i>
+                     <i>{ "cbs_callnumber": "4° BF 5781", "cbs_isil": "DE-77", "cbs_illcode": null, "cbs_epn": "6034712556" }</i>
                      <i>FOLIO-Bestand mit K10plus-EPN: 6034712556</i>
                   </arr>
                </administrativeNotes>
@@ -1622,7 +1640,7 @@
                <sourceId>f32d531e-df79-46b3-8932-cdd35f7a2264</sourceId>
                <administrativeNotes>
                   <arr>
-                     <i>{ "cbs_callnumber": "Eb - Mose 1", "cbs_isil": "DE-77-085", "cbs_epn": "6034712564" }</i>
+                     <i>{ "cbs_callnumber": "Eb - Mose 1", "cbs_isil": "DE-77-085", "cbs_illcode": null, "cbs_epn": "6034712564" }</i>
                      <i>FOLIO-Bestand mit K10plus-EPN: 6034712564</i>
                   </arr>
                </administrativeNotes>
@@ -2267,8 +2285,17 @@
             <retainExistingValues>
                <forOmittedProperties>true</forOmittedProperties>
             </retainExistingValues>
+            <retainOmittedRecord>
+               <ifField>hrid</ifField>
+               <matchesPattern>\D.*</matchesPattern>
+            </retainOmittedRecord>
             <statisticalCoding>
                <arr>
+                  <i>
+                     <if>deleteSkipped</if>
+                     <becauseOf>HOLDINGS_RECORD_PATTERN_MATCH</becauseOf>
+                     <setCode>ac9bae48-d14c-4414-919a-292d539f9967</setCode>
+                  </i>
                   <i>
                      <if>deleteSkipped</if>
                      <becauseOf>ITEM_STATUS</becauseOf>
@@ -2692,7 +2719,7 @@
                <sourceId>f32d531e-df79-46b3-8932-cdd35f7a2264</sourceId>
                <administrativeNotes>
                   <arr>
-                     <i>{ "cbs_callnumber": "4° BF 5775", "cbs_isil": "DE-77", "cbs_epn": "6034739594" }</i>
+                     <i>{ "cbs_callnumber": "4° BF 5775", "cbs_isil": "DE-77", "cbs_illcode": null, "cbs_epn": "6034739594" }</i>
                      <i>FOLIO-Bestand mit K10plus-EPN: 6034739594</i>
                   </arr>
                </administrativeNotes>
@@ -3250,7 +3277,7 @@
                <sourceId>f32d531e-df79-46b3-8932-cdd35f7a2264</sourceId>
                <administrativeNotes>
                   <arr>
-                     <i>{ "cbs_callnumber": "INFEKT 195", "cbs_isil": "DE-77-005", "cbs_epn": "6034727448" }</i>
+                     <i>{ "cbs_callnumber": "INFEKT 195", "cbs_isil": "DE-77-005", "cbs_illcode": null, "cbs_epn": "6034727448" }</i>
                      <i>FOLIO-Bestand mit K10plus-EPN: 6034727448</i>
                   </arr>
                </administrativeNotes>
@@ -3468,7 +3495,7 @@
                <sourceId>f32d531e-df79-46b3-8932-cdd35f7a2264</sourceId>
                <administrativeNotes>
                   <arr>
-                     <i>{ "cbs_callnumber": null, "cbs_isil": "DE-77-XXX", "cbs_epn": "6047250947" }</i>
+                     <i>{ "cbs_callnumber": null, "cbs_isil": "DE-77-XXX", "cbs_illcode": null, "cbs_epn": "6047250947" }</i>
                      <i>FOLIO-Bestand mit K10plus-EPN: 6047250947</i>
                   </arr>
                </administrativeNotes>
@@ -3638,7 +3665,7 @@
                <sourceId>f32d531e-df79-46b3-8932-cdd35f7a2264</sourceId>
                <administrativeNotes>
                   <arr>
-                     <i>{ "cbs_callnumber": "FR 73-18", "cbs_isil": "DE-77", "cbs_epn": "6034736234" }</i>
+                     <i>{ "cbs_callnumber": "FR 73-18", "cbs_isil": "DE-77", "cbs_illcode": null, "cbs_epn": "6034736234" }</i>
                      <i>FOLIO-Bestand mit K10plus-EPN: 6034736234</i>
                   </arr>
                </administrativeNotes>
@@ -3834,7 +3861,7 @@
                <sourceId>f32d531e-df79-46b3-8932-cdd35f7a2264</sourceId>
                <administrativeNotes>
                   <arr>
-                     <i>{ "cbs_callnumber": null, "cbs_isil": "DE-77-XXX", "cbs_epn": "6047251315" }</i>
+                     <i>{ "cbs_callnumber": null, "cbs_isil": "DE-77-XXX", "cbs_illcode": null, "cbs_epn": "6047251315" }</i>
                      <i>FOLIO-Bestand mit K10plus-EPN: 6047251315</i>
                   </arr>
                </administrativeNotes>
@@ -4014,7 +4041,7 @@
                <sourceId>f32d531e-df79-46b3-8932-cdd35f7a2264</sourceId>
                <administrativeNotes>
                   <arr>
-                     <i>{ "cbs_callnumber": "279.425", "cbs_isil": "DE-77", "cbs_epn": "6034714222" }</i>
+                     <i>{ "cbs_callnumber": "279.425", "cbs_isil": "DE-77", "cbs_illcode": null, "cbs_epn": "6034714222" }</i>
                      <i>FOLIO-Bestand mit K10plus-EPN: 6034714222</i>
                   </arr>
                </administrativeNotes>
@@ -4029,7 +4056,7 @@
                <sourceId>f32d531e-df79-46b3-8932-cdd35f7a2264</sourceId>
                <administrativeNotes>
                   <arr>
-                     <i>{ "cbs_callnumber": "36 N/k 76", "cbs_isil": "DE-77-018", "cbs_epn": "6034714230" }</i>
+                     <i>{ "cbs_callnumber": "36 N/k 76", "cbs_isil": "DE-77-018", "cbs_illcode": null, "cbs_epn": "6034714230" }</i>
                      <i>FOLIO-Bestand mit K10plus-EPN: 6034714230</i>
                   </arr>
                </administrativeNotes>
@@ -4062,8 +4089,17 @@
             <retainExistingValues>
                <forOmittedProperties>true</forOmittedProperties>
             </retainExistingValues>
+            <retainOmittedRecord>
+               <ifField>hrid</ifField>
+               <matchesPattern>\D.*</matchesPattern>
+            </retainOmittedRecord>
             <statisticalCoding>
                <arr>
+                  <i>
+                     <if>deleteSkipped</if>
+                     <becauseOf>HOLDINGS_RECORD_PATTERN_MATCH</becauseOf>
+                     <setCode>ac9bae48-d14c-4414-919a-292d539f9967</setCode>
+                  </i>
                   <i>
                      <if>deleteSkipped</if>
                      <becauseOf>ITEM_STATUS</becauseOf>

@@ -547,6 +547,9 @@
                           <xsl:text>, &quot;cbs_isil&quot;: </xsl:text>
                           <xsl:value-of select="if ($itemrec/datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='B'])
                             then concat($quot,'DE-',translate($itemrec/datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='B'],'/ ','-'),$quot) else 'null'"/>
+                          <xsl:text>, &quot;cbs_illcode&quot;: </xsl:text>
+                          <xsl:value-of select="if ($itemrec/datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='J'])
+                            then concat($quot,$itemrec/datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='J'],$quot) else 'null'"/>
                           <xsl:text>, &quot;cbs_epn&quot;: </xsl:text>
                           <xsl:value-of select="if ($itemrec/datafield[@tag='203@']/subfield[@code='0'])
                             then concat($quot,$itemrec/datafield[@tag='203@']/subfield[@code='0'],$quot) else 'null'"/>
