@@ -3,7 +3,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
   <xsl:output indent="yes" method="xml" version="1.0" encoding="UTF-8"/>
 
-  <xsl:variable name="version" select="'v7'"/>
+  <xsl:variable name="version" select="'v8'"/>
   
   <!-- 
    - Von dubletten Bestände mit identischer 203H$0 wird nur der erste gemappt. 
