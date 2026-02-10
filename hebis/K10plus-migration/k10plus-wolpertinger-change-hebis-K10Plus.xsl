@@ -107,10 +107,10 @@
   </xsl:template>
 
   <xsl:template match="record">
-    <xsl:variable name="currentrecord" select="."/> <!-- 003H Primäre Hebis-PPN -->
+    <xsl:variable name="currentrecord" select="."/>
     <xsl:variable name="electronicholding" select="substring(original/datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O'"/>
     <xsl:variable name="hebppns-dist" select="distinct-values(original/datafield[@tag='006H']/subfield[@code='0'])"/> <!-- weitere Hebis-PPN -->
-    <xsl:variable name="hebppn" select="(original/datafield[@tag='003H']/subfield[@code='0'])[1]"/>
+    <xsl:variable name="hebppn" select="(original/datafield[@tag='003H']/subfield[@code='0'])[1]"/> <!-- 003H Primäre Hebis-PPN -->
     <xsl:variable name="hebgewinner" select="($hebppn,concat('KXP',$currentrecord/instance/hrid))[1]"/>
     <xsl:variable name="hebppns" select="if (index-of($hebppns-dist,$hebgewinner)) then remove($hebppns-dist,index-of($hebppns-dist,$hebgewinner)) else $hebppns-dist" />
     <xsl:variable name="epns-ohne-hebis" select="distinct-values($currentrecord/holdingsRecords/arr/i[starts-with(formerIds/arr/i[2],'KXP')]/hrid)"/>
@@ -182,7 +182,7 @@
                 </i>
                 <i>
                   <xsl:text>(ZDB-Bestände </xsl:text><xsl:value-of select="if (exists($hebepns)) then $hebepns else 'keine'" separator=", "/>
-                  <xsl:text>; Mono-Bestände </xsl:text><xsl:value-of select="if (exists($currentrecord/holdingsRecords/arr/i[not(formerIds/arr/i[2])]/hrid))
+                  <xsl:text>; lokale Bestände </xsl:text><xsl:value-of select="if (exists($currentrecord/holdingsRecords/arr/i[not(formerIds/arr/i[2])]/hrid))
                     then $currentrecord/holdingsRecords/arr/i[not(formerIds/arr/i[2])]/hrid else 'keine' " separator=", "/><xsl:text>)</xsl:text>
                 </i>
               </arr>
