@@ -113,9 +113,9 @@
     <xsl:variable name="hebppn" select="(original/datafield[@tag='003H']/subfield[@code='0'])[1]"/>
     <xsl:variable name="hebgewinner" select="($hebppn,concat('KXP',$currentrecord/instance/hrid))[1]"/>
     <xsl:variable name="hebppns" select="if (index-of($hebppns-dist,$hebgewinner)) then remove($hebppns-dist,index-of($hebppns-dist,$hebgewinner)) else $hebppns-dist" />
+    <xsl:variable name="epns-ohne-hebis" select="distinct-values($currentrecord/holdingsRecords/arr/i[starts-with(formerIds/arr/i[2],'KXP')]/hrid)"/>
+    <xsl:variable name="hebepns" select="distinct-values($currentrecord/holdingsRecords/arr/i/formerIds/arr/i[2])"/>
     <record>
-      <xsl:variable name="epns-ohne-hebis" select="distinct-values($currentrecord/holdingsRecords/arr/i[starts-with(formerIds/arr/i[2],'KXP')]/hrid)"/>
-      <xsl:variable name="hebepns" select="distinct-values($currentrecord/holdingsRecords/arr/i/formerIds/arr/i[2])"/>
       <xsl:choose>
         <xsl:when test="$electronicholding">
           <xsl:copy-of select="$currentrecord/processing"/>
@@ -178,7 +178,12 @@
                   <xsl:text>Wolpertinger </xsl:text><xsl:value-of select="$version"/><xsl:text> für Hebis-PPN: </xsl:text><xsl:value-of select="."/>
                 </i>
                 <i>
-                  <xsl:text>Dublette - wird gelöscht: keine Bestände</xsl:text>
+                  <xsl:text>Dublette - wird gelöscht. Bestände verschoben nach Hebis-PPN: </xsl:text><xsl:value-of select="$hebgewinner"/>
+                </i>
+                <i>
+                  <xsl:text>(ZDB-Bestände </xsl:text><xsl:value-of select="if (exists($hebepns)) then $hebepns else 'keine'" separator=", "/>
+                  <xsl:text>; Mono-Bestände </xsl:text><xsl:value-of select="if (exists($currentrecord/holdingsRecords/arr/i[not(formerIds/arr/i[2])]/hrid))
+                    then $currentrecord/holdingsRecords/arr/i[not(formerIds/arr/i[2])]/hrid else 'keine' " separator=", "/><xsl:text>)</xsl:text>
                 </i>
               </arr>
             </administrativeNotes>
