@@ -170,7 +170,7 @@
                 <xsl:apply-templates select="$currentrecord/instance/identifiers/arr/i[not((identifierTypeId='PPN-K10plus') or (identifierTypeId='PPN-Hebis'))]"/>
               </arr>
             </identifiers>
-            <xsl:apply-templates select="$currentrecord/instance/*[not(self::hrid or self::administrativeNotes or self::identifiers)]"/>
+            <xsl:apply-templates select="$currentrecord/instance/*[not(self::hrid or self::administrativeNotes or self::identifiers or self::statisticalCodeIds)]"/>
             <administrativeNotes>
               <arr>
                 <xsl:apply-templates select="$currentrecord/instance/administrativeNotes/arr/*"/>
