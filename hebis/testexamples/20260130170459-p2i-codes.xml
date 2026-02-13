@@ -174,9 +174,9 @@
             <arr>
                <i>Abv (Bibliografische Gattung)</i>
                <i>04.06.25, 12:46 (Letzte Änderung CBS)</i>
-               <i>ZDB/Lokal-Mischinstanz PPN: 211611743 mit Hebis-PPN: 070254133 - v8</i>
+               <i>ZDB/Lokal-Mischinstanz PPN: 211611743 mit Hebis-PPN: 070254133 - v9</i>
                <i>ZDB-Bestände werden vollständig aktualisiert, lokale Bestände erhalten Updates nur für den Standort - verallgemeinert nach Sigel.</i>
-               <i>Wolpertinger v7 - Dubletten-PPN (Hebis): 210285850</i>
+               <i>Wolpertinger v8 - Dubletten-PPN (Hebis): 210285850</i>
             </arr>
          </administrativeNotes>
       </instance>
@@ -453,20 +453,15 @@
          <classifications>
             <arr/>
          </classifications>
-         <statisticalCodeIds>
-            <arr>
-               <i>73abd902-87c7-4bad-bdfe-25cbc06b6e63</i>
-            </arr>
-         </statisticalCodeIds>
          <administrativeNotes>
             <arr>
                <i>Abv (Bibliografische Gattung)</i>
                <i>04.06.25, 12:46 (Letzte Änderung CBS)</i>
-               <i>ZDB/Lokal-Mischinstanz PPN: 211611743 mit Hebis-PPN: 070254133 - v8</i>
+               <i>ZDB/Lokal-Mischinstanz PPN: 211611743 mit Hebis-PPN: 070254133 - v9</i>
                <i>ZDB-Bestände werden vollständig aktualisiert, lokale Bestände erhalten Updates nur für den Standort - verallgemeinert nach Sigel.</i>
-               <i>Wolpertinger v7 für Hebis-PPN: 210285850</i>
+               <i>Wolpertinger v8 für Hebis-PPN: 210285850</i>
                <i>Dublette - wird gelöscht. Bestände verschoben nach Hebis-PPN: 070254133</i>
-               <i>(ZDB-Bestände HEB567496880; Mono-Bestände HEB568975103, ho00000001365)</i>
+               <i>(ZDB-Bestände HEB567496880; lokale Bestände HEB568975103, ho00000001365)</i>
             </arr>
          </administrativeNotes>
          <statisticalCodeIds>
