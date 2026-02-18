@@ -115,12 +115,14 @@
     <xsl:variable name="hebppns" select="if (index-of($hebppns-dist,$hebgewinner)) then remove($hebppns-dist,index-of($hebppns-dist,$hebgewinner)) else $hebppns-dist" />
     <xsl:variable name="epns-ohne-hebis" select="distinct-values($currentrecord/holdingsRecords/arr/i[starts-with(formerIds/arr/i[2],'KXP')]/hrid)"/>
     <xsl:variable name="hebepns" select="distinct-values($currentrecord/holdingsRecords/arr/i/formerIds/arr/i[2])"/>
+    <xsl:variable name="nohoxlokal" select="distinct-values(original/item/datafield[@tag='206X']/subfield[(@code='0') and not(starts-with(.,'hox'))])"/>
+    
     <record>
       <xsl:choose>
         <xsl:when test="$electronicholding">
           <xsl:copy-of select="$currentrecord/processing"/>
         </xsl:when>
-        <xsl:when test="$currentrecord/instance/source='ZDB'">
+        <xsl:when test="($currentrecord/instance/source='ZDB') or not(exists($nohoxlokal))">
           <xsl:call-template name="processingzdb"></xsl:call-template>
         </xsl:when>
         <xsl:otherwise>

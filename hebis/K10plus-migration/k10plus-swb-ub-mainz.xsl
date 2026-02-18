@@ -441,6 +441,9 @@
                         <xsl:with-param name="datafield002at" select="$originalrec/datafield[@tag='002@']/subfield[@code='0']"/>
                       </xsl:call-template>
                     </permanentLocationId>
+                    <statisticalCodeIds>
+                      <arr/>                
+                    </statisticalCodeIds>
                   </i>
                 </xsl:for-each>
               </arr>
@@ -489,87 +492,6 @@
                 </xsl:for-each>
               </arr>
             </holdingsRecords>
-          </xsl:when>
-
-          <xsl:when test="starts-with((original/item/datafield[@tag='206X']/subfield[@code='0'])[1],'hox')">
-            <xsl:variable name="originalrec" select="original"/>
-            <xsl:variable name="epnslokal" select="distinct-values(original/item/datafield[@tag='206X']/subfield[@code='0'])"/>
-            <xsl:call-template name="processingzdb"/>
-            <instance>
-              <source>K10plus</source>
-              <identifiers>
-                <arr>
-                  <i>
-                    <value><xsl:value-of select="$ppn"/></value>
-                    <identifierTypeId>PPN-K10plus</identifierTypeId>
-                  </i>
-                  <i>
-                    <value><xsl:value-of select="$altppn"/></value>
-                    <identifierTypeId>PPN-Hebis</identifierTypeId>
-                  </i>
-                  <xsl:copy-of select="instance/identifiers/arr/i"/>
-                </arr>
-              </identifiers>
-              <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes or self::identifiers)]"/>
-              <xsl:call-template name="classifications"/>
-              <statisticalCodeIds>
-                <arr/>                
-              </statisticalCodeIds>
-              <administrativeNotes>
-                <arr>
-                  <xsl:copy-of select="instance/administrativeNotes/arr/*"/>
-                  <i>
-                    <xsl:value-of select="concat('K10Plus-Instanz aus PPN: ',original/datafield[@tag='003@']/subfield[@code='0'])"/>
-                    <xsl:value-of select="concat(', Bestand in Migration angelegt: FOLIO - ',$version)"/>
-                  </i>
-                  <xsl:if test="count(original/item) != 1">
-                    <i>
-                      <xsl:text>Uffbasse! Nicht genau ein hox-Bestand.</xsl:text> 
-                    </i>
-                  </xsl:if>
-                </arr>
-              </administrativeNotes>
-            </instance>
-            <holdingsRecords>
-              <arr>
-                  <xsl:variable name="itemrec" select="$originalrec/item[1]"/>
-                  <i>
-                    <formerIds>
-                      <arr/>
-                    </formerIds>
-                    <hrid><xsl:value-of select="$itemrec/datafield[@tag='206X']/subfield[@code='0']"/></hrid>
-                    <sourceId>FOLIO</sourceId>
-                    <administrativeNotes>
-                      <arr>
-                        <i>
-                          <xsl:variable name="quot">&quot;</xsl:variable>
-                          <xsl:text>{ &quot;cbs_callnumber&quot;: </xsl:text>
-                          <xsl:value-of select="if ($itemrec/datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='a'])
-                            then concat($quot,$itemrec/datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='a'],$quot) else 'null'"/>
-                          <xsl:text>, &quot;cbs_isil&quot;: </xsl:text>
-                          <xsl:value-of select="if ($itemrec/datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='B'])
-                            then concat($quot,'DE-',translate($itemrec/datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='B'],'/ ','-'),$quot) else 'null'"/>
-                          <xsl:text>, &quot;cbs_illcode&quot;: </xsl:text>
-                          <xsl:value-of select="if ($itemrec/datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='J'])
-                            then concat($quot,$itemrec/datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='J'],$quot) else 'null'"/>
-                          <xsl:text>, &quot;cbs_epn&quot;: </xsl:text>
-                          <xsl:value-of select="if ($itemrec/datafield[@tag='203@']/subfield[@code='0'])
-                            then concat($quot,$itemrec/datafield[@tag='203@']/subfield[@code='0'],$quot) else 'null'"/>
-                          <xsl:text> }</xsl:text>
-                        </i>
-                        <i>
-                          <xsl:text>FOLIO-Bestand mit K10plus-EPN: </xsl:text>
-                          <xsl:value-of select="$originalrec/item[current()=datafield[@tag='206X']/subfield[@code='0']]/datafield[@tag='203@']/subfield[@code='0']" separator=", "/>
-                        </i>
-                      </arr>
-                    </administrativeNotes>
-                    <holdingsTypeId>physical</holdingsTypeId>
-                    <permanentLocationId>
-                      <xsl:call-template name="permanentLocationId"/>
-                    </permanentLocationId>
-                  </i>
-              </arr>
-            </holdingsRecords>           
           </xsl:when>
 
           <xsl:otherwise> <!-- Mono-Fälle -->
@@ -646,10 +568,26 @@
                           <xsl:text>FOLIO-Bestand mit K10plus-EPN: </xsl:text>
                           <xsl:value-of select="$originalrec/item[current()=datafield[@tag='206X']/subfield[@code='0']]/datafield[@tag='203@']/subfield[@code='0']" separator=", "/>
                         </i>
+                        <xsl:if test="starts-with($itemrec/datafield[@tag='206X']/subfield[@code='0'],'hox')">
+                          <i>
+                            <xsl:text>Bestand bei Migration automatisch erzeugt</xsl:text>
+                          </i>
+                        </xsl:if>
                       </arr>
                     </administrativeNotes>
-                    <holdingsTypeId>physical</holdingsTypeId> <!-- retainExistingValues/forTheseProperties -->
-                    <permanentLocationId>UNKNOWN</permanentLocationId> <!-- retainExistingValues/forTheseProperties -->
+                    <statisticalCodeIds>
+                      <arr/>                
+                    </statisticalCodeIds>
+                    <xsl:choose>
+                      <xsl:when test="starts-with($itemrec/datafield[@tag='206X']/subfield[@code='0'],'hox')">
+                        <holdingsTypeId>physical</holdingsTypeId>
+                        <permanentLocationId>DUMMY</permanentLocationId>
+                      </xsl:when>
+                      <xsl:otherwise>
+                        <holdingsTypeId>physical</holdingsTypeId> <!-- retainExistingValues/forTheseProperties -->
+                        <permanentLocationId>UNKNOWN</permanentLocationId> <!-- retainExistingValues/forTheseProperties -->
+                      </xsl:otherwise>
+                     </xsl:choose>
                   </i>
                 </xsl:for-each>
               </arr>
@@ -1025,7 +963,9 @@
           </xsl:for-each>
         </arr>
       </electronicAccess>
-      
+      <statisticalCodeIds>
+        <arr/>                
+      </statisticalCodeIds>
     </i>
   </xsl:template>
 

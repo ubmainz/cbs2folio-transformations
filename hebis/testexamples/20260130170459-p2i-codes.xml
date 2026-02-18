@@ -195,6 +195,9 @@
                </administrativeNotes>
                <holdingsTypeId>0c422f92-0f4d-4d32-8cbe-390ebc33a3e5</holdingsTypeId>
                <permanentLocationId>87764786-c5c8-47d0-a480-df506c751d76</permanentLocationId>
+               <statisticalCodeIds>
+                  <arr/>
+               </statisticalCodeIds>
             </i>
             <i>
                <formerIds>
@@ -209,6 +212,9 @@
                </administrativeNotes>
                <holdingsTypeId>0c422f92-0f4d-4d32-8cbe-390ebc33a3e5</holdingsTypeId>
                <permanentLocationId>413fe054-a4f3-423e-a62f-088eb111ea8d</permanentLocationId>
+               <statisticalCodeIds>
+                  <arr/>
+               </statisticalCodeIds>
             </i>
             <i>
                <administrativeNotes>
@@ -282,6 +288,9 @@
                <electronicAccess>
                   <arr/>
                </electronicAccess>
+               <statisticalCodeIds>
+                  <arr/>
+               </statisticalCodeIds>
             </i>
          </arr>
       </holdingsRecords>
