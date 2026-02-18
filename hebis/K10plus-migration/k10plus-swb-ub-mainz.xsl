@@ -441,6 +441,9 @@
                         <xsl:with-param name="datafield002at" select="$originalrec/datafield[@tag='002@']/subfield[@code='0']"/>
                       </xsl:call-template>
                     </permanentLocationId>
+                    <statisticalCodeIds>
+                      <arr/>                
+                    </statisticalCodeIds>
                   </i>
                 </xsl:for-each>
               </arr>
@@ -565,10 +568,26 @@
                           <xsl:text>FOLIO-Bestand mit K10plus-EPN: </xsl:text>
                           <xsl:value-of select="$originalrec/item[current()=datafield[@tag='206X']/subfield[@code='0']]/datafield[@tag='203@']/subfield[@code='0']" separator=", "/>
                         </i>
+                        <xsl:if test="starts-with($itemrec/datafield[@tag='206X']/subfield[@code='0'],'hox')">
+                          <i>
+                            <xsl:text>Bestand bei Migration automatisch erzeugt</xsl:text>
+                          </i>
+                        </xsl:if>
                       </arr>
                     </administrativeNotes>
-                    <holdingsTypeId>physical</holdingsTypeId> <!-- retainExistingValues/forTheseProperties -->
-                    <permanentLocationId>UNKNOWN</permanentLocationId> <!-- retainExistingValues/forTheseProperties -->
+                    <statisticalCodeIds>
+                      <arr/>                
+                    </statisticalCodeIds>
+                    <xsl:choose>
+                      <xsl:when test="starts-with($itemrec/datafield[@tag='206X']/subfield[@code='0'],'hox')">
+                        <holdingsTypeId>physical</holdingsTypeId>
+                        <permanentLocationId>DUMMY</permanentLocationId>
+                      </xsl:when>
+                      <xsl:otherwise>
+                        <holdingsTypeId>physical</holdingsTypeId> <!-- retainExistingValues/forTheseProperties -->
+                        <permanentLocationId>UNKNOWN</permanentLocationId> <!-- retainExistingValues/forTheseProperties -->
+                      </xsl:otherwise>
+                     </xsl:choose>
                   </i>
                 </xsl:for-each>
               </arr>
@@ -944,7 +963,9 @@
           </xsl:for-each>
         </arr>
       </electronicAccess>
-      
+      <statisticalCodeIds>
+        <arr/>                
+      </statisticalCodeIds>
     </i>
   </xsl:template>
 
