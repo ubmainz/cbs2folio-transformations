@@ -2,7 +2,9 @@
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="2.0" exclude-result-prefixes="#all">
   <xsl:output indent="yes" method="xml" version="1.0" encoding="UTF-8"/>
-     
+
+  <xsl:variable name="version" select="'v2'"/>
+
   <xsl:template match="@* | node()">
     <xsl:copy>
       <xsl:apply-templates select="@* | node()"/>
@@ -184,7 +186,10 @@
               </arr>
             </holdingsRecords>
           </xsl:when>
+          
           <xsl:otherwise> <!-- Mono -->
+            <xsl:variable name="originalrec" select="original"/>
+            <xsl:variable name="epnslokal" select="distinct-values(original/item/datafield[@tag='206X']/subfield[@code='0'])"/>
             <xsl:call-template name="processingmono"/>
             <instance>
               <source>K10plus</source>
@@ -208,24 +213,51 @@
                   <xsl:copy-of select="instance/administrativeNotes/arr/*"/>
                   <i>
                     <xsl:value-of select="concat('K10Plus-Instanz aus PPN: ',original/datafield[@tag='003@']/subfield[@code='0'])"/>
-                    <xsl:if test="original/datafield[@tag='003H']/subfield[@code='0']"><xsl:value-of select="concat(' mit Hebis-PPN: ',original/datafield[@tag='003H']/subfield[@code='0'])"></xsl:value-of></xsl:if>
+                    <xsl:if test="original/datafield[@tag='003H']/subfield[@code='0']"><xsl:value-of select="concat(' mit Hebis-PPN: ',(original/datafield[@tag='003H']/subfield[@code='0'])[1])"></xsl:value-of></xsl:if>
+                    <xsl:value-of select="concat(', Bestände: FOLIO - ',$version)"/>
                   </i>
+                  <xsl:if test="(count($epnslokal) != count(original/item/datafield[@tag='206X']/subfield[@code='0']))
+                    or (count(original/item/(datafield[@tag='206X']/subfield[@code='0'])[1]) != count(original/item))">
+                    <i>
+                      <xsl:text>Uffbasse! Anzahl FOLIO-Bestände im CBS nicht korrekt.</xsl:text> 
+                    </i>
+                  </xsl:if>
                 </arr>
               </administrativeNotes>
             </instance>
             <holdingsRecords>
               <arr>
-                <xsl:for-each select="original/item">
+                <xsl:for-each select="$epnslokal">
                   <!--  hrid raussuchen (206X$0) und epn 203@ in administrative notices eintragen -  sonst nichts -->
+                  <xsl:variable name="itemrec" select="($originalrec/item[current()=datafield[@tag='206X']/subfield[@code='0']])[1]"/>
                   <i>
                     <formerIds>
                       <arr/>
                     </formerIds>
-                    <hrid><xsl:value-of select="datafield[@tag='206X']/subfield[@code='0']"/></hrid>
-                    <!-- <hrid><xsl:value-of select="substring-after(datafield[@tag='206X']/subfield[@code='0'],'HEB')"/></hrid> ohne HEB -->
+                    <hrid><xsl:value-of select="."/></hrid>
+                    <sourceId>FOLIO</sourceId>
                     <administrativeNotes>
                       <arr>
-                        <i><xsl:value-of select="concat('FOLIO-Holding mit K10plus-EPN: ',datafield[@tag='203@']/subfield[@code='0'])"/></i>
+                        <i>
+                          <xsl:variable name="quot">&quot;</xsl:variable>
+                          <xsl:text>{ &quot;cbs_callnumber&quot;: </xsl:text>
+                          <xsl:value-of select="if ($itemrec/datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='a'])
+                            then concat($quot,$itemrec/datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='a'],$quot) else 'null'"/>
+                          <xsl:text>, &quot;cbs_isil&quot;: </xsl:text>
+                          <xsl:value-of select="if ($itemrec/datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='B'])
+                            then concat($quot,'DE-',translate($itemrec/datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='B'],'/ ','-'),$quot) else 'null'"/>
+                          <xsl:text>, &quot;cbs_illcode&quot;: </xsl:text>
+                          <xsl:value-of select="if ($itemrec/datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='J'])
+                            then concat($quot,$itemrec/datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='J'],$quot) else 'null'"/>
+                          <xsl:text>, &quot;cbs_epn&quot;: </xsl:text>
+                          <xsl:value-of select="if ($itemrec/datafield[@tag='203@']/subfield[@code='0'])
+                            then concat($quot,$itemrec/datafield[@tag='203@']/subfield[@code='0'],$quot) else 'null'"/>
+                          <xsl:text> }</xsl:text>
+                        </i>
+                        <i>
+                          <xsl:text>FOLIO-Bestand mit K10plus-EPN: </xsl:text>
+                          <xsl:value-of select="$originalrec/item[current()=datafield[@tag='206X']/subfield[@code='0']]/datafield[@tag='203@']/subfield[@code='0']" separator=", "/>
+                        </i>
                       </arr>
                     </administrativeNotes>
                     <holdingsTypeId>physical</holdingsTypeId> <!-- retainExistingValues/forTheseProperties -->
