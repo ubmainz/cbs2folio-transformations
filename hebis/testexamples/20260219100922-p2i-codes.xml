@@ -280,7 +280,7 @@
                <i>a3549b8c-3282-4a14-9ec3-c1cf294043b9</i>
             </arr>
          </instanceFormatIds>
-         <title/>
+         <title>[kein Titel] ; [Tonkassette]</title>
          <indexTitle>Tonkassette</indexTitle>
          <alternativeTitles>
             <arr/>
@@ -546,10 +546,6 @@
                   <classificationTypeId>9a0d9e18-166a-4a79-9c20-68430ced288a</classificationTypeId>
                </i>
                <i>
-                  <classificationNumber/>
-                  <classificationTypeId>42471af9-7d25-4f3a-bf78-60d29dcf463b</classificationTypeId>
-               </i>
-               <i>
                   <classificationNumber>062.027</classificationNumber>
                   <classificationTypeId>42471af9-7d25-4f3a-bf78-60d29dcf463b</classificationTypeId>
                </i>
@@ -733,7 +729,7 @@
                   <value>Coleccion ilustracion vasca ; 3</value>
                </i>
                <i>
-                  <value/>
+                  <value>[kein Titel] ; 2</value>
                </i>
             </arr>
          </series>
@@ -906,7 +902,7 @@
                   <value>Coleccion ilustracion vasca ; 2</value>
                </i>
                <i>
-                  <value/>
+                  <value>[kein Titel] ; 1</value>
                </i>
             </arr>
          </series>

@@ -132,7 +132,7 @@
             <xsl:sequence select="normalize-space(substring-before(concat(.,':'),':'))"/>
           </xsl:for-each>
         </xsl:variable>
-        <xsl:for-each select="distinct-values($rvk)">
+        <xsl:for-each select="distinct-values($rvk)[. != '']">
           <xsl:sort/>
           <i>
             <classificationNumber><xsl:value-of select="."/></classificationNumber>
@@ -144,7 +144,7 @@
             <xsl:sequence select="normalize-space(translate(.,'/',''))"/>
           </xsl:for-each>
         </xsl:variable>
-        <xsl:for-each select="distinct-values($ddc)">
+        <xsl:for-each select="distinct-values($ddc)[. != '']">
           <xsl:sort/>
           <i>
             <classificationNumber><xsl:value-of select="."/></classificationNumber>
@@ -156,7 +156,7 @@
             <xsl:sequence select="."/>
           </xsl:for-each>
         </xsl:variable>
-        <xsl:for-each select="distinct-values($fachfacette)">
+        <xsl:for-each select="distinct-values($fachfacette)[. != '']">
           <xsl:sort/>
           <i>
             <classificationNumber><xsl:value-of select="."/></classificationNumber>

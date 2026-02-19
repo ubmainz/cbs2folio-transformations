@@ -764,7 +764,14 @@
     <title>
       <xsl:choose>
         <xsl:when test="boolean(substring(datafield[@tag='002@']/subfield[@code='0'], 2, 1) = 'f') and datafield[@tag='036C']">
-          <xsl:value-of select="normalize-space(substring-after($title-036C, '. '))"/>
+          <xsl:choose>
+             <xsl:when test="contains($title-036C, '. ')">
+               <xsl:value-of select="normalize-space(substring-after($title-036C, '. '))"/>
+             </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="normalize-space($title-036C)"/>
+            </xsl:otherwise>
+          </xsl:choose>
           <xsl:if test="$title-021A != '' and boolean(substring($title-021A, 1, 1) != ' ')">
             <xsl:choose>
               <xsl:when test="datafield[@tag='036C'][last()]/subfield[@code='l']">
@@ -1991,8 +1998,7 @@
     <!-- TBD: need for adjustment at GBV? Not sure about the subfields in PXB-format -->
     <series>
      <arr>
-      <xsl:if test="datafield[@tag='036E']/subfield[@code='a']">
-          <xsl:for-each select="datafield[@tag='036E']">
+         <xsl:for-each select="datafield[(@tag='036E') and subfield[@code='a']]">
             <i>
               <value>
                 <xsl:for-each select="subfield">
@@ -2021,7 +2027,6 @@
               </value>
             </i>
           </xsl:for-each>
-      </xsl:if>
 
       <!-- hebis: added series statement for parts of multipart resources with independent title
                   and series statement for the second multipart resource (hebis-special-feature) 
@@ -2029,7 +2034,14 @@
       <xsl:if test="boolean(substring(datafield[@tag='002@']/subfield[@code='0'], 2, 1) != 'f') and datafield[@tag='036C']">
         <i>
           <value>
-            <xsl:value-of select="normalize-space(substring-after($title-036C, '. '))"/>
+            <xsl:choose>
+              <xsl:when test="contains($title-036C, '. ')">
+                <xsl:value-of select="normalize-space(substring-after($title-036C, '. '))"/>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:value-of select="normalize-space($title-036C)"/>
+              </xsl:otherwise>
+            </xsl:choose>
           </value>
         </i>
       </xsl:if>
@@ -2037,7 +2049,14 @@
       <xsl:if test="boolean(substring(datafield[@tag='002@']/subfield[@code='0'], 2, 1) != 'f') and datafield[@tag='036C'] and $title-036C-ori != ''">
         <i>
           <value>
-            <xsl:value-of select="normalize-space(substring-after($title-036C-ori, '. '))"/>
+            <xsl:choose>
+              <xsl:when test="contains($title-036C-ori, '. ')">
+                <xsl:value-of select="normalize-space(substring-after($title-036C-ori, '. '))"/>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:value-of select="normalize-space($title-036C-ori)"/>
+              </xsl:otherwise>
+            </xsl:choose>
           </value>
         </i>
       </xsl:if>
