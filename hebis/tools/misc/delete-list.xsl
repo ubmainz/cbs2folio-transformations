@@ -8,7 +8,7 @@
         </collection>
     </xsl:template>
 
-    <xsl:template match="instance_hrid">
+    <xsl:template match="hrid">
         <xsl:variable name="no"><xsl:number format="00001"/></xsl:variable>
         <xsl:message><xsl:value-of select="$no"/><xsl:text> : </xsl:text><xsl:value-of select="."/></xsl:message>
             <record>
@@ -18,5 +18,7 @@
                 </hrid>
             </record>
     </xsl:template>
+    
+    <xsl:template match="text()"/>
     
 </xsl:stylesheet>
