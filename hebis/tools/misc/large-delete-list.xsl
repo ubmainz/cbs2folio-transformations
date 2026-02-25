@@ -13,7 +13,7 @@
             <xsl:variable name="xvar" select="."/>
             <xsl:for-each select="$y">
                 <xsl:variable name="xyvar" select="concat($xvar,.)"/>
-                <xsl:variable name="file" select="concat('out/delete-',$xyvar,'.xml')"/>
+                <xsl:variable name="file" select="concat('out/d',$xvar,'/delete-',$xyvar,'.xml')"/>
                 <xsl:message>Info: Writing to &apos;<xsl:value-of select="$file"/>&apos; (<xsl:value-of select="count($kontext/key('hrids',$xyvar))"/>)</xsl:message>
                 <xsl:result-document href="{$file}">
                     <collection>
