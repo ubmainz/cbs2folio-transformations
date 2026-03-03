@@ -345,6 +345,41 @@
         <xsl:copy-of select="original"/>
         <xsl:choose>
 
+          <xsl:when test="not(exists(original/item))"> <!-- kein Holding -->
+            <xsl:call-template name="processingmono"/>
+            <instance>
+              <source>K10plus</source>
+              <identifiers>
+                <arr>
+                  <i>
+                    <value><xsl:value-of select="$ppn"/></value>
+                    <identifierTypeId>PPN-K10plus</identifierTypeId>
+                  </i>
+                  <i>
+                    <value><xsl:value-of select="$altppn"/></value>
+                    <identifierTypeId>PPN-Hebis</identifierTypeId>
+                  </i>
+                  <xsl:copy-of select="instance/identifiers/arr/i"/>
+                </arr>
+              </identifiers>
+              <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes or self::identifiers)]"/>
+              <xsl:call-template name="classifications"/>
+              <statisticalCodeIds>
+                <arr/>                
+              </statisticalCodeIds>
+              <administrativeNotes>
+                <arr>
+                  <xsl:copy-of select="instance/administrativeNotes/arr/*"/>
+                  <i>
+                    <xsl:value-of select="concat('K10Plus-Instanz aus PPN: ',original/datafield[@tag='003@']/subfield[@code='0'])"/>
+                    <xsl:if test="original/datafield[@tag='003H']/subfield[@code='0']"><xsl:value-of select="concat(' mit Hebis-PPN: ',(original/datafield[@tag='003H']/subfield[@code='0'])[1])"></xsl:value-of></xsl:if>
+                    <xsl:value-of select="concat(', ohne Bestände - ',$version)"/>
+                  </i>
+                </arr>
+              </administrativeNotes>
+            </instance>
+          </xsl:when>
+
           <xsl:when test="not(exists(original/item[not(starts-with(datafield[@tag='208@']/subfield[@code='b'],'z'))]))"> <!-- ZDB-Fälle -->
             <xsl:call-template name="processingzdb"/>
             <instance>
