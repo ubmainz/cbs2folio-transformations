@@ -1362,7 +1362,7 @@
       </arr>
     </publication>
 
-    <!-- Dates -->
+    <!-- Dates TBD Ramsons/Sunflower 
     <dates>
       <xsl:if test="datafield[@tag='011@']">
         <xsl:variable name="start" select="datafield[@tag='011@']/subfield[@code='a']"/>
@@ -1388,7 +1388,7 @@
           <xsl:value-of select="$dateTypeId"/>
         </dateTypeId>
       </xsl:if>
-    </dates>
+    </dates> -->
 
     <!-- Publication frequency -->
     <publicationFrequency>
