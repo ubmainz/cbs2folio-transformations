@@ -396,6 +396,9 @@
                 </arr>
               </administrativeNotes>
             </instance>
+            <holdingsRecords>
+              <arr/>
+            </holdingsRecords>
           </xsl:when>
 
           <xsl:when test="not(exists(original/item[not(starts-with(datafield[@tag='208@']/subfield[@code='b'],'z'))]))"> <!-- ZDB-Fälle -->
