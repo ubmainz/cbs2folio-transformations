@@ -185,6 +185,26 @@
       </arr>
     </classifications>
   </xsl:template>
+  
+  <xsl:template name="statisticalCodeIds">
+    <statisticalCodeIds>
+      <arr>
+        <xsl:for-each select="original/datafield[(@tag='046X') and (subfield[@code='5']='DE-77')]">
+           <xsl:choose>
+             <xsl:when test="./subfield[@code='f']='PERP'">
+               <i>LZAPFLICHT</i>
+             </xsl:when>
+             <xsl:when test="./subfield[@code='z']='Frankreichforschung'">
+               <i>LZAFR</i>
+             </xsl:when>
+             <xsl:when test="starts-with(./subfield[@code='z'],'Mainzer')">
+               <i>LZAHSS</i>
+             </xsl:when>
+           </xsl:choose>
+        </xsl:for-each>
+      </arr>                
+    </statisticalCodeIds>
+  </xsl:template>
 
   <xsl:template name="permanentLocationId">
     <xsl:param name="itemrec" select="."/>
@@ -335,7 +355,7 @@
     <xsl:if test="not((substring(original/datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O') 
            or (original/datafield[@tag='002@']/subfield[@code='0'] = 'amy')) 
         or exists(original/item[datafield[(@tag='209B') and (subfield[@code='x']='12')]/subfield[@code='a']='ctof'])
-        or exists(original/item/datafield[(@tag='209R') and contains(subfield[@code='u'],'anchor=Einzelkauf_')])
+        or exists(original/item/datafield[(@tag='209R') and (contains(subfield[@code='u'],'anchor=ctof_') or contains(subfield[@code='u'],'anchor=Einzelkauf_'))])
         or exists(original/item/datafield[(@tag='245G') and (subfield[@code='c']='ctof')])">
       <!-- UB Mainz: keine Online-Ressourcen, keine Mailboxen, aber Online-Einzelkauf Mono/ZS-->
       <xsl:variable name="ppn" select="(original/datafield[@tag='003@']/subfield[@code='0'])[1]"/>
@@ -344,6 +364,39 @@
       <record>
         <xsl:copy-of select="original"/>
         <xsl:choose>
+
+          <xsl:when test="not(exists(original/item))"> <!-- kein Holding -->
+            <xsl:call-template name="processingmono"/>
+            <instance>
+              <source>K10plus</source>
+              <identifiers>
+                <arr>
+                  <i>
+                    <value><xsl:value-of select="$ppn"/></value>
+                    <identifierTypeId>PPN-K10plus</identifierTypeId>
+                  </i>
+                  <i>
+                    <value><xsl:value-of select="$altppn"/></value>
+                    <identifierTypeId>PPN-Hebis</identifierTypeId>
+                  </i>
+                  <xsl:copy-of select="instance/identifiers/arr/i"/>
+                </arr>
+              </identifiers>
+              <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes or self::identifiers)]"/>
+              <xsl:call-template name="classifications"/>
+              <xsl:call-template name="statisticalCodeIds"/>
+              <administrativeNotes>
+                <arr>
+                  <xsl:copy-of select="instance/administrativeNotes/arr/*"/>
+                  <i>
+                    <xsl:value-of select="concat('K10Plus-Instanz aus PPN: ',original/datafield[@tag='003@']/subfield[@code='0'])"/>
+                    <xsl:if test="original/datafield[@tag='003H']/subfield[@code='0']"><xsl:value-of select="concat(' mit Hebis-PPN: ',(original/datafield[@tag='003H']/subfield[@code='0'])[1])"></xsl:value-of></xsl:if>
+                    <xsl:value-of select="concat(', ohne Bestände - ',$version)"/>
+                  </i>
+                </arr>
+              </administrativeNotes>
+            </instance>
+          </xsl:when>
 
           <xsl:when test="not(exists(original/item[not(starts-with(datafield[@tag='208@']/subfield[@code='b'],'z'))]))"> <!-- ZDB-Fälle -->
             <xsl:call-template name="processingzdb"/>
@@ -364,9 +417,7 @@
               </identifiers>
               <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes or self::identifiers)]"/>
               <xsl:call-template name="classifications"/>
-                <statisticalCodeIds>
-                  <arr/>                
-                </statisticalCodeIds>
+              <xsl:call-template name="statisticalCodeIds"/>
               <administrativeNotes>
                 <arr>
                   <xsl:copy-of select="instance/administrativeNotes/arr/*"/>
@@ -408,8 +459,12 @@
               </identifiers>
               <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes or self::identifiers)]"/>
               <xsl:call-template name="classifications"/>
+              <xsl:variable name="statcodeids">
+                <xsl:call-template name="statisticalCodeIds"/>
+              </xsl:variable>
               <statisticalCodeIds>
                 <arr>
+                  <xsl:copy-of select="$statcodeids/statisticalCodeIds/arr/i"/>
                    <i>ZDB-Titel-mit-Mono-EPN</i>
                 </arr>
               </statisticalCodeIds>
@@ -488,9 +543,7 @@
               </identifiers>
               <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes or self::identifiers)]"/>
               <xsl:call-template name="classifications"/>
-              <statisticalCodeIds>
-                <arr/>                
-              </statisticalCodeIds>
+              <xsl:call-template name="statisticalCodeIds"/>
               <administrativeNotes>
                 <arr>
                   <xsl:copy-of select="instance/administrativeNotes/arr/*"/>
@@ -505,7 +558,7 @@
             <holdingsRecords>
               <arr>
                 <xsl:for-each select="original/item[(datafield[(@tag='209B') and (subfield[@code='x']='12')]/subfield[@code='a']='ctof')
-                  or datafield[(@tag='209R') and contains(subfield[@code='u'],'anchor=Einzelkauf_')]
+                  or datafield[(@tag='209R') and (contains(subfield[@code='u'],'anchor=ctof_') or contains(subfield[@code='u'],'anchor=Einzelkauf_'))]
                   or datafield[(@tag='245G') and (subfield[@code='c']='ctof')] ]">  <!-- löscht alle anderen -->
                   <xsl:apply-templates select="."/>
                 </xsl:for-each>
@@ -534,9 +587,7 @@
               </identifiers>
               <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes or self::identifiers)]"/>
               <xsl:call-template name="classifications"/>
-              <statisticalCodeIds>
-                <arr/>                
-              </statisticalCodeIds>
+              <xsl:call-template name="statisticalCodeIds"/>
               <administrativeNotes>
                 <arr>
                   <xsl:copy-of select="instance/administrativeNotes/arr/*"/>

@@ -161,7 +161,9 @@
             <xsl:choose>
               <xsl:when test=".='LZA'">25c91085-8b64-47ea-9cb8-20dd539ac466</xsl:when>
               <xsl:when test=".='Dublettenbereinigung'">812aef7b-f026-449e-8976-31883ad95d1b</xsl:when>
-              <xsl:when test=".='ZDB-Titel-mit-Mono-EPN'">73abd902-87c7-4bad-bdfe-25cbc06b6e63</xsl:when>
+              <xsl:when test=".='LZAHSS'">5513b29c-e1e2-4b8a-bf6f-1bc39568bd50</xsl:when>
+              <xsl:when test=".='LZAPFLICHT'">715acc71-baa5-4946-91ec-260699dad8ec</xsl:when>
+              <xsl:when test=".='LZAFR'">99cf95cd-dfe5-4835-8435-8d7a11e382e7</xsl:when>
             </xsl:choose>
           </i>
         </xsl:for-each>
