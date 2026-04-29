@@ -186,7 +186,7 @@
     </classifications>
   </xsl:template>
   
-  <xsl:template name="statisticalCodeIds">
+  <xsl:template name="statisticalCodeIds">    
     <statisticalCodeIds>
       <arr>
         <xsl:for-each select="original/datafield[(@tag='046X') and (subfield[@code='5']='DE-77')]">
@@ -202,6 +202,19 @@
              </xsl:when>
            </xsl:choose>
         </xsl:for-each>
+        <xsl:variable name="p1" select="substring(original/datafield[@tag='002@']/subfield[@code='0'],1,1)"/>
+        <xsl:variable name="p2" select="substring(original/datafield[@tag='002@']/subfield[@code='0'],2,1)"/>
+        <i>
+          <xsl:choose>
+            <xsl:when test="($p1='C') or ($p1='H')"><xsl:value-of select="$p1"/></xsl:when>
+            <xsl:when test="(($p1='A') or ($p1='B') or ($p1='E') or ($p1='S')) and (($p2='a') or ($p2='f') or ($p2='F'))"><xsl:value-of select="concat($p1,'afF')"/></xsl:when>
+            <xsl:when test="($p1='O') and (($p2='f') or ($p2='F') or ($p2='c') or ($p2='d'))">Oa</xsl:when>
+            <xsl:when test="(($p1='V') or ($p1='Z')) and (($p2='a') or ($p2='f') or ($p2='F'))">VZafF</xsl:when>
+            <xsl:when test="(($p1='V') or ($p1='Z')) and ($p2='c')">VZc</xsl:when>
+            <xsl:when test="(($p1='V') or ($p1='Z')) and (($p2='s') or ($p2='b') or ($p2='d'))">VZsbd</xsl:when>
+            <xsl:otherwise><xsl:value-of select="concat($p1,$p2)"/></xsl:otherwise>
+          </xsl:choose>
+        </i>
       </arr>                
     </statisticalCodeIds>
   </xsl:template>
