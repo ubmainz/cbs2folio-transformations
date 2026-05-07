@@ -1106,7 +1106,6 @@
       <!-- No item for electronic access -->
 
       <discoverySuppress>false</discoverySuppress>
-      <statisticalCodeIds/>
     </i>
   </xsl:template>
 
