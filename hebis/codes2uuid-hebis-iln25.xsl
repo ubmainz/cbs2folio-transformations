@@ -104,12 +104,14 @@
         <xsl:when test=".='ZBFL'">0a93c434-36e4-4517-88ad-8fa329dbc675</xsl:when>
         <xsl:when test=".='ZBFLLS'">159d656a-fe9e-4289-8863-5585ce7494fe</xsl:when>
         <xsl:when test=".='ZBFREI'">ea51b803-8bc4-4441-84e0-30a8e29c7a51</xsl:when>
+        <xsl:when test=".='ZBFREINNC'">5f150187-d597-4bae-b572-8ba85aea9614</xsl:when>
         <xsl:when test=".='ZBLBS'">67ae08e9-89f9-4939-8def-5666cf7bfc3d</xsl:when>
         <xsl:when test=".='ZBLS'">c23399ef-6776-4442-a53a-dfca759c3b9f</xsl:when>
         <xsl:when test=".='ZBMAG'">413fe054-a4f3-423e-a62f-088eb111ea8d</xsl:when>
         <xsl:when test=".='ZBRARA'">61fac3e8-8a32-4117-9005-38d2a4847f00</xsl:when>
         <xsl:when test=".='ZBSON'">a1821057-b124-4fde-be14-fc9ff860127b</xsl:when>
         <xsl:when test=".='ZBZEB'">802ea709-f017-49e7-9795-5fa0053668cb</xsl:when>
+        <xsl:when test=".='ZBZSP'">a94ad820-5228-4736-9b29-22d992311c3f</xsl:when>
         <xsl:when test=".='UNKNOWN'">8334fb6b-013b-4ad4-9d58-7710f82edb50</xsl:when>
         <xsl:otherwise>8334fb6b-013b-4ad4-9d58-7710f82edb50</xsl:otherwise> <!-- UNKNOWN -->
       </xsl:choose>
