@@ -185,7 +185,15 @@
       </arr>
     </classifications>
   </xsl:template>
-  
+ 
+  <xsl:template name="instancenotes">
+    <notes>
+      <arr>
+        <xsl:copy-of select="instance/notes/arr/i"/>
+      </arr>
+    </notes>
+  </xsl:template>
+
   <xsl:template name="statisticalCodeIds">    
     <statisticalCodeIds>
       <arr>
@@ -398,8 +406,9 @@
                   <xsl:copy-of select="instance/identifiers/arr/i"/>
                 </arr>
               </identifiers>
-              <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes or self::identifiers)]"/>
+              <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes or self::identifiers or self::notes)]"/>
               <xsl:call-template name="classifications"/>
+              <xsl:call-template name="instancenotes"/>
               <xsl:call-template name="statisticalCodeIds"/>
               <administrativeNotes>
                 <arr>
@@ -434,8 +443,9 @@
                   <xsl:copy-of select="instance/identifiers/arr/i"/>
                 </arr>
               </identifiers>
-              <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes or self::identifiers)]"/>
+              <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes or self::identifiers or self::notes)]"/>
               <xsl:call-template name="classifications"/>
+              <xsl:call-template name="instancenotes"/>
               <xsl:call-template name="statisticalCodeIds"/>
               <administrativeNotes>
                 <arr>
@@ -476,8 +486,9 @@
                   <xsl:copy-of select="instance/identifiers/arr/i"/>
                 </arr>
               </identifiers>
-              <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes or self::identifiers)]"/>
+              <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes or self::identifiers or self::notes)]"/>
               <xsl:call-template name="classifications"/>
+              <xsl:call-template name="instancenotes"/>
               <xsl:variable name="statcodeids">
                 <xsl:call-template name="statisticalCodeIds"/>
               </xsl:variable>
