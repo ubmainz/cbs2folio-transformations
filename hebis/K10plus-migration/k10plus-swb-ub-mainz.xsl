@@ -190,6 +190,14 @@
     <notes>
       <arr>
         <xsl:copy-of select="instance/notes/arr/i"/>
+        <xsl:for-each select="original/datafield[(@tag='092B') and (subfield[@code='5']='DE-77')]">
+           <i>
+             <note>
+                <xsl:value-of select="concat(subfield[@code='3'],' ## ',subfield[@code='8'])"/>
+             </note>
+             <instanceNoteTypeId>Ownership and Custodial History note</instanceNoteTypeId>
+           </i>
+        </xsl:for-each>
       </arr>
     </notes>
   </xsl:template>
