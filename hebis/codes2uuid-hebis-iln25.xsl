@@ -107,6 +107,8 @@
         <xsl:when test=".='ZBFREINNC'">5f150187-d597-4bae-b572-8ba85aea9614</xsl:when>
         <xsl:when test=".='ZBLBS'">67ae08e9-89f9-4939-8def-5666cf7bfc3d</xsl:when>
         <xsl:when test=".='ZBLS'">c23399ef-6776-4442-a53a-dfca759c3b9f</xsl:when>
+        <xsl:when test=".='ZBLSLMZS'">832931f1-18b3-47fc-81ee-96c11bdd3a1a</xsl:when>
+        <xsl:when test=".='ZBLSRVKZS'">067f09c4-9ec2-4624-b3cd-ef6843ff233d</xsl:when>
         <xsl:when test=".='ZBMAG'">413fe054-a4f3-423e-a62f-088eb111ea8d</xsl:when>
         <xsl:when test=".='ZBRARA'">61fac3e8-8a32-4117-9005-38d2a4847f00</xsl:when>
         <xsl:when test=".='ZBSON'">a1821057-b124-4fde-be14-fc9ff860127b</xsl:when>
