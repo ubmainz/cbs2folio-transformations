@@ -232,6 +232,7 @@
       <xsl:when test="$abt='77/XXX'">DUMMY</xsl:when>
       <xsl:when test="$abt='77'">
         <xsl:choose>
+          <xsl:when test="contains($standort,'SONDERSTANDORTE')">ZBSON</xsl:when>
           <xsl:when test="contains($standort,'FREIHAND')">ZBFREI</xsl:when>
           <xsl:when test="contains($standort,'LESESAAL') or contains($standort,'RVK') or contains($standort,'AUSGELAGERTE ZEITSCHRIFTEN')">ZBLS</xsl:when>
           <xsl:when test="contains($standort,'LBS')">ZBLBS</xsl:when>
@@ -241,6 +242,7 @@
       </xsl:when>
       <xsl:when test="$abt='77/002'">
         <xsl:choose>
+          <xsl:when test="contains($standort,'FACHBEREICHE')">GFGFAC</xsl:when>
           <xsl:when test="contains($standort,'ERZIEHUNGSWISSENSCHAFT')">GFGPÄD</xsl:when>
           <xsl:when test="contains($standort,'FILMWISSENSCHAFT')">GFGFILM</xsl:when>
           <xsl:when test="contains($standort,'JOURNALISTIK')">GFGJOUR</xsl:when>
@@ -258,6 +260,7 @@
       </xsl:when>
       <xsl:when test="$abt='77/004'"> 
         <xsl:choose>
+          <xsl:when test="contains($standort,'SONDERSTANDORTE')">PHSON</xsl:when>
           <xsl:when test="contains($standort,'SEPARIERTE')">PHMAG</xsl:when> 
           <xsl:when test="contains($standort,'NUMERUS')">PHNC</xsl:when>
           <xsl:when test="contains($standort,'THEATERWISSENSCHAFT')">PHTHW</xsl:when> 

@@ -26,6 +26,7 @@
         <xsl:when test=".='FBKUNST'">f3956a73-496a-4ffc-aa28-f638b54987f4</xsl:when>
         <xsl:when test=".='FBMPI'">404d2702-7cab-4086-b758-352988354e94</xsl:when>
         <xsl:when test=".='FBPSY'">ef19f548-1910-470a-b5bc-9c71421388bf</xsl:when>
+        <xsl:when test=".='GFGFAC'">0dda9a6b-26ce-40e7-9ded-137b11b8068b</xsl:when>
         <xsl:when test=".='GFGFILM'">eefdca5d-5541-459f-877e-84c184ce5899</xsl:when>
         <xsl:when test=".='GFGGEO'">71cd6589-995b-473a-9db7-592cf12189ed</xsl:when>
         <xsl:when test=".='GFGJOUR'">209db366-27c5-4bfc-981e-25d9671b0348</xsl:when>
@@ -107,6 +108,7 @@
         <xsl:when test=".='ZBLS'">c23399ef-6776-4442-a53a-dfca759c3b9f</xsl:when>
         <xsl:when test=".='ZBMAG'">413fe054-a4f3-423e-a62f-088eb111ea8d</xsl:when>
         <xsl:when test=".='ZBRARA'">61fac3e8-8a32-4117-9005-38d2a4847f00</xsl:when>
+        <xsl:when test=".='ZBSON'">a1821057-b124-4fde-be14-fc9ff860127b</xsl:when>
         <xsl:when test=".='ZBZEB'">802ea709-f017-49e7-9795-5fa0053668cb</xsl:when>
         <xsl:when test=".='UNKNOWN'">8334fb6b-013b-4ad4-9d58-7710f82edb50</xsl:when>
         <xsl:otherwise>8334fb6b-013b-4ad4-9d58-7710f82edb50</xsl:otherwise> <!-- UNKNOWN -->
