@@ -249,9 +249,20 @@
       <xsl:when test="$abt='77/XXX'">DUMMY</xsl:when>
       <xsl:when test="$abt='77'">
         <xsl:choose>
+          <xsl:when test="contains($standort,'AUSGELAGERTE ZEITSCHRIFTEN BEREICHSBIBLIOTHEK PHILOSOPHICUM') 
+            and not(ends-with($itemrec/datafield[(@tag='209A') and (subfield[@code='x']='01')]/subfield[@code='f'],'ALTE GESCHICHTE'))
+            and not(ends-with($itemrec/datafield[(@tag='209A') and (subfield[@code='x']='01')]/subfield[@code='f'],'SLAWISTIK'))
+            and not(ends-with($itemrec/datafield[(@tag='209A') and (subfield[@code='x']='01')]/subfield[@code='f'],'THEATERWISSENSCHAFT'))">ZBZSP</xsl:when>
+          <xsl:when test="contains($standort,'LESESAAL') and (starts-with($signatur,'LM 1:') or starts-with($signatur,'LM 2:'))
+            or contains($standort,'AUSGELAGERTE ZEITSCHRIFTEN BEREICHSBIBLIOTHEK PHILOSOPHICUM')">ZBLSLMZS</xsl:when> <!-- Rest von davor -->
+          <xsl:when test="contains($standort,'LESESAAL') and (starts-with($signatur,'180 ') or starts-with($signatur,'185 '))">ZBLSRVKZS</xsl:when>
+          <xsl:when test="contains($standort,'LESESAAL') and (starts-with($signatur,'200 ') or starts-with($signatur,'230 ')
+            or starts-with($signatur,'270 '))">ZBLSRVKMON</xsl:when>
+          <xsl:when test="contains($standort,'LESESAAL')">ZBLS</xsl:when> <!-- Restliche Lesesaalfälle -->
           <xsl:when test="contains($standort,'SONDERSTANDORTE')">ZBSON</xsl:when>
-          <xsl:when test="contains($standort,'FREIHAND')">ZBFREI</xsl:when>
-          <xsl:when test="contains($standort,'LESESAAL') or contains($standort,'RVK') or contains($standort,'AUSGELAGERTE ZEITSCHRIFTEN')">ZBLS</xsl:when>
+          <xsl:when test="contains($standort,'FREIHAND') and (starts-with($signatur,'300 A') or starts-with($signatur,'320 A')
+            or starts-with($signatur,'330 A'))">ZBFREINNC</xsl:when>
+          <xsl:when test="contains($standort,'FREIHAND')">ZBFREI</xsl:when> <!-- Rest Freihand -->
           <xsl:when test="contains($standort,'LBS')">ZBLBS</xsl:when>
           <xsl:when test="contains($standort,'RARA')">ZBRARA</xsl:when>
           <xsl:otherwise>ZBMAG</xsl:otherwise>
