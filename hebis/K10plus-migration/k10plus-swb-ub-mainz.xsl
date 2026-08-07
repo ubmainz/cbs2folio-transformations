@@ -241,7 +241,9 @@
     <xsl:variable name="abt" select="($itemrec/datafield[@tag='209A']/subfield[@code='B']/text())[1]"/>
     <xsl:variable name="standort" select="upper-case(($itemrec/datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='f'],
       $itemrec/datafield[(@tag='209A') and (subfield[@code='x']='01')]/subfield[@code='f'])[1])"/>
-    <xsl:variable name="signatur" select="datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='a'][1]"/>
+    <xsl:variable name="signatur" select="(if ($itemrec/datafield[(@tag='209A') and (subfield[@code='x']='01')]/subfield[@code='g'])
+      then $itemrec/datafield[(@tag='209A') and (subfield[@code='x']='01')]/subfield[@code='g']
+      else $itemrec/datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='a'])[1]"/>
     <xsl:variable name="electronicholding" select="substring($datafield002at,1,1) = 'O'"/>
     <xsl:choose>
       <xsl:when test="$electronicholding">ONLINE</xsl:when>
