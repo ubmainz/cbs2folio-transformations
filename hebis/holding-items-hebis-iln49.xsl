@@ -17,7 +17,7 @@
   </xsl:template>
 
   <xsl:template match="record">
-    <xsl:if test="not(substring(original/datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O')"> <!-- Bingen keine Online-Ressourcen -->
+    <xsl:if test="not(substring(original/datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O')"> <!-- HS Mainz keine Online-Ressourcen -->
         <record>
           <xsl:copy-of select="original"/>
           <instance>

@@ -335,9 +335,9 @@
   </xsl:template>
 
   <xsl:template name="permanentLocationId">
-    <xsl:variable name="abt" select="substring-after(datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='B'],'77/')"/>
-    <xsl:variable name="standort" select="upper-case((datafield[(@tag='209A')]/subfield[@code='f'])[1])"/> 
-    <xsl:variable name="signatur" select="datafield[@tag='209A']/subfield[@code='a'][1]"/>
+    <xsl:variable name="abt" select="substring-after(datafield[@tag='209A']/subfield[@code='B'][1],'77/')"/>
+    <xsl:variable name="standort" select="upper-case((datafield[(@tag='209A')and (subfield[@code='x']='01')]/subfield[@code='f'])[1])"/> 
+    <xsl:variable name="signatur" select="datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='a'][1]"/>
     <xsl:variable name="selectionscode" select="datafield[@tag='208@']/subfield[@code='b']"/>
     <xsl:variable name="electronicholding" select="substring(/../datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O'"/>
       <xsl:choose>

@@ -26,6 +26,7 @@
         <xsl:when test=".='FBKUNST'">f3956a73-496a-4ffc-aa28-f638b54987f4</xsl:when>
         <xsl:when test=".='FBMPI'">404d2702-7cab-4086-b758-352988354e94</xsl:when>
         <xsl:when test=".='FBPSY'">ef19f548-1910-470a-b5bc-9c71421388bf</xsl:when>
+        <xsl:when test=".='GFGFAC'">0dda9a6b-26ce-40e7-9ded-137b11b8068b</xsl:when>
         <xsl:when test=".='GFGFILM'">eefdca5d-5541-459f-877e-84c184ce5899</xsl:when>
         <xsl:when test=".='GFGGEO'">71cd6589-995b-473a-9db7-592cf12189ed</xsl:when>
         <xsl:when test=".='GFGJOUR'">209db366-27c5-4bfc-981e-25d9671b0348</xsl:when>
@@ -103,11 +104,17 @@
         <xsl:when test=".='ZBFL'">0a93c434-36e4-4517-88ad-8fa329dbc675</xsl:when>
         <xsl:when test=".='ZBFLLS'">159d656a-fe9e-4289-8863-5585ce7494fe</xsl:when>
         <xsl:when test=".='ZBFREI'">ea51b803-8bc4-4441-84e0-30a8e29c7a51</xsl:when>
+        <xsl:when test=".='ZBFREINNC'">5f150187-d597-4bae-b572-8ba85aea9614</xsl:when>
         <xsl:when test=".='ZBLBS'">67ae08e9-89f9-4939-8def-5666cf7bfc3d</xsl:when>
         <xsl:when test=".='ZBLS'">c23399ef-6776-4442-a53a-dfca759c3b9f</xsl:when>
+        <xsl:when test=".='ZBLSLMZS'">832931f1-18b3-47fc-81ee-96c11bdd3a1a</xsl:when>
+        <xsl:when test=".='ZBLSRVKMON'">bf9b2a7a-70c9-4e54-adc8-4c8aceed863f</xsl:when>
+        <xsl:when test=".='ZBLSRVKZS'">067f09c4-9ec2-4624-b3cd-ef6843ff233d</xsl:when>
         <xsl:when test=".='ZBMAG'">413fe054-a4f3-423e-a62f-088eb111ea8d</xsl:when>
         <xsl:when test=".='ZBRARA'">61fac3e8-8a32-4117-9005-38d2a4847f00</xsl:when>
+        <xsl:when test=".='ZBSON'">a1821057-b124-4fde-be14-fc9ff860127b</xsl:when>
         <xsl:when test=".='ZBZEB'">802ea709-f017-49e7-9795-5fa0053668cb</xsl:when>
+        <xsl:when test=".='ZBZSP'">a94ad820-5228-4736-9b29-22d992311c3f</xsl:when>
         <xsl:when test=".='UNKNOWN'">8334fb6b-013b-4ad4-9d58-7710f82edb50</xsl:when>
         <xsl:otherwise>8334fb6b-013b-4ad4-9d58-7710f82edb50</xsl:otherwise> <!-- UNKNOWN -->
       </xsl:choose>
@@ -164,6 +171,34 @@
               <xsl:when test=".='LZAHSS'">5513b29c-e1e2-4b8a-bf6f-1bc39568bd50</xsl:when>
               <xsl:when test=".='LZAPFLICHT'">715acc71-baa5-4946-91ec-260699dad8ec</xsl:when>
               <xsl:when test=".='LZAFR'">99cf95cd-dfe5-4835-8435-8d7a11e382e7</xsl:when>
+              <xsl:when test=".='Ac'"><xsl:text>c85e824d-f439-47bf-a19c-720b6e1c7a30</xsl:text></xsl:when>
+              <xsl:when test=".='Ad'"><xsl:text>0e1590f4-4daa-4e89-a6ba-a475e6039f38</xsl:text></xsl:when>
+              <xsl:when test=".='Ab'"><xsl:text>7d4efe20-4197-408d-8242-764aa48e6907</xsl:text></xsl:when>
+              <xsl:when test=".='AafF'"><xsl:text>9ff7fd00-347d-42e6-9b6b-3ef825085950</xsl:text></xsl:when>
+              <xsl:when test=".='As'"><xsl:text>eb2eb4f5-d9b4-4dbf-8b20-22741037e495</xsl:text></xsl:when>
+              <xsl:when test=".='Ob'"><xsl:text>a7632234-00b3-4ee2-a5dd-e719fdd76580</xsl:text></xsl:when>
+              <xsl:when test=".='Oa'"><xsl:text>2ea6d8f4-099a-4e16-9878-a059282febd0</xsl:text></xsl:when>
+              <xsl:when test=".='Os'"><xsl:text>a08156e5-7f00-4667-b3f9-60e06f179d7b</xsl:text></xsl:when>
+              <xsl:when test=".='BafF'"><xsl:text>4c3b0a87-b445-4335-b7b9-fd406086102f</xsl:text></xsl:when>
+              <xsl:when test=".='Bc'"><xsl:text>ec06720c-c3a7-484b-a2d5-777363cd39be</xsl:text></xsl:when>
+              <xsl:when test=".='Bd'"><xsl:text>d6da08fd-e5f7-40f2-8d69-513ca494298c</xsl:text></xsl:when>
+              <xsl:when test=".='Bs'"><xsl:text>4bc5c45b-52d2-415e-ae55-2c9b79560bdb</xsl:text></xsl:when>
+              <xsl:when test=".='Bb'"><xsl:text>ed735e29-937a-4ca2-983e-8a5af1878945</xsl:text></xsl:when>
+              <xsl:when test=".='C'"><xsl:text>95aa5c13-c9f2-4f35-b0e0-75abbf01ed66</xsl:text></xsl:when>
+              <xsl:when test=".='EafF'"><xsl:text>1f724d22-5f79-4a95-a56f-c4016c80c02e</xsl:text></xsl:when>
+              <xsl:when test=".='Ec'"><xsl:text>90f9ffe8-7af7-437c-aec3-d2549975ff3c</xsl:text></xsl:when>
+              <xsl:when test=".='Ed'"><xsl:text>3697c409-7b3b-4be8-8fdf-ccac76f0b5b0</xsl:text></xsl:when>
+              <xsl:when test=".='Es'"><xsl:text>a5d81b27-69d4-4128-a1a8-cce34d08b5e3</xsl:text></xsl:when>
+              <xsl:when test=".='Eb'"><xsl:text>e4c221f3-cfa1-4de1-8ef0-a4a8a9d749bd</xsl:text></xsl:when>
+              <xsl:when test=".='H'"><xsl:text>ba0bb45d-c8ff-4e51-b023-23adb982bb3b</xsl:text></xsl:when>
+              <xsl:when test=".='SafF'"><xsl:text>6b6d9341-2bec-42fe-aab1-16cc7ac2fff0</xsl:text></xsl:when>
+              <xsl:when test=".='Sc'"><xsl:text>b8363975-545f-4998-8c2e-90a805c1d84e</xsl:text></xsl:when>
+              <xsl:when test=".='Sd'"><xsl:text>98564d81-a3a2-4d95-afdf-5a849be35068</xsl:text></xsl:when>
+              <xsl:when test=".='Ss'"><xsl:text>f5c93073-298a-484c-bab8-8de1b0001355</xsl:text></xsl:when>
+              <xsl:when test=".='Sb'"><xsl:text>c034e12e-993d-4da9-89d1-f057130d22a0</xsl:text></xsl:when>
+              <xsl:when test=".='VZafF'"><xsl:text>f0ba98b5-6006-4b9b-bac1-b5e78d23b873</xsl:text></xsl:when>
+              <xsl:when test=".='VZc'"><xsl:text>5c78d07c-47b6-4c1d-90e6-99fdcb0735c7</xsl:text></xsl:when>
+              <xsl:when test=".='VZsbd'"><xsl:text>b67f1385-7790-4264-979c-64ad455b19bf</xsl:text></xsl:when>
             </xsl:choose>
           </i>
         </xsl:for-each>

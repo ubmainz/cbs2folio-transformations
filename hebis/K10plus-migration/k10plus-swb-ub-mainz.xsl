@@ -3,7 +3,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="2.0" exclude-result-prefixes="#all">
   <xsl:output indent="yes" method="xml" version="1.0" encoding="UTF-8"/>
 
-  <xsl:variable name="version" select="'v10'"/>
+  <xsl:variable name="version" select="'v11a'"/>
   
   <!-- 
   
@@ -185,8 +185,24 @@
       </arr>
     </classifications>
   </xsl:template>
-  
-  <xsl:template name="statisticalCodeIds">
+ 
+  <xsl:template name="instancenotes">
+    <notes>
+      <arr>
+        <xsl:copy-of select="instance/notes/arr/i"/>
+        <xsl:for-each select="original/datafield[(@tag='092B') and (subfield[@code='5']='DE-77')]">
+           <i>
+             <note>
+                <xsl:value-of select="concat(subfield[@code='3'],' ## ',subfield[@code='8'])"/>
+             </note>
+             <instanceNoteTypeId>Ownership and Custodial History note</instanceNoteTypeId>
+           </i>
+        </xsl:for-each>
+      </arr>
+    </notes>
+  </xsl:template>
+
+  <xsl:template name="statisticalCodeIds">    
     <statisticalCodeIds>
       <arr>
         <xsl:for-each select="original/datafield[(@tag='046X') and (subfield[@code='5']='DE-77')]">
@@ -202,6 +218,19 @@
              </xsl:when>
            </xsl:choose>
         </xsl:for-each>
+        <xsl:variable name="p1" select="substring(original/datafield[@tag='002@']/subfield[@code='0'],1,1)"/>
+        <xsl:variable name="p2" select="substring(original/datafield[@tag='002@']/subfield[@code='0'],2,1)"/>
+        <i>
+          <xsl:choose>
+            <xsl:when test="($p1='C') or ($p1='H')"><xsl:value-of select="$p1"/></xsl:when>
+            <xsl:when test="(($p1='A') or ($p1='B') or ($p1='E') or ($p1='S')) and (($p2='a') or ($p2='f') or ($p2='F'))"><xsl:value-of select="concat($p1,'afF')"/></xsl:when>
+            <xsl:when test="($p1='O') and (($p2='f') or ($p2='F') or ($p2='c') or ($p2='d'))">Oa</xsl:when>
+            <xsl:when test="(($p1='V') or ($p1='Z')) and (($p2='a') or ($p2='f') or ($p2='F'))">VZafF</xsl:when>
+            <xsl:when test="(($p1='V') or ($p1='Z')) and ($p2='c')">VZc</xsl:when>
+            <xsl:when test="(($p1='V') or ($p1='Z')) and (($p2='s') or ($p2='b') or ($p2='d'))">VZsbd</xsl:when>
+            <xsl:otherwise><xsl:value-of select="concat($p1,$p2)"/></xsl:otherwise>
+          </xsl:choose>
+        </i>
       </arr>                
     </statisticalCodeIds>
   </xsl:template>
@@ -211,7 +240,10 @@
     <xsl:param name="datafield002at" select="../datafield[@tag='002@']/subfield[@code='0']"/>
     <xsl:variable name="abt" select="($itemrec/datafield[@tag='209A']/subfield[@code='B']/text())[1]"/>
     <xsl:variable name="standort" select="upper-case(($itemrec/datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='f'],
-      $itemrec/datafield[(@tag='209A') and (subfield[@code='x']='01')]/subfield[@code='f'])[1])"/> 
+      $itemrec/datafield[(@tag='209A') and (subfield[@code='x']='01')]/subfield[@code='f'])[1])"/>
+    <xsl:variable name="signatur" select="(if ($itemrec/datafield[(@tag='209A') and (subfield[@code='x']='01')]/subfield[@code='g'])
+      then $itemrec/datafield[(@tag='209A') and (subfield[@code='x']='01')]/subfield[@code='g']
+      else $itemrec/datafield[(@tag='209A') and (subfield[@code='x']='00')]/subfield[@code='a'])[1]"/>
     <xsl:variable name="electronicholding" select="substring($datafield002at,1,1) = 'O'"/>
     <xsl:choose>
       <xsl:when test="$electronicholding">ONLINE</xsl:when>
@@ -219,8 +251,21 @@
       <xsl:when test="$abt='77/XXX'">DUMMY</xsl:when>
       <xsl:when test="$abt='77'">
         <xsl:choose>
-          <xsl:when test="contains($standort,'FREIHAND')">ZBFREI</xsl:when>
-          <xsl:when test="contains($standort,'LESESAAL') or contains($standort,'RVK') or contains($standort,'AUSGELAGERTE ZEITSCHRIFTEN')">ZBLS</xsl:when>
+          <xsl:when test="contains($standort,'AUSGELAGERTE ZEITSCHRIFTEN BEREICHSBIBLIOTHEK PHILOSOPHICUM') 
+            and not(ends-with(upper-case($itemrec/datafield[(@tag='209A') and (subfield[@code='x']='01')]/subfield[@code='f']),'ALTE GESCHICHTE'))
+            and not(ends-with(upper-case($itemrec/datafield[(@tag='209A') and (subfield[@code='x']='01')]/subfield[@code='f']),'SLAWISTIK'))
+            and not(ends-with(upper-case($itemrec/datafield[(@tag='209A') and (subfield[@code='x']='01')]/subfield[@code='f']),'SLAVISTIK'))
+            and not(ends-with(upper-case($itemrec/datafield[(@tag='209A') and (subfield[@code='x']='01')]/subfield[@code='f']),'THEATERWISSENSCHAFT'))">ZBZSP</xsl:when>
+          <xsl:when test="starts-with($signatur,'LM 1:') or starts-with($signatur,'LM 2:')
+            or contains($standort,'AUSGELAGERTE ZEITSCHRIFTEN BEREICHSBIBLIOTHEK PHILOSOPHICUM')">ZBLSLMZS</xsl:when> <!-- Rest von davor -->
+          <xsl:when test="starts-with($signatur,'180 ') or starts-with($signatur,'185 ')">ZBLSRVKZS</xsl:when>
+          <xsl:when test="starts-with($signatur,'200 ') or starts-with($signatur,'230 ')
+            or starts-with($signatur,'270 ')">ZBLSRVKMON</xsl:when>
+          <xsl:when test="contains($standort,'LESESAAL')">ZBLS</xsl:when> <!-- Restliche Lesesaalfälle -->
+          <xsl:when test="contains($standort,'SONDERSTANDORTE')">ZBSON</xsl:when>
+          <xsl:when test="contains($standort,'FREIHAND') and (starts-with($signatur,'300 A') or starts-with($signatur,'320 A')
+            or starts-with($signatur,'330 A'))">ZBFREINNC</xsl:when>
+          <xsl:when test="contains($standort,'FREIHAND')">ZBFREI</xsl:when> <!-- Rest Freihand -->
           <xsl:when test="contains($standort,'LBS')">ZBLBS</xsl:when>
           <xsl:when test="contains($standort,'RARA')">ZBRARA</xsl:when>
           <xsl:otherwise>ZBMAG</xsl:otherwise>
@@ -228,6 +273,7 @@
       </xsl:when>
       <xsl:when test="$abt='77/002'">
         <xsl:choose>
+          <xsl:when test="contains($standort,'FACHBEREICHE')">GFGFAC</xsl:when>
           <xsl:when test="contains($standort,'ERZIEHUNGSWISSENSCHAFT')">GFGPÄD</xsl:when>
           <xsl:when test="contains($standort,'FILMWISSENSCHAFT')">GFGFILM</xsl:when>
           <xsl:when test="contains($standort,'JOURNALISTIK')">GFGJOUR</xsl:when>
@@ -245,6 +291,7 @@
       </xsl:when>
       <xsl:when test="$abt='77/004'"> 
         <xsl:choose>
+          <xsl:when test="contains($standort,'SONDERSTANDORTE')">PHSON</xsl:when>
           <xsl:when test="contains($standort,'SEPARIERTE')">PHMAG</xsl:when> 
           <xsl:when test="contains($standort,'NUMERUS')">PHNC</xsl:when>
           <xsl:when test="contains($standort,'THEATERWISSENSCHAFT')">PHTHW</xsl:when> 
@@ -382,8 +429,9 @@
                   <xsl:copy-of select="instance/identifiers/arr/i"/>
                 </arr>
               </identifiers>
-              <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes or self::identifiers)]"/>
+              <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes or self::identifiers or self::notes)]"/>
               <xsl:call-template name="classifications"/>
+              <xsl:call-template name="instancenotes"/>
               <xsl:call-template name="statisticalCodeIds"/>
               <administrativeNotes>
                 <arr>
@@ -396,6 +444,9 @@
                 </arr>
               </administrativeNotes>
             </instance>
+            <holdingsRecords>
+              <arr/>
+            </holdingsRecords>
           </xsl:when>
 
           <xsl:when test="not(exists(original/item[not(starts-with(datafield[@tag='208@']/subfield[@code='b'],'z'))]))"> <!-- ZDB-Fälle -->
@@ -415,8 +466,9 @@
                   <xsl:copy-of select="instance/identifiers/arr/i"/>
                 </arr>
               </identifiers>
-              <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes or self::identifiers)]"/>
+              <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes or self::identifiers or self::notes)]"/>
               <xsl:call-template name="classifications"/>
+              <xsl:call-template name="instancenotes"/>
               <xsl:call-template name="statisticalCodeIds"/>
               <administrativeNotes>
                 <arr>
@@ -457,8 +509,9 @@
                   <xsl:copy-of select="instance/identifiers/arr/i"/>
                 </arr>
               </identifiers>
-              <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes or self::identifiers)]"/>
+              <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes or self::identifiers or self::notes)]"/>
               <xsl:call-template name="classifications"/>
+              <xsl:call-template name="instancenotes"/>
               <xsl:variable name="statcodeids">
                 <xsl:call-template name="statisticalCodeIds"/>
               </xsl:variable>
@@ -585,8 +638,9 @@
                   <xsl:copy-of select="instance/identifiers/arr/i"/>
                 </arr>
               </identifiers>
-              <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes or self::identifiers)]"/>
+              <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes or self::identifiers or self::notes)]"/>
               <xsl:call-template name="classifications"/>
+              <xsl:call-template name="instancenotes"/>
               <xsl:call-template name="statisticalCodeIds"/>
               <administrativeNotes>
                 <arr>
@@ -1090,7 +1144,6 @@
       <!-- No item for electronic access -->
 
       <discoverySuppress>false</discoverySuppress>
-      <statisticalCodeIds/>
     </i>
   </xsl:template>
 
