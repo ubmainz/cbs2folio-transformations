@@ -640,6 +640,7 @@
               </identifiers>
               <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes or self::identifiers)]"/>
               <xsl:call-template name="classifications"/>
+              <xsl:call-template name="instancenotes"/>
               <xsl:call-template name="statisticalCodeIds"/>
               <administrativeNotes>
                 <arr>
