@@ -27,20 +27,6 @@
           <ifField>hrid</ifField>
           <matchesPattern>it.*</matchesPattern>
         </retainOmittedRecord>
-        <!-- does not to work properly in Quesnelia 2024-12:
-          - statistical code is not set in some cases (false neagtive)
-          - statistical code is also set (false positive) in "retainOmittedRecord" protected cases
-          - statistical code is also set (false positive) in holding transfer cases
-          -> left out (in addition seems not to be needed)
-        <statisticalCoding>
-          <arr>
-            <i>
-              <if>deleteSkipped</if>
-              <becauseOf>ITEM_STATUS</becauseOf>
-              <setCode>ITEM_STATUS</setCode>
-            </i>         
-          </arr>
-        </statisticalCoding> -->
       </item>
       <holdingsRecord>
         <retainExistingValues>
@@ -48,10 +34,15 @@
         </retainExistingValues>
         <retainOmittedRecord>
           <ifField>hrid</ifField>
-          <matchesPattern>ho.*</matchesPattern>
+          <matchesPattern>\D.*</matchesPattern>
         </retainOmittedRecord>
         <statisticalCoding>
           <arr>
+            <i>
+              <if>deleteSkipped</if>
+              <becauseOf>HOLDINGS_RECORD_PATTERN_MATCH</becauseOf>
+              <setCode>HOLDINGS_RECORD_PATTERN_MATCH</setCode>
+            </i> 
             <i>
               <if>deleteSkipped</if>
               <becauseOf>ITEM_STATUS</becauseOf>
@@ -95,6 +86,25 @@
           <ifField>hrid</ifField>
           <matchesPattern>.*</matchesPattern>
         </retainOmittedRecord>
+        <statisticalCoding>
+          <arr>
+            <i>
+              <if>deleteSkipped</if>
+              <becauseOf>HOLDINGS_RECORD_PATTERN_MATCH</becauseOf>
+              <setCode>HOLDINGS_RECORD_PATTERN_MATCH</setCode>
+            </i> 
+            <i>
+              <if>deleteSkipped</if>
+              <becauseOf>ITEM_STATUS</becauseOf>
+              <setCode>ITEM_STATUS</setCode>
+            </i>
+            <i>
+              <if>deleteSkipped</if>
+              <becauseOf>ITEM_PATTERN_MATCH</becauseOf>
+              <setCode>ITEM_PATTERN_MATCH</setCode>
+            </i> 
+          </arr>
+        </statisticalCoding>
       </holdingsRecord>
       <instance>
         <retainExistingValues>
@@ -104,27 +114,27 @@
     </processing>
   </xsl:template>
   
-  <xsl:template name="classifications">  <!-- RVK/DDC -->
+  <xsl:template name="classifications">
     <classifications>
       <arr>
-        <xsl:variable name="rvk" as="xs:string *">
+        <xsl:variable name="rvk" as="xs:string *"> <!-- RVK -->
           <xsl:for-each select="original/(datafield[@tag='045R']/subfield[@code='8']|datafield[@tag='045R']/subfield[@code='a'])">
             <xsl:sequence select="normalize-space(substring-before(concat(.,':'),':'))"/>
           </xsl:for-each>
         </xsl:variable>
-        <xsl:for-each select="distinct-values($rvk)">
+        <xsl:for-each select="distinct-values($rvk)[. != '']">
           <xsl:sort/>
           <i>
             <classificationNumber><xsl:value-of select="."/></classificationNumber>
             <classificationTypeId>RVK</classificationTypeId>
           </i>
         </xsl:for-each>
-        <xsl:variable name="ddc" as="xs:string *">
+        <xsl:variable name="ddc" as="xs:string *"> <!-- DDC -->
           <xsl:for-each select="original/(datafield[@tag='045F']/subfield[@code='a'][.!='B']|datafield[@tag='045H']/subfield[@code='a'][.!='B'])">
             <xsl:sequence select="normalize-space(translate(.,'/',''))"/>
           </xsl:for-each>
         </xsl:variable>
-        <xsl:for-each select="distinct-values($ddc)">
+        <xsl:for-each select="distinct-values($ddc)[. != '']">
           <xsl:sort/>
           <i>
             <classificationNumber><xsl:value-of select="."/></classificationNumber>
@@ -349,18 +359,14 @@
         <xsl:when test="starts-with($standort,'SEMESTERAPPARAT')">SEMAPP</xsl:when>
         <xsl:when test="starts-with($standort,'BÜRO') or $standort='Extern'">FBVW</xsl:when>
         <xsl:when test="contains($standort,'THEKE') or contains($standort,'VITRINE') or contains($standort,'ZEITUNGSAUSLAGE')">THEKE</xsl:when>
-        <xsl:when test="$abt='000'">
+        <xsl:when test="$abt='1053'">
           <xsl:choose>
+            <xsl:when test="$standort='MAG'">MAG</xsl:when>
             <xsl:when test="starts-with($signatur,'G')">UGG</xsl:when>
             <xsl:when test="starts-with($signatur,'K') and contains($standort,'MEDIENRAUM')">UGMED</xsl:when>
             <xsl:when test="starts-with($signatur,'K')">UGK</xsl:when>
             <xsl:when test="starts-with($signatur,'V')">UGV</xsl:when>
             <xsl:when test="starts-with($signatur,'Z')">UGZS</xsl:when>
-            <xsl:otherwise>NZ</xsl:otherwise>
-          </xsl:choose>
-        </xsl:when>
-        <xsl:when test="$abt='001'">
-          <xsl:choose>
             <xsl:when test="starts-with($signatur,'A') and starts-with($standort,'ARCHITEKTUR')">OGARCH</xsl:when>
             <xsl:when test="starts-with($signatur,'A') and starts-with($standort,'ALLGEMEINES')">OGALLG</xsl:when>
             <xsl:when test="starts-with($signatur,'B') and starts-with($standort,'BETRIEBSWIRTSCHAFT')">OGBWL</xsl:when>
@@ -372,10 +378,10 @@
             <xsl:when test="starts-with($signatur,'S')">OGS</xsl:when>
             <xsl:when test="starts-with($signatur,'V')">OGV</xsl:when>
             <xsl:when test="starts-with($signatur,'Z')">UGZS</xsl:when>
+
             <xsl:otherwise>NZ</xsl:otherwise>
           </xsl:choose>
         </xsl:when>
-        <xsl:when test="$abt='002'">MAG</xsl:when>
         <xsl:otherwise>NZ</xsl:otherwise>
       </xsl:choose>
   </xsl:template>
