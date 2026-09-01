@@ -516,7 +516,7 @@
                       </xsl:when>
                       <xsl:otherwise>
                         <holdingsTypeId>physical</holdingsTypeId> <!-- retainExistingValues/forTheseProperties -->
-                        <permanentLocationId>UNKNOWN</permanentLocationId> <!-- retainExistingValues/forTheseProperties -->
+                        <permanentLocationId>NZ</permanentLocationId> <!-- retainExistingValues/forTheseProperties -->
                       </xsl:otherwise>
                      </xsl:choose>
                   </i>
