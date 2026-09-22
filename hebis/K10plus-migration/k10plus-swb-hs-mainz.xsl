@@ -243,6 +243,7 @@
               <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes or self::identifiers)]"/>
               <xsl:call-template name="classifications"/>
               <xsl:call-template name="statisticalCodeIds"/>
+              <subjects><arr></arr></subjects>
               <administrativeNotes>
                 <arr>
                   <xsl:copy-of select="instance/administrativeNotes/arr/*"/>
@@ -279,6 +280,7 @@
               <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes or self::identifiers)]"/>
               <xsl:call-template name="classifications"/>
               <xsl:call-template name="statisticalCodeIds"/>
+              <subjects><arr></arr></subjects>
               <administrativeNotes>
                 <arr>
                   <xsl:copy-of select="instance/administrativeNotes/arr/*"/>
@@ -329,6 +331,7 @@
                    <i>ZDB-Titel-mit-Mono-EPN</i>
                 </arr>
               </statisticalCodeIds>
+              <subjects><arr></arr></subjects>
               <administrativeNotes>
                 <arr>
                   <xsl:copy-of select="instance/administrativeNotes/arr/*"/>
@@ -405,6 +408,7 @@
               <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes or self::identifiers)]"/>
               <xsl:call-template name="classifications"/>
               <xsl:call-template name="statisticalCodeIds"/>
+              <subjects><arr></arr></subjects>
               <administrativeNotes>
                 <arr>
                   <xsl:copy-of select="instance/administrativeNotes/arr/*"/>
@@ -449,6 +453,7 @@
               <xsl:copy-of select="instance/*[not(self::source or self::administrativeNotes or self::identifiers)]"/>
               <xsl:call-template name="classifications"/>
               <xsl:call-template name="statisticalCodeIds"/>
+              <subjects><arr></arr></subjects>
               <administrativeNotes>
                 <arr>
                   <xsl:copy-of select="instance/administrativeNotes/arr/*"/>
