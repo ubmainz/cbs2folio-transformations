@@ -153,22 +153,18 @@
          <xsl:when test="($selectionscode = 'da') or ($selectionscode = 'dummy')">DUMMY</xsl:when>
            <xsl:when test="(substring($i/../datafield[@tag='002@']/subfield[@code='0'],2,1) = 'o') and not($i/datafield[@tag='209A']/subfield[@code='d'])">AUFSATZ</xsl:when>
            <xsl:when test="$selectionscode = 'a'">ZEB</xsl:when>
-
-           <xsl:when test="$abt='000'">
-             <xsl:choose>
-               <xsl:when test="starts-with($signatur,'X')">ABC</xsl:when>
-
-               <xsl:otherwise>NZ</xsl:otherwise>
-             </xsl:choose>
-           </xsl:when>
            <xsl:when test="$abt='001'">
              <xsl:choose>
-
-               <xsl:when test="starts-with($signatur,'Y')">DEF</xsl:when>
-               <xsl:otherwise>NZ</xsl:otherwise>
+               <xsl:when test="starts-with($signatur,'rara')">MZR</xsl:when>
+               <xsl:when test="ends-with($signatur,'Folio')">MZF</xsl:when>
+               <xsl:when test="ends-with($signatur,'Großfolio')">MZGF</xsl:when>
+               <xsl:when test="starts-with($signatur,'Z')">MZZ</xsl:when>
+               <xsl:otherwise>MZ</xsl:otherwise>
              </xsl:choose>
            </xsl:when>
-           <xsl:when test="$abt='002'">MAG</xsl:when>
+           <xsl:when test="$abt='003'">MYVAT</xsl:when>
+           <xsl:when test="$abt='004'">NWM</xsl:when>
+           <xsl:when test="$abt='005'">MYP</xsl:when>
            <xsl:otherwise>NZ</xsl:otherwise>
        </xsl:choose>
       </permanentLocationId>
