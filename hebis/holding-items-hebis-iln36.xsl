@@ -147,7 +147,7 @@
     <xsl:variable name="selectionscode" select="$i/datafield[@tag='208@']/subfield[@code='b']"/>
     <xsl:variable name="electronicholding" select="(substring($i/../datafield[@tag='002@']/subfield[@code='0'],1,1) = 'O') and not(substring($i/datafield[@tag='208@']/subfield[@code='b'],1,1) = 'a')"/>
     <xsl:variable name="onorder" select="substring($i/datafield[@tag='208@']/subfield[@code='b'],1,1) = 'a'"/>
-    <permanentLocationId> <!-- TBD -->
+    <permanentLocationId> <!-- LEIZA -->
        <xsl:choose>
          <xsl:when test="$electronicholding">ONLINE</xsl:when>
          <xsl:when test="($selectionscode = 'da') or ($selectionscode = 'dummy')">DUMMY</xsl:when>
