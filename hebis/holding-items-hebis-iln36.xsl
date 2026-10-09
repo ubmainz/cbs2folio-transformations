@@ -158,6 +158,7 @@
                <xsl:when test="starts-with($signatur,'rara')">MZR</xsl:when>
                <xsl:when test="ends-with($signatur,'Folio')">MZF</xsl:when>
                <xsl:when test="ends-with($signatur,'Großfolio')">MZGF</xsl:when>
+               <xsl:when test="contains($signatur,'m/')">MZK</xsl:when>
                <xsl:when test="starts-with($signatur,'Z')">MZZ</xsl:when>
                <xsl:otherwise>MZ</xsl:otherwise>
              </xsl:choose>

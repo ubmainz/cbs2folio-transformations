@@ -11,14 +11,23 @@
   <!-- ILN 36 LEIZA -->
 
   <!-- Map locations 
-       For Mainz, the IDs are the location names in FOLIO, generated from 209A $f and other pica fields -->
+       The IDs are the location names in FOLIO, generated from 209A $f and other pica fields -->
   
-  <xsl:template match="permanentLocationId|temporaryLocationId"> <!-- ILN 36 TBD -->
+  <xsl:template match="permanentLocationId|temporaryLocationId"> <!-- ILN 36 -->
     <xsl:element name="{name()}">
       <xsl:choose>
-        <xsl:when test=".='DUMMY'">de4046e6-d80a-474d-b81e-d5767f995dc6</xsl:when>
-
-        <xsl:otherwise>91885c25-3b18-47d3-9cf6-5f6be2b396fb</xsl:otherwise> <!-- NZ -->
+        <xsl:when test=".='DUMMY'">eb52e789-f16c-42a2-be25-0a614466cf22</xsl:when>
+        <xsl:when test=".='MZR'">a2d20866-9f5d-4574-b33f-683bf27458b2</xsl:when>
+        <xsl:when test=".='MZF'">270f180d-b70d-41ed-b7ad-52596bbddf7c</xsl:when>
+        <xsl:when test=".='MZGF'">20fb2e3e-5997-4414-8758-9a63822a2bc5</xsl:when>
+        <xsl:when test=".='MZK'">867279fa-fbd6-46c7-8fbc-bc1ba11dde4d</xsl:when>
+        <xsl:when test=".='MZZ'">243b43a6-bc62-4c56-ae0a-eb5d8fe082a2</xsl:when>
+        <xsl:when test=".='MZ'">0ed7d192-7a3c-4718-ad5d-6b078f990f8f</xsl:when>
+        <xsl:when test=".='MYVAT'">5e7cfeec-f54f-4b33-a1ba-1d728308a6da</xsl:when>
+        <xsl:when test=".='NWM'">0d3d8fa6-a73f-4b5d-bb55-aa44fdc93507</xsl:when>
+        <xsl:when test=".='MYP'">9be373b8-6851-476b-8346-6c71d543614e</xsl:when>
+        <xsl:when test=".='ONLINE'">0167fee7-208e-4d8d-a1c6-0ead6546762f</xsl:when>
+        <xsl:otherwise>48ae2b8c-ac11-45c4-a9a4-8fdf0371bd32</xsl:otherwise> <!-- NZ -->
       </xsl:choose>
     </xsl:element>
   </xsl:template>
