@@ -152,7 +152,6 @@
          <xsl:when test="$electronicholding">ONLINE</xsl:when>
          <xsl:when test="($selectionscode = 'da') or ($selectionscode = 'dummy')">DUMMY</xsl:when>
            <xsl:when test="(substring($i/../datafield[@tag='002@']/subfield[@code='0'],2,1) = 'o') and not($i/datafield[@tag='209A']/subfield[@code='d'])">AUFSATZ</xsl:when>
-           <xsl:when test="$selectionscode = 'a'">ZEB</xsl:when>
            <xsl:when test="$abt='001'">
              <xsl:choose>
                <xsl:when test="starts-with($signatur,'rara')">MZR</xsl:when>
