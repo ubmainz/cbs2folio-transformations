@@ -48,6 +48,7 @@
         <xsl:when test=".='GHMAG'">e0543e59-7789-48e1-9806-402e74005a03</xsl:when>
         <xsl:when test=".='GHSEP'">151afc29-859f-476e-8b6f-8ff388de03a7</xsl:when>
         <xsl:when test=".='GHZEB'">094be189-54da-4f93-a290-33ef408e98ec</xsl:when>
+        <xsl:when test=".='GHRVK'">a16ec065-b57d-4c81-a62a-e7006dc93496</xsl:when>
         <xsl:when test=".='MINT'">a2b4dab0-da03-4b49-aa2a-8f0ed9c0e7dd</xsl:when>
         <xsl:when test=".='MINTLBS'">1ceaeeb6-acf6-4e28-b988-bc0c5d6b2f06</xsl:when>
         <xsl:when test=".='MINTFAK'">0bbd1c4d-6ced-46e1-b0ca-c6de67856313</xsl:when>
