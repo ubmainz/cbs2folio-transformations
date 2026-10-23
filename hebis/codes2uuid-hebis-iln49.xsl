@@ -26,6 +26,7 @@
         <xsl:when test=".='OGBAU'">2f2caf30-43c6-4732-bc94-d58fecf8a2ba</xsl:when>
         <xsl:when test=".='OGBWL'">746c7cbc-b4ee-4e7e-ab19-e342863d117f</xsl:when>
         <xsl:when test=".='OGG'">345b2c2c-8f92-451f-83cf-05062c665d25</xsl:when>
+        <xsl:when test=".='OGK'">e181c998-5d30-4748-9b90-2dae26aa2e33</xsl:when>
         <xsl:when test=".='OGL'">68b98214-2d81-4b06-ac86-150625947207</xsl:when>
         <xsl:when test=".='OGN'">6c58cfa6-6850-4b7d-a79b-f7b8bd762e90</xsl:when>
         <xsl:when test=".='OGR'">b9e07227-4eaa-4c24-97f9-daea28d14781</xsl:when>

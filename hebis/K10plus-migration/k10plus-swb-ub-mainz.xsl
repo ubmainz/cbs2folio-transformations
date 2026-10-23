@@ -358,6 +358,7 @@
           <xsl:when test="contains($standort,upper-case('Lehrbuch'))">GHLBS</xsl:when>
           <xsl:when test="contains($standort,upper-case('Lesesaal'))">GHLS</xsl:when>
           <xsl:when test="contains($standort,upper-case('Magazin'))">GHMAG</xsl:when>
+          <xsl:when test="contains($standort,upper-case('RVK'))">GHRVK</xsl:when>
           <xsl:when test="($standort='CELA')
             or ($standort='CELTRA')
             or ($standort='SSC')">GHSEP</xsl:when>
