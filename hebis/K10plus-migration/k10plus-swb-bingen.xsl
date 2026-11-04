@@ -177,6 +177,7 @@
                   </i>
                 </arr>
               </administrativeNotes>
+              <catalogedDate/>
             </instance>
             <holdingsRecords>
               <arr>
@@ -224,6 +225,7 @@
                   </xsl:if>
                 </arr>
               </administrativeNotes>
+              <catalogedDate/>
             </instance>
             <holdingsRecords>
               <arr>
