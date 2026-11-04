@@ -245,6 +245,7 @@
               <xsl:call-template name="classifications"/>
               <xsl:call-template name="statisticalCodeIds"/>
               <subjects><arr></arr></subjects>
+              <catalogedDate/>
               <administrativeNotes>
                 <arr>
                   <xsl:copy-of select="instance/administrativeNotes/arr/*"/>
@@ -282,6 +283,7 @@
               <xsl:call-template name="classifications"/>
               <xsl:call-template name="statisticalCodeIds"/>
               <subjects><arr></arr></subjects>
+              <catalogedDate/>
               <administrativeNotes>
                 <arr>
                   <xsl:copy-of select="instance/administrativeNotes/arr/*"/>
@@ -333,6 +335,7 @@
                 </arr>
               </statisticalCodeIds>
               <subjects><arr></arr></subjects>
+              <catalogedDate/>
               <administrativeNotes>
                 <arr>
                   <xsl:copy-of select="instance/administrativeNotes/arr/*"/>
@@ -410,6 +413,7 @@
               <xsl:call-template name="classifications"/>
               <xsl:call-template name="statisticalCodeIds"/>
               <subjects><arr></arr></subjects>
+              <catalogedDate/>
               <administrativeNotes>
                 <arr>
                   <xsl:copy-of select="instance/administrativeNotes/arr/*"/>
@@ -455,6 +459,7 @@
               <xsl:call-template name="classifications"/>
               <xsl:call-template name="statisticalCodeIds"/>
               <subjects><arr></arr></subjects>
+              <catalogedDate/>
               <administrativeNotes>
                 <arr>
                   <xsl:copy-of select="instance/administrativeNotes/arr/*"/>
