@@ -179,7 +179,7 @@
     <xsl:variable name="electronicholding" select="substring($datafield002at,1,1) = 'O'"/>
     <xsl:choose>
           <xsl:when test="$electronicholding">ONLINE</xsl:when>
-          <xsl:when test="$abt='Mz1'">
+          <xsl:when test="$abt='Mz 1'">
               <xsl:choose>
                   <xsl:when test="starts-with($signatur,'rara')">MZR</xsl:when>
                   <xsl:when test="ends-with($signatur,'Folio')">MZF</xsl:when>
@@ -189,15 +189,15 @@
                   <xsl:otherwise>MZ</xsl:otherwise>
               </xsl:choose>
           </xsl:when>
-          <xsl:when test="$abt='Mz1/2'">
+          <xsl:when test="$abt='Mz 1/2'">
               <xsl:choose>
                   <xsl:when test="$standort='VAT'">MYVAT</xsl:when>
                   <xsl:when test="$standort='PYROSER'">MYP</xsl:when>
                   <xsl:otherwise>NZ</xsl:otherwise>
               </xsl:choose>
           </xsl:when>
-          <xsl:when test="$abt='Mz1/3'">NWM</xsl:when>
-        <xsl:when test="$abt='Mz1/4'">SL</xsl:when> <!-- TBD code SL (Schleswig) -->
+          <xsl:when test="$abt='Mz 1/3'">NWM</xsl:when>
+        <xsl:when test="$abt='Mz 1/4'">SL</xsl:when> <!-- TBD code SL (Schleswig) -->
           <xsl:otherwise>NZ</xsl:otherwise>
     </xsl:choose>  
   </xsl:template>
