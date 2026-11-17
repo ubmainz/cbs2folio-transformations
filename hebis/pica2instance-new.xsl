@@ -1365,8 +1365,8 @@
     <!-- Dates TBD Ramsons/Sunflower -->
     <dates>
       <xsl:if test="datafield[@tag='011@']">
-        <xsl:variable name="start" select="datafield[@tag='011@']/subfield[@code='a']"/>
-        <xsl:variable name="end" select="datafield[@tag='011@']/subfield[@code='b']"/>
+        <xsl:variable name="start" select="substring(translate(datafield[@tag='011@']/subfield[@code='a'],'X?','u'),1,4)"/>
+        <xsl:variable name="end" select="substring(translate(datafield[@tag='011@']/subfield[@code='b'],'X?','u'),1,4)"/>
         <xsl:variable name="status" select="substring(datafield[@tag='002@']/subfield[@code='0'], 2, 1)"/>
         <xsl:variable name="has-end" select="boolean(datafield[@tag='011@']/subfield[@code='b'])"/>
         <xsl:variable name="dateTypeId">
@@ -1379,10 +1379,16 @@
           </xsl:choose>
         </xsl:variable>
         <date1>
-          <xsl:value-of select="$start"/>
+          <xsl:choose>
+            <xsl:when test="(translate($start,'1234567890u','')='') and not($start='')"><xsl:value-of select="$start"/></xsl:when>
+            <xsl:otherwise>u</xsl:otherwise>
+          </xsl:choose>
         </date1>
         <date2>
-          <xsl:value-of select="$end"/>
+          <xsl:choose>
+            <xsl:when test="(translate($end,'1234567890u','')='') and not(($end='') and $has-end)"><xsl:value-of select="$end"/></xsl:when>
+            <xsl:otherwise>u</xsl:otherwise>
+          </xsl:choose>
         </date2>
         <dateTypeId>
           <xsl:value-of select="$dateTypeId"/>
