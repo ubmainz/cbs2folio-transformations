@@ -26,6 +26,7 @@
         <xsl:when test=".='MYVAT'">5e7cfeec-f54f-4b33-a1ba-1d728308a6da</xsl:when>
         <xsl:when test=".='NWM'">0d3d8fa6-a73f-4b5d-bb55-aa44fdc93507</xsl:when>
         <xsl:when test=".='MYP'">9be373b8-6851-476b-8346-6c71d543614e</xsl:when>
+        <xsl:when test=".='SLBIB'">9a135acb-104f-4a0f-a27a-9003e7866019</xsl:when>
         <xsl:when test=".='ONLINE'">0167fee7-208e-4d8d-a1c6-0ead6546762f</xsl:when>
         <xsl:otherwise>48ae2b8c-ac11-45c4-a9a4-8fdf0371bd32</xsl:otherwise> <!-- NZ -->
       </xsl:choose>

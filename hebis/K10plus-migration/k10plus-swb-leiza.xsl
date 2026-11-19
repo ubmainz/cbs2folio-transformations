@@ -197,7 +197,7 @@
               </xsl:choose>
           </xsl:when>
           <xsl:when test="$abt='Mz 1/3'">NWM</xsl:when>
-        <xsl:when test="$abt='Mz 1/4'">SL</xsl:when> <!-- TBD code SL (Schleswig) -->
+      <xsl:when test="$abt='Mz 1/4'">SLBIB</xsl:when>
           <xsl:otherwise>NZ</xsl:otherwise>
     </xsl:choose>  
   </xsl:template>
